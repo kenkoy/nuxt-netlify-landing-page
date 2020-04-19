@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: https://github.com/kenkoy/nuxt-netlify-landing-page
+  repo: https://github.com/kenkoy/nuxt-netlify-landing-page.git
   branch: master
   # auth_type: implicit
   # app_id: D8CHMSxyKj3SrJkvQG
