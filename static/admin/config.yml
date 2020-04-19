@@ -1,0 +1,24 @@
+backend:
+  name: bitbucket
+  repo: https://bitbucket.org/kenkoy/nuxt-netlify-landing-page
+  branch: master
+  auth_type: implicit
+  app_id: D8CHMSxyKj3SrJkvQG
+  
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    format: 'json'
+    folder: 'assets/content/blog'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
