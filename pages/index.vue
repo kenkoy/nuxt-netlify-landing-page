@@ -3,10 +3,10 @@
     <div>
       <logo />
       <h1 class="title">
-        nuxt-netlify-landing-page
+        InterCasino Landing Page
       </h1>
       <h2 class="subtitle">
-        InterCasino Landing Page
+        Digital Acquisition Services
       </h2>
       <div class="links">
         <a
@@ -32,10 +32,13 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
-  components: {
-    Logo
-  }
-}
+  head() {
+    return {
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    };
+  },
+};
+
 </script>
 
 <style>
