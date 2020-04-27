@@ -1,5 +1,19 @@
+const glob = require('glob')
+const path = require('path')
+
+var getDynamicRoutes = function() {
+  return [].concat(
+    glob
+      .sync('*.json', { cwd: 'assets/content/blog' })
+      .map((filepath) => `/posts/${path.basename(filepath, '.json')}`),
+  )
+}
 
 export default {
+  generate: {
+    routes: getDynamicRoutes
+  },
+
   mode: 'universal',
   /*
   ** Headers of the page
@@ -12,7 +26,8 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans'}
     ]
   },
   /*
@@ -22,8 +37,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: [],
   /*
   ** Plugins to load before mounting the App
   */
@@ -47,6 +61,7 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      
     }
   }
 }
