@@ -82,12 +82,12 @@ export default {
 
 .nav-item a {
   text-decoration: none;
-  color: black;
+  color: crimson;
   font-size: 1.5rem;
 }
 
 .nav-item a:hover,
 .nav-item a:active {
-  color: red;
+  color: dodgerblue;
 }
 </style>
