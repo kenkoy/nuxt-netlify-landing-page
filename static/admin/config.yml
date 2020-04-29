@@ -2,8 +2,6 @@ backend:
   name: github
   repo: kenkoy/nuxt-netlify-landing-page
   branch: master
-  auth_type: implicit
-  app_id: af4dac6214878c8ab25a
 
 publish_mode: editorial_workflow  
 media_folder: static/img
