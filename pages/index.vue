@@ -13,16 +13,7 @@ export default {
       return {
         script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
       };
-    },
-    components: {
-        PostList
-    },
-    computed: {
-        loadedPosts() {
-            return this.$store.getters.loadedPosts
-        }
-    }
-    
+    }    
 }
 </script>
 

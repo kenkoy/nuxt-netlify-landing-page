@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: kenkoy/nuxt-netlify-landing-page
-  branch: master
-
+  name: git-gateway
+  
 publish_mode: editorial_workflow  
 media_folder: static/img
 public_folder: /img
