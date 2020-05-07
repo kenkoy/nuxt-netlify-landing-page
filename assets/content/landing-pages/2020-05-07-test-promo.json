@@ -1,7 +1,7 @@
 {
-  "promo-title": "Test Promo",
-  "promo-description": "Test Promo Desc",
-  "promo_join_button": "Test Button",
-  "header_login_button": "Test Header Login",
-  "header_join_button": "Test Header Join"
+  "promo-title": "Empire Strikes Back",
+  "promo-description": "The Empire Strikes Back, is a 1980 American epic space opera film directed by Irvin Kershner",
+  "promo_join_button": "Join Master Yoda",
+  "header_login_button": "Jedi and Sith Only",
+  "header_join_button": "Join Master Dooku"
 }
