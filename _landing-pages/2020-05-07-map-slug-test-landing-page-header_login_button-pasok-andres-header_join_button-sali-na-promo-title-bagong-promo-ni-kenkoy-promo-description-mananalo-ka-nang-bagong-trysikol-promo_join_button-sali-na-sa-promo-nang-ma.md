@@ -1,8 +1,7 @@
----
-slug: test landing page
-header_login_button: Pasok Andres!
-header_join_button: Sali na!!!
-promo-title: Bagong Promo ni Kenkoy
-promo-description: Mananalo ka nang bagong trysikol
-promo_join_button: Sali na sa promo nang manalo!
----
+{
+  "title": "Manoy's Bagong Promo",
+  "header_login_button": "Pasok Manoy!",
+  "header_join_button": "Tara na Manoy",
+  "promo-description": "Manoy makisig na makisig!",
+  "promo_join_button": "Promo join"
+}
