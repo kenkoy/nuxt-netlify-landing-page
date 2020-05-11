@@ -1,0 +1,8 @@
+{
+  "promo_title": "New Test Markdown Promo",
+  "promo_description": "New Test Markdown Description",
+  "promo_join_button": "Markdown Join!",
+  "header_login_button": "Markdown Header Login",
+  "header_join_button": "Markdown Header Join",
+  "promo_body_intro": "# Heading 1\n\n## Heading 2\n\n### Heading 3\n\n> Hello Promo with Markdown Content\n>\n> ![the alt text](/img/intercasino-intro.jpg \"timage titlehe \")\n\n\n\n* Bullet 1\n\n  * Bullet 2\n  * Bullet 3\n\n1. Uno\n2. Dos\n3. Tres\n\n*Abnakakabasanapalako*"
+}
