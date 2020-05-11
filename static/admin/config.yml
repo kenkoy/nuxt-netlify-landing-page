@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   
 publish_mode: editorial_workflow  
-media_folder: "static/img"
-public_folder: "img"
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
   - name: 'blog'
