@@ -1,9 +1,9 @@
 <template>
-    <nuxt-link :to="'/posts/' + slug" class="post-preview">
+    <nuxt-link :to="'/vjlp3/' + slug" class="post-preview">
         <article>
             <div class="post-content">
-            <h1>{{ title }}</h1>
-            <p>{{ description }}</p>
+              <h3>{{ title }}</h3>
+              <p>{{ description }}</p>
             </div>
         </article>
     </nuxt-link>
@@ -26,14 +26,14 @@ export default {
                 required: true
             }
         }
-    }
+    }    
 </script>
 
 <style scoped>
 .post-preview {
   border: 1px solid #ccc;
   box-shadow: 0 2px 2px #ccc;
-  background-color: white;
+  background-color:dodgerblue;
   width: 90%;
 }
 
@@ -63,6 +63,6 @@ a {
 
 a:hover .post-content,
 a:active .post-content {
-  background-color: #ccc;
+  background-color:cornflowerblue;
 }
 </style>

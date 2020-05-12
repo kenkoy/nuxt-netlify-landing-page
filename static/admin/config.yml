@@ -2,22 +2,23 @@ backend:
   name: git-gateway
   
 publish_mode: editorial_workflow  
-media_folder: "static/images/uploads"
-public_folder: "/images/uploads"
+media_folder: static/img
+public_folder: /img
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    format: 'json'
-    folder: 'assets/content/blog'
+  - name: "VJLP3-NoForm"
+    label: "VJ Landing Page 3"
+    format: 'frontmatter'
+    folder: "assets/content/landing-page"
     create: true
+    identifier_field: "promo_title"
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: false
     fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-
-      
+      - {label: "Promo Title", name: "promo_title", widget: "string"}
+      - {label: "Promo Description", name: "promo_description", widget: "string"}
+      - {label: "Promo Join Button", name: "promo_join_button", widget: "string"}
+      - {label: "Header Login Button", name: "header_login_button", widget: "string"}
+      - {label: "Header Join Button", name: "header_join_button", widget: "string"}
+      - {label: 'Body', name: 'body', widget: 'markdown' }
