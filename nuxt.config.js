@@ -1,12 +1,23 @@
 const glob = require('glob')
 const path = require('path')
 
+const markdownPaths = ['vjlp3']
+
 var getDynamicRoutes = function() {
   return [].concat(
     glob
-      .sync('*.json', { cwd: 'assets/content/blog' })
-      .map((filepath) => `/posts/${path.basename(filepath, '.json')}`),
+      .sync('*.md', { cwd: 'assets/content/landing-page' })
+      .map((filepath) => `/vjlp3/${path.basename(filepath, '.md')}`),
   )
+}
+
+function dynamicMarkdownRoutes() {
+  return [].concat(
+    ...markdownPaths.map(mdPath => {
+      return glob.sync(`${mdPath}/*.md`, { cwd: 'assets/content/landing-page' })
+        .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`);
+    })
+  );
 }
 
 export default {
@@ -27,7 +38,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans'}
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans'},
     ]
   },
   /*
@@ -51,8 +62,7 @@ export default {
   /*
   ** Nuxt.js modules
   */
-  modules: [
-  ],
+  modules: [],
   /*
   ** Build configuration
   */
@@ -61,7 +71,11 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-      
+      config.module.rules.push({
+          test: /\.md$/,
+          include: path.resolve(__dirname, 'assets/content/landing-page'),
+          loader: 'frontmatter-markdown-loader',
+      });
     }
-  }
+  } 
 }

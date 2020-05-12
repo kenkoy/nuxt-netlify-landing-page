@@ -4,25 +4,20 @@
             v-for="post in posts"
                 :key="post.slug"
                 :slug="post.slug"
-                :title="post.title"
-                :description="post.description"
-                :is-admin="true"
+                :title="post.attributes.promo_title"
+                :description="post.attributes.promo_description"
         />
     </section>    
 </template>
 
 <script>
-import PostPreview from '@/components/Posts/PostPreview'
+import PostPreview from '@/components/VJLP3/PostPreview'
 
 export default {
     components: {
         PostPreview
     },
     props: {
-        isAdmin: {
-            type: Boolean,
-            default: true
-        },
         posts: {
             type: Array,
             required: true
