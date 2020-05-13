@@ -1,5 +1,4 @@
 ---
-promo_template: VJLP1-NoForm
 promo_title: Jackpot Challenge!
 promo_subtitle: INCREASE YOUR MILITARY FUNDS WITH DAILY CASH !
 promo_banner: /img/intercasino-intro.jpg
@@ -9,6 +8,7 @@ promo_step_1_header: REGISTER
 promo_step_1_description: SAFE AND SECURE!
 promo_step_2_header: DEPOSIT
 promo_step_2_description: GET A BONUS!
+promo_template: VJLP1-NoForm
 promo_description: 300 bonusspins to all new customers when you deposit at least 100 SEK
 promo_step_3_header: TRY YOUR LUCK
 promo_step_3_description: GET FREE CASH ONCE A DAY!
@@ -18,7 +18,10 @@ header_login_button: Login
 <section id="terms" class="container animated fadeIn">
    <div class="row">
       <div class="col-12">
-         <h3 class="text-left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Card of Frontier Terms of Service</font></font></h3>
+
+![](/img/co-branded-logo.png)
+
+\    <h3 class="text-left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Card of Frontier Terms of Service</font></font></h3>
          <ul class="terms-ul">
             <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1. In this campaign, you can receive the prize stated on the selected card by selecting one of the five cards dealt by the guardian once a day.
                </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. This campaign , One person can participate once a day.
