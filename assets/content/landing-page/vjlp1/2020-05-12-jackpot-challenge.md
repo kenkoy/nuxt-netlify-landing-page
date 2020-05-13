@@ -15,6 +15,8 @@ promo_step_3_description: GET FREE CASH ONCE A DAY!
 header_join_button: Join now
 header_login_button: Login
 ---
+![](/img/co-branded-logo.png)
+
 <section id="terms" class="container animated fadeIn">
    <div class="row">
       <div class="col-12">
