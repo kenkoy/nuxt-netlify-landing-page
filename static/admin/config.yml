@@ -1,38 +1,18 @@
 backend:
-  #name: git-gateway
-  name: github
-  repo: kenkoy/nuxt-netlify-landing-page
-  branch: master
+  name: git-gateway
+  #name: github
+  #repo: kenkoy/nuxt-netlify-landing-page
+  #branch: master
 
 publish_mode: editorial_workflow  
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "VJLP3-NoForm"
-    label: "Vera&John Template 3"
-    format: 'frontmatter'
-    folder: "assets/content/landing-page"
-    create: true
-    identifier_field: "promo_title"
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    preview_path: vjlp3/{{slug}}
-    show_preview_links: false
-    editor:
-      preview: true
-    fields:
-      - {label: "Promotion Title", name: "promo_title", widget: "string"}
-      - {label: "Promotion Description", name: "promo_description", widget: "string"}
-      - {label: "Promotion Join Button", name: "promo_join_button", widget: "string"}
-      - {label: "Header Login Button", name: "header_login_button", widget: "string"}
-      - {label: "Header Join Button", name: "header_join_button", widget: "string"}
-      - {label: Template, name: promo_template, widget: hidden, default: "VJLP3-NoForm"}
-      - {label: 'Body', name: 'body', widget: 'markdown' }
-
   - name: 'VJLP1-NoForm'
     label: 'Vera&John Template 1'
     format: 'frontmatter'
-    folder: 'assets/content/landing-page'
+    folder: 'assets/content/landing-page/vjlp1'
     create: true
     identifier_field: "promo_title"
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -54,3 +34,24 @@ collections:
       - {label: "Promotion Step 3 Description", name: promo_step_3_description, widget: "string"}
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "VJLP3-NoForm"
+    label: "Vera&John Template 3"
+    format: 'frontmatter'
+    folder: "assets/content/landing-page/vjlp3"
+    create: true
+    identifier_field: "promo_title"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    preview_path: vjlp3/{{slug}}
+    show_preview_links: false
+    editor:
+      preview: true
+    fields:
+      - {label: "Promotion Title", name: "promo_title", widget: "string"}
+      - {label: "Promotion Description", name: "promo_description", widget: "string"}
+      - {label: "Promotion Join Button", name: "promo_join_button", widget: "string"}
+      - {label: "Header Login Button", name: "header_login_button", widget: "string"}
+      - {label: "Header Join Button", name: "header_join_button", widget: "string"}
+      - {label: Template, name: promo_template, widget: hidden, default: "VJLP3-NoForm"}
+      - {label: 'Body', name: 'body', widget: 'markdown' }
+
+  
