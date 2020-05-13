@@ -4,6 +4,7 @@ promo_description: 300 bonusspins to all new customers when you deposit at least
 promo_join_button: Join now
 header_login_button: Login
 header_join_button: Join now
+promo_template: VJLP3-NoForm
 ---
 <section id="bf-usps" class="container">
    <div class="row">

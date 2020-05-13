@@ -1,5 +1,5 @@
 <template>
-    <nuxt-link :to="'/vjlp3/' + slug" class="post-preview">
+    <nuxt-link :to="'/' + path + '/' + slug" class="post-preview">
         <article>
             <div class="post-content">
               <h3>{{ title }}</h3>
@@ -13,6 +13,10 @@
 export default {
     name: 'PostPreview',
         props: {
+            path: {
+                type: String,
+                required: true
+            },
             slug: {
                 type: String,
                 required: true

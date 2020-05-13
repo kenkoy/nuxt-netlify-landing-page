@@ -1,20 +1,12 @@
 const glob = require('glob')
 const path = require('path')
 
-const markdownPaths = ['vjlp3']
-
-var getDynamicRoutes = function() {
-  return [].concat(
-    glob
-      .sync('*.md', { cwd: 'assets/content/landing-page' })
-      .map((filepath) => `/vjlp3/${path.basename(filepath, '.md')}`),
-  )
-}
+const markdownPaths = ['vjlp1','vjlp3']
 
 function dynamicMarkdownRoutes() {
   return [].concat(
     ...markdownPaths.map(mdPath => {
-      return glob.sync(`${mdPath}/*.md`, { cwd: 'assets/content/landing-page' })
+      return glob.sync(`${mdPath}/*.md`, { cwd: 'assets/content/landing-page/' })
         .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`);
     })
   );
@@ -22,7 +14,7 @@ function dynamicMarkdownRoutes() {
 
 export default {
   generate: {
-    routes: getDynamicRoutes
+    routes: dynamicMarkdownRoutes
   },
 
   mode: 'universal',
