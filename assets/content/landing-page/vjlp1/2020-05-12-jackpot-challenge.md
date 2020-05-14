@@ -1,5 +1,5 @@
 ---
-promo_title: Jackpot Challenge!
+promo_title: Jackpot Challenge!!
 promo_subtitle: INCREASE YOUR MILITARY FUNDS WITH DAILY CASH !
 promo_banner: /img/intercasino-intro.jpg
 promo_login_button: Login
