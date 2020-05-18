@@ -4,7 +4,7 @@
         <section id="terms" class="container animated fadeIn">
             <div class="row">
                 <div class="col-12">
-                    <div v-html="body_content"/>
+                    <div v-html="promo_content"/>
                 </div>
             </div>
         </section>
@@ -13,9 +13,9 @@
 
 <script>
 export default {
-    name: 'BodyContent',
+    name: 'Content',
         props: {
-            body_content: {
+            promo_content: {
                 type: String,
                 required: true
             }

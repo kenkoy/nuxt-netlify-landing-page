@@ -1,6 +1,6 @@
 <template>    
     <section class="featured-posts">
-        <PostPreview 
+        <ThePostPreview 
             v-for="post in posts"
                 :key="post.slug"
                 :slug="post.slug"
@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import PostPreview from '@/components/VJLP3/PostPreview'
+import ThePostPreview from '@/components/templates/ThePostPreview'
 
 export default {
     components: {
-        PostPreview
+        ThePostPreview
     },
     props: {
         posts: {

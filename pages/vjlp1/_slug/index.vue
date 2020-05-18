@@ -1,12 +1,12 @@
 <template>
   <div>
-    <Header 
+    <TheHeader 
       :title = "post.attributes.promo_title"
       :subtitle = "post.attributes.promo_subtitle"
       :login_button = "post.attributes.promo_login_button"
       :join_button = "post.attributes.promo_join_button"
     />
-    <Steps 
+    <TheSteps 
       :step1_header = "post.attributes.promo_step_1_header"
       :step1_description = "post.attributes.promo_step_1_description"
       :step2_header = "post.attributes.promo_step_2_header"
@@ -14,24 +14,24 @@
       :step3_header = "post.attributes.promo_step_2_header"
       :step3_description = "post.attributes.promo_step_2_description"
     />
-    <Body 
-      :body_content = "post.html"
+    <TheBody 
+      :promo_content = "post.html"
     />
   </div>
 </template>
 
 <script>
-import Header from '~/components/VJLP1/Header.vue'
-import Steps from '~/components/VJLP1/Steps.vue'
-import Body from '~/components/VJLP1/Body.vue'
+import TheHeader from '~/components/templates/vjlp1/TheHeader.vue'
+import TheSteps from '~/components/templates/vjlp1/TheSteps.vue'
+import TheBody from '~/components/templates/vjlp1/TheBody.vue'
 
 export default {
   layout: 'vjlp1',
 
   components: {
-    Header,
-    Steps,
-    Body
+    TheHeader,
+    TheSteps,
+    TheBody
   },
 
   async asyncData ({ params }) {

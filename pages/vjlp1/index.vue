@@ -1,15 +1,15 @@
 <template>
     <div class="post-page">
-       <PostList :posts="posts" />     
+       <ThePostList :posts="posts" />     
     </div>
 </template>
 
 <script>
-import PostList from '@/components/VJLP3/PostList'
+import ThePostList from '~/components/templates/ThePostList'
 
 export default {
     components: {
-        PostList
+        ThePostList
     },
     async asyncData () {
         const mdFiles = await require.context('~/assets/content/landing-page/vjlp1/', true, /\.md$/)
@@ -22,7 +22,6 @@ export default {
         }))
         //filter to vjlp3 templates only
         //.filter((mdFiles) => mdFiles.attributes.promo_template == 'VJLP1-NoForm')
-
         return { posts: mdFilesContent.reverse() }
     }  
 }
