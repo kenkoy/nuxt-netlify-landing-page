@@ -5,8 +5,8 @@
                 :key="post.slug"
                 :slug="post.slug"
                 :path="post.path"
-                :title="post.attributes.promo_title"
-                :description="post.attributes.promo_description"
+                :title="post.attributes.promo_banner.promo_title"
+                :description="post.attributes.promo_banner.promo_subtitle"
         />
     </section>    
 </template>

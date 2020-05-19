@@ -1,15 +1,21 @@
 <template>
   <div>
     <TheHeader 
-      :header_login_button = "post.attributes.header_login_button"
-      :header_join_button = "post.attributes.header_join_button"/>
+      :header_login_button = "post.attributes.promo_banner.promo_login_button"
+      :header_join_button = "post.attributes.promo_banner.promo_join_button"/>
     <TheBanner 
-      :promo_title = "post.attributes.promo_title"
-      :promo_description = "post.attributes.promo_description"
-      :promo_join_button = "post.attributes.promo_join_button"/>
+      :promo_title = "post.attributes.promo_banner.promo_title"
+      :promo_description = "post.attributes.promo_banner.promo_subtitle"
+      :promo_join_button = "post.attributes.promo_banner.promo_join_button"/>
     <TheGameSlider />
     <TheBody :promo_content = "post.html"/>
     <TheFooter />
+    <style>
+      :root {
+        --bg-image: url('{{ post.attributes.promo_banner.promo_images.promo_bg_desktop }}');
+        --bg-image-m: url('{{ post.attributes.promo_banner.promo_images.promo_bg_mobile }}');
+      }
+    </style>
   </div>
 </template>
 
@@ -22,7 +28,6 @@ import TheFooter from '~/components/templates/vjlp3/TheFooter.vue'
 
 export default {
     layout: 'vjlp3',
-
     components: {
       TheHeader,
       TheBanner,
@@ -30,7 +35,6 @@ export default {
       TheBody,
       TheFooter
     },
-
     async asyncData ({ params }) {
       try {
         const post = await import('~/assets/content/landing-page/vjlp3/'+ params.slug +'.md')
@@ -52,9 +56,14 @@ export default {
   .bf-game-icon-4 { background: url("~assets/images/vjlp3/icon_4.png") center no-repeat;  background-size: contain; }
   .bf-game-icon-5 { background: url("~assets/images/vjlp3/icon_5.png") center no-repeat;  background-size: contain; }
   #strip .small-terms { display: block; } #strip { background:none; }
-  #bf-banner-img-2 { background: url("~assets/images/vjlp3/banner-2.png") bottom center no-repeat; background-size: contain; }
+  #bf-banner-img-2 { 
+    background: var(--bg-image) bottom center no-repeat; 
+    background-size: contain; 
+  }
   @media only screen and (max-width: 767px) {
-    #bf-banner-img-2 { background: url("~assets/images/vjlp3/banner-2-m.png") bottom center no-repeat; background-size: contain; }
+    #bf-banner-img-2 { 
+      background: var(--bg-image-m) bottom center no-repeat; 
+      background-size: contain; }
   }
 </style>
 

@@ -14,43 +14,71 @@ collections:
     format: 'frontmatter'
     folder: 'assets/content/landing-page/vjlp1'
     create: true
-    identifier_field: "promo_title"
+    identifier_field: "promo_banner.promo_title"
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     preview_path: vjlp1/{{slug}}
     show_preview_links: false
     editor:
-      preview: false
+      preview: true
     fields:
-      - {label: "Promotion Title", name: "promo_title", widget: "string"}
-      - {label: "Promotion Subtitle", name: "promo_subtitle", widget: "string"}
-      - {label: "Promotion Banner", name: promo_banner, widget: image}
-      - {label: "Promotion Login Button", name: promo_login_button, widget: "string"}
-      - {label: "Promotion Join Button", name: promo_join_button, widget: "string"}
-      - {label: "Promotion Step 1 Header", name: promo_step_1_header, widget: "string"}
-      - {label: "Promotion Step 1 Description", name: promo_step_1_description, widget: "string"}
-      - {label: "Promotion Step 2 Header", name: promo_step_2_header, widget: "string"}
-      - {label: "Promotion Step 2 Description", name: promo_step_2_description, widget: "string"}
-      - {label: "Promotion Step 3 Header", name: promo_step_3_header, widget: "string"}
-      - {label: "Promotion Step 3 Description", name: promo_step_3_description, widget: "string"}
+      - label: "Promotion Banner"
+        name: "promo_banner" 
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Title", name: "promo_title", widget: "string"}
+          - {label: "Subtitle", name: "promo_subtitle", widget: "string"}
+          - {label: "Login Button", name: promo_login_button, widget: "string"}    
+          - {label: "Join Button", name: promo_join_button, widget: "string"}
+          - label: "Images"
+            name: "promo_images"
+            widget: "object"
+            colapsed: true
+            fields:
+              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
+              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
+              - {label: "Game Logo", name: promo_game_logo, widget: image}
+      - label: "Promotion Steps"
+        name: "promo_steps" 
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Step 1 Title", name: promo_step_1_title, widget: "string"}
+          - {label: "Step 1 Description", name: promo_step_1_desc, widget: "string"}
+          - {label: "Step 2 Title", name: promo_step_2_title, widget: "string"}
+          - {label: "Step 2 Description", name: promo_step_2_desc, widget: "string"}
+          - {label: "Step 3 Title", name: promo_step_3_title, widget: "string"}
+          - {label: "Step 3 Description", name: promo_step_3_desc, widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}    
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}
-      - {label: "Body", name: "body", widget: "markdown"}
   - name: "VJLP3-NoForm"
     label: "Vera&John Template 3"
     format: 'frontmatter'
     folder: "assets/content/landing-page/vjlp3"
     create: true
-    identifier_field: "promo_title"
+    identifier_field: "promo_banner.promo_title"
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     preview_path: vjlp3/{{slug}}
     show_preview_links: false
     editor:
       preview: true
     fields:
-      - {label: "Promotion Title", name: "promo_title", widget: "string"}
-      - {label: "Promotion Description", name: "promo_description", widget: "string"}
-      - {label: "Promotion Join Button", name: "promo_join_button", widget: "string"}
-      - {label: "Header Login Button", name: "header_login_button", widget: "string"}
-      - {label: "Header Join Button", name: "header_join_button", widget: "string"}
+      - label: "Promotion Banner"
+        name: "promo_banner" 
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Title", name: "promo_title", widget: "string"}
+          - {label: "Subtitle", name: "promo_subtitle", widget: "string"}
+          - {label: "Login Button", name: promo_login_button, widget: "string"}    
+          - {label: "Join Button", name: promo_join_button, widget: "string"}
+          - label: "Images"
+            name: "promo_images"
+            widget: "object"
+            colapsed: true
+            fields:
+              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
+              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP3-NoForm"}
       - {label: 'Body', name: 'body', widget: 'markdown' }
 

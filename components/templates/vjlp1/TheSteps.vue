@@ -5,22 +5,22 @@
 				<div class="col-4 animated fadeIn delay-0s">
 					<div class="num">1</div>
 					<div class="step">
-						<h2>{{step1_header}}</h2>
-						<h3>{{step1_description}}</h3>
+						<h2>{{title1}}</h2>
+						<h3>{{description1}}</h3>
 					</div>
 				</div>
 				<div class="col-4 animated fadeIn delay-1s">
 					<div class="num">2</div>
 					<div class="step">
-						<h2>{{step2_header}}</h2>
-						<h3>{{step2_description}}</h3>
+						<h2>{{title2}}</h2>
+						<h3>{{description2}}</h3>
 					</div>
 				</div>
 				<div class="col-4 animated fadeIn delay-2s">
 					<div class="num">3</div>
 					<div class="step">
-						<h2>{{step3_header}}</h2>
-						<h3>{{step3_description}}</h3>
+						<h2>{{title3}}</h2>
+						<h3>{{description3}}</h3>
 					</div>
 				</div>
 			</div>
@@ -32,27 +32,27 @@
 export default {
      name: 'Header',
         props: {
-            step1_header: {
+            title1: {
                 type: String,
                 required: true
             },
-            step1_description: {
+            description1: {
                 type: String,
                 required: true
             },
-            step2_header: {
+            title2: {
                 type: String,
                 required: true
             },
-            step2_description: {
+            description2: {
                 type: String,
                 required: true
 			},
-			step3_header: {
+			title3: {
                 type: String,
                 required: true
             },
-            step3_description: {
+            description3: {
                 type: String,
                 required: true
             },

@@ -1,22 +1,22 @@
 ---
-promo_title: Jackpot Challenge!!
-promo_subtitle: INCREASE YOUR MILITARY FUNDS WITH DAILY CASH !
-promo_banner: /img/intercasino-intro.jpg
-promo_login_button: Login
-promo_join_button: Register
-promo_step_1_header: REGISTER
-promo_step_1_description: SAFE AND SECURE!
-promo_step_2_header: DEPOSIT
-promo_step_2_description: GET A BONUS!
+promo_banner:
+  promo_title: Jackpot Challenge!!
+  promo_subtitle: INCREASE YOUR MILITARY FUNDS WITH DAILY CASH !
+  promo_login_button: Login
+  promo_join_button: Register
+  promo_images:
+    promo_bg_desktop: /img/bg-desktop.jpg
+    promo_bg_mobile: /img/bg-mobile.jpg
+    promo_game_logo: /img/game-logo.png
+promo_steps:
+  promo_step_1_title: REGISTER
+  promo_step_1_desc: SAFE AND SECURE!
+  promo_step_2_title: DEPOSIT
+  promo_step_2_desc: GET A BONUS!
+  promo_step_3_title: TRY YOUR LUCK
+  promo_step_3_desc: GET FREE CASH ONCE A DAY!
 promo_template: VJLP1-NoForm
-promo_description: 300 bonusspins to all new customers when you deposit at least 100 SEK
-promo_step_3_header: TRY YOUR LUCK
-promo_step_3_description: GET FREE CASH ONCE A DAY!
-header_join_button: Join now
-header_login_button: Login
 ---
-![](/img/co-branded-logo.png)
-
 <section id="terms" class="container animated fadeIn">
    <div class="row">
       <div class="col-12">

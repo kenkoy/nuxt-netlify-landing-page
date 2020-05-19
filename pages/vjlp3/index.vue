@@ -13,7 +13,6 @@ export default {
     },
     async asyncData () {
         const mdFiles = await require.context('~/assets/content/landing-page/vjlp3/', true, /\.md$/)
-        
         //add slug and path in key list of mdFiles
         const mdFilesContent = await mdFiles.keys().map(key => ({
           ...mdFiles(key),
