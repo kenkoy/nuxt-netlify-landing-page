@@ -21,6 +21,7 @@
       :root {
         --bg-image: url('{{ post.attributes.promo_banner.promo_images.promo_bg_desktop }}');
         --bg-image-m: url('{{ post.attributes.promo_banner.promo_images.promo_bg_mobile }}');
+        --game-logo: url('{{ post.attributes.promo_banner.promo_images.promo_game_logo }}');
       }
     </style>
   </div>
