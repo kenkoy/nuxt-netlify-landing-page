@@ -6,7 +6,7 @@ promo_banner:
   promo_login_button: Login
   promo_images:
     promo_bg_desktop: /img/vjlp3-bg-desktop.png
-    promo_bg_mobile: /img/vjlp3-bg-mobile.png
+    promo_bg_mobile: /img/500_f_98334117_4rf0dzxz6pdzlayfteiykx9jvtptskcn.jpg
 promo_template: VJLP3-NoForm
 ---
 <section id="bf-usps" class="container">
