@@ -6,8 +6,8 @@ promo_banner:
   promo_join_button: Register
   promo_images:
     promo_bg_desktop: /img/bg-desktop.jpg
-    promo_bg_mobile: /img/500_f_98334117_4rf0dzxz6pdzlayfteiykx9jvtptskcn.jpg
-    promo_game_logo: /img/500_f_98334117_4rf0dzxz6pdzlayfteiykx9jvtptskcn.jpg
+    promo_bg_mobile: /img/bg-mobile.jpg
+    promo_game_logo: /img/game-logo.png
 promo_steps:
   promo_step_1_title: REGISTER
   promo_step_1_desc: SAFE AND SECURE!
