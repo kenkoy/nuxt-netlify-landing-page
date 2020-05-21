@@ -25,3 +25,8 @@
         </div>
 	</section>
 </template>
+<style scoped>
+#bf-game-slider a div {
+    width: 218px;
+}
+</style>
