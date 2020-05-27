@@ -12,59 +12,54 @@ promo_template: VJLP3-NoForm
 <section id="bf-usps" class="container">
    <div class="row">
       <div id="intro" class="col-12">
-         <h3>Vera&amp;John - A casino online that's more fun.</h3>
-         <p>Vera&amp;John offer a loads and loads of online slot machines and table games in a user friendly and safe environment. At Vera&amp;John Casino you can play online games such as Toki Time and table games such as roulette, to slot machines, video slots and other online casino games. We think Vera&amp;John is a fantastic online casino and hope that you will think our casino is the best thing since well -the invention of electricity!<br><br>If you’re looking for an online casino experience that’s fun, safe and friendly, then look no further! At Vera&amp;John, we offer a user-friendly experience that’s second to none. Whether you’re looking for your classic favourite games like blackjack or roulette, or slot game with massive jackpots, you’re in luck here. To top it all off, we also have market leading live casino games, scratch cards, and plenty more.</p>
+         <h3>日本No. 1カジノで今日からプレイをはじめちゃおう！<br></h3>
+         <p>安心・安全・楽しいの3拍子が揃った、ベラジョン・オンラインカジノは、初心者の方でも気軽に、そして簡単にプレイを楽しむことができます。インターネット環境さえあれば、パソコン以外にも、モバイル版の利用が可能なiPhone やアンドロイドといったスマホ、iPadなどといったタブレットで、24時間365日プレイを楽しむことができるので、いつでもどこでも、オンラインで一獲千金を狙うことができちゃいます！<br><br>ベラジョンでは、数百種類ものゲームを取り揃えており、StarburstやMoon Princess、Gemixなどの大人気スロットはもちろん、バカラやブラックジャック、ルーレットなどのテーブルゲーム、本場カジノの興奮を楽しめる臨場感あふれたライブカジノ、さらには、1千万円を超えるジャックポットを叩き出すことで有名なCleopatraやDivine Fortune、Mega Moolahなどのプログレッシブ・ジャックポットスロット。さらに、日本で大人気のパチンコのようなボーナスゲームや、パチスロをそのままオンラインで体感できるようなスロットも見つけることができます。なんと競馬のゲームもあるんです！<br><br>今すぐベラジョンで、日本でカジノ体験を楽しみましょう！</p>
       </div>
       <div class="bf-separator col-12"></div>
       <div class="col-12 col-md-6">
-         <h3>Collect Your Casino Bonus!</h3>
-         <p>At Vera&amp;John we want you to enjoy our fantastic first deposit bonus. From the moment you sign up to our online casino, you’ll be welcomed with a fabulous first deposit bonus that we’re sure you’re going to love. If you’re a fan of casino bonuses then Vera&amp;John is the place for you.</p>
-         <h3>Innovative and Safe Online Casino</h3>
-         <p>We’re adamant Vera&amp;John is the best thing since sliced bread, but don’t just take our word for it! Our players love the innovative games we bring them on a regular basis, all played in a safe and welcoming environment. We want to create the most fun and inspiring online casino in the world, and we’ve got the experience to do just that. We’re run by casino-lovers with years of experience in the industry, which means we know how to bring you the best in casino games and the most innovative software, all wrapped up in a safe and secure online and mobile casino.</p>
-         <h3>Loyalty Program</h3>
-         <p>The rewards never stop at Vera&amp;John -as you’ll soon be able to tell. We have a seriously generous online casino loyalty program; so generous, you can get points just for registering, logging in, and visiting different areas of the site. There are plenty of ways to earn loyalty points and even more ways to spend them. Want some cash bonus spins on your favourite slot games? Just trade insome of your points! No matter how you spin it, our loyalty program is one of the best in the online casino world.</p>
-         <h3>The Best Slots at Vera&amp;John</h3>
-         <p>We absolutely love slot machines at Vera&amp;John, which is why we have hundreds for you to choose from. Check out some of the massive jackpot favourites, such as Mega Moolah and Mega Fortune. Want something a bit more classic? We have those too! Check out Fruit Fiesta, Supernudge 6000, Ace of Spades and Mega Joker (to name a few). Whichever slot game you love, you’re bound to find it here. We have nearly 600 online slots and that number gets bigger all the time.</p>
+         <span style="color: rgb(254, 230, 61); font-size: 1.5em;">勝負金が2倍! 最高$500初回入金ボーナスをもらってお得にプレイ！</span><br>
+         <p><span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen, Ubuntu, Cantarell, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;, sans-serif;">ベラジョンでの初回入金時には、軍資金が2倍になる★ビギナーズボーナス★がお待ちしています! 最高$500までもらえる、100%入金ボーナスを受け取って、いろんなゲームにトライしてみましょう！<br>さらに、キャンペーンメール限定ボーナスもご用意していますので、アカウント登録後、キャンペーンメールの配信設定をオンにすることをお忘れなく♪<br><br></span><span style="color: rgb(254, 230, 61); font-size: 1.8em;">安心・安全のオンラインカジノ環境</span><br>私たちは、ベラジョンカジノが革新的で安心・安全なオンラインカジノであり、食パン以来の大発明! と自負しています！ カジノ業界での経験豊富なプロ集団が、世界一楽しいエンターテイメントをお届けすることを目標に掲げて、日々最高のカジノ体験をお届け！<br>さらに、各国の政府公認ライセンスを取得し、業界でトップクラスのゲーム配信会社を導入。さらに、カジノで遊べる製品は、ランダム・ナンバー・ジェネレーターと呼ばれる、ゲーム結果をランダムに生成するシステムを利用しており、ゲームの公平性も第三者機関によって保証されています。<br>また、プレイヤーの皆様には、ご自身のゲームプレイ習慣を理解し、健全にカジノをお楽しみいただきたいと思っています。当サイトでご利用いただける「自己規制」ページでは、サイトへのアクセス制限や入金に上限を設定することが可能です。安心・安全・楽しくカジノライフを始めちゃおう！<br><br></p>
+         <div><span style="color: rgb(254, 230, 61); font-size: 1.5em;">ご褒美プログラム</span><br></div>
+         <p>ベラジョンでは、ログインや入金、アカウント認証など、サイト上で行うあらゆるアクションにより、ご褒美がもらえます。 これらのご褒美は、ベラジョン・ショップでお得なアイテムを購入するのに使用できる、コインとして獲得できます。コインが増えるとレベルも更新され、入金ボーナス、フリースピン、特定のゲームで利用できるボーナスなどといったアイテムの購入が可能。期間限定アイテムやお得なアイテム盛りだくさん！<br>コインがキャッシュに変わっちゃう!? ベラジョン・ショップの目玉アイテムも取り揃えていますので、ぜひご利用ください♪<br><br></p>
+         <h3>素晴らしいスロットの数々</h3>
+         <p>リムジンに乗り込み、シャンパンの栓を抜くことを想像しながら、人気スロットゲームをプレイし始めませんか?! パチスロ風スロットの元祖、Hawaiian Dream、クレイジーなゲーム体験を求めて宇宙に旅立つStarburst、さらに一攫千金ジャックポットゲームをプレイしたりして、お気に入りゲームを見つけてみてください！もちろん、パソコン、モバイルなど、利用端末に関わらず、最高のゲームをお楽しみいただけます！<br></p>
       </div>
       <div class="col-12 col-md-6">
-         <h3>Online Live Casino Games</h3>
-         <p>If you’re more of a fan of table games, then you’ll be pretty impressed with the huge range of blackjack, roulette, baccarat, video poker, and even some of the more obscure! While our table games are some of the best in the business, our live casino is also something to behold. Play with live dealers who are spinning the roulette wheel, dealing the cards, and taking you on a Las Vegas journey in the comfort of your own home.</p>
-         <h3>Fast and Safe Mobile Casino</h3>
-         <p>Want to play on the go? Vera&amp;John has a speedy and secure mobile casino that you can play on your phone’s browser! Whether you want to spin the reels on the bus, or play some blackjack on the train, you’ll be able to do so at the Vera&amp;John mobile casino. Many of our games come in mobile-friendly form, and there are plenty more on the way too.</p>
-         <h3>Customer Support When You Need It</h3>
-         <p>If you’ve ever got a question or query then make sure you get in touch with our friendly customer support team. And we’ve made it super easy for you to get in touch. You can call, email or use our live chat feature to speak to a customer support rep. We pride ourselves in fast turnaround times, and you can find our opening hours on the ‘Contact Us’ page.</p>
-         <h3>Swedish Online Casino</h3>
-         <p>Vera&amp;John is an Internet casino that is regulated by the Swedish Gambling Authority. Thanks to our Swedish casino license, you can play casino games with confidence.</p>
-         <h3>Become a Vera&amp;John Member Now!</h3>
-         <p>So,what are you waiting for? Big jackpot games, hundreds of slot machines, your favourite table games, a stunning live casino, a mobile casino that’s fast and safe, speedy customer service... We tick all the right boxes, now we just need you. Join up now and make the most out of the first deposit bonus at Vera&amp;John online casino.</p>
+         <h3>完全生配信! ライブカジノゲーム<br></h3>
+         <p>テーブルゲームファンのプレイヤーに特におすすめ！ブラックジャックやルーレット、バカラやビデオポーカーなど、バライティ豊かなゲームが盛りだくさん! しかも、ライブカジノでは、リアルタイムでディーラーと対戦！<br>実際にチャットを通じて会話までできちゃうので、まるで海外カジノのテーブルに座り、実際にディーラーと対戦してるかのような感覚です！<br>さらに、本場の海外カジノから直接配信されているテーブルもあるので、日本に居ながらにして本場カジノがお手軽に体験できちゃう、オンラインカジノならではのライブゲームはクセになること間違いなし！<br><br></p>
+         <h3>モバイル・カジノ</h3>
+         <p>ベラジョンでは、パソコン版と変わらない最高のカジノ体験を、そっくりそのままモバイル版でもお楽しみいただけます! リアルタイムでディーラーと繋がるライブカジノを電車の中で、エキサイティングなスロットゲームを外出中に、いつでもどこでもお好きなゲームを快適な環境で遊べるのが、ベラジョンのモバイル・カジノです！<br><br></p>
+         <h3>ライブチャットおよびEメールによる日本語サポート</h3>
+         <p>ベラジョンの日本語カスタマーサポートは、迅速かつ丁寧! 何かお困りのことがありましたら、お気軽にお問い合わせください♪ 多くのプレイヤーからお寄せいただく質問は、ヘルプ・センタ―のよくある質問(FAQ)または「ヘルプ」よりご確認いただけます。<br><br></p>
+         <h3>ものの5分でスピーディー! 今すぐ登録しよう!<br></h3>
+         <p>最高の環境が整ったベラジョンオンラインカジノに登録するなら今でしょ！<br>しかも、ベラジョンでの初めてのご入金時には、勝負金が2倍になる★初回入金ボーナス★が、最大$500までもらえます！<br>安心・安全・楽しいベラジョンカジノで、今日こそカジノライフをスタートしちゃいましょう! グッドラック<br></p>
       </div>
    </div>
 </section>
-
+<section id="terms-anchor" class="container animated fadeIn"></section>
+<div class="container-fluid pp">
+   <div class="container">
+      <div class="row">
+         <div class="col-12">
+            <div class="payment-providers"></div>
+         </div>
+      </div>
+   </div>
+</div>
 <section id="terms" class="container">
    <div class="row">
       <div class="bf-separator col-12"></div>
       <div class="col-12">
-         <h3>Terms and Conditions</h3>
-         <ul>
-            <li>This offer is available only once per player, starting on 02/05/2019 11:00 CEST, in case no other bonus was claimed by the player in 2019 from InterCasino, Vera&amp;John or Jackpotjoy Sweden.</li>
-            <li>This offer entitles players to a 100% bonus of up to 490kr for a single deposit of 100kr or more, or a 200% bonus of up to 2000kr for a single deposit of 500kr or more during the promotion period</li>
-            <li>Players receiving this bonus are no longer eligible to claim any further bonuses from Vera&amp;John or any other sister brand registered with Dumarca Gaming Ltd.</li>
-            <li>In order to receive this offer, please ensure that the “Claim bonus by default” option has been enabled in your account settings, or select the bonus option on the cashier page before finalising your deposit.</li>
-            <li>Bonus will be paid automatically immediately following a deposit of 100kr or more.6.This bonus carries a standard 40x wagering requirement playable on any game.</li>
-            <li>Withdrawing cash or associated cash winnings before wagering requirements are complete will automatically forfeit any remaining bonus amount.</li>
-            <li>Deposits made with eWallets such as Neteller or Skrill will not activate any deposit bonuses or promotions for players residing in the United Kingdom, Sweden, Norway, or Finland.</li>
-            <li>The maximum single bet permitted whilst using a welcome bonus is 62kr on slot games and 250kr on table games and roulette. Exceeding this limit will lead to confiscation of any bonus and associated winnings.</li>
-            <li>Wagering requirements must be completed within 60 days or bonus funds and related winnings will be confiscated.</li>
-            <li>Vera&amp;John reserves the right to remove bonuses and associated winnings in cases where fraudulent activity or abuse is suspected. This shall include, but is not be limited to: using more than one account, bonus stacking, two tier betting, multiple account/proxy account strategy, using a VPN or masking IP address, Affiliate CPA or revenue share abuse.</li>
-            <li>Different games contribute different percentages toward satisfying wagering requirements: Slots and Instant Games (100%), Roulette, Baccarat and Punto Banco, Video Poker, Caribbean Poker, Texas Hold’em (15%), Blackjack, Pontoon, Live Casino (10%).</li>
-            <li>Vera&amp;John reserves the right to alter or end this promotion at any time without prior notice</li>
-         </ul>
+         <h3>ビギナーズボーナス利用規約</h3>
+         <ul>1. このキャンペーンでは、100%の初回入金ボーナスを最高$500まで、50%のセカンド入金ボーナスを最高$250まで、100%のサード入金ボーナスを最高$200まで獲得することができます。<br> 2. 有効な入金額により、ボーナスが自動的に進呈され、ボーナスのお引き出しには、ボーナス額の20倍にあたる金額をゲームで賭ける必要があります。<br> 3.ビギナーズボーナスを獲得するためには、入金時に、入金ページにある「ボーナス」のボックスにチェックが入力されている必要があります。 <br>4. ボーナスの有効期限は30日間です。&nbsp; <br>5. このキャンペーンは各入金毎にお1人様1回のみ有効となります。<br>6. このキャンペーンは他のキャンペーンとの併用はできません。 <br>7. このキャンペーンは日本のプレイヤー様のみ対象となります。 <br>8. ボーナスを使ったゲームプレイでの1度の最大賭け額は、スロット/スクラッチカードで$6.25、またはテーブルゲーム/ライブカジノまで$25とします。この金額を上回った場合には、ボーナスとそのボーナスに関連するすべての勝利金は没収されます。 <br>9. ベラジョンはいかなるときも通告なしでこのキャンペーンを変更、終了できる権利を有します。 <br></ul>
       </div>
    </div>
+   <div class="bf-separator col-12"></div>
+   <div class="col-12">
+      <h3>最高$500初回入金ボーナス利用規約</h3>
+      <ul>1. このキャンペーンは、ベラジョン初めての入金を行うプレイヤー様が対象となります。<br>2. このキャンペーンでは、最初の1回の入金で、100％入金ボーナスを獲得することができます。<br>3. 初回入金ボーナスは、最大$500まで獲得することができます。<br>4. 入金ボーナスを獲得するには、入金時にボーナスの受け取り希望欄にチェックを入れる必要があります。<br><br>5. 入金ボーナスは、$10以上を入金した後、自動的に進呈されます。<br>6. 入金した分のキャッシュは、ボーナスの出金賭け条件の対象外となります。また、ボーナスは、入金した分のキャッシュの利用後、使用可能となります。<br>7. 進呈されたボーナスのお引き出しには、ボーナス額の20倍にあたる出金賭け条件をゲームで賭けて満たす必要があります。<br>8. 出金賭け条件を満たす前に、キャッシュまたはそれに関連するキャッシュ勝利金を出金する場合、残っているボーナスはすべて没収されます。<br>9. 出金賭け条件は、ボーナス付与から30日以内に達成できない場合、ボーナス及びそれにより獲得した勝利金が没収されます。<br>10. ベラジョンはプレイヤー様による不正行為が認められた場合、ボーナスおよびそれにより獲得した勝利金を無効とする権利を有します。不正行為についてはキャンペーンの一般規約をご確認ください。<br>11. 出金賭け条件への適用率は、ゲームによって異なります。詳細は<a href="https://www.verajohn.com/ja/about/our-casino-bonuses" onclick="event.preventDefault()">カジノボーナス</a>のページをご確認ください。<br>12. 第三者のウェブサイト経由でベラジョンに登録したアカウントは、このボーナスの対象外となります。<br>13. このキャンペーンは日本のプレイヤー様のみ対象となります。<br>14. ボーナスを使ったゲームプレイでの1度の最大賭け額は、スロット/スクラッチカードで$6.25、またはテーブルゲーム/ライブカジノまで$25とします。この金額を上回った場合には、ボーナスとそのボーナスに関連するすべての勝利金は没収されます。<br>15. ベラジョンはいかなるときも通告なしでこのキャンペーンを変更、終了できる権利を有します。</ul>
+   </div>
    <ul>
-      <li><a href="https://casino.verajohn.com/about/terms-and-conditions">General terms and conditions apply.</a></li>
-      <li><a href="https://casino.verajohn.com/about/our-casino-bonuses">Casino bonus information.</a></li>
-      <li><a href="https://casino.verajohn.com/about/promotions-terms-and-conditions">General Promotion Terms.</a></li>
+      <li>通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</li>
    </ul>
 </section>
