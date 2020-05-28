@@ -28,7 +28,7 @@ export default {
     height: 150px;
     background: url(https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg) center center no-repeat;
 }
-#bf-game-slider .slider {
+#bf-game-slider .slick-slider {
     margin: 10px 0;
 }
 </style>
