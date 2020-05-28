@@ -19,7 +19,7 @@ export default {
         },  
 }
 </script>
-<style scoped>
+<style>
 #ja-jp .payment-providers {
     height: 150px;
     background: url(https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg) center center no-repeat;
