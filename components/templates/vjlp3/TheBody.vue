@@ -31,9 +31,6 @@ export default {
 #bf-game-slider .slick-slider {
     margin: 10px 0;
 }
-.col-12 {
-    padding: 0;
-}
 #bf-usps .row {
     margin: 0;
 }
