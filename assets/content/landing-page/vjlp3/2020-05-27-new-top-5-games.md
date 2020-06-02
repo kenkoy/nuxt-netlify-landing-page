@@ -2,7 +2,9 @@
 promo_banner:
   promo_title: New Top 5 Games
   promo_login_button: 登録
+  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
   promo_join_button: 今すぐプレイ
+  promo_join_button_redirect_url: https://casino.verajohn.com/#join
   promo_images:
     promo_bg_desktop: /img/new-top-5-games-banner-2-d.png
     promo_bg_mobile: /img/new-top-5-games-banner-2-m.png

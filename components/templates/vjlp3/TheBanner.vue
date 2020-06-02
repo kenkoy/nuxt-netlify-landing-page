@@ -5,13 +5,13 @@
                 <div id="bf-banner-img-2" class="col-lg-12">
                     <h1>{{promo_title}}</h1>
                     <h2>{{promo_description}}</h2>
-                    <a class="signup-btn d-none d-lg-block" href="#">
+                    <a class="signup-btn d-none d-lg-block" v-bind:href="promo_join_button_redirect_url">
                     <div class="bf-button bf-secondary-bg">{{promo_join_button}}</div>
                     </a>
                 </div> 
                 <div class="d-block d-lg-none col-12">
                     <div class="center-button">                          
-                        <a class="signup-btn" href="#">
+                        <a class="signup-btn" v-bind:href="promo_join_button_redirect_url">
                         <div class="bf-button bf-secondary-bg">{{promo_join_button}}</div>
                         </a>
                     </div>
@@ -37,7 +37,11 @@ export default {
             promo_join_button: {
                 type: String,
                 required: true
-            }
+            },
+            promo_join_button_redirect_url: {
+                type: String,
+                required: true
+            },
         }
     }
 </script>

@@ -1,6 +1,6 @@
 <template>
     <header id="strip-container" class="container-flex h-100">
-		<a id="login-btn" href="#signin" class="login hvr-pulse">
+		<a id="login-btn" v-bind:href="login_button_redirect_url" class="login hvr-pulse">
 			<div class="animated fadeIn">
 				<i class="material-icons">exit_to_app</i> 
 				<div class="login-txt">{{login_button}}</div>
@@ -22,7 +22,7 @@
                            {{subtitle}}
                            </span>                              
                        </h2>
-                       <a id="signup-btn" href="#" class="button button-lrg d-block">{{join_button}}</a>       
+                       <a id="signup-btn" v-bind:href="join_button_redirect_url" class="button button-lrg d-block">{{join_button}}</a>       
                    </div>
                </div>
             <div id="stripblank" class="col-lg-7"></div>
@@ -47,7 +47,15 @@ export default {
                 type: String,
                 required: true
             },
+            login_button_redirect_url: {
+                type: String,
+                required: true
+            },
             join_button: {
+                type: String,
+                required: true
+            },
+            join_button_redirect_url: {
                 type: String,
                 required: true
             }

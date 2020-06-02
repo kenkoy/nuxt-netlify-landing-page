@@ -1,7 +1,9 @@
 ---
 promo_banner:
   promo_login_button: 登録
+  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
   promo_join_button: 今すぐプレイ
+  promo_join_button_redirect_url: https://casino.verajohn.com/#join
   promo_subtitle: " "
   promo_title: HD - Pachinko v2
   promo_images:

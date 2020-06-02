@@ -2,11 +2,14 @@
   <div>
     <TheHeader 
       :header_login_button = "post.attributes.promo_banner.promo_login_button"
-      :header_join_button = "post.attributes.promo_banner.promo_join_button"/>
+      :header_login_button_redirect_url = "post.attributes.promo_banner.promo_login_button_redirect_url"
+      :header_join_button = "post.attributes.promo_banner.promo_join_button"
+      :header_join_button_redirect_url = "post.attributes.promo_banner.promo_join_button_redirect_url"/>
     <TheBanner 
       :promo_title = "post.attributes.promo_banner.promo_title"
       :promo_description = "post.attributes.promo_banner.promo_subtitle"
-      :promo_join_button = "post.attributes.promo_banner.promo_join_button"/>
+      :promo_join_button = "post.attributes.promo_banner.promo_join_button"
+      :promo_join_button_redirect_url = "post.attributes.promo_banner.promo_join_button_redirect_url" />
     <TheGameSlider />
     <TheBody :promo_content = "post.html"/>
     <TheFooter />
@@ -38,6 +41,7 @@ export default {
     async asyncData ({ params }) {
       try {
         const post = await import('~/assets/content/landing-page/vjlp3/'+ params.slug +'.md')
+        console.log(post.attributes.promo_banner.promo_login_button_redirect_url)
         return {
           post
         }

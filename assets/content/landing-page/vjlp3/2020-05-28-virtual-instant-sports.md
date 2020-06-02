@@ -3,7 +3,9 @@ promo_banner:
   promo_title: Virtual/Instant Sports
   promo_subtitle: " "
   promo_login_button: 登録
+  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
   promo_join_button: 今すぐプレイ
+  promo_join_button_redirect_url: https://casino.verajohn.com/#join
   promo_images:
     promo_bg_desktop: /img/virtual-instant-sports-banner-2-d.png
     promo_bg_mobile: /img/virtual-instant-sports-banner-2-m.png

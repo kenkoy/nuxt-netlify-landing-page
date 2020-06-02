@@ -1,8 +1,8 @@
 backend:
-  name: git-gateway
-  #name: github
-  #repo: kenkoy/nuxt-netlify-landing-page
-  #branch: master
+  #name: git-gateway
+  name: github
+  repo: kenkoy/nuxt-netlify-landing-page
+  branch: master
 
 publish_mode: editorial_workflow  
 media_folder: static/img
@@ -28,8 +28,10 @@ collections:
         fields:
           - {label: "Title", name: "promo_title", widget: "string"}
           - {label: "Subtitle", name: "promo_subtitle", widget: "string"}
-          - {label: "Login Button", name: promo_login_button, widget: "string"}    
+          - {label: "Login Button", name: promo_login_button, widget: "string"}
+          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}    
           - {label: "Join Button", name: promo_join_button, widget: "string"}
+          - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}
           - label: "Images"
             name: "promo_images"
             widget: "object"
@@ -70,8 +72,10 @@ collections:
         fields:
           - {label: "Title", name: "promo_title", widget: "string"}
           - {label: "Subtitle", name: "promo_subtitle", widget: "string"}
-          - {label: "Login Button", name: promo_login_button, widget: "string"}    
+          - {label: "Login Button", name: promo_login_button, widget: "string"}   
+          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}     
           - {label: "Join Button", name: promo_join_button, widget: "string"}
+          - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}    
           - label: "Images"
             name: "promo_images"
             widget: "object"

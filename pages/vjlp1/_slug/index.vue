@@ -4,7 +4,9 @@
       :title = "post.attributes.promo_banner.promo_title"
       :subtitle = "post.attributes.promo_banner.promo_subtitle"
       :login_button = "post.attributes.promo_banner.promo_login_button"
+      :login_button_redirect_url = "post.attributes.promo_banner.promo_login_button_redirect_url"
       :join_button = "post.attributes.promo_banner.promo_join_button"
+      :join_button_redirect_url = "post.attributes.promo_banner.promo_join_button_redirect_url"
     />
     <TheSteps 
       :title1 = "post.attributes.promo_steps.promo_step_1_title"
