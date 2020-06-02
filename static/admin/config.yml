@@ -83,7 +83,22 @@ collections:
             fields:
               - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
               - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
+          - label: "Game Slider"
+            name: "game_images"
+            widget: "object"
+            colapsed: true
+            fields:
+              - {label: "Game Icon 1", name: game_icon_1, widget: image}
+              - {label: "Game URL", name: game_url_1, widget: string}
+              - {label: "Game Icon 2", name: game_icon_2, widget: image}
+              - {label: "Game URL", name: game_url_2, widget: string}
+              - {label: "Game Icon 3", name: game_icon_3, widget: image}
+              - {label: "Game URL", name: game_url_3, widget: string}
+              - {label: "Game Icon 4", name: game_icon_4, widget: image}
+              - {label: "Game URL", name: game_url_4, widget: string}
+              - {label: "Game Icon 5", name: game_icon_5, widget: image}
+              - {label: "Game URL", name: game_url_5, widget: string}
+              - {label: "Game Icon 6", name: game_icon_6, widget: image}
+              - {label: "Game URL", name: game_url_6, widget: string}
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP3-NoForm"}
       - {label: 'Body', name: 'body', widget: 'markdown' }
-
-  
