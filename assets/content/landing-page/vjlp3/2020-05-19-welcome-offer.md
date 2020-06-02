@@ -1,6 +1,6 @@
 ---
 promo_banner:
-  promo_title: 'Welcome <span style="color: red">Offer</span>'
+  promo_title: Welcome Offer
   promo_subtitle: 300 bonusspins to all new customers when you deposit at least 100 SEK
   promo_join_button: Join now
   promo_login_button: Login
