@@ -3,9 +3,9 @@ promo_banner:
   promo_title: Welcome Offer
   promo_subtitle: 300 bonusspins to all new customers when you deposit at least 100 SEK
   promo_join_button: Join now
-  promo_join_button_redirect_url: https://casino.verajohn.com/#join
+  promo_join_button_redirect_url: https://www-qa-test-ph1.verajohn.com/#join
   promo_login_button: Login
-  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
+  promo_login_button_redirect_url: https://www-qa-test-ph1.verajohn.com/#signin
   promo_images:
     promo_bg_desktop: /img/vjlp3-bg-desktop.png
     promo_bg_mobile: /img/vjlp3-bg-mobile.png
