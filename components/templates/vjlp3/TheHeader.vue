@@ -5,10 +5,10 @@
                 <div class="col-12">
                     <a href="#" class="bf-logo"></a>
                     <div class="bf-btn-container">
-                        <a id="login-btn" v-bind:href="header_login_button_redirect_url">
+                        <a id="login-btn-u" v-bind:href="header_login_button_redirect_url">
                         <div class="bf-button bf-third-bg">{{header_login_button}}</div>
                         </a>
-                        <a id="signup-btn" v-bind:href="header_join_button_redirect_url">
+                        <a id="signup-btn-u" v-bind:href="header_join_button_redirect_url">
                         <div class="bf-button bf-secondary-bg">{{header_join_button}}</div>
                         </a>
                     </div>				 
