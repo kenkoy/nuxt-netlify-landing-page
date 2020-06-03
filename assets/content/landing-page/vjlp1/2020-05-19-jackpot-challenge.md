@@ -3,9 +3,9 @@ promo_banner:
   promo_title: Jackpot Challenge!!
   promo_subtitle: INCREASE YOUR MILITARY FUNDS WITH DAILY CASH !
   promo_login_button: Login
-  promo_login_button_redirect_url: https://www-qa-test-ph1.verajohn.com/#signin
+  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
   promo_join_button: Register
-  promo_join_button_redirect_url: https://www-qa-test-ph1.verajohn.com/#join
+  promo_join_button_redirect_url: https://casino.verajohn.com/#join
   promo_images:
     promo_bg_desktop: /img/bg-desktop.jpg
     promo_bg_mobile: /img/bg-mobile.jpg
