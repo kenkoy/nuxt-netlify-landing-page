@@ -10,7 +10,7 @@ promo_banner:
     promo_bg_desktop: /img/hd-pachinko-v1-banner-2-d.png
     promo_bg_mobile: /img/hd-pachinko-v1-banner-2-m.png
   game_images:
-    game_url_1: "#"
+    game_url_1: https://www.facebook.com
     game_url_2: "#"
     game_url_3: "#"
     game_url_4: "#"
