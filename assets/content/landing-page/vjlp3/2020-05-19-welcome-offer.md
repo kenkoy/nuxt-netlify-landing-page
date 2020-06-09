@@ -9,6 +9,19 @@ promo_banner:
   promo_images:
     promo_bg_desktop: /img/vjlp3-bg-desktop.png
     promo_bg_mobile: /img/vjlp3-bg-mobile.png
+  game_images:
+    game_url_1: https://www.verajohn.com/ja/game/roulette-lobby-paris
+    game_url_2: https://www.verajohn.com/ja/game/hawaiian-dream
+    game_url_3: https://www.verajohn.com/ja/game/moon-princess
+    game_url_4: https://www.verajohn.com/ja/game/moon-princess
+    game_url_5: https://www.verajohn.com/ja/game/hawaiian-dream
+    game_icon_1: /img/500_f_98334117_4rf0dzxz6pdzlayfteiykx9jvtptskcn.jpg
+    game_url_6: https://www.verajohn.com/ja/game/roulette-lobby-paris
+    game_icon_2: /img/004.jpeg
+    game_icon_3: /img/003.jpeg
+    game_icon_4: /img/003.jpeg
+    game_icon_5: /img/004.jpeg
+    game_icon_6: /img/500_f_98334117_4rf0dzxz6pdzlayfteiykx9jvtptskcn.jpg
 promo_template: VJLP3-NoForm
 ---
 <section id="bf-usps" class="container">
