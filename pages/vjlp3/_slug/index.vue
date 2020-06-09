@@ -12,11 +12,17 @@
       :promo_join_button_redirect_url = "post.attributes.promo_banner.promo_join_button_redirect_url" />
     <TheGameSlider 
       :game_icon_1 = "post.attributes.promo_banner.game_images.game_icon_1"
+      :game_url_1 = "post.attributes.promo_banner.game_images.game_url_1"
       :game_icon_2 = "post.attributes.promo_banner.game_images.game_icon_2"
+      :game_url_2 = "post.attributes.promo_banner.game_images.game_url_2"
       :game_icon_3 = "post.attributes.promo_banner.game_images.game_icon_3"
+      :game_url_3 = "post.attributes.promo_banner.game_images.game_url_3"
       :game_icon_4 = "post.attributes.promo_banner.game_images.game_icon_4"
+      :game_url_4 = "post.attributes.promo_banner.game_images.game_url_4"
       :game_icon_5 = "post.attributes.promo_banner.game_images.game_icon_5"
+      :game_url_5 = "post.attributes.promo_banner.game_images.game_url_5"
       :game_icon_6 = "post.attributes.promo_banner.game_images.game_icon_6"
+      :game_url_6 = "post.attributes.promo_banner.game_images.game_url_6"
     />
     <TheBody :promo_content = "post.html"/>
     <TheFooter />
@@ -67,11 +73,11 @@ export default {
 
 <style> 
   #bf-banner { background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("~assets/images/vjlp3/bg.jpg") center no-repeat; background-size: cover; }
-  .bf-game-icon-1 { background: url("~assets/images/vjlp3/icon_1.png") center no-repeat;  background-size: contain; }
+  /* .bf-game-icon-1 { background: url("~assets/images/vjlp3/icon_1.png") center no-repeat;  background-size: contain; }
   .bf-game-icon-2 { background: url("~assets/images/vjlp3/icon_2.png") center no-repeat;  background-size: contain; }
   .bf-game-icon-3 { background: url("~assets/images/vjlp3/icon_3.png") center no-repeat;  background-size: contain; }
   .bf-game-icon-4 { background: url("~assets/images/vjlp3/icon_4.png") center no-repeat;  background-size: contain; }
-  .bf-game-icon-5 { background: url("~assets/images/vjlp3/icon_5.png") center no-repeat;  background-size: contain; }
+  .bf-game-icon-5 { background: url("~assets/images/vjlp3/icon_5.png") center no-repeat;  background-size: contain; } */
   #strip .small-terms { display: block; } #strip { background:none; }
   #bf-banner-img-2 { 
     background: var(--bg-image) bottom center no-repeat; 
