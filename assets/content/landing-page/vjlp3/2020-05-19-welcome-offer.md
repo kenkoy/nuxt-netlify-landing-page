@@ -16,7 +16,7 @@ promo_banner:
     game_url_4: https://www.verajohn.com/ja/game/moon-princess
     game_url_5: https://www.verajohn.com/ja/game/hawaiian-dream
     game_icon_1: /img/500_f_98334117_4rf0dzxz6pdzlayfteiykx9jvtptskcn.jpg
-    game_url_6: https://www.verajohn.com/ja/game/roulette-lobby-paris
+    game_url_6: https://www.inc.com/guides/2010/09/5-ways-to-improve-quality.html
     game_icon_2: /img/004.jpeg
     game_icon_3: /img/003.jpeg
     game_icon_4: /img/003.jpeg
