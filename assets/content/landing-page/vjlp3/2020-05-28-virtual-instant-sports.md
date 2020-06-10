@@ -9,6 +9,19 @@ promo_banner:
   promo_images:
     promo_bg_desktop: /img/virtual-instant-sports-banner-2-d.png
     promo_bg_mobile: /img/virtual-instant-sports-banner-2-m.png
+  game_images:
+    game_url_1: https://www.verajohn.com/ja/game/instant-racing
+    game_url_2: https://www.verajohn.com/ja/game/instant-horses
+    game_url_3: https://www.verajohn.com/ja/game/instant-speedway
+    game_url_4: https://www.verajohn.com/ja/game/instant-trotting
+    game_url_5: https://www.verajohn.com/ja/game/instant-football
+    game_icon_1: /img/instant-racing.png
+    game_url_6: https://www.verajohn.com/ja/game/instant-velodrome
+    game_icon_2: /img/instant-horses.png
+    game_icon_3: /img/instant-speedway.png
+    game_icon_4: /img/instant-trotting.png
+    game_icon_5: /img/instant-football.png
+    game_icon_6: /img/instant-velodrome.png
 promo_template: VJLP3-NoForm
 ---
 <section id="bf-usps" class="container">
