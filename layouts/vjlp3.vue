@@ -26,7 +26,6 @@
           /* Optional JavaScript */
           { defer: true, src: 'https://files.vjpromo.com/bannerflow/lp3/brand_vj/js/after.js', body: true },
           { type: 'text/javascript', src: 'https://files.vjpromo.com/bannerflow/lp-core/brand_vj/js/form.js', body: true },
-          { type: 'text/javascript', src: 'https://files.vjpromo.com/bannerflow/lp-core/brand_vj/js/footer.js', body: true },
           { defer: true, src: 'https://files.vjpromo.com/bannerflow/lp-core/js/popper.min.js', body: true },
           { defer: true, src: 'https://files.vjpromo.com/bannerflow/lp-core/js/bootstrap.min.js', body: true },
           { defer: true, src: 'https://files.vjpromo.com/bannerflow/lp-core/js/slick.min.js', body: true },
