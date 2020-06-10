@@ -102,5 +102,5 @@ collections:
               - {label: "Game Icon 6", name: game_icon_6, widget: image}
               - {label: "Game URL", name: game_url_6, widget: string}
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP3-NoForm"}
-      - {label: 'Language Select', name: 'language', widget: "select", options: ["en-jp", "ja-jp"] }
+      - {label: 'Language Select', name: 'language_select', widget: "select", options: ["en-jp", "ja-jp"] }
       - {label: 'Body', name: 'body', widget: 'markdown' }
