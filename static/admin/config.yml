@@ -1,8 +1,8 @@
 backend:
-  name: git-gateway
-  #name: github
-  #repo: kenkoy/nuxt-netlify-landing-page
-  #branch: master
+  #name: git-gateway
+  name: github
+  repo: kenkoy/nuxt-netlify-landing-page
+  branch: master
 
 publish_mode: editorial_workflow  
 media_folder: static/img
@@ -39,7 +39,7 @@ collections:
             fields:
               - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
               - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
-              - {label: "Game Logo", name: promo_game_logo, widget: image}
+              - {label: "Game Logo", name: promo_game_logo, widget: image, required: false}
       - label: "Promotion Steps"
         name: "promo_steps" 
         widget: "object"

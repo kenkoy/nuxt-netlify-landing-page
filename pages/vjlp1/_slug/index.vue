@@ -7,25 +7,21 @@
       :login_button_redirect_url = "post.attributes.promo_banner.promo_login_button_redirect_url"
       :join_button = "post.attributes.promo_banner.promo_join_button"
       :join_button_redirect_url = "post.attributes.promo_banner.promo_join_button_redirect_url"
+      :images = "post.attributes.promo_banner.promo_images"
     />
     <TheSteps 
       :title1 = "post.attributes.promo_steps.promo_step_1_title"
       :description1 = "post.attributes.promo_steps.promo_step_1_desc"
       :title2 = "post.attributes.promo_steps.promo_step_2_title"
-      :description2 = "post.attributes.promo_steps.promo_step_1_desc"
-      :title3 = "post.attributes.promo_steps.promo_step_2_title"
-      :description3 = "post.attributes.promo_steps.promo_step_2_desc"
+      :description2 = "post.attributes.promo_steps.promo_step_2_desc"
+      :title3 = "post.attributes.promo_steps.promo_step_3_title"
+      :description3 = "post.attributes.promo_steps.promo_step_3_desc"
     />
+    <ThePayment />
     <TheBody 
       :promo_content = "post.html"
     />
-    <style>
-      :root {
-        --bg-image: url('{{ post.attributes.promo_banner.promo_images.promo_bg_desktop }}');
-        --bg-image-m: url('{{ post.attributes.promo_banner.promo_images.promo_bg_mobile }}');
-        --game-logo: url('{{ post.attributes.promo_banner.promo_images.promo_game_logo }}');
-      }
-    </style>
+    <TheFooter />
   </div>
 </template>
 
@@ -33,13 +29,20 @@
 import TheHeader from '~/components/templates/vjlp1/TheHeader.vue'
 import TheSteps from '~/components/templates/vjlp1/TheSteps.vue'
 import TheBody from '~/components/templates/vjlp1/TheBody.vue'
+import ThePayment from '~/components/templates/vjlp1/ThePayment.vue'
+import TheFooter from '~/components/templates/vjlp1/TheFooter.vue'
 
 export default {
   layout: 'vjlp1',
+  head: {
+    bodyAttrs: {id:'ja-jp'}
+  },
   components: {
     TheHeader,
     TheSteps,
-    TheBody
+    TheBody,
+    ThePayment,
+    TheFooter
   },
   async asyncData ({ params }) {
     try {
@@ -66,9 +69,4 @@ export default {
         background-size: cover; 
       }
     }
-    .game-logo {
-       background: var(--game-logo) no-repeat center; 
-       background-size: contain; width: auto; height: 150px; z-index:999999; 
-    }
-    .co-brand { background: url("~assets/images/vjlp1/co-branded-logo.png") no-repeat center; background-size:contain; width: 100%; height:100px;}
 </style>
