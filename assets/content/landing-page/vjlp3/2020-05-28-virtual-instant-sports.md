@@ -14,13 +14,13 @@ promo_banner:
     game_url_2: https://www.verajohn.com/ja/game/instant-horses
     game_url_3: https://www.verajohn.com/ja/game/instant-speedway
     game_url_4: https://www.verajohn.com/ja/game/instant-trotting
-    game_url_5: https://www.verajohn.com/ja/game/instant-football
+    game_url_5: https://www.verajohn.com/ja/about/paymentoption
     game_icon_1: /img/instant-racing.png
     game_url_6: https://www.verajohn.com/ja/about/paymentoption
     game_icon_2: /img/instant-horses.png
     game_icon_3: /img/instant-speedway.png
     game_icon_4: /img/instant-trotting.png
-    game_icon_5: /img/instant-football.png
+    game_icon_5: /img/payment-option.png
     game_icon_6: /img/payment-option.png
 promo_template: VJLP3-NoForm
 language_select: ja-jp
