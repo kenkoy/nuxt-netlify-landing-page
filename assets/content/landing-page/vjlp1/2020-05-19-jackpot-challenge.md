@@ -1,7 +1,6 @@
 ---
 promo_banner:
   promo_title: Jackpot Challenge!!
-  promo_title_display: true
   promo_subtitle: INCREASE YOUR MILITARY FUNDS WITH DAILY CASH !
   promo_login_button: Login
   promo_login_button_redirect_url: https://casino.verajohn.com/#signin
@@ -11,6 +10,7 @@ promo_banner:
     promo_bg_desktop: /img/bg-desktop.jpg
     promo_bg_mobile: /img/bg-mobile.jpg
     promo_game_logo: /img/game-logo.png
+  promo_title_display: true
 promo_steps:
   promo_step_1_title: REGISTER
   promo_step_1_desc: SAFE AND SECURE!
