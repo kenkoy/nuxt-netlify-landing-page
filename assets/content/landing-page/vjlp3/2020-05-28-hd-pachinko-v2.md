@@ -6,6 +6,7 @@ promo_banner:
   promo_join_button_redirect_url: https://casino.verajohn.com/#join
   promo_subtitle: " "
   promo_title: HD - Pachinko v2
+  promo_title_display: false
   promo_images:
     promo_bg_desktop: /img/hd-pachinko-v2-banner-2-d.png
     promo_bg_mobile: /img/hd-pachinko-v2-banner-2-m.png

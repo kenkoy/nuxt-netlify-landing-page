@@ -1,8 +1,8 @@
 backend:
-  name: git-gateway
-  #name: github
-  #repo: kenkoy/nuxt-netlify-landing-page
-  #branch: master
+  #name: git-gateway
+  name: github
+  repo: kenkoy/nuxt-netlify-landing-page
+  branch: master
 
 publish_mode: editorial_workflow  
 media_folder: static/img
@@ -19,7 +19,7 @@ collections:
     preview_path: vjlp1/{{slug}}
     show_preview_links: false
     editor:
-      preview: true
+      preview: false
     fields:
       - label: "Promotion Banner"
         name: "promo_banner" 
@@ -27,6 +27,7 @@ collections:
         collapsed: true
         fields:
           - {label: "Title", name: "promo_title", widget: "string"}
+          - {label: "Display Title", name: "promo_title_display", widget: "boolean", default: true}
           - {label: "Subtitle", name: "promo_subtitle", widget: "string", required: false}
           - {label: "Login Button", name: promo_login_button, widget: "string"}
           - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}    
@@ -51,7 +52,6 @@ collections:
           - {label: "Step 2 Description", name: promo_step_2_desc, widget: "string"}
           - {label: "Step 3 Title", name: promo_step_3_title, widget: "string"}
           - {label: "Step 3 Description", name: promo_step_3_desc, widget: "string"}
-      - {label: 'Language Select', name: 'language', widget: "select", options: ["en-jp", "ja-jp"] }
       - {label: "Body", name: "body", widget: "markdown"}    
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}
   - name: "VJLP3-NoForm"
@@ -64,7 +64,7 @@ collections:
     preview_path: vjlp3/{{slug}}
     show_preview_links: false
     editor:
-      preview: true
+      preview: false
     fields:
       - label: "Promotion Banner"
         name: "promo_banner" 
@@ -72,6 +72,7 @@ collections:
         collapsed: true
         fields:
           - {label: "Title", name: "promo_title", widget: "string"}
+          - {label: "Display Title", name: "promo_title_display", widget: "boolean", default: true}
           - {label: "Subtitle", name: "promo_subtitle", widget: "string", required: false}
           - {label: "Login Button", name: promo_login_button, widget: "string"}   
           - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}     
@@ -102,5 +103,4 @@ collections:
               - {label: "Game Icon 6", name: game_icon_6, widget: image, required: false}
               - {label: "Game URL", name: game_url_6, widget: string, required: false}
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP3-NoForm"}
-      - {label: 'Language Select', name: 'language_select', widget: "select", options: ["en-jp", "ja-jp"], required: false}
       - {label: 'Body', name: 'body', widget: 'markdown' }

@@ -1,6 +1,7 @@
 ---
 promo_banner:
   promo_title: Lorem Ipsum
+  promo_title_display: true
   promo_subtitle: Dolor sit amet
   promo_login_button: Login
   promo_login_button_redirect_url: "#"

@@ -1,6 +1,7 @@
 ---
 promo_banner:
   promo_title: Welcome Offer
+  promo_title_display: true
   promo_subtitle: 300 bonusspins to all new customers when you deposit at least 100 SEK
   promo_join_button: Join now
   promo_join_button_redirect_url: https://www-qa-test-ph1.verajohn.com/#join

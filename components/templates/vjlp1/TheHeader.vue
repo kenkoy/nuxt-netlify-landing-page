@@ -11,7 +11,7 @@
                <div id="strip" class="col-lg-5 strip"> 
                    <div class="strip-container animated fadeIn">
                        <div class="logo animated fadeIn"></div>
-                       <h1>
+                       <h1 v-if="title_display">
                            <span class="color-alt-two">
                            {{title}}
                            </span>
@@ -45,6 +45,10 @@ export default {
         props: {
             title: {
                 type: String,
+                required: true
+            },
+            title_display: {
+                type: Boolean,
                 required: true
             },
             subtitle: {

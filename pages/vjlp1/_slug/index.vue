@@ -2,6 +2,7 @@
   <div>
     <TheHeader 
       :title = "post.attributes.promo_banner.promo_title"
+      :title_display = "post.attributes.promo_banner.promo_title_display"
       :subtitle = "post.attributes.promo_banner.promo_subtitle"
       :login_button = "post.attributes.promo_banner.promo_login_button"
       :login_button_redirect_url = "post.attributes.promo_banner.promo_login_button_redirect_url"

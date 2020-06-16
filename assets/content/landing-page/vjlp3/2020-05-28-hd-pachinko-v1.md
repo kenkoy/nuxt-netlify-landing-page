@@ -1,6 +1,7 @@
 ---
 promo_banner:
-  promo_title: " "
+  promo_title: "HD Pachinko V1"
+  promo_title_display: false
   promo_subtitle: " "
   promo_join_button: 今すぐプレイ
   promo_join_button_redirect_url: https://casino.verajohn.com/#join
