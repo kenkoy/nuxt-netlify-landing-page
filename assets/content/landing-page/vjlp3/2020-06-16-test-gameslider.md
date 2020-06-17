@@ -1,6 +1,6 @@
 ---
 promo_banner:
-  promo_title_display: true
+  promo_title_display: false
   promo_title: Test gameslider
   promo_login_button: log
   promo_login_button_redirect_url: "#"
