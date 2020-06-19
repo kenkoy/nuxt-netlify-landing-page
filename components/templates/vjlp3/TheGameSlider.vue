@@ -9,12 +9,13 @@
             :infinite="true"
             :speed="300"
             :slidesToShow="5"
-            :slidesToScroll="6"
+            :slidesToScroll="1"
             :focusOnSelect="true"
             v-bind="carouselSettings"
           >
             <a class="hvr-shrink" v-for="(games, keyName, index) in game" :key="index" v-bind:href="games">
               <img v-if="games" :src="keyName == 'game_url_1' ? Object.values(game)[index+5] : Object.values(game)[index+6]">
+              <img v-else>
             </a>
           </VueSlickCarousel>
         </div>
