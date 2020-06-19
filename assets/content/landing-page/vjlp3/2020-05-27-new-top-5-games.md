@@ -1,26 +1,28 @@
 ---
 promo_banner:
-  promo_title: "New Top 5 Games"
-  promo_title_display: false
-  promo_login_button: 登録
-  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
-  promo_join_button: 今すぐプレイ
-  promo_join_button_redirect_url: https://casino.verajohn.com/#join
-  promo_images:
-    promo_bg_desktop: /img/new-top-5-games-banner-2-d.png
-    promo_bg_mobile: /img/new-top-5-games-banner-2-m.png
   game_images:
     game_url_1: https://www.verajohn.com/ja/game/roulette-lobby-paris
     game_url_2: https://www.verajohn.com/ja/game/baccarat-lobby-paris
     game_url_3: https://www.verajohn.com/ja/game/hawaiian-dream
     game_url_4: https://www.verajohn.com/ja/game/live-blackjack-lobby-paris
-    game_icon_1: /img/roulette-lobby-paris.png
     game_url_5: https://www.verajohn.com/ja/game/moon-princess
+    game_icon_1: /img/roulette-lobby-paris.png
+    game_url_6: "#"
     game_icon_2: /img/baccarat-lobby-paris.png
     game_icon_3: /img/hawaiian-dream.png
     game_icon_4: /img/live-blackjack-lobby-paris.png
-    game_icon_5: /img/moon-princess.png  
+    game_icon_5: /img/moon-princess.png
+    game_icon_6: /img/battle-dwarf.png
   promo_subtitle: " "
+  promo_title: New Top 5 Games
+  promo_images:
+    promo_bg_desktop: /img/new-top-5-games-banner-2-d.png
+    promo_bg_mobile: /img/new-top-5-games-banner-2-m.png
+  promo_title_display: false
+  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
+  promo_join_button_redirect_url: https://casino.verajohn.com/#join
+  promo_join_button: 今すぐプレイ
+  promo_login_button: 登録
 promo_template: VJLP3-NoForm
 ---
 <section id="bf-usps" class="container">
