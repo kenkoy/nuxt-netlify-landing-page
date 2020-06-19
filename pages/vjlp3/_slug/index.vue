@@ -68,5 +68,10 @@ export default {
       background: var(--bg-image-m) bottom center no-repeat; 
       background-size: contain; }
   }
+
+  .imgHolder {
+    width: 100%;
+    background-size: contain;
+  }
 </style>
 
