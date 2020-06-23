@@ -14,7 +14,7 @@
             v-bind="carouselSettings"
           >
             <a class="hvr-shrink" v-for="(link, index) in links" :key="index" v-bind:href="link">
-              <img v-if="links" :src="icons[index]">
+              <img v-if="links" :src="icons[index]" alt="Game launcher">
             </a>
           </VueSlickCarousel>
         </div>
