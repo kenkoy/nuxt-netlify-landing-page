@@ -33,7 +33,8 @@ import TheFooter from '~/components/templates/vjlp3/TheFooter.vue'
 export default {
     layout: 'vjlp3',
     head: {
-      bodyAttrs: {id:'ja-jp'}
+      bodyAttrs: {id:'ja-jp'},
+      htmlAttrs: {lang: 'ja'}
     },
     components: {
       TheHeader,

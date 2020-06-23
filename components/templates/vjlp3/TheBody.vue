@@ -1,7 +1,7 @@
 <template>
-    <section id="bf-usps" class="container">
+    <section id="" class="container">
 	 	<div class="row">
-			<div id="intro" class="col-12">
+			<div id="" class="col-12">
                 <div v-html="promo_content"/>
            </div>
 		</div>
@@ -9,6 +9,7 @@
 </template> 
 
 <script>
+
 export default {
     name: 'Content',
         props: {
