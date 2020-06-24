@@ -13,8 +13,8 @@
             :slidesToScroll="1"
             v-bind="carouselSettings"
           >
-            <a class="hvr-shrink" v-for="(link, index) in links" :key="index" v-bind:href="link">
-              <img v-if="links" :src="icons[index]">
+            <a class="hvr-shrink" v-for="(link, index) in links" :key="index" v-bind:href="link"> 
+              <div v-bind:style="generateSliderIcon(icons[index])"></div>
             </a>
           </VueSlickCarousel>
         </div>
@@ -65,5 +65,12 @@ export default {
             }
         };
     },
+    methods: {
+      generateSliderIcon(icon) {
+        return {
+          'background': `center / contain no-repeat url("${icon}")`,
+        }
+      }
+    }
 };
 </script>
