@@ -11,9 +11,9 @@
       <ul
         class="nav-list"
         @click="$emit('close')">
-        <li class="nav-item"><nuxt-link to="/marketing/vjlp1">Vera John Template 1</nuxt-link></li>
-        <li class="nav-item"><nuxt-link to="/marketing/vjlp3">Vera John Template 3</nuxt-link></li>
-        <li class="nav-item"><nuxt-link to="/marketing/about">About</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/vjlp1">Vera John Template 1</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/vjlp3">Vera John Template 3</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
         <li class="nav-item"><a href="/admin/#/" target="_blank">Admin</a></li>
       </ul>
     </div>
