@@ -8,9 +8,9 @@ promo_banner:
   promo_join_button: Register
   promo_join_button_redirect_url: https://casino.verajohn.com/#join
   promo_images:
-    promo_bg_desktop: /img/bg-desktop.jpg
-    promo_bg_mobile: /img/bg-mobile.jpg
-    promo_game_logo: /img/game-logo.png
+    promo_bg_desktop: /marketing/img/bg-desktop.jpg
+    promo_bg_mobile: /marketing/img/bg-mobile.jpg
+    promo_game_logo: /marketing/img/game-logo.png
 promo_steps:
   promo_step_1_title: REGISTER
   promo_step_1_desc: SAFE AND SECURE!

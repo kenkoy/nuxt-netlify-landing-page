@@ -45,7 +45,7 @@ export default {
     },
     async asyncData ({ params }) {
       try {
-        const post = await import('~/assets/content/landing-page/vjlp3/'+ params.slug +'.md')
+        const post = await import('~/assets/content/landing-page/marketing/vjlp3/'+ params.slug +'.md')
         return {
           post
         }

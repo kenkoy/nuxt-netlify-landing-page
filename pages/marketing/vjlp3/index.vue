@@ -12,15 +12,15 @@ export default {
         ThePostList
     },
     async asyncData () {
-        const mdFiles = await require.context('~/assets/content/landing-page/vjlp1/', true, /\.md$/)
+        const mdFiles = await require.context('~/assets/content/landing-page/marketing/vjlp3/', true, /\.md$/)
         //add slug and path in key list of mdFiles
         const mdFilesContent = await mdFiles.keys().map(key => ({
           ...mdFiles(key),
           slug: `${key.replace('.md', '').replace('./', '')}`,
-          path: 'vjlp1'
+          path: 'vjlp3'
         }))
         //filter to vjlp3 templates only
-        //.filter((mdFiles) => mdFiles.attributes.promo_template == 'VJLP1-NoForm')
+        //.filter((mdFiles) => mdFiles.attributes.promo_template == 'VJLP3-NoForm')
         return { posts: mdFilesContent.reverse() }
     }  
 }

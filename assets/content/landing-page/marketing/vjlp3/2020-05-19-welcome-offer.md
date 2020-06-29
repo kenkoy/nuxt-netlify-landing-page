@@ -6,18 +6,18 @@ promo_banner:
     game_url_3: ""
     game_url_4: ""
     game_url_5: https://www.verajohn.com/ja/game/hawaiian-dream
-    game_icon_1: /img/roulette-lobby-paris.png
+    game_icon_1: /marketing/img/roulette-lobby-paris.png
     game_url_6: ""
     game_icon_2: ""
     game_icon_3: ""
     game_icon_4: ""
-    game_icon_5: /img/hawaiian-dream.png
+    game_icon_5: /marketing/img/hawaiian-dream.png
     game_icon_6: ""
   promo_subtitle: 300 bonusspins to all new customers when you deposit at least 100 SEK
   promo_title: Welcome Offer
   promo_images:
-    promo_bg_desktop: /img/vjlp3-bg-desktop.png
-    promo_bg_mobile: /img/vjlp3-bg-mobile.png
+    promo_bg_desktop: /marketing/img/vjlp3-bg-desktop.png
+    promo_bg_mobile: /marketing/img/vjlp3-bg-mobile.png
   promo_title_display: true
   promo_login_button_redirect_url: https://www-qa-test-ph1.verajohn.com/#signin
   promo_join_button_redirect_url: https://www-qa-test-ph1.verajohn.com/#join

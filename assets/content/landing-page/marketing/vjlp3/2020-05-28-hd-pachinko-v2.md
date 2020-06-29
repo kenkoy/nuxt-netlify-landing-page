@@ -8,21 +8,21 @@ promo_banner:
   promo_title: HD - Pachinko v2
   promo_title_display: false
   promo_images:
-    promo_bg_desktop: /img/hd-pachinko-v2-banner-2-d.png
-    promo_bg_mobile: /img/hd-pachinko-v2-banner-2-m.png
+    promo_bg_desktop: /marketing/img/hd-pachinko-v2-banner-2-d.png
+    promo_bg_mobile: /marketing/img/hd-pachinko-v2-banner-2-m.png
   game_images:
     game_url_1: https://www.verajohn.com/ja/about/loyalty-program
     game_url_2: https://www.verajohn.com/ja/game/hawaiian-dream
     game_url_3: https://www.verajohn.com/ja/about/cardmaster
     game_url_4: https://www.verajohn.com/ja/livecasino
     game_url_5: https://www.verajohn.com/ja/about/paymentoption
-    game_icon_1: /img/loyalty-program.png
+    game_icon_1: /marketing/img/loyalty-program.png
     game_url_6: https://www.verajohn.com/ja/game/hawaiian-dream
-    game_icon_2: /img/hawaiian-dream.png
-    game_icon_3: /img/card-master.png
-    game_icon_4: /img/live-casino.png
-    game_icon_5: /img/payment-option.png
-    game_icon_6: /img/hawaiian-dream.png
+    game_icon_2: /marketing/img/hawaiian-dream.png
+    game_icon_3: /marketing/img/card-master.png
+    game_icon_4: /marketing/img/live-casino.png
+    game_icon_5: /marketing/img/payment-option.png
+    game_icon_6: /marketing/img/hawaiian-dream.png
 promo_template: VJLP3-NoForm
 ---
 <section id="bf-usps" class="container">

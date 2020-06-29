@@ -5,14 +5,14 @@ backend:
   #branch: master
 
 publish_mode: editorial_workflow  
-media_folder: static/img
-public_folder: /img
+media_folder: static/marketing/img
+public_folder: /marketing/img
 
 collections:
   - name: 'VJLP1-NoForm'
     label: 'Vera&John Template 1'
     format: 'frontmatter'
-    folder: 'assets/content/landing-page/vjlp1'
+    folder: 'assets/content/landing-page/marketing/vjlp1'
     create: true
     identifier_field: "promo_banner.promo_title"
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -57,7 +57,7 @@ collections:
   - name: "VJLP3-NoForm"
     label: "Vera&John Template 3"
     format: 'frontmatter'
-    folder: "assets/content/landing-page/vjlp3"
+    folder: "assets/content/landing-page/marketing/vjlp3"
     create: true
     identifier_field: "promo_banner.promo_title"
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'

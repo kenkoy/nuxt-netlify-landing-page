@@ -1,7 +1,7 @@
 const glob = require('glob')
 const path = require('path')
 
-const markdownPaths = ['vjlp1','vjlp3']
+const markdownPaths = ['marketing/vjlp1', 'marketing/vjlp3']
 
 function dynamicMarkdownRoutes() {
   return [].concat(
@@ -66,9 +66,10 @@ export default {
     extend (config, ctx) {
       config.module.rules.push({
           test: /\.md$/,
-          include: path.resolve(__dirname, 'assets/content/landing-page'),
+          include: path.resolve(__dirname, 'assets/content/landing-page/marketing'),
           loader: 'frontmatter-markdown-loader',
       });
-    }
+    },
+    publicPath: 'marketing/_nuxt'
   } 
 }

@@ -1,5 +1,5 @@
 <template>
-    <nuxt-link :to="'/' + path + '/' + slug" class="post-preview">
+    <nuxt-link :to="'/marketing/' + path + '/' + slug" class="post-preview">
         <article>
             <div class="post-content">
               <h3>{{ title }}</h3>
