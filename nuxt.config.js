@@ -1,7 +1,7 @@
 const glob = require('glob')
 const path = require('path')
 
-const markdownPaths = ['marketing/vjlp1','marketing/vjlp3']
+const markdownPaths = ['vjlp1','vjlp3']
 
 function dynamicMarkdownRoutes() {
   return [].concat(
