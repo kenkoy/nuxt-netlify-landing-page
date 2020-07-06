@@ -9,7 +9,7 @@
         <div class="container">
            <div class="row row-eq-height">
                <div id="strip" class="col-lg-5 strip"> 
-                   <div class="strip-container animated fadeIn">
+                   <div class="strip-container animated fadeIn" style="margin-top: 50.5px;">
                        <div class="logo animated fadeIn"></div>
                        <h1 v-if="title_display">
                            <span class="color-alt-two">
@@ -22,6 +22,7 @@
                            {{subtitle}}
                            </span>                              
                        </h2>
+                        <div class="spacer" v-if="!images.promo_game_logo && !subtitle"></div>
                        <a id="signup-btn-u" v-bind:href="join_button_redirect_url" class="button button-lrg d-block">{{join_button}}</a>       
                    </div>
                    <div class="small-terms"><a href="#terms" class="link-terms-conditions ctac">利用規約</a>に同意します。</div>
@@ -86,5 +87,9 @@ export default {
 .game-logo {
    background: var(--game-logo) no-repeat center; 
    background-size: contain; width: auto; height: 150px; z-index:999999; 
+}
+
+.spacer {
+    margin: 6.0rem 0;
 }
 </style>
