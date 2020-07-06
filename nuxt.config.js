@@ -50,8 +50,16 @@ export default {
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [
+ buildModules: [
+  '@nuxtjs/gtm',
+  '@nuxtjs/google-analytics',
   ],
+  gtm: {
+    id: 'GTM-MFD3NKM'
+  },
+  googleAnalytics: {
+    id: 'UA-142143961-1'
+  },
   /*
   ** Nuxt.js modules
   */
