@@ -32,6 +32,12 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans' },
+    ],
+    style: [
+      { cssText: '.async-hide { opacity: 0 !important }', type: 'text/css' }
+    ],
+    script: [
+      { src: '/marketing/js/page-hide.js' }
     ]
   },
   /*
