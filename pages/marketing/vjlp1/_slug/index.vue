@@ -36,6 +36,7 @@ import TheFooter from '~/components/templates/vjlp1/TheFooter.vue'
 export default {
   layout: 'vjlp1',
   head: {
+    title: 'Vera&John Promo',
     bodyAttrs: {id:'ja-jp'},
     htmlAttrs: {lang: 'ja'}
   },
