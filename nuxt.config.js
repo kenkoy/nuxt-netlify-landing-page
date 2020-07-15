@@ -31,13 +31,21 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans' },
+      // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans' },
+      { rel: 'stylesheet', href: '/marketing/styles/lp-core/fonts.css' },
+      { rel: 'stylesheet', href: '/marketing/styles/lp-core/bootstrap.min.css' },
     ],
     style: [
-      { cssText: '.async-hide { opacity: 0 !important }', type: 'text/css' }
+      { cssText: '.async-hide { opacity: 0 !important }', type: 'text/css' },
     ],
     script: [
-      { src: '/marketing/js/page-hide.js' }
+      { type: 'text/javascript', src: '/marketing/js/lp-core/jquery-3.5.1.slim.min.js' },
+      { defer: true, src: '/marketing/js/lp-core/popper.min.js' },
+      { defer: true, src: '/marketing/js/lp-core/bootstrap.min.js' },
+      { type: 'text/javascript', src: '/marketing/js/page-hide.js' },
+      { type: 'text/javascript', src: '/marketing/js/lp-core/form.js' },
+      { defer: true, type: 'text/javascript', src: '/marketing/js/lp-core/jquery.flexverticalcenter.js' },
+      { type: 'text/javascript', src: '/marketing/js/lp-core/slick.min.js' },
     ]
   },
   /*
@@ -47,7 +55,12 @@ export default {
   /*
   ** Global CSS
   */
-  css: [],
+  css: [
+    // '@/static/marketing/styles/lp-core/bootstrap.min.css',
+    '@/static/marketing/styles/lp-core/animate.min.css',
+    '@/static/marketing/styles/lp-core/hover-min.css',
+    '@/static/marketing/styles/lp-core/slick.css',
+  ],
   /*
   ** Plugins to load before mounting the App
   */

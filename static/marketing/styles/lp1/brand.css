@@ -1,0 +1,110 @@
+/* Colors 
+#DB0081 - Alt Magenta
+#EC008B - Brand Magenta
+#704B1F - Brown
+#FFC833 - Alt Yellow
+#FEE63D - Brand Yellow
+#81D6FB - Light Blue
+#009FE3- Brand Blue
+#0093D4 - Alt Blue
+*/
+
+/* Fonts */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@font-face {
+  font-family: 'MainFont-Bold';
+  src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.eot'); /* IE9 Compat Modes */
+  src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'MainFont-DemiBold';
+  src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.eot'); /* IE9 Compat Modes */
+  src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'MainFont-Medium';
+  src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.eot'); /* IE9 Compat Modes */
+  src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/* Main */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+body { background-color:#009FE3}
+.logo { background: url("https://files.vjpromo.com/bannerflow/lp-core/brand_vj/img/logo.png") no-repeat center; width: 100%; height: 200px; margin-bottom: 50px; background-size: contain; }
+.strip { color: white; background: -moz-linear-gradient(top, rgba(0,159,227,0.8) 0%, rgba(236,0,139,0.8) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc009fe3', endColorstr='#ccec008b',GradientType=0 ); /* IE6-9 */ }
+section { padding:20px 0; }
+p { text-align:justify; color: #ffffff	}
+.nopadding { padding: 0 !important; }
+a { font-family: 'MainFont-Bold', sans-serif; color: #FFFFFF; border-bottom: 2px dashed #FEE63D; }
+a:hover { font-family: 'MainFont-Bold', sans-serif; color: #FEE63D;  }
+a:visited { font-family: 'MainFont-Bold', sans-serif; color: #FFFFFF;  }
+#footer { padding-top:10px;}
+.pp {border-top:3px solid #0093D4; border-bottom:3px solid #0093D4; }
+#terms { margin-top: 20px; }
+#terms h3 { color:#FEE63D; text-transform: uppercase;  }
+
+/* Brand Colors*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.color-main { color: #009FE3; }
+.background-main { background: #009FE3; }
+.color-alt { color: #EC008B; }
+.bg-alt { background: #EC008B; }
+.color-alt-two { color: #FEE63D; }
+.bg-alt-two { background: #FEE63D; }
+
+/* Brand Buttons */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.button { font-size: 1.125em; border-radius: 100px; padding: 15px 50px 10px 50px; background: #FEE63D; color: #704B1F; width: 280px; margin: 5px auto; clear: both; cursor: pointer; text-align: center; display: block; border: none;   }
+.button-lrg { font-size: 1.3em; }
+.button:hover { box-shadow: 0 2px 2px 0 rgba(0,0,0,0.60); color: #704B1F; text-decoration: none; border: none; }
+.button:active { background: #FFC833; text-decoration: none; border: none; }
+.button:visited { color: #704B1F; text-decoration: none; border: none; }
+#strip .button { display:none;  font-size:1em }
+
+
+/* Steps */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.steps { text-transform: uppercase; overflow: hidden; }
+.steps .step { margin-top: 15px; }
+.steps .num { float: left; display: block; font-size: 5em; background: white; width: 100px; height: 100px; border-radius: 100%; color:#EC008B; font-style: normal; font-family: 'MainFont-DemiBold', sans-serif; text-align: center; font-weight: bold; margin: 0 20px 0 0; line-height: 115px; }
+.steps h2 { color:#FEE63D; font-size: 2em; text-align: left;  }
+.steps h3 { color: white; font-size: 1em; text-align: left; font-family: 'MainFont-Medium', sans-serif; }
+
+
+/* Form */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+#stripblank { background: rgba(0, 159, 227, 0.8); /* FF3.6-15 */ }
+#form-container { width:280px; margin: 50px auto;  }
+.mt-btn { font-size: 1.125em; border-radius: 100px; padding: 15px 20px 10px 20px; background: #FEE63D; color: #704B1F; margin: 20px auto; clear: both; cursor: pointer; text-align: center; display: block; border: none;   }
+.mt-btn:hover { box-shadow: 0 2px 2px 0 rgba(0,0,0,0.60); color: #704B1F; text-decoration: none; border: none; }
+.mt-btn:active { background: #FFC833; text-decoration: none; border: none; }
+.mt-btn:visited { color: #704B1F; text-decoration: none; border: none; }
+input { border-radius: 50px; border: none; padding:5px 20px; }
+
+/* Responsive */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* .col-md < 992px*/
+@media only screen and (max-width: 991px) {
+.strip { background: -moz-linear-gradient(top, rgba(0,159,227,0.5) 0%, rgba(236,0,139,0.5) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,159,227,0.5) 0%,rgba(236,0,139,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,159,227,0.5) 0%,rgba(236,0,139,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc009fe3', endColorstr='#ccec008b',GradientType=0 ); /* IE6-9 */ }
+}

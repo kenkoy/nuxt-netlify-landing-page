@@ -1,0 +1,101 @@
+/* { outline: solid red; } */
+
+html { scroll-behavior: smooth; }
+body, h1, h2, h3, h4, h5, h6, section { font-size:100%; font-family: 'MainFont-Medium', sans-serif; color: #ffffff; }
+h1 {font-family: 'MainFont-DemiBold', sans-serif; font-size:3em; letter-spacing: 0.3px;}
+h2 {font-family: 'MainFont-DemiBold', sans-serif; font-size:1.75em; }
+h3 {font-family: 'MainFont-Bold', sans-serif;font-size:1em; }
+h4 {font-family: 'MainFont-Bold', sans-serif;font-size:2em; } 
+h5 {font-family: 'MainFont-Medium', sans-serif;font-size:1.75em; font-weight:300;  } 
+p { text-align: justify; }
+.bf-btn-container { float: right; margin: 10px 0 10px 0; border-radius: 5px; padding: 8px;   -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.3); }
+.bf-button, .mt-btn { border-radius: 5px; padding: 6px 50px; cursor: pointer; text-align: center; display: block; border: none; min-width: 150px; float: left; margin: 0 0 0 15px; }
+.bf-btn-container .bf-third-bg { margin: 0; }
+.bf-button p { margin: 0; }
+#bf-usps .row { margin: 20px 0; }
+#bf-usps #intro h3, #terms h3 { text-align: center; margin: 20px 0 }
+#bf-usps p, #terms ul li { font-size: 0.875em }
+#bf-usps h3, #terms h3 { font-family: 'MainFont-Medium', sans-serif; font-size:1.5em; }
+#terms ul { padding-left: 10px }
+#terms li { text-align: justify; }
+
+/* Layout 1 + Form */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+#bf-banner-img { min-height:300px; }
+#bf-banner h1 { font-family: 'SubFont', sans-serif; font-size:1.750em; text-shadow: 0 2px 2px rgba(0,0,0,0.3); margin: 15px 0 0 0 }
+#strip h2 { font-family: 'SubFont', sans-serif; font-size:1.125em; text-shadow: 0 2px 2px rgba(0,0,0,0.3); text-align: center }
+
+/* Layout 2 */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+#bf-banner-img-2 { min-height: 400px; }
+#bf-banner-img-2 #signup-btn .bf-button { margin: 10px 0 0 0}
+#bf-banner-img-2 h1  { text-align: left; padding: 0;  }
+#bf-banner-img-2 h2  { font-family: 'SubFont', sans-serif; font-size:1.5em; text-shadow: 0 2px 2px rgba(0,0,0,0.3); margin: 10px 0 0 0  }
+.center-button { width: 100%; display: flex; align-items: center;  justify-content: center;}
+
+/* Slider */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+#bf-game-slider { -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2); -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2); box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2); }
+#bf-game-slider .slider { margin: 10px 0; }
+#bf-game-slider a div { height: 115px; }
+#bf-game-slider a,  header a, .signup-btn { border: none; }
+#bf-banner .bf-button { margin: 15px 0 0 	0 }
+
+/* Form */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+#stripblank { background: rgba(0, 159, 227, 0.8); /* FF3.6-15 */ }
+#form-container { width:280px; margin: 50px auto;  }
+input { border-radius: 10px; border: none; padding:5px 20px; }
+
+#mt-form { margin: 150px 0 0 0; }
+.mt-form h2 { font-size: 1em }
+input { padding: 8px; width: 100%; margin: 10px 0; }
+.btn { width:100%; margin: 0; }
+input[type=checkbox], input[type=radio] { margin-right:5px; }
+#form { margin: 10px auto; }
+#container .text #form .input-group input[type="text"],
+#container .text #form .input-group input[type="password"] { background: #FFF; border: 1px solid #2a87b0; border-radius: 5px; width: 100%; box-shadow: inset 0 3px 3px rgba(10, 50, 70, 0.16); padding: 0 9px; height: 28px; }
+#container .text #form .input-group { margin-top: 20px; clear: both; display: inline-block; width: 100%; }
+#container .text #form #tc { float: left; }
+.form-checkbox { width: 14px;height: 14px; float: left; }
+form .title { padding-top: 4px; display: block; width: 90%; float: left; }
+#form .error { margin-top: 8px; display: none; background-color: #e6195d; position: relative; line-height: 17px; color: #FFF; font-size: 11px; padding: 3px 10px; width: 100%; border-radius: 5px; box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3); }
+#form .error::before {content: ''; position: absolute; left: 50%; top: -7px; margin-left: -7px; width: 0; height: 0; border-bottom: 7px solid #e6195d; border-left: 7px solid transparent; border-right: 7px solid transparent; }
+#form .no-value { border-color: #e6195d!important; }
+#form p.title { font-size: 13px; line-height: 1; width: 93%; margin-top: 9px; }
+#submit-error { text-align: center !important; }
+
+/* Terms */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.small-terms { font-size: 11px; text-align:center; margin:10px 0; }
+#terms ul { margin: 0px !important;}
+
+/* Footer */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.icons { margin: 20px auto; display:inline-block; padding:20px; }
+.icon { float: left; margin-left: 10px; }
+
+.gt { width: 96px; height: 48px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_gt.svg') no-repeat center center; background-size: contain; border:none; }
+.age { width: 48px; height: 48px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_age.svg') no-repeat center center; background-size: contain; border:none; }
+.mga { width: 97px; height: 47px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_mga.svg') no-repeat center center; background-size: contain; border:none;  }
+.curacao { width: 97px; height: 47px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_curacao.svg') no-repeat center center; background-size: contain; border:none;  }
+
+.gamcare, .gamstop, .bga, .ukgc { display:none; }
+#en-gb .gamcare { width: 112px; height: 47px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_gamcare.svg') no-repeat center center; background-size: contain; border:none; }
+#en-gb .gamstop { display:block; width: 108px; height: 47px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_gamstop.svg') no-repeat center center; background-size: contain; border:none; }
+#en-gb .bga { display:block; width: 140px; height: 48px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_bga.svg') no-repeat center center; background-size: contain; border:none;  }
+#en-gb .ukgc { display:block; width: 96px; height: 48px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_ukgc.svg') no-repeat center center; background-size: contain; border:none;  }
+
+
+/* Payment Providers */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.payment-providers { width:100%; height:100px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_en.svg") center center no-repeat; background-size: contain !important; float:left; clear:both; margin: 10px 0; }
+#en-gb .payment-providers {height:150px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_uk.svg") center center no-repeat;}
+#fi-fi .payment-providers {height:150px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_fi.svg") center center no-repeat;}
+#de-de .payment-providers {height:150px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_de.svg") center center no-repeat;}
+#nb-no .payment-providers {height:150px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_no.svg") center center no-repeat;}
+#sv-se .payment-providers {height:150px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_se.svg") center center no-repeat;}
+#pt-br .payment-providers {height:150px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_br.svg") center center no-repeat;}
+#ja-jp .payment-providers {height:150px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg") center center no-repeat;}

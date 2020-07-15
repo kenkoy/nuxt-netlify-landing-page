@@ -42,44 +42,42 @@
 
 <script>
 export default {
-     name: 'Header',
-        props: {
-            title: {
-                type: String,
-                required: true
-            },
-            title_display: {
-                type: Boolean,
-                required: true
-            },
-            subtitle: {
-                type: String,
-                required: true
-            },
-            login_button: {
-                type: String,
-                required: true
-            },
-            login_button_redirect_url: {
-                type: String,
-                required: true
-            },
-            join_button: {
-                type: String,
-                required: true
-            },
-            join_button_redirect_url: {
-                type: String,
-                required: true
-            },
-            images: {
-                type: Object,
-                required: true
-            }
-
-            
-
+    name: 'Header',
+    props: {
+        title: {
+            type: String,
+            required: true
+        },
+        title_display: {
+            type: Boolean,
+            required: true
+        },
+        subtitle: {
+            type: String,
+            default: '',
+            required: true
+        },
+        login_button: {
+            type: String,
+            required: true
+        },
+        login_button_redirect_url: {
+            type: String,
+            required: true
+        },
+        join_button: {
+            type: String,
+            required: true
+        },
+        join_button_redirect_url: {
+            type: String,
+            required: true
+        },
+        images: {
+            type: Object,
+            required: true
         }
+    }
 }
 
 </script>

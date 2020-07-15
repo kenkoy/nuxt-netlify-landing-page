@@ -1,0 +1,84 @@
+/* Colors 
+#DB0081 - Alt Magenta
+#EC008B - Brand Magenta
+#704B1F - Brown
+#FFC833 - Alt Yellow
+#FEE63D - Brand Yellow
+#81D6FB - Light Blue
+#009FE3- Brand Blue
+#0093D4 - Alt Blue
+*/
+
+/* Fonts */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+@font-face {
+  font-family: 'MainFont-Bold';
+  src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.eot'); /* IE9 Compat Modes */
+  src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'MainFont-DemiBold';
+  src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.eot'); /* IE9 Compat Modes */
+  src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'MainFont-Medium';
+  src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.eot'); /* IE9 Compat Modes */
+  src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'SubFont';
+  src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/komikaaxis.eot'); /* IE9 Compat Modes */
+  src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/komikaaxis.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/komikaaxis.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/komikaaxis.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/komikaaxis.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/komikaaxis.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+body { background:#009FE3; color: #FFFFFF; }
+header { position: relative; background:#009FE3; min-height: 60px; border-bottom: 3px solid #0082ba }
+.bf-logo { width: 128px; height: 128px; background: url("https://files.vjpromo.com/bannerflow/lp-core/brand_vj/img/logo.png") center no-repeat; background-size: contain; position: absolute; top:-30px; z-index: 999999; }
+.bf-button, .mt-btn { font-size:1.063em; }
+#strip { background: rgba(0, 159, 227, 0.8) }
+#strip h1 { color: #FEE63D; text-align: center; padding: 0 0 10px 0 }
+.bf-separator { border-top: 3px solid #0093D4; margin: 40px 0;  }
+.payment-providers { border-bottom: 3px solid #0093D4; border-top: 3px solid #0093D4; margin: 40px 0;  }
+h3 { color: #FEE63D }
+a { color: #FFFFFF; border-bottom: 2px dashed #FEE63D; }
+a:hover { color: #FEE63D; text-decoration: none; }
+a:visited, a:active  { color: #FEE63D;  }
+
+/* Layout 2 */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+#bf-banner-img-2 h1  { color: #FEE63D; }
+
+/* Brand Colors*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.bf-primary-bg { background: #009FE3; color: #FFFFFF;  }
+.bf-secondary-bg { background: #EC008B; color: #FFFFFF; }
+.bf-third-bg { background: #FEE63D; color: #FFFFFF; }
+
+/* Brand Gradients*/
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.bf-primary-bg { background: linear-gradient(0deg, rgba(0,147,212,1) 0%, rgba(0,159,227,1) 100%); color: #FFFFFF;  }
+.bf-secondary-bg { background: linear-gradient(to bottom,#fb57cc,#de1681); color: #FFFFFF; }
+.bf-secondary-bg:hover, .bf-secondary-bg:active { background: linear-gradient(180deg,#ff65e5,#fa1e93); }
+.bf-third-bg, .mt-btn { background: linear-gradient(to bottom,#ffc933 0%,#f7901d 100%); color: #FFFFFF; }
+.bf-third-bg:hover, .bf-third-bg:active, .mt-btn:hover, .mt-btn:active { background: linear-gradient(180deg,#ffe238,#ffa92d); }
