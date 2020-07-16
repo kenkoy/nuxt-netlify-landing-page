@@ -1,44 +1,44 @@
 <template>
-    <nuxt-link :to="'/marketing/' + path + '/' + slug" class="post-preview">
-        <article>
-            <div class="post-content">
-              <h3>{{ title }}</h3>
-              <p>{{ description }}</p>
-            </div>
-        </article>
-    </nuxt-link>
+  <nuxt-link :to="'/marketing/' + path + '/' + slug" class="post-preview">
+    <article>
+      <div class="post-content">
+        <h3>{{ title }}</h3>
+        <p>{{ description }}</p>
+      </div>
+    </article>
+  </nuxt-link>
 </template>
 
 <script>
 export default {
-    name: 'PostPreview',
-        props: {
-            path: {
-                type: String,
-                required: true
-            },
-            slug: {
-                type: String,
-                required: true
-            },
-            title: {
-                type: String,
-                required: true
-            },
-            description: {
-                type: String,
-                default: '',
-                required: true
-            }
-        }
-    }    
+  name: "PostPreview",
+  props: {
+    path: {
+      type: String,
+      required: true
+    },
+    slug: {
+      type: String,
+      required: true
+    },
+    title: {
+      type: String,
+      required: true
+    },
+    description: {
+      type: String,
+      default: "",
+      required: true
+    }
+  }
+};
 </script>
 
 <style scoped>
 .post-preview {
   border: 1px solid #ccc;
   box-shadow: 0 2px 2px #ccc;
-  background-color:dodgerblue;
+  background-color: dodgerblue;
   width: 90%;
 }
 
@@ -68,6 +68,6 @@ a {
 
 a:hover .post-content,
 a:active .post-content {
-  background-color:cornflowerblue;
+  background-color: cornflowerblue;
 }
 </style>

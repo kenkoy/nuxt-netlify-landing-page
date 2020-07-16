@@ -56,10 +56,10 @@ export default {
   ** Global CSS
   */
   css: [
-    // '@/static/marketing/styles/lp-core/bootstrap.min.css',
-    '@/static/marketing/styles/lp-core/animate.min.css',
-    '@/static/marketing/styles/lp-core/hover-min.css',
-    '@/static/marketing/styles/lp-core/slick.css',
+    // '~/static/marketing/styles/lp-core/bootstrap.min.css',
+    '~/static/marketing/styles/lp-core/animate.min.css',
+    '~/static/marketing/styles/lp-core/hover-min.css',
+    '~/static/marketing/styles/lp-core/slick.css',
   ],
   /*
   ** Plugins to load before mounting the App
