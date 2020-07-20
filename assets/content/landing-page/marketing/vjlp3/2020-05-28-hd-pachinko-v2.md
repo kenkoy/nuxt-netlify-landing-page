@@ -3,16 +3,6 @@ promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 promo_banner:
-  promo_login_button: 登録
-  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
-  promo_join_button: 今すぐプレイ
-  promo_join_button_redirect_url: https://casino.verajohn.com/#join
-  promo_subtitle: " "
-  promo_title: HD - Pachinko v2
-  promo_title_display: false
-  promo_images:
-    promo_bg_desktop: /marketing/img/hd-pachinko-v2-banner-2-d.png
-    promo_bg_mobile: /marketing/img/hd-pachinko-v2-banner-2-m.png
   game_images:
     game_url_1: https://www.verajohn.com/ja/about/loyalty-program
     game_url_2: https://www.verajohn.com/ja/game/hawaiian-dream
@@ -26,6 +16,17 @@ promo_banner:
     game_icon_4: /marketing/img/live-casino.png
     game_icon_5: /marketing/img/payment-option.png
     game_icon_6: /marketing/img/hawaiian-dream.png
+  promo_subtitle: " "
+  promo_title: HD - Pachinko v2
+  promo_images:
+    promo_bg_desktop: /marketing/img/hd-pachinko-v2-banner-2-d.png
+    promo_bg_mobile: /marketing/img/hd-pachinko-v2-banner-2-m.png
+  promo_title_display: false
+  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
+  promo_join_button_redirect_url: https://casino.verajohn.com/#join
+  promo_join_button: 今すぐプレイ
+  promo_login_button: 登録
+  promo_join_button_location: lower-right
 promo_template: VJLP3-NoForm
 ---
 <section id="bf-usps" class="container">
