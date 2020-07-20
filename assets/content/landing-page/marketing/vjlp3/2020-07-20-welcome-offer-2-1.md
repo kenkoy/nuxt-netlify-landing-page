@@ -16,8 +16,8 @@ promo_banner:
     game_icon_4: ""
     game_icon_5: ""
     game_icon_6: ""
-  promo_subtitle: 300 bonusspins to all new customers when you deposit at least 100 SEK
-  promo_title: Welcome Offer 2
+  promo_subtitle: "300 bonus when you deposit "
+  promo_title: Welcome Offer 22
   promo_images:
     promo_bg_desktop: /marketing/img/vjlp3-bg-desktop.png
     promo_bg_mobile: /marketing/img/vjlp3-bg-mobile.png
