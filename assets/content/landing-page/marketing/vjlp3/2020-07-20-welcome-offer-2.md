@@ -11,10 +11,10 @@ promo_banner:
     game_url_5: https://www.verajohn.com/ja/game/hawaiian-dream
     game_icon_1: /marketing/img/battle-dwarf.png
     game_url_6: ""
-    game_icon_2: ""
-    game_icon_3: ""
+    game_icon_2: /marketing/img/baccarat-lobby-paris.png
+    game_icon_3: /marketing/img/golden-dream.png
     game_icon_4: ""
-    game_icon_5: /marketing/img/baccarat-lobby-paris.png
+    game_icon_5: ""
     game_icon_6: ""
   promo_subtitle: 300 bonus spins when you deposit 100 SEK
   promo_title: Welcome Offer 22
