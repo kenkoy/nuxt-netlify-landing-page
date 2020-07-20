@@ -26,6 +26,7 @@ promo_banner:
   promo_join_button_redirect_url: https://casino.verajohn.com/#join
   promo_join_button: 今すぐプレイ
   promo_login_button: 登録
+  promo_join_button_location: lower-right
 promo_template: VJLP3-NoForm
 ---
 <section id="bf-usps" class="container">
