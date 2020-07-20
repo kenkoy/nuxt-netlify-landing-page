@@ -14,6 +14,12 @@
           </div>
         </div>
       </div>
+      <style>
+      :root {
+        --bg-image: url('{{ images.promo_bg_desktop }}');
+        --bg-image-m: url('{{ images.promo_bg_mobile }}');
+      }
+    </style>
     </div>
   </header>
 </template>
@@ -40,7 +46,30 @@ export default {
     header_join_button_redirect_url: {
       type: String,
       required: true
+    },
+    images: {
+      type: Object,
+      required: true
     }
   }
 };
 </script>
+
+<style> 
+  #bf-banner { background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("~assets/images/vjlp3/bg.jpg") center no-repeat; background-size: cover; }
+
+  #strip .small-terms { display: block; } #strip { background:none; }
+  #bf-banner-img-2 { 
+    background: var(--bg-image) bottom center no-repeat; 
+    background-size: contain; 
+  }
+  @media only screen and (max-width: 767px) {
+    #bf-banner-img-2 { 
+      background: var(--bg-image-m) bottom center no-repeat; 
+      background-size: contain; }
+  }
+  .imgHolder {
+    width: 100%;
+    background-size: contain;
+  }
+</style>

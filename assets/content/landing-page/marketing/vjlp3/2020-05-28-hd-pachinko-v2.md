@@ -1,4 +1,7 @@
 ---
+promo_country_lang:
+  promo_country_code: jp
+  promo_language_code: ja
 promo_banner:
   promo_login_button: 登録
   promo_login_button_redirect_url: https://casino.verajohn.com/#signin

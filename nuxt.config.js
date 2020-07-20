@@ -42,6 +42,7 @@ export default {
       { type: 'text/javascript', src: '/marketing/js/lp-core/jquery-3.5.1.slim.min.js' },
       { defer: true, src: '/marketing/js/lp-core/popper.min.js' },
       { defer: true, src: '/marketing/js/lp-core/bootstrap.min.js' },
+      { type: 'text/javascript', src: '/marketing/js/lp-core/footer.js' },
       { type: 'text/javascript', src: '/marketing/js/page-hide.js' },
       { type: 'text/javascript', src: '/marketing/js/lp-core/form.js' },
       { defer: true, type: 'text/javascript', src: '/marketing/js/lp-core/jquery.flexverticalcenter.js' },
@@ -107,6 +108,7 @@ export default {
         loader: 'frontmatter-markdown-loader',
       });
     },
-    publicPath: 'marketing/_nuxt'
+    
+    publicPath: process.env.NODE_ENV == 'production' ? 'marketing/_nuxt' : ''
   }
 }

@@ -18,11 +18,7 @@
       :title3 = "post.attributes.promo_steps.promo_step_3_title"
       :description3 = "post.attributes.promo_steps.promo_step_3_desc"
     />
-    <ThePayment />
-    <TheBody 
-      :promo_content = "post.html"
-    />
-    <TheFooter />
+    <TheBody :promo_content = "post.html"/>
   </div>
 </template>
 
@@ -30,22 +26,25 @@
 import TheHeader from '~/components/templates/vjlp1/TheHeader.vue'
 import TheSteps from '~/components/templates/vjlp1/TheSteps.vue'
 import TheBody from '~/components/templates/vjlp1/TheBody.vue'
-import ThePayment from '~/components/templates/vjlp1/ThePayment.vue'
-import TheFooter from '~/components/templates/vjlp1/TheFooter.vue'
 
 export default {
   layout: 'vjlp1',
-  head: {
-    title: 'Vera&John Promo',
-    bodyAttrs: {id:'ja-jp'},
-    htmlAttrs: {lang: 'ja'}
+  head() {
+    return { 
+      title: 'Vera&John',
+      htmlAttrs: {
+        lang: this.post.attributes.promo_country_lang.promo_language_code
+      },
+      bodyAttrs: {
+        id: this.post.attributes.promo_country_lang.promo_language_code+
+        '-'+this.post.attributes.promo_country_lang.promo_country_code
+      }
+    } 
   },
   components: {
     TheHeader,
     TheSteps,
-    TheBody,
-    ThePayment,
-    TheFooter
+    TheBody
   },
   async asyncData ({ params }) {
     try {
@@ -59,17 +58,3 @@ export default {
   }
 }
 </script>
-
-<style>
-    #strip-container {
-       background: var(--bg-image) no-repeat center; 
-       background-size: cover; 
-       }
-    #stripblank { background: none; }
-    @media only screen and (max-width: 575px) {
-      #strip-container { 
-        background: var(--bg-image-m) no-repeat center; 
-        background-size: cover; 
-      }
-    }
-</style>

@@ -2,6 +2,9 @@
 promo_country_lang:
   promo_country_code: jp
   promo_language_code: ja
+promo_country_lang:
+  promo_country_code: jp
+  promo_language_code: ja
 promo_banner:
   promo_language_code: ja
   promo_country_code: jp
@@ -44,7 +47,4 @@ promo_template: VJLP1-NoForm
 </ul>       </div>
 
    </div>
-   <ul>
-      <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Normal </font></font><a href="https://verajohn.com/about/terms-and-conditions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Terms of Use</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> and </font></font><a href="https://verajohn.com/about/promotions-terms-and-conditions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">General Campaign </font></font></a><font style="vertical-align: inherit;"><a href="https://verajohn.com/about/terms-and-conditions"><font style="vertical-align: inherit;">Terms</font></a><font style="vertical-align: inherit;"> and </font><a href="https://verajohn.com/about/promotions-terms-and-conditions"><font style="vertical-align: inherit;">Conditions</font></a><font style="vertical-align: inherit;"> apply.</font></font></li>
-   </ul>
 </section>

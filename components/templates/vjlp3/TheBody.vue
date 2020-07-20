@@ -1,11 +1,5 @@
 <template>
-  <section id class="container">
-    <div class="row">
-      <div id class="col-12">
-        <div v-html="promo_content" />
-      </div>
-    </div>
-  </section>
+  <div v-html="promo_content" />
 </template> 
 
 <script>
@@ -21,16 +15,6 @@ export default {
 </script>
 
 <style>
-#ja-jp .payment-providers {
-  height: 150px;
-  background: url(https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg)
-    center center no-repeat;
-}
-.payment-providers {
-  height: 150px;
-  background: url(https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg)
-    center center no-repeat;
-}
 #bf-game-slider .slick-slider {
   margin: 10px 0;
 }

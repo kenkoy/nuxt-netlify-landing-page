@@ -25,19 +25,16 @@
               class="button button-lrg d-block"
             >{{join_button}}</a>
           </div>
-          <div class="small-terms">
-            <a href="#terms" class="link-terms-conditions ctac">利用規約</a>に同意します。
-          </div>
         </div>
         <div id="stripblank" class="col-lg-7"></div>
       </div>
     </div>
     <style>
-  :root {
-    --bg-image: url("{{ images.promo_bg_desktop }}");
-    --bg-image-m: url("{{ images.promo_bg_mobile }}");
-    --game-logo: url("{{ images.promo_game_logo }}");
-  }
+    :root {
+      --bg-image: url('{{ images.promo_bg_desktop }}');
+      --bg-image-m: url('{{ images.promo_bg_mobile }}');
+      --game-logo: url('{{ images.promo_game_logo }}');
+    }
     </style>
   </header>
 </template>
@@ -90,8 +87,16 @@ export default {
   height: 150px;
   z-index: 999999;
 }
-
-.spacer {
-  margin: 6rem 0;
+#strip-container {
+      background: var(--bg-image) no-repeat center; 
+      background-size: cover; 
 }
+#stripblank { background: none; }
+@media only screen and (max-width: 575px) {
+  #strip-container { 
+    background: var(--bg-image-m) no-repeat center; 
+    background-size: cover; 
+  }
+}
+.spacer { margin: 6rem 0;}
 </style>

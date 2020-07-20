@@ -1,4 +1,7 @@
 ---
+promo_country_lang:
+  promo_country_code: jp
+  promo_language_code: ja
 promo_banner:
   game_images:
     game_url_1: https://www.verajohn.com/ja/game/roulette-lobby-paris

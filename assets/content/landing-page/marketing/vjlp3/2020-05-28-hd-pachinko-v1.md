@@ -1,4 +1,7 @@
 ---
+promo_country_lang:
+  promo_country_code: jp
+  promo_language_code: ja
 promo_banner:
   promo_title: "HD Pachinko V1"
   promo_title_display: false

@@ -4,7 +4,8 @@
       :header_login_button = "post.attributes.promo_banner.promo_login_button"
       :header_login_button_redirect_url = "post.attributes.promo_banner.promo_login_button_redirect_url"
       :header_join_button = "post.attributes.promo_banner.promo_join_button"
-      :header_join_button_redirect_url = "post.attributes.promo_banner.promo_join_button_redirect_url"/>
+      :header_join_button_redirect_url = "post.attributes.promo_banner.promo_join_button_redirect_url"
+      :images = "post.attributes.promo_banner.promo_images"/>
     <TheBanner 
       :promo_title = "post.attributes.promo_banner.promo_title"
       :promo_title_display = "post.attributes.promo_banner.promo_title_display"
@@ -13,13 +14,9 @@
       :promo_join_button_redirect_url = "post.attributes.promo_banner.promo_join_button_redirect_url" />
     <TheGameSlider :game = "post.attributes.promo_banner.game_images" />
     <TheBody :promo_content = "post.html"/>
-    <TheFooter />
-    <style>
-      :root {
-        --bg-image: url('{{ post.attributes.promo_banner.promo_images.promo_bg_desktop }}');
-        --bg-image-m: url('{{ post.attributes.promo_banner.promo_images.promo_bg_mobile }}');
-      }
-    </style>
+    <TheFooter 
+      :promo_language_code = "post.attributes.promo_country_lang.promo_language_code"
+      :promo_country_code = "post.attributes.promo_country_lang.promo_country_code" />
   </div>
 </template>
 
@@ -32,9 +29,17 @@ import TheFooter from '~/components/templates/vjlp3/TheFooter.vue'
 
 export default {
     layout: 'vjlp3',
-    head: {
-      bodyAttrs: {id:'ja-jp'},
-      htmlAttrs: {lang: 'ja'}
+    head() {
+      return { 
+        title: 'Vera&John',
+        htmlAttrs: {
+          lang: this.post.attributes.promo_country_lang.promo_language_code
+        },
+        bodyAttrs: {
+          id: this.post.attributes.promo_country_lang.promo_language_code+
+          '-'+this.post.attributes.promo_country_lang.promo_country_code
+        }
+      } 
     },
     components: {
       TheHeader,
@@ -55,24 +60,3 @@ export default {
     }
 }
 </script>
-
-<style> 
-  #bf-banner { background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("~assets/images/vjlp3/bg.jpg") center no-repeat; background-size: cover; }
-
-  #strip .small-terms { display: block; } #strip { background:none; }
-  #bf-banner-img-2 { 
-    background: var(--bg-image) bottom center no-repeat; 
-    background-size: contain; 
-  }
-  @media only screen and (max-width: 767px) {
-    #bf-banner-img-2 { 
-      background: var(--bg-image-m) bottom center no-repeat; 
-      background-size: contain; }
-  }
-
-  .imgHolder {
-    width: 100%;
-    background-size: contain;
-  }
-</style>
-
