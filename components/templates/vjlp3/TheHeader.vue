@@ -25,8 +25,6 @@
 </template>
 
 <script scoped>
-var lang_code = "%language_code%";
-var country_code = "%country_code%";
 
 export default {
   name: "Header",
