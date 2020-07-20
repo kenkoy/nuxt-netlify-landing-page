@@ -1,7 +1,7 @@
 ---
 promo_locale:
-  promo_country_code: jp
-  promo_language_code: ja
+  promo_country_code: se
+  promo_language_code: sv
 promo_banner:
   promo_language_code: ja
   promo_country_code: jp
