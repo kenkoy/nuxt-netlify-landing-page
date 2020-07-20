@@ -1,6 +1,6 @@
 <template>
   <header id="strip-container" class="container-flex h-100">
-    <a id="login-btn-u" v-bind:href="login_button_redirect_url" class="login hvr-pulse">
+    <a id="login-btn" v-bind:href="login_button_redirect_url" class="login hvr-pulse">
       <div class="animated fadeIn">
         <i class="material-icons">exit_to_app</i>
         <div class="login-txt">{{login_button}}</div>
@@ -20,7 +20,7 @@
             </h2>
             <div class="spacer" v-if="!images.promo_game_logo && !subtitle"></div>
             <a
-              id="signup-btn-u"
+              id="signup-btn"
               v-bind:href="join_button_redirect_url"
               class="button button-lrg d-block"
             >{{join_button}}</a>

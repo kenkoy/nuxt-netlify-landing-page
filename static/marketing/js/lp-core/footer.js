@@ -78,6 +78,7 @@ $(document).ready(function() {
         $('.strip-container').flexVerticalCenter();	
         $('.form-container').flexVerticalCenter();
 
+
         // Add Domain Urls to buttons
         if (loginBtn != null) {
             loginBtn.setAttribute("href", "https://"+domain+affParameters+"#signin");
@@ -89,6 +90,7 @@ $(document).ready(function() {
             homeBtn.setAttribute("href", "https://"+domain+affParameters);  //on LP3 There is a script that caters for the class buttons
         }        
         
+    
         // Add Footer // https://htmlformatter.com / https://www.willpeavy.com/tools/minifier/
         if (bodyId == 'ja-jp') {
             
@@ -99,6 +101,7 @@ $(document).ready(function() {
             if(checkHomeButtonText === -1){
               loginBtn.setAttribute("href", "https://"+domain+affParameters+"#join");  
             } 
+            
             //If Mobile
             if (devMobile) {
                 //remove first Forwardslash from affParameters variable due to new link
@@ -111,6 +114,7 @@ $(document).ready(function() {
                     loginBtn.setAttribute("href", "https://mobile."+domain+"/registration-cc/steps/1"+affParametersNFS); 
                 }        
             } 
+
             $('<footer id="footer" class="animated fadeIn"> <div class="container-fluid pp"> <div class="container">  <div class="row"> <div class="col-12"> <div class="payment-providers"></div></div></div></div><div class="container-fluid"> <div class="row"> <div class="icons text-center"> <div class="icon"> <a href="https://www.'+domain+'/about/responsible-gaming'+affParameters+'" target="blank"> <div class="age"></div></a> </div><div class="icon"> <a href="https://www.gamstop.co.uk" target="blank"> <div class="gamstop"></div></a> </div><div class="icon"> <a href="https://www.begambleaware.org" target="blank"> <div class="bga"></div></a> </div><div class="icon"> <a href="https://www.gamblingtherapy.org/en" target="blank"> <div class="gt"></div></a> </div><div class="icon"> <a href="https://secure.gamblingcommission.gov.uk/PublicRegister/Search/Detail/39408" target="blank"> <div class="ukgc"></div></a> </div><div class="icon"> <a href="#" target="blank"> <div class="curacao"></div></a> </div><div class="icon"> <a href="https://www.gamcare.org.uk" target="blank"> <div class="gamcare"></div></a> </div></div></div><div class="row"> <div class="footer-content col-12 text-center"></div></div></div></footer>').insertAfter(lastElement);	
 		} else {
             $('<footer id="footer" class="animated fadeIn"> <div class="container-fluid pp"> <div class="container"> <div class="row"> <div class="col-12"> <div class="payment-providers"></div></div></div></div></div><div class="container-fluid"> <div class="row"> <div class="icons text-center"> <div class="icon"> <a href="https://'+domain+'/about/responsible-gaming'+affParameters+'" target="blank"> <div class="age"></div></a> </div><div class="icon"> <a href="https://www.gamstop.co.uk" target="blank"> <div class="gamstop"></div></a> </div><div class="icon"> <a href="https://www.begambleaware.org" target="blank"> <div class="bga"></div></a> </div><div class="icon"> <a href="https://www.gamblingtherapy.org/en" target="blank"> <div class="gt"></div></a> </div><div class="icon"> <a href="https://secure.gamblingcommission.gov.uk/PublicRegister/Search/Detail/39408" target="blank"> <div class="ukgc"></div></a> </div><div class="icon"> <a href="https://www.authorisation.mga.org.mt/verification.aspx?lang=en&company=c0e82570-bf83-4ecc-bda3-89ecb92d5b0e" target="blank"> <div class="mga"></div></a> </div><div class="icon"> <a href="https://www.gamcare.org.uk" target="blank"> <div class="gamcare"></div></a> </div></div></div><div class="row"> <div class="footer-content col-12 text-center"></div></div></div></footer>').insertAfter(lastElement);
