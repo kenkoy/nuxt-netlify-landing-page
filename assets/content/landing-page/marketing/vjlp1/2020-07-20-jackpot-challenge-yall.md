@@ -8,8 +8,8 @@ promo_banner:
   promo_subtitle: "DAILY CASH PRIZES TO BE WON! "
   promo_login_button: Login
   promo_join_button: "Register "
-  promo_login_button_redirect_url: https://casino.verajohn.com/
-  promo_join_button_redirect_url: https://casino.verajohn.com/
+  promo_login_button_redirect_url: https://www-qa-test-ph1.verajohn.com/#signin
+  promo_join_button_redirect_url: https://www-qa-test-ph1.verajohn.com/#join
   promo_images:
     promo_bg_desktop: /marketing/img/hd-moonlight_bg.jpg
     promo_bg_mobile: /marketing/img/hd-moonlight_bg_m.jpg
