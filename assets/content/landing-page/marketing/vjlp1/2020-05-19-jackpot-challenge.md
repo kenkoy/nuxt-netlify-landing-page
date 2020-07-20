@@ -6,11 +6,11 @@ promo_banner:
   promo_language_code: ja
   promo_country_code: jp
   promo_subtitle: INCREASE YOUR MILITARY FUNDS WITH DAILY CASH !
-  promo_title: Jackpot Challenge!!
+  promo_title: Jackpot Challenge!! 2
   promo_images:
-    promo_bg_desktop: /marketing/img/bg-desktop.jpg
-    promo_bg_mobile: /marketing/img/bg-mobile.jpg
-    promo_game_logo: /marketing/img/game-logo.png
+    promo_bg_desktop: /marketing/img/hd-moonlight_bg.jpg
+    promo_bg_mobile: /marketing/img/hd-moonlight_bg_m.jpg
+    promo_game_logo: /marketing/img/hawaiian-dream.png
   promo_title_display: true
   promo_login_button_redirect_url: https://casino.verajohn.com/#signin
   promo_join_button_redirect_url: https://casino.verajohn.com/#join
