@@ -11,6 +11,7 @@
       :promo_title_display = "post.attributes.promo_banner.promo_title_display"
       :promo_description = "post.attributes.promo_banner.promo_subtitle"
       :promo_join_button = "post.attributes.promo_banner.promo_join_button"
+      :promo_join_button_location = 'post.attributes.promo_banner.promo_join_button_location'
       :promo_join_button_redirect_url = "post.attributes.promo_banner.promo_join_button_redirect_url" />
     <TheGameSlider :game = "post.attributes.promo_banner.game_images" />
     <TheBody :promo_content = "post.html"/>
