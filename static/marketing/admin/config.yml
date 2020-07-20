@@ -21,8 +21,8 @@ collections:
     editor:
       preview: false
     fields:
-      - label: "Country Language"
-        name: "promo_country_lang"
+      - label: "Locale"
+        name: "promo_locale"
         widget: "object"
         colapsed: true
         fields:
@@ -87,8 +87,8 @@ collections:
     editor:
       preview: false
     fields:
-      - label: "Country Language"
-        name: "promo_country_lang"
+      - label: "Locale"
+        name: "promo_locale"
         widget: "object"
         colapsed: true
         fields:

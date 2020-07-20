@@ -33,11 +33,11 @@ export default {
     return { 
       title: 'Vera&John',
       htmlAttrs: {
-        lang: this.post.attributes.promo_country_lang.promo_language_code
+        lang: this.post.attributes.promo_locale.promo_language_code
       },
       bodyAttrs: {
-        id: this.post.attributes.promo_country_lang.promo_language_code+
-        '-'+this.post.attributes.promo_country_lang.promo_country_code
+        id: this.post.attributes.promo_locale.promo_language_code+
+        '-'+this.post.attributes.promo_locale.promo_country_code
       }
     } 
   },
