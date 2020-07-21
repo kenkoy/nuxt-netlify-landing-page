@@ -3,16 +3,6 @@ promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 promo_banner:
-  promo_title: Virtual/Instant Sports
-  promo_title_display: true
-  promo_subtitle: " "
-  promo_login_button: 登録
-  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
-  promo_join_button: 今すぐプレイ
-  promo_join_button_redirect_url: https://casino.verajohn.com/#join
-  promo_images:
-    promo_bg_desktop: /marketing/img/virtual-instant-sports-banner-2-d.png
-    promo_bg_mobile: /marketing/img/virtual-instant-sports-banner-2-m.png
   game_images:
     game_url_1: https://www.verajohn.com/ja/game/instant-racing
     game_url_2: https://www.verajohn.com/ja/game/instant-horses
@@ -26,6 +16,17 @@ promo_banner:
     game_icon_4: /marketing/img/instant-trotting.png
     game_icon_5: /marketing/img/payment-option.png
     game_icon_6: /marketing/img/payment-option.png
+  promo_subtitle: " "
+  promo_title: Virtual/Instant Sports
+  promo_images:
+    promo_bg_desktop: /marketing/img/virtual-instant-sports-banner-2-d.png
+    promo_bg_mobile: /marketing/img/virtual-instant-sports-banner-2-m.png
+  promo_title_display: true
+  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
+  promo_join_button_redirect_url: https://casino.verajohn.com/#join
+  promo_join_button: 今すぐプレイ
+  promo_login_button: 登録
+  promo_join_button_location: hidden
 promo_template: VJLP3-NoForm
 language_select: ja-jp
 ---
