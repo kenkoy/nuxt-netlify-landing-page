@@ -21,7 +21,7 @@ promo_banner:
   promo_images:
     promo_bg_desktop: /marketing/img/virtual-instant-sports-banner-2-d.png
     promo_bg_mobile: /marketing/img/virtual-instant-sports-banner-2-m.png
-  promo_title_display: true
+  promo_title_display: false
   promo_login_button_redirect_url: https://casino.verajohn.com/#signin
   promo_join_button_redirect_url: https://casino.verajohn.com/#join
   promo_join_button: 今すぐプレイ
