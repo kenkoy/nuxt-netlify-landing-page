@@ -4,13 +4,13 @@ promo_locale:
   promo_language_code: de
 promo_banner:
   game_images:
-    game_url_1: ""
-    game_url_2: ""
-    game_url_3: ""
-    game_url_4: ""
-    game_url_5: ""
+    game_url_1: https://jira.jpj.com/secure/Dashboard.jspa
+    game_url_2: https://jira.jpj.com/secure/Dashboard.jspa
+    game_url_3: https://jira.jpj.com/secure/Dashboard.jspa
+    game_url_4: https://jira.jpj.com/secure/Dashboard.jspa
+    game_url_5: https://jira.jpj.com/secure/Dashboard.jspa
     game_icon_1: /marketing/img/hawaiian-dream.png
-    game_url_6: ""
+    game_url_6: https://jira.jpj.com/secure/Dashboard.jspa
     game_icon_2: /marketing/img/loyalty-program.png
     game_icon_3: /marketing/img/card-master.png
     game_icon_4: /marketing/img/icon_1.png
@@ -19,8 +19,8 @@ promo_banner:
   promo_subtitle: It's all yours!
   promo_title: New Welcome Offer
   promo_images:
-    promo_bg_desktop: /marketing/img/banner-2.png
-    promo_bg_mobile: /marketing/img/card-master-blossom_bg_m.jpg
+    promo_bg_desktop: /marketing/img/dsgn-883-lp-portal-desktop.png
+    promo_bg_mobile: /marketing/img/dsgn-883-lp-portal-mobile.png
   promo_title_display: true
   promo_login_button_redirect_url: https://www.istockphoto.com/pl
   promo_join_button_redirect_url: https://wiki.jpj.com/pages/viewpage.action?spaceKey=ITDEV&title=Digital+Acquisition+Services+-+Creating+Landing+Pages
