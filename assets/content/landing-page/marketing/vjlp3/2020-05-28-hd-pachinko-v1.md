@@ -3,27 +3,28 @@ promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 promo_banner:
-  promo_title: "HD Pachinko V1"
-  promo_title_display: false
-  promo_subtitle: " "
-  promo_join_button: 今すぐプレイ
-  promo_join_button_redirect_url: https://casino.verajohn.com/#join
-  promo_login_button: " 登録"
-  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
-  promo_images:
-    promo_bg_desktop: /marketing/img/hd-pachinko-v1-banner-2-d.png
-    promo_bg_mobile: /marketing/img/hd-pachinko-v1-banner-2-m.png
   game_images:
     game_url_1: https://www.verajohn.com/ja/game/battle-dwarf
     game_url_2: https://www.verajohn.com/ja/game/golden-dream
     game_url_3: https://www.verajohn.com/ja/game/hawaiian-dream-xmas
     game_url_4: https://www.verajohn.com/ja/about/our-welcome-bonus
-    game_icon_1: /marketing/img/battle-dwarf.png
     game_url_5: https://www.verajohn.com/ja/promotions/category/1/2053/jp-no1.20181123
+    game_icon_1: /marketing/img/battle-dwarf.png
     game_icon_2: /marketing/img/golden-dream.png
     game_icon_3: /marketing/img/hawaiian-dream-xmas.png
     game_icon_4: /marketing/img/our-welcome-bonus.png
-    game_icon_5: /marketing/img/jp-no1.png  
+    game_icon_5: /marketing/img/jp-no1.png
+  promo_subtitle: " "
+  promo_title: HD Pachinko V1
+  promo_images:
+    promo_bg_desktop: /marketing/img/hd-pachinko-v1-banner-2-d.png
+    promo_bg_mobile: /marketing/img/hd-pachinko-v1-banner-2-m.png
+  promo_title_display: false
+  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
+  promo_join_button_redirect_url: https://casino.verajohn.com/#join
+  promo_join_button: 今すぐプレイ
+  promo_login_button: " 登録"
+  promo_join_button_location: hidden
 promo_template: VJLP3-NoForm
 ---
 <section id="bf-usps" class="container">
