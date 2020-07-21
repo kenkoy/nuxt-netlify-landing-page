@@ -12,7 +12,9 @@
           </div>
         </div>
         <div class="d-block d-lg-none col-12">
-          <div class="center-button">
+          <div class="center-button"
+            :class="{ hidden:  promo_join_button_location === 'hidden' }"
+          >
             <a class="signup-btn" v-bind:href="promo_join_button_redirect_url">
               <div class="bf-button bf-secondary-bg">{{promo_join_button}}</div>
             </a>
