@@ -11,9 +11,9 @@ promo_banner:
   promo_join_button: Join Now
   promo_join_button_redirect_url: https://jira.jpj.com/secure/Dashboard.jspa
   promo_images:
-    promo_bg_desktop: /marketing/img/card-master-wo-crypto_bg.jpg
-    promo_bg_mobile: /marketing/img/card-master-wo-crypto_bg_m.jpg
-    promo_game_logo: /marketing/img/card-master.png
+    promo_bg_desktop: /marketing/img/bg-desktop.jpg
+    promo_bg_mobile: /marketing/img/bg-mobile.jpg
+    promo_game_logo: /marketing/img/battle-dwarf.png
 promo_steps:
   promo_step_1_title: Et harum
   promo_step_2_title: Et harum
