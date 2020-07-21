@@ -19,14 +19,14 @@ promo_banner:
   promo_subtitle: It's all yours!
   promo_title: New Welcome Offer
   promo_images:
-    promo_bg_desktop: /marketing/img/card-master-blosson_bg.jpg
+    promo_bg_desktop: /marketing/img/banner-2.png
     promo_bg_mobile: /marketing/img/card-master-blossom_bg_m.jpg
   promo_title_display: true
   promo_login_button_redirect_url: https://www.istockphoto.com/pl
   promo_join_button_redirect_url: https://wiki.jpj.com/pages/viewpage.action?spaceKey=ITDEV&title=Digital+Acquisition+Services+-+Creating+Landing+Pages
   promo_join_button: SIGN UP
   promo_login_button: SIGN IN
-  promo_join_button_location: lower-right
+  promo_join_button_location: upper-left
 promo_template: VJLP3-NoForm
 ---
 
