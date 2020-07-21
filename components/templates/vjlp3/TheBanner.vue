@@ -47,7 +47,7 @@ export default {
     },
     promo_join_button_location: {
       type: String,
-      default: 'upper-left',
+      default: 'hidden',
       required: false
     },
     promo_join_button_redirect_url: {
@@ -59,9 +59,9 @@ export default {
 </script>
 
 <style scoped>
-.upper-left {
-  position: absolute;
-}
+.hidden { display: none; }
+
+.upper-left { position: absolute; }
 
 .lower-right {
   position: absolute;

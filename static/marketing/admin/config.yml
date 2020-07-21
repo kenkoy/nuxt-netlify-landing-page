@@ -122,10 +122,11 @@ collections:
           - label: "Join Button Location"
             name: "promo_join_button_location"
             widget: "select"
-            default: ["upper-left"]
+            default: ["hidden"]
             options:
               - { label: "Upper Left", value: "upper-left" }
               - { label: "Lower Right", value: "lower-right" }
+              - { label: "Hidden", value: "hidden" }
           - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}    
           - label: "Images"
             name: "promo_images"
