@@ -26,6 +26,7 @@ promo_banner:
   promo_join_button_redirect_url: https://www-qa-test-ph1.verajohn.com/#join
   promo_join_button: Join now
   promo_login_button: Login
+  promo_join_button_location: upper-left
 promo_template: VJLP3-NoForm
 ---
 <section id="bf-usps" class="container">
