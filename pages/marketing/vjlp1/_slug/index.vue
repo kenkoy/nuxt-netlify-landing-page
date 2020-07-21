@@ -18,7 +18,13 @@
       :title3 = "post.attributes.promo_steps.promo_step_3_title"
       :description3 = "post.attributes.promo_steps.promo_step_3_desc"
     />
+    <ThePayment
+      :promo_language_code = "post.attributes.promo_locale.promo_language_code"
+      :promo_country_code = "post.attributes.promo_locale.promo_country_code" />
     <TheBody :promo_content = "post.html"/>
+    <TheFooter 
+      :promo_language_code = "post.attributes.promo_locale.promo_language_code"
+      :promo_country_code = "post.attributes.promo_locale.promo_country_code" />
   </div>
 </template>
 
@@ -26,6 +32,8 @@
 import TheHeader from '~/components/templates/vjlp1/TheHeader.vue'
 import TheSteps from '~/components/templates/vjlp1/TheSteps.vue'
 import TheBody from '~/components/templates/vjlp1/TheBody.vue'
+import ThePayment from '~/components/templates/vjlp1/ThePayment.vue'
+import TheFooter from '~/components/templates/TheFooter.vue'
 
 export default {
   layout: 'vjlp1',
@@ -44,7 +52,9 @@ export default {
   components: {
     TheHeader,
     TheSteps,
-    TheBody
+    TheBody,
+    ThePayment,
+    TheFooter
   },
   async asyncData ({ params }) {
     try {
