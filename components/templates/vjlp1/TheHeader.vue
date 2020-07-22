@@ -26,7 +26,7 @@
             >{{join_button}}</a>
           </div>
         </div>
-        <div id="stripblank" class="col-lg-7"></div>
+        <div id="#stripblank-nobg" class="col-lg-7"></div>
       </div>
     </div>
     <style>
@@ -91,7 +91,7 @@ export default {
       background: var(--bg-image) no-repeat center; 
       background-size: cover; 
 }
-#stripblank { background: none; }
+#stripblank-nobg { background: none; }
 @media only screen and (max-width: 575px) {
   #strip-container { 
     background: var(--bg-image-m) no-repeat center; 
