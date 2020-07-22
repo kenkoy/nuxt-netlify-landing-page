@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12">
           <a href="#" class="bf-logo"></a>
-          <div class="bf-btn-container">
+          <div class="bf-btn-container" style="display:inline-block;">
             <a id="login-btn-u" v-bind:href="header_login_button_redirect_url">
               <div class="bf-button bf-third-bg">{{header_login_button}}</div>
             </a>
