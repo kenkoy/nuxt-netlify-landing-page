@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  name: "Header",
+  name: 'Header',
   props: {
     title1: {
       type: String,
@@ -59,3 +59,11 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+h3 { display: table; }
+
+@media only screen and (max-width: 576px) {
+  h3 { font-size: 0.7rem; }
+}
+</style>
