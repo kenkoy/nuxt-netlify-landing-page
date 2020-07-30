@@ -124,7 +124,7 @@
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) 320px */
 @media only screen and (max-width: 479px) {
-  .steps h2 { font-size: 1.5em; }	
+  .steps h2 { font-size: 1.2em; }
   .strip-container h1 { font-size: 2em }
   .strip-container h2 { font-size: 1em }
   section { padding-bottom: 0px; }
