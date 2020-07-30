@@ -65,5 +65,7 @@ export default {
   .desc { font-size: 0.7rem; }
 }
 
-.desc { display: table; }
+@media only screen and (min-width: 992px) {
+  .desc { display: table; }
+}
 </style>
