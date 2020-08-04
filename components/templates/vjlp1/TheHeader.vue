@@ -18,7 +18,7 @@
             <h2 class="sub-offer text-center">
               <span class="color-alt-two">{{ subtitle }}</span>
             </h2>
-            <div class="spacer" v-if="!images.promo_game_logo && !subtitle"></div>
+            <div class="spacer" v-if="!(images.promo_game_logo && subtitle)"></div>
             <a
               id="signup-btn"
               v-bind:href="join_button_redirect_url"
