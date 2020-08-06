@@ -12,7 +12,7 @@ export default {
         ThePostList
     },
     async asyncData () {
-        const mdFiles = await require.context('~/assets/content/homepage/marketing/vjhp/', true, /\.md$/)
+        const mdFiles = await require.context('~/assets/content/landing-page/marketing/vjhp/', true, /\.md$/)
         //add slug and path in key list of mdFiles
         const mdFilesContent = await mdFiles.keys().map(key => ({
           ...mdFiles(key),

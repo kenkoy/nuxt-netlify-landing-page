@@ -26,7 +26,7 @@
             >{{ join_button }}</a>
           </div>
         </div>
-        <div id="stripblank-nobg" class="col-lg-7"></div>
+        <div id="#stripblank-nobg" class="col-lg-7"></div>
       </div>
     </div>
     <style>
@@ -88,7 +88,6 @@ export default {
   height: 150px;
   z-index: 999999;
 }
-
 #strip-container {
   background: var(--bg-image) no-repeat center;
   background-size: cover;
@@ -96,10 +95,8 @@ export default {
 
 #stripblank-nobg { background: none; }
 
-#signup-btn { margin-bottom: 2.5rem; }
-
-@media only screen and (max-width: 280px) {
-  #signup-btn { width: 90%; }
+@media only screen and (max-width: 991px) {
+  #signup-btn { margin-bottom: 2.5rem; }
 }
 
 @media only screen and (max-width: 575px) {
@@ -108,8 +105,7 @@ export default {
     background-size: cover;
   }
 }
-
 .spacer {
-  margin: 4rem 0;
+  margin: 6rem 0;
 }
 </style>

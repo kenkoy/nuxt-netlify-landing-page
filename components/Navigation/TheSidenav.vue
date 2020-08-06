@@ -11,6 +11,9 @@
             <nuxt-link to="/marketing/vjlp3">Vera John Template 3</nuxt-link>
           </li>
           <li class="nav-item">
+            <nuxt-link to="/marketing/vjhp">Vera John Homepage</nuxt-link>
+          </li>
+          <li class="nav-item">
             <nuxt-link to="/marketing/about">About</nuxt-link>
           </li>
           <li class="nav-item">
