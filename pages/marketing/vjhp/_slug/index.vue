@@ -44,19 +44,6 @@ import section7 from '~/components/templates/vjhp/section7.vue'
 import footerSection from '~/components/templates/vjhp/footerSection.vue'
 
 export default {
-    layout: 'vjhp',
-    head() {
-      return { 
-        title: 'Vera&John',
-        htmlAttrs: {
-          lang: this.post.attributes.promo_locale.promo_language_code
-        },
-        bodyAttrs: {
-          id: this.post.attributes.promo_locale.promo_language_code+
-          '-'+this.post.attributes.promo_locale.promo_country_code
-        }
-      } 
-    },
     components: {
       loginHeaderSection,
       headerSection,
