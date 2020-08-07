@@ -10,7 +10,7 @@
             <li class="second-half">
                 <h3>圧倒的ゲーム数!<br>スロットゲーム</h3>
                 <span class="icon heading"></span>
-                <p>その数1000種類以上! 人気スロットはもちろん、パチスロみたいな新感覚ゲームまでなんでもあり!<br>最新作がどこよりも早くプレイできちゃうのも業界ナンバーワンカジノならでは♪</p>
+                <p>その数1000種類以上! 人気スロットはもちろん、パチスロみたいな新感覚ゲームまでなんでもあり!<br />最新作がどこよりも早くプレイできちゃうのも業界ナンバーワンカジノならでは♪</p>
                 <a class="button secondary" v-bind:href="games_brick_column_2_button_redirect_url">{{ games_brick_column_2_button }}</a>
             </li>
         </ul>

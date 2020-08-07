@@ -1,19 +1,21 @@
 <template>
   <div>
     <loginHeaderSection
+      :title = "post.attributes.promo_banner.promo_title"
       :login_header_text = "post.attributes.login_header_section.login_header_text"
       :login_header_redirect_url = "post.attributes.login_header_section.login_header_redirect_url" />
     <headerSection
+      :homepage_title = "post.attributes.header_section.homepage_title"
       :header_text = "post.attributes.header_section.header_text"
       :header_button_redirect_url = "post.attributes.header_section.header_button_redirect_url"
       :header_login_account_text = "post.attributes.header_section.header_login_account_text"
       :header_login_account_text_redirect_url = "post.attributes.header_section.header_login_account_text_redirect_url" />
     <section2 />
     <gamesBrick
-      :games_brick_column_1_button = "post.attributes.games_brick_section.games_brick_column_1_button"
-      :games_brick_column_2_button = "post.attributes.games_brick_section.games_brick_column_2_button"
-      :games_brick_column_1_button_redirect_url = "post.attributes.games_brick_section.games_brick_column_1_button_redirect_url"
-      :games_brick_column_2_button_redirect_url = "post.attributes.games_brick_section.games_brick_column_2_button_redirect_url" />
+      :games_brick_column_1_button = "post.attributes.games_brick_section.games_brick_column_1.games_brick_column_1_button"
+      :games_brick_column_2_button = "post.attributes.games_brick_section.games_brick_column_2.games_brick_column_2_button"
+      :games_brick_column_1_button_redirect_url = "post.attributes.games_brick_section.games_brick_column_1.games_brick_column_1_button_redirect_url"
+      :games_brick_column_2_button_redirect_url = "post.attributes.games_brick_section.games_brick_column_2.games_brick_column_2_button_redirect_url" />
     <section4 />
     <section5 />
     <testimonialSection
@@ -44,6 +46,7 @@ import section7 from '~/components/templates/vjhp/section7.vue'
 import footerSection from '~/components/templates/vjhp/footerSection.vue'
 
 export default {
+  layout: 'vjhp',
   components: {
     loginHeaderSection,
     headerSection,
@@ -58,6 +61,7 @@ export default {
   async asyncData ({ params }) {
     try {
       const post = await import('~/assets/content/landing-page/marketing/vjhp/'+ params.slug +'.md')
+      // const post = await import('~/assets/content/landing-page/marketing/vjhp/vj-homepage.md')
       return {
         post
       }

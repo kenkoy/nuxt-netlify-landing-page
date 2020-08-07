@@ -1,5 +1,5 @@
 <template>
-    <section id="cta" class="main special">
+    <section id="testimonial" class="main special">
         <header class="heading">
             <h2>先輩プレイヤーの声</h2>
             <p>ベラジョン・ファミリーのメンバー様からのコメントをご紹介♪<br>ほかにも、勝利を収めたプレイヤー様のリアルなお声は、毎月勝利者インタビューページで大公開し<br>ちゃってます!</p>

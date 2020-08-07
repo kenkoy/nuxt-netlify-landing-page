@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   #name: github
-  #repo: kenkoy/nuxt-netlify-landing-page
+  #repo: drap54/ds-gitlab
   #branch: master
 
 publish_mode: editorial_workflow  
@@ -156,18 +156,24 @@ collections:
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP3-NoForm"}
       - {label: 'Body', name: 'body', widget: 'markdown' }
 
-  - name: "VJ-Homapage"
+  - name: "VJ-Homepage"
     label: "Vera&John Homepage"
     format: 'frontmatter'
-    folder: "assets/content/homepage/marketing/vjhp"
+    folder: "assets/content/landing-page/marketing/vjhp"
     create: true
-    identifier_field: "homepage"
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    identifier_field: "promo_banner.promo_title"
+    slug: '{{slug}}'
     preview_path: vjhp/{{slug}}
     show_preview_links: false
     editor:
       preview: false
     fields:
+      - label: "Vera&John Homepage"
+        name: "promo_banner"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Title for this edit", name: "promo_title", widget: "string"}
       - label: "Login Header Section"
         name: "login_header_section"
         widget: "object"

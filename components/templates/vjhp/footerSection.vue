@@ -11,7 +11,7 @@
             “Don” Martina 31, Willemstad, Curaçao）により運営されています。Breckenridge Curaçao B.V. __ はキュラソー州知事により発行されたMaster
             Gaming License #5536/JAZ __ に基づく __ C.I.L Curacao Interactive Licensing N.V. __
             により付与されたサブライセンスを通して正式な許可を所持しています</p>
-        <a href="" #><img src="images/curacao.png"></a><a href="#"><img src="images/18Regulator.png"></a>
+        <a href="#"><img src="/marketing/img/vjhp/curacao.png"></a><a href="#"><img src="/marketing/img/vjhp/18Regulator.png"></a>
     </footer>
 </template>
 

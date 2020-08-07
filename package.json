@@ -21,9 +21,11 @@
     "nuxt": "^2.0.0",
     "save": "^2.4.0",
     "vue-slick": "^1.1.15",
-    "vue-slick-carousel": "^1.0.5"
+    "vue-slick-carousel": "^1.0.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@nuxtjs/svg": "^0.1.11"
+  },
   "main": "nuxt.config.js",
   "repository": {
     "type": "git",

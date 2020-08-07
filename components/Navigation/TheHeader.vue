@@ -3,7 +3,7 @@
   <header class="the-header">
     <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
     <div class="logo">
-      <nuxt-link to="/">
+      <nuxt-link to="/marketing">
         <img src="~/assets/images/gamesys-logo.png"/>
       </nuxt-link>
     </div>
@@ -12,7 +12,7 @@
       <ul class="nav-list">
         <li class="nav-item"><nuxt-link to="/marketing/vjlp1">Vera John Template 1</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/marketing/vjlp3">Vera John Template 3</nuxt-link></li>
-        <li class="nav-item"><nuxt-link to="/marketing/vjhp">Vera John Homepage</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/marketing/vjhp">VJ Stripped Down</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/marketing/about">About</nuxt-link></li>
         <li class="nav-item"><a href="/marketing/admin/#/" target="_blank">Admin</a></li>
       </ul>
@@ -87,13 +87,13 @@ export default {
 
 .nav-item a {
   text-decoration: none;
-  color: crimson;
+  color: #dc3545;
 }
 
 .nav-item a:hover,
 .nav-item a:active,
 .nav-item a.nuxt-link-active {
-  color: dodgerblue;
+  color: #007bff;
 }
 
 .header .logo img {

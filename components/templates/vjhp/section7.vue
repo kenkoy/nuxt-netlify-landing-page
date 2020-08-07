@@ -4,24 +4,14 @@
             <li>
                 <h3>決済方法</h3>
                 <p>お好きな方法で入出金がラクラク簡単!</p>
-                <img src="images/footerPayment.png">
+                <img src="/marketing/img/vjhp/footerPayment.png">
             </li>
             <li>
                 <h3>なにかでお困りですか?</h3>
                 <p>日本語カスタマーサポートがお手伝いいたします。</p>
-                <img src="images/footerSupport.png">
+                <img src="/marketing/img/vjhp/footerSupport.png">
             </li>
         </ul>
     </section>
   
 </template>
-
-<script>
-export default {
-
-}
-</script>
-
-<style>
-
-</style>
