@@ -1,4 +1,5 @@
 ---
+slug: jackpot-challenge-slug
 promo_locale:
   promo_country_code: se
   promo_language_code: sv
