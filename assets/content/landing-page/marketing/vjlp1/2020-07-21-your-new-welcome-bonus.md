@@ -1,4 +1,5 @@
 ---
+slug_title: Test SLUG addeD
 promo_locale:
   promo_country_code: se
   promo_language_code: sv
