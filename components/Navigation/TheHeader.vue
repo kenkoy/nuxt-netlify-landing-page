@@ -10,8 +10,9 @@
     <div class="spacer"></div>
     <div class="navigation-items">
       <ul class="nav-list">
-        <li class="nav-item"><nuxt-link to="/marketing/vjlp1">Vera John Template 1</nuxt-link></li>
-        <li class="nav-item"><nuxt-link to="/marketing/vjlp3">Vera John Template 3</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/marketing/vjlp1">VJLP 1</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/marketing/vjlp3">VJLP 3</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/marketing/iclp1">ICLP 1</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/marketing/vjhp">VJ Stripped Down</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/marketing/about">About</nuxt-link></li>
         <li class="nav-item"><a href="/marketing/admin/#/" target="_blank">Admin</a></li>
