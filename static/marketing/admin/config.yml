@@ -223,76 +223,75 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}    
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}      
 
-  - name: "VJ-Homepage"
-    label: "Vera&John Homepage"
+  - label: "Vera&John Homepage"
+    name: "VJ-Homepage"
     format: 'frontmatter'
-    folder: "assets/content/landing-page/marketing/vjhp"
-    create: true
-    identifier_field: "promo_banner.promo_title"
-    slug: '{{slug}}'
-    preview_path: vjhp/{{slug}}
     show_preview_links: false
     editor:
       preview: false
-    fields:
+    files:
       - label: "Vera&John Homepage"
-        name: "promo_banner"
-        widget: "object"
-        collapsed: true
+        name: "about"
+        file: "assets/content/landing-page/marketing/vjhp/vera-john-homepage.md"
         fields:
-          - {label: "Title for this edit", name: "promo_title", widget: "string"}
-      - label: "Login Header Section"
-        name: "login_header_section"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Login Header Text", name: login_header_text, widget: "string"}
-          - {label: "Login Header Redirect URL", name: login_header_redirect_url, widget: "string"}
-      - label: "Header Section"
-        name: "header_section"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Header Button Text", name: header_text, widget: "string"}
-          - {label: "Header Button Redirect URL", name: header_button_redirect_url, widget: "string"}
-          - {label: "Login Account Text", name: header_login_account_text, widget: "string"}
-          - {label: "Login Account Text Redirect URL", name: header_login_account_text_redirect_url, widget: "string"}
-      - label: "Games Brick Section"
-        name: "games_brick_section" 
-        widget: "object"
-        collapsed: true
-        fields:
-          - label: "Column 1"
-            name: "games_brick_column_1"
+          - label: "Vera&John Homepage"
+            name: "promo_banner"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Title for this edit", name: "promo_title", widget: "string"}
+          - label: "Login Header Section"
+            name: "login_header_section"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Login Header Text", name: login_header_text, widget: "string"}
+              - {label: "Login Header Redirect URL", name: login_header_redirect_url, widget: "string"}
+          - label: "Header Section"
+            name: "header_section"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Header Button Text", name: header_text, widget: "string"}
+              - {label: "Header Button Redirect URL", name: header_button_redirect_url, widget: "string"}
+              - {label: "Login Account Text", name: header_login_account_text, widget: "string"}
+              - {label: "Login Account Text Redirect URL", name: header_login_account_text_redirect_url, widget: "string"}
+          - label: "Games Brick Section"
+            name: "games_brick_section" 
+            widget: "object"
+            collapsed: true
+            fields:
+              - label: "Column 1"
+                name: "games_brick_column_1"
+                widget: "object"
+                colapsed: true
+                fields:
+                  - {label: "Button", name: games_brick_column_1_button, widget: "string"}   
+                  - {label: "Button Redirect URL", name: games_brick_column_1_button_redirect_url, widget: "string"} 
+              - label: "Column 2"
+                name: "games_brick_column_2"
+                widget: "object"
+                colapsed: true
+                fields:
+                  - {label: "Button", name: games_brick_column_2_button, widget: "string"}   
+                  - {label: "Button Redirect URL", name: games_brick_column_2_button_redirect_url, widget: "string"}
+          - label: "Testimonials Section"
+            name: "testimonials_section"
             widget: "object"
             colapsed: true
             fields:
-              - {label: "Button", name: games_brick_column_1_button, widget: "string"}   
-              - {label: "Button Redirect URL", name: games_brick_column_1_button_redirect_url, widget: "string"} 
-          - label: "Column 2"
-            name: "games_brick_column_2"
+              - {label: "Button Text", name: testimonials_button_text, widget: "string"}   
+              - {label: "Button Redirect URL", name: testimonials_button_redirect_url, widget: "string"}
+          - label: "Footer Section"
+            name: "footer_section"
             widget: "object"
             colapsed: true
             fields:
-              - {label: "Button", name: games_brick_column_2_button, widget: "string"}   
-              - {label: "Button Redirect URL", name: games_brick_column_2_button_redirect_url, widget: "string"}
-      - label: "Testimonials Section"
-        name: "testimonials_section"
-        widget: "object"
-        colapsed: true
-        fields:
-          - {label: "Button Text", name: testimonials_button_text, widget: "string"}   
-          - {label: "Button Redirect URL", name: testimonials_button_redirect_url, widget: "string"}
-      - label: "Footer Section"
-        name: "footer_section"
-        widget: "object"
-        colapsed: true
-        fields:
-          - {label: "Menu 1", name: footer_menu_1_text, widget: "string"}   
-          - {label: "Menu 1 Redirect URL", name: footer_menu_1_redirect_url, widget: "string"}
-          - {label: "Menu 2", name: footer_menu_2_text, widget: "string"}   
-          - {label: "Menu 2 Redirect URL", name: footer_menu_2_redirect_url, widget: "string"}
-          - {label: "Menu 3", name: footer_menu_3_text, widget: "string"}   
-          - {label: "Menu 3 Redirect URL", name: footer_menu_3_redirect_url, widget: "string"}
-          - {label: "Menu 4", name: footer_menu_4_text, widget: "string"}   
-          - {label: "Menu 4 Redirect URL", name: footer_menu_4_redirect_url, widget: "string"}
+              - {label: "Menu 1", name: footer_menu_1_text, widget: "string"}   
+              - {label: "Menu 1 Redirect URL", name: footer_menu_1_redirect_url, widget: "string"}
+              - {label: "Menu 2", name: footer_menu_2_text, widget: "string"}   
+              - {label: "Menu 2 Redirect URL", name: footer_menu_2_redirect_url, widget: "string"}
+              - {label: "Menu 3", name: footer_menu_3_text, widget: "string"}   
+              - {label: "Menu 3 Redirect URL", name: footer_menu_3_redirect_url, widget: "string"}
+              - {label: "Menu 4", name: footer_menu_4_text, widget: "string"}   
+              - {label: "Menu 4 Redirect URL", name: footer_menu_4_redirect_url, widget: "string"}
