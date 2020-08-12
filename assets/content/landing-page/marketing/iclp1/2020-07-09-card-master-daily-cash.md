@@ -4,7 +4,7 @@ promo_locale:
   promo_language_code: ja
 promo_banner:
   promo_title_display: false
-  promo_title: Card Master - Daily Cash
+  promo_title: 270-bic-lan-jp-pro-wo10-0220
   promo_subtitle: ジャックポットチャレンジ！ デイリーキャッシュで軍資金アップ！
   promo_login_button: 登録
   promo_login_button_redirect_url: https://verajohn.com/#join
