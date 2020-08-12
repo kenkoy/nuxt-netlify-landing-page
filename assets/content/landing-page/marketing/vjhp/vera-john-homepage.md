@@ -1,6 +1,6 @@
 ---
 promo_banner:
-  promo_title: Sample Title
+  promo_title: Sample Title For This Edit
 login_header_section:
   login_header_text: Sample Login Header Text
   login_header_redirect_url: "#"
