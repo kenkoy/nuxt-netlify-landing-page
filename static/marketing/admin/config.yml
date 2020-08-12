@@ -241,7 +241,7 @@ collections:
       preview: false
     files:
       - label: "Vera&John Homepage"
-        name: "about"
+        name: "VJ-Homepage"
         file: "assets/content/landing-page/marketing/vjhp/vera-john-homepage.md"
         fields:
           - label: "Vera&John Homepage"
