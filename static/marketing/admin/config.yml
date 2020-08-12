@@ -206,11 +206,16 @@ collections:
         fields:
           - {label: "Title", name: "promo_title", widget: "string"}
           - {label: "Display Title", name: "promo_title_display", widget: "boolean", default: true}
-          - {label: "Subtitle", name: "promo_subtitle", widget: "string", required: false}
-          - {label: "Login Button", name: promo_login_button, widget: "string"}
-          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}    
-          - {label: "Join Button", name: promo_join_button, widget: "string"}
-          - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}
+          - {label: "Login Button Text", name: promo_login_button_text, widget: "string"}
+          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
+          - {label: "Subtitle 1", name: "promo_subtitle_1", widget: "string", required: false}
+          - {label: "Main Heading H1", name: "promo_main_heading", widget: "string", required: false}
+          - {label: "Subtitle 2", name: "promo_subtitle_2", widget: "string", required: false}
+          - {label: "Signup Button Text", name: promo_signup_button, widget: "string"}
+          - {label: "Signup Button Redirect URL", name: promo_signup_button_redirect_url, widget: "string"}    
+          - {label: "Small Term Text Link", name: promo_smallterm_text_link, widget: "string"}
+          - {label: "Small Term Redirect URL", name: promo_smallterm_redirect_url, widget: "string"}
+          - {label: "Small Term Text", name: promo_smallterm_text, widget: "string"}
           - label: "Images"
             name: "promo_images"
             widget: "object"

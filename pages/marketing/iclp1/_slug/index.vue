@@ -3,11 +3,16 @@
     <TheHeader 
       :title = "post.attributes.promo_banner.promo_title"
       :title_display = "post.attributes.promo_banner.promo_title_display"
-      :subtitle = "post.attributes.promo_banner.promo_subtitle"
-      :login_button = "post.attributes.promo_banner.promo_login_button"
+      :subtitle1 = "post.attributes.promo_banner.promo_subtitle_1"
+      :main_heading = "post.attributes.promo_banner.promo_main_heading"
+      :subtitle2 = "post.attributes.promo_banner.promo_subtitle_2"
+      :login_button = "post.attributes.promo_banner.promo_login_button_text"
       :login_button_redirect_url = "post.attributes.promo_banner.promo_login_button_redirect_url"
-      :join_button = "post.attributes.promo_banner.promo_join_button"
-      :join_button_redirect_url = "post.attributes.promo_banner.promo_join_button_redirect_url"
+      :signup_button = "post.attributes.promo_banner.promo_signup_button"
+      :signup_button_redirect_url = "post.attributes.promo_banner.promo_signup_button_redirect_url"
+      :small_term_text = "post.attributes.promo_banner.promo_smallterm_text"
+      :small_term_text_link = "post.attributes.promo_banner.promo_smallterm_text_link"
+      :small_term_redirect_url = "post.attributes.promo_banner.promo_smallterm_redirect_url" 
       :images = "post.attributes.promo_banner.promo_images"
     />
     <TheSteps 

@@ -1,24 +1,26 @@
 <template>
   <header id="strip-container" class="container-flex h-100">        
-		<a id="login-btn" href="#signin" class="login hvr-pulse">
+		<a id="login-btn" v-bind:href="login_button_redirect_url" class="login hvr-pulse">
 			<div class="animated fadeIn">
 				<i class="material-icons">exit_to_app</i> 
-				<div class="login-txt"><p>ログイン</p></div>
+				<div class="login-txt"><p>{{ login_button }}</p></div>
 			</div>
 		</a>    
     <div class="container">
         <div class="row row-eq-height">
               <div id="strip" class="col-12 strip"> 
-                <div class="strip-container animated fadeIn" style="margin-top:41px;">
+                <div class="strip-container animated fadeIn" style="margin-top: 75px;">
                     <div class="logo animated fadeIn"></div>
                     <div>
-            <h2>新規プレイヤー特典!</h2><h1 class="color-alt-two"><font color="#ffffff">総額$500</font></h1><h2>ウェルカムキャッシュ<br></h2>
-          </div>                       
+                      <h2>{{ subtitle1 }}</h2>
+                      <h1 class="color-alt-two"><font color="#ffffff">{{ main_heading }}</font></h1>
+                      <h2>{{ subtitle2 }}<br></h2>
+                    </div>                       
                     <!-- <div class="co-brand"></div>-->
-                    <a id="signup-btn" href="#" class="button button-lrg" style="display:block">今すぐ登録</a><!-- show button-->
-        <!-- <div class="game-logo animated jello delay-2s"></div>-->
+                    <a id="signup-btn" v-bind:href="signup_button_redirect_url" class="button button-lrg" style="display:block">{{ signup_button }}</a><!-- show button-->
+                    <!-- <div class="game-logo animated jello delay-2s"></div>-->
                 </div>
-                <div class="small-terms"><a href="#terms" class="link-terms-conditions ctac">利用規約</a>に同意します。</div>
+                <div class="small-terms"><a v-bind:href="small_term_redirect_url" class="link-terms-conditions ctac">{{ small_term_text_link }}</a>{{ small_term_text }}</div>
             </div>              
         </div>
     </div>
@@ -44,9 +46,16 @@ export default {
       type: Boolean,
       required: true,
     },
-    subtitle: {
+    subtitle1: {
       type: String,
-      default: '',
+      required: true,
+    },
+    main_heading: {
+      type: String,
+      required: true,
+    },
+    subtitle2: {
+      type: String,
       required: true,
     },
     login_button: {
@@ -57,18 +66,30 @@ export default {
       type: String,
       required: true,
     },
-    join_button: {
+    signup_button: {
       type: String,
       required: true,
     },
-    join_button_redirect_url: {
+    signup_button_redirect_url: {
+      type: String,
+      required: true,
+    },
+    small_term_text: {
+      type: String,
+      required: true,
+    },
+    small_term_text_link: {
+      type: String,
+      required: true,
+    },
+    small_term_redirect_url: {
       type: String,
       required: true,
     },
     images: {
       type: Object,
       required: true,
-    },
+    }
   },
 };
 </script>
