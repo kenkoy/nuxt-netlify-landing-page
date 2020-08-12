@@ -85,7 +85,7 @@ export default {
   background-size: cover;
   background-position: 0 0;
 }
-  #strip-container {background-position: 0 0;}
+#strip-container {background-position: 0 0;}
 
 #stripblank-nobg { background: none; }
 
@@ -98,6 +98,7 @@ export default {
     background: var(--bg-image-m) no-repeat center;
     background-size: cover;
   }
+  #strip-container {background-position: 0 0;}
 }
 .spacer {
   margin: 6rem 0;
