@@ -3,16 +3,25 @@ promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 promo_banner:
-  promo_title_display: false
-  promo_title: 270-bic-lan-jp-pro-wo10-0220
+  promo_signup_button_redirect_url: "#"
   promo_subtitle: ジャックポットチャレンジ！ デイリーキャッシュで軍資金アップ！
-  promo_login_button: 登録
-  promo_login_button_redirect_url: https://verajohn.com/#join
-  promo_join_button_redirect_url: https://verajohn.com/#join
-  promo_join_button: ご登録はこちら
+  promo_smallterm_redirect_url: "#"
+  promo_title: 270-bic-lan-jp-pro-wo10-0220
   promo_images:
     promo_bg_desktop: /marketing/img/bg.jpg
     promo_bg_mobile: /marketing/img/bg_m.jpg
+  promo_signup_button: 今すぐ登録
+  promo_smallterm_text: に同意します。
+  promo_title_display: false
+  promo_main_heading: 総額$500
+  promo_smallterm_text_link: 利用規約
+  promo_login_button_redirect_url: "#"
+  promo_join_button_redirect_url: https://verajohn.com/#join
+  promo_login_button_text: ログイン
+  promo_join_button: ご登録はこちら
+  promo_login_button: 登録
+  promo_subtitle_1: 新規プレイヤー特典!
+  promo_subtitle_2: ウェルカムキャッシュ
 promo_steps:
   promo_step_1_title: ご登録
   promo_step_1_desc: 安全 & 安心！
