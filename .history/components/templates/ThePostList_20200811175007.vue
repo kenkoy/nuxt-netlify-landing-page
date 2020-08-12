@@ -5,7 +5,7 @@
             :slug="post.slug"
             :path="post.path"
             :title="post.attributes.slug_name"
-            :description="post.attributes.promo_banner.promo_title"
+            :description="post.attributes.promo_banner.promo_subtitle"
         />
     </section>    
 </template>

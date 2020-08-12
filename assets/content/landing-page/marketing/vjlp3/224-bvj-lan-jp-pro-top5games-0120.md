@@ -1,38 +1,39 @@
 ---
+slug_name: 224 BVJ lan JP Pro Top5games 0120
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 promo_banner:
   game_images:
-    game_url_1: https://www.google.com
-    game_url_2: https://www.google.com
-    game_url_3: ""
-    game_url_4: ""
-    game_url_5: ""
-    game_icon_1: /marketing/img/moon-princess.png
-    game_url_6: ""
-    game_icon_2: /marketing/img/roulette-lobby-paris.png
-    game_icon_3: ""
-    game_icon_4: ""
-    game_icon_5: ""
-    game_icon_6: ""
-  promo_subtitle: This is a sample template 2
-  promo_title: Sample Template 2
+    game_url_1: https://www.verajohn.com/ja/game/roulette-lobby-paris
+    game_url_2: https://www.verajohn.com/ja/game/baccarat-lobby-paris
+    game_url_3: https://www.verajohn.com/ja/game/hawaiian-dream
+    game_url_4: https://www.verajohn.com/ja/game/live-blackjack-lobby-paris
+    game_url_5: https://www.verajohn.com/ja/game/moon-princess
+    game_icon_1: /marketing/img/roulette-lobby-paris.png
+    game_url_6: "#"
+    game_icon_2: /marketing/img/baccarat-lobby-paris.png
+    game_icon_3: /marketing/img/hawaiian-dream.png
+    game_icon_4: /marketing/img/live-blackjack-lobby-paris.png
+    game_icon_5: /marketing/img/moon-princess.png
+    game_icon_6: /marketing/img/battle-dwarf.png
+  promo_subtitle: " "
+  promo_title: New Top 5 Games
   promo_images:
-    promo_bg_desktop: /marketing/img/hd-pachinko-v2-banner-2-d.png
-    promo_bg_mobile: /marketing/img/hd-pachinko-v2-banner-2-m.png
-  promo_title_display: true
-  promo_login_button_redirect_url: https://www.google.com
-  promo_join_button_redirect_url: https://www.google.com
-  promo_join_button: Join
-  promo_login_button: Login
+    promo_bg_desktop: /marketing/img/new-top-5-games-banner-2-d.png
+    promo_bg_mobile: /marketing/img/new-top-5-games-banner-2-m.png
+  promo_title_display: false
+  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
+  promo_join_button_redirect_url: https://casino.verajohn.com/#join
+  promo_join_button: 今すぐプレイ
+  promo_login_button: 登録
   promo_join_button_location: lower-right
 promo_template: VJLP3-NoForm
 ---
 <section id="bf-usps" class="container">
    <div class="row">
       <div id="intro" class="col-12">
-         <h3>日本No. 1カジノで今日からプレイをはじめちゃおう！</h3>
+         <h3>日本No. 1カジノで今日からプレイをはじめちゃおう！<br></h3>
          <p>安心・安全・楽しいの3拍子が揃った、ベラジョン・オンラインカジノは、初心者の方でも気軽に、そして簡単にプレイを楽しむことができます。インターネット環境さえあれば、パソコン以外にも、モバイル版の利用が可能なiPhone やアンドロイドといったスマホ、iPadなどといったタブレットで、24時間365日プレイを楽しむことができるので、いつでもどこでも、オンラインで一獲千金を狙うことができちゃいます！<br><br>ベラジョンでは、数百種類ものゲームを取り揃えており、StarburstやMoon Princess、Gemixなどの大人気スロットはもちろん、バカラやブラックジャック、ルーレットなどのテーブルゲーム、本場カジノの興奮を楽しめる臨場感あふれたライブカジノ、さらには、1千万円を超えるジャックポットを叩き出すことで有名なCleopatraやDivine Fortune、Mega Moolahなどのプログレッシブ・ジャックポットスロット。さらに、日本で大人気のパチンコのようなボーナスゲームや、パチスロをそのままオンラインで体感できるようなスロットも見つけることができます。なんと競馬のゲームもあるんです！<br><br>今すぐベラジョンで、日本でカジノ体験を楽しみましょう！</p>
       </div>
       <div class="bf-separator col-12"></div>
@@ -71,7 +72,7 @@ promo_template: VJLP3-NoForm
       <div class="bf-separator col-12"></div>
       <div class="col-12">
          <h3>ビギナーズボーナス利用規約</h3>
-         <ul>1. このキャンペーンでは、100%の初回入金ボーナスを最高$500まで、50%のセカンド入金ボーナスを最高$250まで、100%のサード入金ボーナスを最高$200まで獲得することができます。<br> 2. 有効な入金額により、ボーナスが自動的に進呈され、ボーナスのお引き出しには、ボーナス額の20倍にあたる金額をゲームで賭ける必要があります。<br> 3.&nbsp;ビギナーズボーナスを獲得するためには、入金時に、入金ページにある「ボーナス」のボックスにチェックが入力されている必要があります。&nbsp; <br>4. ボーナスの有効期限は30日間です。&nbsp; <br>5. このキャンペーンは各入金毎にお1人様1回のみ有効となります。&nbsp; <br>6. このキャンペーンは他のキャンペーンとの併用はできません。 <br>7. このキャンペーンは日本のプレイヤー様のみ対象となります。&nbsp; <br>8.&nbsp;&nbsp;ボーナスを使ったゲームプレイでの1度の最大賭け額は、スロット/スクラッチカードで$6.25、またはテーブルゲーム/ライブカジノまで$25とします。この金額を上回った場合には、ボーナスとそのボーナスに関連するすべての勝利金は没収されます。 <br>9. ベラジョンはいかなるときも通告なしでこのキャンペーンを変更、終了できる権利を有します。 </ul>
+         <ul>1. このキャンペーンでは、100%の初回入金ボーナスを最高$500まで、50%のセカンド入金ボーナスを最高$250まで、100%のサード入金ボーナスを最高$200まで獲得することができます。<br> 2. 有効な入金額により、ボーナスが自動的に進呈され、ボーナスのお引き出しには、ボーナス額の20倍にあたる金額をゲームで賭ける必要があります。<br> 3.ビギナーズボーナスを獲得するためには、入金時に、入金ページにある「ボーナス」のボックスにチェックが入力されている必要があります。 <br>4. ボーナスの有効期限は30日間です。&nbsp; <br>5. このキャンペーンは各入金毎にお1人様1回のみ有効となります。<br>6. このキャンペーンは他のキャンペーンとの併用はできません。 <br>7. このキャンペーンは日本のプレイヤー様のみ対象となります。 <br>8. ボーナスを使ったゲームプレイでの1度の最大賭け額は、スロット/スクラッチカードで$6.25、またはテーブルゲーム/ライブカジノまで$25とします。この金額を上回った場合には、ボーナスとそのボーナスに関連するすべての勝利金は没収されます。 <br>9. ベラジョンはいかなるときも通告なしでこのキャンペーンを変更、終了できる権利を有します。 <br></ul>
       </div>
    </div>
    <div class="bf-separator col-12"></div>

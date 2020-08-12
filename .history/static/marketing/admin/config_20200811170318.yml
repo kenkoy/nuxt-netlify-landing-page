@@ -14,18 +14,13 @@ collections:
     format: 'frontmatter'
     folder: 'assets/content/landing-page/marketing/vjlp1'
     create: true
-    identifier_field: "slug_name"
-    slug: '{{slug}}'
+    identifier_field: "promo_banner.promo_title"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     preview_path: vjlp1/{{slug}}
     show_preview_links: false
     editor:
       preview: false
     fields:
-      - label: Slug
-        widget: string
-        name: slug_name
-        required: true  
-        hint: "The last segment of landing page URL (do not include folder or file extension)"
       - label: "Locale"
         name: "promo_locale"
         widget: "object"
@@ -86,18 +81,13 @@ collections:
     format: 'frontmatter'
     folder: "assets/content/landing-page/marketing/vjlp3"
     create: true
-    identifier_field: "slug_name"
-    slug: '{{slug}}'
+    identifier_field: "promo_banner.promo_title"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     preview_path: vjlp3/{{slug}}
     show_preview_links: false
     editor:
       preview: false
     fields:
-      - label: Slug
-        widget: string
-        name: slug_name
-        required: true  
-        hint: "The last segment of landing page URL (do not include folder or file extension)"
       - label: "Locale"
         name: "promo_locale"
         widget: "object"
