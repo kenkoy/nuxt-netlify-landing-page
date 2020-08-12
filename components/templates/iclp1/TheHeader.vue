@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row row-eq-height">
               <div id="strip" class="col-12 strip"> 
-                <div class="strip-container animated fadeIn">
+                <div class="strip-container animated fadeIn" style="margin-top:41px;">
                     <div class="logo animated fadeIn"></div>
                     <div>
             <h2>新規プレイヤー特典!</h2><h1 class="color-alt-two"><font color="#ffffff">総額$500</font></h1><h2>ウェルカムキャッシュ<br></h2>
@@ -18,6 +18,7 @@
                     <a id="signup-btn" href="#" class="button button-lrg" style="display:block">今すぐ登録</a><!-- show button-->
         <!-- <div class="game-logo animated jello delay-2s"></div>-->
                 </div>
+                <div class="small-terms"><a href="#terms" class="link-terms-conditions ctac">利用規約</a>に同意します。</div>
             </div>              
         </div>
     </div>
@@ -81,11 +82,9 @@ export default {
   z-index: 999999;
 }
 #strip-container {
-  background: var(--bg-image) no-repeat;
+  background: var(--bg-image) no-repeat top center;
   background-size: cover;
-  background-position: 0 0;
 }
-#strip-container {background-position: 0 0;}
 
 #stripblank-nobg { background: none; }
 
@@ -95,10 +94,9 @@ export default {
 
 @media only screen and (max-width: 575px) {
   #strip-container {
-    background: var(--bg-image-m) no-repeat center;
+    background: var(--bg-image-m) no-repeat top center;
     background-size: cover;
   }
-  #strip-container {background-position: 0 0;}
 }
 .spacer {
   margin: 6rem 0;
