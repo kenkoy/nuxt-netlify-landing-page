@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import TheHeader from '~/components/Navigation/TheHeader'
-import TheSidenav from '~/components/Navigation/TheSidenav'
+import TheHeader from '~/components/navigation/TheHeader'
+import TheSidenav from '~/components/navigation/TheSidenav'
 
 export default {
   components: {
