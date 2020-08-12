@@ -11,8 +11,8 @@ promo_banner:
   promo_join_button_redirect_url: https://verajohn.com/#join
   promo_join_button: ご登録はこちら
   promo_images:
-    promo_bg_desktop: /marketing/img/cm-daily-cash-bg.jpg
-    promo_bg_mobile: /marketing/img/cm-daily-cash-bg-m.jpg
+    promo_bg_desktop: /marketing/img/bg.jpg
+    promo_bg_mobile: /marketing/img/bg_m.jpg
 promo_steps:
   promo_step_1_title: ご登録
   promo_step_1_desc: 安全 & 安心！
