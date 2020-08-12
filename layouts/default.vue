@@ -1,7 +1,7 @@
 <template>
   <div>
     <TheHeader 
-      @sidenavToggle="displaySidenav = !displaySidenav" />
+      @sidenav-toggle="displaySidenav = !displaySidenav" />
     <TheSidenav 
       :show="displaySidenav"
       @close="displaySidenav = false" />
