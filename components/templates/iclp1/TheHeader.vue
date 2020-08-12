@@ -89,7 +89,7 @@ export default {
 #stripblank-nobg { background: none; }
 
 @media only screen and (max-width: 991px) {
-  #signup-btn { margin-bottom: 2.5rem; }
+  /* #signup-btn { margin-bottom: 2.5rem; } */
 }
 
 @media only screen and (max-width: 575px) {
