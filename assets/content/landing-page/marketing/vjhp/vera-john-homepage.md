@@ -18,14 +18,14 @@ games_brick_section:
     games_brick_column_2_button_redirect_url: https://www.google.com
 testimonials_section:
   testimonials_button_text: Testimonial Button Sample
-  testimonials_button_redirect_url: https://www.google.com
+  testimonials_button_redirect_url: https://www.facebook.com
 footer_section:
   footer_menu_1_text: Menu 1 Sample
   footer_menu_1_redirect_url: https://www.google.com
   footer_menu_2_text: Menu 2 Sample
-  footer_menu_2_redirect_url: https://www.google.com
+  footer_menu_2_redirect_url: https://www.yahoo.com
   footer_menu_3_text: Menu 3 Sample
-  footer_menu_3_redirect_url: https://www.google.com
+  footer_menu_3_redirect_url: https://www.opera.com
   footer_menu_4_text: Menu 4 Sample
-  footer_menu_4_redirect_url: https://www.google.com
+  footer_menu_4_redirect_url: https://www.gamesys.com
 ---
