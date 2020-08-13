@@ -1,5 +1,5 @@
 ---
-slug_name: 206 BVJ lan JP Pro Dailycashwo 1219
+slug_name: 206 BVJ lan JP Pro Dailycashwo 1219 - edited
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
