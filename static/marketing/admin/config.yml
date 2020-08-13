@@ -205,11 +205,11 @@ collections:
         collapsed: true
         fields:
           - {label: "Title", name: "promo_title", widget: "string"}
-          - {label: "Display Title", name: "promo_title_display", widget: "boolean", default: true}
           - {label: "Login Button Text", name: promo_login_button_text, widget: "string"}
           - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
           - {label: "Subtitle 1", name: "promo_subtitle_1", widget: "string", required: false}
           - {label: "Main Heading H1", name: "promo_main_heading", widget: "string", required: false}
+          - {label: "Animate Heading", name: "promo_title_animate", widget: "boolean", default: true}
           - {label: "Subtitle 2", name: "promo_subtitle_2", widget: "string", required: false}
           - {label: "Signup Button Text", name: promo_signup_button, widget: "string"}
           - {label: "Signup Button Redirect URL", name: promo_signup_button_redirect_url, widget: "string"}    

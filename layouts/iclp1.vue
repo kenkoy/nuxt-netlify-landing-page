@@ -18,6 +18,7 @@
           { rel: 'stylesheet', href: 'https://files.vjpromo.com/bannerflow/lp2/css/core.css' },
           { rel: 'stylesheet', href: 'https://files.vjpromo.com/bannerflow/lp2/brand_icjp/css/brand.css' },
           { rel: 'stylesheet', href: 'https://files.vjpromo.com/bannerflow/lp2/css/responsive.css' },
+          { defer: true, rel: 'stylesheet', href: '/marketing/styles/iclp1/flicker.css' },
         ], 
 
         script: [

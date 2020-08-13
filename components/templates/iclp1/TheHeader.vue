@@ -13,8 +13,10 @@
                     <div class="logo animated fadeIn"></div>
                     <div>
                       <h2>{{ subtitle1 }}</h2>
-                      <h1 class="color-alt-two"><font color="#ffffff">{{ main_heading }}</font></h1>
-                      <h2>{{ subtitle2 }}<br></h2>
+                      <div v-bind:class="{sign: title_animate}">
+                        <h1 style="font-size:3.6em;" class="color-alt-two"><font color="#ffffff">{{ main_heading }}</font></h1>
+                        <h2>{{ subtitle2 }}<br></h2>
+                      </div>
                     </div>                       
                     <!-- <div class="co-brand"></div>-->
                     <a id="signup-btn" v-bind:href="signup_button_redirect_url" class="button button-lrg" style="display:block">{{ signup_button }}</a><!-- show button-->
@@ -42,7 +44,7 @@ export default {
       type: String,
       required: true,
     },
-    title_display: {
+    title_animate: {
       type: Boolean,
       required: true,
     },
@@ -86,11 +88,18 @@ export default {
       type: String,
       required: true,
     },
+    promo_title_animate: {
+      type: Boolean,
+      required: true,
+    },
     images: {
       type: Object,
       required: true,
     }
   },
+  data: {
+    title_animate: true,
+  }
 };
 </script>
 
@@ -121,5 +130,10 @@ export default {
 }
 .spacer {
   margin: 6rem 0;
+}
+.sign {
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
 }
 </style>

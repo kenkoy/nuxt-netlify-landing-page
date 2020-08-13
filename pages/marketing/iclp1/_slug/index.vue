@@ -5,6 +5,7 @@
       :title_display = "post.attributes.promo_banner.promo_title_display"
       :subtitle1 = "post.attributes.promo_banner.promo_subtitle_1"
       :main_heading = "post.attributes.promo_banner.promo_main_heading"
+      :title_animate = "post.attributes.promo_banner.promo_title_animate"
       :subtitle2 = "post.attributes.promo_banner.promo_subtitle_2"
       :login_button = "post.attributes.promo_banner.promo_login_button_text"
       :login_button_redirect_url = "post.attributes.promo_banner.promo_login_button_redirect_url"
