@@ -11,7 +11,7 @@ promo_banner:
     promo_bg_mobile: /marketing/img/313_bg_m.jpg
   promo_signup_button: 今すぐ登録
   promo_smallterm_text: に同意します。
-  promo_title_animate: true
+  promo_title_animate: false
   promo_title_display: false
   promo_main_heading: 総額$500
   promo_smallterm_text_link: 利用規約
