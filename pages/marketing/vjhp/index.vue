@@ -52,6 +52,11 @@ import TheFooterSection from "~/components/templates/vjhp/TheFooterSection.vue";
 
 export default {
   layout: 'vjhp',
+  head() {
+    return { 
+      title: 'Vera&John Homepage',
+    }
+  },
   components: {
     TheLoginHeaderSection,
     TheHeaderSection,
