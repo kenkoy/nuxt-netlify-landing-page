@@ -136,7 +136,7 @@ export default {
     background-size: cover;
   }
 }
-@media only screen and (max-width: 320px) {
+@media only screen and (width: 320px) {
   .strip-container.animated.fadeIn {
     margin-top: 36.5px;
   }
@@ -144,22 +144,22 @@ export default {
     padding: 5px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (width: 375px) {
   .strip-container.animated.fadeIn {
     margin-top: 20.5px;
   }
 }
-@media only screen and (max-width: 414px) {
+@media only screen and (width: 414px) {
   .strip-container.animated.fadeIn {
     margin-top: 28.5px;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (width: 768px) {
   .strip-container.animated.fadeIn {
     margin-top: 46px;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (width: 1024px) {
   .strip-container.animated.fadeIn {
     margin-top: 56px;
   }
