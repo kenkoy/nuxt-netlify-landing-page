@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row row-eq-height">
               <div id="strip" class="col-12 strip"> 
-                <div class="strip-container animated fadeIn" style="margin-top: 75px;">
+                <div class="strip-container animated fadeIn">
                     <div class="logo animated fadeIn"></div>
                     <div>
                       <h2>{{ subtitle1 }}</h2>
@@ -118,6 +118,14 @@ export default {
 
 #stripblank-nobg { background: none; }
 
+.spacer {
+  margin: 6rem 0;
+}
+.sign {
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
 @media only screen and (max-width: 991px) {
   /* #signup-btn { margin-bottom: 2.5rem; } */
 }
@@ -128,12 +136,22 @@ export default {
     background-size: cover;
   }
 }
-.spacer {
-  margin: 6rem 0;
+@media only screen and (max-width: 320px) {
+  .strip-container.animated.fadeIn {
+    margin-top: 36.5px;
+  }
+  .icons {
+    padding: 5px;
+  }
 }
-.sign {
-  color: #ffe6ff;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-  animation: shine 2s forwards, flicker 3s infinite;
+@media only screen and (max-width: 375px) {
+  .strip-container.animated.fadeIn {
+    margin-top: 20.5px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .strip-container.animated.fadeIn {
+    margin-top: 28.5px;
+  }
 }
 </style>
