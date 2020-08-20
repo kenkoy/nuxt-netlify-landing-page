@@ -154,4 +154,14 @@ export default {
     margin-top: 28.5px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .strip-container.animated.fadeIn {
+    margin-top: 46px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .strip-container.animated.fadeIn {
+    margin-top: 56px;
+  }
+}
 </style>
