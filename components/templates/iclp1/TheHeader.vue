@@ -129,6 +129,9 @@ export default {
 }
 @media only screen and (max-width: 991px) {
   /* #signup-btn { margin-bottom: 2.5rem; } */
+  .strip-container.animated.fadeIn {
+    margin-top: 38px;
+  }
 }
 
 @media only screen and (max-width: 575px) {
