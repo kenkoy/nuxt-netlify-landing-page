@@ -13,6 +13,7 @@
                     <div class="logo animated fadeIn"></div>
                     <div>
                       <h2>{{ subtitle1 }}</h2>
+                      <div><br></div>
                       <div v-bind:class="{sign: title_animate}">
                         <h1 style="font-size:3.6em;" class="color-alt-two"><font color="#ffffff">{{ main_heading }}</font></h1>
                         <h2>{{ subtitle2 }}<br></h2>
@@ -157,6 +158,9 @@ export default {
 @media only screen and (width: 768px) {
   .strip-container.animated.fadeIn {
     margin-top: 46px;
+  }
+  header#strip-container {
+    background-position: center 45px;
   }
 }
 @media only screen and (width: 1024px) {
