@@ -269,15 +269,15 @@ collections:
               - {label: "Game Slider 1", name: header_section_game_slider_1, widget: "image"}
               - {label: "Game Slider URL 1", name: header_section_game_slider_url_1, widget: "string"}
               - {label: "Game Slider 2", name: header_section_game_slider_2, widget: "image"}
-              - {label: "Game Slider URL 1", name: header_section_game_slider_url_2, widget: "string"}
+              - {label: "Game Slider URL 2", name: header_section_game_slider_url_2, widget: "string"}
               - {label: "Game Slider 3", name: header_section_game_slider_3, widget: "image"}
-              - {label: "Game Slider URL 1", name: header_section_game_slider_url_3, widget: "string"}
+              - {label: "Game Slider URL 3", name: header_section_game_slider_url_3, widget: "string"}
               - {label: "Game Slider 4", name: header_section_game_slider_4, widget: "image"}
-              - {label: "Game Slider URL 1", name: header_section_game_slider_url_4, widget: "string"}
+              - {label: "Game Slider URL 4", name: header_section_game_slider_url_4, widget: "string"}
               - {label: "Game Slider 5", name: header_section_game_slider_5, widget: "image"}
-              - {label: "Game Slider URL 1", name: header_section_game_slider_url_5, widget: "string"}
+              - {label: "Game Slider URL 5", name: header_section_game_slider_url_5, widget: "string"}
               - {label: "Game Slider 6", name: header_section_game_slider_6, widget: "image"}
-              - {label: "Game Slider URL 1", name: header_section_game_slider_url_6, widget: "string"}
+              - {label: "Game Slider URL 6", name: header_section_game_slider_url_6, widget: "string"}
               - {label: "Best Deal Caption", name: header_section_best_deal_caption, widget: "string"}
               - {label: "Best Deal Image", name: header_section_best_deal_image, widget: "image"}
               - {label: "Best Deal Image URL", name: header_section_best_deal_image_url, widget: "string"}
