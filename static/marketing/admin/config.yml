@@ -255,22 +255,39 @@ collections:
             collapsed: true
             fields:
               - {label: "Title for this edit", name: "promo_title", widget: "string"}
-          - label: "Login Header Section"
-            name: "login_header_section"
-            widget: "object"
-            collapsed: true
-            fields:
-              - {label: "Login Header Text", name: login_header_text, widget: "string"}
-              - {label: "Login Header Redirect URL", name: login_header_redirect_url, widget: "string"}
           - label: "Header Section"
             name: "header_section"
             widget: "object"
             collapsed: true
             fields:
-              - {label: "Header Button Text", name: header_text, widget: "string"}
-              - {label: "Header Button Redirect URL", name: header_button_redirect_url, widget: "string"}
-              - {label: "Login Account Text", name: header_login_account_text, widget: "string"}
-              - {label: "Login Account Text Redirect URL", name: header_login_account_text_redirect_url, widget: "string"}
+              - {label: "Top Text", name: header_section_top_text, widget: "string"}
+              - {label: "Top Login Text", name: header_section_top_login_text, widget: "string"}
+              - {label: "Top Login Text URL", name: header_section_top_login_text_url, widget: "string"}
+              - {label: "Welcome Message", name: header_section_welcome_message, widget: "string"}
+              - {label: "Main Heading", name: header_section_main_heading, widget: "string"}
+              - {label: "Heading Subtitle", name: header_section_heading_subtitle, widget: "string"}
+              - {label: "Game Slider 1", name: header_section_game_slider_1, widget: "image"}
+              - {label: "Game Slider URL 1", name: header_section_game_slider_url_1, widget: "string"}
+              - {label: "Game Slider 2", name: header_section_game_slider_2, widget: "image"}
+              - {label: "Game Slider URL 1", name: header_section_game_slider_url_2, widget: "string"}
+              - {label: "Game Slider 3", name: header_section_game_slider_3, widget: "image"}
+              - {label: "Game Slider URL 1", name: header_section_game_slider_url_3, widget: "string"}
+              - {label: "Game Slider 4", name: header_section_game_slider_4, widget: "image"}
+              - {label: "Game Slider URL 1", name: header_section_game_slider_url_4, widget: "string"}
+              - {label: "Game Slider 5", name: header_section_game_slider_5, widget: "image"}
+              - {label: "Game Slider URL 1", name: header_section_game_slider_url_5, widget: "string"}
+              - {label: "Game Slider 6", name: header_section_game_slider_6, widget: "image"}
+              - {label: "Game Slider URL 1", name: header_section_game_slider_url_6, widget: "string"}
+              - {label: "Best Deal Caption", name: header_section_best_deal_caption, widget: "string"}
+              - {label: "Best Deal Image", name: header_section_best_deal_image, widget: "image"}
+              - {label: "Best Deal Image URL", name: header_section_best_deal_image_url, widget: "string"}
+              - {label: "Best Deal Small Caption", name: header_section_best_deal_small_caption, widget: "string"}
+              - {label: "Register Button", name: header_section_register_button, widget: "string"}
+              - {label: "Register Button URL", name: header_section_register_button_url, widget: "string"}
+              - {label: "Account Text", name: header_section_account_text, widget: "string"}
+              - {label: "Account Login", name: header_section_account_login, widget: "string"}
+              - {label: "Account Login URL", name: header_section_account_login_url, widget: "string"}
+              - {label: "Background Image", name: header_section_background_image, widget: "image"}
           - label: "Games Brick Section"
             name: "games_brick_section" 
             widget: "object"
