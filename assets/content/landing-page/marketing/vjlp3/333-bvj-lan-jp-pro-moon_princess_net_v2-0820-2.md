@@ -1,5 +1,5 @@
 ---
-slug_name: 333-BVJ-LAN-JP-PRO-Moon_princess_Net_v2-0820
+slug_name: 331 BVJ LAN JP PRO Hawaiian Net v2 0820
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -19,8 +19,8 @@ promo_banner:
     game_icon_6: ""
   promo_title: ライブカジノで一攫千金ッ！
   promo_images:
-    promo_bg_desktop: /marketing/img/333-bg.jpg
-    promo_bg_mobile: /marketing/img/333-bg-m.jpg
+    promo_bg_desktop: /marketing/img/331-bg.jpg
+    promo_bg_mobile: /marketing/img/331-bg-m.jpg
   promo_title_display: false
   promo_login_button_redirect_url: https://verajohn.com/#join
   promo_join_button_redirect_url: https://verajohn.com/#join
