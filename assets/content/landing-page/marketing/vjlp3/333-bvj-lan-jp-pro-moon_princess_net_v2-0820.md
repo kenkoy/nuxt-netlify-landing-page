@@ -39,7 +39,7 @@ promo_template: VJLP3-NoForm
         </div>
         <div class="bf-separator col-12"></div>
         <div class="col-12 col-md-6">
-            <span style="color: rgb(254, 230, 61); font-size: 1.5em;">勝負金が2倍! 最高$500初回入金ボーナスをもらってお得にプレイ！</span><br />
+            <span style="color: rgb(254, 230, 61); font-size: 1.5em;">勝負金が2倍！最高$500初回入金ボーナスをもらってお得にプレイ！</span><br />
             <p>
                 <span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;">
                     ベラジョンでの初回入金時には、軍資金が2倍になる★ビギナーズボーナス★がお待ちしています! 最高$500までもらえる、100%入金ボーナスを受け取って、いろんなゲームにトライしてみましょう！<br />
