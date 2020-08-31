@@ -1,5 +1,5 @@
 ---
-slug_name: 332 BVJ LAN JP PRO Moon princess Net v1 0820
+slug_name: 328 BVJ LAN JP PRO LIVE CASINO Net v1 0820
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -11,8 +11,8 @@ promo_banner:
   promo_join_button: 登録
   promo_join_button_redirect_url: https://verajohn.com/#join
   promo_images:
-    promo_bg_mobile: /marketing/img/332-bg_m.jpg
-    promo_bg_desktop: /marketing/img/332-bg.jpg
+    promo_bg_mobile: /marketing/img/328-bg-m.jpg
+    promo_bg_desktop: /marketing/img/328-bg.jpg
 promo_steps:
   promo_step_1_title: ご登録
   promo_step_1_desc: 日本１のカジノで安心
