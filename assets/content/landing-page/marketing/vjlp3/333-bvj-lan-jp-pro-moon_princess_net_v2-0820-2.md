@@ -19,8 +19,8 @@ promo_banner:
     game_icon_6: ""
   promo_title: ライブカジノで一攫千金ッ！
   promo_images:
-    promo_bg_desktop: /marketing/img/331-bg.jpg
-    promo_bg_mobile: /marketing/img/331-bg-m.jpg
+    promo_bg_desktop: /marketing/img/331-bg.png
+    promo_bg_mobile: /marketing/img/331-bg-m.png
   promo_title_display: false
   promo_login_button_redirect_url: https://verajohn.com/#join
   promo_join_button_redirect_url: https://verajohn.com/#join
