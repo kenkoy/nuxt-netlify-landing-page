@@ -1,5 +1,5 @@
 ---
-slug_name: 332-BVJ-LAN-JP-PRO-Moon_princess_Net_v1-0820
+slug_name: 332 BVJ LAN JP PRO Moon princess Net v1 0820
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
