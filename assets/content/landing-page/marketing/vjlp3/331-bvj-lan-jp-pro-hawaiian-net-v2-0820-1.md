@@ -1,5 +1,5 @@
 ---
-slug_name: 331 BVJ LAN JP PRO Hawaiian Net v2 0820
+slug_name: 329 BVJ LAN JP PRO LIVE CASINO Net v2 0820
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
