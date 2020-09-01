@@ -17,39 +17,39 @@
         <ul class="items-list gameslider">
           <li>
             <a v-bind:href="header_section_game_slider_url_1">
-              <img v-bind:src="header_section_game_slider_1" />
+              <img v-bind:src="header_section_game_slider_1" alt="" v-lazy-load/>
             </a>
           </li>
           <li>
             <a v-bind:href="header_section_game_slider_url_2">
-              <img v-bind:src="header_section_game_slider_2" />
+              <img v-bind:src="header_section_game_slider_2" alt="" v-lazy-load/>
             </a>
           </li>
           <li>
             <a v-bind:href="header_section_game_slider_url_3">
-              <img v-bind:src="header_section_game_slider_3" />
+              <img v-bind:src="header_section_game_slider_3" alt="" v-lazy-load/>
             </a>
           </li>
           <li>
             <a v-bind:href="header_section_game_slider_url_4">
-              <img v-bind:src="header_section_game_slider_4" />
+              <img v-bind:src="header_section_game_slider_4" alt="" v-lazy-load/>
             </a>
           </li>
           <li>
             <a v-bind:href="header_section_game_slider_url_5">
-              <img v-bind:src="header_section_game_slider_5" />
+              <img v-bind:src="header_section_game_slider_5" alt="" v-lazy-load/>
             </a>
           </li>
           <li>
             <a v-bind:href="header_section_game_slider_url_6">
-              <img v-bind:src="header_section_game_slider_6" />
+              <img v-bind:src="header_section_game_slider_6" alt="" v-lazy-load/>
             </a>
           </li>
         </ul>
         <h4>{{ header_section_best_deal_caption }}</h4>
         <div class="chest">
           <a v-bind:href="header_section_best_deal_image_url">
-            <img class="img-fluid" v-bind:src="header_section_best_deal_image" />
+            <img class="img-fluid" v-bind:src="header_section_best_deal_image" alt="" v-lazy-load/>
           </a>
         </div>
         <p>{{ header_section_best_deal_small_caption }}</p>
