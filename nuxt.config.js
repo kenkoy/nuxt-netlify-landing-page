@@ -58,7 +58,6 @@ export default {
   */
   plugins: [
     { src: '~/plugins/ga.js', mode: 'client' },
-    { src: '~/plugins/vue-lazysizes.js', mode: 'client' },
   ],
   /*
   ** Nuxt.js dev-modules
@@ -80,7 +79,9 @@ export default {
   /*
   ** Nuxt.js modules
   */
-  modules: [],
+  modules: [
+    'nuxt-lazy-load'
+  ],
   /*
   ** Build configuration
   */
@@ -94,9 +95,7 @@ export default {
         include: path.resolve(__dirname, 'assets/content/landing-page/marketing'),
         loader: 'frontmatter-markdown-loader',
       });
-
-      vue.transformAssetUrls.img = ['data-src', 'src']
-      vue.transformAssetUrls.source = ['data-srcset', 'srcset']
+      
     },
     publicPath: process.env.NODE_ENV == 'production' ? 'marketing/_nuxt' : ''
   }

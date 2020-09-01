@@ -8,12 +8,14 @@
           <br />各種ゲームの探し方から遊び方、入出金方法などを
           <br />完全網羅する「ビギナーズガイド」がお手伝いします!
         </p>
-        <img data-src="/marketing/img/vjhp/frame130.png" class="lazyload" alt=""/>
+        <img src="/marketing/img/vjhp/frame130.png" alt=""/>
+        <!-- <img data-src="~assets/images/vjhp/frame130.png" class="lazyload" alt=""/> -->
       </li>
       <li class="style1">
         <h3>ご褒美プログラム</h3>
         <p>楽しく遊んでコインを集めて、ベラジョン・ショッ プでお買い物! フリースピンやスピンクレジット、キャッシュアイ テムとも交換できちゃいます!</p>
-        <img data-src="/marketing/img/vjhp/imgLevelUp_ICJP.png" class="lazyload" alt=""/>
+        <img src="/marketing/img/vjhp/imgLevelUp_ICJP.png" alt=""/>
+        <!-- <img data-src="~assets/images/vjhp/imgLevelUp_ICJP.png" class="lazyload" alt=""/> -->
       </li>
       <li class="style1">
         <h3>毎日開催トーナメント</h3>
@@ -21,7 +23,8 @@
           勝ち方いろいろ、賞金いろいろ、多種多様なトーナ
           <br />メントが毎日開催! 得意なゲームでいざ勝負!
         </p>
-         <img data-src="/marketing/img/vjhp/frame98.png" alt="" class="lazyload"/>
+        <img src="/marketing/img/vjhp/frame98.png" alt=""/>
+         <!-- <img data-src="~assets/images/vjhp/frame98.png" alt="" class="lazyload"/> -->
       </li>
     </ul>
   </section>
