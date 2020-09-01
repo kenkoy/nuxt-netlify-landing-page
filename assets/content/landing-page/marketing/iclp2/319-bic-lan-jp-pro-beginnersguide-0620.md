@@ -5,7 +5,7 @@ promo_locale:
   promo_language_code: ja
 promo_banner:
   promo_home_button: ホーム
-  promo_banner_highlighted_phrase: 総額$500のウェルカムキャッシュ
+  promo_banner_highlighted_phrase: プレイし続けるほどお得な
   promo_smallterm_redirect_url: "#terms"
   promo_title: 319-bic-lan-jp-pro-beginnersguide-0620
   promo_images:
