@@ -1965,7 +1965,7 @@ header.heading.header-inline {
 
 @media screen and (max-width: 375px) {
   #wrapper {
-    background-position: -794px -20px;
+    background-position: -794px 0px;
   }
   #header h2 {
     font-size: 24px;
