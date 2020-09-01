@@ -103,7 +103,7 @@ export default {
       required: true,
     },
     header_section_game_slider_1: {
-       type: Image,
+       type: String,
        required: true,
     },
     header_section_game_slider_url_1: {
@@ -111,7 +111,7 @@ export default {
       required: true,
     },
     header_section_game_slider_2: {
-       type: Image,
+       type: String,
        required: true,
     },
     header_section_game_slider_url_2: {
@@ -119,7 +119,7 @@ export default {
       required: true,
     },
     header_section_game_slider_3: {
-       type: Image,
+       type: String,
        required: true,
     },
     header_section_game_slider_url_3: {
@@ -127,7 +127,7 @@ export default {
       required: true,
     },
     header_section_game_slider_4: {
-       type: Image,
+       type: String,
        required: true,
     },
     header_section_game_slider_url_4: {
@@ -135,7 +135,7 @@ export default {
       required: true,
     },
     header_section_game_slider_5: {
-       type: Image,
+       type: String,
        required: true,
     },
     header_section_game_slider_url_5: {
@@ -143,7 +143,7 @@ export default {
       required: true,
     },
     header_section_game_slider_6: {
-       type: Image,
+       type: String,
        required: true,
     },
     header_section_game_slider_url_6: {
@@ -159,7 +159,7 @@ export default {
       required: true,
     },
     header_section_best_deal_image: {
-       type: Image,
+       type: String,
        required: true,
     },
     header_section_best_deal_small_caption: {
@@ -187,7 +187,7 @@ export default {
       required: true,
     },
     header_section_background_image: {
-      type: Image,
+      type: String,
       required: true,
     }
   },

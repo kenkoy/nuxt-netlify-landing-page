@@ -31,6 +31,7 @@
       :header_section_account_login="post.attributes.header_section.header_section_account_login"
       :header_section_account_login_url="post.attributes.header_section.header_section_account_login_url"
       :header_section_background_image="post.attributes.header_section.header_section_background_image"
+      :header_login_account_text_redirect_url="post.attributes.header_section.header_login_account_text_redirect_url"
     />
     <TheSection2 />
     <TheGamesBrickSection
