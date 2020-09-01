@@ -1750,7 +1750,7 @@ header.heading.header-inline {
 
 @media screen and (max-width: 768px) {
   .logInHeader {
-    padding: 16px 24px 15px;
+    padding: 16px 24px 12px;
   }
 
   #header {
