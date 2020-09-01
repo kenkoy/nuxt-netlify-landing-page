@@ -25,16 +25,16 @@
               <!-- game cat -->
               <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                  <img style="max-width: 100%;" v-bind:src="game1" alt=""/>
+                  <img style="max-width: 100%;" v-bind:src="game1" alt="" v-lazy-load/>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                  <img style="max-width: 100%;" v-bind:src="game2" alt=""/>
+                  <img style="max-width: 100%;" v-bind:src="game2" alt="" v-lazy-load/>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                  <img style="max-width: 100%;" v-bind:src="game3" alt=""/>
+                  <img style="max-width: 100%;" v-bind:src="game3" alt="" v-lazy-load/>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                  <img style="max-width: 100%;" v-bind:src="game4" alt=""/>
+                  <img style="max-width: 100%;" v-bind:src="game4" alt="" v-lazy-load/>
                 </div>
               </div>
 
@@ -42,10 +42,10 @@
                 <div class="col-12 animated fadeIn delay-0.5s text-center">
                   <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                      <img style="max-width: 100%;" v-bind:src="gamesInfo1" alt=""/>
+                      <img style="max-width: 100%;" v-bind:src="gamesInfo1" alt="" v-lazy-load/>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                      <img style="max-width: 100%;" v-bind:src="gamesInfo2" alt=""/>
+                      <img style="max-width: 100%;" v-bind:src="gamesInfo2" alt="" v-lazy-load/>
                     </div>
                   </div>
                 </div>
