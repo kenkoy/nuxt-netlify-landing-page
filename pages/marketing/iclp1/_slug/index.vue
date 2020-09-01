@@ -35,17 +35,17 @@
 </template>
 
 <script>
-import TheHeader from '~/components/templates/iclp1/TheHeader.vue'
-import TheSteps from '~/components/templates/iclp1/TheSteps.vue'
-import TheBody from '~/components/templates/iclp1/TheBody.vue'
-import ThePayment from '~/components/templates/iclp1/ThePayment.vue'
-import TheFooter from '~/components/templates/TheFooter.vue'
+import TheHeader from '~/components/templates/iclp/iclp1/TheHeader.vue'
+import TheSteps from '~/components/templates/iclp/iclp1/TheSteps.vue'
+import TheBody from '~/components/templates/iclp/TheBody.vue'
+import ThePayment from '~/components/templates/iclp/ThePayment.vue'
+import TheFooter from '~/components/templates/iclp/TheFooter.vue'
 
 export default {
   layout: 'iclp1',
   head() {
     return { 
-      title: 'Intercasino',
+      title: 'InterCasino',
       htmlAttrs: {
         lang: this.post.attributes.promo_locale.promo_language_code
       },

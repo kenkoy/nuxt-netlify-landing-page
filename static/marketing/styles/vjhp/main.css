@@ -1652,7 +1652,6 @@ body.is-preload #header.alt .logo {
   background-color: #009fe3;
   background-repeat: no-repeat;
   background-position: center 0;
-  background-size: cover;
   margin: 0 auto;
 }
 
@@ -1751,7 +1750,7 @@ header.heading.header-inline {
 
 @media screen and (max-width: 768px) {
   .logInHeader {
-    padding: 16px 24px 15px;
+    padding: 16px 24px;
   }
 
   #header {
@@ -1964,6 +1963,9 @@ header.heading.header-inline {
 }
 
 @media screen and (max-width: 375px) {
+  #wrapper {
+    background-position: -794px -20px;
+  }
   #header h2 {
     font-size: 24px;
     line-height: 25px;
@@ -2111,7 +2113,7 @@ header.heading.header-inline {
   }
 }
 
-@media screen and (min-width: 376px) and (max-width: 450px) {
+@media screen and (min-width: 376px) and (max-width: 414px) {
   .first-half h3 {
     font-size: 38px;
   }

@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-netlify-landing-page",
+  "name": "gamesys-digital-acquisition",
   "version": "1.0.0",
-  "description": "InterCasino Landing Page",
+  "description": "Gamesys Digital Acquisition Landing Page",
   "author": "Digital Acquisition Services Team",
   "private": true,
   "scripts": {
@@ -19,21 +19,10 @@
     "jquery": "^3.5.1",
     "markdown-it": "^10.0.0",
     "nuxt": "^2.0.0",
+    "nuxt-lazy-load": "^1.2.4",
     "save": "^2.4.0",
     "vue-slick": "^1.1.15",
-    "vue-slick-carousel": "^1.0.6"
+    "vue-slick-carousel": "^1.0.5"
   },
-  "devDependencies": {
-    "@nuxtjs/svg": "^0.1.11"
-  },
-  "main": "nuxt.config.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kenkoy/nuxt-netlify-landing-page.git"
-  },
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kenkoy/nuxt-netlify-landing-page/issues"
-  },
-  "homepage": "https://github.com/kenkoy/nuxt-netlify-landing-page#readme"
+  "devDependencies": {}
 }

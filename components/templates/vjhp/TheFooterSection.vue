@@ -21,11 +21,13 @@
       Gaming License #5536/JAZ __ に基づく __ C.I.L Curacao Interactive Licensing N.V. __
       により付与されたサブライセンスを通して正式な許可を所持しています
     </p>
-    <a href="#">
-      <img src="/marketing/img/vjhp/curacao.png" />
+    <a href="https://www.verajohn.com/home">
+      <img src="/marketing/img/vjhp/curacao.png" alt="Curacao" >
+      <!-- <img data-src="~assets/images/vjhp/curacao.png" class="lazyload" alt="Curacao" > -->
     </a>
-    <a href="#">
-      <img src="/marketing/img/vjhp/18Regulator.png" />
+    <a href="https://www.verajohn.com/home">
+      <img src="/marketing/img/vjhp/18Regulator.png" alt="18Regulator" />
+      <!-- <img data-src="~assets/images/vjhp/18Regulator.png" class="lazyload" alt="18Regulator" /> -->
     </a>
   </footer>
 </template>
@@ -69,6 +71,3 @@ export default {
   },
 };
 </script>
-
-<style>
-</style>
