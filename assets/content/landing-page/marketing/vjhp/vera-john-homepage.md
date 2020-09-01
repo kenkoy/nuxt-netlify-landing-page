@@ -20,6 +20,7 @@ header_section:
   header_section_best_deal_image_url: "https://www.apple.com "
   header_section_game_slider_url_4: https://www.facebook.com
   header_button_redirect_url: https://www.google.com
+  header_section_top_background_color: "#aaaaaa"
   header_section_game_slider_url_5: https://www.instagram.com
   header_section_main_heading: Japan's No. 1 casino! Test
   header_section_top_login_text_url: http://www.google.com/test
@@ -31,11 +32,11 @@ header_section:
   header_section_register_button_url: https://www.youtube.com
   header_section_game_slider_1: /marketing/img/placeimg_100_100_people1.png
   header_section_game_slider_2: /marketing/img/placeimg_100_100_people2.jpg
-  header_section_game_slider_3: /marketing/img/placeimg_100_100_people5.jpg
+  header_section_game_slider_3: /marketing/img/placeimg_100_100_people3.jpg
   header_section_background_image: /marketing/img/vjhp_bg.jpg
   header_section_game_slider_4: /marketing/img/placeimg_100_100_people4.jpg
   header_section_best_deal_image: /marketing/img/placeimg_203_164_tech.jpg
-  header_section_game_slider_5: /marketing/img/placeimg_100_100_people3.jpg
+  header_section_game_slider_5: /marketing/img/placeimg_100_100_people5.jpg
   header_section_game_slider_6: /marketing/img/placeimg_100_100_people6.jpg
   header_section_top_login_text: Login Test
   header_section_account_login_url: https://www.microsoft.com
