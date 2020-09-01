@@ -113,7 +113,7 @@
 
 <script scoped>
 export default {
-  name: "Footer",
+  name: 'Footer',
   props: {
     promo_language_code: {
       type: String,
@@ -127,7 +127,7 @@ export default {
 };
 </script>
 <style scoped>
-.container-fluid.pp {
-   border-bottom: none;;
+#footer .container-fluid.pp {
+    border-bottom: none;
 }
 </style>

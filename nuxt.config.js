@@ -1,7 +1,7 @@
 const glob = require('glob')
 const path = require('path')
 
-const markdownPaths = ['marketing/vjlp1', 'marketing/vjlp3', 'marketing/iclp1']
+const markdownPaths = ['marketing/vjlp1', 'marketing/vjlp3', 'marketing/iclp1', 'marketing/iclp2'];
 
 function dynamicMarkdownRoutes() {
   return [].concat(
@@ -16,7 +16,15 @@ export default {
   generate: {
     routes: dynamicMarkdownRoutes
   },
-
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'home',
+        path: '/home/',
+        component: resolve(__dirname, 'pages/marketing/vjhp')
+      })
+    }
+  },
   mode: 'universal',
   /*
   ** Headers of the page
@@ -30,23 +38,12 @@ export default {
       { hid: 'robots', name: 'robots', content: 'noindex' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Open+Sans' },
-      { rel: 'stylesheet', href: '/marketing/styles/lp-core/fonts.css' },
-      { rel: 'stylesheet', href: '/marketing/styles/lp-core/bootstrap.min.css' }
+      { rel: 'icon', type: 'image/x-icon', href: '/marketing/gamesys-favicon.ico' },
     ],
     style: [
       { cssText: '.async-hide { opacity: 0 !important }', type: 'text/css' },
     ],
-    script: [
-      { type: 'text/javascript', src: '/marketing/js/lp-core/jquery-3.5.1.slim.min.js' },
-      { defer: true, src: '/marketing/js/lp-core/popper.min.js' },
-      { defer: true, src: '/marketing/js/lp-core/bootstrap.min.js' },
-      { type: 'text/javascript', src: '/marketing/js/page-hide.js' },
-      { type: 'text/javascript', src: '/marketing/js/lp-core/form.js' },
-      { defer: true, type: 'text/javascript', src: '/marketing/js/lp-core/jquery.flexverticalcenter.js' },
-      { type: 'text/javascript', src: '/marketing/js/lp-core/slick.min.js' },
-    ]
+    script: [ ]
   },
   /*
   ** Customize the progress-bar color
@@ -55,36 +52,27 @@ export default {
   /*
   ** Global CSS
   */
-  css: [
-    // '~/static/marketing/styles/lp-core/bootstrap.min.css',
-    '~/static/marketing/styles/lp-core/animate.min.css',
-    '~/static/marketing/styles/lp-core/hover-min.css',
-    '~/static/marketing/styles/lp-core/slick.css',
-  ],
+  css: [ ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~plugins/ga.js', mode: 'client' }
+    { src: '~/plugins/ga.js', mode: 'client' },
+    { src: '~/plugins/vue-lazysizes.js', mode: 'client' },
   ],
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [
-    '@nuxtjs/gtm',
-  ],
+  buildModules: ['@nuxtjs/gtm'],
   gtm: {
     id: 'GTM-MFD3NKM',
-    
     pageTracking: true,
     layer: 'dataLayer',
     autoInit: true,
     respectDoNotTrack: true,
-
     scriptId: 'gtm-script',
     scriptDefer: false,
     scriptURL: 'https://www.googletagmanager.com/gtm.js',
-
     noscript: true,
     noscriptId: 'gtm-noscript',
     noscriptURL: 'https://www.googletagmanager.com/ns.html'
@@ -92,7 +80,7 @@ export default {
   /*
   ** Nuxt.js modules
   */
-  modules: ["@nuxtjs/svg"],
+  modules: [],
   /*
   ** Build configuration
   */
@@ -100,14 +88,16 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
+    extend(config, { isDev, isClient, loaders: { vue } }) {
       config.module.rules.push({
         test: /\.md$/,
         include: path.resolve(__dirname, 'assets/content/landing-page/marketing'),
         loader: 'frontmatter-markdown-loader',
       });
+
+      vue.transformAssetUrls.img = ['data-src', 'src']
+      vue.transformAssetUrls.source = ['data-srcset', 'srcset']
     },
-    
     publicPath: process.env.NODE_ENV == 'production' ? 'marketing/_nuxt' : ''
   }
 }

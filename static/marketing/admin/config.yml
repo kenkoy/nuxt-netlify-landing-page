@@ -1,8 +1,16 @@
 backend:
   name: git-gateway
-  #name: github
-  #repo: drap54/ds-gitlab
-  #branch: master
+  # name: github
+  # repo: drap54/ds-gitlab
+  # branch: master
+  
+  # name: gitlab
+  # repo: dumarca/landing-page-ssg
+  # auth_type: implicit 
+  # app_id: 429f87ba26d4d1054e32126ccf20f2937f5bfff9cb12aec083c64d382a659f5e
+  # api_root: https://git.plaingaming.net/api/v4
+  # base_url: https://git.plaingaming.net
+  # auth_endpoint: oauth/authorize
 
 publish_mode: editorial_workflow  
 media_folder: static/marketing/img
@@ -25,7 +33,7 @@ collections:
         widget: string
         name: slug_name
         required: true  
-        hint: "The last segment of landing page URL (do not include folder or file extension)"
+        hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
       - label: "Locale"
         name: "promo_locale"
         widget: "object"
@@ -80,7 +88,6 @@ collections:
           - {label: "Step 3 Description", name: promo_step_3_desc, widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}    
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}
-
   - name: "VJLP3-NoForm"
     label: "Vera&John Template 3"
     format: 'frontmatter'
@@ -97,7 +104,7 @@ collections:
         widget: string
         name: slug_name
         required: true  
-        hint: "The last segment of landing page URL (do not include folder or file extension)"
+        hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
       - label: "Locale"
         name: "promo_locale"
         widget: "object"
@@ -165,19 +172,23 @@ collections:
               - {label: "Game URL", name: game_url_6, widget: string, required: false, default: ""}
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP3-NoForm"}
       - {label: 'Body', name: 'body', widget: 'markdown' }
-
   - name: 'ICLP1-NoForm'
-    label: 'Intercasino Template 1'
+    label: 'InterCasino Template 1'
     format: 'frontmatter'
     folder: 'assets/content/landing-page/marketing/iclp1'
     create: true
-    identifier_field: "promo_banner.promo_title"
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    identifier_field: "slug_name"
+    slug: '{{slug}}'
     preview_path: iclp1/{{slug}}
     show_preview_links: false
     editor:
       preview: false
     fields:
+      - label: Slug
+        widget: string
+        name: slug_name
+        required: true  
+        hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
       - label: "Locale"
         name: "promo_locale"
         widget: "object"
@@ -236,8 +247,103 @@ collections:
           - {label: "Step 3 Title", name: promo_step_3_title, widget: "string"}
           - {label: "Step 3 Description", name: promo_step_3_desc, widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}    
-      - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}      
-
+      - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}
+  - name: 'ICLP2-NoForm'
+    label: 'InterCasino Template 2'
+    format: 'frontmatter'
+    folder: 'assets/content/landing-page/marketing/iclp2'
+    create: true
+    identifier_field: "slug_name"
+    slug: '{{slug}}'
+    preview_path: iclp2/{{slug}}
+    show_preview_links: false
+    editor:
+      preview: false
+    fields:
+      - label: Slug
+        widget: string
+        name: slug_name
+        required: true  
+        hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
+      - label: "Locale"
+        name: "promo_locale"
+        widget: "object"
+        colapsed: true
+        fields:
+          - label: "Country Code"
+            name: "promo_country_code"
+            widget: "select"
+            default: ["jp"]  
+            options:
+              - { label: "Japan", value: "jp" }
+              - { label: "Sweden", value: "se" }
+              - { label: "Germany", value: "de" }
+          - label: "Language Code"
+            name: "promo_language_code"
+            widget: "select"
+            default: ["ja"]   
+            options:
+              - { label: "Japanese", value: "ja" }
+              - { label: "Swedish", value: "sv" }
+              - { label: "German", value: "de" } 
+      - label: "Promotion Banner"
+        name: "promo_banner" 
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Title", name: "promo_title", widget: "string"}
+          - {label: "Banner Statement", name: "promo_banner_statement", widget: "text"}
+          - {label: "Banner Highlighted Phrase", name: "promo_banner_highlighted_phrase", widget: "string", required: false}
+          - {label: "Register Button Text", name: promo_register_button_text, widget: "string"}
+          - {label: "Register Button URL", name: promo_register_button_redirect_url, widget: "string"}
+          - {label: "Home Button Text", name: promo_home_button, widget: "string"}
+          - {label: "Home Button URL", name: promo_home_button_redirect_url, widget: "string"}    
+          - {label: "Small Term Text Link", name: promo_smallterm_text_link, widget: "string"}
+          - {label: "Small Term URL", name: promo_smallterm_redirect_url, widget: "string"}
+          - {label: "Small Term Text", name: promo_smallterm_text, widget: "string"}
+          - label: "Images"
+            name: "promo_images"
+            widget: "object"
+            colapsed: true
+            fields:
+              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
+              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
+              - {label: "Banner Image Title 1", name: promo_banner_image_title_1, widget: image}
+              - {label: "Banner Image Title 2", name: promo_banner_image_title_2, widget: image}
+              - {label: "Game Logo", name: promo_game_logo, widget: image, required: false}
+      - label: "Welcome Section"
+        name: "welcome_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "First Statement", name: "welcome_first_statement", widget: "text"}
+          - {label: "First Statement Highlighted Phrase", name: "welcome_first_statement_highlighted_phrase", widget: "string", required: false}
+          - {label: "Second Statement", name: "welcome_second_statement", widget: "text"}
+          - {label: "Rouge's Speech Bubble", name: "welcome_rouge_speech_bubble", widget: "text"}
+          - {label: "Chloe's Speech Bubble", name: "welcome_chloe_speech_bubble", widget: "text"}
+      - label: "Top Game Section"
+        name: "top_game_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Game 1", name: top_game_game1, widget: image}
+          - {label: "Game 2", name: top_game_game2, widget: image}
+          - {label: "Game 3", name: top_game_game3, widget: image}
+          - {label: "Game 4", name: top_game_game4, widget: image}
+          - {label: "Games Info 1", name: top_game_gamesInfo1, widget: image}
+          - {label: "Games Info 2", name: top_game_gamesInfo2, widget: image}
+      - label: "History Section"
+        name: "history_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Rouge's Statement", name: history_rouge_statement, widget: "text"}
+          - {label: "Rouge's Highlighted Phrase", name: history_rouge_highlighted_phrase, widget: "string", required: false}
+          - {label: "Chloe's Statement", name: history_chloe_statement, widget: "text"}
+          - {label: "Chloe's Highlighted Phrase", name: history_chloe_highlighted_phrase, widget: "string", required: false}
+          - {label: "Register Button Text", name: history_register_button_text, widget: "string"}
+          - {label: "Register Button Redirect URL", name: history_register_button_redirect_url, widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}    
   - label: "Vera&John Homepage"
     name: "VJ-Homepage"
     format: 'frontmatter'
@@ -255,39 +361,22 @@ collections:
             collapsed: true
             fields:
               - {label: "Title for this edit", name: "promo_title", widget: "string"}
+          - label: "Login Header Section"
+            name: "login_header_section"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Login Header Text", name: login_header_text, widget: "string"}
+              - {label: "Login Header Redirect URL", name: login_header_redirect_url, widget: "string"}
           - label: "Header Section"
             name: "header_section"
             widget: "object"
             collapsed: true
             fields:
-              - {label: "Top Text", name: header_section_top_text, widget: "string"}
-              - {label: "Top Login Text", name: header_section_top_login_text, widget: "string"}
-              - {label: "Top Login Text URL", name: header_section_top_login_text_url, widget: "string"}
-              - {label: "Welcome Message", name: header_section_welcome_message, widget: "string"}
-              - {label: "Main Heading", name: header_section_main_heading, widget: "string"}
-              - {label: "Heading Subtitle", name: header_section_heading_subtitle, widget: "string"}
-              - {label: "Game Slider 1", name: header_section_game_slider_1, widget: "image"}
-              - {label: "Game Slider URL 1", name: header_section_game_slider_url_1, widget: "string"}
-              - {label: "Game Slider 2", name: header_section_game_slider_2, widget: "image"}
-              - {label: "Game Slider URL 2", name: header_section_game_slider_url_2, widget: "string"}
-              - {label: "Game Slider 3", name: header_section_game_slider_3, widget: "image"}
-              - {label: "Game Slider URL 3", name: header_section_game_slider_url_3, widget: "string"}
-              - {label: "Game Slider 4", name: header_section_game_slider_4, widget: "image"}
-              - {label: "Game Slider URL 4", name: header_section_game_slider_url_4, widget: "string"}
-              - {label: "Game Slider 5", name: header_section_game_slider_5, widget: "image"}
-              - {label: "Game Slider URL 5", name: header_section_game_slider_url_5, widget: "string"}
-              - {label: "Game Slider 6", name: header_section_game_slider_6, widget: "image"}
-              - {label: "Game Slider URL 6", name: header_section_game_slider_url_6, widget: "string"}
-              - {label: "Best Deal Caption", name: header_section_best_deal_caption, widget: "string"}
-              - {label: "Best Deal Image", name: header_section_best_deal_image, widget: "image"}
-              - {label: "Best Deal Image URL", name: header_section_best_deal_image_url, widget: "string"}
-              - {label: "Best Deal Small Caption", name: header_section_best_deal_small_caption, widget: "string"}
-              - {label: "Register Button", name: header_section_register_button, widget: "string"}
-              - {label: "Register Button URL", name: header_section_register_button_url, widget: "string"}
-              - {label: "Account Text", name: header_section_account_text, widget: "string"}
-              - {label: "Account Login", name: header_section_account_login, widget: "string"}
-              - {label: "Account Login URL", name: header_section_account_login_url, widget: "string"}
-              - {label: "Background Image", name: header_section_background_image, widget: "image"}
+              - {label: "Header Button Text", name: header_text, widget: "string"}
+              - {label: "Header Button Redirect URL", name: header_button_redirect_url, widget: "string"}
+              - {label: "Login Account Text", name: header_login_account_text, widget: "string"}
+              - {label: "Login Account Text Redirect URL", name: header_login_account_text_redirect_url, widget: "string"}
           - label: "Games Brick Section"
             name: "games_brick_section" 
             widget: "object"

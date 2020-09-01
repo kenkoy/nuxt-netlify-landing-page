@@ -6,16 +6,6 @@
   </div>  
 </template>
 
-<script>
-export default {
-    head() {
-      return {
-        script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
-      };
-    }    
-}
-</script>
-
 <style scoped>
 .intro {
   height: 300px;
@@ -50,5 +40,4 @@ export default {
   align-items: center;
   justify-content: center;
 }
-
 </style>

@@ -44,8 +44,8 @@ export default {
         lang: this.post.attributes.promo_locale.promo_language_code
       },
       bodyAttrs: {
-        id: this.post.attributes.promo_locale.promo_language_code+
-        '-'+this.post.attributes.promo_locale.promo_country_code
+        id: this.post.attributes.promo_locale.promo_language_code +
+        '-' +this.post.attributes.promo_locale.promo_country_code
       }
     } 
   },
@@ -58,7 +58,7 @@ export default {
   },
   async asyncData ({ params }) {
     try {
-      const post = await import('~/assets/content/landing-page/marketing/vjlp1/'+ params.slug +'.md')
+      const post = await import('~/assets/content/landing-page/marketing/vjlp1/' + params.slug + '.md')
       return {
         post
       }

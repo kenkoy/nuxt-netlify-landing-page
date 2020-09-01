@@ -12,9 +12,7 @@
           </div>
         </div>
         <div class="d-block d-lg-none col-12">
-          <div class="center-button"
-            :class="{ hidden:  promo_join_button_location === 'hidden' }"
-          >
+          <div class="center-button" :class="{ hidden: promo_join_button_location === 'hidden' }">
             <a class="signup-btn" v-bind:href="promo_join_button_redirect_url">
               <div class="bf-button bf-secondary-bg">{{promo_join_button}}</div>
             </a>
@@ -28,35 +26,35 @@
 
 <script>
 export default {
-  name: "Promotion",
+  name: 'Promotion',
   props: {
     promo_title: {
       type: String,
-      required: true
+      required: true,
     },
     promo_title_display: {
       type: Boolean,
-      required: true
+      required: true,
     },
     promo_description: {
       type: String,
       default: "",
-      required: false
+      required: false,
     },
     promo_join_button: {
       type: String,
-      required: true
+      required: true,
     },
     promo_join_button_location: {
       type: String,
       default: 'hidden',
-      required: false
+      required: false,
     },
     promo_join_button_redirect_url: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 };
 </script>
 

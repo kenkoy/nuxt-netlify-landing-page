@@ -1,0 +1,85 @@
+.goldenbg {
+  background: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
+}
+.blackbg{ background:black; }
+.fadebg {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(255, 0, 90, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+.fadebg-2 {
+  background: rgb(159, 15, 79);
+  background: linear-gradient(
+    180deg,
+    rgba(159, 15, 79, 1) 0%,
+    rgba(79, 23, 117, 1) 28%,
+    rgba(0, 0, 0, 1) 88%
+  );
+}
+.sprite {
+  display: inline-block;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-image: url("/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png");
+}
+.queenprofile-blacktag {
+  width: 201px;
+  height: 34px;
+  background-position: -0px -0px;
+  display: block;
+  margin: auto;
+}
+.queenprofile-redtag {
+  width: 201px;
+  height: 34px;
+  background-position: -201px -0px;
+  display: block;
+  margin: auto;
+}
+.queenprofile-star {
+  width: 62px;
+  height: 14px;
+  background-position: -402px -0px;
+  display: block;
+  margin: auto;
+}
+.table {
+  vertical-align: middle;
+  max-width: 100%;
+}
+@media only screen and (max-width: 767px){
+  table {
+    width: 100%;
+    -webkit-overflow-scrolling: auto;
+    overflow-x: auto;
+    display: inline-table;
+  }    
+}
+.redmark { 
+  background-color: #ff0375;
+  color: white;
+  font-weight: bold;
+}
+.blackmark { 
+  background-color: #9f97e5;
+  color: white;
+  font-weight: bold;
+}
