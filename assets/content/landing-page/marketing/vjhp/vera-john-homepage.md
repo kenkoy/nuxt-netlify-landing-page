@@ -20,7 +20,7 @@ header_section:
   header_section_best_deal_image_url: "https://www.apple.com "
   header_section_game_slider_url_4: https://www.facebook.com
   header_button_redirect_url: https://www.google.com
-  header_section_top_background_color: "#aaaaaa"
+  header_section_top_background_color: "#005083"
   header_section_game_slider_url_5: https://www.instagram.com
   header_section_main_heading: Japan's No. 1 casino! Test
   header_section_top_login_text_url: http://www.google.com/test
