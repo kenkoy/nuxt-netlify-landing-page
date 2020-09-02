@@ -9,7 +9,7 @@
     <div id="wrapper" v-bind:style='{ backgroundImage: "url(" + header_section_background_image + ")", }'>
       <header id="header">
         <span class="logo">
-          <img src="/marketing/img/vjhp/logo.svg"/>
+          <img src="/marketing/img/vjhp/logo.svg" alt="logo"/>
         </span>
         <h2>{{ header_section_welcome_message }}</h2>
         <h1>{{ header_section_main_heading }}</h1>
@@ -17,39 +17,39 @@
         <ul class="items-list gameslider">
           <li>
             <a v-bind:href="header_section_game_slider_url_1">
-              <img v-bind:src="header_section_game_slider_1" alt="" v-lazy-load/>
+              <img v-bind:src="header_section_game_slider_1" alt="game1" v-lazy-load/>
             </a>
           </li>
           <li>
             <a v-bind:href="header_section_game_slider_url_2">
-              <img v-bind:src="header_section_game_slider_2" alt="" v-lazy-load/>
+              <img v-bind:src="header_section_game_slider_2" alt="game2" v-lazy-load/>
             </a>
           </li>
           <li>
             <a v-bind:href="header_section_game_slider_url_3">
-              <img v-bind:src="header_section_game_slider_3" alt="" v-lazy-load/>
+              <img v-bind:src="header_section_game_slider_3" alt="game3" v-lazy-load/>
             </a>
           </li>
           <li>
             <a v-bind:href="header_section_game_slider_url_4">
-              <img v-bind:src="header_section_game_slider_4" alt="" v-lazy-load/>
+              <img v-bind:src="header_section_game_slider_4" alt="game4" v-lazy-load/>
             </a>
           </li>
           <li>
             <a v-bind:href="header_section_game_slider_url_5">
-              <img v-bind:src="header_section_game_slider_5" alt="" v-lazy-load/>
+              <img v-bind:src="header_section_game_slider_5" alt="game5" v-lazy-load/>
             </a>
           </li>
           <li>
             <a v-bind:href="header_section_game_slider_url_6">
-              <img v-bind:src="header_section_game_slider_6" alt="" v-lazy-load/>
+              <img v-bind:src="header_section_game_slider_6" alt="game6" v-lazy-load/>
             </a>
           </li>
         </ul>
         <h4>{{ header_section_best_deal_caption }}</h4>
         <div class="chest">
           <a v-bind:href="header_section_best_deal_image_url">
-            <img class="img-fluid" v-bind:src="header_section_best_deal_image" alt="" v-lazy-load/>
+            <img class="img-fluid" v-bind:src="header_section_best_deal_image" alt="image" v-lazy-load/>
           </a>
         </div>
         <p>{{ header_section_best_deal_small_caption }}</p>

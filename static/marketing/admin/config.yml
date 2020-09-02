@@ -173,7 +173,7 @@ collections:
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP3-NoForm"}
       - {label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'ICLP1-NoForm'
-    label: 'InterCasino Template 1'
+    label: 'Intercasino Template 1'
     format: 'frontmatter'
     folder: 'assets/content/landing-page/marketing/iclp1'
     create: true
@@ -369,7 +369,6 @@ collections:
               - {label: "Top Text", name: header_section_top_text, widget: "string"}
               - {label: "Top Login Text", name: header_section_top_login_text, widget: "string"}
               - {label: "Top Login Text URL", name: header_section_top_login_text_url, widget: "string"}
-              - {label: "Top Login Bacground Color", name: header_section_top_background_color, widget: "string"}
               - {label: "Welcome Message", name: header_section_welcome_message, widget: "string"}
               - {label: "Main Heading", name: header_section_main_heading, widget: "string"}
               - {label: "Heading Subtitle", name: header_section_heading_subtitle, widget: "string"}
