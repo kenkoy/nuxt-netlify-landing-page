@@ -173,7 +173,7 @@ collections:
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP3-NoForm"}
       - {label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'ICLP1-NoForm'
-    label: 'Intercasino Template 1'
+    label: 'InterCasino Template 1'
     format: 'frontmatter'
     folder: 'assets/content/landing-page/marketing/iclp1'
     create: true
