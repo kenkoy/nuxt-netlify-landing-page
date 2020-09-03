@@ -16,6 +16,7 @@ export default {
   generate: {
     routes: dynamicMarkdownRoutes
   },
+  /*
   router: {
     extendRoutes(routes, resolve) {
       routes.push({
@@ -25,6 +26,7 @@ export default {
       })
     }
   },
+  */
   mode: 'universal',
   /*
   ** Headers of the page
