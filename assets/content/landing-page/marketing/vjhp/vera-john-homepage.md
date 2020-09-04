@@ -5,7 +5,7 @@ login_header_section:
   login_header_text: Sample Login
   login_header_redirect_url: https://www.google.com
 header_section:
-  header_section_heading_subtitle: "圧倒的な人気とシェア! さらに安心・安全・楽しいの3拍子がばっちり揃う、業界ナンバーワンカジノで遊んじゃおう! "
+  header_section_heading_subtitle: "圧倒的な人気とシェア! さらに安心・安全・楽しいの3拍子がばっちり揃う、業界ナンバーワンカジノで遊んじゃおう!"
   header_section_best_deal_caption: 登録してからすぐ使える! 業界一お得なビギナーズボーナスのおまけつき!
   header_section_register_button: 今すぐ登録!
   header_section_top_text: すでに登録済みですか?
