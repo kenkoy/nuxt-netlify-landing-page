@@ -1,11 +1,11 @@
 ---
-slug_name: 319-bic-lan-jp-pro-beginnersguide-0620
+slug_name: 319-bic-lan-jp-pro-beginnersguide-0621
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 promo_banner:
   promo_home_button: ホーム
-  promo_banner_highlighted_phrase: 総額$500のウェルカムキャッシュ
+  promo_banner_highlighted_phrase: プレイし続けるほどお得な
   promo_smallterm_redirect_url: "#terms"
   promo_title: 319-bic-lan-jp-pro-beginnersguide-0620
   promo_images:
@@ -36,7 +36,7 @@ welcome_section:
   welcome_chloe_speech_bubble: |-
     みんなも「なんとかなる!」精神で思いっきり勝ちを目指すよー!
     クロエについて来れる人～？お先にカジノで待ってるね!
-  welcome_first_statement_highlighted_phrase: 総額$500キャッシュ
+  welcome_first_statement_highlighted_phrase: リアルマネープレイが追加キャッシュに変わる!
 top_game_section:
   top_game_game1: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-topgame-livecasino.png
   top_game_game2: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-topgame-tablegame.png

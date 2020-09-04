@@ -16,6 +16,7 @@ export default {
   generate: {
     routes: dynamicMarkdownRoutes
   },
+  /*
   router: {
     extendRoutes(routes, resolve) {
       routes.push({
@@ -25,6 +26,7 @@ export default {
       })
     }
   },
+  */
   mode: 'universal',
   /*
   ** Headers of the page
@@ -95,7 +97,6 @@ export default {
         include: path.resolve(__dirname, 'assets/content/landing-page/marketing'),
         loader: 'frontmatter-markdown-loader',
       });
-      
     },
     publicPath: process.env.NODE_ENV == 'production' ? 'marketing/_nuxt' : ''
   }

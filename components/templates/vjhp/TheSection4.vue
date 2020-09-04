@@ -3,7 +3,6 @@
     <div class="trivia-content">
       <span class="image">
         <img src="/marketing/img/vjhp/neutral-transparent.png" alt="" />
-        <!-- <img data-src="~assets/images/vjhp/neutral-transparent.png" class="lazyload" alt="" /> -->
       </span>
       <header class="heading header-inline">
         <h2>カード・オブ・フロンティア</h2>
