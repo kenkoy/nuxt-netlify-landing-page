@@ -1556,10 +1556,6 @@ body.is-preload #header.alt .logo {
     margin: -4em 0 4em -3em;
     width: calc(100% + 6em);
   }
-  .features {
-    width: 100%;
-    margin: 0 0 2em 0;
-}
 }
 
 @media screen and (max-width: 736px) {
