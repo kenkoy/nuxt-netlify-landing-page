@@ -172,6 +172,87 @@ collections:
               - {label: "Game URL", name: game_url_6, widget: string, required: false, default: ""}
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP3-NoForm"}
       - {label: 'Body', name: 'body', widget: 'markdown' }
+  - name: "VJLP4-NoForm"
+    label: "Vera&John Template 4"
+    format: 'frontmatter'
+    folder: "assets/content/landing-page/marketing/vjlp4"
+    create: true
+    identifier_field: "slug_name"
+    slug: '{{slug}}'
+    preview_path: vjlp4/{{slug}}
+    show_preview_links: false
+    editor:
+      preview: false
+    fields:
+      - label: Slug
+        widget: string
+        name: slug_name
+        required: true  
+        hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
+      - label: "Locale"
+        name: "promo_locale"
+        widget: "object"
+        colapsed: true
+        fields:
+          - label: "Country Code"
+            name: "promo_country_code"
+            widget: "select"
+            default: ["jp"]  
+            options:
+              - { label: "Japan", value: "jp" }
+              - { label: "Sweden", value: "se" }
+              - { label: "Germany", value: "de" }
+          - label: "Language Code"
+            name: "promo_language_code"
+            widget: "select"
+            default: ["ja"]   
+            options:
+              - { label: "Japanese", value: "ja" }
+              - { label: "Swedish", value: "sv" }
+              - { label: "German", value: "de" } 
+      - label: "Promotion Banner"
+        name: "promo_banner" 
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Title", name: "promo_title", widget: "string"}
+          - {label: "Large Subtitle", name: "promo_large_subtitle", widget: "string"}
+          - {label: "Small Subtitle", name: "promo_small_subtitle", widget: "text"}
+          - label: "Small Subtitle Highlighted Phrases"
+            name: "promo_small_subtitle_highlighted"
+            widget: "list"
+            summary: '{{field.phrase}}'
+            required: false
+            field: {label: Phrase, name: phrase, widget: string}
+          - {label: "Login Button Text", name: "promo_login_button", widget: "string"}   
+          - {label: "Login Button Redirect URL", name: "promo_login_button_redirect_url", widget: "string"}     
+          - {label: "Join Button Text", name: "promo_join_button", widget: "string"}
+          - {label: "Join Button Redirect URL", name: "promo_join_button_redirect_url", widget: "string"}
+          - {label: "Terms Text", name: "promo_terms", widget: "string"}
+          - label: "Terms Link Texts"
+            name: "promo_link_terms"
+            widget: "list"
+            summary: '{{field.text}}'
+            required: false
+            field: {label: Text, name: text, widget: string}
+          - label: "Images"
+            name: "promo_images"
+            widget: "object"
+            colapsed: true
+            fields:
+              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
+              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
+              - {label: "Game Logo", name: promo_game_logo, widget: image}
+              - {label: "Game Title", name: promo_game_image, widget: image}
+      - label: "Section"
+        name: "section"
+        widget: "list"
+        collapsed: true
+        fields: 
+          - {label: "Join Button Text", name: "join_button", widget: "string"}
+          - {label: "Join Button Redirect URL", name: "join_button_redirect_url", widget: "string"}
+          - {label: "Image", name: image, widget: image}
+      - {label: 'Body', name: 'body', widget: 'markdown', required: false}
   - name: 'ICLP1-NoForm'
     label: 'InterCasino Template 1'
     format: 'frontmatter'

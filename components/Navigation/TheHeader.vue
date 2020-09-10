@@ -12,6 +12,7 @@
       <ul class="nav-list">
         <li class="nav-item"><nuxt-link to="/marketing/vjlp1">VJLP 1</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/marketing/vjlp3">VJLP 3</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/marketing/vjlp4">VJLP 4</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/marketing/iclp1">ICLP 1</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/marketing/iclp2">ICLP 2</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/marketing/vjhp">VJ Stripped Down</nuxt-link></li>
