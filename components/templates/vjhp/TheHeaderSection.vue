@@ -62,7 +62,7 @@
     </div>
     <style>
     :root {
-      --bg-image: url("{{ header_section.header_section_background_image }}");
+      --bg-image: url("{{ image.header_section_background_image }}");
     }
     </style>
   </section>
