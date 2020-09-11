@@ -4,7 +4,7 @@ promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 promo_banner:
-  promo_title_display: true
+  promo_render_title_first: true
   promo_title: |-
     今だけ
     最高$500のボーナス
