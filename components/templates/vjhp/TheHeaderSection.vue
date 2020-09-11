@@ -205,6 +205,6 @@ export default {
 </script>
 <style>
 #wrapper {
-  background: var(--bg-desktop);
+  background-image: var(--bg-desktop);
 }
 </style>
