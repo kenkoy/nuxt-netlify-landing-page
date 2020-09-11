@@ -493,13 +493,8 @@ collections:
               - {label: "Account Text", name: header_section_account_text, widget: "string"}
               - {label: "Account Login", name: header_section_account_login, widget: "string"}
               - {label: "Account Login URL", name: header_section_account_login_url, widget: "string"}
-              - label: "Images"
-              name: "background_images"
-              widget: "object"
-              colapsed: true
-              fields:
-                - {label: "Desktop Background Image", name: header_section_background_image, widget: "image"}
-                - {label: "Mobile Background Image", name: header_section_mobile_background_image, widget: "image"}
+              - {label: "Desktop Background Image", name: header_section_background_image, widget: "image"}
+              - {label: "Mobile Background Image", name: header_section_mobile_background_image, widget: "image"}
           - label: "Games Brick Section"
             name: "games_brick_section" 
             widget: "object"
