@@ -34,9 +34,11 @@ header_section:
   header_section_game_slider_4: /marketing/img/game4.svg
   header_section_best_deal_image: /marketing/img/chest.svg
   header_section_game_slider_5: /marketing/img/game5.svg
+  header_section_desktop_background_image: /marketing/img/bg.png
   header_section_game_slider_6: /marketing/img/game6.svg
   header_section_top_login_text: ログイン
   header_section_account_login_url: https://intercasino.com/#signin
+  header_section_mobile_background_image: /marketing/img/image-2020-09-09-17-14-48-506.png
   header_section_welcome_message: ベラジョン・オンラインカジノへようこそ!
   header_text: Sample Header
 games_brick_section:
