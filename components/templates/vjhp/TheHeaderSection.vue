@@ -62,8 +62,7 @@
     </div>
     <style>
       :root {
-        --bg-desktop: {{ header_section_background_image }};
-        --bg-mobile: {{ bgMobile }};
+        --bg-desktop: url("{{ images.header_section_background_image }}");
       }
     </style>
   </section>
@@ -213,6 +212,6 @@ export default {
 </script>
 <style>
 #wrapper {
-  background-color: var(--bg-desktop);
+  background: var(--bg-desktop);
 }
 </style>
