@@ -60,10 +60,20 @@
         </p>
       </header>
     </div>
+    <style>
+      :root {
+        --bg-desktop: {{ bgDesktop }};
+        --bg-mobile: url('{{ bgMobile }}');
+      }
+    </style>
   </section>
 </template>
 <script>
 export default {
+  data() { return {
+    bgDesktop: '#f00',
+    bgMobile: 'red',
+  }},
   name: 'TheHeaderSection',
   props: {
     header_section_top_text: {
@@ -203,6 +213,6 @@ export default {
 </script>
 <style>
 #wrapper {
-  background-image: var(--bg-image);
+  background-color: var(--bg-desktop);
 }
 </style>
