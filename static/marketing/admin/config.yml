@@ -60,13 +60,32 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Title", name: "promo_title", widget: "string"}
-          - {label: "Display Title", name: "promo_title_display", widget: "boolean", default: true}
-          - {label: "Subtitle", name: "promo_subtitle", widget: "string", required: false}
+          - {label: "Display Title First", name: "promo_render_title_first", widget: "boolean", default: true}
+          - {label: "Title", name: "promo_title", widget: "text"}
+          - label: "Highlighted Title Phrases"
+            name: "promo_title_highlighted"
+            widget: "list"
+            summary: '{{field.phrase}}'
+            required: false
+            field: {label: Phrase, name: phrase, widget: string}
+          - {label: "Subtitle", name: "promo_subtitle", widget: "text", required: false}
+          - label: "Highlighted Subtitle Phrases"
+            name: "promo_subtitle_highlighted"
+            widget: "list"
+            summary: '{{field.phrase}}'
+            required: false
+            field: {label: Phrase, name: phrase, widget: string}
           - {label: "Login Button", name: promo_login_button, widget: "string"}
           - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}    
           - {label: "Join Button", name: promo_join_button, widget: "string"}
           - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}
+          - {label: "Terms Text", name: promo_terms_text, widget: "string"}
+          - label: "Terms Underlined Link Texts"
+            name: "promo_terms_link_text"
+            widget: "list"
+            summary: '{{field.text}}'
+            required: false
+            field: {label: Text, name: text, widget: string}
           - label: "Images"
             name: "promo_images"
             widget: "object"

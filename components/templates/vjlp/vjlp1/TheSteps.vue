@@ -5,22 +5,37 @@
         <div class="col-4 animated fadeIn delay-0s">
           <div class="num">1</div>
           <div class="step">
-            <h2>{{ title1 }}</h2>
-            <h3 class="desc">{{ description1 }}</h3>
+            <h2>
+              {{ step1Title }}
+              <br />
+            </h2>
+            <h3>
+              {{ step1Desc }}
+              <br />
+            </h3>
           </div>
         </div>
         <div class="col-4 animated fadeIn delay-1s">
           <div class="num">2</div>
           <div class="step">
-            <h2>{{ title2 }}</h2>
-            <h3 class="desc">{{ description2 }}</h3>
+            <h2>
+              {{ step2Title }}
+              <br />
+            </h2>
+            <h3>
+              {{ step2Desc }}
+              <br />
+            </h3>
           </div>
         </div>
         <div class="col-4 animated fadeIn delay-2s">
           <div class="num">3</div>
           <div class="step">
-            <h2>{{ title3 }}</h2>
-            <h3 class="desc">{{ description3 }}</h3>
+            <h2>{{ step3Title }}</h2>
+            <h3>
+              {{ step3Desc }}
+              <br />
+            </h3>
           </div>
         </div>
       </div>
@@ -30,42 +45,35 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: 'Steps',
   props: {
-    title1: {
+    step1Title: {
       type: String,
-      required: true
+      required: true,
     },
-    description1: {
+    step1Desc: {
       type: String,
-      required: true
+      required: true,
     },
-    title2: {
+    step2Title: {
       type: String,
-      required: true
+      required: true,
     },
-    description2: {
+    step2Desc: {
       type: String,
-      required: true
+      required: true,
     },
-    title3: {
+    step3Title: {
       type: String,
-      required: true
+      required: true,
     },
-    description3: {
+    step3Desc: {
       type: String,
-      required: true
+      required: true,
     }
   }
 };
 </script>
 
-<style scoped>
-@media only screen and (max-width: 576px) {
-  .desc { font-size: 0.7rem; }
-}
-
-@media only screen and (min-width: 992px) {
-  .desc { display: table; }
-}
+<style>
 </style>
