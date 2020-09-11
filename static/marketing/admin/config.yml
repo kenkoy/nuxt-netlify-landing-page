@@ -498,8 +498,8 @@ collections:
               widget: "object"
               colapsed: true
               fields:
-                  - {label: "Desktop Background Image", name: header_section_background_image, widget: "image"}
-                  - {label: "Mobile Background Image", name: header_section_mobile_background_image, widget: "image"}
+                - {label: "Desktop Background Image", name: header_section_background_image, widget: "image"}
+                - {label: "Mobile Background Image", name: header_section_mobile_background_image, widget: "image"}
           - label: "Games Brick Section"
             name: "games_brick_section" 
             widget: "object"
