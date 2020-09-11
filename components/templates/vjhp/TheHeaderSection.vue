@@ -198,10 +198,6 @@ export default {
     header_section_mobile_background_image: {
       type: String,
       required: true,
-    },
-    images: {
-      type: Object,
-      required: true,
     }
   },
 };
