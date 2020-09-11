@@ -205,6 +205,6 @@ export default {
 </script>
 <style>
 #wrapper {
-  background: var(--bg-desktop) no-repeat top center;
+  background: var(--bg-desktop);
 }
 </style>
