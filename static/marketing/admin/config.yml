@@ -60,7 +60,7 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Display Title First", name: "promo_render_title_first", widget: "boolean", default: true}
+          - {label: "Display Title First", name: "promo_render_title_first", widget: "boolean", default: true, required: false}
           - {label: "Title", name: "promo_title", widget: "text"}
           - label: "Highlighted Title Phrases"
             name: "promo_title_highlighted"
