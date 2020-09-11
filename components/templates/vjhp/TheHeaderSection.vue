@@ -62,7 +62,7 @@
     </div>
     <style>
       :root {
-        --bg-desktop: {{ bgDesktop }};
+        --bg-desktop: {{ header_section_background_image }};
         --bg-mobile: {{ bgMobile }};
       }
     </style>
