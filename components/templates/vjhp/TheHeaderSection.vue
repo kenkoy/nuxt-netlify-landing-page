@@ -62,7 +62,7 @@
     </div>
     <style>
     :root {
-      --bg-image: url("{{ image.header_section_background_image }}");
+      --bg-image: url("{{ images.header_section_background_image }}");
     }
     </style>
   </section>
@@ -197,6 +197,10 @@ export default {
     },
     header_section_mobile_background_image: {
       type: String,
+      required: true,
+    },
+    images: {
+      type: Object,
       required: true,
     }
   },
