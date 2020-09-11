@@ -6,7 +6,7 @@
         <span>{{ header_section_top_login_text }}</span>
       </a>
     </div>
-    <div id="wrapper" v-bind:style='{ backgroundImage: "url(" + header_section_background_image + ")", }'>
+    <div id="wrapper">
       <header id="header">
         <span class="logo">
           <img src="/marketing/img/vjhp/logo.svg" alt="logo"/>
@@ -60,6 +60,11 @@
         </p>
       </header>
     </div>
+    <style>
+    :root {
+      --bg-image: url("{{ header_section.header_section_background_image }}");
+    }
+    </style>
   </section>
 </template>
 <script>
@@ -197,3 +202,8 @@ export default {
   },
 };
 </script>
+<style>
+#wrapper {
+  background-image: var(--bg-image);
+}
+</style>
