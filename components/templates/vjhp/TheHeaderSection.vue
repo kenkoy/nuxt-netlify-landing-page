@@ -60,11 +60,6 @@
         </p>
       </header>
     </div>
-    <style>
-    :root {
-      --bg-image: url("{{ images.header_section_background_image }}");
-    }
-    </style>
   </section>
 </template>
 <script>
