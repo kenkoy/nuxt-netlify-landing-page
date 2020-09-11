@@ -69,10 +69,6 @@
 </template>
 <script>
 export default {
-  data() { return {
-    bgDesktop: '#f00',
-    bgMobile: 'red',
-  }},
   name: 'TheHeaderSection',
   props: {
     header_section_top_text: {
