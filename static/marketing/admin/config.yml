@@ -517,14 +517,14 @@ collections:
           - label: "Testimonials Section"
             name: "testimonials_section"
             widget: "object"
-            colapsed: true
+            collapsed: true
             fields:
               - {label: "Button Text", name: testimonials_button_text, widget: "string"}   
               - {label: "Button Redirect URL", name: testimonials_button_redirect_url, widget: "string"}
           - label: "Footer Section"
             name: "footer_section"
             widget: "object"
-            colapsed: true
+            collapsed: true
             fields:
               - {label: "Menu 1", name: footer_menu_1_text, widget: "string"}   
               - {label: "Menu 1 Redirect URL", name: footer_menu_1_redirect_url, widget: "string"}
