@@ -63,7 +63,7 @@
     <style>
       :root {
         --bg-desktop: {{ bgDesktop }};
-        --bg-mobile: url('{{ bgMobile }}');
+        --bg-mobile: {{ bgMobile }};
       }
     </style>
   </section>
