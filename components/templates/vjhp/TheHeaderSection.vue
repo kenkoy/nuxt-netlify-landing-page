@@ -189,6 +189,10 @@ export default {
     header_section_background_image: {
       type: String,
       required: true,
+    },
+    header_section_mobile_background_image: {
+      type: String,
+      required: true,
     }
   },
 };
