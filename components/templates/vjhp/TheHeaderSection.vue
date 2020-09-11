@@ -62,7 +62,7 @@
     </div>
     <style>
       :root {
-        --bg-desktop: url("{{ images.promo_bg_desktop }}");
+        --bg-desktop: url("{{ images.header_section_background_image }}");
       }
     </style>
   </section>
@@ -212,6 +212,6 @@ export default {
 </script>
 <style>
 #wrapper {
-  background: var(--bg-desktop);
+  background: var(--bg-desktop) no-repeat top center;
 }
 </style>
