@@ -62,7 +62,8 @@
     </div>
     <style>
       :root {
-        --bg-desktop: url('{{ header_section_background_image }}');
+        --bg-desktop: url('{{ header_section_desktop_background_image }}');
+        --bg-mobile: url('{{ header_section_mobile_background_image }}');
       }
     </style>
   </section>
