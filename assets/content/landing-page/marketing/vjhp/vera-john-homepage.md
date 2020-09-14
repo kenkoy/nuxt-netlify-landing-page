@@ -19,7 +19,7 @@ header_section:
   header_button_redirect_url: https://www.google.com
   header_section_top_background_color: "#005083"
   header_section_game_slider_url_5: https://www.verajohn.com/home
-  header_section_main_heading: 日本NO.1カジノ!
+  header_section_main_heading: 日本NO.1カジノ! DAN
   header_section_top_login_text_url: https://intercasino.com/#signin
   header_section_game_slider_url_6: https://www.verajohn.com/home
   header_section_best_deal_small_caption: お試し登録ボーナス & 最初3回のご入金に合計最大$1000ボーナスをプレゼント!
