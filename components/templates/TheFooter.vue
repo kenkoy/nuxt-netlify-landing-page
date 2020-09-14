@@ -30,7 +30,7 @@
                </div>
                <div class="icon">
                   <a href="https://secure.gamblingcommission.gov.uk/PublicRegister/Search/Detail/39408" target="blank"
-                     aria-label="Gambling Commission">
+                     aria-label="UK Gambling Commission">
                      <div class="ukgc"></div>
                   </a>
                </div>
@@ -99,7 +99,7 @@
             </div>
             <div class="icon">
                <a href="https://secure.gamblingcommission.gov.uk/PublicRegister/Search/Detail/39408" target="blank"
-                  aria-label="Gambling Commission">
+                  aria-label="UK Gambling Commission">
                   <div class="ukgc"></div>
                </a>
             </div>
