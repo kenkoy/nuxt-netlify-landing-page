@@ -29,7 +29,7 @@ import TheHeader from '~/components/templates/vjlp3/TheHeader.vue'
 import TheBanner from '~/components/templates/vjlp3/TheBanner.vue'
 import TheGameSlider from '~/components/templates/vjlp3/TheGameSlider.vue'
 import TheBody from '~/components/templates/vjlp3/TheBody.vue'
-import TheFooter from '~/components/templates/TheFooter.vue'
+import TheFooter from '~/components/templates/iclp/TheFooter.vue'
 
 export default {
   layout: 'vjlp3',

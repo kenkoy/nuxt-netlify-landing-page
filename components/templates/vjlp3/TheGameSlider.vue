@@ -13,7 +13,8 @@
             :slidesToScroll="1"
             v-bind="carouselSettings"
           >
-            <a class="hvr-shrink" v-for="(link, index) in links" :key="index" v-bind:href="link">
+            <a class="hvr-shrink" v-for="(link, index) in links" :key="index" 
+              v-bind:href="link" aria-label="">
               <div v-bind:style="generateSliderIcon(icons[index])"></div>
             </a>
           </VueSlickCarousel>
@@ -38,7 +39,7 @@ export default {
     this.icons = [];
     this.links = [];
 
-    Object.entries(this.game).map(([key, value]) => {
+    Object.entries(this.game).forEach(([key, value]) => {
       key.indexOf('game_icon_') === 0
         ? value != ''
           ? this.icons.push(value)

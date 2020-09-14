@@ -3,7 +3,9 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <a href="https://www.verajohn.com/home" class="bf-logo"></a>
+          <a href="https://www.verajohn.com/home" class="bf-logo"
+            aria-label="Vera&John">
+          </a>
           <div class="bf-btn-container" style="display:inline-block;">
             <a id="login-btn-u" v-bind:href="header_login_button_redirect_url">
               <div class="bf-button bf-third-bg">{{ header_login_button }}</div>
