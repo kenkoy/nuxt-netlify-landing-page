@@ -208,7 +208,7 @@ export default {
   background-image: var(--bg-desktop);
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
   #wrapper {
     background-image: var(--bg-mobile);
   }
