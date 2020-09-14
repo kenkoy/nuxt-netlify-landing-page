@@ -172,6 +172,7 @@ collections:
             fields:
               - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
               - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
+              - {label: "Banner Background", name: promo_bg_banner, widget: image}
           - label: "Game Slider"
             name: "game_images"
             widget: "object"

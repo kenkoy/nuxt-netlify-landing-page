@@ -20,6 +20,7 @@ promo_banner:
   promo_subtitle: " "
   promo_title: Virtual/Instant Sports
   promo_images:
+    promo_bg_banner: /marketing/img/vjlp3-black-red-bg.jpg
     promo_bg_desktop: /marketing/img/virtual-instant-sports-banner-2-d.png
     promo_bg_mobile: /marketing/img/virtual-instant-sports-banner-2-m.png
   promo_title_display: false

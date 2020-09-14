@@ -21,6 +21,7 @@ promo_banner:
   promo_images:
     promo_bg_desktop: /marketing/img/329-bg.png
     promo_bg_mobile: /marketing/img/329-bg-m.png
+    promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
   promo_title_display: false
   promo_login_button_redirect_url: https://verajohn.com/#join
   promo_join_button_redirect_url: https://verajohn.com/#join

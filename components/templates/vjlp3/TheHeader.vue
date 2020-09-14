@@ -21,6 +21,7 @@
   :root {
     --bg-image: url("{{ images.promo_bg_desktop }}");
     --bg-image-m: url("{{ images.promo_bg_mobile }}");
+    --bg-banner: url("{{ images.promo_bg_banner }}")
   }
     </style>
   </header>
@@ -57,7 +58,7 @@ export default {
 <style>
 #bf-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-    url("~assets/images/vjlp3/bg.jpg") center no-repeat;
+    var(--bg-banner) center no-repeat;
   background-size: cover;
 }
 #strip .small-terms {

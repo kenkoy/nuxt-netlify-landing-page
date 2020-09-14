@@ -20,6 +20,7 @@ promo_banner:
   promo_subtitle: " "
   promo_title: HD - Pachinko v2
   promo_images:
+    promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
     promo_bg_desktop: /marketing/img/hd-pachinko-v2-banner-2-d.png
     promo_bg_mobile: /marketing/img/hd-pachinko-v2-banner-2-m.png
   promo_title_display: false
