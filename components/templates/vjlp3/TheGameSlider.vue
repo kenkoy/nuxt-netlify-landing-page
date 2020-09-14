@@ -14,7 +14,7 @@
             v-bind="carouselSettings"
           >
             <a class="hvr-shrink" v-for="(link, index) in links" :key="index" 
-              v-bind:href="link" aria-label="">
+              v-bind:href="link" :aria-label="icons[index].replace(/^.*[\\\/]/, '')">
               <div v-bind:style="generateSliderIcon(icons[index])"></div>
             </a>
           </VueSlickCarousel>
