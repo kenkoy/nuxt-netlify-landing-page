@@ -192,7 +192,7 @@ export default {
       type: String,
       required: true,
     },
-    header_section_background_image: {
+    header_section_desktop_background_image: {
       type: String,
       required: true,
     },
