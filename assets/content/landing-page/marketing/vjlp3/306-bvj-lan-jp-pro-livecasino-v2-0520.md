@@ -12,7 +12,7 @@ promo_banner:
     game_url_5: https://www.verajohn.com/ja/about/our-welcome-bonus
     game_icon_1: /marketing/img/roulette-lobby-paris.png
     game_url_6: ""
-    game_icon_2: /marketing/img/live-blackjack-lobby-paris.png
+    game_icon_2: /marketing/img/blackjack-lobby-paris.png
     game_icon_3: /marketing/img/baccarat-lobby-paris.png
     game_icon_4: /marketing/img/live-payment-option.png
     game_icon_5: /marketing/img/our-welcome-bonus.png
