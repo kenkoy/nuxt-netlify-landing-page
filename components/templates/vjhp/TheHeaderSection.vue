@@ -211,6 +211,7 @@ export default {
 @media screen and (max-width: 767px) {
   #wrapper {
     background-image: var(--bg-mobile);
+    background-position: center center;
   }
 }
 </style>
