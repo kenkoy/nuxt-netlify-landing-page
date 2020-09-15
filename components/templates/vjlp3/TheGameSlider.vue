@@ -3,21 +3,25 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <VueSlickCarousel
-            :arrows="false"
-            :dots="false"
-            :infinite="true"
-            :autoplay="true"
-            :speed="300"
-            :slidesToShow="5"
-            :slidesToScroll="1"
-            v-bind="carouselSettings"
-          >
-            <a class="hvr-shrink" v-for="(link, index) in links" :key="index" 
-              v-bind:href="link" :aria-label="icons[index].replace(/^.*[\\\/]/, '')">
-              <div v-bind:style="generateSliderIcon(icons[index])"></div>
-            </a>
-          </VueSlickCarousel>
+          
+          <div class="slider slick-initialized slick-slider">
+						<VueSlickCarousel
+              :arrows="false"
+              :dots="false"
+              :infinite="true"
+              :autoplay="true"
+              :speed="300"
+              :slidesToShow="5"
+              :slidesToScroll="1"
+              v-bind="carouselSettings"
+            >
+              <a class="hvr-shrink" v-for="(link, index) in links" :key="index" 
+                v-bind:href="link" :aria-label="icons[index].replace(/^.*[\\\/]/, '')">
+                <div v-bind:style="generateSliderIcon(icons[index])"></div>
+              </a>
+            </VueSlickCarousel>
+					 </div>
+          
         </div>
       </div>
     </div>

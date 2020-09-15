@@ -10,15 +10,16 @@
       return {
         link: [
           { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }, 
-          { preload: true, rel: 'stylesheet', href: '/marketing/styles/vjlp-core/fonts.css' }, //
+          { preload: true, rel: 'stylesheet', href: '/marketing/styles/vjlp-core/fonts.css' },
           { rel: 'stylesheet', href: '/marketing/styles/vjlp-core/bootstrap.min.css' },
-          { defer: true, rel: 'stylesheet', href: '/marketing/styles/vjlp-core/animate.min.css' }, //
-          { defer: true, rel: 'stylesheet', href: '/marketing/styles/vjlp-core/hover-min.css' }, //
-          { rel: 'stylesheet', href: '/marketing/styles/vjlp-core/slick.css' }, //
+          { defer: true, rel: 'stylesheet', href: '/marketing/styles/vjlp-core/animate.min.css' },
+          { defer: true, rel: 'stylesheet', href: '/marketing/styles/vjlp-core/hover-min.css' },
+          { defer: true, rel: 'stylesheet', href: '/marketing/styles/vjlp-core/slick.css' },
           { rel: 'stylesheet', href: '/marketing/styles/vjlp3/core.css' },
-          { defer: true, rel: 'stylesheet', href: '/marketing/styles/vjlp3/brand.css' }, //
+          { defer: true, rel: 'stylesheet', href: '/marketing/styles/vjlp3/brand.css' },
           { rel: 'stylesheet', href: '/marketing/styles/vjlp3/responsive.css' },
 
+          { type: 'text/javascript', src: '/marketing/js/vjlp-core/events/.js'},
           { type: 'text/javascript', src: '/marketing/js/vjlp-core/jquery-3.5.1.slim.min.js' },
           { defer: true, src: '/marketing/js/vjlp-core/popper.min.js' },
           { defer: true, src: '/marketing/js/vjlp-core/bootstrap.min.js' },

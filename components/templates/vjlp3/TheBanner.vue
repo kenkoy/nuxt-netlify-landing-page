@@ -3,31 +3,57 @@
     <div class="container">
       <div class="row">
         <div id="bf-banner-img-2" class="col-lg-12">
-          <h1 v-if="promo_title_display">{{promo_title}}</h1>
-          <h2>{{promo_description}}</h2>
+          <h1 v-if="promo_title_display">{{ promo_title }}</h1>
+          <h2>{{ promo_description }}</h2>
           <div :class="promo_join_button_location">
-            <a class="signup-btn d-none d-lg-block" v-bind:href="promo_join_button_redirect_url">
-              <div class="bf-button bf-secondary-bg">{{promo_join_button}}</div>
+            <a class="signup-btn d-none d-lg-block" 
+              :href="promo_join_button_redirect_url">
+              <div class="bf-button bf-secondary-bg">
+                <!-- <p>
+                  今
+                  <span style="background-color: initial; font-size: 1.063em;">すぐプレイ</span>
+                </p> -->
+                {{ promo_join_button }}
+              </div>
             </a>
           </div>
         </div>
         <div class="d-block d-lg-none col-12">
-          <div class="center-button" :class="{ hidden: promo_join_button_location === 'hidden' }">
-            <a class="signup-btn" v-bind:href="promo_join_button_redirect_url">
-              <div class="bf-button bf-secondary-bg">{{promo_join_button}}</div>
+          <div class="center-button"
+            :class="{ hidden: promo_join_button_location === 'hidden' }">
+            <a class="signup-btn" :href="promo_join_button_redirect_url">
+              <div class="bf-button bf-secondary-bg">
+                <!-- <p>
+                  今
+                  <span style="background-color: initial; font-size: 1.063em;">すぐプレイ</span>
+                </p> -->
+                {{ promo_join_button }}
+              </div>
             </a>
           </div>
+          <div style="margin: 20px 0;"></div>
+          <div id="strip" class="col-12 align-bottom"></div>
         </div>
-        <div id="strip" class="col-12 align-bottom"></div>
       </div>
     </div>
+    <style>
+      :root {
+        --bg-image: url("{{ images.promo_bg_desktop }}");
+        --bg-image-m: url("{{ images.promo_bg_mobile }}");
+        --bg-banner: url("{{ images.promo_bg_banner }}")
+      }
+    </style>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'Promotion',
+  name: 'Banner',
   props: {
+    images: {
+      type: Object,
+      required: true,
+    },
     promo_title: {
       type: String,
       required: true,
@@ -38,7 +64,7 @@ export default {
     },
     promo_description: {
       type: String,
-      default: "",
+      default: '',
       required: false,
     },
     promo_join_button: {
@@ -59,6 +85,34 @@ export default {
 </script>
 
 <style scoped>
+#bf-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    var(--bg-banner) center no-repeat;
+  background-size: cover;
+}
+#strip .small-terms {
+  display: block;
+}
+#strip {
+  background: none;
+}
+#bf-banner-img-2 {
+  background: var(--bg-image) bottom center no-repeat;
+  background-size: contain;
+}
+@media only screen and (max-width: 767px) {
+  #bf-banner-img-2 {
+    background: var(--bg-image-m) bottom center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .bf-logo {
+    width: 75px !important;
+  }
+}
+
 .hidden { display: none; }
 
 .upper-left { position: absolute; }

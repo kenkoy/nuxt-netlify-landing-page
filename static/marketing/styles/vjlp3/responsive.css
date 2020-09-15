@@ -76,7 +76,8 @@
   #signup-btn { display: none; }
   .bf-btn-container { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
   .bf-btn-container .bf-button { padding: 6px 12px; min-width: auto; }
-  .bf-logo { width:100px; height: 100px; top:-15px; }
+  .bf-logo { width:75px; height: 100px; top:-15px; }
+  /* .bf-logo { width:100px; height: 100px; top:-15px; } */
    #bf-game-slider a div { height: 80px; }
    #bf-banner-img-2 h1 { font-size: 1.750em }	
    #bf-banner-img-2 h2 { font-size: 1.125em }

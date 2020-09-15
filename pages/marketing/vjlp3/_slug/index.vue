@@ -5,7 +5,6 @@
       :header_login_button_redirect_url="post.attributes.promo_banner.promo_login_button_redirect_url"
       :header_join_button="post.attributes.promo_banner.promo_join_button"
       :header_join_button_redirect_url="post.attributes.promo_banner.promo_join_button_redirect_url"
-      :images="post.attributes.promo_banner.promo_images"
     />
     <TheBanner
       :promo_title="post.attributes.promo_banner.promo_title"
@@ -14,6 +13,7 @@
       :promo_join_button="post.attributes.promo_banner.promo_join_button"
       :promo_join_button_location="post.attributes.promo_banner.promo_join_button_location"
       :promo_join_button_redirect_url="post.attributes.promo_banner.promo_join_button_redirect_url"
+      :images="post.attributes.promo_banner.promo_images"
     />
     <TheGameSlider :game="post.attributes.promo_banner.game_images" />
     <TheBody :promo_content="post.html" />

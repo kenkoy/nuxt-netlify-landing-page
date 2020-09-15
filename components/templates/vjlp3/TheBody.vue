@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Content',
+  name: 'Body',
   props: {
     promo_content: {
       type: String,
@@ -14,7 +14,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #bf-game-slider .slick-slider {
   margin: 10px 0;
 }
