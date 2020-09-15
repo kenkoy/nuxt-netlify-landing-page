@@ -38,7 +38,7 @@ header_section:
   header_section_game_slider_6: /marketing/img/game6.svg
   header_section_top_login_text: ログイン
   header_section_account_login_url: https://intercasino.com/#signin
-  header_section_mobile_background_image: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-bg_m.jpg
+  header_section_mobile_background_image: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2-m.jpeg
   header_section_welcome_message: ベラジョン・オンラインカジノへようこそ!
   header_text: Sample Header
 games_brick_section:
