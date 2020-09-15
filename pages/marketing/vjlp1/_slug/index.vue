@@ -40,7 +40,7 @@
 import TheHeader from '~/components/templates/vjlp/vjlp1/TheHeader.vue'
 import TheSteps from '~/components/templates/vjlp/vjlp1/TheSteps.vue'
 import ThePayment from '~/components/templates/iclp/ThePayment.vue'
-import TheBody from '~/components/templates/iclp/TheBody.vue'
+import TheBody from '~/components/templates/vjlp/TheBody.vue'
 import TheFooter from '~/components/templates/iclp/TheFooter.vue'
 export default {
   layout: 'vjlp1',
