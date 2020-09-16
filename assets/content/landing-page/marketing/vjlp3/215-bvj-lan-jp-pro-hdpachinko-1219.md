@@ -168,7 +168,7 @@ promo_template: VJLP3-NoForm
             10. ベラジョンはプレイヤー様による不正行為が認められた場合、ボーナスおよびそれにより獲得した勝利金を無効とする権利を有します。不正行為についてはキャンペーンの一般規約をご確認ください。
             <br />
             11. 出金賭け条件への適用率は、ゲームによって異なります。詳細は
-            <a href="https://www.verajohn.com/ja/about/our-casino-bonuses" onclick="event.preventDefault()">カジノボーナス</a>
+            <a href="https://www.verajohn.com/ja/about/our-casino-bonuses">カジノボーナス</a>
             のページをご確認ください。
             <br />
             12. 第三者のウェブサイト経由でベラジョンに登録したアカウントは、このボーナスの対象外となります。

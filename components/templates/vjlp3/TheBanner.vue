@@ -32,7 +32,7 @@
             </a>
           </div>
           <div style="margin: 20px 0;"></div>
-          <div id="strip" class="col-12 align-bottom"></div>
+          <!-- <div id="strip" class="col-12 align-bottom"></div> -->
         </div>
       </div>
     </div>
@@ -111,7 +111,11 @@ export default {
   .bf-logo {
     width: 75px !important;
   }
+  #bf-banner-img-2 {
+    min-height: 350px;
+  }
 }
+
 
 .hidden { display: none; }
 
