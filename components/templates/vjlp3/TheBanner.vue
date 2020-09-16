@@ -103,7 +103,8 @@ export default {
 @media only screen and (max-width: 767px) {
   #bf-banner-img-2 {
     background: var(--bg-image-m) bottom center no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
+    background-size: contain;
   }
 }
 
