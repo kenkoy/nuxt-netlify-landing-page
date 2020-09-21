@@ -207,7 +207,7 @@ export default {
 /* Logo Fix */
 @media only screen and (max-height: 750px) {
   #strip-container .logo {
-    height: 100px !important;
+    height: 150px !important;
     margin-bottom: 20px;
     margin-top: -10px;
   }
