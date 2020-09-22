@@ -28,11 +28,11 @@
 </template>
 
 <script>
-import TheHeader from '~/components/templates/vjlp4/TheHeader.vue'
-import TheSection from '~/components/templates/vjlp4/TheSection.vue'
-import ThePayment from '~/components/templates/iclp/ThePayment.vue'
-import TheBody from '~/components/templates/iclp/TheBody.vue'
-import TheFooter from '~/components/templates/iclp/TheFooter.vue'
+import TheHeader from '~/components/templates/vjlp/vjlp4/TheHeader.vue'
+import TheSection from '~/components/templates/vjlp/vjlp4/TheSection.vue'
+import ThePayment from '~/components/templates/ThePayment.vue'
+import TheBody from '~/components/templates/vjlp/TheBody.vue'
+import TheFooter from '~/components/templates/TheFooter.vue'
 
 export default {
   components: {
@@ -55,23 +55,6 @@ export default {
       }
     }
   },
-  // data() {
-  //   return {
-  //     post: {
-  //       images: {
-  //         promo_bg_desktop: '/marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bg.jpg',
-  //         promo_bg_mobile: '/marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bg_m.jpg',
-  //         promo_game_logo: '/marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-game-logo.png',
-  //         promo_game_title: '/marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-title.png'
-  //       }
-  //     },
-  //     componentImages: [
-  //       '/marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bonus.png',
-  //       '/marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-CM.png',
-  //       '/marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-details.png'
-  //     ]
-  //   }
-  // },
   async asyncData ({ params }) {
     try {
       const post = await import('~/assets/content/landing-page/marketing/vjlp4/' + params.slug + '.md');

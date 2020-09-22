@@ -39,9 +39,10 @@
 <script>
 import TheHeader from '~/components/templates/vjlp/vjlp1/TheHeader.vue'
 import TheSteps from '~/components/templates/vjlp/vjlp1/TheSteps.vue'
-import ThePayment from '~/components/templates/iclp/ThePayment.vue'
+import ThePayment from '~/components/templates/ThePayment.vue'
 import TheBody from '~/components/templates/vjlp/TheBody.vue'
-import TheFooter from '~/components/templates/iclp/TheFooter.vue'
+import TheFooter from '~/components/templates/TheFooter.vue'
+
 export default {
   layout: 'vjlp1',
   head() {

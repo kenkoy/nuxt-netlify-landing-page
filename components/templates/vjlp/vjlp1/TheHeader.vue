@@ -107,12 +107,12 @@ export default {
   },
   computed: {
     bannerTitle: function () {
-      let bannerTitle = this.title
-        .split(/\r?\n/)
+      let bannerTitle = this.title.split(/\r?\n/)
         // .filter(title => title)
         .map(title => title.slice(-1) === '\\'
           ? title.substring(0, title.length - 1) : title
         );
+      
       let idx = 0;
       this.title_highlighted.filter(phrase => phrase)
         .forEach(phrase => {

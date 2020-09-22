@@ -38,8 +38,8 @@
 import TheHeader from '~/components/templates/iclp/iclp1/TheHeader.vue'
 import TheSteps from '~/components/templates/iclp/iclp1/TheSteps.vue'
 import TheBody from '~/components/templates/iclp/TheBody.vue'
-import ThePayment from '~/components/templates/iclp/ThePayment.vue'
-import TheFooter from '~/components/templates/iclp/TheFooter.vue'
+import ThePayment from '~/components/templates/ThePayment.vue'
+import TheFooter from '~/components/templates/TheFooter.vue'
 
 export default {
   layout: 'iclp1',

@@ -1,5 +1,5 @@
 ---
-slug_name: Sample VJJ4 Slug
+slug_name: 324 BVJ lan JP Pro Beginnersguide 0720
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -7,14 +7,14 @@ promo_banner:
   promo_small_subtitle: |-
     $1000のウェルカムボーナスをゲットできるのは新規プレイヤーのあなた様のみ！
     このビギナーズガイドを読んで、安心してベラジョンカジノを始めよう！
-  promo_title: Sample VJJ4 Slug
+  promo_title: 324 BVJ lan JP Pro Beginnersguide 0720
   promo_images:
     promo_game_image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-title.png
     promo_game_logo: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-game-logo.png
     promo_bg_mobile: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bg_m.jpg
     promo_bg_desktop: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bg.jpg
   promo_large_subtitle: ■新規プレイヤー限定特典■
-  promo_link_terms: 
+  promo_link_terms:
     - 利用規約
   promo_login_button_redirect_url: https://verajohn.com/#signin
   promo_small_subtitle_highlighted:

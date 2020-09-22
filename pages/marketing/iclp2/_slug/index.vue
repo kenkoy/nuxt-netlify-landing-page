@@ -58,9 +58,9 @@ import TheTopGame from '~/components/templates/iclp/iclp2/TheTopGame.vue'
 import TheLoyalty from '~/components/templates/iclp/iclp2/TheLoyalty.vue'
 import TheSafety from '~/components/templates/iclp/iclp2/TheSafety.vue'
 import TheHistory from '~/components/templates/iclp/iclp2/TheHistory.vue'
-import ThePayment from '~/components/templates/iclp/ThePayment.vue'
+import ThePayment from '~/components/templates/ThePayment.vue'
 import TheBody from '~/components/templates/iclp/TheBody.vue'
-import TheFooter from '~/components/templates/iclp/TheFooter.vue'
+import TheFooter from '~/components/templates/TheFooter.vue'
 
 export default {
   components: {
