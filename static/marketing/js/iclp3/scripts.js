@@ -161,7 +161,7 @@
         m = [],
         p = new Image;
     // p.src = "https://files.vjpromo.com/bannerflow/oiranslot/ic/10/assets/images/heart.png";
-    p.src = "/marketing/img/heart.png";
+    p.src = "/marketing/img/iclp3/heart.png";
     var f = function () {
         function t() {
             var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
