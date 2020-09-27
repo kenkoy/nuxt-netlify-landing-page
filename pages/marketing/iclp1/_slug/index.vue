@@ -27,17 +27,22 @@
     <ThePayment
       :promo_language_code = "post.attributes.promo_locale.promo_language_code"
       :promo_country_code = "post.attributes.promo_locale.promo_country_code" />
-    <TheBody :promo_content = "post.html"/>
+    <TheBody
+      :promo_content = "post.html"
+      :landing_page_type="'intercasino'"
+    />
     <TheFooter 
       :promo_language_code = "post.attributes.promo_locale.promo_language_code"
-      :promo_country_code = "post.attributes.promo_locale.promo_country_code" />
+      :promo_country_code = "post.attributes.promo_locale.promo_country_code"
+      :landing_page_type="'intercasino'"
+    />
   </div>
 </template>
 
 <script>
 import TheHeader from '~/components/templates/iclp/iclp1/TheHeader.vue'
 import TheSteps from '~/components/templates/iclp/iclp1/TheSteps.vue'
-import TheBody from '~/components/templates/iclp/TheBody.vue'
+import TheBody from '~/components/templates/TheBody.vue'
 import ThePayment from '~/components/templates/ThePayment.vue'
 import TheFooter from '~/components/templates/TheFooter.vue'
 

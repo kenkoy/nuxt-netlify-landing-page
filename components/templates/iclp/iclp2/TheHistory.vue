@@ -6,12 +6,12 @@
           <div class="row">
             <div class="col-12 animated fadeIn delay-0.5s text-center">
               <div class="d-none d-md-block">
-                <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-History1.png" alt=""/>
+                <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-History1.png" alt="" v-lazy-load/>
               </div>
               <div class="d-block d-md-none">
-                <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-History2.png" alt=""/>
+                <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-History2.png" alt="" v-lazy-load/>
               </div>
-              <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile-title.png" alt=""/>
+              <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile-title.png" alt="" v-lazy-load/>
               <span class="queenprofile-star sprite"></span>
               <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12" style="margin: 10px 0px 0px;">
@@ -25,7 +25,7 @@
                     <span class="redmark">赤の王国</span>のトップに長らく
                     君臨する実力派クイーン。 -->
                   </p>
-                  <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-Rouge.png" alt=""/>
+                  <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-Rouge.png" alt="" v-lazy-load/>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12" style="margin: 10px 0px 0px;">
                   <p class="text-center">
@@ -38,7 +38,7 @@
                     プレイヤーと一緒にプレイすることが大好きなクロエは、
                     幸運の女神とも噂される、ちょっぴりお茶目な強運クイーン。 -->
                   </p>
-                  <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-Chole.png" alt=""/>
+                  <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-Chole.png" alt="" v-lazy-load/>
                 </div>
               </div>
             </div>

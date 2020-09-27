@@ -9,6 +9,7 @@
                 style="max-width: 100%;"
                 src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame1.png"
                 alt=""
+                v-lazy-load
               />
             </div>
           </div>
@@ -21,7 +22,7 @@
           <div class="row">
             <div class="col-12 animated fadeIn delay-0.5s text-center">
               <!-- title -->
-              <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame2.png" alt=""/>
+              <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame2.png" alt="" v-lazy-load/>
               <!-- game cat -->
               <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">

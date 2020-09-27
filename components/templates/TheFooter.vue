@@ -13,7 +13,9 @@
       <div class="row">
         <div class="icons text-center">
           <div class="icon">
-            <a href="https://www.verajohn.com/about/responsible-gaming" target="blank"
+            <a 
+              :href="responsibleGamingURL"
+              target="blank"
               aria-label="Responsible Gaming">
               <div class="age"></div>
             </a>
@@ -62,7 +64,7 @@
         <div class="footer-content col-12 text-center">
           <p class="text-center">
             <a
-              href="https://verajohn.com/about/responsible-gaming"
+              :href="responsibleGamingURL"
               target="blank"
               aria-label="Responsible Gaming"
             >ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。</a>
@@ -90,7 +92,9 @@
       <div class="row">
         <div class="icons text-center">
           <div class="icon">
-            <a href="https://verajohn.com/about/responsible-gaming" target="blank"
+            <a 
+              :href="responsibleGamingURL"
+              target="blank"
               aria-label="Responsible Gaming">
               <div class="age"></div>
             </a>
@@ -157,6 +161,27 @@ export default {
       type: String,
       required: true,
     },
+    landing_page_type: {
+      type: String,
+      required: false,
+    }
   },
+  computed: {
+    responsibleGamingURL: function () {
+      let returnURL = ''
+      switch (this.landing_page_type) {
+        case 'verajohn':
+          returnURL = 'https://www.verajohn.com/about/responsible-gaming';
+          break;
+        case 'intercasino': 
+          returnURL = 'https://www.intercasino.com/about/responsible-gaming';
+          break;
+        default:
+          returnURL = '#';
+          break;
+      }
+      return returnURL;
+    }
+  }
 };
 </script>

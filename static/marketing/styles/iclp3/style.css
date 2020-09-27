@@ -1,0 +1,315 @@
+.pc {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none;
+  }
+  .pc {
+    display: block;
+  }
+}
+.bonus {
+  position: relative;
+  margin-top: -270px;
+  background: hsla(0, 0%, 100%, 0.4);
+}
+@media screen and (min-width: 768px) {
+  .bonus {
+    margin-top: 0;
+  }
+}
+.campaign {
+  font-size: 90%;
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  .campaign {
+    font-size: 130%;
+    padding: 10px 40px 50px;
+  }
+}
+.campaign__box {
+  margin: 60px auto 0;
+  padding: 10px;
+  border: 6px solid #faf299;
+  border-radius: 30px;
+  background: url("/marketing/img/iclp3/bg_patern_border.jpg") repeat;
+  box-shadow: 2px 2px 0 #936d12, -2px -2px 0 #936d12, -2px 2px 0 #936d12, 2px -2px 0 #936d12;
+}
+@media screen and (min-width: 768px) {
+  .campaign__box {
+    margin: 130px auto 0;
+    padding: 30px;
+  }
+}
+.campaign__box__title {
+  margin: -50px -10px 0;
+}
+@media screen and (min-width: 768px) {
+  .campaign__box__title {
+    margin: -130px 0 -10px;
+  }
+}
+.campaign__box__subtitle {
+  font-size: 130%;
+  margin: 0;
+  color: #f20574;
+}
+.campaign__box__subtitle,
+.campaign__box__summary {
+  text-align: center;
+  text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff;
+}
+.campaign__box__summary b {
+  font-size: 120%;
+  line-height: 1.2;
+  display: inline-block;
+  margin: 3px 0;
+  color: #ff2896;
+}
+.campaign__box__item {
+  margin-top: 50px;
+  padding: 0 30px 20px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.campaign__box__item b {
+  color: #ff2896;
+}
+.campaign__box__item strong {
+  font-size: 140%;
+  color: #ff2896;
+}
+.campaign__box__item__title {
+  font-size: 140%;
+  position: relative;
+  top: -15px;
+  margin: 0 -20px -5px;
+  padding: 5px 0;
+  text-align: center;
+  color: #ff0;
+  background: #e3034e;
+  background: linear-gradient(270deg, #e3034e, #fe56b2);
+  -webkit-clip-path: polygon(0 0, 5% 50%, 0 100%, 100% 100%, 95% 50%, 100% 0);
+  clip-path: polygon(0 0, 5% 50%, 0 100%, 100% 100%, 95% 50%, 100% 0);
+}
+.campaign__box__item__title span {
+  font-size: 80%;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .campaign__box__item__title {
+    font-size: 170%;
+    top: -25px;
+    padding: 0;
+  }
+}
+.campaign__box__item__flex {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .campaign__box__item__flex {
+    flex-direction: row;
+  }
+}
+.campaign__box__item__flex p {
+  margin: 0;
+}
+.campaign__box__item__flex__img {
+  width: 90%;
+  height: inherit;
+  margin: 10px auto 15px;
+}
+@media screen and (min-width: 768px) {
+  .campaign__box__item__flex__img {
+    width: 250px;
+    height: inherit;
+    margin: 0 0 0 20px;
+  }
+}
+.campaign__box__item__link {
+  display: block;
+  max-width: 243px;
+  margin: 20px auto 0;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .campaign__box__item__link {
+    width: 330px;
+    max-width: 330px;
+  }
+}
+.campaign__box__item__link:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.campaign__box.twitter a {
+  color: #1da1f2;
+}
+.campaign__box.twitter a:hover {
+  text-decoration: none;
+}
+.payment {
+  position: relative;
+  z-index: 10;
+  border-top: 3px solid #6f42c1;
+  border-bottom: 4px solid #6f42c1;
+  background: rgba(0, 0, 0, 0.85);
+}
+.payment__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.termsdetail {
+  font-size: 80%;
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.85);
+}
+@media screen and (min-width: 768px) {
+  .termsdetail {
+    font-size: 90%;
+  }
+}
+.termsdetail__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+@media screen and (min-width: 768px) {
+  .termsdetail__inner {
+    padding: 20px 40px;
+  }
+}
+.termsdetail__inner dt {
+  font-size: 120%;
+  font-weight: 700;
+  color: #ceb3ff;
+}
+.termsdetail__inner ul {
+  margin-left: 1.5em;
+}
+.termsdetail__inner li {
+  list-style-type: disc;
+}
+.footer {
+  font-size: 80%;
+  position: relative;
+  z-index: 10;
+  border-top: 3px solid #6f42c1;
+  background: rgba(0, 0, 0, 0.85);
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    font-size: 90%;
+  }
+}
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .footer__inner {
+    padding: 20px 40px;
+  }
+}
+.footer__logo {
+  display: flex;
+  justify-content: center;
+}
+.footer__logo .age,
+.footer__logo .curacao,
+.footer__logo .gt {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: url("/marketing/img/iclp3/icon_age.svg") no-repeat 50%;
+  background-size: contain;
+}
+.footer__logo .age a,
+.footer__logo .curacao a,
+.footer__logo .gt a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.footer__logo .gt {
+  width: 96px;
+  height: 48px;
+  margin-left: 20px;
+  /* background-image: url("/marketing/img/iclp3/icon_gt.svg"); */
+}
+.footer__logo .curacao {
+  width: 97px;
+  height: 47px;
+  /* background-image: url("/marketing/img/iclp3/icon_gt.svg"); */
+}
+.footer__logo span {
+  visibility: hidden;
+}
+.caption {
+  font-size: 70%;
+}
+@media (-ms-high-contrast: none) {
+  .firstview__touch,
+  ::-ms-backdrop {
+    display: none;
+  }
+  .campaign__box__item__flex__text,
+  ::-ms-backdrop {
+    width: 100%;
+  }
+  .campaign__box__item__flex__img,
+  ::-ms-backdrop {
+    width: 80%;
+    height: inherit;
+    margin: 5px auto 10px;
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 768px) {
+  .campaign__box__item__flex__text,
+  ::-ms-backdrop {
+    width: 50%;
+  }
+  .campaign__box__item__flex__img,
+  ::-ms-backdrop {
+    width: 250px;
+    height: auto;
+  }
+}
+.firstview__exclusive {
+  display: none;
+}
+.firstview__inquiry {
+  margin-left: 0;
+}
+.firstview__exclusive {
+  display: none;
+}
+.firstview__logo {
+  position: absolute;
+  right: 0;
+  margin: 0;
+  left: auto;
+}
+@media screen and (max-width: 768px) {
+  .firstview__logo {
+    width: 50%;
+  }
+}

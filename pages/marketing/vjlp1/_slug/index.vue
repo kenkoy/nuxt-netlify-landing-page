@@ -28,10 +28,12 @@
     />
     <TheBody v-if="post.html"
       :promo_content="post.html"
+      :landing_page_type="'verajohn'"
     />
     <TheFooter 
       :promo_language_code="post.attributes.promo_locale.promo_language_code"
       :promo_country_code="post.attributes.promo_locale.promo_country_code"
+      :landing_page_type="'verajohn'"
     />
   </div>
 </template>
@@ -40,7 +42,7 @@
 import TheHeader from '~/components/templates/vjlp/vjlp1/TheHeader.vue'
 import TheSteps from '~/components/templates/vjlp/vjlp1/TheSteps.vue'
 import ThePayment from '~/components/templates/ThePayment.vue'
-import TheBody from '~/components/templates/vjlp/TheBody.vue'
+import TheBody from '~/components/templates/TheBody.vue'
 import TheFooter from '~/components/templates/TheFooter.vue'
 
 export default {

@@ -1,7 +1,7 @@
 const glob = require('glob')
 const path = require('path')
 
-const markdownPaths = ['marketing/vjlp1', 'marketing/vjlp3', 'marketing/vjlp4', 'marketing/iclp1', 'marketing/iclp2']
+const markdownPaths = ['marketing/vjlp1', 'marketing/vjlp3', 'marketing/vjlp4', 'marketing/iclp1', 'marketing/iclp2', 'marketing/iclp3']
 
 function dynamicMarkdownRoutes() {
   return [].concat(
@@ -45,7 +45,9 @@ export default {
     style: [
       { cssText: '.async-hide { opacity: 0 !important }', type: 'text/css' },
     ],
-    script: [ ]
+    script: [
+      { src: '/marketing/js/page-hide.js' }
+    ]
   },
   /*
   ** Customize the progress-bar color

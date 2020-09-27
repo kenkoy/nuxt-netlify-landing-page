@@ -6,12 +6,14 @@
           style="max-width: 100%;"
           src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-welcome-title.png"
           alt=""
+          v-lazy-load
         />
         <br />
         <img
           style="max-width: 100%;"
           src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-500WC-stamp.png"
           alt=""
+          v-lazy-load
         />
         <br />
         <div>
@@ -27,6 +29,7 @@
                   style="max-width: 100%;"
                   src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph1.png"
                   alt=""
+                  v-lazy-load
                 />
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
@@ -34,6 +37,7 @@
                   style="max-width: 100%;"
                   src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph2.png"
                   alt=""
+                  v-lazy-load
                 />
               </div>
               <div class="col-lg-2 d-none d-md-block"></div>
@@ -69,6 +73,7 @@
                     style="max-width: 100%;"
                     src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-red-icon.png"
                     alt=""
+                    v-lazy-load
                   />
                 </div>
                 <div class="col-lg-1 d-none d-md-block"></div>
@@ -80,6 +85,7 @@
                     style="max-width: 100%;"
                     src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-black-icon.png"
                     alt=""
+                    v-lazy-load
                   />
                 </div>
                 <div class="col-lg-7 col-md-9 col-sm-9">
@@ -112,6 +118,7 @@
                   style="max-width: 100%;"
                   src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-red-icon.png"
                   alt=""
+                  v-lazy-load
                 />
               </div>
             </div>
@@ -132,6 +139,7 @@
                   style="max-width: 100%;"
                   src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-black-icon.png"
                   alt=""
+                  v-lazy-load
                 />
               </div>
             </div>

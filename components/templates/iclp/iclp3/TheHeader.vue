@@ -1,0 +1,148 @@
+<template>
+  <section class="firstview" id="firstview">
+    <p class="firstview__logointer">
+      <span>インターカジノ</span>
+    </p>
+    <h1 class="firstview__logo">
+      <span>花魁ドリーム</span>
+    </h1>
+    <p class="firstview__exclusive"
+      lazy-background="/marketing/img/iclp3/exclusive.png">
+      <span>期間限定独占配信中‼</span>
+    </p>
+    <p class="firstview__touch" id="firstview__touch">
+      <span>触ったら帯が緩んじゃう Touch</span>
+    </p>
+    <a class="firstview__btn_inquiry" href="https://www.intercasino.com/#join">
+      <span>登録</span>
+    </a>
+    <div class="firstview__taparea">
+      <span>タップエリア</span>
+    </div>
+    <div class="firstview__anime">
+      <div class="player" id="player">
+        <div class="spine-player">
+          <canvas class="spine-player-canvas" width="1930" height="1500"></canvas>
+          <div class="spine-player-error spine-player-hidden"></div>
+          <div class="spine-player-controls spine-player-popup-parent spine-player-controls-hidden">
+            <div class="spine-player-timeline">
+              <div class="spine-player-slider">
+                <div class="spine-player-slider-value" style="width: 4.40002%;"></div>
+                <!--<div class="spine-player-slider-knob"></div>-->
+              </div>
+            </div>
+            <div class="spine-player-buttons">
+              <button
+                id="spine-player-button-play-pause"
+                class="spine-player-button spine-player-button-icon-pause"
+              ></button>
+              <div class="spine-player-button-spacer"></div>
+              <button
+                id="spine-player-button-speed"
+                class="spine-player-button spine-player-button-icon-speed"
+              ></button>
+              <button
+                id="spine-player-button-animation"
+                class="spine-player-button spine-player-button-icon-animations"
+              ></button>
+              <button
+                id="spine-player-button-skin"
+                class="spine-player-button spine-player-button-icon-skins"
+              ></button>
+              <button
+                id="spine-player-button-settings"
+                class="spine-player-button spine-player-button-icon-settings"
+              ></button>
+              <button
+                id="spine-player-button-fullscreen"
+                class="spine-player-button spine-player-button-icon-fullscreen"
+              ></button>
+              <img
+                id="spine-player-button-logo"
+                class="spine-player-button-icon-spine-logo"
+                src="/marketing/img/spine-logo-white.svg"
+                alt=""
+                v-lazy-load
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        class="firstview__ie"
+        src="/marketing/img/iclp3/oiran.png"
+        alt="oiran"
+        v-lazy-load
+      />
+      <canvas class="firstview__cvs" id="cvs"></canvas>
+      <!-- <canvas class="firstview__cvs" id="cvs" width="920" height="500"></canvas> -->
+    </div>
+    <div class="firstvie__inquiry" id="firstvie__inquiry">
+      <div class="firstvie__inquiry__inner">
+        <h3>
+          今なら新規登録で
+          <br class="pc" />$10ボーナス獲得!?
+        </h3>
+        <a href="https://www.intercasino.com/#join">▶花魁と今すぐ遊ぶ？</a>
+        <button onclick="back()">▶まだまだ触る！</button>
+      </div>
+      <a class="firstvie__inquiry__turm" href="#terms">
+        <span>利用規約</span>に同意します
+      </a>
+    </div>
+    <div class="firstview__counter" id="firstview__counter">
+      <div class="number main push">
+        <span class="back">0</span>
+        <div class="number lower"></div>
+        <div
+          class="number flipbottom"
+          style="animation: 0.5s linear 0s 1 normal forwards running flipb;"
+        >0</div>
+        <div
+          class="number fliptop"
+          style="animation: 0.5s linear 0s 1 normal forwards running flipt;"
+        ></div>
+      </div>
+      <div class="number main push">
+        <span class="back">0</span>
+        <div class="number lower"></div>
+        <div
+          class="number flipbottom"
+          style="animation: 0.5s linear 0s 1 normal forwards running flipb;"
+        >0</div>
+        <div
+          class="number fliptop"
+          style="animation: 0.5s linear 0s 1 normal forwards running flipt;"
+        ></div>
+      </div>
+      <div class="number main push">
+        <span class="back">0</span>
+        <div class="number lower"></div>
+        <div
+          class="number flipbottom"
+          style="animation: 0.5s linear 0s 1 normal forwards running flipb;"
+        >0</div>
+        <div
+          class="number fliptop"
+          style="animation: 0.5s linear 0s 1 normal forwards running flipt;"
+        ></div>
+      </div>
+      <div class="number main push">
+        <span class="back">0</span>
+        <div class="number lower">0</div>
+        <div
+          class="number flipbottom"
+          style="animation: 0.5s linear 0s 1 normal forwards running flipb;"
+        >0</div>
+        <div
+          class="number fliptop"
+          style="animation: 0.5s linear 0s 1 normal forwards running flipt;"
+        >0</div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {};
+</script>

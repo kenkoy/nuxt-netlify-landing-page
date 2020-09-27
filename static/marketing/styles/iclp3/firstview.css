@@ -1,0 +1,911 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+a {
+  background: transparent;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+.strong,
+b,
+strong {
+  font-weight: 700;
+}
+.em,
+dfn,
+em {
+  font-style: italic;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+p {
+  -webkit-hyphens: auto;
+  -epub-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+pre {
+  margin: 0;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+pre {
+  white-space: pre-wrap;
+}
+q {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+.small,
+small,
+sub,
+sup {
+  font-size: 75%;
+}
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+dd {
+  margin: 0;
+}
+menu {
+  padding: 0 0 0 40px;
+}
+ol,
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+nav ol,
+nav ul {
+  list-style: none;
+  list-style-image: none;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.image-replacement,
+.ir {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.cf,
+.clearfix {
+  zoom: 1;
+}
+.cf:after,
+.cf:before,
+.clearfix:after,
+.clearfix:before {
+  content: "";
+  display: table;
+}
+.cf:after,
+.clearfix:after {
+  clear: both;
+}
+span.amp {
+  font-family: Baskerville, Goudy Old Style, Palatino, Book Antiqua, serif !important;
+  font-style: italic;
+}
+body {
+  font-family: M PLUS\1p, sans-serif;
+  font-weight: 700;
+  background: url("/marketing/img/iclp3/oiran-bg.jpg") repeat top;
+  background-size: 200%;
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-size: contain;
+  }
+}
+a,
+a:hover {
+  color: #f20574;
+}
+a:hover {
+  text-decoration: underline;
+}
+img {
+  max-width: 100%;
+}
+.progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.firstview {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.firstview__logointer {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  background: #000 url("/marketing/img/iclp3/logo_inter_sp.png") no-repeat 50%;
+  background-size: 110px;
+}
+@media screen and (min-width: 768px) {
+  .firstview__logointer {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    width: 170px;
+    height: 100px;
+    margin: 0 0 0 -294px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: url("/marketing/img/iclp3/logo_inter_pc.png") no-repeat top;
+    background-size: contain;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .firstview__logointer {
+    margin: 0 0 0 -440px;
+  }
+}
+@media screen and (min-width: 1340px) {
+  .firstview__logointer {
+    width: 220px;
+    height: 120px;
+    margin: 0 0 0 -490px;
+  }
+}
+.firstview__logointer span {
+  visibility: hidden;
+}
+.firstview__logo {
+  position: absolute;
+  z-index: 1;
+  top: 315px;
+  left: 50%;
+  display: block;
+  width: 186px;
+  height: 140px;
+  margin: 0 0 0 -55px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: url("/marketing/img/iclp3/logo_oiran.png") no-repeat 50%;
+  background-size: contain;
+}
+@media screen and (min-width: 768px) {
+  .firstview__logo {
+    top: -5px;
+    width: 230px;
+    height: 160px;
+    margin: 0 0 0 215px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .firstview__logo {
+    top: -5px;
+    width: 300px;
+    height: 220px;
+    margin: 0 0 0 295px;
+  }
+}
+.firstview__logo span {
+  visibility: hidden;
+}
+.noperiod .firstview__logo {
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .noperiod .firstview__logo {
+    margin: 117px 0 0 225px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .noperiod .firstview__logo {
+    margin: 0 0 0 385px;
+  }
+}
+.firstview__exclusive {
+  position: absolute;
+  z-index: 1;
+  top: 330px;
+  left: 50%;
+  display: block;
+  width: 114px;
+  height: 105px;
+  margin: 0 0 0 88px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border: none;
+  outline: none;
+  /* background: url("/marketing/img/iclp3/exclusive.png") no-repeat 50%; */
+  background-size: contain;
+}
+@media screen and (min-width: 768px) {
+  .firstview__exclusive {
+    top: 143px;
+    width: 130px;
+    height: 127px;
+    margin: 0 0 0 218px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .firstview__exclusive {
+    top: 19px;
+    width: 160px;
+    height: 157px;
+    margin: 0 0 0 513px;
+  }
+}
+.firstview__exclusive span {
+  visibility: hidden;
+}
+.firstview__taparea {
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+  left: 50%;
+  display: block;
+  width: 300px;
+  height: 295px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border: none;
+  outline: none;
+  background: transparent;
+}
+@media screen and (min-width: 768px) {
+  .firstview__taparea {
+    position: fixed;
+    top: 0;
+    width: 570px;
+    height: 500px;
+  }
+}
+.firstview__taparea span {
+  visibility: hidden;
+}
+.firstview__touch {
+  position: absolute;
+  z-index: 1;
+  top: 57px;
+  left: 50%;
+  display: block;
+  width: 144px;
+  height: 128px;
+  margin: 0 0 0 -111px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border: none;
+  outline: none;
+  background: url("/marketing/img/iclp3/touch.png") no-repeat 50%;
+  background-size: contain;
+}
+@media screen and (min-width: 768px) {
+  .firstview__touch {
+    top: 100px;
+    width: 220px;
+    height: 193px;
+    margin: 0 0 0 -250px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .firstview__touch {
+    top: 80px;
+    width: 250px;
+    height: 223px;
+    margin: 0 0 0 -250px;
+  }
+}
+@media screen and (min-width: 1340px) {
+  .firstview__touch {
+    top: 19px;
+    width: 250px;
+    height: 223px;
+    margin: 0 0 0 -250px;
+  }
+}
+.firstview__touch span {
+  visibility: hidden;
+}
+.firstvie__inquiry {
+  font-size: 60%;
+  position: absolute;
+  z-index: 2;
+  top: 440px;
+  left: 50%;
+  display: block;
+  width: 90%;
+  max-width: 730px;
+  transition: margin 0.5s, width 1s, top 1s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+}
+.firstvie__inquiry h3 {
+  line-height: 1.2;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .firstvie__inquiry {
+    font-size: 80%;
+    top: 280px;
+    width: 300px;
+    margin: 0 0 0 220px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .firstvie__inquiry {
+    font-size: 100%;
+    top: 216px;
+    width: 350px;
+    margin: 0 0 0 390px;
+  }
+}
+.firstvie__inquiry__inner {
+  font-size: 140%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #ff0;
+  background: rgba(0, 0, 0, 0.8);
+}
+.firstvie__inquiry__inner:after {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: block;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  content: "";
+  border: 2px solid #fff;
+}
+.firstvie__inquiry__inner a {
+  font-size: 130%;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: 10px 0 0;
+  text-align: center;
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .firstvie__inquiry__inner a {
+    font-size: 110%;
+  }
+}
+.firstvie__inquiry__inner a:hover {
+  text-decoration: none;
+}
+.firstvie__inquiry__inner button {
+  font-size: 130%;
+  font-weight: 700;
+  position: relative;
+  z-index: 2;
+  display: block;
+  display: none;
+  margin: 10px 0 0;
+  text-align: center;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: none;
+}
+@media screen and (min-width: 768px) {
+  .firstvie__inquiry__inner button {
+    font-size: 110%;
+  }
+}
+.firstvie__inquiry__turm {
+  font-size: 120%;
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #000;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #fff;
+}
+.firstvie__inquiry__turm span {
+  color: #f20574;
+  border-bottom: 1px solid #f20574;
+}
+@media screen and (min-width: 768px) {
+  .firstvie__inquiry__turm {
+    font-size: 90%;
+  }
+}
+.firstvie__inquiry__turm:hover {
+  text-decoration: none;
+  color: #000;
+}
+.firstvie__inquiry__turm:hover span {
+  border: none;
+}
+.firstview__btn_inquiry {
+  position: absolute;
+  z-index: 2;
+  top: 65px;
+  right: 15px;
+  display: block;
+  width: 37px;
+  height: 55px;
+  border: none;
+  outline: none;
+  background: url("/marketing/img/iclp3/btn_signup.png") no-repeat 50%;
+  background-size: contain;
+}
+@media screen and (min-width: 768px) {
+  .firstview__btn_inquiry {
+    top: 15px;
+    width: 55px;
+    height: 80px;
+  }
+}
+.firstview__btn_inquiry span {
+  visibility: hidden;
+}
+.firstview__cvs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 1000px;
+  -webkit-transform: scale(0.5) translateX(-50%);
+  transform: scale(0.5) translateX(-50%);
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  mix-blend-mode: hard-light;
+}
+@media screen and (min-width: 768px) {
+  .firstview__cvs {
+    position: fixed;
+    width: 100%;
+    height: 500px;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.firstview__anime {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 800px;
+  transition: background-size 2s;
+  background-size: 100%;
+}
+@media screen and (min-width: 768px) {
+  .firstview__anime {
+    height: 600px;
+  }
+}
+.firstview__anime .player {
+  position: relative;
+}
+.firstview__anime .player canvas {
+  position: absolute;
+  top: -553px;
+  left: 50%;
+  width: 3270px;
+  height: 2590px;
+  margin: 0 0 0 10px;
+  -webkit-transform: scale(0.5) translateX(-50%);
+  transform: scale(0.5) translateX(-50%);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+}
+@media screen and (min-width: 768px) {
+  .firstview__anime .player canvas {
+    position: fixed;
+    top: -640px;
+    width: 1930px;
+    height: 1500px;
+    margin: 0 0 0 27px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+.point {
+  margin: 0;
+  padding: 10px 3px;
+  background: url("https://files.vjpromo.com/bannerflow/oiranslot/ic/10/assets/images/pattern.jpg") repeat top;
+  background-size: 20px;
+}
+.point ul {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.point ul img {
+  max-width: 100%;
+}
+.point ul li {
+  padding: 0 3px;
+}
+.point .pc {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .point {
+    padding: 20px;
+    background-size: 40px;
+  }
+  .point .sp {
+    display: none;
+  }
+  .point .pc {
+    display: block;
+  }
+}
+.firstview__counter {
+  position: absolute;
+  top: 270px;
+  left: 50%;
+  width: 383px;
+  padding-right: 120px;
+  -webkit-transform: translateX(-50%) scale(0.7);
+  transform: translateX(-50%) scale(0.7);
+  background: url("/marketing/img/iclp3/counter_touch.png") no-repeat 100% 0;
+  background-size: 170px;
+}
+@media screen and (min-width: 768px) {
+  .firstview__counter {
+    top: 450px;
+    width: 600px;
+    padding-right: 270px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-position: right 5px;
+    background-size: 272px;
+  }
+}
+.number,
+.number.main {
+  position: relative;
+}
+.number {
+  font-family: Trebuchet MS, Arial, sans-serif;
+  font-size: 60px;
+  line-height: 60px;
+  display: block;
+  float: left;
+  width: 45px;
+  height: 60px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  background: #ff2896;
+  background: url("/marketing/img/iclp3/bg_counter.png") no-repeat 50%;
+  background-size: 45px 60px;
+}
+@media screen and (min-width: 768px) {
+  .number {
+    font-size: 95px;
+    line-height: 95px;
+    width: 75px;
+    height: 95px;
+    background-size: 75px 95px;
+  }
+}
+.flipbottom {
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  overflow: hidden;
+  height: 50%;
+  -webkit-transform: perspective(200px) rotateX(180deg);
+  transform: perspective(200px) rotateX(180deg);
+  -webkit-transform-origin: 30px 0;
+  transform-origin: 30px 0;
+  background-position: bottom;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+  .flipbottom {
+    -webkit-transform-origin: 47.5px 0;
+    transform-origin: 47.5px 0;
+  }
+}
+.fliptop {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  height: 50%;
+  -webkit-transform: perspective(200px) rotateX(0deg);
+  transform: perspective(200px) rotateX(0deg);
+  -webkit-transform-origin: 30px 30px;
+  transform-origin: 30px 30px;
+  background-position: top;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+  .fliptop {
+    -webkit-transform-origin: 47.5px 47.5px;
+    transform-origin: 47.5px 47.5px;
+  }
+}
+.back,
+.back:after {
+  display: block;
+}
+.back:after {
+  position: absolute;
+  z-index: 2;
+  top: 48%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  content: "";
+  background: #000;
+}
+.lower {
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  overflow: hidden;
+  height: 50%;
+  background-position: bottom;
+}
+.push {
+  margin-right: 7px;
+}
+@-webkit-keyframes flipt {
+  to {
+    -webkit-transform: perspective(200px) rotateX(-180deg);
+    transform: perspective(200px) rotateX(-180deg);
+  }
+}
+@keyframes flipt {
+  to {
+    -webkit-transform: perspective(200px) rotateX(-180deg);
+    transform: perspective(200px) rotateX(-180deg);
+  }
+}
+@-webkit-keyframes flipb {
+  to {
+    -webkit-transform: perspective(200px) rotateX(0deg);
+    transform: perspective(200px) rotateX(0deg);
+  }
+}
+@keyframes flipb {
+  to {
+    -webkit-transform: perspective(200px) rotateX(0deg);
+    transform: perspective(200px) rotateX(0deg);
+  }
+}
+.fin .firstview__touch {
+  background: url("/marketing/img/iclp3/stop.png") no-repeat 50%;
+  background-size: contain;
+}
+.fin .firstvie__inquiry {
+  top: 230px;
+}
+@media screen and (min-width: 768px) {
+  .fin .firstvie__inquiry {
+    top: 295px;
+    width: 70%;
+    margin: 0;
+  }
+  .fin .firstvie__inquiry br {
+    display: none;
+  }
+}
+.fin .firstvie__inquiry .firstvie__inquiry__inner a {
+  display: inline-block;
+  color: #ff449c;
+}
+.fin .firstvie__inquiry .firstvie__inquiry__inner button {
+  display: inline-block;
+  margin-left: 20px;
+}
+.fin .firstview__logo {
+  top: 377px;
+}
+@media screen and (min-width: 768px) {
+  .fin .firstview__logo {
+    top: -5px;
+  }
+}
+.fin .firstview__exclusive {
+  top: 390px;
+}
+@media screen and (min-width: 768px) {
+  .fin .firstview__exclusive {
+    top: 19px;
+  }
+}
+.last .firstview__touch {
+  background: url("/marketing/img/iclp3/stop.png") no-repeat 50%;
+  background-size: contain;
+}
+.last .firstvie__inquiry {
+  top: 230px;
+}
+@media screen and (min-width: 768px) {
+  .last .firstvie__inquiry {
+    top: 295px;
+    width: 70%;
+    margin: 0;
+  }
+  .last .firstvie__inquiry br {
+    display: none;
+  }
+}
+.last .firstvie__inquiry .firstvie__inquiry__inner a {
+  display: inline-block;
+  color: #ff449c;
+}
+.firstview__ie,
+.last .firstvie__inquiry .firstvie__inquiry__inner button {
+  display: none;
+}
+@media (-ms-high-contrast: none) {
+  .firstview__ie,
+  ::-ms-backdrop {
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    display: block;
+    max-width: inherit;
+    height: 1000px;
+    margin: 0 0 0 100px;
+    transform: translateX(-50%);
+  }
+}
+@media (-ms-high-contrast: none) and (min-width: 768px) {
+  .firstview__ie,
+  ::-ms-backdrop {
+    top: -42%;
+    height: 1050px;
+  }
+  .firstvie__inquiry {
+    margin: 0;
+  }
+}
