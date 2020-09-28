@@ -5,6 +5,20 @@ promo_locale:
   promo_language_code: ja
 promo_banner:
   promo_title: Sample Title
+  promo_register_message: |-
+    今なら新規登録で
+    $10ボーナス獲得!?
+  promo_join_text: ▶花魁と今すぐ遊ぶ？
+  promo_join_url: https://www.intercasino.com/#join
+  promo_terms_text: 利用規約に同意します
+  promo_terms_underlined_text: 利用規約
+bonus:
+  - box_title_image: /marketing/img/welcome_bonus.png
+    box_button_image: /marketing/img/signup_button.png
+    box_button_image_url: https://www.intercasino.com/#join
+  - box_title_image: /marketing/img/present_CP.png
+    box_button_image: /marketing/img/twitter_button.png
+    box_button_image_url: https://twitter.com/Japan_VeraJohn
 ---
 <dl>
   <dt>無料お試し$10ボーナス利用規約</dt>

@@ -444,7 +444,66 @@ collections:
           - {label: "Chloe's Highlighted Phrase", name: history_chloe_highlighted_phrase, widget: "string", required: false}
           - {label: "Register Button Text", name: history_register_button_text, widget: "string"}
           - {label: "Register Button Redirect URL", name: history_register_button_redirect_url, widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}    
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: 'ICLP2-NoForm'
+    label: 'InterCasino Template 3'
+    format: 'frontmatter'
+    folder: 'assets/content/landing-page/marketing/iclp3'
+    create: true
+    identifier_field: "slug_name"
+    slug: '{{slug}}'
+    preview_path: iclp3/{{slug}}
+    show_preview_links: false
+    editor:
+      preview: false
+    fields:
+      - label: Slug
+        widget: string
+        name: slug_name
+        required: true  
+        hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
+      - label: "Locale"
+        name: "promo_locale"
+        widget: "object"
+        colapsed: true
+        fields:
+          - label: "Country Code"
+            name: "promo_country_code"
+            widget: "select"
+            default: ["jp"]  
+            options:
+              - { label: "Japan", value: "jp" }
+              - { label: "Sweden", value: "se" }
+              - { label: "Germany", value: "de" }
+          - label: "Language Code"
+            name: "promo_language_code"
+            widget: "select"
+            default: ["ja"]   
+            options:
+              - { label: "Japanese", value: "ja" }
+              - { label: "Swedish", value: "sv" }
+              - { label: "German", value: "de" } 
+      - label: "Promotion Banner"
+        name: "promo_banner" 
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Title", name: "promo_title", widget: "string"}
+          - {label: "Register Message", name: "promo_register_message", widget: "text"}
+          - {label: "Join Text", name: "promo_join_text", widget: "string"}
+          - {label: "Join Text URL", name: "promo_join_url", widget: "string"}
+          - {label: "Terms Text", name: "promo_terms_text", widget: "string"}
+          - {label: "Underlined Terms Text", name: "promo_terms_underlined_text", widget: "string"}
+      - label: "Bonus"
+        name: "bonus"
+        widget: "list"
+        collapsed: true
+        fields: 
+          - {label: "Title Image", name: "box_title_image", widget: "image"}
+          - {label: "Button Image", name: "box_button_image", widget: "image"}
+          - {label: "Buttom Image URL", name: "box_button_image_url", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
   - label: "Vera&John Homepage"
     name: "VJ-Homepage"
     format: 'frontmatter'

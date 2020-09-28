@@ -1,7 +1,7 @@
 <template>
   <div class="bonus">
     <section class="campaign">
-      <div class="campaign__box">
+      <!-- <div class="campaign__box">
         <h3 class="campaign__box__title">
           <img
             src="/marketing/img/iclp3/welcome_bonus.png"
@@ -22,8 +22,9 @@
             v-lazy-load
           />
         </a>
-      </div>
-      <div class="campaign__box twitter">
+      </div> -->
+
+      <!-- <div class="campaign__box twitter">
         <h3 class="campaign__box__title">
           <img
             src="/marketing/img/iclp3/present_CP.png"
@@ -56,12 +57,45 @@
             v-lazy-load
           />
         </a>
+      </div> -->
+
+      <div v-for="(datum, index) of bonusData" :key="index">
+        <div class="campaign__box">
+          <h3 class="campaign__box__title">
+            <img
+              :src="datum.box_title_image"
+              :alt="datum.box_title_image.replace(/^.*[\\\/]/, '')"
+              v-lazy-load
+            />
+          </h3>
+          <p class="campaign__box__summary">
+            新規プレイヤー限定!
+            <br />入金してキャッシュでのプレイに応じて
+            <br />
+            <b>総額$500</b>のキャッシュが貰えるチャンス!
+          </p>
+          <a class="campaign__box__item__link" :href="datum.box_button_image_url" alt="">
+            <img
+              :src="datum.box_button_image"
+              :alt="datum.box_button_image.replace(/^.*[\\\/]/, '')"
+              v-lazy-load
+            />
+          </a>
+        </div>
       </div>
     </section>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'Bonus',
+  props: {
+    bonusData: {
+      type: Object,
+      required: true
+    }
+  },
+};
 </script>
 

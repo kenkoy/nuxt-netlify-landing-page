@@ -1,7 +1,15 @@
 <template>
   <div>
-    <TheHeader />
-    <TheBonus />
+    <TheHeader
+      :registrationMessage="this.post.attributes.promo_banner.promo_register_message"
+      :joinMessage="this.post.attributes.promo_banner.promo_join_text"
+      :joinURL="this.post.attributes.promo_banner.promo_join_url"
+      :termsText="this.post.attributes.promo_banner.promo_terms_text"
+      :underlinedLinkText="this.post.attributes.promo_banner.promo_terms_underlined_text"
+    />
+    <TheBonus 
+      :bonusData="this.post.attributes.bonus"
+    />
     <ThePayment />
     <TheBody :promo_content="post.html" />
     <TheFooter />

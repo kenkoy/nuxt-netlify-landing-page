@@ -13,7 +13,7 @@
     <p class="firstview__touch" id="firstview__touch">
       <span>触ったら帯が緩んじゃう Touch</span>
     </p>
-    <a class="firstview__btn_inquiry" href="https://www.intercasino.com/#join">
+    <a class="firstview__btn_inquiry" :href="joinURL">
       <span>登録</span>
     </a>
     <div class="firstview__taparea">
@@ -79,15 +79,12 @@
     </div>
     <div class="firstvie__inquiry" id="firstvie__inquiry">
       <div class="firstvie__inquiry__inner">
-        <h3>
-          今なら新規登録で
-          <br class="pc" />$10ボーナス獲得!?
-        </h3>
-        <a href="https://www.intercasino.com/#join">▶花魁と今すぐ遊ぶ？</a>
+        <h3 v-html="formattedRegMessage"></h3>
+        <a :href="joinURL">{{ joinMessage }}</a>
         <button onclick="back()">▶まだまだ触る！</button>
       </div>
-      <a class="firstvie__inquiry__turm" href="#terms">
-        <span>利用規約</span>に同意します
+      <a class="firstvie__inquiry__turm" href="#terms" v-html="bannerTerms">
+        <!-- <span>利用規約</span>に同意します -->
       </a>
     </div>
     <div class="firstview__counter" id="firstview__counter">
@@ -144,5 +141,45 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'Header',
+  props: {
+    registrationMessage: {
+      type: String,
+      required: true,
+    },
+    joinMessage: {
+      type: String,
+      required: true,
+    },
+    joinURL: {
+      type: String,
+      required: true,
+    },
+    termsText: {
+      type: String,
+      required: true,
+    },
+    underlinedLinkText: {
+      type: String,
+      required: false,
+    }
+  },
+  computed: {
+    formattedRegMessage: function () {
+      return this.registrationMessage.split(/\r?\n/)
+        .filter(msg => msg)
+        .map(msg => msg.slice(-1) === '\\'
+          ? msg.substring(0, msg.length - 1) : msg
+        ).reduce((oldVal, newVal) =>
+          oldVal + '<br class="pc" />' + newVal
+        );
+    },
+    bannerTerms: function () {
+      return this.termsText.includes(this.underlinedLinkText) ? 
+        this.termsText.replace(this.underlinedLinkText, `<span>${this.underlinedLinkText}</span>`) :
+        this.termsText;
+    }
+  }
+};
 </script>
