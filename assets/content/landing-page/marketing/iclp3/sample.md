@@ -16,9 +16,18 @@ bonus:
   - box_title_image: /marketing/img/welcome_bonus.png
     box_button_image: /marketing/img/signup_button.png
     box_button_image_url: https://www.intercasino.com/#join
+    summary: |-
+      新規プレイヤー限定!\
+      入金してキャッシュでのプレイに応じて\
+      **総額$500**のキャッシュが貰えるチャンス!
   - box_title_image: /marketing/img/present_CP.png
     box_button_image: /marketing/img/twitter_button.png
     box_button_image_url: https://twitter.com/Japan_VeraJohn
+    summary: |-
+      姉妹カジノの ベラジョンカジノの[公式Twitter](https://twitter.com/Japan_VeraJohn)で、\
+      **限定オリジナルグッズの 抽選会を実施中！**\
+      詳細はベラジョンカジノの\
+      [公式Twitterアカウント](https://twitter.com/Japan_VeraJohn)をチェック！
 ---
 <dl>
   <dt>無料お試し$10ボーナス利用規約</dt>
