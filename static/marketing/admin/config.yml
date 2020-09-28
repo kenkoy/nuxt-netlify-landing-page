@@ -502,7 +502,18 @@ collections:
           - {label: "Title Image", name: "box_title_image", widget: "image"}
           - {label: "Button Image", name: "box_button_image", widget: "image"}
           - {label: "Buttom Image URL", name: "box_button_image_url", widget: "string"}
-          - {label: "Summary", name: "summary", widget: "markdown"}
+          - {label: "Summary", name: "summary", widget: "text"}
+          - label: "Highlighted Phrases"
+            name: "higlighted_phrases"
+            widget: "list"
+            summary: '{{field.text}}'
+            field: {label: Text, name: text, widget: string, required: false}
+          - label: "Highlighted Link Phrases"
+            name: "highlighted_link_phrases"
+            widget: "list"
+            fields:
+              - {label: "Text", name: "text", widget: "string", required: false}
+              - {label: "Link", name: "link", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - label: "Vera&John Homepage"
     name: "VJ-Homepage"
