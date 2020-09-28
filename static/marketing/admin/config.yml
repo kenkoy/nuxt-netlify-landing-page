@@ -502,8 +502,8 @@ collections:
           - {label: "Title Image", name: "box_title_image", widget: "image"}
           - {label: "Button Image", name: "box_button_image", widget: "image"}
           - {label: "Buttom Image URL", name: "box_button_image_url", widget: "string"}
+          - {label: "Summary", name: "summary", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
-
   - label: "Vera&John Homepage"
     name: "VJ-Homepage"
     format: 'frontmatter'
