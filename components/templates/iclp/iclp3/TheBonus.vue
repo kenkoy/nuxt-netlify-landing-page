@@ -92,7 +92,7 @@ export default {
   name: 'Bonus',
   props: {
     bonusData: {
-      type: Object,
+      type: Array,
       required: true
     }
   },
