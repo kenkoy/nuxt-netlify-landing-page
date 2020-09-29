@@ -7,7 +7,7 @@ promo_banner:
   promo_title: Sample Title
   promo_register_message: |-
     今なら新規登録で
-    $10ボーナス獲得!?
+    $10ボーナス獲得!? DAN
   promo_join_text: ▶花魁と今すぐ遊ぶ？
   promo_join_url: https://www.intercasino.com/#join
   promo_terms_text: 利用規約に同意します
