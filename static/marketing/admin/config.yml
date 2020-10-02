@@ -1,8 +1,11 @@
 backend:
-  name: git-gateway
-  # name: github
-  # repo: kenkoy/nuxt-netlify-landing-page
-  # branch: master
+  name: gitlab
+  repo: dumarca/landing-page-ssg
+  auth_type: implicit 
+  app_id: 429f87ba26d4d1054e32126ccf20f2937f5bfff9cb12aec083c64d382a659f5e
+  api_root: https://git.plaingaming.net/api/v4
+  base_url: https://git.plaingaming.net
+  auth_endpoint: oauth/authorize
 
 publish_mode: editorial_workflow  
 media_folder: static/marketing/img
