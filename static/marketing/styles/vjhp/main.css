@@ -1221,6 +1221,10 @@ footer.heading {
   #header.alt {
     padding: 3.5em 1em 0.5em 1em;
   }
+
+  img.support-payment {
+    width: 260px;
+  }
 }
 
 body.is-preload #header.alt > * {
