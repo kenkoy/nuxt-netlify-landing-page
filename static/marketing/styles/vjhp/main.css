@@ -2092,6 +2092,9 @@ header.heading.header-inline {
     /* margin-left: -155px; */
     text-align: center;
   }
+  .support li img.footer-payment {
+    width: 250px;
+}
   .support li:nth-child(2) {
     margin-top: 0;
   }
