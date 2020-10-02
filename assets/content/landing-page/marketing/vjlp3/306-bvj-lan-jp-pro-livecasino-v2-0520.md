@@ -19,8 +19,8 @@ promo_banner:
     game_icon_6: ""
   promo_title: 306 BVJ lan JP Pro LiveCasino v2 0520
   promo_images:
-    promo_bg_desktop: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
-    promo_bg_mobile: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2-m.jpeg
+    promo_bg_desktop: /marketing/img/bg-dt.jpg
+    promo_bg_mobile: /marketing/img/bg-mob.jpg
     promo_bg_banner: /marketing/img/vjlp3-black-red-bg.jpg
   promo_title_display: false
   promo_login_button_redirect_url: https://verajohn.com/#join

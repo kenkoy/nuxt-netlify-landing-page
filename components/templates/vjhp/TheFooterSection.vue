@@ -22,10 +22,10 @@
       により付与されたサブライセンスを通して正式な許可を所持しています
     </p>
     <a href="https://www.verajohn.com/home">
-      <img src="/marketing/img/vjhp/curacao.png" alt="Curacao" >
+      <img src="/marketing/img/vjhp/curacao.png" alt="Curacao" v-lazy-load/>
     </a>
     <a href="https://www.verajohn.com/home">
-      <img src="/marketing/img/vjhp/18Regulator.png" alt="18Regulator" />
+      <img src="/marketing/img/vjhp/18Regulator.png" alt="18Regulator" v-lazy-load/>
     </a>
   </footer>
 </template>
