@@ -8,8 +8,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate && npm run copy:config",
-    "copy:config": "cp -r static/marketing/admin/config.yml dist/marketing/"
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/gtm": "^2.3.0",
