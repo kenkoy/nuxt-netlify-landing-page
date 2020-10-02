@@ -1,11 +1,16 @@
 backend:
-  name: gitlab
-  repo: dumarca/landing-page-ssg
-  auth_type: implicit 
-  app_id: 429f87ba26d4d1054e32126ccf20f2937f5bfff9cb12aec083c64d382a659f5e
-  api_root: https://git.plaingaming.net/api/v4
-  base_url: https://git.plaingaming.net
-  auth_endpoint: oauth/authorize
+  name: git-gateway
+  # name: github
+  # repo: drap54/ds-gitlab
+  # branch: master
+  
+  # name: gitlab
+  # repo: dumarca/landing-page-ssg
+  # auth_type: implicit 
+  # app_id: 429f87ba26d4d1054e32126ccf20f2937f5bfff9cb12aec083c64d382a659f5e
+  # api_root: https://git.plaingaming.net/api/v4
+  # base_url: https://git.plaingaming.net
+  # auth_endpoint: oauth/authorize
 
 publish_mode: editorial_workflow  
 media_folder: static/marketing/img
@@ -583,14 +588,14 @@ collections:
           - label: "Testimonials Section"
             name: "testimonials_section"
             widget: "object"
-            colapsed: true
+            collapsed: true
             fields:
               - {label: "Button Text", name: testimonials_button_text, widget: "string"}   
               - {label: "Button Redirect URL", name: testimonials_button_redirect_url, widget: "string"}
           - label: "Footer Section"
             name: "footer_section"
             widget: "object"
-            colapsed: true
+            collapsed: true
             fields:
               - {label: "Menu 1", name: footer_menu_1_text, widget: "string"}   
               - {label: "Menu 1 Redirect URL", name: footer_menu_1_redirect_url, widget: "string"}
