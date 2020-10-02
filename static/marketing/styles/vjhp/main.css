@@ -1222,7 +1222,7 @@ footer.heading {
     padding: 3.5em 1em 0.5em 1em;
   }
 
-  img.support-payment {
+  img.support-payment, img.footer-payment {
     width: 260px;
   }
 }
@@ -2089,7 +2089,8 @@ header.heading.header-inline {
     line-height: 25px;
   }
   .support li img {
-    margin-left: -155px;
+    /* margin-left: -155px; */
+    text-align: center;
   }
   .support li:nth-child(2) {
     margin-top: 0;
