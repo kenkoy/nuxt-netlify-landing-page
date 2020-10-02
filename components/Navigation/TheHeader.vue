@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import TheSideNavToggle from '~/components/navigation/TheSideNavToggle'
+import TheSideNavToggle from '~/components/Navigation/TheSideNavToggle'
 
 export default {
   name: 'TheHeader',
