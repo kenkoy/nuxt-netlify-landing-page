@@ -18,12 +18,12 @@ promo_banner:
   promo_subtitle: " "
   promo_title: 無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！
   promo_images:
-    promo_bg_desktop: /marketing/img/mascot-wo-banner-2-d.png
-    promo_bg_mobile: /marketing/img/mascot-wo-banner-2-m.png
+    promo_bg_desktop: /marketing/img/digital-welcomeoffer-mob-cta-1000x300-a_nocta.png
+    promo_bg_mobile: /marketing/img/digital-welcomeoffer-mob-cta-767x493-b_nocta.png
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
-  promo_title_display: true
-  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
-  promo_join_button_redirect_url: https://casino.verajohn.com/#join
+  promo_title_display: false
+  promo_login_button_redirect_url: https://verajohn.com/#join
+  promo_join_button_redirect_url: https://verajohn.com/#join
   promo_join_button: 今すぐプレイ
   promo_login_button: 登録
   promo_join_button_location: upper-left

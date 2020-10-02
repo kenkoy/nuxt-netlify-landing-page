@@ -19,8 +19,8 @@ promo_banner:
     - 利用規約
   promo_title_display: true
   promo_render_title_first: true
-  promo_login_button_redirect_url: https://casino.verajohn.com/#join
-  promo_join_button_redirect_url: https://casino.verajohn.com/#join
+  promo_login_button_redirect_url: https://www.verajohn.com/#join
+  promo_join_button_redirect_url: https://www.verajohn.com/#join
   promo_terms_text: 利用規約に同意します。
   promo_join_button: ご登録はこちら
   promo_login_button: 登録
