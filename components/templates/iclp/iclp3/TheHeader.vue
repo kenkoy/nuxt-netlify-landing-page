@@ -69,7 +69,7 @@
       </div>
       <img
         class="firstview__ie"
-        src="/marketing/img/iclp3/oiran.png/"
+        src="/marketing/img/iclp3/oiran.png"
         alt="oiran"
       />
       <canvas class="firstview__cvs" id="cvs"></canvas>
