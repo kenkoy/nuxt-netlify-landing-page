@@ -60,7 +60,7 @@
               <img
                 id="spine-player-button-logo"
                 class="spine-player-button-icon-spine-logo"
-                src="/marketing/img/spine-logo-white.svg"
+                src="/marketing/img/iclp3/spine-logo-white.svg"
                 alt=""
                 v-lazy-load
               />
