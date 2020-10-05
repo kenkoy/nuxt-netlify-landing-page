@@ -62,7 +62,6 @@
                 class="spine-player-button-icon-spine-logo"
                 src="/marketing/img/iclp3/spine-logo-white.svg"
                 alt=""
-                v-lazy-load
               />
             </div>
           </div>
@@ -72,7 +71,6 @@
         class="firstview__ie"
         src="/marketing/img/iclp3/oiran.png"
         alt="oiran"
-        v-lazy-load
       />
       <canvas class="firstview__cvs" id="cvs"></canvas>
       <!-- <canvas class="firstview__cvs" id="cvs" width="920" height="500"></canvas> -->
