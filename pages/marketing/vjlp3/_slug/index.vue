@@ -18,6 +18,7 @@
     <TheGameSlider :game="post.attributes.promo_banner.game_images" />
     <TheBody :promo_content="post.html" />
     <TheFooter
+      :ga_tracking_id="post.attributes.promo_locale.ga_tracking_id"
       :promo_language_code="post.attributes.promo_locale.promo_language_code"
       :promo_country_code="post.attributes.promo_locale.promo_country_code"
       :landing_page_type="'verajohn'"

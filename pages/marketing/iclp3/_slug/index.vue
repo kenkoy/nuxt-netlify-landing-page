@@ -12,7 +12,8 @@
     />
     <ThePayment />
     <TheBody :promo_content="post.html" />
-    <TheFooter />
+    <TheFooter
+      :ga_tracking_id="post.attributes.promo_locale.ga_tracking_id" />
   </div>
 </template>
 
