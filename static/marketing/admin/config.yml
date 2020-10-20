@@ -54,7 +54,8 @@ collections:
             options:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
-              - { label: "German", value: "de" } 
+              - { label: "German", value: "de" }
+          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
       - label: "Promotion Banner"
         name: "promo_banner" 
         widget: "object"
@@ -105,7 +106,7 @@ collections:
           - {label: "Step 2 Description", name: promo_step_2_desc, widget: "string"}
           - {label: "Step 3 Title", name: promo_step_3_title, widget: "string"}
           - {label: "Step 3 Description", name: promo_step_3_desc, widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}    
+      - {label: "Body", name: "body", widget: "markdown"}
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}
   - name: "VJLP3-NoForm"
     label: "Vera&John Template 3"
