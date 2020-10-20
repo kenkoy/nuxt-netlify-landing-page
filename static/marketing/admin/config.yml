@@ -146,6 +146,7 @@ collections:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
               - { label: "German", value: "de" } 
+          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
       - label: "Promotion Banner"
         name: "promo_banner" 
         widget: "object"
@@ -231,6 +232,7 @@ collections:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
               - { label: "German", value: "de" } 
+          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
       - label: "Promotion Banner"
         name: "promo_banner" 
         widget: "object"
@@ -312,6 +314,7 @@ collections:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
               - { label: "German", value: "de" } 
+          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
       - label: "Promotion Banner"
         name: "promo_banner" 
         widget: "object"
@@ -388,6 +391,7 @@ collections:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
               - { label: "German", value: "de" } 
+          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
       - label: "Promotion Banner"
         name: "promo_banner" 
         widget: "object"
@@ -484,6 +488,7 @@ collections:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
               - { label: "German", value: "de" } 
+          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
       - label: "Promotion Banner"
         name: "promo_banner" 
         widget: "object"
