@@ -61,7 +61,7 @@ export default {
       style: [],
       script: [
         { src: '/marketing/js/page-hide.js', id: 'go_data', go_id: 'OPT-PHSNXP6' },
-        { src: '/marketing/js/google-analytics.js', id: 'ga_data', go_Id: post.attributes.promo_locale.ga_tracking_id, ga_id: 'UA-142143961-1' },
+        { src: '/marketing/js/google-analytics.js', id: 'ga_data', go_Id: this.post.attributes.promo_locale.ga_tracking_id, ga_id: 'UA-142143961-1' },
         { src: '/marketing/js/google-tag-manager.js', id: 'gtm_data', gtm_id: 'GTM-MFD3NKM'},
       ],
       noscript: [
