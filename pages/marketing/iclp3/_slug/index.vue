@@ -11,8 +11,7 @@
       :bonusData="post.attributes.bonus"
     />
     <ThePayment />
-    <TheFooter
-      :ga_tracking_id="post.attributes.promo_locale.ga_tracking_id" />
+    <TheFooter />
   </div>
 </template>
 
