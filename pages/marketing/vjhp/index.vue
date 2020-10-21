@@ -82,7 +82,20 @@ export default {
       },
        bodyAttrs: {
         id: 'ja-jp',
-      }
+      },
+      style: [],
+      script: [
+        { src: '/marketing/js/page-hide.js', id: 'go_data', go_id: 'OPT-PHSNXP6' },
+        { src: '/marketing/js/google-analytics.js', id: 'ga_data', goId: 'OPT-PHSNXP6', ga_id: 'UA-142143961-1' },
+        { src: '/marketing/js/google-tag-manager.js', id: 'gtm_data', gtm_id: 'GTM-MFD3NKM'},
+      ],
+      noscript: [
+        {
+          hid: 'gtmBody',
+          innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id='GTM-MFD3NKM'" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+          pbody: true
+        },
+      ],
     }
   },
   components: {

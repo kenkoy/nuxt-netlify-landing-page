@@ -1,17 +1,16 @@
 <template>
   <div>
-    <TheHeader
-      :registrationMessage="this.post.attributes.promo_banner.promo_register_message"
-      :joinMessage="this.post.attributes.promo_banner.promo_join_text"
-      :joinURL="this.post.attributes.promo_banner.promo_join_url"
-      :termsText="this.post.attributes.promo_banner.promo_terms_text"
-      :underlinedLinkText="this.post.attributes.promo_banner.promo_terms_underlined_text"
+   <TheHeader
+      :registrationMessage="post.attributes.promo_banner.promo_register_message"
+      :joinMessage="post.attributes.promo_banner.promo_join_text"
+      :joinURL="post.attributes.promo_banner.promo_join_url"
+      :termsText="post.attributes.promo_banner.promo_terms_text"
+      :underlinedLinkText="post.attributes.promo_banner.promo_terms_underlined_text"
     />
     <TheBonus 
-      :bonusData="this.post.attributes.bonus"
+      :bonusData="post.attributes.bonus"
     />
     <ThePayment />
-    <TheBody :promo_content="post.html" />
     <TheFooter
       :ga_tracking_id="post.attributes.promo_locale.ga_tracking_id" />
   </div>
@@ -38,13 +37,24 @@ export default {
       title: 'インターカジノ',
       htmlAttrs: {
         lang: this.post.attributes.promo_locale.promo_language_code
-        // lang: 'ja'
       },
       bodyAttrs: {
         id: this.post.attributes.promo_locale.promo_language_code + '-' 
           + this.post.attributes.promo_locale.promo_country_code
-        // id: 'ja-jp'
-      }
+      },
+      style: [],
+      script: [
+        { src: '/marketing/js/page-hide.js', id: 'go_data', go_id: 'OPT-PHSNXP6' },
+        { src: '/marketing/js/google-analytics.js', id: 'ga_data', go_Id: 'OPT-PHSNXP6', ga_id: 'UA-142143961-1' },
+        { src: '/marketing/js/google-tag-manager.js', id: 'gtm_data', gtm_id: 'GTM-MFD3NKM'},
+      ],
+      noscript: [
+        {
+          hid: 'gtmBody',
+          innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id='GTM-MFD3NKM'" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+          pbody: true
+        },
+      ],
     }
   },
   async asyncData ({ params }) {

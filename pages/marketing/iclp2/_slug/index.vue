@@ -89,7 +89,20 @@ export default {
       bodyAttrs: {
         id: this.post.attributes.promo_locale.promo_language_code + '-' 
           + this.post.attributes.promo_locale.promo_country_code
-      }
+      },
+      style: [],
+      script: [
+        { src: '/marketing/js/page-hide.js', id: 'go_data', go_id: 'OPT-PHSNXP6' },
+        { src: '/marketing/js/google-analytics.js', id: 'ga_data', go_Id: post.attributes.promo_locale.ga_tracking_id, ga_id: 'UA-142143961-1' },
+        { src: '/marketing/js/google-tag-manager.js', id: 'gtm_data', gtm_id: 'GTM-MFD3NKM'},
+      ],
+      noscript: [
+        {
+          hid: 'gtmBody',
+          innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id='GTM-MFD3NKM'" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+          pbody: true
+        },
+      ],
     }
   },
   async asyncData ({ params }) {

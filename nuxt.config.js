@@ -16,17 +16,15 @@ export default {
   generate: {
     routes: dynamicMarkdownRoutes
   },
-  /*
-  router: {
-    extendRoutes(routes, resolve) {
-      routes.push({
-        name: 'home',
-        path: '/home/',
-        component: resolve(__dirname, 'pages/marketing/vjhp')
-      })
-    }
-  },
-  */
+  // router: {
+  //   extendRoutes(routes, resolve) {
+  //     routes.push({
+  //       name: 'home',
+  //       path: '/home/',
+  //       component: resolve(__dirname, 'pages/marketing/vjhp')
+  //     })
+  //   }
+  // },
   mode: 'universal',
   /*
   ** Headers of the page
@@ -43,11 +41,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/marketing/gamesys-favicon.ico' },
     ],
     style: [
-      { cssText: '.async-hide { opacity: 0 !important }', type: 'text/css' },
+      // { cssText: '.async-hide { opacity: 0 !important }', type: 'text/css' },
     ],
-    script: [
-      { src: '/marketing/js/page-hide.js' }
-    ]
+    script: []
   },
   /*
   ** Customize the progress-bar color
@@ -56,35 +52,22 @@ export default {
   /*
   ** Global CSS
   */
-  css: [ ],
+  css: [],
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-    { src: '~/plugins/ga.js', mode: 'client' },
-  ],
+  plugins: [],
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: ['@nuxtjs/gtm'],
-  gtm: {
-    id: 'GTM-MFD3NKM',
-    pageTracking: true,
-    layer: 'dataLayer',
-    autoInit: true,
-    respectDoNotTrack: true,
-    scriptId: 'gtm-script',
-    scriptDefer: false,
-    scriptURL: 'https://www.googletagmanager.com/gtm.js',
-    noscript: true,
-    noscriptId: 'gtm-noscript',
-    noscriptURL: 'https://www.googletagmanager.com/ns.html'
-  },
+  buildModules: [],
   /*
   ** Nuxt.js modules
   */
   modules: [
-    'nuxt-lazy-load'
+    ['nuxt-lazy-load', {
+      iframes: false
+    }]
   ],
   /*
   ** Build configuration
