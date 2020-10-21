@@ -55,7 +55,14 @@ collections:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
               - { label: "German", value: "de" }
+      - label: "Tag, Optimize and Analytics ID"
+        name: "field_ids"
+        widget: "object"
+        collapsed: true
+        fields:
           - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
+          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false}
+          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false}
       - label: "Promotion Banner"
         name: "promo_banner" 
         widget: "object"
@@ -146,7 +153,14 @@ collections:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
               - { label: "German", value: "de" } 
+      - label: "Tag, Optimize and Analytics ID"
+        name: "field_ids"
+        widget: "object"
+        collapsed: true
+        fields:
           - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
+          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false}
+          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false}
       - label: "Promotion Banner"
         name: "promo_banner" 
         widget: "object"
@@ -232,7 +246,14 @@ collections:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
               - { label: "German", value: "de" } 
+      - label: "Tag, Optimize and Analytics ID"
+        name: "field_ids"
+        widget: "object"
+        collapsed: true
+        fields:
           - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
+          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false}
+          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false}
       - label: "Promotion Banner"
         name: "promo_banner" 
         widget: "object"
@@ -314,7 +335,14 @@ collections:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
               - { label: "German", value: "de" } 
+      - label: "Tag, Optimize and Analytics ID"
+        name: "field_ids"
+        widget: "object"
+        collapsed: true
+        fields:
           - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
+          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false}
+          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false}
       - label: "Promotion Banner"
         name: "promo_banner" 
         widget: "object"
@@ -391,7 +419,14 @@ collections:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
               - { label: "German", value: "de" } 
+      - label: "Tag, Optimize and Analytics ID"
+        name: "field_ids"
+        widget: "object"
+        collapsed: true
+        fields:
           - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
+          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false}
+          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false}
       - label: "Promotion Banner"
         name: "promo_banner" 
         widget: "object"
@@ -488,7 +523,14 @@ collections:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
               - { label: "German", value: "de" } 
+      - label: "Tag, Optimize and Analytics ID"
+        name: "field_ids"
+        widget: "object"
+        collapsed: true
+        fields:
           - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
+          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false}
+          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false}
       - label: "Promotion Banner"
         name: "promo_banner" 
         widget: "object"

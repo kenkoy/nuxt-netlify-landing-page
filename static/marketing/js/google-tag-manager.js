@@ -1,4 +1,4 @@
-var gtmId = document.getElementById('gtm_data').getAttribute('gtm_id') || 'GTM-MFD3NKM';
+var gtmId = document.getElementById('gtm_data').getAttribute('gtm_id');
 
 (function (w, d, s, l, i) {
   w[l] = w[l] || []; w[l].push({

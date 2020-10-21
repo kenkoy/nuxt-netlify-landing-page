@@ -1,5 +1,5 @@
-var optimizeId = document.getElementById('ga_data').getAttribute('go_id') || 'OPT-PHSNXP6';
-var analyticsId = document.getElementById('ga_data').getAttribute('ga_id') || 'UA-142143961-1';
+var optimizeId = document.getElementById('ga_data').getAttribute('go_id');
+var analyticsId = document.getElementById('ga_data').getAttribute('ga_id');
 
 (function (i, s, o, g, r, a, m) {
   i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {

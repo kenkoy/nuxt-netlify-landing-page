@@ -1,4 +1,4 @@
-var optimizeId = document.getElementById('go_data').getAttribute('go_id') || 'OPT-PHSNXP6';
+var optimizeId = document.getElementById('go_data').getAttribute('go_id');
 
 (function (a, s, y, n, c, h, i, d, e) {
   s.className += ' ' + y; h.start = 1 * new Date;

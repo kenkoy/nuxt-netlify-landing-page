@@ -24,7 +24,6 @@
       :landing_page_type="'verajohn'"
     />
     <TheFooter 
-      :ga_tracking_id="post.attributes.promo_locale.ga_tracking_id"
       :promo_language_code="post.attributes.promo_locale.promo_language_code"
       :promo_country_code="post.attributes.promo_locale.promo_country_code"
       :landing_page_type="'verajohn'"
@@ -49,6 +48,15 @@ export default {
   },
   layout: 'vjlp4',
   head() {
+    const goId = (this.post.attributes.field_ids && this.post.attributes.field_ids.go_container_id) ?
+      this.post.attributes.field_ids.go_container_id : 'OPT-PHSNXP6';
+
+    const gaId = (this.post.attributes.field_ids && this.post.attributes.field_ids.ga_tracking_id) ?
+      this.post.attributes.field_ids.ga_tracking_id : 'UA-142143961-1';
+
+    const gtmId = (this.post.attributes.field_ids && this.post.attributes.field_ids.gtm_container_id) ?
+      this.post.attributes.field_ids.gtm_container_id : 'GTM-MFD3NKM';
+
     return {
       title: 'Vera&John',
       htmlAttrs: {
@@ -60,14 +68,14 @@ export default {
       },
       style: [],
       script: [
-        { src: '/marketing/js/page-hide.js', id: 'go_data', go_id: 'OPT-PHSNXP6' },
-        { src: '/marketing/js/google-analytics.js', id: 'ga_data', go_id: 'OPT-PHSNXP6', ga_id: this.post.attributes.promo_locale.ga_tracking_id },
-        { src: '/marketing/js/google-tag-manager.js', id: 'gtm_data', gtm_id: 'GTM-MFD3NKM'},
+        { src: '/marketing/js/page-hide.js', id: 'go_data', go_id: goId },
+        { src: '/marketing/js/google-analytics.js', id: 'ga_data', go_id: goId, ga_id: gaId },
+        { src: '/marketing/js/google-tag-manager.js', id: 'gtm_data', gtm_id: gtmId },
       ],
       noscript: [
         {
           hid: 'gtmBody',
-          innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id='GTM-MFD3NKM'" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+          innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id='${gtmId}'" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           pbody: true
         },
       ],
