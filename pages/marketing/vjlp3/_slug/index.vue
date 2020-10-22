@@ -66,6 +66,9 @@ export default {
           pbody: true
         },
       ],
+      __dangerouslyDisableSanitizersByTagID: {
+        gtmBody: ['innerHTML']
+      }
     };
   },
   components: {

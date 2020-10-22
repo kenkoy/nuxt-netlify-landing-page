@@ -10,4 +10,4 @@ var analyticsId = document.getElementById('ga_data').getAttribute('ga_id');
 
 ga('create', analyticsId, 'auto');
 ga('require', optimizeId);
-// ga('send', 'pageview');
+ga('send', 'pageview');

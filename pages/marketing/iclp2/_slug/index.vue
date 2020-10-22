@@ -111,6 +111,9 @@ export default {
           pbody: true
         },
       ],
+      __dangerouslyDisableSanitizersByTagID: {
+        gtmBody: ['innerHTML']
+      }
     }
   },
   async asyncData ({ params }) {
