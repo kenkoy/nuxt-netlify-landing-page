@@ -4,7 +4,7 @@ promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 field_ids:
-  ga_tracking_id: G-FPMSKMZJ9X
+  ga_tracking_id: UA-181141327-1
 promo_banner:
   promo_render_title_first: true
   promo_title: TEST
