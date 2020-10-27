@@ -6,6 +6,7 @@ promo_locale:
 field_ids:
   ga_tracking_id: UA-181141327-1
   gtm_container_id: GTM-TBFXB9D
+  go_container_id: OPT-MLNHSM7
 promo_banner:
   promo_render_title_first: true
   promo_title: TEST
