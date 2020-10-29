@@ -4,9 +4,9 @@ promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 field_ids:
-  go_container_id: OPT-PHSNXP1
-  ga_tracking_id: UA-142143961-0
-  gtm_container_id: GTM-MFD3NKN
+  go_container_id: ""
+  ga_tracking_id: ""
+  gtm_container_id: ""
 promo_banner:
   promo_title: |-
     最高$500までの
