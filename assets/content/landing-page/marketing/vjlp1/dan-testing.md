@@ -5,7 +5,7 @@ promo_locale:
   promo_language_code: ja
 field_ids:
   ga_tracking_id: ""
-  gtm_container_id: GTM-TBFXB9D
+  gtm_container_id: ""
   go_container_id: OPT-MLNHSM7
 promo_banner:
   promo_render_title_first: true
