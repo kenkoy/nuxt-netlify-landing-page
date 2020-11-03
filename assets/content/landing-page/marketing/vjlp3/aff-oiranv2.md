@@ -1,5 +1,5 @@
 ---
-slug_name: 333 VJ lan JP Pro MoonPrincessV2 0920
+slug_name: AFF-OiranV2
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -20,13 +20,14 @@ promo_banner:
     game_icon_4: /marketing/img/live-casino.png
     game_icon_5: /marketing/img/payment-option.png
   promo_subtitle: " "
-  promo_title: 無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！
+  promo_title: "無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！ "
   promo_images:
-    promo_bg_desktop: /marketing/img/333-bg.png
-    promo_bg_mobile: /marketing/img/333-bg-m.png
+    promo_bg_desktop: /marketing/img/banner-dt.png
+    promo_bg_mobile: /marketing/img/banner-mob.png
+    promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
   promo_title_display: false
   promo_login_button_redirect_url: https://www.verajohn.com/#join
-  promo_join_button_redirect_url: https://www.verajohn.com/#join
+  promo_join_button_redirect_url: "https://www.verajohn.com/#join "
   promo_join_button: 今すぐプレイ
   promo_login_button: 登録
   promo_join_button_location: lower-right

@@ -3,6 +3,10 @@ slug_name: 105 VJ lan JP Pro Mobile Homepage a 1219
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
+field_ids:
+  go_container_id: "OPT-PHSNXP6"
+  ga_tracking_id: "UA-142143961-1"
+  gtm_container_id: "GTM-MFD3NKM"
 promo_banner:
   game_images:
     game_url_1: https://www.verajohn.com/ja/about/loyalty-program

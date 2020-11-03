@@ -1,5 +1,5 @@
 ---
-slug_name: 313-bic-lan-jp-pro-livecasino-0620
+slug_name: AFF-ICWOv1
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -10,13 +10,13 @@ field_ids:
 promo_banner:
   promo_signup_button_redirect_url: https://intercasino.com/#join
   promo_smallterm_redirect_url: "#terms"
-  promo_title: 313-bic-lan-jp-pro-livecasino-0620
+  promo_title: 270-bic-lan-jp-pro-wo10-0220
   promo_images:
-    promo_bg_desktop: /marketing/img/313_bg.jpg
-    promo_bg_mobile: /marketing/img/313_bg_m.jpg
+    promo_bg_desktop: /marketing/img/bg.jpg
+    promo_bg_mobile: /marketing/img/bg_m.jpg
   promo_signup_button: 今すぐ登録
   promo_smallterm_text: に同意します。
-  promo_title_animate: true
+  promo_title_animate: false
   promo_main_heading: 総額$500
   promo_smallterm_text_link: 利用規約
   promo_login_button_redirect_url: https://intercasino.com/#signin

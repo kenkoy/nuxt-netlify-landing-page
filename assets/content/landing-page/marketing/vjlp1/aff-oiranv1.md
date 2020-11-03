@@ -1,5 +1,5 @@
 ---
-slug_name: BVJ lan JP Pro OiranV1 0920
+slug_name: AFF-OiranV1
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja

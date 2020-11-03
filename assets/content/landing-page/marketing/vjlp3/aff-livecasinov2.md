@@ -1,5 +1,5 @@
 ---
-slug_name: 215 BVJ lan JP Pro HDPachinko 1219
+slug_name: AFF_PPC-LiveCasinoV2
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -9,27 +9,28 @@ field_ids:
   gtm_container_id: "GTM-MFD3NKM"
 promo_banner:
   game_images:
-    game_url_1: https://www.verajohn.com/ja/game/battle-dwarf
-    game_url_2: https://www.verajohn.com/ja/game/golden-dream
-    game_url_3: https://www.verajohn.com/ja/game/hawaiian-dream-xmas
-    game_url_4: https://www.verajohn.com/ja/about/our-welcome-bonus
-    game_url_5: https://www.verajohn.com/ja/promotions/category/1/2053/jp-no1.20181123
-    game_icon_1: /marketing/img/battle-dwarf.png
-    game_icon_2: /marketing/img/golden-dream.png
-    game_icon_3: /marketing/img/hawaiian-dream-xmas.png
-    game_icon_4: /marketing/img/our-welcome-bonus.png
-    game_icon_5: /marketing/img/jp-no1.png
-  promo_subtitle: " "
-  promo_title: HD Pachinko V1
+    game_url_1: https://www.verajohn.com/ja/game/roulette-lobby-paris
+    game_url_2: https://www.verajohn.com/ja/game/live-blackjack-lobby-paris
+    game_url_3: https://www.verajohn.com/ja/game/baccarat-lobby-paris
+    game_url_4: https://www.verajohn.com/ja/about/paymentoption
+    game_url_5: https://www.verajohn.com/ja/about/our-welcome-bonus
+    game_icon_1: /marketing/img/roulette-lobby-paris.png
+    game_url_6: ""
+    game_icon_2: /marketing/img/blackjack-lobby-paris.png
+    game_icon_3: /marketing/img/baccarat-lobby-paris.png
+    game_icon_4: /marketing/img/live-payment-option.png
+    game_icon_5: /marketing/img/our-welcome-bonus.png
+    game_icon_6: ""
+  promo_title: AFF_PPC-LiveCasinoV2
   promo_images:
-    promo_bg_desktop: /marketing/img/hd-pachinko-v1-banner-2-d.png
-    promo_bg_mobile: /marketing/img/hd-pachinko-v1-banner-2-m.png
-    promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
+    promo_bg_desktop: /marketing/img/bg-dt.jpg
+    promo_bg_mobile: /marketing/img/bg-mob.jpg
+    promo_bg_banner: /marketing/img/vjlp3-black-red-bg.jpg
   promo_title_display: false
-  promo_login_button_redirect_url: https://casino.verajohn.com/#signin
-  promo_join_button_redirect_url: https://casino.verajohn.com/#join
+  promo_login_button_redirect_url: https://verajohn.com/?member=SRSW30v56&profile=DZpvIjV#join
+  promo_join_button_redirect_url: https://verajohn.com/?member=SRSW30v56&profile=DZpvIjV#join
   promo_join_button: 今すぐプレイ
-  promo_login_button: " 登録"
+  promo_login_button: 登録
   promo_join_button_location: hidden
 promo_template: VJLP3-NoForm
 ---
@@ -53,10 +54,10 @@ promo_template: VJLP3-NoForm
         </div>
         <div class="bf-separator col-12"></div>
         <div class="col-12 col-md-6">
-            <span style="color: rgb(254, 230, 61); font-size: 1.5em;">勝負金が2倍! 最高$500初回入金ボーナスをもらってお得にプレイ！</span><br />
+            <span style="color: rgb(254, 230, 61); font-size: 1.5em;">入金不要30ドルがもらえる上に、勝負金が2倍に！30ドルプレゼント＋最高500ドルの初回入金ボーナスでお得にプレイ♪</span><br />
             <p>
                 <span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;">
-                    ベラジョンでの初回入金時には、軍資金が2倍になる★ビギナーズボーナス★がお待ちしています! 最高$500までもらえる、100%入金ボーナスを受け取って、いろんなゲームにトライしてみましょう！<br />
+                    今ならなんと！登録をするだけで30ドルをプレゼント中！！さらにさらに、初回入金時には、軍資金が2倍になる★ビギナーズボーナス★がお待ちしています！ このビギナーズボーナスの額は最高500ドル。<br />
                     さらに、キャンペーンメール限定ボーナスもご用意していますので、アカウント登録後、キャンペーンメールの配信設定をオンにすることをお忘れなく♪<br />
                     <br />
                 </span>
@@ -106,86 +107,75 @@ promo_template: VJLP3-NoForm
             <h3>ものの5分でスピーディー! 今すぐ登録しよう!<br /></h3>
             <p>
                 最高の環境が整ったベラジョンオンラインカジノに登録するなら今でしょ！<br />
-                しかも、ベラジョンでの初めてのご入金時には、勝負金が2倍になる★初回入金ボーナス★が、最大$500までもらえます！<br />
+                登録するだけで30ドルがもらえる上に、最初の入金を行うと、★初回入金ボーナス★で最大$ 500プレゼント！ゲームの軍資金が一気に2倍になります。<br />
                 安心・安全・楽しいベラジョンカジノで、今日こそカジノライフをスタートしちゃいましょう! グッドラック<br />
             </p>
-        </div>
-    </div>
-</section>
-<section id="terms-anchor" class="container animated fadeIn"></section>
-<div class="container-fluid pp">
-    <div class="container">
-        <div class="row">
-            <div class="col-12"><div class="payment-providers"></div></div>
-        </div>
-    </div>
-</div>
-<section id="terms" class="container">
-    <div class="row">
-        <div class="bf-separator col-12"></div>
-        <div class="col-12">
-            <h3>ビギナーズボーナス利用規約</h3>
-            <ul>
-                1. このキャンペーンでは、100%の初回入金ボーナスを最高$500まで、50%のセカンド入金ボーナスを最高$250まで、100%のサード入金ボーナスを最高$200まで獲得することができます。
-                <br />
-                2. 有効な入金額により、ボーナスが自動的に進呈され、ボーナスのお引き出しには、ボーナス額の20倍にあたる金額をゲームで賭ける必要があります。
-                <br />
-                3.&nbsp;ビギナーズボーナスを獲得するためには、入金時に、入金ページにある「ボーナス」のボックスにチェックが入力されている必要があります。&nbsp;
-                <br />
-                4. ボーナスの有効期限は30日間です。&nbsp;
-                <br />
-                5. このキャンペーンは各入金毎にお1人様1回のみ有効となります。&nbsp;
-                <br />
-                6. このキャンペーンは他のキャンペーンとの併用はできません。
-                <br />
-                7. このキャンペーンは日本のプレイヤー様のみ対象となります。&nbsp;
-                <br />
-                8.&nbsp;&nbsp;ボーナスを使ったゲームプレイでの1度の最大賭け額は、スロット/スクラッチカードで$6.25、またはテーブルゲーム/ライブカジノまで$25とします。この金額を上回った場合には、ボーナスとそのボーナスに関連するすべての勝利金は没収されます。
-                <br />
-                9. ベラジョンはいかなるときも通告なしでこのキャンペーンを変更、終了できる権利を有します。
-            </ul>
-        </div>
-    </div>
-    <div class="bf-separator col-12"></div>
-    <div class="col-12">
-        <h3>最高$500初回入金ボーナス利用規約</h3>
-        <ul>
-            1. このキャンペーンは、ベラジョン初めての入金を行うプレイヤー様が対象となります。
-            <br />
-            2. このキャンペーンでは、最初の1回の入金で、100％入金ボーナスを獲得することができます。
-            <br />
-            3. 初回入金ボーナスは、最大$500まで獲得することができます。
-            <br />
-            4. 入金ボーナスを獲得するには、入金時にボーナスの受け取り希望欄にチェックを入れる必要があります。
-            <br />
-            <br />
-            5. 入金ボーナスは、$10以上を入金した後、自動的に進呈されます。
-            <br />
-            6. 入金した分のキャッシュは、ボーナスの出金賭け条件の対象外となります。また、ボーナスは、入金した分のキャッシュの利用後、使用可能となります。
-            <br />
-            7. 進呈されたボーナスのお引き出しには、ボーナス額の20倍にあたる出金賭け条件をゲームで賭けて満たす必要があります。
-            <br />
-            8. 出金賭け条件を満たす前に、キャッシュまたはそれに関連するキャッシュ勝利金を出金する場合、残っているボーナスはすべて没収されます。
-            <br />
-            9. 出金賭け条件は、ボーナス付与から30日以内に達成できない場合、ボーナス及びそれにより獲得した勝利金が没収されます。
-            <br />
-            10. ベラジョンはプレイヤー様による不正行為が認められた場合、ボーナスおよびそれにより獲得した勝利金を無効とする権利を有します。不正行為についてはキャンペーンの一般規約をご確認ください。
-            <br />
-            11. 出金賭け条件への適用率は、ゲームによって異なります。詳細は
-            <a href="https://www.verajohn.com/ja/about/our-casino-bonuses">カジノボーナス</a>
-            のページをご確認ください。
-            <br />
-            12. 第三者のウェブサイト経由でベラジョンに登録したアカウントは、このボーナスの対象外となります。
-            <br />
-            13. このキャンペーンは日本のプレイヤー様のみ対象となります。
-            <br />
-            14.
-            ボーナスを使ったゲームプレイでの1度の最大賭け額は、スロット/スクラッチカードで$6.25、またはテーブルゲーム/ライブカジノまで$25とします。この金額を上回った場合には、ボーナスとそのボーナスに関連するすべての勝利金は没収されます。
-            <br />
-            15. ベラジョンはいかなるときも通告なしでこのキャンペーンを変更、終了できる権利を有します。
-        </ul>
-    </div>
-    <ul>
-		<li>通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</li>
-	</ul>
-</section>
+			</div>
+		</div>
+	</section>
+	<section id="terms-anchor" class="container animated fadeIn"></section>
+	<div class="container-fluid pp">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="payment-providers"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section id="terms" class="container">
+		<div class="row">
+			<div class="bf-separator col-12"></div>
+			<div class="col-12">
+				<dl>
+                    <dt>入金不要 $30登録ボーナス利用規約</dt>
+                    <dd>
+                        <ul>
+                            <li>このキャンペーンでは、本サイトより新規登録をすることで、$30の無料ボーナスを獲得することができます。</li>
+                            <li>登録無料ボーナスは、すべてのゲームで有効です。</li>
+                            <li>このキャンペーンはお1人様1回のみ有効です。</li>
+                            <li>登録無料ボーナスのお引き出しには、ボーナス額の20倍にあたる金額のゲームでの賭けが必要となります。</li>
+                            <li>登録無料ボーナスの有効期間は、獲得から30日間です。</li>
+                            <li>このキャンペーンは、他のキャンペーン、およびその他の登録ボーナスとの併用はできません(他サイト含む)。</li>
+                            <li>登録無料ボーナス出金限度額は、賭け条件を達成する前までにご入金履歴のない場合には、ボーナス額の10倍までとなります。</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>ビギナーズボーナス利用規約</dt>
+             ナスの有効期限は30日間です。</li>
+                            <li>このキャンペーンは各入金毎にお1人様1回のみ有効となります。</li>
+                            <li>このキャンペーンは他のキャンペーンとの併用はできません。</li>
+                            <li>このキャンペーンは日本のプレイヤー様のみ対象となります。</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                   <dt>10日間連続無料ボーナスご利用規約</dt>
+                    <dd>
+                        <ul>
+                            <li>このキャンペーンでは、3回目の入金後、第1日目から第10日目までの各キャンペーン期間24時間以内にログインすることで、該当ゲームで利用可能なスピンクレジットを$5分を獲得することができます。</li>
+                            <li>キャンペーン期間：各スピンクレジット進呈後、24時間以内</li>
+                            <li>各スピンクレジットの有効ゲームは、日替わりとなります。</li>
+                            <li>このスピンクレジットの進呈時間は、午前9時までの3回目のご入金は当日21時、それ以降の3回目のご入金は翌日21時に進呈開始となります。</li>
+                            <li>各スピンクレジットを獲得するためには、各キャンペーン期間中にアカウントにログインする必要があります。</li>
+                            <li>このキャンペーンは、お1人様各1回のみ有効です。</li>
+                            <li>各スピンクレジットから生じた勝利金はボーナスとしてカウントされ、お引き出しには、ボーナス額の20倍にあたる金額をゲームで賭ける必要があります。</li>
+                            <li>スピンクレジットの有効期間は、獲得から48時間です。</li>
+                            <li>このキャンペーンは、他のキャンペーンとの併用はできません。</li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>共通利用規約</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                ボーナスを使ったゲームプレイでの1度の最大賭け額は、スロット/スクラッチカードで$6.25、またはテーブルゲーム/ライブカジノまで$25とします。この金額を上回った場合には、ボーナスとそのボーナスに関連するすべての勝利金は没収されます。
+                            </li>
+                            <li>ベラジョンはいかなるときも通告なしでこのキャンペーンを変更、終了できる権利を有します。</li>
+                            <li><a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>および通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>が適用されます。</li>
+                        </ul>
+                    </dd>
+                </dl>
+	</section>

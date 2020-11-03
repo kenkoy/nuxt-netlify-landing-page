@@ -1,31 +1,31 @@
 ---
-slug_name: 207 BVJ lan JP Pro HD Moonlight 1219
+slug_name: AFF-HD-Moonlight
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 field_ids:
-  go_container_id: "OPT-PHSNXP6"
+  go_container_id: OPT-PD9MB2F
   ga_tracking_id: "UA-142143961-1"
   gtm_container_id: "GTM-MFD3NKM"
 promo_banner:
-  promo_render_title_first: true
   promo_title: |-
     最高$500までの
     100%入金ボーナス
     を獲得しよう!
-  promo_title_highlighted:
-    - $500
-    - 100%入金ボーナス
-  promo_join_button: ご登録はこちら
-  promo_login_button: ログイン
-  promo_login_button_redirect_url: https://verajohn.com#join
-  promo_join_button_redirect_url: https://verajohn.com#join
-  promo_terms_link_text:
-    - 利用規約
-  promo_terms_text: 利用規約に同意します。
   promo_images:
     promo_bg_desktop: /marketing/img/hd-moonlight_bg.jpg
     promo_bg_mobile: /marketing/img/hd-moonlight_bg_m.jpg
+  promo_terms_link_text:
+    - 利用規約
+  promo_render_title_first: true
+  promo_login_button_redirect_url: https://verajohn.com#join
+  promo_join_button_redirect_url: https://verajohn.com#join
+  promo_terms_text: 利用規約に同意します。
+  promo_join_button: ご登録はこちら
+  promo_login_button: ログイン
+  promo_title_highlighted:
+    - $500
+    - 100%入金ボーナス
 promo_steps:
   promo_step_1_title: ご登録
   promo_step_1_desc: 安全 & 安心！

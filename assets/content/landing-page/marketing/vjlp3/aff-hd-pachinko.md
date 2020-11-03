@@ -1,5 +1,5 @@
 ---
-slug_name: 215 BVJ lan JP Pro HDPachinko 1219
+slug_name: AFF-HD-Pachinko
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja

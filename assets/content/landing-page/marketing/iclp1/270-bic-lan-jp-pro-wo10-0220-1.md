@@ -3,6 +3,10 @@ slug_name: 270-bic-lan-jp-pro-wo10-0220
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
+field_ids:
+  go_container_id: "OPT-PHSNXP6"
+  ga_tracking_id: "UA-142143961-1"
+  gtm_container_id: "GTM-MFD3NKM"
 promo_banner:
   promo_signup_button_redirect_url: https://intercasino.com/#join
   promo_smallterm_redirect_url: "#terms"

@@ -4,6 +4,10 @@ promo_banner:
 login_header_section:
   login_header_text: Sample Login
   login_header_redirect_url: https://www.google.com
+field_ids:
+  go_container_id: "OPT-PHSNXP6"
+  ga_tracking_id: "UA-142143961-1"
+  gtm_container_id: "GTM-MFD3NKM"
 header_section:
   header_section_heading_subtitle: "圧倒的な人気とシェア! さらに安心・安全・楽しいの3拍子がばっちり揃う、業界ナンバーワンカジノで遊んじゃおう! "
   header_section_best_deal_caption: 登録してからすぐ使える! 業界一お得なビギナーズボーナスのおまけつき!
@@ -29,12 +33,15 @@ header_section:
   header_section_game_slider_1: /marketing/img/game1.svg
   header_section_game_slider_2: /marketing/img/game2.svg
   header_section_game_slider_3: /marketing/img/game3.svg
+  header_section_background_image: /marketing/img/image-2020-09-09-17-14-48-442.png
   header_section_game_slider_4: /marketing/img/game4.svg
   header_section_best_deal_image: /marketing/img/image-2020-09-09-17-14-48-360.png
   header_section_game_slider_5: /marketing/img/game5.svg
+  header_section_desktop_background_image: /marketing/img/image-2020-09-09-17-14-48-506.png
   header_section_game_slider_6: /marketing/img/game6.svg
   header_section_top_login_text: ログイン
   header_section_account_login_url: https://verajohn.com/#join
+  header_section_mobile_background_image: /marketing/img/image-2020-09-09-17-14-48-442.png
   header_section_welcome_message: ベラジョン・オンラインカジノへようこそ!
   header_text: Sample Header
 games_brick_section:

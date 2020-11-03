@@ -1,5 +1,5 @@
 ---
-slug_name: 269-bic-lan-jp-pro-cryptowo-0220
+slug_name: ICLP1 Crypto
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -12,8 +12,8 @@ promo_banner:
   promo_smallterm_redirect_url: "#terms"
   promo_title: 269-bic-lan-jp-pro-cryptowo-0220
   promo_images:
-    promo_bg_desktop: /marketing/img/269_bg.jpg
-    promo_bg_mobile: /marketing/img/269_bg_m.jpg
+    promo_bg_desktop: /marketing/img/dsgn-1306-iclp1-dt-v2.jpg
+    promo_bg_mobile: /marketing/img/dsgn-1306-iclp1-mob.jpg
   promo_signup_button: 今すぐ登録
   promo_smallterm_text: に同意します。
   promo_title_animate: false

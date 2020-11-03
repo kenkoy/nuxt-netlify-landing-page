@@ -1,5 +1,5 @@
 ---
-slug_name: 324 BVJ lan JP Pro Beginnersguide 0720
+slug_name: AFF-VJBG
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
