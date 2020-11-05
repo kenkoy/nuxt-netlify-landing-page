@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'MainFont-Bold';
+    src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.eot'); /* IE9 Compat Modes */
+    src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+  
+  @font-face {
+    font-family: 'MainFont-DemiBold';
+    src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.eot'); /* IE9 Compat Modes */
+    src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.woff2') format('woff2'), /* Super Modern Browsers */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.woff') format('woff'), /* Pretty Modern Browsers */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-demi-condensed.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+  
+  @font-face {
+    font-family: 'MainFont-Medium';
+    src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.eot'); /* IE9 Compat Modes */
+    src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.woff2') format('woff2'), /* Super Modern Browsers */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.woff') format('woff'), /* Pretty Modern Browsers */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/linotype-avenir-next-lt-pro-medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+  
+  @font-face {
+    font-family: 'SubFont';
+    src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/komikaaxis.eot'); /* IE9 Compat Modes */
+    src: url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/komikaaxis.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/komikaaxis.woff2') format('woff2'), /* Super Modern Browsers */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/komikaaxis.woff') format('woff'), /* Pretty Modern Browsers */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/komikaaxis.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('https://files.vjpromo.com/bannerflow/lp-core/brand_vj/fonts/komikaaxis.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
+
+
+
+/*--BACKGROUNDS COLORS / IMAGES--*/
+.vjlp5-main{
+  background: $BODY_BG;
+}
+#header{
+  background: $HEADER_BG;
+  border-bottom: 3px solid #0082ba;
+}
+
+h2{
+  color: $SUB_TITLE_COLOR
+}
+
+p, li {
+    color: $TEXT_COLOR;
+    line-height: 21px;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px dashed #FEE63D;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+button.warning{
+    background: $BTN_WARNING;
+
+    &:hover{
+        background: linear-gradient(180deg,#ffe238,#ffa92d);
+    }
+}
+button.error{
+    background: $BTN_ERROR;
+
+    &:hover{
+        background: linear-gradient(180deg,#ff65e5,#fa1e93);
+    }
+}
+
+.separator{
+    border-bottom: 3px solid #0093D4;
+    margin-top: 50px;
+}
+
+.container.svg{
+    display: block;
+
+    > div{
+        display: inline-block;
+    }
+}
+
+#carousel{
+    padding: 20px;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+
+    .container{
+        display: block;
+    }
+}
+.slide-content{
+    outline: 0;
+    img{
+        margin: auto;
+    }
+}
+
+#hero {
+    background-color: $HERO_BG;
+}
+#hero .banner{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+}
+
+
+#steps{
+    .container{
+
+        .num{
+            background: #fff;
+        }
+    }
+}

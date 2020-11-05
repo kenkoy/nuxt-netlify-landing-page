@@ -3,16 +3,16 @@ backend:
   # name: github
   # repo: drap54/ds-gitlab
   # branch: master
-  
+
   # name: gitlab
   # repo: dumarca/landing-page-ssg
-  # auth_type: implicit 
+  # auth_type: implicit
   # app_id: 429f87ba26d4d1054e32126ccf20f2937f5bfff9cb12aec083c64d382a659f5e
   # api_root: https://git.plaingaming.net/api/v4
   # base_url: https://git.plaingaming.net
   # auth_endpoint: oauth/authorize
 
-publish_mode: editorial_workflow  
+publish_mode: editorial_workflow
 media_folder: static/marketing/img
 public_folder: /marketing/img
 
@@ -32,7 +32,7 @@ collections:
       - label: Slug
         widget: string
         name: slug_name
-        required: true  
+        required: true
         hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
       - label: "Locale"
         name: "promo_locale"
@@ -42,7 +42,7 @@ collections:
           - label: "Country Code"
             name: "promo_country_code"
             widget: "select"
-            default: ["jp"]  
+            default: ["jp"]
             options:
               - { label: "Japan", value: "jp" }
               - { label: "Sweden", value: "se" }
@@ -50,7 +50,7 @@ collections:
           - label: "Language Code"
             name: "promo_language_code"
             widget: "select"
-            default: ["ja"]   
+            default: ["ja"]
             options:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
@@ -64,7 +64,7 @@ collections:
           - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
           - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
       - label: "Promotion Banner"
-        name: "promo_banner" 
+        name: "promo_banner"
         widget: "object"
         collapsed: true
         fields:
@@ -84,7 +84,7 @@ collections:
             required: false
             field: {label: Phrase, name: phrase, widget: string}
           - {label: "Login Button", name: promo_login_button, widget: "string"}
-          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}    
+          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
           - {label: "Join Button", name: promo_join_button, widget: "string"}
           - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}
           - {label: "Terms Text", name: promo_terms_text, widget: "string"}
@@ -103,7 +103,7 @@ collections:
               - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
               - {label: "Game Logo", name: promo_game_logo, widget: image, required: false}
       - label: "Promotion Steps"
-        name: "promo_steps" 
+        name: "promo_steps"
         widget: "object"
         collapsed: true
         fields:
@@ -130,7 +130,7 @@ collections:
       - label: Slug
         widget: string
         name: slug_name
-        required: true  
+        required: true
         hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
       - label: "Locale"
         name: "promo_locale"
@@ -140,7 +140,7 @@ collections:
           - label: "Country Code"
             name: "promo_country_code"
             widget: "select"
-            default: ["jp"]  
+            default: ["jp"]
             options:
               - { label: "Japan", value: "jp" }
               - { label: "Sweden", value: "se" }
@@ -148,11 +148,11 @@ collections:
           - label: "Language Code"
             name: "promo_language_code"
             widget: "select"
-            default: ["ja"]   
+            default: ["ja"]
             options:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
-              - { label: "German", value: "de" } 
+              - { label: "German", value: "de" }
       - label: "Tag, Optimize and Analytics ID"
         name: "field_ids"
         widget: "object"
@@ -162,15 +162,15 @@ collections:
           - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
           - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
       - label: "Promotion Banner"
-        name: "promo_banner" 
+        name: "promo_banner"
         widget: "object"
         collapsed: true
         fields:
           - {label: "Title", name: "promo_title", widget: "string"}
           - {label: "Display Title", name: "promo_title_display", widget: "boolean", default: true}
           - {label: "Subtitle", name: "promo_subtitle", widget: "string", required: false}
-          - {label: "Login Button", name: promo_login_button, widget: "string"}   
-          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}     
+          - {label: "Login Button", name: promo_login_button, widget: "string"}
+          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
           - {label: "Join Button", name: promo_join_button, widget: "string"}
           - label: "Join Button Location"
             name: "promo_join_button_location"
@@ -180,7 +180,7 @@ collections:
               - { label: "Upper Left", value: "upper-left" }
               - { label: "Lower Right", value: "lower-right" }
               - { label: "Hidden", value: "hidden" }
-          - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}    
+          - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}
           - label: "Images"
             name: "promo_images"
             widget: "object"
@@ -223,7 +223,7 @@ collections:
       - label: Slug
         widget: string
         name: slug_name
-        required: true  
+        required: true
         hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
       - label: "Locale"
         name: "promo_locale"
@@ -233,7 +233,7 @@ collections:
           - label: "Country Code"
             name: "promo_country_code"
             widget: "select"
-            default: ["jp"]  
+            default: ["jp"]
             options:
               - { label: "Japan", value: "jp" }
               - { label: "Sweden", value: "se" }
@@ -241,11 +241,11 @@ collections:
           - label: "Language Code"
             name: "promo_language_code"
             widget: "select"
-            default: ["ja"]   
+            default: ["ja"]
             options:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
-              - { label: "German", value: "de" } 
+              - { label: "German", value: "de" }
       - label: "Tag, Optimize and Analytics ID"
         name: "field_ids"
         widget: "object"
@@ -255,7 +255,7 @@ collections:
           - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
           - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
       - label: "Promotion Banner"
-        name: "promo_banner" 
+        name: "promo_banner"
         widget: "object"
         collapsed: true
         fields:
@@ -268,8 +268,8 @@ collections:
             summary: '{{field.phrase}}'
             required: false
             field: {label: Phrase, name: phrase, widget: string}
-          - {label: "Login Button Text", name: "promo_login_button", widget: "string"}   
-          - {label: "Login Button Redirect URL", name: "promo_login_button_redirect_url", widget: "string"}     
+          - {label: "Login Button Text", name: "promo_login_button", widget: "string"}
+          - {label: "Login Button Redirect URL", name: "promo_login_button_redirect_url", widget: "string"}
           - {label: "Join Button Text", name: "promo_join_button", widget: "string"}
           - {label: "Join Button Redirect URL", name: "promo_join_button_redirect_url", widget: "string"}
           - {label: "Terms Text", name: "promo_terms", widget: "string"}
@@ -292,11 +292,174 @@ collections:
         name: "section"
         widget: "list"
         collapsed: true
-        fields: 
+        fields:
           - {label: "Join Button Text", name: "join_button", widget: "string"}
           - {label: "Join Button Redirect URL", name: "join_button_redirect_url", widget: "string"}
           - {label: "Image", name: image, widget: image}
       - {label: 'Body', name: 'body', widget: 'markdown', required: false}
+
+
+- name: "VJLP5-NoForm"
+    label: "Vera&John Template 5"
+    format: 'frontmatter'
+    folder: "assets/content/landing-page/marketing/vjlp5"
+    create: true
+    identifier_field: "slug_name"
+    slug: '{{slug}}'
+    preview_path: vjlp5/{{slug}}
+    show_preview_links: false
+    editor:
+      preview: false
+    fields:
+      - label: Slug
+        widget: string
+        name: slug_name
+        required: true
+        hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
+      - label: "Locale"
+        name: "promo_locale"
+        widget: "object"
+        colapsed: true
+        fields:
+          - label: "Country Code"
+            name: "promo_country_code"
+            widget: "select"
+            default: ["jp"]
+            options:
+              - { label: "Japan", value: "jp" }
+              - { label: "Sweden", value: "se" }
+              - { label: "Germany", value: "de" }
+          - label: "Language Code"
+            name: "promo_language_code"
+            widget: "select"
+            default: ["ja"]
+            options:
+              - { label: "Japanese", value: "ja" }
+              - { label: "Swedish", value: "sv" }
+              - { label: "German", value: "de" }
+      - label: "Tag, Optimize and Analytics ID"
+        name: "field_ids"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false}
+          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
+          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false}
+
+
+      - label: "Promotion Banner"
+        name: "promo_banner"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Login Button", name: promo_login_button, widget: "string"}
+          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
+          - {label: "Join Button", name: promo_join_button, widget: "string"}
+          - label: "Join Button Location"
+            name: "promo_join_button_location"
+            widget: "select"
+            default: ["hidden"]
+            options:
+              - { label: "Upper Left", value: "upper-left" }
+              - { label: "Lower Right", value: "lower-right" }
+              - { label: "Hidden", value: "hidden" }
+          - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}
+          - label: "Images"
+            name: "promo_images"
+            widget: "object"
+            colapsed: true
+            fields:
+              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
+              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
+              - {label: "Banner Background", name: promo_bg_banner, widget: image}
+          - label: "Steps"
+            name: "steps"
+            widget: "object"
+            colapsed: true
+            fields:
+              - {label: "Step 1", name: step_title_1, widget: string, required: false, default: ""}
+              - {label: "Step 1", name: step_description_1, widget: image, required: false, default: ""}
+
+              - {label: "Step 2", name: step_title_2, widget: string, required: false, default: ""}
+              - {label: "Step 2", name: step_description_2, widget: image, required: false, default: ""}
+
+              - {label: "Step 3", name: step_title_3, widget: string, required: false, default: ""}
+              - {label: "Step 3", name: step_description_3, widget: image, required: false, default: ""}
+
+      - label: "First Section"
+        name: "first_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Title", name: "first_section_title", widget: "string"}
+          - {label: "Description", name: "first_section_description", widget: "string"}
+
+      - label: "Second Section"
+        name: "second_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Title", name: "second_section_title_1", widget: "string"}
+          - {label: "Content", name: "second_section_content_1", widget: "string"}
+          - {label: "Title", name: "second_section_title_2", widget: "string"}
+          - {label: "Content", name: "second_section_content_2", widget: "string"}
+          - {label: "Title", name: "second_section_title_3", widget: "string"}
+          - {label: "Content", name: "second_section_content_3", widget: "string"}
+          - {label: "Title", name: "second_section_title_4", widget: "string"}
+          - {label: "Content", name: "second_section_content_4", widget: "string"}
+          - {label: "Title", name: "second_section_title_5", widget: "string"}
+          - {label: "Content", name: "second_section_content_5", widget: "string"}
+          - {label: "Title", name: "second_section_title_6", widget: "string"}
+          - {label: "Content", name: "second_section_content_6", widget: "string"}
+          - {label: "Title", name: "second_section_title_7", widget: "string"}
+          - {label: "Content", name: "second_section_content_7", widget: "string"}
+          - {label: "Title", name: "second_section_title_8", widget: "string"}
+          - {label: "Content", name: "second_section_content_8", widget: "string"}
+
+      - label: "Third Section"
+        name: "third_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Title", name: "third_section_title", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_1", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_2", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_3", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_4", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_5", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_6", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_7", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_8", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_9", widget: "string"}
+
+      - label: "Fourth Section"
+        name: "fourth_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Title", name: "fourth_section_title", widget: "string"}
+          - {label: "Bonus Link", name: "fourth_section_bonus_link", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_1", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_2", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_3", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_4", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_5", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_6", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_7", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_8", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_9", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_10", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_11", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_12", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_13", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_14", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_15", widget: "string"}
+
+      - {label: Template, name: promo_template, widget: hidden, default: "VJLP3-NoForm"}
+      - {label: 'Body', name: 'body', widget: 'markdown' }
+
+
+
   - name: 'ICLP1-NoForm'
     label: 'InterCasino Template 1'
     format: 'frontmatter'
@@ -312,7 +475,7 @@ collections:
       - label: Slug
         widget: string
         name: slug_name
-        required: true  
+        required: true
         hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
       - label: "Locale"
         name: "promo_locale"
@@ -322,7 +485,7 @@ collections:
           - label: "Country Code"
             name: "promo_country_code"
             widget: "select"
-            default: ["jp"]  
+            default: ["jp"]
             options:
               - { label: "Japan", value: "jp" }
               - { label: "Sweden", value: "se" }
@@ -330,11 +493,11 @@ collections:
           - label: "Language Code"
             name: "promo_language_code"
             widget: "select"
-            default: ["ja"]   
+            default: ["ja"]
             options:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
-              - { label: "German", value: "de" } 
+              - { label: "German", value: "de" }
       - label: "Tag, Optimize and Analytics ID"
         name: "field_ids"
         widget: "object"
@@ -344,7 +507,7 @@ collections:
           - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
           - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
       - label: "Promotion Banner"
-        name: "promo_banner" 
+        name: "promo_banner"
         widget: "object"
         collapsed: true
         fields:
@@ -356,7 +519,7 @@ collections:
           - {label: "Animate Heading", name: "promo_title_animate", widget: "boolean", default: true}
           - {label: "Subtitle 2", name: "promo_subtitle_2", widget: "string", required: false}
           - {label: "Signup Button Text", name: promo_signup_button, widget: "string"}
-          - {label: "Signup Button Redirect URL", name: promo_signup_button_redirect_url, widget: "string"}    
+          - {label: "Signup Button Redirect URL", name: promo_signup_button_redirect_url, widget: "string"}
           - {label: "Small Term Text Link", name: promo_smallterm_text_link, widget: "string"}
           - {label: "Small Term Redirect URL", name: promo_smallterm_redirect_url, widget: "string"}
           - {label: "Small Term Text", name: promo_smallterm_text, widget: "string"}
@@ -369,7 +532,7 @@ collections:
               - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
               - {label: "Game Logo", name: promo_game_logo, widget: image, required: false}
       - label: "Promotion Steps"
-        name: "promo_steps" 
+        name: "promo_steps"
         widget: "object"
         collapsed: true
         fields:
@@ -379,7 +542,7 @@ collections:
           - {label: "Step 2 Description", name: promo_step_2_desc, widget: "string"}
           - {label: "Step 3 Title", name: promo_step_3_title, widget: "string"}
           - {label: "Step 3 Description", name: promo_step_3_desc, widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}    
+      - {label: "Body", name: "body", widget: "markdown"}
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}
   - name: 'ICLP2-NoForm'
     label: 'InterCasino Template 2'
@@ -396,7 +559,7 @@ collections:
       - label: Slug
         widget: string
         name: slug_name
-        required: true  
+        required: true
         hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
       - label: "Locale"
         name: "promo_locale"
@@ -406,7 +569,7 @@ collections:
           - label: "Country Code"
             name: "promo_country_code"
             widget: "select"
-            default: ["jp"]  
+            default: ["jp"]
             options:
               - { label: "Japan", value: "jp" }
               - { label: "Sweden", value: "se" }
@@ -414,11 +577,11 @@ collections:
           - label: "Language Code"
             name: "promo_language_code"
             widget: "select"
-            default: ["ja"]   
+            default: ["ja"]
             options:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
-              - { label: "German", value: "de" } 
+              - { label: "German", value: "de" }
       - label: "Tag, Optimize and Analytics ID"
         name: "field_ids"
         widget: "object"
@@ -428,7 +591,7 @@ collections:
           - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
           - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
       - label: "Promotion Banner"
-        name: "promo_banner" 
+        name: "promo_banner"
         widget: "object"
         collapsed: true
         fields:
@@ -438,7 +601,7 @@ collections:
           - {label: "Register Button Text", name: promo_register_button_text, widget: "string"}
           - {label: "Register Button URL", name: promo_register_button_redirect_url, widget: "string"}
           - {label: "Home Button Text", name: promo_home_button, widget: "string"}
-          - {label: "Home Button URL", name: promo_home_button_redirect_url, widget: "string"}    
+          - {label: "Home Button URL", name: promo_home_button_redirect_url, widget: "string"}
           - {label: "Small Term Text Link", name: promo_smallterm_text_link, widget: "string"}
           - {label: "Small Term URL", name: promo_smallterm_redirect_url, widget: "string"}
           - {label: "Small Term Text", name: promo_smallterm_text, widget: "string"}
@@ -500,7 +663,7 @@ collections:
       - label: Slug
         widget: string
         name: slug_name
-        required: true  
+        required: true
         hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
       - label: "Locale"
         name: "promo_locale"
@@ -510,7 +673,7 @@ collections:
           - label: "Country Code"
             name: "promo_country_code"
             widget: "select"
-            default: ["jp"]  
+            default: ["jp"]
             options:
               - { label: "Japan", value: "jp" }
               - { label: "Sweden", value: "se" }
@@ -518,11 +681,11 @@ collections:
           - label: "Language Code"
             name: "promo_language_code"
             widget: "select"
-            default: ["ja"]   
+            default: ["ja"]
             options:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
-              - { label: "German", value: "de" } 
+              - { label: "German", value: "de" }
       - label: "Tag, Optimize and Analytics ID"
         name: "field_ids"
         widget: "object"
@@ -532,7 +695,7 @@ collections:
           - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
           - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
       - label: "Promotion Banner"
-        name: "promo_banner" 
+        name: "promo_banner"
         widget: "object"
         collapsed: true
         fields:
@@ -546,7 +709,7 @@ collections:
         name: "bonus"
         widget: "list"
         collapsed: true
-        fields: 
+        fields:
           - {label: "Title Image", name: "box_title_image", widget: "image"}
           - {label: "Button Image", name: "box_button_image", widget: "image"}
           - {label: "Buttom Image URL", name: "box_button_image_url", widget: "string"}
@@ -623,7 +786,7 @@ collections:
               - {label: "Desktop Background Image", name: header_section_desktop_background_image, widget: "image"}
               - {label: "Mobile Background Image", name: header_section_mobile_background_image, widget: "image"}
           - label: "Games Brick Section"
-            name: "games_brick_section" 
+            name: "games_brick_section"
             widget: "object"
             collapsed: true
             fields:
@@ -632,32 +795,32 @@ collections:
                 widget: "object"
                 colapsed: true
                 fields:
-                  - {label: "Button", name: games_brick_column_1_button, widget: "string"}   
-                  - {label: "Button Redirect URL", name: games_brick_column_1_button_redirect_url, widget: "string"} 
+                  - {label: "Button", name: games_brick_column_1_button, widget: "string"}
+                  - {label: "Button Redirect URL", name: games_brick_column_1_button_redirect_url, widget: "string"}
               - label: "Column 2"
                 name: "games_brick_column_2"
                 widget: "object"
                 colapsed: true
                 fields:
-                  - {label: "Button", name: games_brick_column_2_button, widget: "string"}   
+                  - {label: "Button", name: games_brick_column_2_button, widget: "string"}
                   - {label: "Button Redirect URL", name: games_brick_column_2_button_redirect_url, widget: "string"}
           - label: "Testimonials Section"
             name: "testimonials_section"
             widget: "object"
             collapsed: true
             fields:
-              - {label: "Button Text", name: testimonials_button_text, widget: "string"}   
+              - {label: "Button Text", name: testimonials_button_text, widget: "string"}
               - {label: "Button Redirect URL", name: testimonials_button_redirect_url, widget: "string"}
           - label: "Footer Section"
             name: "footer_section"
             widget: "object"
             collapsed: true
             fields:
-              - {label: "Menu 1", name: footer_menu_1_text, widget: "string"}   
+              - {label: "Menu 1", name: footer_menu_1_text, widget: "string"}
               - {label: "Menu 1 Redirect URL", name: footer_menu_1_redirect_url, widget: "string"}
-              - {label: "Menu 2", name: footer_menu_2_text, widget: "string"}   
+              - {label: "Menu 2", name: footer_menu_2_text, widget: "string"}
               - {label: "Menu 2 Redirect URL", name: footer_menu_2_redirect_url, widget: "string"}
-              - {label: "Menu 3", name: footer_menu_3_text, widget: "string"}   
+              - {label: "Menu 3", name: footer_menu_3_text, widget: "string"}
               - {label: "Menu 3 Redirect URL", name: footer_menu_3_redirect_url, widget: "string"}
-              - {label: "Menu 4", name: footer_menu_4_text, widget: "string"}   
+              - {label: "Menu 4", name: footer_menu_4_text, widget: "string"}
               - {label: "Menu 4 Redirect URL", name: footer_menu_4_redirect_url, widget: "string"}
