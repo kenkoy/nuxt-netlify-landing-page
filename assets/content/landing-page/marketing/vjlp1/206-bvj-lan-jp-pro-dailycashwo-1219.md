@@ -4,16 +4,16 @@ promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 field_ids:
-  go_container_id: "OPT-PHSNXP6"
-  ga_tracking_id: "UA-142143961-1"
-  gtm_container_id: "GTM-MFD3NKM"
+  go_container_id: OPT-PHSNXP6
+  ga_tracking_id: UA-142143961-1
+  gtm_container_id: GTM-MFD3NKM
 promo_banner:
   promo_title: |-
     最高$500までの
     100%入金ボーナス
     を獲得しよう!
   promo_images:
-    promo_bg_desktop: /marketing/img/card-master-welcome-offer_bg.jpg
+    promo_bg_desktop: /marketing/img/voltes.jpg
     promo_bg_mobile: /marketing/img/card-master-welcome-offer_bg_m.jpg
   promo_terms_link_text:
     - 利用規約
@@ -23,9 +23,7 @@ promo_banner:
   promo_terms_text: 利用規約に同意します。
   promo_join_button: ご登録はこちら
   promo_login_button: 登録
-  promo_title_highlighted:
-    - $500
-    - 100%入金ボーナス
+  promo_title_highlighted: []
 promo_steps:
   promo_step_1_title: ご登録
   promo_step_1_desc: 安全 & 安心！
