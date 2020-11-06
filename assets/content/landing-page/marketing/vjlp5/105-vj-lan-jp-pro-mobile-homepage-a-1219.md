@@ -1,7 +1,20 @@
 ---
+slug_name: "105-vj-lan-jp-pro-mobile-homepage-a-1219 "
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
+promo_banner:
+  promo_join_button_location:
+    - hidden
+  promo_login_button: 登録
+  promo_login_button_redirect_url: https://verajohn.com/#join
+  promo_join_button: 入金ボーナス獲得する
+  promo_join_button_redirect_url: https://verajohn.com/#join
+  promo_images:
+    promo_bg_desktop: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
+    promo_bg_mobile: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2-m.jpeg
+    promo_bg_banner: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
+  promo_title: 無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！
 steps:
   step_title_1: ご登録
   step_description_1: 安全 & 安心！
@@ -44,6 +57,21 @@ fourth_section:
   third_section_title: ビギナーズボーナス利用規約
   third_bullet_list:
     - third_section_content: このキャンペーンでは、100%の初回入金ボーナスを最高$500まで、50%のセカンド入金ボーナスを最高$250まで、100%のサード入金ボーナスを最高$200まで獲得することができます。
+second_section_right:
+  - second_section_title: 完全生配信！ライブカジノゲーム
+    second_section_content: テーブルゲームファンに特におすすめ！ブラックジャックやルーレット、バカラやビデオポーカーなど、バライティ豊かなゲームをと揃えています♪しかも、ライブカジノだから、リアルタイムでディーラーと対戦できるんです！
+      実際にチャットを通じて会話までできちゃうので、まるで海外カジノのテーブルに座り、実際にディーラーと対戦してるかのような感覚を味わえます！
+      なかには、本場の海外カジノから直接配信されているテーブルもあるんです！日本に居ながらにして本場カジノがお手軽に体験できちゃう、オンラインカジノならではのライブゲームはクセになること間違いなし★
+  - second_section_title: 素晴らしいスロットの数々
+    second_section_content: リムジンに乗り込み、シャンパンの栓を抜くことを想像しながら、人気スロットゲームをプレイし始めませんか？パチスロ風スロットの元祖、Hawaiian
+      Dream、クレイジーなゲーム体験を求めて宇宙に旅立つStarburst、さらに一攫千金ジャックポットゲームなど。今すぐプレイして、お気に入りゲームを見つけてみてください！もちろん、パソコン、モバイルなど、利用端末に関わらず、いつでもどこでも最高のゲームをお楽しみいただけます！
+  - second_section_title: ライブチャット＆Eメール日本語サポート
+    second_section_content: ベラジョンの日本語カスタマーサポートは、迅速かつ丁寧！何かお困りのことがありましたら、お気軽にお問い合わせください♪
+      多くのプレイヤーからお寄せいただく質問は、ヘルプ・センタ―のよくある質問(FAQ)または「ヘルプ」よりご確認いただけます。
+  - second_section_title: ものの5分でスピーディー! 今すぐ登録しよう!
+    second_section_content: 最高の環境が整ったベラジョンオンラインカジノに登録するなら今でしょ！
+      しかも、ベラジョンでの初めてのご入金時には、勝負金が2倍になる★初回入金ボーナス★が、最大$500までもらえます！
+      安心・安全・楽しいベラジョンカジノで、今日こそカジノライフをスタートしちゃいましょう！グッドラック！
 third_section:
   third_section_title: ビギナーズボーナス利用規約
   third_bullet_list:
@@ -65,37 +93,13 @@ third_section:
   fourth_section_title: 最高$500初回入金ボーナス利用規約
   fourth_bullet_list:
     - fourth_section_content: このキャンペーンは、ベラジョン初めての入金を行うプレイヤー様が対象となります。
-slug_name: "105-vj-lan-jp-pro-mobile-homepage-a-1219 "
-promo_banner:
-  promo_join_button_location:
-    - hidden
-  promo_login_button: 登録
-  promo_login_button_redirect_url: https://verajohn.com/#join
-  promo_join_button: 入金ボーナス獲得する
-  promo_join_button_redirect_url: https://verajohn.com/#join
-  promo_images:
-    promo_bg_desktop: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
-    promo_bg_mobile: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2-m.jpeg
-    promo_bg_banner: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
-  promo_title: 無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！
+field_ids:
+  gtm_container_id: GTM-MFD3NKM
+  ga_tracking_id: UA-142143961-1
+  go_container_id: OPT-PHSNXP6
 first_section:
   - first_section_title: ライブカジノで一攫千金ッ！
     first_section_description: いつでもどこでも、本場カジノの臨場感が楽しめるライブカジノ。ディーラーの動きがリアルタイムで見えるので、イカサマの心配もありません。しかも、還元率は他のギャンブルよりもはるかに高いともいわれています。パチスロの一般的な還元率は約80%と言われていますが、オンラインカジノでは、なんと最低でも「95％」はあるんです！さぁ、日本No.1オンラインカジノのベラジョンで、今をときめく最先端のライブカジノを堪能しましょう！
-second_section_right:
-  - second_section_title: 完全生配信！ライブカジノゲーム
-    second_section_content: テーブルゲームファンに特におすすめ！ブラックジャックやルーレット、バカラやビデオポーカーなど、バライティ豊かなゲームをと揃えています♪しかも、ライブカジノだから、リアルタイムでディーラーと対戦できるんです！
-      実際にチャットを通じて会話までできちゃうので、まるで海外カジノのテーブルに座り、実際にディーラーと対戦してるかのような感覚を味わえます！
-      なかには、本場の海外カジノから直接配信されているテーブルもあるんです！日本に居ながらにして本場カジノがお手軽に体験できちゃう、オンラインカジノならではのライブゲームはクセになること間違いなし★
-  - second_section_title: 素晴らしいスロットの数々
-    second_section_content: リムジンに乗り込み、シャンパンの栓を抜くことを想像しながら、人気スロットゲームをプレイし始めませんか？パチスロ風スロットの元祖、Hawaiian
-      Dream、クレイジーなゲーム体験を求めて宇宙に旅立つStarburst、さらに一攫千金ジャックポットゲームなど。今すぐプレイして、お気に入りゲームを見つけてみてください！もちろん、パソコン、モバイルなど、利用端末に関わらず、いつでもどこでも最高のゲームをお楽しみいただけます！
-  - second_section_title: ライブチャット＆Eメール日本語サポート
-    second_section_content: ベラジョンの日本語カスタマーサポートは、迅速かつ丁寧！何かお困りのことがありましたら、お気軽にお問い合わせください♪
-      多くのプレイヤーからお寄せいただく質問は、ヘルプ・センタ―のよくある質問(FAQ)または「ヘルプ」よりご確認いただけます。
-  - second_section_title: ものの5分でスピーディー! 今すぐ登録しよう!
-    second_section_content: 最高の環境が整ったベラジョンオンラインカジノに登録するなら今でしょ！
-      しかも、ベラジョンでの初めてのご入金時には、勝負金が2倍になる★初回入金ボーナス★が、最大$500までもらえます！
-      安心・安全・楽しいベラジョンカジノで、今日こそカジノライフをスタートしちゃいましょう！グッドラック！
 1st_section:
   - first_section_title: ライブカジノで一攫千金ッ！
     first_section_description: いつでもどこでも、本場カジノの臨場感が楽しめるライブカジノ。ディーラーの動きがリアルタイムで見えるので、イカサマの心配もありません。しかも、還元率は他のギャンブルよりもはるかに高いともいわれています。パチスロの一般的な還元率は約80%と言われていますが、オンラインカジノでは、なんと最低でも「95％」はあるんです！さぁ、日本No.1オンラインカジノのベラジョンで、今をときめく最先端のライブカジノを堪能しましょう！
