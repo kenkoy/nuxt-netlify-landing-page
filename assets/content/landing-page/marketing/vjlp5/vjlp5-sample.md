@@ -35,6 +35,8 @@ fourth_section:
   fourth_section_title: 最高$500初回入金ボーナス利用規約
   fourth_bullet_list:
     - fourth_section_content: このキャンペーンは、ベラジョン初めての入金を行うプレイヤー様が対象となります。
+    - fourth_section_content: このキャンペーンでは、最初の1回の入金で、100％入金ボーナスを獲得することができます。
+    - fourth_section_content: 初回入金ボーナスは、最大$500まで獲得することができます。
 3rd_section:
   third_section_title: ビギナーズボーナス利用規約
   third_bullet_list:
