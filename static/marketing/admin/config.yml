@@ -387,21 +387,21 @@ collections:
           - {label: "Step 3 Title", name: step_title_3, widget: string, required: false, default: ""}
           - {label: "Step 3 Description", name: step_description_3, widget: "string", required: false, default: ""}
       - label: "First Section"
-        name: "1st_section"
+        name: "first_section"
         widget: "list"
         collapsed: true
         fields:
           - {label: "Title", name: "first_section_title", widget: "string"}
           - {label: "Description", name: "first_section_description", widget: "string"}
       - label: "Second Section"
-        name: "2nd_section"
+        name: "second_section"
         widget: "list"
         collapsed: true
         fields:
           - {label: "Title", name: "second_section_title", widget: "string"}
           - {label: "Content", name: "second_section_content", widget: "string"}
       - label: "Third Section"
-        name: "3rd_section"
+        name: "third_section"
         widget: "object"
         collapsed: true
         fields:
@@ -413,7 +413,7 @@ collections:
             fields:
                 - {label: "Bullet List", name: "third_section_content", widget: "string"}
       - label: "Fourth Section"
-        name: "4th_section"
+        name: "fourth_section"
         widget: "object"
         collapsed: true
         fields:
