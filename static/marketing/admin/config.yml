@@ -393,8 +393,15 @@ collections:
         fields:
           - {label: "Title", name: "first_section_title", widget: "string"}
           - {label: "Description", name: "first_section_description", widget: "string"}
-      - label: "Second Section"
-        name: "second_section"
+      - label: "Second Section Left"
+        name: "second_section_left"
+        widget: "list"
+        collapsed: true
+        fields:
+          - {label: "Title", name: "second_section_title", widget: "string"}
+          - {label: "Content", name: "second_section_content", widget: "string"}
+      - label: "Second Section Right"
+        name: "second_section_right"
         widget: "list"
         collapsed: true
         fields:
