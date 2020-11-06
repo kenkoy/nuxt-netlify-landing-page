@@ -77,6 +77,7 @@ promo_banner:
     promo_bg_desktop: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
     promo_bg_mobile: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2-m.jpeg
     promo_bg_banner: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
+  promo_title: 無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！
 first_section:
   - first_section_title: ライブカジノで一攫千金ッ！
     first_section_description: いつでもどこでも、本場カジノの臨場感が楽しめるライブカジノ。ディーラーの動きがリアルタイムで見えるので、イカサマの心配もありません。しかも、還元率は他のギャンブルよりもはるかに高いともいわれています。パチスロの一般的な還元率は約80%と言われていますが、オンラインカジノでは、なんと最低でも「95％」はあるんです！さぁ、日本No.1オンラインカジノのベラジョンで、今をときめく最先端のライブカジノを堪能しましょう！
