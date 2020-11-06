@@ -1,0 +1,160 @@
+
+
+- name: "VJLP5-NoForm"
+    label: "Vera&John Template 5"
+    format: 'frontmatter'
+    folder: "assets/content/landing-page/marketing/vjlp5"
+    create: true
+    identifier_field: "slug_name"
+    slug: '{{slug}}'
+    preview_path: vjlp5/{{slug}}
+    show_preview_links: false
+    editor:
+      preview: false
+    fields:
+      - label: Slug
+        widget: string
+        name: slug_name
+        required: true
+        hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
+      - label: "Locale"
+        name: "promo_locale"
+        widget: "object"
+        colapsed: true
+        fields:
+          - label: "Country Code"
+            name: "promo_country_code"
+            widget: "select"
+            default: ["jp"]
+            options:
+              - { label: "Japan", value: "jp" }
+              - { label: "Sweden", value: "se" }
+              - { label: "Germany", value: "de" }
+          - label: "Language Code"
+            name: "promo_language_code"
+            widget: "select"
+            default: ["ja"]
+            options:
+              - { label: "Japanese", value: "ja" }
+              - { label: "Swedish", value: "sv" }
+              - { label: "German", value: "de" }
+      - label: "Tag, Optimize and Analytics ID"
+        name: "field_ids"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false}
+          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
+          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false}
+
+
+      - label: "Promotion Banner"
+        name: "promo_banner"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Login Button", name: promo_login_button, widget: "string"}
+          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
+          - {label: "Join Button", name: promo_join_button, widget: "string"}
+          - label: "Join Button Location"
+            name: "promo_join_button_location"
+            widget: "select"
+            default: ["hidden"]
+            options:
+              - { label: "Upper Left", value: "upper-left" }
+              - { label: "Lower Right", value: "lower-right" }
+              - { label: "Hidden", value: "hidden" }
+          - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}
+          - label: "Images"
+            name: "promo_images"
+            widget: "object"
+            colapsed: true
+            fields:
+              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
+              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
+              - {label: "Banner Background", name: promo_bg_banner, widget: image}
+          - label: "Steps"
+            name: "steps"
+            widget: "object"
+            colapsed: true
+            fields:
+              - {label: "Step 1", name: step_title_1, widget: string, required: false, default: ""}
+              - {label: "Step 1", name: step_description_1, widget: image, required: false, default: ""}
+
+              - {label: "Step 2", name: step_title_2, widget: string, required: false, default: ""}
+              - {label: "Step 2", name: step_description_2, widget: image, required: false, default: ""}
+
+              - {label: "Step 3", name: step_title_3, widget: string, required: false, default: ""}
+              - {label: "Step 3", name: step_description_3, widget: image, required: false, default: ""}
+
+      - label: "First Section"
+        name: "first_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Title", name: "first_section_title", widget: "string"}
+          - {label: "Description", name: "first_section_description", widget: "string"}
+
+      - label: "Second Section"
+        name: "second_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Title", name: "second_section_title_1", widget: "string"}
+          - {label: "Content", name: "second_section_content_1", widget: "string"}
+          - {label: "Title", name: "second_section_title_2", widget: "string"}
+          - {label: "Content", name: "second_section_content_2", widget: "string"}
+          - {label: "Title", name: "second_section_title_3", widget: "string"}
+          - {label: "Content", name: "second_section_content_3", widget: "string"}
+          - {label: "Title", name: "second_section_title_4", widget: "string"}
+          - {label: "Content", name: "second_section_content_4", widget: "string"}
+          - {label: "Title", name: "second_section_title_5", widget: "string"}
+          - {label: "Content", name: "second_section_content_5", widget: "string"}
+          - {label: "Title", name: "second_section_title_6", widget: "string"}
+          - {label: "Content", name: "second_section_content_6", widget: "string"}
+          - {label: "Title", name: "second_section_title_7", widget: "string"}
+          - {label: "Content", name: "second_section_content_7", widget: "string"}
+          - {label: "Title", name: "second_section_title_8", widget: "string"}
+          - {label: "Content", name: "second_section_content_8", widget: "string"}
+
+      - label: "Third Section"
+        name: "third_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Title", name: "third_section_title", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_1", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_2", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_3", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_4", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_5", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_6", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_7", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_8", widget: "string"}
+          - {label: "Bullet List", name: "third_section_content_9", widget: "string"}
+
+      - label: "Fourth Section"
+        name: "fourth_section"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Title", name: "fourth_section_title", widget: "string"}
+          - {label: "Bonus Link", name: "fourth_section_bonus_link", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_1", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_2", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_3", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_4", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_5", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_6", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_7", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_8", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_9", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_10", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_11", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_12", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_13", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_14", widget: "string"}
+          - {label: "Bullet List", name: "fourth_section_content_15", widget: "string"}
+
+      - {label: Template, name: promo_template, widget: hidden, default: "VJLP3-NoForm"}
+      - {label: 'Body', name: 'body', widget: 'markdown' }

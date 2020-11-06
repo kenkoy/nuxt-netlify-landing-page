@@ -23,15 +23,12 @@
                         <div class="banner">
 
                         </div>
-                        <!--<div>
-                            <button class="error">今すぐプレイ</button>
-                        </div>-->
                     </div>
                 </section>
 
                 <section id="steps">
                     <div class="container column-3">
-                        
+
                         <div class="animated fadeIn delay-halfs">
                             <span class="num">1</span>
                             <div>
@@ -198,66 +195,45 @@
 <script>
     import Vjlp5Data from '~/pages/marketing/vjlp5/_slug/index.vue'
 
-  export default{
-      data(){
-          return{
-              layout: false,
-              desktop: true,
-              mobile: false,
-              md_data: { },
-              language: ''
-          }
-      },
-      components: {
-          Vjlp5Data
-      },
-    //   created() {
-    //       window.addEventListener("resize", this.myEventHandler);
-    //   },
-    //   destroyed() {
-    //       window.removeEventListener("resize", this.myEventHandler);
-    //   },
-      mounted(){
-          this.myEventHandler()
-      },
-      methods: {
+    export default{
+        data(){
+            return{
+                layout: false,
+                desktop: true,
+                mobile: false,
+                md_data: { },
+                language: ''
+            }
+        },
+        components: {
+            Vjlp5Data
+        },
+        methods: {
           /* data from 'PAGE' store to 'md_data' local variable */
-          getMDcontent: function ( emitData ) {
+            getMDcontent: function ( emitData ) {
             this.md_data = [ emitData ]
 
-                this.md_data.forEach(item => {
-                    this.language = item.promo_locale.promo_language_code
-                })
-
-              
-          },
-          myEventHandler(e) {
-               /* code for handling resize */
-              if (window.innerWidth <= 576){
-                  this.desktop = false
-                  this.mobile = true
-              }
-              else {
-                  this.desktop = true
-                  this.mobile = false
-              }
-          }
-      },
-      head() {
-          return {
-                htmlAttrs: {
-                    lang: this.language
-                },
-                link: [
-                    { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' },
-                ],
-          }
-      }
+            this.md_data.forEach(item => {
+                this.language = item.promo_locale.promo_language_code
+            })
+        }
+    },
+    head() {
+        return {
+            htmlAttrs: {
+                lang: this.language
+            },
+            link: [
+                { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' },
+            ],
+        }
+    }
   }
 </script>
 
 <style lang="scss">
     .vjlp5_wrapper {
+        @import '@/assets/sass/base/fonts.css';
         @import '@/assets/sass/vjlp5/style.scss';
         @import '@/assets/sass/base/style.scss';
     }
