@@ -65,7 +65,7 @@ third_section:
   fourth_section_title: 最高$500初回入金ボーナス利用規約
   fourth_bullet_list:
     - fourth_section_content: このキャンペーンは、ベラジョン初めての入金を行うプレイヤー様が対象となります。
-slug_name: VJLP5 Sample
+slug_name: 105-vj-lan-jp-pro-mobile-homepage-a-1219
 promo_banner:
   promo_join_button_location:
     - hidden
