@@ -69,7 +69,7 @@ slug_name: "105-vj-lan-jp-pro-mobile-homepage-a-1219 "
 promo_banner:
   promo_join_button_location:
     - hidden
-  promo_login_button: 入金ボーナス獲得する
+  promo_login_button: 登録
   promo_login_button_redirect_url: https://verajohn.com/#join
   promo_join_button: 入金ボーナス獲得する
   promo_join_button_redirect_url: https://verajohn.com/#join
