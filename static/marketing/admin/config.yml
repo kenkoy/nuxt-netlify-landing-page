@@ -1,8 +1,12 @@
 backend:
-  name: git-gateway
+  # name: git-gateway
   # name: github
   # repo: drap54/ds-gitlab
   # branch: master
+
+  name: github
+  repo: kenkoy/nuxt-netlify-landing-page
+  branch: master
 
   # name: gitlab
   # repo: dumarca/landing-page-ssg
@@ -299,7 +303,8 @@ collections:
       - {label: 'Body', name: 'body', widget: 'markdown', required: false}
 
 
-- name: "VJLP5-NoForm"
+
+  - name: "VJLP5-NoForm"
     label: "Vera&John Template 5"
     format: 'frontmatter'
     folder: "assets/content/landing-page/marketing/vjlp5"
@@ -345,8 +350,6 @@ collections:
           - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false}
           - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
           - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false}
-
-
       - label: "Promotion Banner"
         name: "promo_banner"
         widget: "object"
@@ -372,91 +375,57 @@ collections:
               - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
               - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
               - {label: "Banner Background", name: promo_bg_banner, widget: image}
-          - label: "Steps"
-            name: "steps"
-            widget: "object"
-            colapsed: true
-            fields:
-              - {label: "Step 1", name: step_title_1, widget: string, required: false, default: ""}
-              - {label: "Step 1", name: step_description_1, widget: image, required: false, default: ""}
-
-              - {label: "Step 2", name: step_title_2, widget: string, required: false, default: ""}
-              - {label: "Step 2", name: step_description_2, widget: image, required: false, default: ""}
-
-              - {label: "Step 3", name: step_title_3, widget: string, required: false, default: ""}
-              - {label: "Step 3", name: step_description_3, widget: image, required: false, default: ""}
-
-      - label: "First Section"
-        name: "first_section"
+      - label: "Steps"
+        name: "steps"
         widget: "object"
+        colapsed: true
+        fields:
+          - {label: "Step 1 Title", name: step_title_1, widget: string, required: false, default: ""}
+          - {label: "Step 1 Description", name: step_description_1, widget: "string", required: false, default: ""}
+
+          - {label: "Step 2 Title", name: step_title_2, widget: string, required: false, default: ""}
+          - {label: "Step 2 Description", name: step_description_2, widget: "string", required: false, default: ""}
+
+          - {label: "Step 3 Title", name: step_title_3, widget: string, required: false, default: ""}
+          - {label: "Step 3 Description", name: step_description_3, widget: "string", required: false, default: ""}
+      - label: "First Section"
+        name: "1st_section"
+        widget: "list"
         collapsed: true
         fields:
           - {label: "Title", name: "first_section_title", widget: "string"}
           - {label: "Description", name: "first_section_description", widget: "string"}
-
       - label: "Second Section"
-        name: "second_section"
-        widget: "object"
+        name: "2nd_section"
+        widget: "list"
         collapsed: true
         fields:
-          - {label: "Title", name: "second_section_title_1", widget: "string"}
-          - {label: "Content", name: "second_section_content_1", widget: "string"}
-          - {label: "Title", name: "second_section_title_2", widget: "string"}
-          - {label: "Content", name: "second_section_content_2", widget: "string"}
-          - {label: "Title", name: "second_section_title_3", widget: "string"}
-          - {label: "Content", name: "second_section_content_3", widget: "string"}
-          - {label: "Title", name: "second_section_title_4", widget: "string"}
-          - {label: "Content", name: "second_section_content_4", widget: "string"}
-          - {label: "Title", name: "second_section_title_5", widget: "string"}
-          - {label: "Content", name: "second_section_content_5", widget: "string"}
-          - {label: "Title", name: "second_section_title_6", widget: "string"}
-          - {label: "Content", name: "second_section_content_6", widget: "string"}
-          - {label: "Title", name: "second_section_title_7", widget: "string"}
-          - {label: "Content", name: "second_section_content_7", widget: "string"}
-          - {label: "Title", name: "second_section_title_8", widget: "string"}
-          - {label: "Content", name: "second_section_content_8", widget: "string"}
-
+          - {label: "Title", name: "second_section_title", widget: "string"}
+          - {label: "Content", name: "second_section_content", widget: "string"}
       - label: "Third Section"
-        name: "third_section"
+        name: "3rd_section"
         widget: "object"
         collapsed: true
         fields:
           - {label: "Title", name: "third_section_title", widget: "string"}
-          - {label: "Bullet List", name: "third_section_content_1", widget: "string"}
-          - {label: "Bullet List", name: "third_section_content_2", widget: "string"}
-          - {label: "Bullet List", name: "third_section_content_3", widget: "string"}
-          - {label: "Bullet List", name: "third_section_content_4", widget: "string"}
-          - {label: "Bullet List", name: "third_section_content_5", widget: "string"}
-          - {label: "Bullet List", name: "third_section_content_6", widget: "string"}
-          - {label: "Bullet List", name: "third_section_content_7", widget: "string"}
-          - {label: "Bullet List", name: "third_section_content_8", widget: "string"}
-          - {label: "Bullet List", name: "third_section_content_9", widget: "string"}
-
+          - label: "Bullet list"
+            name: "third_bullet_list"
+            widget: "list"
+            collapsed: true
+            fields:
+                - {label: "Bullet List", name: "third_section_content", widget: "string"}
       - label: "Fourth Section"
-        name: "fourth_section"
+        name: "4th_section"
         widget: "object"
         collapsed: true
         fields:
           - {label: "Title", name: "fourth_section_title", widget: "string"}
-          - {label: "Bonus Link", name: "fourth_section_bonus_link", widget: "string"}
-          - {label: "Bullet List", name: "fourth_section_content_1", widget: "string"}
-          - {label: "Bullet List", name: "fourth_section_content_2", widget: "string"}
-          - {label: "Bullet List", name: "fourth_section_content_3", widget: "string"}
-          - {label: "Bullet List", name: "fourth_section_content_4", widget: "string"}
-          - {label: "Bullet List", name: "fourth_section_content_5", widget: "string"}
-          - {label: "Bullet List", name: "fourth_section_content_6", widget: "string"}
-          - {label: "Bullet List", name: "fourth_section_content_7", widget: "string"}
-          - {label: "Bullet List", name: "fourth_section_content_8", widget: "string"}
-          - {label: "Bullet List", name: "fourth_section_content_9", widget: "string"}
-          - {label: "Bullet List", name: "fourth_section_content_10", widget: "string"}
-          - {label: "Bullet List", name: "fourth_section_content_11", widget: "string"}
-          - {label: "Bullet List", name: "fourth_section_content_12", widget: "string"}
-          - {label: "Bullet List", name: "fourth_section_content_13", widget: "string"}
-          - {label: "Bullet List", name: "fourth_section_content_14", widget: "string"}
-          - {label: "Bullet List", name: "fourth_section_content_15", widget: "string"}
-
-      - {label: Template, name: promo_template, widget: hidden, default: "VJLP3-NoForm"}
-      - {label: 'Body', name: 'body', widget: 'markdown' }
+          - label: "Bullet list"
+            name: "fourth_bullet_list"
+            widget: "list"
+            collapsed: true
+            fields:
+                - {label: "Bullet List", name: "fourth_section_content", widget: "string"}
 
 
 
