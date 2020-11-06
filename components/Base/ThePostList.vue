@@ -4,8 +4,8 @@
             <div v-for="(post, post_index) in posts" :key="post_index">
                 <nuxt-link :to="'/marketing/' + post.path + '/' + post.slug" class="post-preview">
                     <article>
-                        <h3>{{post.slug}}</h3>
-                        <p>{{post.attributes.slug_name}}</p>
+                        <h3>{{post.attributes.slug_name}}</h3>
+                        <p>{{post.attributes.promo_banner.promo_title}}</p>
                     </article>
                 </nuxt-link>
             </div>

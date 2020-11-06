@@ -353,6 +353,7 @@ collections:
         widget: "object"
         collapsed: true
         fields:
+          - {label: "Title", name: "promo_title", widget: "string"}
           - {label: "Login Button", name: promo_login_button, widget: "string"}
           - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
           - {label: "Join Button", name: promo_join_button, widget: "string"}
