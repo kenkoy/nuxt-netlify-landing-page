@@ -32,24 +32,24 @@
                         <div class="animated fadeIn delay-halfs">
                             <span class="num">1</span>
                             <div>
-                                <h3>{{data_items.promo_banner.steps.step_title_1}}</h3>
-                                <p>{{data_items.promo_banner.steps.step_description_1}}</p>
+                                <h3>{{data_items.steps.step_title_1}}</h3>
+                                <p>{{data_items.steps.step_description_1}}</p>
                             </div>
                         </div>
 
                         <div class="animated fadeIn delay-1s">
                             <span class="num">2</span>
                             <div>
-                                <h3>{{data_items.promo_banner.steps.step_title_2}}</h3>
-                                <p>{{data_items.promo_banner.steps.step_description_2}}</p>
+                                <h3>{{data_items.steps.step_title_2}}</h3>
+                                <p>{{data_items.steps.step_description_2}}</p>
                             </div>
                         </div>
 
                         <div class="animated fadeIn delay-1-and-halfs">
                             <span class="num">3</span>
                             <div>
-                                <h3>{{data_items.promo_banner.steps.step_title_3}}</h3>
-                                <p>{{data_items.promo_banner.steps.step_description_3}}</p>
+                                <h3>{{data_items.steps.step_title_3}}</h3>
+                                <p>{{data_items.steps.step_description_3}}</p>
                             </div>
                         </div>
 
@@ -59,8 +59,10 @@
                 <section id="section1">
                     <div class="container">
                         <div>
-                            <h2>{{data_items.first_section.first_section_title}}</h2>
-                            <p>{{data_items.first_section.first_section_description}}</p>
+                            <div v-for="(first_section, first_index) in data_items.first_section" :key="first_index">
+                                <h2>{{first_section.first_section_title}}</h2>
+                                <p>{{first_section.first_section_description}}</p>
+                            </div>
 
                             <div class="separator"></div>
                         </div>
@@ -70,31 +72,17 @@
                 <section id="section2">
                     <div class="container column-2">
                         <div>
-                            <h2>{{data_items.second_section.second_section_title_1}}</h2>
-                            <p>{{data_items.second_section.second_section_content_1}}</p>
-
-                            <h2>{{data_items.second_section.second_section_title_2}}</h2>
-                            <p>{{data_items.second_section.second_section_content_2}}</p>
-
-                            <h2>{{data_items.second_section.second_section_title_3}}</h2>
-                            <p>{{data_items.second_section.second_section_content_3}}</p>
-
-                            <h2>{{data_items.second_section.second_section_title_4}}</h2>
-                            <p>{{data_items.second_section.second_section_content_4}}</p>
+                            <div v-for="(second_section_left, second_left_index) in data_items.second_section_left" :key="second_left_index">
+                                <h2>{{second_section_left.second_section_title}}</h2>
+                                <p>{{second_section_left.second_section_content}}</p>
+                            </div>
                         </div>
 
                         <div>
-                            <h2>{{data_items.second_section.second_section_title_5}}</h2>
-                            <p>{{data_items.second_section.second_section_content_5}}</p>
-
-                            <h2>{{data_items.second_section.second_section_title_6}}</h2>
-                            <p>{{data_items.second_section.second_section_content_6}}</p>
-
-                            <h2>{{data_items.second_section.second_section_title_7}}</h2>
-                            <p>{{data_items.second_section.second_section_content_7}}</p>
-
-                            <h2>{{data_items.second_section.second_section_title_8}}</h2>
-                            <p>{{data_items.second_section.second_section_content_8}}</p>
+                            <div v-for="(second_section_right, second_right_index) in data_items.second_section_right" :key="second_right_index">
+                                <h2>{{second_section_right.second_section_title}}</h2>
+                                <p>{{second_section_right.second_section_content}}</p>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -112,15 +100,9 @@
                             <h2>{{data_items.third_section.third_section_title}}</h2>
 
                             <ol>
-                                <li>{{data_items.third_section.third_section_content_1}}</li>
-                                <li>{{data_items.third_section.third_section_content_2}}</li>
-                                <li>{{data_items.third_section.third_section_content_3}}</li>
-                                <li>{{data_items.third_section.third_section_content_4}}</li>
-                                <li>{{data_items.third_section.third_section_content_5}}</li>
-                                <li>{{data_items.third_section.third_section_content_6}}</li>
-                                <li>{{data_items.third_section.third_section_content_7}}</li>
-                                <li>{{data_items.third_section.third_section_content_8}}</li>
-                                <li>{{data_items.third_section.third_section_content_9}}</li>
+                                <li v-for="(third_section_list, third_index) in data_items.third_section.third_bullet_list" :key="third_index">
+                                    {{third_section_list.third_section_content}}
+                                </li>
                             </ol>
 
                             <div class="separator"></div>
@@ -134,21 +116,9 @@
                             <h2>{{data_items.fourth_section.fourth_section_title}}</h2>
 
                             <ol>
-                                <li>{{data_items.fourth_section.fourth_section_content_1}}</li>
-                                <li>{{data_items.fourth_section.fourth_section_content_2}}</li>
-                                <li>{{data_items.fourth_section.fourth_section_content_3}}</li>
-                                <li>{{data_items.fourth_section.fourth_section_content_4}}</li>
-                                <li>{{data_items.fourth_section.fourth_section_content_5}}</li>
-                                <li>{{data_items.fourth_section.fourth_section_content_6}}</li>
-                                <li>{{data_items.fourth_section.fourth_section_content_7}}</li>
-                                <li>{{data_items.fourth_section.fourth_section_content_8}}</li>
-                                <li>{{data_items.fourth_section.fourth_section_content_9}}</li>
-                                <li>{{data_items.fourth_section.fourth_section_content_10}}</li>
-                                <li>{{data_items.fourth_section.fourth_section_content_11}}</li>
-                                <li>{{data_items.fourth_section.fourth_section_content_12}}</li>
-                                <li>{{data_items.fourth_section.fourth_section_content_13}}</li>
-                                <li>{{data_items.fourth_section.fourth_section_content_14}}</li>
-                                <li>{{data_items.fourth_section.fourth_section_content_15}}</li>
+                                <li v-for="(fourth_section_list, fourth_index) in data_items.fourth_section.fourth_bullet_list" :key="fourth_index">
+                                    {{fourth_section_list.fourth_section_content}}
+                                </li>
                             </ol>
 
                             <div class="separator"></div>
