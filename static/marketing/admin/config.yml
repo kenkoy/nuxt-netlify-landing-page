@@ -19,7 +19,13 @@ backend:
 publish_mode: editorial_workflow
 # media_folder: static/marketing/img
 # public_folder: /marketing/img
+
+
 media_folder: assets/images
+public_folder: 
+
+
+# media_folder: assets/images
 # public_folder: /_nuxt/assets/images
 
 
