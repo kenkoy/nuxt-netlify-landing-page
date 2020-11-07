@@ -11,7 +11,7 @@ promo_banner:
   promo_join_button: asdas
   promo_join_button_redirect_url: sadasd
   promo_images:
-    promo_bg_desktop: /_nuxt/assets/images/gamesys-logo.svg
+    promo_bg_desktop: /_nuxt/assets/images/gamesys-logo.png
     promo_bg_mobile: /_nuxt/assets/images/banner-desktop-new.png
     promo_bg_banner: /_nuxt/assets/images/banner-desktop-new.png
 steps:
