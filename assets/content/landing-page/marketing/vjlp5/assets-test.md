@@ -11,11 +11,11 @@ promo_banner:
   promo_join_button: asdas
   promo_join_button_redirect_url: sadasd
   promo_images:
-    promo_bg_desktop: assets/images/voltes.jpg
-    promo_bg_mobile: assets/images/voltes.jpg
-    promo_bg_banner: assets/images/voltes.jpg
+    promo_bg_desktop: /_nuxt/assets/images/gamesys-logo.svg
+    promo_bg_mobile: /_nuxt/assets/images/gamesys-logo.svg
+    promo_bg_banner: /_nuxt/assets/images/gamesys-logo.svg
 steps:
-  step_title_1: xxxxxxyyy
+  step_title_1: xxxxxxyyyzzzzzzz
   step_description_1: asdas
   step_title_2: asdasdasd
   step_description_2: asdas
