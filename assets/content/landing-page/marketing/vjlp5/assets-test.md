@@ -13,7 +13,7 @@ promo_banner:
   promo_images:
     promo_bg_desktop: dante.png
     promo_bg_mobile: dante.png
-    promo_bg_banner: dante.png
+    promo_bg_banner: suit_png93207.png
 steps:
   step_title_1: xxxxxxyyyzzzzzzzqqqqq
   step_description_1: asdas
