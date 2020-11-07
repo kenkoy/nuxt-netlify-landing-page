@@ -11,11 +11,11 @@ promo_banner:
   promo_join_button: asdas
   promo_join_button_redirect_url: sadasd
   promo_images:
-    promo_bg_desktop: /assets/images/voltes.jpg
-    promo_bg_mobile: /assets/images/voltes.jpg
-    promo_bg_banner: /assets/images/voltes.jpg
+    promo_bg_desktop: /assets/images/banner-desktop-new.png
+    promo_bg_mobile: /assets/images/banner-desktop-new.png
+    promo_bg_banner: /assets/images/banner-desktop-new.png
 steps:
-  step_title_1: xxxxxxyyyzzzzzzz
+  step_title_1: xxxxxxyyyzzzzzzzqqqqq
   step_description_1: asdas
   step_title_2: asdasdasd
   step_description_2: asdas
