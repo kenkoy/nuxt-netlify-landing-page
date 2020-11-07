@@ -20,7 +20,7 @@ publish_mode: editorial_workflow
 # media_folder: static/marketing/img
 # public_folder: /marketing/img
 media_folder: assets/images
-public_folder: assets/images
+public_folder: require('assets/images')
 
 
 collections:
