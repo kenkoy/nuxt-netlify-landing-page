@@ -6,7 +6,9 @@
 
             <div v-for="(data_items, data_index) in md_data" :key="data_index">
 
-
+                <!-- <img :src="data_items.promo_banner.promo_images.promo_bg_mobile" data-not-lazy/> -->
+                <img :src="require(`~/assets/images/${data_items.promo_banner.promo_images.promo_bg_banner}`)" data-not-lazy />
+                <!-- <img src="@/assets/images/gamesys-logo.svg" data-not-lazy/> -->
 
                 <header id="header">
                     <div class="container">
