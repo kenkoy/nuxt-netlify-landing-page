@@ -6,6 +6,8 @@
 
             <div v-for="(data_items, data_index) in md_data" :key="data_index">
 
+
+
                 <header id="header">
                     <div class="container">
                         <div class="logo">
@@ -172,7 +174,7 @@
                 desktop: true,
                 mobile: false,
                 md_data: { },
-                language: ''
+                language: '',
             }
         },
         components: {
