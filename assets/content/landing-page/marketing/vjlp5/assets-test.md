@@ -15,7 +15,7 @@ promo_banner:
     promo_bg_mobile: /marketing/img/banner-desktop-new.png
     promo_bg_banner: /marketing/img/gamesys-logo.svg
 steps:
-  step_title_1: " asdasd asd. asdasdsadas"
+  step_title_1: xxxxxx
   step_description_1: asdas
   step_title_2: asdasdasd
   step_description_2: asdas
