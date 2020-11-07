@@ -21,7 +21,7 @@ publish_mode: editorial_workflow
 # public_folder: /marketing/img
 
 
-media_folder: assets/images
+media_folder: assets/images/{{page}}
 public_folder: ''
 
 
