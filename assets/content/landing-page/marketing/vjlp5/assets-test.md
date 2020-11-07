@@ -1,5 +1,5 @@
 ---
-slug_name: assets test
+slug_name: assets tests
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
