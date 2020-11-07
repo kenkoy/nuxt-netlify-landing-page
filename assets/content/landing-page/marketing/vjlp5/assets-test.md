@@ -1,5 +1,5 @@
 ---
-slug_name: assets testxxxxx
+slug_name: assets test
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
