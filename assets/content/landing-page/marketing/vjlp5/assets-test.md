@@ -15,7 +15,7 @@ promo_banner:
     promo_bg_mobile: assets/images/banner-desktop-new.png
     promo_bg_banner: assets/images/banner-desktop-new.png
 steps:
-  step_title_1: xxxxxx
+  step_title_1: xxxxxxyyy
   step_description_1: asdas
   step_title_2: asdasdasd
   step_description_2: asdas
