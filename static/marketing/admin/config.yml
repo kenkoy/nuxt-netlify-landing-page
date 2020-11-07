@@ -17,7 +17,8 @@ backend:
   # auth_endpoint: oauth/authorize
 
 publish_mode: editorial_workflow
-media_folder: static/marketing/img
+# media_folder: static/marketing/img
+media_folder: assets/images
 public_folder: /marketing/img
 
 collections:
