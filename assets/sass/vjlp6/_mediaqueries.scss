@@ -1,0 +1,254 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+   /*--FONT SIZE--*/
+   h2{
+     font-size: $SUB_TITLE_SIZE;
+     text-align: center;
+   }
+   p, li{
+     font-size: $TEXT_SIZE;
+     text-align: justify;
+   }
+   button{
+     font-size: $BTN_SIZE;
+     padding: 6px 12px;
+     color: $BTN_COLOR;
+   }
+
+
+   section,
+   footer{
+       padding: 25px 30px;
+   }
+
+
+   #header{
+     position: relative;
+     padding-left: 15px;
+     padding-right: 15px;
+   }
+   #header .container{
+     justify-content: flex-end;
+   }
+   #header .logo{
+     position: absolute;
+     left: 15px;
+     top: -8px;
+
+     img{
+       max-width: 75px;
+     }
+   }
+   #header .nav-links {
+       margin: 15px 0;
+       flex-grow: 0;
+
+       button:first-child{
+         display: none;
+       }
+
+       > button{
+         margin: 0 5px;
+       }
+   }
+
+
+
+   #hero{
+     background: url('../assets/images/vjlp5/bg-dt.jpg') no-repeat center #000;
+     min-height: 180px;
+     background-size: cover;
+   }
+   #hero .container{
+       flex-wrap: wrap;
+       align-items: flex-end;
+   }
+
+   #hero button{
+       display: block;
+       margin: 0 auto;
+       min-width: 150px;
+       padding: 6px 50px;
+   }
+
+   #steps{
+     background: #EC008B;
+
+     .container{
+       display: block;
+       text-align: center;
+
+       > div{
+         display: inline-block;
+         vertical-align: top;
+         width: 31%;
+         overflow: hidden;
+         margin-top: -50px;
+
+         .num{
+           width: 50px;
+           height: 50px;
+           align-items: center;
+           display: flex;
+           justify-content: center;
+           border-radius: 50%;
+           -moz-border-radius: 50%;
+           color: #EC008B;
+           font-size: 40px;
+           font-weight: 700;
+           margin: auto;
+           font-family: 'MainFont-DemiBold';
+         }
+
+         h3{
+           color: $SUB_TITLE_COLOR;
+         }
+
+         p{
+           text-align: center;
+         }
+
+       }
+     }
+   }
+
+   #section1 h2{
+     font-size: 46px;
+   }
+
+   #section2 h2{
+       text-align: left;
+   }
+
+   #section3{
+     .container{
+       background: url('https://files.vjpromo.com/bannerflow/lp-core/pp/payment_jp.svg') center center no-repeat;
+       min-height: 200px;
+     }
+   }
+
+
+   footer{
+
+     #footer-icon{
+       text-align: center;
+
+       > a{
+         display: inline-block;
+         min-width: 70px;
+         vertical-align: middle;
+         border: none;
+         margin: 0 10px;
+       }
+     }
+
+     p{
+       text-align: center;
+     }
+   }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 576px) {
+   #header .nav-links {
+     button:first-child{
+       display: inline-block;
+     }
+   }
+   #steps{
+     .container{
+
+       > div {
+         .num{
+           width: 80px;
+           height: 80px;
+         }
+       }
+     }
+   }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+   #header .logo{
+       top: -30px;
+       img{
+         max-width: 128px;
+       }
+   }
+
+   #hero{
+     height: 320px;
+   }
+
+   #hero .banner + div{
+       justify-content: flex-end;
+       display: flex;
+
+       button{
+         margin: 0;
+       }
+   }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+ #hero{
+     background-size: contain;
+ }
+ #section3{
+   .container{
+     background: url(https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg) center center no-repeat;
+   }
+ }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+   .nav-links{
+       -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+       -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+       box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+       border-radius: 5px;
+       padding: 8px;
+
+       button{
+           min-width: 150px;
+           padding: 6px 50px;
+       }
+   }
+
+   #steps{
+     .container{
+
+       > div {
+         margin-top: 0;
+
+         > * {
+           float: left;
+           text-align: left;
+         }
+
+         h3{
+           font-size: 32px;
+           margin: 0;
+           font-weight: 400;
+         }
+
+         .num + div{
+           margin-left: 20px;
+         }
+
+         .num{
+           width: 100px;
+           height: 100px;
+           font-size: 80px;
+         }
+       }
+     }
+   }
+
+   #section1 h2{
+     font-size: 60px;
+   }
+}
