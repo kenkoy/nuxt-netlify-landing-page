@@ -451,7 +451,7 @@ collections:
     create: true
     identifier_field: "slug_name"
     slug: '{{slug}}'
-    preview_path: vjlp5/{{slug}}
+    preview_path: vjlp6/{{slug}}
     show_preview_links: false
     editor:
       preview: false
