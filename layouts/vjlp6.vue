@@ -136,7 +136,7 @@
 </template>
 
 <script>
-    import Vjlp5Data from '~/pages/marketing/vjlp5/_slug/index.vue'
+    import Vjlp6Data from '~/pages/marketing/vjlp6/_slug/index.vue'
     import Footer from '~/components/Base/TheFooter.vue'
 
     export default{
@@ -179,9 +179,9 @@
 </script>
 
 <style lang="scss">
-    .vjlp5_wrapper {
+    .vjlp6_wrapper {
         @import '@/assets/sass/base/fonts.css';
-        @import '@/assets/sass/vjlp5/style.scss';
+        @import '@/assets/sass/vjlp6/style.scss';
         @import '@/assets/sass/base/style.scss';
     }
 </style>
