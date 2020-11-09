@@ -151,7 +151,7 @@
             }
         },
         components: {
-            Vjlp5Data,
+            Vjlp6Data,
             Footer
         },
         methods: {
