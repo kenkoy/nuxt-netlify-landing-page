@@ -9,7 +9,7 @@
                 <img :src="data_items.promo_banner.promo_images.promo_bg_mobile" data-not-lazy/>
                 <!-- <img :src="require(`~/assets/images/cms_media/${data_items.promo_banner.promo_images.promo_bg_banner}`)" data-not-lazy /> -->
 
-                <!-- <p>{{data_items.promo_banner}}</p> -->
+                <p>{{data_items.promo_banner}}</p>
 
 
 
