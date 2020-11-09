@@ -45,8 +45,8 @@
         <footer v-else>
             <div class="container">
                 <div id="footer-payment">
-                    <img class="desktop" src="https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_en.svg" alt="vjpromo payment"/>
-                    <img class="mobile" src="https://files.vjpromo.com/bannerflow/lp-core/pp/payment_en.svg" alt="vjpromo payment"/>
+                    <img v-if="desktop" src="https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_en.svg" alt="vjpromo payment"/>
+                    <img v-if="mobile" src="https://files.vjpromo.com/bannerflow/lp-core/pp/payment_en.svg" alt="vjpromo payment"/>
                 </div>
             </div>
 
@@ -97,6 +97,32 @@ export default {
       type: String,
       required: false,
     }
+  },
+  data(){
+      return{
+          desktop: true,
+          mobile: false,
+      }
+  },
+  destroyed() {
+      window.removeEventListener("resize", this.myEventHandler);
+  },
+  mounted(){
+      this.myEventHandler()
+      window.addEventListener("resize", this.myEventHandler);
+  },
+  methods:{
+      myEventHandler(e) {
+          /* code for handling resize */
+          if (window.innerWidth <= 992){
+              this.desktop = false
+              this.mobile = true
+          }
+          else {
+              this.desktop = true
+              this.mobile = false
+          }
+      }
   },
   computed: {
     responsibleGamingURL: function () {
