@@ -17,17 +17,17 @@ backend:
   # auth_endpoint: oauth/authorize
 
 publish_mode: editorial_workflow
-# media_folder: static/marketing/img
-# public_folder: /marketing/img
+media_folder: static/marketing/img
+public_folder: /marketing/img
 
-
-
-media_folder: assets/images/cms_media
-public_folder: ''
 
 
 # media_folder: assets/images/cms_media
-# public_folder: /_nuxt/assets/images
+# public_folder: ''
+
+
+# media_folder: assets/images/cms_media
+# public_folder: /_nuxt/assets/images/cms_media/
 
 
 collections:
