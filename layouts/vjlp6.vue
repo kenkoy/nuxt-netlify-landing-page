@@ -2,7 +2,7 @@
     <div :class="{ vjlp6_wrapper: true }">
         <div class="vjlp6-main">
             <!-- PAGE HANDLING DATA -->
-            <Vjlp5Data @emitMDcontent="getMDcontent"/>
+            <Vjlp6Data @emitMDcontent="getMDcontent"/>
 
             <div v-for="(data_items, data_index) in md_data" :key="data_index">
                 <header id="header">
