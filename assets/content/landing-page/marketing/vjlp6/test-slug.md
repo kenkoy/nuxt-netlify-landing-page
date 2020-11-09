@@ -1,5 +1,5 @@
 ---
-slug_name: test-slug
+slug_name: test-slug-2
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
