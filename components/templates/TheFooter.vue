@@ -13,7 +13,7 @@
       <div class="row">
         <div class="icons text-center">
           <div class="icon">
-            <a 
+            <a
               :href="responsibleGamingURL"
               target="blank"
               aria-label="Responsible Gaming">
@@ -92,7 +92,7 @@
       <div class="row">
         <div class="icons text-center">
           <div class="icon">
-            <a 
+            <a
               :href="responsibleGamingURL"
               target="blank"
               aria-label="Responsible Gaming">
@@ -173,7 +173,7 @@ export default {
         case 'verajohn':
           returnURL = 'https://www.verajohn.com/about/responsible-gaming';
           break;
-        case 'intercasino': 
+        case 'intercasino':
           returnURL = 'https://www.intercasino.com/about/responsible-gaming';
           break;
         default:

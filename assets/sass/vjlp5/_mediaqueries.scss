@@ -142,6 +142,10 @@
        }
      }
 
+     .second-footer{
+        padding: 25px 30px;
+     }
+
      p{
        text-align: center;
      }
@@ -193,14 +197,14 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
- #hero{
-     background-size: contain;
- }
- #section3{
-   .container{
-     background: url(https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg) center center no-repeat;
-   }
- }
+     #hero{
+         background-size: contain;
+     }
+     #section3{
+       .container{
+         background: url(https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg) center center no-repeat;
+       }
+     }
 }
 
 /* Large Devices, Wide Screens */
