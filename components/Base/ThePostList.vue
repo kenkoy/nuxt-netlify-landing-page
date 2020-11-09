@@ -1,20 +1,21 @@
 <template>
-    <section class="featured-posts">
-        <div class="container">
-            <div v-for="(post, post_index) in posts" :key="post_index">
-                <nuxt-link :to="'/marketing/' + post.path + '/' + post.slug" class="post-preview">
-                    <article>
-                        <h3>{{post.attributes.slug_name}}</h3>
-                        <p>{{post.attributes.promo_banner.promo_title}}</p>
-                    </article>
-                </nuxt-link>
+    <div :class="{ post_wrapper: true }">
+        <section id="featured-posts">
+            <div class="container">
+                <div class="posts" v-for="(post, post_index) in posts" :key="post_index">
+                    <nuxt-link :to="'/marketing/' + post.path + '/' + post.slug" class="post-preview">
+                        <article>
+                            <h3>{{post.attributes.slug_name}}</h3>
+                            <p>{{post.attributes.promo_banner.promo_title}}</p>
+                        </article>
+                    </nuxt-link>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </template>
 
 <script>
-
 export default {
     props: {
         posts: {
@@ -25,91 +26,52 @@ export default {
 }
 </script>
 
+
 <style lang="scss">
-    ul.nav-list a {
-        font-size: 15px;
+    .post_wrapper {
+        @import '@/assets/sass/base/style.scss';
     }
-    .featured-posts{
-        background: #fff;
 
-        .container {
+    #featured-posts{
+        background-color: #e43229;
+        background-size: cover;
+        padding: 50px 0;
+        background-image: url('https://media.cdn.teamtailor.com/images/s3/teamtailor-production/hero_picture_large_full_cover-v4/image_uploads/d3e1664a-0fa8-45fd-bab5-571a651bbe9d/original.jpg');
+
+        a{
+            text-decoration: none;
+            color: #2C3E50;
+            font-size: 14px;
+            line-height: 24px;
+            background: #fff;
             display: block;
-            padding: 50px 0;
-            text-align: center;
-
-            a {
-                text-decoration: none;
-                // color: #e33227;
-                color: #000;
-                display: block;
-                min-height: 130px;
-                height: 100%;
-                padding: 20px 50px;
-            }
-
-            > div{
-                vertical-align: top;
-                display: inline-block;
-                box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                background: #1e90ff;
-                box-shadow: 2px 2px 3px #bdbdbd;
-                position: relative;
-
-                &:hover{
-                    opacity: .8;
-                }
-            }
-        }
-    }
-
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
-    }
-
-
-    /* Custom, iPhone Retina */
-    @media only screen and (min-width : 320px) {
-        .featured-posts{
-            padding: 0 20px;
-        }
-        .featured-posts .container > div{
             width: 100%;
-            margin: 10px 0;
+            height: 100%;
+            padding: 25px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
+            -moz-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
+            box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
         }
-    }
-
-    /* Extra Small Devices, Phones */
-    @media only screen and (min-width : 576px) {
-
-    }
-
-    /* Small Devices, Tablets */
-    @media only screen and (min-width : 768px) {
-        .featured-posts .container > div{
-            width: 47%;
-            margin: 10px;
+        h3{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            color: #e43229;
+            text-transform: none;
+            margin: 0;
         }
-    }
 
-    /* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
+        .container{
+            flex-wrap: wrap;
+        }
 
-    }
-
-    /* Large Devices, Wide Screens */
-    @media only screen and (min-width : 1200px) {
-        .featured-posts .container > div{
-            width: 31.5%;
-            margin: 10px;
+        .posts{
+            padding: 10px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            max-width: 33.33%;
         }
     }
 </style>
