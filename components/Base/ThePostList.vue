@@ -22,6 +22,9 @@ export default {
             type: Array,
             required: true
         }
+    },
+    mounted(){
+        console.log("ROUTE", $nuxt.$route.name)
     }
 }
 </script>
@@ -33,16 +36,19 @@ export default {
     }
 
     #featured-posts{
-        background-color: #e43229;
+        // background-color: #e43229;
+        background: #009FE3;
         background-size: cover;
         padding: 50px 0;
-        background-image: url('https://media.cdn.teamtailor.com/images/s3/teamtailor-production/hero_picture_large_full_cover-v4/image_uploads/d3e1664a-0fa8-45fd-bab5-571a651bbe9d/original.jpg');
+        // background-image: url('https://media.cdn.teamtailor.com/images/s3/teamtailor-production/hero_picture_large_full_cover-v4/image_uploads/d3e1664a-0fa8-45fd-bab5-571a651bbe9d/original.jpg');
 
         a{
             text-decoration: none;
-            color: #2C3E50;
+            // color: #2C3E50;
+            color: #08648a;
             font-size: 14px;
             line-height: 24px;
+            // background: #fff;
             background: #fff;
             display: block;
             width: 100%;
@@ -53,12 +59,22 @@ export default {
             -webkit-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
             -moz-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
             box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
+
+            &:hover{
+                background: #EC008B;
+                color: #fff;
+
+                h3{
+                    color: #FEE63D;
+                }
+            }
         }
         h3{
             font-weight: 700;
             font-size: 18px;
             line-height: 25px;
-            color: #e43229;
+            color: #EC0090;
+            // color: #e43229;
             text-transform: none;
             margin: 0;
         }

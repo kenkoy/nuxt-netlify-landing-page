@@ -4,6 +4,7 @@
             <div class="container">
                 <div>
                     <!-- <img src="@/assets/img/gamesys-logo.png"/> -->
+                    <img src="~/assets/images/gamesys-logo.png"/>
                 </div>
                 <div>
                     <nuxt-link :to="nav_links.link" v-for="(nav_links, nav_index) in nav_items" :key="nav_index">
