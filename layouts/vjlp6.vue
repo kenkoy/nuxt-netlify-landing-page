@@ -8,6 +8,19 @@
 
                 <!-- <img :src="data_items.promo_banner.promo_images.promo_bg_mobile" data-not-lazy/> -->
                 <!--<img :src="require(`~/assets/images/cms_media/${data_items.promo_banner.promo_images.promo_bg_banner}`)" data-not-lazy />-->
+
+                <header id="header">
+                    <div class="container">
+                        <div class="logo">
+                            <img alt="alt logo" src="@/assets/images/vjlp6/vj-logo.png" data-not-lazy>
+                        </div>
+
+                        <div class="nav-links">
+                            <button class="warning">{{data_items.promo_banner.promo_login_button}}</button>
+                            <button class="error animated pulse infinite"><strong>{{data_items.promo_banner.promo_join_button}}</strong></button>
+                        </div>
+                    </div>
+                </header>
                 <section id="hero">
                     <div class="container">
                         <div class="banner">
