@@ -737,6 +737,9 @@ collections:
               - label: Bullet List
                 name: fourth_section_content
                 widget: string
+      - label: Body
+        name: body
+        widget: markdown
   - name: VJLP6-NoForm
     label: Vera&John Template 6
     format: frontmatter

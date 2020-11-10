@@ -12,8 +12,14 @@
                         </div>
 
                         <div class="nav-links">
-                            <button class="warning">{{data_items.promo_banner.promo_login_button}}</button>
-                            <button class="error animated pulse infinite"><strong>{{data_items.promo_banner.promo_join_button}}</strong></button>
+                            <button class="warning">
+                                <a :href="data_items.attributes.promo_banner.promo_join_button_redirect_url">
+                                    {{data_items.attributes.promo_banner.promo_login_button}}
+                                </a>
+                            </button>
+                            <button class="error animated pulse infinite">
+                                <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url"><strong>{{data_items.attributes.promo_banner.promo_join_button}}</strong></a>
+                            </button>
                         </div>
                     </div>
                 </header>
@@ -31,24 +37,24 @@
                         <div class="animated fadeIn delay-halfs">
                             <span class="num">1</span>
                             <div>
-                                <h3>{{data_items.steps.step_title_1}}</h3>
-                                <p>{{data_items.steps.step_description_1}}</p>
+                                <h3>{{data_items.attributes.steps.step_title_1}}</h3>
+                                <p>{{data_items.attributes.steps.step_description_1}}</p>
                             </div>
                         </div>
 
                         <div class="animated fadeIn delay-1s">
                             <span class="num">2</span>
                             <div>
-                                <h3>{{data_items.steps.step_title_2}}</h3>
-                                <p>{{data_items.steps.step_description_2}}</p>
+                                <h3>{{data_items.attributes.steps.step_title_2}}</h3>
+                                <p>{{data_items.attributes.steps.step_description_2}}</p>
                             </div>
                         </div>
 
                         <div class="animated fadeIn delay-1-and-halfs">
                             <span class="num">3</span>
                             <div>
-                                <h3>{{data_items.steps.step_title_3}}</h3>
-                                <p>{{data_items.steps.step_description_3}}</p>
+                                <h3>{{data_items.attributes.steps.step_title_3}}</h3>
+                                <p>{{data_items.attributes.steps.step_description_3}}</p>
                             </div>
                         </div>
 
@@ -58,7 +64,7 @@
                 <section id="section1">
                     <div class="container">
                         <div>
-                            <div v-for="(first_section, first_index) in data_items.first_section" :key="first_index">
+                            <div v-for="(first_section, first_index) in data_items.attributes.first_section" :key="first_index">
                                 <h2>{{first_section.first_section_title}}</h2>
                                 <p>{{first_section.first_section_description}}</p>
                             </div>
@@ -71,14 +77,14 @@
                 <section id="section2">
                     <div class="container column-2">
                         <div>
-                            <div v-for="(second_section_left, second_left_index) in data_items.second_section_left" :key="second_left_index">
+                            <div v-for="(second_section_left, second_left_index) in data_items.attributes.second_section_left" :key="second_left_index">
                                 <h2>{{second_section_left.second_section_title}}</h2>
                                 <p>{{second_section_left.second_section_content}}</p>
                             </div>
                         </div>
 
                         <div>
-                            <div v-for="(second_section_right, second_right_index) in data_items.second_section_right" :key="second_right_index">
+                            <div v-for="(second_section_right, second_right_index) in data_items.attributes.second_section_right" :key="second_right_index">
                                 <h2>{{second_section_right.second_section_title}}</h2>
                                 <p>{{second_section_right.second_section_content}}</p>
                             </div>
@@ -96,10 +102,10 @@
                 <section id="section4">
                     <div class="container">
                         <div>
-                            <h2>{{data_items.third_section.third_section_title}}</h2>
+                            <h2>{{data_items.attributes.third_section.third_section_title}}</h2>
 
                             <ol>
-                                <li v-for="(third_section_list, third_index) in data_items.third_section.third_bullet_list" :key="third_index">
+                                <li v-for="(third_section_list, third_index) in data_items.attributes.third_section.third_bullet_list" :key="third_index">
                                     {{third_section_list.third_section_content}}
                                 </li>
                             </ol>
@@ -109,21 +115,8 @@
                     </div>
                 </section>
 
-                <section id="section5">
-                    <div class="container">
-                        <div>
-                            <h2>{{data_items.fourth_section.fourth_section_title}}</h2>
 
-                            <ol>
-                                <li v-for="(fourth_section_list, fourth_index) in data_items.fourth_section.fourth_bullet_list" :key="fourth_index">
-                                    {{fourth_section_list.fourth_section_content}}
-                                </li>
-                            </ol>
-
-                            <div class="separator"></div>
-                        </div>
-                    </div>
-                </section>
+                <div v-html='html'></div>
 
                 <Footer
                     :promo_language_code = 'language'
@@ -148,6 +141,7 @@
                 md_data: { },
                 language: '',
                 country_code: '',
+                html: ''
             }
         },
         components: {
@@ -160,8 +154,9 @@
             this.md_data = [ emitData ]
 
             this.md_data.forEach(item => {
-                this.language = item.promo_locale.promo_language_code
-                this.country_code = item.promo_locale.promo_country_code
+                this.language = item.attributes.promo_locale.promo_language_code
+                this.country_code = item.attributes.promo_locale.promo_country_code
+                this.html = item.html
             })
         }
     },

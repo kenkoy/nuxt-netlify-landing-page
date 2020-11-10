@@ -5,6 +5,12 @@
 #header{
   background: $HEADER_BG;
   border-bottom: 3px solid #0082ba;
+
+  .nav-links{
+      a{
+          border: none;
+      }
+  }
 }
 
 h2{
@@ -70,6 +76,8 @@ button.error{
         margin: auto;
     }
 }
+
+
 
 #hero {
     background-color: $HERO_BG;

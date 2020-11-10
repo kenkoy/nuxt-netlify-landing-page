@@ -43,7 +43,7 @@ export default {
             promotions: 'https://verajohn.com/about/promotions-terms-and-conditions',
           };
           break;
-        case 'intercasino': 
+        case 'intercasino':
           returnURL = {
             terms: 'https://intercasino.com/about/terms-and-conditions',
             promotions: 'https://intercasino.com/about/promotions-terms-and-conditions',
