@@ -1,5 +1,5 @@
 ---
-slug_name: 105-vj-lan-jp-pro-mobile-homepage-a-1219
+slug_name: 306-bvj-lan-jp-pro-livecasino-v2-0520
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -14,7 +14,7 @@ promo_banner:
     promo_bg_desktop: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
     promo_bg_mobile: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2-m.jpeg
     promo_bg_banner: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
-  promo_title: 無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！
+  promo_title: 306-bvj-lan-jp-pro-livecasino-v2-0520
 steps:
   step_title_1: ご登録
   step_description_1: 安全 & 安心！
