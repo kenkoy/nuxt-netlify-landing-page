@@ -1,14 +1,10 @@
 <template>
     <div :class="{ vjlp6_wrapper: true }">
-        <div class="vjlp5-main">
+        <div class="vjlp6-main">
             <!-- PAGE HANDLING DATA -->
-            <Vjlp5Data @emitMDcontent="getMDcontent"/>
+            <Vjlp6Data @emitMDcontent="getMDcontent"/>
 
             <div v-for="(data_items, data_index) in md_data" :key="data_index">
-
-                <!-- <img :src="data_items.promo_banner.promo_images.promo_bg_mobile" data-not-lazy/> -->
-                <!--<img :src="require(`~/assets/images/cms_media/${data_items.promo_banner.promo_images.promo_bg_banner}`)" data-not-lazy />-->
-
                 <header id="header">
                     <div class="container">
                         <div class="logo">
@@ -129,44 +125,19 @@
                     </div>
                 </section>
 
-
-                <footer>
-                    <div class="container">
-                        <div>
-                            <div id="footer-icon">
-                                <a href="">
-                                    <img src="https://files.vjpromo.com/bannerflow/lp-core/ico/icon_age.svg" alt="alt img"/>
-                                </a>
-
-                                <a href="">
-                                    <img src="https://files.vjpromo.com/bannerflow/lp-core/ico/icon_gt.svg" alt="alt img"/>
-                                </a>
-
-                                <a href="">
-                                    <img src="https://files.vjpromo.com/bannerflow/lp-core/ico/icon_curacao.svg" alt="alt img"/>
-                                </a>
-                            </div>
-
-                            <p>
-                                <a href="https://www.verajohn.com/about/responsible-gaming">
-                                    ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。
-                                </a>
-                            </p>
-
-                            <p>当ウェブサイトは、キュラソー政府の商業登記に登録されている、番号149132のBreckenridge Curacao B.V.（登録住所：Emancipatie Boulevard, Dominico F. “Don” Martina 31, Willemstad, Curaçao）により運営されています。</p>
-                            <p>Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster Gaming License #5536/JAZに基づく C.I.L Curacao Interavtive Licensing N.V. により付与されたサブライセンスを通して正式な許可を所持しています</p>
-                        </div>
-                    </div>
-                </footer>
-
+                <Footer
+                    :promo_language_code = 'language'
+                    :promo_country_code = 'country_code'
+                    :landing_page_type="'verajohn'"
+                />
             </div>
-
         </div>
     </div>
 </template>
 
 <script>
-    import Vjlp5Data from '~/pages/marketing/vjlp6/_slug/index.vue'
+    import Vjlp6Data from '~/pages/marketing/vjlp6/_slug/index.vue'
+    import Footer from '~/components/Base/TheFooter.vue'
 
     export default{
         data(){
@@ -176,10 +147,12 @@
                 mobile: false,
                 md_data: { },
                 language: '',
+                country_code: '',
             }
         },
         components: {
-            Vjlp5Data
+            Vjlp6Data,
+            Footer
         },
         methods: {
           /* data from 'PAGE' store to 'md_data' local variable */
@@ -188,6 +161,7 @@
 
             this.md_data.forEach(item => {
                 this.language = item.promo_locale.promo_language_code
+                this.country_code = item.promo_locale.promo_country_code
             })
         }
     },

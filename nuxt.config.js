@@ -1,7 +1,16 @@
 const glob = require('glob')
 const path = require('path')
 
-const markdownPaths = ['marketing/vjlp1', 'marketing/vjlp3', 'marketing/vjlp4', 'marketing/vjlp5', 'marketing/iclp1', 'marketing/iclp2', 'marketing/iclp3']
+const markdownPaths = [
+  'marketing/vjlp1',
+  'marketing/vjlp3',
+  'marketing/vjlp4',
+  'marketing/vjlp5',
+  'marketing/vjlp6',
+  'marketing/iclp1',
+  'marketing/iclp2',
+  'marketing/iclp3',
+];
 
 function dynamicMarkdownRoutes() {
   return [].concat(
@@ -14,7 +23,8 @@ function dynamicMarkdownRoutes() {
 
 export default {
   generate: {
-    routes: dynamicMarkdownRoutes
+    routes: dynamicMarkdownRoutes,
+    exclude: ['/marketing/admin']
   },
   // router: {
   //   extendRoutes(routes, resolve) {
@@ -25,7 +35,8 @@ export default {
   //     })
   //   }
   // },
-  mode: 'universal',
+  // mode: 'universal',
+  target: 'static',
   /*
   ** Headers of the page
   */
