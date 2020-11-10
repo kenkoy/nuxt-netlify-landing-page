@@ -3,7 +3,6 @@
         <nav id="nav-desktop" v-if="desktop === true">
             <div class="container">
                 <div>
-                    <!-- <img src="@/assets/img/gamesys-logo.png"/> -->
                     <img src="~/assets/images/gamesys-logo.png"/>
                 </div>
                 <div>
@@ -17,7 +16,7 @@
         <nav id="nav-mobile" v-if="mobile === true">
             <input type="checkbox" id="ham-menu"/>
                 <label for="ham-menu">
-                    <div class="hide-des">
+                    <div class="hide-des" @click="noScroll">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -43,6 +42,7 @@
             return{
                 desktop: true,
                 mobile: false,
+                isActive: false,
 
                 nav_items: [
                     {
@@ -60,6 +60,10 @@
                     {
                         name: "VJLP 5",
                         link: "/marketing/vjlp5"
+                    },
+                    {
+                        name: "VJLP 6",
+                        link: "/marketing/vjlp6"
                     },
                     {
                         name: "ICLP 1",
@@ -97,6 +101,15 @@
                 else{
                     this.desktop = true
                     this.mobile = false
+                }
+            },
+            noScroll(){
+                this.isActive = !this.isActive;
+                if(this.isActive){
+                    document.body.classList.add('noScroll')
+                }
+                else{
+                    document.body.classList.remove('noScroll')
                 }
             }
         }

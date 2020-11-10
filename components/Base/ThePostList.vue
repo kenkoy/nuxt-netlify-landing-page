@@ -1,6 +1,6 @@
 <template>
     <div :class="{ post_wrapper: true }">
-        <section id="featured-posts">
+        <section id="featured-posts" :class="$nuxt.$route.name">
             <div class="container">
                 <div class="posts" v-for="(post, post_index) in posts" :key="post_index">
                     <nuxt-link :to="'/marketing/' + post.path + '/' + post.slug" class="post-preview">
@@ -22,9 +22,6 @@ export default {
             type: Array,
             required: true
         }
-    },
-    mounted(){
-        console.log("ROUTE", $nuxt.$route.name)
     }
 }
 </script>
@@ -35,30 +32,11 @@ export default {
         @import '@/assets/sass/base/style.scss';
     }
 
-    #featured-posts{
-        // background-color: #e43229;
-        background: #009FE3;
-        background-size: cover;
-        padding: 50px 0;
-        // background-image: url('https://media.cdn.teamtailor.com/images/s3/teamtailor-production/hero_picture_large_full_cover-v4/image_uploads/d3e1664a-0fa8-45fd-bab5-571a651bbe9d/original.jpg');
-
+    /*VJLP5*/
+    .marketing-vjlp5{
         a{
-            text-decoration: none;
-            // color: #2C3E50;
             color: #08648a;
-            font-size: 14px;
-            line-height: 24px;
-            // background: #fff;
             background: #fff;
-            display: block;
-            width: 100%;
-            height: 100%;
-            padding: 25px;
-            box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            -webkit-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
-            -moz-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
-            box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
 
             &:hover{
                 background: #EC008B;
@@ -70,11 +48,33 @@ export default {
             }
         }
         h3{
+            color: #EC0090;
+        }
+    }
+
+    #featured-posts{
+        background: #009FE3;
+        background-size: cover;
+        padding: 50px 0;
+
+        a{
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 24px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
+            -moz-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
+            box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
+        }
+        h3{
             font-weight: 700;
             font-size: 18px;
             line-height: 25px;
-            color: #EC0090;
-            // color: #e43229;
             text-transform: none;
             margin: 0;
         }
@@ -87,7 +87,42 @@ export default {
             padding: 10px;
             box-sizing: border-box;
             -moz-box-sizing: border-box;
-            max-width: 33.33%;
         }
+    }
+
+
+
+    /* Custom, iPhone Retina */
+    @media only screen and (min-width : 320px) {
+        #featured-posts{
+            .container{
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+        }
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 576px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+        #featured-posts{
+            .posts{
+                max-width: 33.33%;
+            }
+        }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
     }
 </style>

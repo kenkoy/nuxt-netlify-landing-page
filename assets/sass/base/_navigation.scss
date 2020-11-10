@@ -9,8 +9,10 @@ $NAV_HAMBURGER_BG_CONTENT: #fff;
 $NAV_HAMBURGER_BG_OVERLAY: #000;
 $NAV_HAMBURGER_LINES_COLOR: #fff;
 
-
 /*=== MAIN MENU ===*/
+@at-root body.noScroll{
+    overflow: hidden;
+}
 #nav-desktop{
     background: $NAV_BG;
 
@@ -22,14 +24,14 @@ $NAV_HAMBURGER_LINES_COLOR: #fff;
         }
 
         > div:first-child{
-            -ms-flex: 0 0 30%;
-            flex: 0 0 30%;
-            max-width: 30%;
+            -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+            max-width: 20%;
         }
         > div:first-child + div{
-            -ms-flex: 0 0 70%;
-            flex: 0 0 70%;
-            max-width: 70%;
+            -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+            max-width: 80%;
         }
 
         .nuxt-link-exact-active{
