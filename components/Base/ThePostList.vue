@@ -32,8 +32,11 @@ export default {
         @import '@/assets/sass/base/style.scss';
     }
 
-    /*VJLP5*/
-    .marketing-vjlp5{
+
+    .marketing-vjlp5,
+    .marketing-vjlp6{
+        background: #009FE3;
+
         a{
             color: #08648a;
             background: #fff;
@@ -53,9 +56,9 @@ export default {
     }
 
     #featured-posts{
-        background: #009FE3;
         background-size: cover;
         padding: 50px 0;
+        min-height: calc(100vh - 180px);
 
         a{
             text-decoration: none;

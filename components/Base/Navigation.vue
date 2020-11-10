@@ -6,8 +6,12 @@
                     <img src="~/assets/images/gamesys-logo.png"/>
                 </div>
                 <div>
-                    <nuxt-link :to="nav_links.link" v-for="(nav_links, nav_index) in nav_items" :key="nav_index">
+                    <nuxt-link v-for="(nav_links, nav_index) in nav_items" :key="nav_index" :to="nav_links.path">
                         {{nav_links.name}}
+                    </nuxt-link>
+
+                    <nuxt-link to="/marketing/admin">
+                        Admin
                     </nuxt-link>
                 </div>
             </div>
@@ -26,10 +30,20 @@
                 <div class="ham-menu"> <!-- ADD VERTICAL CLASS TO CHANGE -->
                     <ul class="centre-text bold-text">
                         <li v-for="(nav_links, nav_index) in nav_items" :key="nav_index">
-                            <nuxt-link :to="nav_links.link">
+                            <nuxt-link :to="nav_links.path">
                                 {{nav_links.name}}
                             </nuxt-link>
                         </li>
+                        <li>
+                            <nuxt-link to="/marketing/admin">
+                                Admin
+                            </nuxt-link>
+                        </li>
+                        <!-- <li v-for="(nav_links, nav_index) in nav_items" :key="nav_index">
+                            <nuxt-link :to="nav_links.link">
+                                {{nav_links.name}}
+                            </nuxt-link>
+                        </li> -->
                     </ul>
                 </div>
         </nav>
@@ -43,53 +57,62 @@
                 desktop: true,
                 mobile: false,
                 isActive: false,
-
-                nav_items: [
-                    {
-                        name: "VJLP 1",
-                        link: "/marketing/vjlp1"
-                    },
-                    {
-                        name: "VJLP 3",
-                        link: "/marketing/vjlp3"
-                    },
-                    {
-                        name: "VJLP 4",
-                        link: "/marketing/vjlp4"
-                    },
-                    {
-                        name: "VJLP 5",
-                        link: "/marketing/vjlp5"
-                    },
-                    {
-                        name: "VJLP 6",
-                        link: "/marketing/vjlp6"
-                    },
-                    {
-                        name: "ICLP 1",
-                        link: "/marketing/iclp1"
-                    },
-                    {
-                        name: "ICLP 2",
-                        link: "/marketing/iclp2"
-                    },
-                    {
-                        name: "ICLP 3",
-                        link: "/marketing/iclp3"
-                    },
-                    {
-                        name: "VJ Stripped Down",
-                        link: "/marketing/vjhp2"
-                    },
-                ]
+                nav_items: [],
+                // nav_items: [
+                //     {
+                //         name: "VJLP 1",
+                //         link: "/marketing/vjlp1"
+                //     },
+                //     {
+                //         name: "VJLP 3",
+                //         link: "/marketing/vjlp3"
+                //     },
+                //     {
+                //         name: "VJLP 4",
+                //         link: "/marketing/vjlp4"
+                //     },
+                //     {
+                //         name: "VJLP 5",
+                //         link: "/marketing/vjlp5"
+                //     },
+                //     {
+                //         name: "VJLP 6",
+                //         link: "/marketing/vjlp6"
+                //     },
+                //     {
+                //         name: "ICLP 1",
+                //         link: "/marketing/iclp1"
+                //     },
+                //     {
+                //         name: "ICLP 2",
+                //         link: "/marketing/iclp2"
+                //     },
+                //     {
+                //         name: "ICLP 3",
+                //         link: "/marketing/iclp3"
+                //     },
+                //     {
+                //         name: "VJ Stripped Down",
+                //         link: "/marketing/vjhp2"
+                //     },
+                // ]
             }
         },
         destroyed() {
-            window.removeEventListener("resize", this.myEventHandler);
+            window.removeEventListener("resize", this.myEventHandler)
         },
         mounted(){
             this.myEventHandler()
-            window.addEventListener("resize", this.myEventHandler);
+            window.addEventListener("resize", this.myEventHandler)
+
+            $nuxt.$router.options.routes.forEach(route => {
+                if(!route.name.includes('slug') && !route.name.includes('about') && !route.name.includes('admin') && !route.name.includes('nathan')){
+                    this.nav_items.push({
+                        name: route.name.substr(10, 10),
+                        path: route.path
+                    })
+                }
+            })
         },
         methods: {
             myEventHandler(e) {
