@@ -73,14 +73,13 @@ button.error{
 
 #hero {
     background-color: $HERO_BG;
+    .banner{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+    }
 }
-#hero .banner{
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 100%;
-}
-
 
 #steps{
     .container{

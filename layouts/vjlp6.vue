@@ -5,23 +5,25 @@
             <Vjlp6Data @emitMDcontent="getMDcontent"/>
 
             <div v-for="(data_items, data_index) in md_data" :key="data_index">
-                <header id="header">
-                    <div class="container">
-                        <div class="logo">
-                            <img alt="alt logo" src="@/assets/images/vjlp6/vj-logo.png" data-not-lazy>
-                        </div>
-
-                        <div class="nav-links">
-                            <button class="warning">{{data_items.promo_banner.promo_login_button}}</button>
-                            <button class="error animated pulse infinite"><strong>{{data_items.promo_banner.promo_join_button}}</strong></button>
-                        </div>
-                    </div>
-                </header>
+                
                 <section id="hero">
-                    <div class="container">
-                        <div class="banner">
-
+                    <a id="login-btn" :href="loginURL" class="login hvr-pulse" style="position: absolute; top: 10px; right: 15px; z-index: 999999;">
+                        <div class="animated fadeIn">
+                            <i class="material-icons">exit_to_app</i>
+                            <div class="login-txt">
+                            <p>{{ loginText }}登録</p>
+                            </div>
                         </div>
+                    </a>
+                    <div class="container">
+                        <div class="container-flex strip">
+                        <img style="height: 150px;" src="https://files.vjpromo.com/bannerflow/lp-core/brand_vj/img/logo.png"/>
+                        <h1>今だけ
+                        <br>最高$<span>500</span>のボーナス<br>
+                        をプレゼント！</h1>
+                        <button class="animated pulse infinite">ご登録はこちら</button>
+                        <div class="small-terms banner-terms" data-v-835fbe4a=""><a href="#terms" class="link-terms-conditions ctac">利用規約</a>に同意します。</div>
+                    </div>
                     </div>
                 </section>
 
@@ -52,37 +54,6 @@
                             </div>
                         </div>
 
-                    </div>
-                </section>
-
-                <section id="section1">
-                    <div class="container">
-                        <div>
-                            <div v-for="(first_section, first_index) in data_items.first_section" :key="first_index">
-                                <h2>{{first_section.first_section_title}}</h2>
-                                <p>{{first_section.first_section_description}}</p>
-                            </div>
-
-                            <div class="separator"></div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="section2">
-                    <div class="container column-2">
-                        <div>
-                            <div v-for="(second_section_left, second_left_index) in data_items.second_section_left" :key="second_left_index">
-                                <h2>{{second_section_left.second_section_title}}</h2>
-                                <p>{{second_section_left.second_section_content}}</p>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div v-for="(second_section_right, second_right_index) in data_items.second_section_right" :key="second_right_index">
-                                <h2>{{second_section_right.second_section_title}}</h2>
-                                <p>{{second_section_right.second_section_content}}</p>
-                            </div>
-                        </div>
                     </div>
                 </section>
 
