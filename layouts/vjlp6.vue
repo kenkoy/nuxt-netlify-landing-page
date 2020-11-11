@@ -7,7 +7,7 @@
             <div v-for="(data_items, data_index) in md_data" :key="data_index">
                 
                 <section id="hero">
-                    <a id="login-btn" :href="loginURL" class="login hvr-pulse" style="position: absolute; top: 10px; right: 15px; z-index: 999999;">
+                    <a id="login-btn" :href="loginURL" class="login hvr-pulse">
                         <div class="animated fadeIn">
                             <i class="material-icons">exit_to_app</i>
                             <div class="login-txt">
@@ -16,14 +16,16 @@
                         </div>
                     </a>
                     <div class="container">
-                        <div class="container-flex strip">
-                        <img style="height: 150px;" src="https://files.vjpromo.com/bannerflow/lp-core/brand_vj/img/logo.png"/>
-                        <h1>今だけ
-                        <br>最高$<span>500</span>のボーナス<br>
-                        をプレゼント！</h1>
-                        <button class="animated pulse infinite">ご登録はこちら</button>
-                        <div class="small-terms banner-terms" data-v-835fbe4a=""><a href="#terms" class="link-terms-conditions ctac">利用規約</a>に同意します。</div>
-                    </div>
+                        <div class="strip">
+                            <img style="height: 150px;" src="https://files.vjpromo.com/bannerflow/lp-core/brand_vj/img/logo.png"/>
+                            <div>
+                                <h1>今だけ
+                                <br>最高$<span>500</span>のボーナス<br>
+                                をプレゼント！</h1>
+                                <button class="animated pulse infinite">ご登録はこちら</button>
+                                <div class="small-terms banner-terms" data-v-835fbe4a=""><a href="#terms" class="link-terms-conditions ctac">利用規約</a>に同意します。</div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 

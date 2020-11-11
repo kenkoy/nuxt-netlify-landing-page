@@ -47,9 +47,8 @@
     padding: 0;
   }
   #hero {
-    background: url('../assets/images/vjlp6/live-casino-bg-m.jpg') no-repeat center #000;
-    min-height: 620px;
-    background-size: cover;
+    background: url('../assets/images/vjlp6/live-casino-bg-m.jpg') no-repeat center top;
+    background-size: 100%;
     padding: 0;
     p, li {
       line-height: 0;
@@ -58,9 +57,13 @@
     .container {
       flex-wrap: nowrap;
       flex-direction: row;
+      .strip > div {
+        margin-top: 110px;
+      }
     }
     #login-btn {
       border-bottom: none;
+      position: absolute; top: 10px; right: 15px; z-index: 999999;
     }
     button{
       display: block;
@@ -71,18 +74,6 @@
       border-radius: 100px;
       animation-iteration-count: infinite;
     }
-    .container-flex {
-      background: red;
-      flex: 0 0 100%;
-      max-width: 100%;
-      justify-content: flex-start;
-      &.strip {
-        position: relative;
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-      }
-    }
     .small-terms {
       font-size: 11px;
       text-align: center;
@@ -92,6 +83,11 @@
       background: linear-gradient(to bottom, rgba(0,159,227,0.5) 0%,rgba(236,0,139,0.5) 100%);
       text-align: center;
       color: #ffffff;
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      min-height: 600px;
       img {
         height: 150px !important;
         margin-top: 50px;
