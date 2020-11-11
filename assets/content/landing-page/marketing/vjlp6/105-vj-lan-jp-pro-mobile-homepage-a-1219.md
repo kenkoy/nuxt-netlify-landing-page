@@ -11,9 +11,9 @@ promo_banner:
   promo_join_button: 入金ボーナス獲得する
   promo_join_button_redirect_url: https://verajohn.com/#join
   promo_images:
-    promo_bg_desktop: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
-    promo_bg_mobile: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2-m.jpeg
-    promo_bg_banner: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
+    promo_bg_desktop: /marketing/img/live-casino-bg.jpg
+    promo_bg_mobile: /marketing/img/live-casino-bg-m.jpg
+    promo_bg_banner: /marketing/img/live-casino-bg.jpg
   promo_title: 無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！
 steps:
   step_title_1: ご登録

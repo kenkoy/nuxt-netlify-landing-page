@@ -6,7 +6,11 @@
 
             <div v-for="(data_items, data_index) in md_data" :key="data_index">
                 
-                <section id="hero">
+                <section
+                id="hero"
+                :style="screen_size === 'desktop' ? { 'background-image': 'url(' + data_items.promo_banner.promo_images.promo_bg_desktop + ')' } :
+                            screen_size === 'tablet' ? { 'background-image': 'url(' + data_items.promo_banner.promo_images.promo_bg_banner + ')' } :
+                            { 'background-image': 'url(' + data_items.promo_banner.promo_images.promo_bg_mobile + ')' }">
                     <a id="login-btn" :href="loginURL" class="login hvr-pulse">
                         <div class="animated fadeIn">
                             <i class="material-icons">exit_to_app</i>
@@ -19,9 +23,7 @@
                         <div class="strip">
                             <img style="height: 150px;" src="https://files.vjpromo.com/bannerflow/lp-core/brand_vj/img/logo.png"/>
                             <div>
-                                <h1>今だけ
-                                <br>最高$<span>500</span>のボーナス<br>
-                                をプレゼント！</h1>
+                                <h1>{{data_items.promo_banner.promo_title}}</h1>
                                 <button class="animated pulse infinite">ご登録はこちら</button>
                                 <div class="small-terms banner-terms" data-v-835fbe4a=""><a href="#terms" class="link-terms-conditions ctac">利用規約</a>に同意します。</div>
                             </div>
@@ -121,21 +123,44 @@
                 md_data: { },
                 language: '',
                 country_code: '',
+                html: '',
+                screen_size: ''
             }
         },
         components: {
             Vjlp6Data,
             Footer
         },
+        destroyed() {
+            window.removeEventListener("resize", this.myEventHandler)
+        },
+        mounted(){
+            this.myEventHandler()
+            window.addEventListener("resize", this.myEventHandler)
+        },
         methods: {
           /* data from 'PAGE' store to 'md_data' local variable */
             getMDcontent: function ( emitData ) {
             this.md_data = [ emitData ]
+            console.log ("Nathan",this.md_data);
 
             this.md_data.forEach(item => {
                 this.language = item.promo_locale.promo_language_code
                 this.country_code = item.promo_locale.promo_country_code
             })
+        },
+        myEventHandler(e) {
+            // your code for handling resize...
+            if(window.innerWidth < 576 && window.innerWidth >= 320){
+                this.screen_size = 'mobile'
+            }
+            else if(window.innerWidth < 768 && window.innerWidth > 576){
+                this.screen_size = 'tablet'
+            }
+            else{
+                this.screen_size = 'desktop'
+            }
+
         }
     },
     head() {
