@@ -11,7 +11,6 @@
   }
   button{
     font-size: $BTN_SIZE;
-    padding: 6px 12px;
     color: $BTN_COLOR;
   }
   section, footer{
@@ -44,12 +43,11 @@
     }
   }
    section, footer {
-    padding: 0;
+    padding: 10px;
   }
   #hero {
-    background: url('../assets/images/vjlp6/live-casino-bg-m.jpg') no-repeat center #000;
-    min-height: 620px;
-    background-size: cover;
+    background: url('../assets/images/vjlp6/live-casino-bg-m.jpg') no-repeat center;
+    background-size: 100%;
     padding: 0;
     p, li {
       line-height: 0;
@@ -58,30 +56,20 @@
     .container {
       flex-wrap: nowrap;
       flex-direction: row;
+      .strip > div {
+        margin-top: 110px;
+      }
     }
     #login-btn {
       border-bottom: none;
+      position: absolute; top: 10px; right: 15px; z-index: 999999;
     }
     button{
       display: block;
       margin: 0 auto;
-      min-width: 150px;
-      padding: 6px 50px;
       background: #FEE63D;
       border-radius: 100px;
       animation-iteration-count: infinite;
-    }
-    .container-flex {
-      background: red;
-      flex: 0 0 100%;
-      max-width: 100%;
-      justify-content: flex-start;
-      &.strip {
-        position: relative;
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-      }
     }
     .small-terms {
       font-size: 11px;
@@ -92,6 +80,11 @@
       background: linear-gradient(to bottom, rgba(0,159,227,0.5) 0%,rgba(236,0,139,0.5) 100%);
       text-align: center;
       color: #ffffff;
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      min-height: 600px;
       img {
         height: 150px !important;
         margin-top: 50px;
@@ -134,7 +127,6 @@
         vertical-align: top;
         width: 31%;
         overflow: hidden;
-        margin-top: -50px;
         .num{
           width: 50px;
           height: 50px;
@@ -168,7 +160,7 @@
   #section3{
     .container{
       background: url('https://files.vjpromo.com/bannerflow/lp-core/pp/payment_jp.svg') center center no-repeat;
-      min-height: 200px;
+      min-height: 150px;
     }
   }
   footer{
@@ -179,7 +171,7 @@
         min-width: 70px;
         vertical-align: middle;
         border: none;
-        margin: 0 10px;
+        margin: 0 8px;
       }
     }
     .second-footer{
@@ -198,9 +190,16 @@
        display: inline-block;
      }
    }
+   #hero {
+     .strip {
+       min-height: 700px;
+     }
+     .container {
+      max-width: inherit;
+    }
+   }
    #steps{
      .container{
-
        > div {
          .num{
            width: 80px;
@@ -221,7 +220,8 @@
    }
 
    #hero{
-     height: 320px;
+     background: url('../assets/images/vjlp6/live-casino-bg.jpg') no-repeat right center;
+     background-size: cover;
    }
 
    #hero .banner + div{
@@ -236,9 +236,16 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-     #hero{
-         background-size: contain;
-     }
+    section, footer {
+      padding: 20px;
+    } 
+    #hero {
+      .strip {
+       -ms-flex: 0 0 33.333333%;
+       flex: 0 0 33.333333%;
+       max-width: 33.333333%;
+      }
+    }
      #section3{
        .container{
          background: url(https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg) center center no-repeat;
@@ -260,7 +267,6 @@
            padding: 6px 50px;
        }
    }
-
    #steps{
      .container{
 
