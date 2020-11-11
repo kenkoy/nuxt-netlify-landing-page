@@ -123,6 +123,16 @@
                     :promo_country_code = 'country_code'
                     :landing_page_type="'verajohn'"
                 />
+
+
+
+                <style>
+                  :root {
+                    --bg-image: url("{{ data_items.attributes.promo_banner.promo_images.promo_bg_desktop }}");
+                    --bg-image-m: url("{{ data_items.attributes.promo_banner.promo_images.promo_bg_mobile }}");
+                    --bg-banner: url("{{ data_items.attributes.promo_banner.promo_images.promo_bg_banner }}")
+                  }
+                </style>
             </div>
         </div>
     </div>
