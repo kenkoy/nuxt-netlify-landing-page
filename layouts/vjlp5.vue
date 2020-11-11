@@ -23,7 +23,11 @@
                         </div>
                     </div>
                 </header>
-                <section id="hero">
+                <section
+                    id="hero"
+                    :style="screen_size === 'desktop' ? { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_desktop + ')' } :
+                            screen_size === 'tablet' ? { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_banner + ')' } :
+                            { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_mobile + ')' }">
                     <div class="container">
                         <div class="banner">
 
@@ -123,16 +127,6 @@
                     :promo_country_code = 'country_code'
                     :landing_page_type="'verajohn'"
                 />
-
-
-
-                <style>
-                  :root {
-                    --bg-image: url("{{ data_items.attributes.promo_banner.promo_images.promo_bg_desktop }}");
-                    --bg-image-m: url("{{ data_items.attributes.promo_banner.promo_images.promo_bg_mobile }}");
-                    --bg-banner: url("{{ data_items.attributes.promo_banner.promo_images.promo_bg_banner }}")
-                  }
-                </style>
             </div>
         </div>
     </div>
@@ -151,12 +145,21 @@
                 md_data: { },
                 language: '',
                 country_code: '',
-                html: ''
+                html: '',
+
+                screen_size: ''
             }
         },
         components: {
             Vjlp5Data,
             Footer
+        },
+        destroyed() {
+            window.removeEventListener("resize", this.myEventHandler)
+        },
+        mounted(){
+            this.myEventHandler()
+            window.addEventListener("resize", this.myEventHandler)
         },
         methods: {
           /* data from 'PAGE' store to 'md_data' local variable */
@@ -168,6 +171,20 @@
                 this.country_code = item.attributes.promo_locale.promo_country_code
                 this.html = item.html
             })
+        },
+
+        myEventHandler(e) {
+            // your code for handling resize...
+            if(window.innerWidth < 576 && window.innerWidth >= 320){
+                this.screen_size = 'mobile'
+            }
+            else if(window.innerWidth < 768 && window.innerWidth > 576){
+                this.screen_size = 'tablet'
+            }
+            else{
+                this.screen_size = 'desktop'
+            }
+
         }
     },
     head() {

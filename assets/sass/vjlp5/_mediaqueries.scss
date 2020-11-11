@@ -56,7 +56,7 @@
 
 
    #hero{
-     background: var(--bg-image-m) no-repeat center #000;
+     background: no-repeat center #000;
      min-height: 160px;
      background-size: cover;
    }
@@ -194,7 +194,7 @@
 
    #hero{
      min-height: 320px;
-     background: var(--bg-banner) no-repeat #000 center;
+     background: no-repeat #000 center;
      background-size: cover;
    }
 
@@ -240,7 +240,7 @@
        }
    }
    #hero{
-       background: var(--bg-image) no-repeat #000 center;
+       background: no-repeat #000 center;
        background-size: contain;
    }
 
