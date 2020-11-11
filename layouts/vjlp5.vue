@@ -184,7 +184,6 @@
             else{
                 this.screen_size = 'desktop'
             }
-
         }
     },
     head() {
