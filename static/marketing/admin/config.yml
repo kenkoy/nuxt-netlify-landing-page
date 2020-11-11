@@ -577,6 +577,9 @@ collections:
             collapsed: true
             fields:
                 - {label: "Bullet List", name: "fourth_section_content", widget: "string"}
+      - label: Body
+        name: body
+        widget: markdown
 
   - name: 'ICLP1-NoForm'
     label: 'InterCasino Template 1'
