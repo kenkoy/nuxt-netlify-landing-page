@@ -442,12 +442,16 @@ collections:
             widget: "list"
             collapsed: true
             fields:
-                - {label: "Bullet List", name: "fourth_section_content", widget: "string"}
-
-  - name: "VJLP6-NoForm"
-    label: "Vera&John Template 6"
-    format: 'frontmatter'
-    folder: "assets/content/landing-page/marketing/vjlp6"
+              - label: Bullet List
+                name: fourth_section_content
+                widget: string
+      - label: Body
+        name: body
+        widget: markdown
+  - name: VJLP6-NoForm
+    label: Vera&John Template 6
+    format: frontmatter
+    folder: assets/content/landing-page/marketing/vjlp6
     create: true
     identifier_field: "slug_name"
     slug: '{{slug}}'
