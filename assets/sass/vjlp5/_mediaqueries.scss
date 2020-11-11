@@ -56,7 +56,7 @@
 
 
    #hero{
-     background: url('../assets/images/vjlp5/bg-dt.jpg') no-repeat center #000;
+     background: var(--bg-image-m) no-repeat center #000;
      min-height: 160px;
      background-size: cover;
    }
@@ -161,6 +161,9 @@
        display: inline-block;
      }
    }
+   #hero{
+       min-height: 200px;
+   }
    #steps{
      .container{
 
@@ -190,7 +193,9 @@
    }
 
    #hero{
-     height: 320px;
+     min-height: 320px;
+     background: var(--bg-banner) no-repeat #000 center;
+     background-size: cover;
    }
 
    #hero .banner + div{
@@ -233,6 +238,10 @@
                }
            }
        }
+   }
+   #hero{
+       background: var(--bg-image) no-repeat #000 center;
+       background-size: contain;
    }
 
    #steps{
