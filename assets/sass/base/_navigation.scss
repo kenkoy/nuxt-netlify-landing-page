@@ -155,7 +155,9 @@ label[for="ham-menu"] {
 #ham-menu:checked ~ div.ham-menu {
     transform: translate(0);
     visibility: visible;
-    overflow: auto;
+    overflow: scroll;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
 
     a{
         padding: 5px;
