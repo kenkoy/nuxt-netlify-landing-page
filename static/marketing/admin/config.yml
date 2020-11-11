@@ -4,9 +4,9 @@ backend:
   # repo: drap54/ds-gitlab
   # branch: master
 
-  name: github
-  repo: kenkoy/nuxt-netlify-landing-page
-  branch: master
+  # name: github
+  # repo: kenkoy/nuxt-netlify-landing-page
+  # branch: master
 
   # name: gitlab
   # repo: dumarca/landing-page-ssg
