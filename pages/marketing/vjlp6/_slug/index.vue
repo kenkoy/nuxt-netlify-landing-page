@@ -21,7 +21,7 @@ export default {
           );
 
           /* store 'PAGE_MDFILE' data to 'dataMD' local variable' */
-          return { dataMD: PAGE_MDFILE.attributes }
+          return { dataMD: PAGE_MDFILE }
 
       } catch (error) {
           return false;

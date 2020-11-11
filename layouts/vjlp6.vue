@@ -8,9 +8,9 @@
                 
                 <section
                 id="hero"
-                :style="screen_size === 'desktop' ? { 'background-image': 'url(' + data_items.promo_banner.promo_images.promo_bg_desktop + ')' } :
-                            screen_size === 'tablet' ? { 'background-image': 'url(' + data_items.promo_banner.promo_images.promo_bg_banner + ')' } :
-                            { 'background-image': 'url(' + data_items.promo_banner.promo_images.promo_bg_mobile + ')' }">
+                :style="screen_size === 'desktop' ? { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_desktop + ')' } :
+                            screen_size === 'tablet' ? { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_banner + ')' } :
+                            { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_mobile + ')' }">
                     <a id="login-btn" :href="loginURL" class="login hvr-pulse">
                         <div class="animated fadeIn">
                             <i class="material-icons">exit_to_app</i>
@@ -23,7 +23,7 @@
                         <div class="strip">
                             <img style="height: 150px;" src="https://files.vjpromo.com/bannerflow/lp-core/brand_vj/img/logo.png"/>
                             <div>
-                                <h1>{{data_items.promo_banner.promo_title}}</h1>
+                                <h1>{{data_items.attributes.promo_banner.promo_title}}</h1>
                                 <button class="animated pulse infinite">ご登録はこちら</button>
                                 <div class="small-terms banner-terms" data-v-835fbe4a=""><a href="#terms" class="link-terms-conditions ctac">利用規約</a>に同意します。</div>
                             </div>
@@ -37,24 +37,24 @@
                         <div class="animated fadeIn delay-halfs">
                             <span class="num">1</span>
                             <div>
-                                <h3>{{data_items.steps.step_title_1}}</h3>
-                                <p>{{data_items.steps.step_description_1}}</p>
+                                <h3>{{data_items.attributes.steps.step_title_1}}</h3>
+                                <p>{{data_items.attributes.steps.step_description_1}}</p>
                             </div>
                         </div>
 
                         <div class="animated fadeIn delay-1s">
                             <span class="num">2</span>
                             <div>
-                                <h3>{{data_items.steps.step_title_2}}</h3>
-                                <p>{{data_items.steps.step_description_2}}</p>
+                                <h3>{{data_items.attributes.steps.step_title_2}}</h3>
+                                <p>{{data_items.attributes.steps.step_description_2}}</p>
                             </div>
                         </div>
 
                         <div class="animated fadeIn delay-1-and-halfs">
                             <span class="num">3</span>
                             <div>
-                                <h3>{{data_items.steps.step_title_3}}</h3>
-                                <p>{{data_items.steps.step_description_3}}</p>
+                                <h3>{{data_items.attributes.steps.step_title_3}}</h3>
+                                <p>{{data_items.attributes.steps.step_description_3}}</p>
                             </div>
                         </div>
 
@@ -71,10 +71,10 @@
                 <section id="section4">
                     <div class="container">
                         <div>
-                            <h2>{{data_items.third_section.third_section_title}}</h2>
+                            <h2>{{data_items.attributes.third_section.third_section_title}}</h2>
 
                             <ol>
-                                <li v-for="(third_section_list, third_index) in data_items.third_section.third_bullet_list" :key="third_index">
+                                <li v-for="(third_section_list, third_index) in data_items.attributes.third_section.third_bullet_list" :key="third_index">
                                     {{third_section_list.third_section_content}}
                                 </li>
                             </ol>
@@ -87,10 +87,10 @@
                 <section id="section5">
                     <div class="container">
                         <div>
-                            <h2>{{data_items.fourth_section.fourth_section_title}}</h2>
+                            <h2>{{data_items.attributes.fourth_section.fourth_section_title}}</h2>
 
                             <ol>
-                                <li v-for="(fourth_section_list, fourth_index) in data_items.fourth_section.fourth_bullet_list" :key="fourth_index">
+                                <li v-for="(fourth_section_list, fourth_index) in data_items.attributes.fourth_section.fourth_bullet_list" :key="fourth_index">
                                     {{fourth_section_list.fourth_section_content}}
                                 </li>
                             </ol>
@@ -145,8 +145,8 @@
             console.log ("Nathan",this.md_data);
 
             this.md_data.forEach(item => {
-                this.language = item.promo_locale.promo_language_code
-                this.country_code = item.promo_locale.promo_country_code
+                this.language = item.attributes.promo_locale.promo_language_code
+                this.country_code = item.attributes.promo_locale.promo_country_code
             })
         },
         myEventHandler(e) {
