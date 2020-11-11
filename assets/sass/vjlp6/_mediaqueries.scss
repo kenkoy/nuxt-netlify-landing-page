@@ -1,155 +1,194 @@
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-   /*--FONT SIZE--*/
-   h2{
-     font-size: $SUB_TITLE_SIZE;
-     text-align: center;
-   }
-   p, li{
-     font-size: $TEXT_SIZE;
-     text-align: justify;
-   }
-   button{
-     font-size: $BTN_SIZE;
-     padding: 6px 12px;
-     color: $BTN_COLOR;
-   }
+  /*--FONT SIZE--*/
+  h2 {
+    font-size: $SUB_TITLE_SIZE;
+    text-align: center;
+  }
+  p, li{
+    font-size: $TEXT_SIZE;
+    text-align: justify;
+  }
+  button{
+    font-size: $BTN_SIZE;
+    padding: 6px 12px;
+    color: $BTN_COLOR;
+  }
+  section, footer{
+    padding: 25px 30px;
+  }
+  #header{
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #header .container{
+    justify-content: flex-end;
+  }
+  #header .logo{
+    position: absolute;
+    left: 15px;
+    top: -8px;
+    img{
+      max-width: 75px;
+    }
+  }
+  #header .nav-links {
+    margin: 15px 0;
+    flex-grow: 0;
+    button:first-child{
+      display: none;
+    }
+    > button{
+      margin: 0 5px;
+    }
+  }
+   section, footer {
+    padding: 0;
+  }
+  #hero {
+    background: url('../assets/images/vjlp6/live-casino-bg-m.jpg') no-repeat center #000;
+    min-height: 620px;
+    background-size: cover;
+    padding: 0;
+    p, li {
+      line-height: 0;
+      margin-top: 7px;
+    }
+    .container {
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
+    #login-btn {
+      border-bottom: none;
+    }
+    button{
+      display: block;
+      margin: 0 auto;
+      min-width: 150px;
+      padding: 6px 50px;
+      background: #FEE63D;
+      border-radius: 100px;
+      animation-iteration-count: infinite;
+    }
+    .container-flex {
+      background: red;
+      flex: 0 0 100%;
+      max-width: 100%;
+      justify-content: flex-start;
+      &.strip {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+    .small-terms {
+      font-size: 11px;
+      text-align: center;
+      margin: 2.5rem 0;
+    }
+    .strip {
+      background: linear-gradient(to bottom, rgba(0,159,227,0.5) 0%,rgba(236,0,139,0.5) 100%);
+      text-align: center;
+      color: #ffffff;
+      img {
+        height: 150px !important;
+        margin-top: 50px;
+      }
+    }
+    #strip-container[data-v-835fbe4a] {
+      background: var(--bg-image-m) no-repeat 50%;
+      background-size: cover;
+      margin-top: 62.5px;
+    }
+    .login i {
+      width: 100%;
+      text-align: center;
+      font-size: 2em;
+    }
+    .material-icons {
+      color: #ffffff;
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+  #steps{
+    background: #EC008B;
+    .container{
+      display: block;
+      text-align: center;
+      > div{
+        display: inline-block;
+        vertical-align: top;
+        width: 31%;
+        overflow: hidden;
+        margin-top: -50px;
+        .num{
+          width: 50px;
+          height: 50px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          border-radius: 50%;
+          -moz-border-radius: 50%;
+          color: #EC008B;
+          font-size: 40px;
+          font-weight: 700;
+          margin: auto;
+          font-family: 'MainFont-DemiBold';
+        }
+        h3{
+          color: $SUB_TITLE_COLOR;
+        }
+        p{
+          text-align: center;
+        }
+      }
+    }
+  }
 
-
-   section,
-   footer{
-       padding: 25px 30px;
-   }
-
-
-   #header{
-     position: relative;
-     padding-left: 15px;
-     padding-right: 15px;
-   }
-   #header .container{
-     justify-content: flex-end;
-   }
-   #header .logo{
-     position: absolute;
-     left: 15px;
-     top: -8px;
-
-     img{
-       max-width: 75px;
-     }
-   }
-   #header .nav-links {
-       margin: 15px 0;
-       flex-grow: 0;
-
-       button:first-child{
-         display: none;
-       }
-
-       > button{
-         margin: 0 5px;
-       }
-   }
-
-
-
-   #hero{
-     background: url('../assets/images/vjlp6/bg-dt.jpg') no-repeat center #000;
-     min-height: 180px;
-     background-size: cover;
-   }
-   #hero .container{
-       flex-wrap: wrap;
-       align-items: flex-end;
-   }
-
-   #hero button{
-       display: block;
-       margin: 0 auto;
-       min-width: 150px;
-       padding: 6px 50px;
-   }
-
-   #steps{
-     background: #EC008B;
-
-     .container{
-       display: block;
-       text-align: center;
-
-       > div{
-         display: inline-block;
-         vertical-align: top;
-         width: 31%;
-         overflow: hidden;
-         margin-top: -50px;
-
-         .num{
-           width: 50px;
-           height: 50px;
-           align-items: center;
-           display: flex;
-           justify-content: center;
-           border-radius: 50%;
-           -moz-border-radius: 50%;
-           color: #EC008B;
-           font-size: 40px;
-           font-weight: 700;
-           margin: auto;
-           font-family: 'MainFont-DemiBold';
-         }
-
-         h3{
-           color: $SUB_TITLE_COLOR;
-         }
-
-         p{
-           text-align: center;
-         }
-
-       }
-     }
-   }
-
-   #section1 h2{
-     font-size: 46px;
-   }
-
-   #section2 h2{
-       text-align: left;
-   }
-
-   #section3{
-     .container{
-       background: url('https://files.vjpromo.com/bannerflow/lp-core/pp/payment_jp.svg') center center no-repeat;
-       min-height: 200px;
-     }
-   }
-
-
-   footer{
-
-     #footer-icon{
-       text-align: center;
-
-       > a{
-         display: inline-block;
-         min-width: 70px;
-         vertical-align: middle;
-         border: none;
-         margin: 0 10px;
-       }
-     }
-
-     .second-footer{
-        padding: 25px 30px;
-     }
-
-     p{
-       text-align: center;
-     }
-   }
+  #section1 h2{
+    font-size: 46px;
+  }
+  #section2 h2{
+      text-align: left;
+  }
+  #section3{
+    .container{
+      background: url('https://files.vjpromo.com/bannerflow/lp-core/pp/payment_jp.svg') center center no-repeat;
+      min-height: 200px;
+    }
+  }
+  footer{
+    #footer-icon{
+      text-align: center;
+      > a{
+        display: inline-block;
+        min-width: 70px;
+        vertical-align: middle;
+        border: none;
+        margin: 0 10px;
+      }
+    }
+    .second-footer{
+      padding: 25px 30px;
+    }
+    p{
+      text-align: center;
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
