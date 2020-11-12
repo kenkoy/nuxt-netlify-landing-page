@@ -5,7 +5,7 @@
             <Vjlp6Data @emitMDcontent="getMDcontent"/>
 
             <div v-for="(data_items, data_index) in md_data" :key="data_index">
-                
+
                 <section
                 id="hero"
                 :style="screen_size === 'desktop' ? { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_desktop + ')' } :
