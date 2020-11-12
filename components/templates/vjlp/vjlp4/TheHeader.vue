@@ -1,5 +1,5 @@
 <template>
-  <header id="strip-container" class="container-flex h-100">
+  <header id="strip-container" class="container-flex h-100" :style="cssHeaderVariables">
     <a id="login-btn" :href="loginURL" class="login hvr-pulse">
       <div class="animated fadeIn">
         <i class="material-icons">exit_to_app</i>
@@ -52,14 +52,6 @@
         </div>
       </div>
     </div>
-    <style>
-    :root {
-      --bg-image: url("{{ images.promo_bg_desktop }}");
-      --bg-image-m: url("{{ images.promo_bg_mobile }}");
-      --game-logo: url("{{ images.promo_game_logo }}");
-      --game-title: url("{{ images.promo_game_image }}");
-    }
-    </style>
   </header>
 </template>
 
@@ -109,6 +101,14 @@ export default {
     }
   },
   computed: {
+    cssHeaderVariables: function () {
+      return {
+        '--bg-image': `url('${this.images.promo_bg_desktop}')`,
+        '--bg-image-m': `url('${this.images.promo_bg_mobile}')`,
+        '--game-logo': `url('${this.images.promo_game_logo}')`,
+        '--game-title': `url('${this.images.promo_game_image}')`,
+      }
+    },
     bannerSubtitle: function () {
       let gameSubtitles = this.gameSmallSubtitle
         .split(/\r?\n/)

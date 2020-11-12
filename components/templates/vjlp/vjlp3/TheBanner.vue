@@ -1,5 +1,5 @@
 <template>
-  <section id="bf-banner">
+  <section id="bf-banner" :style="cssBackground">
     <div class="container">
       <div class="row">
         <div id="bf-banner-img-2" class="col-lg-12">
@@ -36,13 +36,6 @@
         </div>
       </div>
     </div>
-    <style>
-      :root {
-        --bg-image: url("{{ images.promo_bg_desktop }}");
-        --bg-image-m: url("{{ images.promo_bg_mobile }}");
-        --bg-banner: url("{{ images.promo_bg_banner }}")
-      }
-    </style>
   </section>
 </template>
 
@@ -81,6 +74,15 @@ export default {
       required: true,
     },
   },
+  computed: {
+    cssBackground: function () {
+      return {
+        '--bg-image': `url('${this.images.promo_bg_desktop}')`,
+        '--bg-image-m': `url('${this.images.promo_bg_mobile}')`,
+        '--bg-banner': `url('${this.images.promo_bg_banner}')`
+      }
+    }
+  }
 };
 </script>
 

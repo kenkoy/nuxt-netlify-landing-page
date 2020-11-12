@@ -21,7 +21,6 @@ media_folder: static/marketing/img
 public_folder: /marketing/img
 
 
-
 # media_folder: assets/images/cms_media
 # public_folder: ''
 
@@ -554,30 +553,9 @@ collections:
         fields:
           - {label: "Title", name: "second_section_title", widget: "string"}
           - {label: "Content", name: "second_section_content", widget: "string"}
-      - label: "Third Section"
-        name: "third_section"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Title", name: "third_section_title", widget: "string"}
-          - label: "Bullet list"
-            name: "third_bullet_list"
-            widget: "list"
-            collapsed: true
-            fields:
-                - {label: "Bullet List", name: "third_section_content", widget: "string"}
-      - label: "Fourth Section"
-        name: "fourth_section"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Title", name: "fourth_section_title", widget: "string"}
-          - label: "Bullet list"
-            name: "fourth_bullet_list"
-            widget: "list"
-            collapsed: true
-            fields:
-                - {label: "Bullet List", name: "fourth_section_content", widget: "string"}
+      - label: Body
+        name: body
+        widget: markdown
 
   - name: 'ICLP1-NoForm'
     label: 'InterCasino Template 1'

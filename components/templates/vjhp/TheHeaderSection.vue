@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section :style="cssBackground">
     <div class="logInHeader" v-bind:style='{ backgroundColor: header_section_top_background_color }'>
       {{ header_section_top_text }}
       <a v-bind:href="header_section_top_login_text_url">
@@ -60,12 +60,6 @@
         </p>
       </header>
     </div>
-    <style>
-      :root {
-        --bg-desktop: url('{{ header_section_desktop_background_image }}');
-        --bg-mobile: url('{{ header_section_mobile_background_image }}');
-      }
-    </style>
   </section>
 </template>
 <script>
@@ -201,6 +195,14 @@ export default {
       required: true,
     }
   },
+  computed: {
+    cssBackground: function () {
+      return {
+        '--bg-image': `url('${this.header_section_desktop_background_image}')`,
+        '--bg-image-m': `url('${this.header_section_mobile_background_image}')`
+      }
+    }
+  }
 };
 </script>
 <style>

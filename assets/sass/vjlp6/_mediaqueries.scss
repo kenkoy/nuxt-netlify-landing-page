@@ -46,7 +46,7 @@
     padding: 10px;
   }
   #hero {
-    background: url('../assets/images/vjlp6/live-casino-bg-m.jpg') no-repeat center;
+    background: no-repeat center;
     background-size: 100%;
     padding: 0;
     p, li {
@@ -191,6 +191,8 @@
      }
    }
    #hero {
+    background: no-repeat center right;
+    background-size: cover;
      .strip {
        min-height: 700px;
      }
@@ -220,7 +222,7 @@
    }
 
    #hero{
-     background: url('../assets/images/vjlp6/live-casino-bg.jpg') no-repeat right center;
+     background: no-repeat right center;
      background-size: cover;
    }
 
@@ -266,6 +268,11 @@
            min-width: 150px;
            padding: 6px 50px;
        }
+   }
+   #hero {
+     .container {
+       max-width: 1140px;
+     }
    }
    #steps{
      .container{

@@ -23,7 +23,7 @@
                         </div>
                     </div>
                 </header>
-                <section id="hero">
+                <section id="hero" :style="cssBackground">
                     <div class="container">
                         <div class="banner">
 
@@ -123,16 +123,6 @@
                     :promo_country_code = 'country_code'
                     :landing_page_type="'verajohn'"
                 />
-
-
-
-                <style>
-                  :root {
-                    --bg-image: url("{{ data_items.attributes.promo_banner.promo_images.promo_bg_desktop }}");
-                    --bg-image-m: url("{{ data_items.attributes.promo_banner.promo_images.promo_bg_mobile }}");
-                    --bg-banner: url("{{ data_items.attributes.promo_banner.promo_images.promo_bg_banner }}")
-                  }
-                </style>
             </div>
         </div>
     </div>
@@ -151,12 +141,25 @@
                 md_data: { },
                 language: '',
                 country_code: '',
-                html: ''
+                html: '',
+
+                desktop: '',
+                tablet: '',
+                mobile: '',
             }
         },
         components: {
             Vjlp5Data,
             Footer
+        },
+        computed: {
+          cssBackground: function () {
+            return {
+                '--bg-image': `url('${this.desktop}')`,
+                '--bg-image-m': `url('${this.mobile}')`,
+                '--bg-banner': `url('${this.tablet}')`
+            }
+          }
         },
         methods: {
           /* data from 'PAGE' store to 'md_data' local variable */
@@ -167,8 +170,12 @@
                 this.language = item.attributes.promo_locale.promo_language_code
                 this.country_code = item.attributes.promo_locale.promo_country_code
                 this.html = item.html
+
+                this.desktop = item.attributes.promo_banner.promo_images.promo_bg_desktop
+                this.tablet = item.attributes.promo_banner.promo_images.promo_bg_banner
+                this.mobile = item.attributes.promo_banner.promo_images.promo_bg_mobile
             })
-        }
+        },
     },
     head() {
         return {
