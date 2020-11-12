@@ -14,14 +14,14 @@ export default {
     }
   },
   mounted () {
-    this.emitData({
-      yamlData: this.markDownData.attributes,
-      htmlData: this.markDownData.html
-    })
+    this.emitData(this.markDownData)
   },
   methods: {
     emitData (data) {
-      this.$bus.$emit('vjlp5-data', data)
+      this.$nuxt.$emit('vjlp5-data', {
+        yamlData: data.attributes,
+        htmlData: data.html
+      })
     }
   },
   head () {

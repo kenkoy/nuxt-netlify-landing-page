@@ -70,7 +70,6 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/eventBus.js' }
   ],
   /*
   ** Nuxt.js dev-modules

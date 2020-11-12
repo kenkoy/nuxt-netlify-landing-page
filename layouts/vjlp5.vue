@@ -145,10 +145,13 @@ export default {
     }
   },
   created () {
-    this.$bus.$once('vjlp5-data', (data) => {
+    this.$nuxt.$once('vjlp5-data', (data) => {
       this.htmlBody = data.htmlData
       this.mdData = data.yamlData
     })
+  },
+  beforeDestroy () {
+    this.$nuxt.$off('vjlp5-data')
   }
 }
 </script>
