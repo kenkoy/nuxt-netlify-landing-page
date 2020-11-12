@@ -67,38 +67,7 @@
                     </div>
                 </section>
 
-
-                <section id="section4">
-                    <div class="container">
-                        <div>
-                            <h2>{{data_items.attributes.third_section.third_section_title}}</h2>
-
-                            <ol>
-                                <li v-for="(third_section_list, third_index) in data_items.attributes.third_section.third_bullet_list" :key="third_index">
-                                    {{third_section_list.third_section_content}}
-                                </li>
-                            </ol>
-
-                            <div class="separator"></div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="section5">
-                    <div class="container">
-                        <div>
-                            <h2>{{data_items.attributes.fourth_section.fourth_section_title}}</h2>
-
-                            <ol>
-                                <li v-for="(fourth_section_list, fourth_index) in data_items.attributes.fourth_section.fourth_bullet_list" :key="fourth_index">
-                                    {{fourth_section_list.fourth_section_content}}
-                                </li>
-                            </ol>
-
-                            <div class="separator"></div>
-                        </div>
-                    </div>
-                </section>
+                <div v-html='html'></div>
 
                 <Footer
                     :promo_language_code = 'language'
@@ -142,11 +111,10 @@
           /* data from 'PAGE' store to 'md_data' local variable */
             getMDcontent: function ( emitData ) {
             this.md_data = [ emitData ]
-            console.log ("Nathan",this.md_data);
-
             this.md_data.forEach(item => {
                 this.language = item.attributes.promo_locale.promo_language_code
                 this.country_code = item.attributes.promo_locale.promo_country_code
+                this.html = item.html
             })
         },
         myEventHandler(e) {

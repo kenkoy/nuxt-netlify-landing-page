@@ -269,6 +269,11 @@
            padding: 6px 50px;
        }
    }
+   #hero {
+     .container {
+       max-width: 1140px;
+     }
+   }
    #steps{
      .container{
 
