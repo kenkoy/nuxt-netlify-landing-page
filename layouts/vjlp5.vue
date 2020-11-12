@@ -146,8 +146,6 @@
                 desktop: '',
                 tablet: '',
                 mobile: '',
-
-                screen_size: ''
             }
         },
         components: {
@@ -167,8 +165,6 @@
           /* data from 'PAGE' store to 'md_data' local variable */
             getMDcontent: function ( emitData ) {
             this.md_data = [ emitData ]
-
-            console.log("xxxxxx", this.md_data)
 
             this.md_data.forEach(item => {
                 this.language = item.attributes.promo_locale.promo_language_code
