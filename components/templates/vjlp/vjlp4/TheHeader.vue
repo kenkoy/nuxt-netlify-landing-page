@@ -1,5 +1,5 @@
 <template>
-  <header id="strip-container" class="container-flex h-100" style="cssHeaderVariables">
+  <header id="strip-container" class="container-flex h-100" :style="cssHeaderVariables">
     <a id="login-btn" :href="loginURL" class="login hvr-pulse">
       <div class="animated fadeIn">
         <i class="material-icons">exit_to_app</i>
