@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header id="strip-container" class="container-flex h-100">
+    <header id="strip-container" class="container-flex h-100" :style="cssHeaderVariables">
       <a id="login-btn" v-bind:href="signUpURL" class="login hvr-pulse">
         <div class="animated fadeIn">
           <i class="material-icons">home</i>
@@ -40,14 +40,6 @@
           </div>
         </div>
       </div>
-      <style>
-    :root {
-      --bg-image: url("{{ images.promo_bg_desktop }}");
-      --bg-image-m: url("{{ images.promo_bg_mobile }}");
-      --title-01: url("{{ images.promo_banner_image_title_1 }}");
-      --title-02: url("{{ images.promo_banner_image_title_2 }}");
-    }
-      </style>
     </header>
     <div id="detail" class="gb fadebg"></div>
   </div>
@@ -107,6 +99,15 @@ export default {
     },
   },
   computed: {
+    cssHeaderVariables: function () {
+      return {
+        '--bg-image': `url('${this.images.promo_bg_desktop}')`,
+        '--bg-image-m': `url('${this.images.promo_bg_mobile}')`,
+        '--game-logo': `url('${this.images.promo_game_logo}')`,
+        '--title-01': `url('${this.images.promo_banner_image_title_1}')`,
+        '--title-02': `url('${this.images.promo_banner_image_title_2}')`,
+      }
+    },
     bannerStatement: function () {
       let sentences = this.statements.split(/\r?\n/)
         .filter(statement => statement)

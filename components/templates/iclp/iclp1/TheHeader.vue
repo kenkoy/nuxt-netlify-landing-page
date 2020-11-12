@@ -1,5 +1,5 @@
 <template>
-  <header id="strip-container" class="container-flex h-100">
+  <header id="strip-container" class="container-flex h-100" :style="cssBackground">
     <a id="login-btn" v-bind:href="login_button_redirect_url" class="login hvr-pulse">
       <div class="animated fadeIn">
         <i class="material-icons">exit_to_app</i>
@@ -45,13 +45,6 @@
         </div>
       </div>
     </div>
-    <style>
-  :root {
-    --bg-image: url("{{ images.promo_bg_desktop }}");
-    --bg-image-m: url("{{ images.promo_bg_mobile }}");
-    --game-logo: url("{{ images.promo_game_logo }}");
-  }
-    </style>
   </header>
 </template>
 
@@ -119,6 +112,15 @@ export default {
   data: {
     title_animate: true,
   },
+  computed: {
+    cssBackground: function () {
+      return {
+        '--bg-image': `url('${this.images.promo_bg_desktop}')`,
+        '--bg-image-m': `url('${this.images.promo_bg_mobile}')`,
+        '--game-logo': `url('${this.images.promo_game_logo}')`
+      }
+    }
+  }
 };
 </script>
 

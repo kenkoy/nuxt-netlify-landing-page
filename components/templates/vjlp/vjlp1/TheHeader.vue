@@ -1,5 +1,5 @@
 <template>
-  <header id="strip-container" class="container-flex h-100">
+  <header id="strip-container" class="container-flex h-100" :style="cssBackground">
     <a id="login-btn" :href="loginURL" class="login hvr-pulse">
       <div class="animated fadeIn">
         <i class="material-icons">exit_to_app</i>
@@ -41,13 +41,6 @@
         <div id="stripblank" class="col-lg-7"></div>
       </div>
     </div>
-    <style>
-    :root {
-      --bg-image: url('{{ images.promo_bg_desktop }}');
-      --bg-image-m: url('{{ images.promo_bg_mobile }}');
-      --game-logo: url('{{ images.promo_game_logo }}');
-    }
-    </style>
   </header>
 </template>
 
@@ -106,6 +99,13 @@ export default {
     },
   },
   computed: {
+    cssBackground: function () {
+      return {
+        '--bg-image': `url('${this.images.promo_bg_desktop}')`,
+        '--bg-image-m': `url('${this.images.promo_bg_mobile}')`,
+        '--bg-banner': `url('${this.images.promo_game_logo}')`
+      }
+    },
     bannerTitle: function () {
       let bannerTitle = this.title.split(/\r?\n/)
         // .filter(title => title)
