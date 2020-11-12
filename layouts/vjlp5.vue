@@ -23,11 +23,7 @@
                         </div>
                     </div>
                 </header>
-                <section
-                    id="hero"
-                    :style="screen_size === 'desktop' ? { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_desktop + ')' } :
-                            screen_size === 'tablet' ? { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_banner + ')' } :
-                            { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_mobile + ')' }">
+                <section id="hero" :style="cssBackground">
                     <div class="container">
                         <div class="banner">
 
@@ -147,6 +143,10 @@
                 country_code: '',
                 html: '',
 
+                desktop: '',
+                tablet: '',
+                mobile: '',
+
                 screen_size: ''
             }
         },
@@ -154,37 +154,32 @@
             Vjlp5Data,
             Footer
         },
-        destroyed() {
-            window.removeEventListener("resize", this.myEventHandler)
-        },
-        mounted(){
-            this.myEventHandler()
-            window.addEventListener("resize", this.myEventHandler)
+        computed: {
+          cssBackground: function () {
+            return {
+                '--bg-image': `url('${this.desktop}')`,
+                '--bg-image-m': `url('${this.mobile}')`,
+                '--bg-banner': `url('${this.tablet}')`
+            }
+          }
         },
         methods: {
           /* data from 'PAGE' store to 'md_data' local variable */
             getMDcontent: function ( emitData ) {
             this.md_data = [ emitData ]
 
+            console.log("xxxxxx", this.md_data)
+
             this.md_data.forEach(item => {
                 this.language = item.attributes.promo_locale.promo_language_code
                 this.country_code = item.attributes.promo_locale.promo_country_code
                 this.html = item.html
+
+                this.desktop = item.attributes.promo_banner.promo_images.promo_bg_desktop
+                this.tablet = item.attributes.promo_banner.promo_images.promo_bg_banner
+                this.mobile = item.attributes.promo_banner.promo_images.promo_bg_mobile
             })
         },
-
-        myEventHandler(e) {
-            // your code for handling resize...
-            if(window.innerWidth < 576 && window.innerWidth >= 320){
-                this.screen_size = 'mobile'
-            }
-            else if(window.innerWidth < 768 && window.innerWidth > 576){
-                this.screen_size = 'tablet'
-            }
-            else{
-                this.screen_size = 'desktop'
-            }
-        }
     },
     head() {
         return {
