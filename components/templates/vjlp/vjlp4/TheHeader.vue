@@ -106,7 +106,7 @@ export default {
         '--bg-image': `url('${this.images.promo_bg_desktop}')`,
         '--bg-image-m': `url('${this.images.promo_bg_mobile}')`,
         '--game-logo': `url('${this.images.promo_game_logo}')`,
-        '--game-title': `url('${images.promo_game_image}')`,
+        '--game-title': `url('${this.images.promo_game_image}')`,
       }
     },
     bannerSubtitle: function () {
