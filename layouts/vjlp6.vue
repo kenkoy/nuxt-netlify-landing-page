@@ -116,6 +116,7 @@
                 }
             }
         },
+        
         bannerTitle: function () {
             let bannerTitle = this.title.split(/\r?\n/)
                 // .filter(title => title)
