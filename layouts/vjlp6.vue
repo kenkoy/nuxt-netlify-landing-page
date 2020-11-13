@@ -65,24 +65,24 @@
             <div class="animated fadeIn delay-halfs">
               <span class="num">1</span>
               <div>
-                <h3>{{ data_items.attributes.steps.step_title_1 }}</h3>
-                <p>{{ data_items.attributes.steps.step_description_1 }}</p>
+                <h3>{{ data_items.attributes.promo_steps.promo_step_1_title }}</h3>
+                <p>{{ data_items.attributes.promo_steps.promo_step_1_description }}</p>
               </div>
             </div>
 
             <div class="animated fadeIn delay-1s">
               <span class="num">2</span>
               <div>
-                <h3>{{ data_items.attributes.steps.step_title_2 }}</h3>
-                <p>{{ data_items.attributes.steps.step_description_2 }}</p>
+                <h3>{{ data_items.attributes.promo_steps.promo_step_2_title }}</h3>
+                <p>{{ data_items.attributes.promo_steps.promo_step_2_description }}</p>
               </div>
             </div>
 
             <div class="animated fadeIn delay-1-and-halfs">
               <span class="num">3</span>
               <div>
-                <h3>{{ data_items.attributes.steps.step_title_3 }}</h3>
-                <p>{{ data_items.attributes.steps.step_description_3 }}</p>
+                <h3>{{ data_items.attributes.promo_steps.promo_step_3_title }}</h3>
+                <p>{{ data_items.attributes.promo_steps.promo_step_3_description }}</p>
               </div>
             </div>
           </div>
