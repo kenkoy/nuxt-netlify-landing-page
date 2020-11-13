@@ -1,19 +1,14 @@
 
-import { mount, createLocalVue } from '@vue/test-utils'
+import { mount } from '@vue/test-utils'
 import { read } from 'gray-matter'
-import VueMeta from 'vue-meta'
 
 import VJLP5 from '@/layouts/vjlp5.vue'
 import Footer from '@/components/Base/TheFooter.vue'
 
 const slug = '306-bvj-lan-jp-pro-livecasino-v2-0520'
 
-const localVue = createLocalVue()
-localVue.use(VueMeta, { keyName: 'head' })
-
 const wrapper = mount(VJLP5, {
-  stubs: ['nuxt'],
-  localVue
+  stubs: ['nuxt']
 })
 
 describe('Testing VJLP5 Landing Page', () => {
