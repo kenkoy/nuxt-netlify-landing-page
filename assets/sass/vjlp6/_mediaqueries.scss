@@ -46,7 +46,7 @@
     padding: 10px;
   }
   #hero {
-    background: no-repeat center;
+    background: var(--bg-image) no-repeat center;
     background-size: 100%;
     padding: 0;
     p, li {
@@ -191,7 +191,7 @@
      }
    }
    #hero {
-    background: no-repeat center right;
+    background: var(--bg-image) no-repeat center right;
     background-size: cover;
      .strip {
        min-height: 700px;
@@ -222,7 +222,7 @@
    }
 
    #hero{
-     background: no-repeat right center;
+     background: var(--bg-image) no-repeat right center;
      background-size: cover;
    }
 
