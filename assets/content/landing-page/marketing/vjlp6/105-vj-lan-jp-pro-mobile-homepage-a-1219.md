@@ -17,13 +17,6 @@ fourth_section:
     - fourth_section_content: このキャンペーンは日本のプレイヤー様のみ対象となります。
     - fourth_section_content: ボーナスを使ったゲームプレイでの1度の最大賭け額は、スロット/スクラッチカードで$6.25、またはテーブルゲーム/ライブカジノまで$25とします。この金額を上回った場合には、ボーナスとそのボーナスに関連するすべての勝利金は没収されます。
     - fourth_section_content: ベラジョンはいかなるときも通告なしでこのキャンペーンを変更、終了できる権利を有します。
-promo_locale:
-  promo_country_code: jp
-  promo_language_code: ja
-field_ids:
-  gtm_container_id: GTM-MFD3NKM
-  ga_tracking_id: UA-142143961-1
-  go_container_id: OPT-PHSNXP6
 steps:
   step_title_1: ご登録
   step_description_1: 安全 & 安心！
@@ -31,6 +24,9 @@ steps:
   step_description_2: ボーナス獲得！
   step_title_3: プレイ!
   step_description_3: お楽しみください！
+promo_locale:
+  promo_country_code: jp
+  promo_language_code: ja
 3rd_section:
   third_section_title: ビギナーズボーナス利用規約
   third_bullet_list:
@@ -69,19 +65,10 @@ third_section:
   fourth_section_title: 最高$500初回入金ボーナス利用規約
   fourth_bullet_list:
     - fourth_section_content: このキャンペーンは、ベラジョン初めての入金を行うプレイヤー様が対象となります。
-slug_name: test-testing-2
-promo_banner:
-  promo_join_button_location:
-    - hidden
-  promo_login_button: 登録
-  promo_login_button_redirect_url: https://verajohn.com/#join
-  promo_join_button: 入金ボーナス獲得する
-  promo_join_button_redirect_url: https://verajohn.com/#join
-  promo_images:
-    promo_bg_desktop: /marketing/img/live-casino-bg.jpg
-    promo_bg_mobile: /marketing/img/live-casino-bg-m.jpg
-    promo_bg_banner: /marketing/img/live-casino-bg.jpg
-  promo_title: 無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！
+field_ids:
+  gtm_container_id: GTM-MFD3NKM
+  ga_tracking_id: UA-142143961-1
+  go_container_id: OPT-PHSNXP6
 first_section:
   - first_section_title: ライブカジノで一攫千金ッ！
     first_section_description: いつでもどこでも、本場カジノの臨場感が楽しめるライブカジノ。ディーラーの動きがリアルタイムで見えるので、イカサマの心配もありません。しかも、還元率は他のギャンブルよりもはるかに高いともいわれています。パチスロの一般的な還元率は約80%と言われていますが、オンラインカジノでは、なんと最低でも「95％」はあるんです！さぁ、日本No.1オンラインカジノのベラジョンで、今をときめく最先端のライブカジノを堪能しましょう！
@@ -100,12 +87,35 @@ second_section_right:
     second_section_content: 最高の環境が整ったベラジョンオンラインカジノに登録するなら今でしょ！
       しかも、ベラジョンでの初めてのご入金時には、勝負金が2倍になる★初回入金ボーナス★が、最大$500までもらえます！
       安心・安全・楽しいベラジョンカジノで、今日こそカジノライフをスタートしちゃいましょう！グッドラック！
+slug_name: test-testing-2
+promo_steps:
+  promo_step_1_title: Promotion Step 1 Title
+  promo_step_1_desc: Promotion Step 1 Description
+  promo_step_2_title: Promotion Step 2 Title
+  promo_step_2_desc: Promotion Step 2 Description
+  promo_step_3_title: Promotion Step 3 Title
+  promo_step_3_desc: Promotion Step 3 Description
 1st_section:
   - first_section_title: ライブカジノで一攫千金ッ！
     first_section_description: いつでもどこでも、本場カジノの臨場感が楽しめるライブカジノ。ディーラーの動きがリアルタイムで見えるので、イカサマの心配もありません。しかも、還元率は他のギャンブルよりもはるかに高いともいわれています。パチスロの一般的な還元率は約80%と言われていますが、オンラインカジノでは、なんと最低でも「95％」はあるんです！さぁ、日本No.1オンラインカジノのベラジョンで、今をときめく最先端のライブカジノを堪能しましょう！
 second_section:
   - second_section_title: 勝負金が2倍! 最高$500初回入金ボーナスをもらってお得にプレイ
     second_section_content: ベラジョンでの初回入金時には、軍資金が2倍になる★ビギナーズボーナス★がお待ちしています!     最高$500までもらえる、100%入金ボーナスを受け取って、いろんなゲームにトライしてみましょう！     さらに、キャンペーンメール限定ボーナスもご用意していますので、アカウント登録後、キャンペーンメールの配信設定をオンにすることをお忘れなく♪
+promo_banner:
+  promo_title: 無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！
+  promo_images:
+    promo_bg_desktop: /marketing/img/live-casino-bg.jpg
+    promo_bg_mobile: /marketing/img/live-casino-bg-m.jpg
+    promo_bg_banner: /marketing/img/live-casino-bg.jpg
+  promo_login_button_redirect_url: https://verajohn.com/#join
+  promo_join_button_redirect_url: https://verajohn.com/#join
+  promo_terms_text: terms text test
+  promo_join_button: 入金ボーナス獲得する
+  promo_login_button: 登録
+  promo_title_highlighted:
+    - $1000
+  promo_join_button_location:
+    - hidden
 ---
 <section id="section5">
     <div class="container">
