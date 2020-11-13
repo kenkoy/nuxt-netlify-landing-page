@@ -16,9 +16,7 @@
           </a>
           <div class="container">
             <div class="strip">
-              <img
-                src="https://files.vjpromo.com/bannerflow/lp-core/brand_vj/img/logo.png"
-              />
+              <img src="@/assets/images/vjlp6/vj-logo.png" data-not-lazy alt="logo"/>
               <div>
                 <!-- <h1>{{ data_items.attributes.promo_banner.promo_title }}</h1> -->
                 <div v-if="titleFirst">
