@@ -21,6 +21,7 @@
     "core-js": "^3.7.0",
     "eslint-loader": "^4.0.2",
     "frontmatter-markdown-loader": "^3.4.3",
+    "gray-matter": "^4.0.2",
     "jquery": "^3.5.1",
     "markdown-it": "^10.0.0",
     "nuxt": "^2.0.0",

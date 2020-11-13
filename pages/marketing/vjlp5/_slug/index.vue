@@ -5,12 +5,12 @@
 <script>
 export default {
   layout: 'vjlp5',
-  async asyncData ({ params }) {
+  async asyncData ({ params, error }) {
     try {
       const markDownData = await import('~/assets/content/landing-page/marketing/vjlp5/' + params.slug + '.md')
       return { markDownData }
     } catch (e) {
-      // console.error(e)
+      error(e)
     }
   },
   mounted () {
@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     emitData (data) {
-      this.$nuxt.$emit('vjlp5-data', {
+      this.$root.$emit('vjlp5-data', {
         yamlData: data.attributes,
         htmlData: data.html
       })

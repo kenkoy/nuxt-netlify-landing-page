@@ -2,7 +2,7 @@
   <div :class="{ vjlp5_wrapper: true }">
     <nuxt />
     <div
-      v-if="Object.keys(mdData).length > 1"
+      v-if="Object.keys(mdData).length > 0"
       class="vjlp5-main"
     >
       <header id="header">
@@ -145,7 +145,7 @@ export default {
     }
   },
   created () {
-    this.$nuxt.$once('vjlp5-data', (data) => {
+    this.$root.$once('vjlp5-data', (data) => {
       this.htmlBody = data.htmlData
       this.mdData = data.yamlData
     })
