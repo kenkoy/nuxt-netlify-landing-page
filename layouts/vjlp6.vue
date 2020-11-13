@@ -66,7 +66,7 @@
               <span class="num">1</span>
               <div>
                 <h3>{{ data_items.attributes.promo_steps.promo_step_1_title }}</h3>
-                <p>{{ data_items.attributes.promo_steps.promo_step_1_description }}</p>
+                <p>{{ data_items.attributes.promo_steps.promo_step_1_desc }}</p>
               </div>
             </div>
 
@@ -74,7 +74,7 @@
               <span class="num">2</span>
               <div>
                 <h3>{{ data_items.attributes.promo_steps.promo_step_2_title }}</h3>
-                <p>{{ data_items.attributes.promo_steps.promo_step_2_description }}</p>
+                <p>{{ data_items.attributes.promo_steps.promo_step_2_desc }}</p>
               </div>
             </div>
 
@@ -82,7 +82,7 @@
               <span class="num">3</span>
               <div>
                 <h3>{{ data_items.attributes.promo_steps.promo_step_3_title }}</h3>
-                <p>{{ data_items.attributes.promo_steps.promo_step_3_description }}</p>
+                <p>{{ data_items.attributes.promo_steps.promo_step_3_desc }}</p>
               </div>
             </div>
           </div>
