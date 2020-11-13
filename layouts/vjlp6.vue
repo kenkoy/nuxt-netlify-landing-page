@@ -6,11 +6,11 @@
 
       <div v-for="(data_items, data_index) in md_data" :key="data_index">
         <section id="hero" :style="cssBackground">
-          <a id="login-btn" :href="loginURL" class="login hvr-pulse">
+          <a id="login-btn" :href="data_items.attributes.promo_banner.promo_login_button_redirect_url" class="login hvr-pulse">
             <div class="animated fadeIn">
               <i class="material-icons">exit_to_app</i>
               <div class="login-txt">
-                <p>{{ loginText }}登録</p>
+                <p>{{ data_items.attributes.promo_banner.promo_login_button }}</p>
               </div>
             </div>
           </a>
@@ -18,10 +18,7 @@
             <div class="strip">
               <img src="@/assets/images/vjlp6/vj-logo.png" data-not-lazy alt="logo"/>
               <div>
-                <!-- <h1>{{ data_items.attributes.promo_banner.promo_title }}</h1> -->
                 <div v-if="titleFirst">
-                  <!-- <h1 v-if="title" v-html="data_items.bannerTitle"></h1>
-                  <h2 v-if="subtitle" v-html="data_items.bannerSubtitle"></h2> -->
                   <h1 v-if="data_items.attributes.promo_banner.promo_title"
                     v-html="bannerTitle(
                       data_items.attributes.promo_banner.promo_title,
@@ -34,8 +31,6 @@
                   ></h2>
                 </div>
                 <div v-else>
-                  <!-- <h2 v-if="subtitle" v-html="data_items.bannerSubtitle"></h2>
-                  <h1 v-if="title" v-html="data_items.bannerTitle"></h1> -->
                   <h2 v-if="data_items.attributes.promo_banner.promo_subtitle"
                     v-html="bannerSubtitle(
                       data_items.attributes.promo_banner.promo_subtitle,
@@ -47,11 +42,12 @@
                       data_items.attributes.promo_banner.promo_title_highlighted)"
                   ></h1>
                 </div>
-                <button class="animated pulse infinite">ご登録はこちら</button>
+                <button class="animated pulse infinite">
+                  <a :href="data_items.attributes.promo_banner.promo_join_button_redirect_url">{{data_items.attributes.promo_banner.promo_join_button}}</a></button>
                 <div class="small-terms banner-terms" data-v-835fbe4a="">
                   <a href="#terms" class="link-terms-conditions ctac"
-                    >利用規約</a
-                  >に同意します。
+                    >{{data_items.attributes.promo_banner.promo_terms_link_text}}</a
+                  >{{data_items.attributes.promo_banner.promo_terms_text}}
                 </div>
               </div>
             </div>
