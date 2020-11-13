@@ -17,12 +17,10 @@
           <div class="container">
             <div class="strip">
               <img
-                style="height: 150px"
                 src="https://files.vjpromo.com/bannerflow/lp-core/brand_vj/img/logo.png"
               />
               <div>
                 <!-- <h1>{{ data_items.attributes.promo_banner.promo_title }}</h1> -->
-                <!--TEST-->
                 <div v-if="titleFirst">
                   <!-- <h1 v-if="title" v-html="data_items.bannerTitle"></h1>
                   <h2 v-if="subtitle" v-html="data_items.bannerSubtitle"></h2> -->
