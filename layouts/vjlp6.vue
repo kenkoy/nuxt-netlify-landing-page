@@ -22,6 +22,15 @@
                                 <h1>{{data_items.attributes.promo_banner.promo_title}}</h1>
                                 <button class="animated pulse infinite">ご登録はこちら</button>
                                 <div class="small-terms banner-terms" data-v-835fbe4a=""><a href="#terms" class="link-terms-conditions ctac">利用規約</a>に同意します。</div>
+                                <!--TEST-->
+                                <div v-if="titleFirst">
+                                    <h1 v-if="title" v-html="data_items.bannerTitle"></h1>
+                                    <h2 v-if="subtitle" v-html="data_items.bannerSubtitle"></h2>
+                                    </div>
+                                    <div v-else>
+                                    <h2 v-if="subtitle" v-html="data_items.bannerSubtitle"></h2>
+                                    <h1 v-if="title" v-html="data_items.bannerTitle"></h1>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -131,40 +140,39 @@
                 return oldVal + '<br />' + newVal;
             });
             },
-            bannerSubtitle: function () {
-            let bannerSubTitle = this.subtitle.split(/\r?\n/)
-                // .filter(title => title)
-                .map(title => title.slice(-1) === '\\'
-                ? title.substring(0, title.length - 1) : title
-                );
-            
-            let idx = 0;
-            this.subtitle_highlighted.filter(phrase => phrase)
-                .forEach(phrase => {
-                while (bannerSubTitle.length > idx) {
-                    if (bannerSubTitle[idx].includes(phrase)) {
-                    bannerSubTitle[idx] = bannerSubTitle[idx].replace(phrase, `<span class="color-alt-two">${phrase}</span>`);
-                    break;
-                    } else {
-                    idx++
-                    }
+        bannerSubtitle: function () {
+        let bannerSubTitle = this.subtitle.split(/\r?\n/)
+            // .filter(title => title)
+            .map(title => title.slice(-1) === '\\'
+            ? title.substring(0, title.length - 1) : title
+            );
+        
+        let idx = 0;
+        this.subtitle_highlighted.filter(phrase => phrase)
+            .forEach(phrase => {
+            while (bannerSubTitle.length > idx) {
+                if (bannerSubTitle[idx].includes(phrase)) {
+                bannerSubTitle[idx] = bannerSubTitle[idx].replace(phrase, `<span class="color-alt-two">${phrase}</span>`);
+                break;
+                } else {
+                idx++
                 }
-                });
-
+            }
+            });
             return bannerSubTitle.reduce((oldVal, newVal) => {
                 return oldVal + '<br />' + newVal;
             });
             },
-            bannerTerms: function () {
-            let termsText = this.termsText;
-            this.termsLinkText.filter(linkText => linkText)
-                .forEach(linkText => {
-                if (this.termsText.includes(linkText)) {
-                    termsText = termsText.replace(linkText, `<a href="#terms" class="link-terms-conditions ctac">${linkText}</a>`);
-                }
-                });
-            return termsText;
-            },
+        bannerTerms: function () {
+        let termsText = this.termsText;
+        this.termsLinkText.filter(linkText => linkText)
+            .forEach(linkText => {
+            if (this.termsText.includes(linkText)) {
+                termsText = termsText.replace(linkText, `<a href="#terms" class="link-terms-conditions ctac">${linkText}</a>`);
+            }
+            });
+        return termsText;
+        },
         methods: {
           /* data from 'PAGE' store to 'md_data' local variable */
             getMDcontent: function ( emitData ) {
