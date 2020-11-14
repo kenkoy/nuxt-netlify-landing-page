@@ -46,7 +46,7 @@
     padding: 10px;
   }
   #hero {
-    background: no-repeat center;
+    background: var(--bg-image-m) no-repeat center;
     background-size: 100%;
     padding: 0;
     p, li {
@@ -79,7 +79,7 @@
     .strip {
       background: linear-gradient(to bottom, rgba(0,159,227,0.5) 0%,rgba(236,0,139,0.5) 100%);
       text-align: center;
-      color: #ffffff;
+      color: #fff;
       position: relative;
       width: 100%;
       padding-right: 15px;
@@ -101,7 +101,7 @@
       font-size: 2em;
     }
     .material-icons {
-      color: #ffffff;
+      color: #fff;
       font-family: 'Material Icons';
       font-weight: normal;
       font-style: normal;
@@ -191,7 +191,7 @@
      }
    }
    #hero {
-    background: no-repeat center right;
+    background: var(--bg-image) no-repeat center right;
     background-size: cover;
      .strip {
        min-height: 700px;
@@ -222,7 +222,7 @@
    }
 
    #hero{
-     background: no-repeat right center;
+     background: var(--bg-image) no-repeat right center;
      background-size: cover;
    }
 
