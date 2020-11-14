@@ -59,7 +59,7 @@
             <div class="animated fadeIn delay-halfs">
               <span class="num">1</span>
               <div>
-                <h3>{{ data_items.attributes.promo_steps.promo_step_1_title }}</h3>
+                <h2>{{ data_items.attributes.promo_steps.promo_step_1_title }}</h2>
                 <p>{{ data_items.attributes.promo_steps.promo_step_1_desc }}</p>
               </div>
             </div>
@@ -67,7 +67,7 @@
             <div class="animated fadeIn delay-1s">
               <span class="num">2</span>
               <div>
-                <h3>{{ data_items.attributes.promo_steps.promo_step_2_title }}</h3>
+                <h2>{{ data_items.attributes.promo_steps.promo_step_2_title }}</h2>
                 <p>{{ data_items.attributes.promo_steps.promo_step_2_desc }}</p>
               </div>
             </div>
@@ -75,7 +75,7 @@
             <div class="animated fadeIn delay-1-and-halfs">
               <span class="num">3</span>
               <div>
-                <h3>{{ data_items.attributes.promo_steps.promo_step_3_title }}</h3>
+                <h2>{{ data_items.attributes.promo_steps.promo_step_3_title }}</h2>
                 <p>{{ data_items.attributes.promo_steps.promo_step_3_desc }}</p>
               </div>
             </div>

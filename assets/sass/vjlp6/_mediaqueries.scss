@@ -45,13 +45,28 @@
    section, footer {
     padding: 10px;
   }
+  .login-txt{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'MainFont-Bold', sans-serif;
+  }
   #hero {
-    background: var(--bg-image-m) no-repeat center;
-    background-size: 100%;
+    h1 {
+      font-size: 2em;
+      font-family: 'MainFont-DemiBold', sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-bottom: .5rem;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+    background: var(--bg-image-m) no-repeat 50%;
+    background-size: cover;
     padding: 0;
     p, li {
-      line-height: 0;
-      margin-top: 7px;
+      margin-top: 0;
+      margin-bottom: 1rem;
     }
     .container {
       flex-wrap: nowrap;
@@ -66,18 +81,22 @@
     }
     button{
       display: block;
-      margin: 0 auto;
+      margin: 40px auto 0;
       background: #FEE63D;
       border-radius: 100px;
       animation-iteration-count: infinite;
+      font-size: 1em;
     }
     .small-terms {
       font-size: 11px;
       text-align: center;
-      margin: 2.5rem 0;
+      margin: 25px 0 2.5rem;
     }
     .strip {
+      background: -moz-linear-gradient(top, rgba(0,159,227,0.5) 0%, rgba(236,0,139,0.5) 100%);
+      background: -webkit-linear-gradient(top, rgba(0,159,227,0.5) 0%,rgba(236,0,139,0.5) 100%);
       background: linear-gradient(to bottom, rgba(0,159,227,0.5) 0%,rgba(236,0,139,0.5) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc009fe3', endColorstr='#ccec008b',GradientType=0 );
       text-align: center;
       color: #fff;
       position: relative;
@@ -86,8 +105,8 @@
       padding-left: 15px;
       min-height: 600px;
       img {
-        height: 150px !important;
-        margin-top: 50px;
+        height: 180px !important;
+        margin-top: 55px;
       }
     }
     #strip-container[data-v-835fbe4a] {
@@ -120,8 +139,10 @@
   #steps{
     background: #EC008B;
     .container{
-      display: block;
-      text-align: center;
+      display: inline-block;
+      vertical-align: top;
+      overflow: hidden;
+      margin-top: -40px;
       > div{
         display: inline-block;
         vertical-align: top;
@@ -141,11 +162,19 @@
           margin: auto;
           font-family: 'MainFont-DemiBold';
         }
+        h2 {
+          font-size: 1.2em;
+          text-align: center;
+          font-family: 'MainFont-DemiBold', sans-serif;
+          font-weight: 400;
+          margin-bottom: 8px;
+        }
         h3{
           color: $SUB_TITLE_COLOR;
         }
         p{
           text-align: center;
+          margin-top: 0;
         }
       }
     }
@@ -160,7 +189,16 @@
   #section3{
     .container{
       background: url('https://files.vjpromo.com/bannerflow/lp-core/pp/payment_jp.svg') center center no-repeat;
-      min-height: 150px;
+      min-height: 140px;
+      background-size: 90%;
+    }
+  }
+  #section5 {
+    h3 {
+      font-family: 'MainFont-Bold', sans-serif;
+      font-size: 1em;
+      margin-bottom: .5rem;
+      font-weight: 500;
     }
   }
   footer{
@@ -173,6 +211,10 @@
         border: none;
         margin: 0 8px;
       }
+    }
+    .container > div {
+      padding-left: 0;
+      padding-right: 0;
     }
     .second-footer{
       padding: 25px 30px;
@@ -307,4 +349,7 @@
    #section1 h2{
      font-size: 60px;
    }
+}
+body {
+  font-family: 'MainFont-Medium', sans-serif;
 }
