@@ -49,12 +49,11 @@
               <button class="animated pulse infinite">
                 <a :href="mdData.promo_banner.promo_join_button_redirect_url">{{ mdData.promo_banner.promo_join_button }}</a>
               </button>
-              <div class="small-terms banner-terms" data-v-835fbe4a="">
-                <a
-                  href="#terms"
-                  class="link-terms-conditions ctac"
-                >{{ mdData.promo_banner.promo_terms_link_text }}</a>{{ mdData.promo_banner.promo_terms_text }}
-              </div>
+              <div
+                class="small-terms banner-terms"
+                data-v-835fbe4a=""
+                v-html="bannerTerms(mdData.promo_banner.promo_terms_text, mdData.promo_banner.promo_terms_link_text)"
+              />
             </div>
           </div>
         </div>
@@ -94,7 +93,7 @@
         </div>
       </section>
 
-      <div v-html="htmlBody" />
+      <div id="terms" v-html="htmlBody" />
 
       <Footer
         :promo_language_code="mdData.promo_locale.promo_language_code"
@@ -129,21 +128,6 @@ export default {
       }
     }
   },
-
-  bannerTerms () {
-    let termsText = this.termsText
-    this.termsLinkText
-      .filter(linkText => linkText)
-      .forEach((linkText) => {
-        if (this.termsText.includes(linkText)) {
-          termsText = termsText.replace(
-            linkText,
-            `<a href="#terms" class="link-terms-conditions ctac">${linkText}</a>`
-          )
-        }
-      })
-    return termsText
-  },
   created () {
     this.$root.$once('vjlp6-data', (data) => {
       this.htmlBody = data.htmlData
@@ -154,6 +138,16 @@ export default {
     this.$root.$off('vjlp6-data')
   },
   methods: {
+    bannerTerms (termsText, termsLinkText) {
+      let _termsText = termsText
+      termsLinkText.filter(linkText => linkText)
+        .forEach((linkText) => {
+          if (termsText.includes(linkText)) {
+            _termsText = _termsText.replace(linkText, `<a href="#terms" class="link-terms-conditions ctac">${linkText}</a>`)
+          }
+        })
+      return _termsText
+    },
     bannerTitle (title, titleHighlighted) {
       const bannerTitle = title
         .split(/\r?\n/)
