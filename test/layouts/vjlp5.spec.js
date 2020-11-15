@@ -3,7 +3,7 @@ import { mount } from '@vue/test-utils'
 import _ from 'lodash'
 import VJLP5 from '@/layouts/vjlp5.vue'
 import Footer from '@/components/Base/TheFooter.vue'
-import { retrieveFiles, retriveFrontMattertoJSON } from '../utils/fileUtil'
+import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.js'
 
 const VJLP5_DIR = '/assets/content/landing-page/marketing/vjlp5/'
 

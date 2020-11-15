@@ -2,7 +2,7 @@ import { mount, createLocalVue } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
 import index from '@/pages/marketing/vjlp5/_slug/index.vue'
-import { retrieveFiles, retriveFrontMattertoJSON } from '../utils/fileUtil'
+import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.js'
 
 const VJLP5_DIR = '/assets/content/landing-page/marketing/vjlp5/'
 

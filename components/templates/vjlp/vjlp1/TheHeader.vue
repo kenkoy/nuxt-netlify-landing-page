@@ -12,16 +12,16 @@
       <div class="row row-eq-height">
         <div id="strip" class="col-lg-5 strip">
           <div class="strip-container animated fadeIn" style="margin-top: 62.5px;">
-            <div class="logo animated fadeIn"></div>
+            <div class="logo animated fadeIn" />
             <div v-if="titleFirst">
-              <h1 v-if="title" v-html="bannerTitle"></h1>
-              <h2 v-if="subtitle" v-html="bannerSubtitle"></h2>
+              <h1 v-if="title" v-html="bannerTitle" />
+              <h2 v-if="subtitle" v-html="bannerSubtitle" />
             </div>
             <div v-else>
-              <h2 v-if="subtitle" v-html="bannerSubtitle"></h2>
-              <h1 v-if="title" v-html="bannerTitle"></h1>
+              <h2 v-if="subtitle" v-html="bannerSubtitle" />
+              <h1 v-if="title" v-html="bannerTitle" />
             </div>
-            <br />
+            <br>
             <!-- <div class="game-logo animated jello delay-2s"></div>
             <h2 class="sub-offer text-center"></h2> -->
 
@@ -38,7 +38,7 @@
             <!-- <a href="#terms" class="link-terms-conditions ctac">{{ termsLinkText }}</a>{{ termsText }} -->
           </div>
         </div>
-        <div id="stripblank" class="col-lg-7"></div>
+        <div id="stripblank" class="col-lg-7" />
       </div>
     </div>
   </header>
@@ -50,19 +50,19 @@ export default {
   props: {
     title: {
       type: String,
-      required: false,
+      required: false
     },
     title_highlighted: {
       type: Array,
-      required: false,
+      required: false
     },
     subtitle: {
       type: String,
-      required: false,
+      required: false
     },
     subtitle_highlighted: {
       type: Array,
-      required: false,
+      required: false
     },
     titleFirst: {
       type: Boolean,
@@ -71,101 +71,101 @@ export default {
     },
     loginText: {
       type: String,
-      required: true,
+      required: true
     },
     loginURL: {
       type: String,
-      required: true,
+      required: true
     },
     signUpText: {
       type: String,
-      required: true,
+      required: true
     },
     signUpURL: {
       type: String,
-      required: true,
+      required: true
     },
     termsLinkText: {
       type: Array,
-      required: false,
+      required: false
     },
     termsText: {
       type: String,
-      required: true,
+      required: true
     },
     images: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
-    cssBackground: function () {
+    cssBackground () {
       return {
         '--bg-image': `url('${this.images.promo_bg_desktop}')`,
         '--bg-image-m': `url('${this.images.promo_bg_mobile}')`,
         '--bg-banner': `url('${this.images.promo_game_logo}')`
       }
     },
-    bannerTitle: function () {
-      let bannerTitle = this.title.split(/\r?\n/)
+    bannerTitle () {
+      const bannerTitle = this.title.split(/\r?\n/)
         // .filter(title => title)
         .map(title => title.slice(-1) === '\\'
           ? title.substring(0, title.length - 1) : title
-        );
-      
-      let idx = 0;
+        )
+
+      let idx = 0
       this.title_highlighted.filter(phrase => phrase)
-        .forEach(phrase => {
+        .forEach((phrase) => {
           while (bannerTitle.length > idx) {
             if (bannerTitle[idx].includes(phrase)) {
-              bannerTitle[idx] = bannerTitle[idx].replace(phrase, `<font color="#ffd966"><b>${phrase}</b></font>`);
-              break;
+              bannerTitle[idx] = bannerTitle[idx].replace(phrase, `<font color="#ffd966"><b>${phrase}</b></font>`)
+              break
             } else {
               idx++
             }
           }
-        });
+        })
 
       return bannerTitle.reduce((oldVal, newVal) => {
-        return oldVal + '<br />' + newVal;
-      });
+        return oldVal + '<br />' + newVal
+      })
     },
-    bannerSubtitle: function () {
-      let bannerSubTitle = this.subtitle.split(/\r?\n/)
+    bannerSubtitle () {
+      const bannerSubTitle = this.subtitle.split(/\r?\n/)
         // .filter(title => title)
         .map(title => title.slice(-1) === '\\'
           ? title.substring(0, title.length - 1) : title
-        );
-      
-      let idx = 0;
+        )
+
+      let idx = 0
       this.subtitle_highlighted.filter(phrase => phrase)
-        .forEach(phrase => {
+        .forEach((phrase) => {
           while (bannerSubTitle.length > idx) {
             if (bannerSubTitle[idx].includes(phrase)) {
-              bannerSubTitle[idx] = bannerSubTitle[idx].replace(phrase, `<span class="color-alt-two">${phrase}</span>`);
-              break;
+              bannerSubTitle[idx] = bannerSubTitle[idx].replace(phrase, `<span class="color-alt-two">${phrase}</span>`)
+              break
             } else {
               idx++
             }
           }
-        });
+        })
 
       return bannerSubTitle.reduce((oldVal, newVal) => {
-        return oldVal + '<br />' + newVal;
-      });
+        return oldVal + '<br />' + newVal
+      })
     },
-    bannerTerms: function () {
-      let termsText = this.termsText;
+    bannerTerms () {
+      let termsText = this.termsText
       this.termsLinkText.filter(linkText => linkText)
-        .forEach(linkText => {
+        .forEach((linkText) => {
           if (this.termsText.includes(linkText)) {
-            termsText = termsText.replace(linkText, `<a href="#terms" class="link-terms-conditions ctac">${linkText}</a>`);
+            termsText = termsText.replace(linkText, `<a href="#terms" class="link-terms-conditions ctac">${linkText}</a>`)
           }
-        });
-      return termsText;
+        })
+      return termsText
     }
   }
-};
+}
 </script>
 
 <style scoped>
@@ -189,7 +189,7 @@ export default {
   height: 150px;
   z-index: 999999;
 }
-.banner-terms { 
+.banner-terms {
   margin-bottom: 2.5rem;
 }
 

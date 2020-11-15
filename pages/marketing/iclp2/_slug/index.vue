@@ -1,45 +1,45 @@
 <template>
   <div>
-    <TheHeader 
+    <TheHeader
       :statements="post.attributes.promo_banner.promo_banner_statement"
-      :higlightedPhrase="post.attributes.promo_banner.promo_banner_highlighted_phrase"
-      :registerButtonText="post.attributes.promo_banner.promo_register_button_text"
-      :registerButtonURL="post.attributes.promo_banner.promo_register_button_redirect_url"
-      :homeButtonText="post.attributes.promo_banner.promo_home_button"
-      :homeButtonURL="post.attributes.promo_banner.promo_home_button_redirect_url"
-      :termsText="post.attributes.promo_banner.promo_smallterm_text"
-      :termsTextLink="post.attributes.promo_banner.promo_smallterm_text_link"
-      :termsURL="post.attributes.promo_banner.promo_smallterm_redirect_url"
-      :signUpURL="post.attributes.promo_banner.promo_home_button_redirect_url"
-      :signUpText="post.attributes.promo_banner.promo_home_button"
+      :higlighted-phrase="post.attributes.promo_banner.promo_banner_highlighted_phrase"
+      :register-button-text="post.attributes.promo_banner.promo_register_button_text"
+      :register-button-u-r-l="post.attributes.promo_banner.promo_register_button_redirect_url"
+      :home-button-text="post.attributes.promo_banner.promo_home_button"
+      :home-button-u-r-l="post.attributes.promo_banner.promo_home_button_redirect_url"
+      :terms-text="post.attributes.promo_banner.promo_smallterm_text"
+      :terms-text-link="post.attributes.promo_banner.promo_smallterm_text_link"
+      :terms-u-r-l="post.attributes.promo_banner.promo_smallterm_redirect_url"
+      :sign-up-u-r-l="post.attributes.promo_banner.promo_home_button_redirect_url"
+      :sign-up-text="post.attributes.promo_banner.promo_home_button"
       :images="post.attributes.promo_banner.promo_images"
     />
-    <TheWelcome 
-      :firstStatements="post.attributes.welcome_section.welcome_first_statement"
-      :highligtedFirstStatementPhrase="post.attributes.welcome_section.welcome_first_statement_highlighted_phrase"
-      :secondStatements="post.attributes.welcome_section.welcome_second_statement"
-      :rougeSpeech="post.attributes.welcome_section.welcome_rouge_speech_bubble"
-      :chloeSpeech="post.attributes.welcome_section.welcome_chloe_speech_bubble"
+    <TheWelcome
+      :first-statements="post.attributes.welcome_section.welcome_first_statement"
+      :highligted-first-statement-phrase="post.attributes.welcome_section.welcome_first_statement_highlighted_phrase"
+      :second-statements="post.attributes.welcome_section.welcome_second_statement"
+      :rouge-speech="post.attributes.welcome_section.welcome_rouge_speech_bubble"
+      :chloe-speech="post.attributes.welcome_section.welcome_chloe_speech_bubble"
     />
     <TheTopGame
       :game1="post.attributes.top_game_section.top_game_game1"
       :game2="post.attributes.top_game_section.top_game_game2"
       :game3="post.attributes.top_game_section.top_game_game3"
       :game4="post.attributes.top_game_section.top_game_game4"
-      :gamesInfo1="post.attributes.top_game_section.top_game_gamesInfo1"
-      :gamesInfo2="post.attributes.top_game_section.top_game_gamesInfo2"
+      :games-info1="post.attributes.top_game_section.top_game_gamesInfo1"
+      :games-info2="post.attributes.top_game_section.top_game_gamesInfo2"
     />
     <TheLoyalty />
     <TheSafety />
     <TheHistory
-      :rougeStatements="post.attributes.history_section.history_rouge_statement"
-      :rougeHighlightedPhrase="post.attributes.history_section.history_rouge_highlighted_phrase"
-      :chloeStatements="post.attributes.history_section.history_chloe_statement"
-      :chloeHighlightedPhrase="post.attributes.history_section.history_chloe_highlighted_phrase"
-      :registerButtonText="post.attributes.history_section.history_register_button_text"
-      :registerButtonURL="post.attributes.history_section.history_register_button_redirect_url"
+      :rouge-statements="post.attributes.history_section.history_rouge_statement"
+      :rouge-highlighted-phrase="post.attributes.history_section.history_rouge_highlighted_phrase"
+      :chloe-statements="post.attributes.history_section.history_chloe_statement"
+      :chloe-highlighted-phrase="post.attributes.history_section.history_chloe_highlighted_phrase"
+      :register-button-text="post.attributes.history_section.history_register_button_text"
+      :register-button-u-r-l="post.attributes.history_section.history_register_button_redirect_url"
     />
-    <ThePayment 
+    <ThePayment
       :promo_language_code="post.attributes.promo_locale.promo_language_code"
       :promo_country_code="post.attributes.promo_locale.promo_country_code"
     />
@@ -47,7 +47,7 @@
       :promo_content="post.html"
       :landing_page_type="'intercasino'"
     />
-    <TheFooter 
+    <TheFooter
       :promo_language_code="post.attributes.promo_locale.promo_language_code"
       :promo_country_code="post.attributes.promo_locale.promo_country_code"
       :landing_page_type="'intercasino'"
@@ -79,24 +79,32 @@ export default {
     TheFooter
   },
   layout: 'iclp2',
-  head() {
-    const goId = (this.post.attributes.field_ids && this.post.attributes.field_ids.go_container_id) ?
-      this.post.attributes.field_ids.go_container_id : 'OPT-PHSNXP6';
+  async asyncData ({ params }) {
+    try {
+      const post = await import('~/assets/content/landing-page/marketing/iclp2/' + params.slug + '.md')
+      return { post }
+    } catch (error) {
+      return false
+    }
+  },
+  head () {
+    const goId = (this.post.attributes.field_ids && this.post.attributes.field_ids.go_container_id)
+      ? this.post.attributes.field_ids.go_container_id : 'OPT-PHSNXP6'
 
-    const gaId = (this.post.attributes.field_ids && this.post.attributes.field_ids.ga_tracking_id) ?
-      this.post.attributes.field_ids.ga_tracking_id : 'UA-142143961-1';
+    const gaId = (this.post.attributes.field_ids && this.post.attributes.field_ids.ga_tracking_id)
+      ? this.post.attributes.field_ids.ga_tracking_id : 'UA-142143961-1'
 
-    const gtmId = (this.post.attributes.field_ids && this.post.attributes.field_ids.gtm_container_id) ?
-      this.post.attributes.field_ids.gtm_container_id : 'GTM-MFD3NKM';
-    
+    const gtmId = (this.post.attributes.field_ids && this.post.attributes.field_ids.gtm_container_id)
+      ? this.post.attributes.field_ids.gtm_container_id : 'GTM-MFD3NKM'
+
     return {
       title: 'インターカジノ',
       htmlAttrs: {
         lang: this.post.attributes.promo_locale.promo_language_code
       },
       bodyAttrs: {
-        id: this.post.attributes.promo_locale.promo_language_code + '-' 
-          + this.post.attributes.promo_locale.promo_country_code
+        id: this.post.attributes.promo_locale.promo_language_code + '-' +
+          this.post.attributes.promo_locale.promo_country_code
       },
       style: [],
       script: [
@@ -108,7 +116,7 @@ export default {
               h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
               (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
             })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
-              { '${goId}': true })`,
+              { '${goId}': true })`
         },
         {
           hid: 'gaHead',
@@ -122,7 +130,7 @@ export default {
 
             ga('create', '${gaId}', 'auto');
             ga('require', '${goId}');
-            ga('send', 'pageview');`,
+            ga('send', 'pageview');`
         },
         {
           hid: 'gtmHead',
@@ -134,7 +142,7 @@ export default {
               }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                   'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', '${gtmId}');`,
+            })(window, document, 'script', 'dataLayer', '${gtmId}');`
         }
       ],
       noscript: [
@@ -142,22 +150,14 @@ export default {
           hid: 'gtmBody',
           innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id='${gtmId}'" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           pbody: true
-        },
+        }
       ],
       __dangerouslyDisableSanitizersByTagID: {
         gtmBody: ['innerHTML'],
         gtmHead: ['innerHTML'],
         goHead: ['innerHTML'],
-        gaHead: ['innerHTML'],
+        gaHead: ['innerHTML']
       }
-    }
-  },
-  async asyncData ({ params }) {
-    try {
-      const post = await import('~/assets/content/landing-page/marketing/iclp2/' + params.slug + '.md');
-      return { post }
-    } catch (error) {
-      return false
     }
   }
 }

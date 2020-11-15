@@ -1,26 +1,10 @@
 # Excluded files for linting
 
-# Pages
-/pages/marketing/vjhp/*.vue
-/pages/marketing/vjlp1/**/*.vue
-/pages/marketing/vjlp3/**/*.vue
-/pages/marketing/vjlp4/**/*.vue
-/pages/marketing/vjlp6/**/*.vue
-/pages/marketing/iclp1/**/*.vue
-/pages/marketing/iclp2/**/*.vue
-/pages/marketing/iclp3/**/*.vue
-/pages/marketing/nathan/**/*.vue
+# Generated files
+/.nuxt
+/dist
+/coverage
+/node_modules
 
-# Layouts
-/layouts/vjhp.vue
-/layouts/vjlp1.vue
-/layouts/vjlp3.vue
-/layouts/vjlp4.vue
-/layouts/vjlp6.vue
-/layouts/iclp1.vue
-/layouts/iclp2.vue
-/layouts/iclp3.vue
-/layouts/nathan.vue
-
-# Components
-/components/**/*.vue
+# Static JS files
+/static/marketing/js/**/*

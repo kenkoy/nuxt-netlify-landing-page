@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="logInHeader">
-      <a v-bind:href="login_header_redirect_url">
+      <a :href="login_header_redirect_url">
         すでに登録済みですか?
         <span>{{ login_header_text }}</span>
       </a>
@@ -15,12 +15,12 @@ export default {
   props: {
     login_header_text: {
       type: String,
-      required: true,
+      required: true
     },
     login_header_redirect_url: {
       type: String,
-      required: true,
-    },
-  },
-};
+      required: true
+    }
+  }
+}
 </script>

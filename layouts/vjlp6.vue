@@ -1,147 +1,146 @@
 <template>
-    <div :class="{ vjlp6_wrapper: true }">
-        <div class="vjlp6-main">
-            <!-- PAGE HANDLING DATA -->
-            <Vjlp6Data @emitMDcontent="getMDcontent"/>
+  <div :class="{ vjlp6_wrapper: true }">
+    <div class="vjlp6-main">
+      <!-- PAGE HANDLING DATA -->
+      <Vjlp6Data @emitMDcontent="getMDcontent" />
 
-            <div v-for="(data_items, data_index) in md_data" :key="data_index">
-
-                <section
-                id="hero"
-                :style="screen_size === 'desktop' ? { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_desktop + ')' } :
-                            screen_size === 'tablet' ? { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_banner + ')' } :
-                            { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_mobile + ')' }">
-                    <a id="login-btn" :href="loginURL" class="login hvr-pulse">
-                        <div class="animated fadeIn">
-                            <i class="material-icons">exit_to_app</i>
-                            <div class="login-txt">
-                            <p>{{ loginText }}登録</p>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="container">
-                        <div class="strip">
-                            <img style="height: 150px;" src="https://files.vjpromo.com/bannerflow/lp-core/brand_vj/img/logo.png"/>
-                            <div>
-                                <h1>{{data_items.attributes.promo_banner.promo_title}}</h1>
-                                <button class="animated pulse infinite">ご登録はこちら</button>
-                                <div class="small-terms banner-terms" data-v-835fbe4a=""><a href="#terms" class="link-terms-conditions ctac">利用規約</a>に同意します。</div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="steps">
-                    <div class="container column-3">
-
-                        <div class="animated fadeIn delay-halfs">
-                            <span class="num">1</span>
-                            <div>
-                                <h3>{{data_items.attributes.steps.step_title_1}}</h3>
-                                <p>{{data_items.attributes.steps.step_description_1}}</p>
-                            </div>
-                        </div>
-
-                        <div class="animated fadeIn delay-1s">
-                            <span class="num">2</span>
-                            <div>
-                                <h3>{{data_items.attributes.steps.step_title_2}}</h3>
-                                <p>{{data_items.attributes.steps.step_description_2}}</p>
-                            </div>
-                        </div>
-
-                        <div class="animated fadeIn delay-1-and-halfs">
-                            <span class="num">3</span>
-                            <div>
-                                <h3>{{data_items.attributes.steps.step_title_3}}</h3>
-                                <p>{{data_items.attributes.steps.step_description_3}}</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </section>
-
-                <section id="section3">
-                    <div class="container">
-                        <div class="separator"></div>
-                    </div>
-                </section>
-
-                <div v-html='html'></div>
-
-                <Footer
-                    :promo_language_code = 'language'
-                    :promo_country_code = 'country_code'
-                    :landing_page_type="'verajohn'"
-                />
+      <div v-for="(data_items, data_index) in md_data" :key="data_index">
+        <section
+          id="hero"
+          :style="screen_size === 'desktop' ? { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_desktop + ')' } :
+            screen_size === 'tablet' ? { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_banner + ')' } :
+            { 'background-image': 'url(' + data_items.attributes.promo_banner.promo_images.promo_bg_mobile + ')' }"
+        >
+          <a id="login-btn" :href="loginURL" class="login hvr-pulse">
+            <div class="animated fadeIn">
+              <i class="material-icons">exit_to_app</i>
+              <div class="login-txt">
+                <p>{{ loginText }}登録</p>
+              </div>
             </div>
-        </div>
+          </a>
+          <div class="container">
+            <div class="strip">
+              <img style="height: 150px;" src="https://files.vjpromo.com/bannerflow/lp-core/brand_vj/img/logo.png">
+              <div>
+                <h1>{{ data_items.attributes.promo_banner.promo_title }}</h1>
+                <button class="animated pulse infinite">
+                  ご登録はこちら
+                </button>
+                <div class="small-terms banner-terms" data-v-835fbe4a="">
+                  <a href="#terms" class="link-terms-conditions ctac">利用規約</a>に同意します。
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="steps">
+          <div class="container column-3">
+            <div class="animated fadeIn delay-halfs">
+              <span class="num">1</span>
+              <div>
+                <h3>{{ data_items.attributes.steps.step_title_1 }}</h3>
+                <p>{{ data_items.attributes.steps.step_description_1 }}</p>
+              </div>
+            </div>
+
+            <div class="animated fadeIn delay-1s">
+              <span class="num">2</span>
+              <div>
+                <h3>{{ data_items.attributes.steps.step_title_2 }}</h3>
+                <p>{{ data_items.attributes.steps.step_description_2 }}</p>
+              </div>
+            </div>
+
+            <div class="animated fadeIn delay-1-and-halfs">
+              <span class="num">3</span>
+              <div>
+                <h3>{{ data_items.attributes.steps.step_title_3 }}</h3>
+                <p>{{ data_items.attributes.steps.step_description_3 }}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="section3">
+          <div class="container">
+            <div class="separator" />
+          </div>
+        </section>
+
+        <div v-html="html" />
+
+        <Footer
+          :promo_language_code="language"
+          :promo_country_code="country_code"
+          :landing_page_type="'verajohn'"
+        />
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
-    import Vjlp6Data from '~/pages/marketing/vjlp6/_slug/index.vue'
-    import Footer from '~/components/Base/TheFooter.vue'
+import Vjlp6Data from '~/pages/marketing/vjlp6/_slug/index.vue'
+import Footer from '~/components/Base/TheFooter.vue'
 
-    export default{
-        data(){
-            return{
-                layout: false,
-                desktop: true,
-                mobile: false,
-                md_data: { },
-                language: '',
-                country_code: '',
-                html: '',
-                screen_size: ''
-            }
-        },
-        components: {
-            Vjlp6Data,
-            Footer
-        },
-        destroyed() {
-            window.removeEventListener("resize", this.myEventHandler)
-        },
-        mounted(){
-            this.myEventHandler()
-            window.addEventListener("resize", this.myEventHandler)
-        },
-        methods: {
-          /* data from 'PAGE' store to 'md_data' local variable */
-            getMDcontent: function ( emitData ) {
-            this.md_data = [ emitData ]
-            this.md_data.forEach(item => {
-                this.language = item.attributes.promo_locale.promo_language_code
-                this.country_code = item.attributes.promo_locale.promo_country_code
-                this.html = item.html
-            })
-        },
-        myEventHandler(e) {
-            // your code for handling resize...
-            if(window.innerWidth < 576 && window.innerWidth >= 320){
-                this.screen_size = 'mobile'
-            }
-            else if(window.innerWidth < 768 && window.innerWidth > 576){
-                this.screen_size = 'tablet'
-            }
-            else{
-                this.screen_size = 'desktop'
-            }
-
-        }
+export default {
+  components: {
+    Vjlp6Data,
+    Footer
+  },
+  data () {
+    return {
+      layout: false,
+      desktop: true,
+      mobile: false,
+      md_data: { },
+      language: '',
+      country_code: '',
+      html: '',
+      screen_size: ''
+    }
+  },
+  destroyed () {
+    window.removeEventListener('resize', this.myEventHandler)
+  },
+  mounted () {
+    this.myEventHandler()
+    window.addEventListener('resize', this.myEventHandler)
+  },
+  methods: {
+    /* data from 'PAGE' store to 'md_data' local variable */
+    getMDcontent (emitData) {
+      this.md_data = [emitData]
+      this.md_data.forEach((item) => {
+        this.language = item.attributes.promo_locale.promo_language_code
+        this.country_code = item.attributes.promo_locale.promo_country_code
+        this.html = item.html
+      })
     },
-    head() {
-        return {
-            htmlAttrs: {
-                lang: this.language
-            },
-            link: [
-                { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' },
-            ],
-        }
+    myEventHandler (e) {
+      // your code for handling resize...
+      if (window.innerWidth < 576 && window.innerWidth >= 320) {
+        this.screen_size = 'mobile'
+      } else if (window.innerWidth < 768 && window.innerWidth > 576) {
+        this.screen_size = 'tablet'
+      } else {
+        this.screen_size = 'desktop'
+      }
+    }
+  },
+  head () {
+    return {
+      htmlAttrs: {
+        lang: this.language
+      },
+      link: [
+        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
+      ]
     }
   }
+}
 </script>
 
 <style lang="scss">

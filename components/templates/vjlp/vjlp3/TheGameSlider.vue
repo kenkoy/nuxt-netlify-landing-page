@@ -3,25 +3,28 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          
           <div class="slider slick-initialized slick-slider">
-						<VueSlickCarousel
+            <VueSlickCarousel
               :arrows="false"
               :dots="false"
               :infinite="true"
               :autoplay="true"
               :speed="300"
-              :slidesToShow="5"
-              :slidesToScroll="1"
+              :slides-to-show="5"
+              :slides-to-scroll="1"
               v-bind="carouselSettings"
             >
-              <a class="hvr-shrink" v-for="(link, index) in links" :key="index" 
-                v-bind:href="link" :aria-label="icons[index].replace(/^.*[\\\/]/, '')">
-                <div v-bind:style="generateSliderIcon(icons[index])"></div>
+              <a
+                v-for="(link, index) in links"
+                :key="index"
+                class="hvr-shrink"
+                :href="link"
+                :aria-label="icons[index].replace(/^.*[\\\/]/, '')"
+              >
+                <div :style="generateSliderIcon(icons[index])" />
               </a>
             </VueSlickCarousel>
-					 </div>
-          
+          </div>
         </div>
       </div>
     </div>
@@ -33,33 +36,16 @@ import VueSlickCarousel from 'vue-slick-carousel'
 
 export default {
   name: 'GameSlider',
+  components: {
+    VueSlickCarousel
+  },
   props: {
     game: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
-  beforeMount() {
-    this.icons = [];
-    this.links = [];
-
-    Object.entries(this.game).forEach(([key, value]) => {
-      key.indexOf('game_icon_') === 0
-        ? value != ''
-          ? this.icons.push(value)
-          : null
-        : null;
-      key.indexOf('game_url_') === 0
-        ? value != ''
-          ? this.links.push(value)
-          : null
-        : null;
-    });
-  },
-  components: {
-    VueSlickCarousel,
-  },
-  data() {
+  data () {
     return {
       links: [''],
       icons: [''],
@@ -71,19 +57,36 @@ export default {
               slidesToShow: 3,
               slidesToScroll: 1,
               infinite: true,
-              autoplay: true,
-            },
-          },
-        ],
-      },
-    };
+              autoplay: true
+            }
+          }
+        ]
+      }
+    }
+  },
+  beforeMount () {
+    this.icons = []
+    this.links = []
+
+    Object.entries(this.game).forEach(([key, value]) => {
+      key.indexOf('game_icon_') === 0
+        ? value != ''
+          ? this.icons.push(value)
+          : null
+        : null
+      key.indexOf('game_url_') === 0
+        ? value != ''
+          ? this.links.push(value)
+          : null
+        : null
+    })
   },
   methods: {
-    generateSliderIcon(icon) {
+    generateSliderIcon (icon) {
       return {
-        background: `center / contain no-repeat url("${icon}")`,
-      };
-    },
-  },
-};
+        background: `center / contain no-repeat url("${icon}")`
+      }
+    }
+  }
+}
 </script>

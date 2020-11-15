@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <a href="https://www.verajohn.com/ja" class="bf-logo" aria-label="Vera&John"></a>
+          <a href="https://www.verajohn.com/ja" class="bf-logo" aria-label="Vera&John" />
           <div class="bf-btn-container" style="display:inline-block;">
             <a id="login-btn" :href="header_login_button_redirect_url">
               <div class="bf-button bf-third-bg">
@@ -28,20 +28,20 @@ export default {
   props: {
     header_login_button: {
       type: String,
-      required: true,
+      required: true
     },
     header_login_button_redirect_url: {
       type: String,
-      required: true,
+      required: true
     },
     header_join_button: {
       type: String,
-      required: true,
+      required: true
     },
     header_join_button_redirect_url: {
       type: String,
-      required: true,
-    },
+      required: true
+    }
   }
-};
+}
 </script>

@@ -34,24 +34,43 @@ import TheFooter from '~/components/templates/TheFooter.vue'
 
 export default {
   layout: 'vjlp3',
-  head() {
-    const goId = (this.post.attributes.field_ids && this.post.attributes.field_ids.go_container_id) ?
-      this.post.attributes.field_ids.go_container_id : 'OPT-PHSNXP6';
+  components: {
+    TheHeader,
+    TheBanner,
+    TheGameSlider,
+    TheBody,
+    TheFooter
+  },
+  async asyncData ({ params }) {
+    try {
+      const post = await import(
+        '~/assets/content/landing-page/marketing/vjlp3/' + params.slug + '.md'
+      )
+      return {
+        post
+      }
+    } catch (error) {
+      return false
+    }
+  },
+  head () {
+    const goId = (this.post.attributes.field_ids && this.post.attributes.field_ids.go_container_id)
+      ? this.post.attributes.field_ids.go_container_id : 'OPT-PHSNXP6'
 
-    const gaId = (this.post.attributes.field_ids && this.post.attributes.field_ids.ga_tracking_id) ?
-      this.post.attributes.field_ids.ga_tracking_id : 'UA-142143961-1';
+    const gaId = (this.post.attributes.field_ids && this.post.attributes.field_ids.ga_tracking_id)
+      ? this.post.attributes.field_ids.ga_tracking_id : 'UA-142143961-1'
 
-    const gtmId = (this.post.attributes.field_ids && this.post.attributes.field_ids.gtm_container_id) ?
-      this.post.attributes.field_ids.gtm_container_id : 'GTM-MFD3NKM';
-    
+    const gtmId = (this.post.attributes.field_ids && this.post.attributes.field_ids.gtm_container_id)
+      ? this.post.attributes.field_ids.gtm_container_id : 'GTM-MFD3NKM'
+
     return {
       title: 'Vera&John',
       htmlAttrs: {
-        lang: this.post.attributes.promo_locale.promo_language_code,
+        lang: this.post.attributes.promo_locale.promo_language_code
       },
       bodyAttrs: {
         id: this.post.attributes.promo_locale.promo_language_code +
-          '-' + this.post.attributes.promo_locale.promo_country_code,
+          '-' + this.post.attributes.promo_locale.promo_country_code
       },
       style: [],
       script: [
@@ -63,7 +82,7 @@ export default {
               h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
               (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
             })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
-              { '${goId}': true })`,
+              { '${goId}': true })`
         },
         {
           hid: 'gaHead',
@@ -77,7 +96,7 @@ export default {
 
             ga('create', '${gaId}', 'auto');
             ga('require', '${goId}');
-            ga('send', 'pageview');`,
+            ga('send', 'pageview');`
         },
         {
           hid: 'gtmHead',
@@ -89,7 +108,7 @@ export default {
               }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                   'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', '${gtmId}');`,
+            })(window, document, 'script', 'dataLayer', '${gtmId}');`
         }
       ],
       noscript: [
@@ -97,34 +116,15 @@ export default {
           hid: 'gtmBody',
           innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id='${gtmId}'" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           pbody: true
-        },
+        }
       ],
       __dangerouslyDisableSanitizersByTagID: {
         gtmBody: ['innerHTML'],
         gtmHead: ['innerHTML'],
         goHead: ['innerHTML'],
-        gaHead: ['innerHTML'],
+        gaHead: ['innerHTML']
       }
-    };
-  },
-  components: {
-    TheHeader,
-    TheBanner,
-    TheGameSlider,
-    TheBody,
-    TheFooter,
-  },
-  async asyncData({ params }) {
-    try {
-      const post = await import(
-        '~/assets/content/landing-page/marketing/vjlp3/' + params.slug + '.md'
-      );
-      return {
-        post,
-      };
-    } catch (error) {
-      return false;
     }
-  },
-};
+  }
+}
 </script>

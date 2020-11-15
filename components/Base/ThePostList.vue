@@ -1,27 +1,27 @@
 <template>
-    <section class="featured-posts">
-        <div class="container">
-            <div v-for="(post, post_index) in posts" :key="post_index">
-                <nuxt-link :to="'/marketing/' + post.path + '/' + post.slug" class="post-preview">
-                    <article>
-                        <h3>{{post.attributes.slug_name}}</h3>
-                        <p>{{post.attributes.promo_banner.promo_title}}</p>
-                    </article>
-                </nuxt-link>
-            </div>
-        </div>
-    </section>
+  <section class="featured-posts">
+    <div class="container">
+      <div v-for="(post, post_index) in posts" :key="post_index">
+        <nuxt-link :to="'/marketing/' + post.path + '/' + post.slug" class="post-preview">
+          <article>
+            <h3>{{ post.attributes.slug_name }}</h3>
+            <p>{{ post.attributes.promo_banner.promo_title }}</p>
+          </article>
+        </nuxt-link>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
 
 export default {
-    props: {
-        posts: {
-            type: Array,
-            required: true
-        }
+  props: {
+    posts: {
+      type: Array,
+      required: true
     }
+  }
 }
 </script>
 
@@ -74,7 +74,6 @@ export default {
             background-position: 0% 50%;
         }
     }
-
 
     /* Custom, iPhone Retina */
     @media only screen and (min-width : 320px) {

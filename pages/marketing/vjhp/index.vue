@@ -62,42 +62,18 @@
 </template>
 
 <script>
-import TheLoginHeaderSection from '~/components/templates/vjhp/TheLoginHeaderSection.vue';
-import TheHeaderSection from '~/components/templates/vjhp/TheHeaderSection.vue';
-import TheSection2 from '~/components/templates/vjhp/TheSection2.vue';
-import TheGamesBrickSection from '~/components/templates/vjhp/TheGamesBrickSection.vue';
-import TheSection4 from '~/components/templates/vjhp/TheSection4.vue';
-import TheSection5 from '~/components/templates/vjhp/TheSection5.vue';
-import TheTestimonialSection from '~/components/templates/vjhp/TheTestimonialSection.vue';
-import TheSection7 from '~/components/templates/vjhp/TheSection7.vue';
-import TheFooterSection from '~/components/templates/vjhp/TheFooterSection.vue';
+import TheLoginHeaderSection from '~/components/templates/vjhp/TheLoginHeaderSection.vue'
+import TheHeaderSection from '~/components/templates/vjhp/TheHeaderSection.vue'
+import TheSection2 from '~/components/templates/vjhp/TheSection2.vue'
+import TheGamesBrickSection from '~/components/templates/vjhp/TheGamesBrickSection.vue'
+import TheSection4 from '~/components/templates/vjhp/TheSection4.vue'
+import TheSection5 from '~/components/templates/vjhp/TheSection5.vue'
+import TheTestimonialSection from '~/components/templates/vjhp/TheTestimonialSection.vue'
+import TheSection7 from '~/components/templates/vjhp/TheSection7.vue'
+import TheFooterSection from '~/components/templates/vjhp/TheFooterSection.vue'
 
 export default {
   layout: 'vjhp',
-  head() {
-    return { 
-      title: 'Vera&John - The fun online casino',
-      htmlAttrs: {
-        lang: 'ja',
-      },
-       bodyAttrs: {
-        id: 'ja-jp',
-      },
-      style: [],
-      script: [
-        { src: '/marketing/js/page-hide.js', id: 'go_data', go_id: 'OPT-PHSNXP6' },
-        { src: '/marketing/js/google-analytics.js', id: 'ga_data', go_id: 'OPT-PHSNXP6', ga_id: 'UA-142143961-1' },
-        { src: '/marketing/js/google-tag-manager.js', id: 'gtm_data', gtm_id: 'GTM-MFD3NKM'},
-      ],
-      noscript: [
-        {
-          hid: 'gtmBody',
-          innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id='GTM-MFD3NKM'" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
-          pbody: true
-        },
-      ],
-    }
-  },
   components: {
     TheLoginHeaderSection,
     TheHeaderSection,
@@ -107,19 +83,43 @@ export default {
     TheSection5,
     TheTestimonialSection,
     TheSection7,
-    TheFooterSection,
+    TheFooterSection
   },
-  async asyncData() {
+  async asyncData () {
     try {
       const post = await import(
         '~/assets/content/landing-page/marketing/vjhp/vera-john-homepage.md'
-      );
+      )
       return {
-        post,
-      };
+        post
+      }
     } catch (error) {
-      return false;
+      return false
     }
   },
-};
+  head () {
+    return {
+      title: 'Vera&John - The fun online casino',
+      htmlAttrs: {
+        lang: 'ja'
+      },
+      bodyAttrs: {
+        id: 'ja-jp'
+      },
+      style: [],
+      script: [
+        { src: '/marketing/js/page-hide.js', id: 'go_data', go_id: 'OPT-PHSNXP6' },
+        { src: '/marketing/js/google-analytics.js', id: 'ga_data', go_id: 'OPT-PHSNXP6', ga_id: 'UA-142143961-1' },
+        { src: '/marketing/js/google-tag-manager.js', id: 'gtm_data', gtm_id: 'GTM-MFD3NKM' }
+      ],
+      noscript: [
+        {
+          hid: 'gtmBody',
+          innerHTML: '<iframe src="https://www.googletagmanager.com/ns.html?id=\'GTM-MFD3NKM\'" height="0" width="0" style="display:none;visibility:hidden"></iframe>',
+          pbody: true
+        }
+      ]
+    }
+  }
+}
 </script>
