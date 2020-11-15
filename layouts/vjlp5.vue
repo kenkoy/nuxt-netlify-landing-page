@@ -109,7 +109,6 @@
         </div>
       </section>
 
-      <!-- eslint-disable-next-line vue/no-v-html -->
       <div v-html="htmlBody" />
 
       <Footer
