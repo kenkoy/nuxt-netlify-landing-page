@@ -1,23 +1,29 @@
 
 import { mount } from '@vue/test-utils'
-import { read } from 'gray-matter'
-
+import _ from 'lodash'
 import VJLP5 from '@/layouts/vjlp5.vue'
 import Footer from '@/components/Base/TheFooter.vue'
+import { retrieveFiles, retriveFrontMattertoJSON } from '../utils/fileUtil'
 
-const slug = '306-bvj-lan-jp-pro-livecasino-v2-0520'
+const VJLP5_DIR = '/assets/content/landing-page/marketing/vjlp5/'
 
-const wrapper = mount(VJLP5, {
-  stubs: ['nuxt']
-})
+describe('Testing VJLP5 layout vjlp5.vue', () => {
+  let wrapper
+  beforeAll(async () => {
+    const md = _
+      .chain(await retrieveFiles(VJLP5_DIR, '.md'))
+      .map(files => VJLP5_DIR + files)
+      .sample()
+      .value()
 
-describe('Testing VJLP5 Landing Page', () => {
-  beforeEach(async () => {
-    const fileLoc = `${process.cwd()}/assets/content/landing-page/marketing/vjlp5/${slug}.md`
-    const { data, content } = read(fileLoc)
+    const { html, attributes } = retriveFrontMattertoJSON(md)
+    wrapper = mount(VJLP5, {
+      stubs: ['nuxt']
+    })
+
     await wrapper.setData({
-      mdData: data,
-      htmlBody: content
+      mdData: attributes,
+      htmlBody: html
     })
   })
 
@@ -28,11 +34,6 @@ describe('Testing VJLP5 Landing Page', () => {
   test('VJLP5 has Footer Component', () => {
     const footer = wrapper.findComponent(Footer)
     expect(footer.exists()).toBeTruthy()
-  })
-
-  test('Match slug name from file name', () => {
-    const slugName = wrapper.vm.mdData.slug_name
-    expect(slugName).toBe(slug)
   })
 
   test('Join and deposit button redirect URL should be https://verajohn.com/#join', () => {

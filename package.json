@@ -23,6 +23,7 @@
     "frontmatter-markdown-loader": "^3.4.3",
     "gray-matter": "^4.0.2",
     "jquery": "^3.5.1",
+    "lodash": "^4.17.20",
     "markdown-it": "^10.0.0",
     "nuxt": "^2.0.0",
     "nuxt-lazy-load": "^1.2.4",
