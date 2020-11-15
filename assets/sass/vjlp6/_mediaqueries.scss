@@ -139,8 +139,8 @@
   #steps{
     background: #EC008B;
     .container{
-      display: inline-block;
-      vertical-align: top;
+      display: block;
+      text-align: center;
       overflow: hidden;
       margin-top: -40px;
       > div{
@@ -301,9 +301,9 @@
       background: var(--bg-image) no-repeat center top;
       background-size: cover;
       .strip {
-        -ms-flex: 0 0 33.333333%;
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        max-width: 40%;
         background: -moz-linear-gradient(top, rgba(0,159,227,0.8) 0%, rgba(236,0,139,0.8) 100%);
         background: -webkit-linear-gradient(top, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
         background: linear-gradient(to bottom, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
@@ -313,12 +313,27 @@
     #steps {
       .container {
         margin-top: 0;
+        display: block;
         > div {
+          .num {
+            float: left;
+          }
+          > div {
+            width: 150px;
+          }
           > * {
-            display: inline-flex;
+            display: inline-block;
             vertical-align: middle;
           }
+          h2 {
+            margin: 0;
+            text-align: left;
+          }
+          p {
+            text-align: left;
+          }
         }
+        
       }
     }
     #section3{
