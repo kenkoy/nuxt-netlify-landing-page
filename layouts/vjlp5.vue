@@ -151,7 +151,7 @@ export default {
     })
   },
   beforeDestroy () {
-    this.$nuxt.$off('vjlp5-data')
+    this.$root.$off('vjlp5-data')
   }
 }
 </script>
