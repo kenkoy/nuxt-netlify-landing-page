@@ -235,19 +235,33 @@
    #hero {
     background: var(--bg-image) no-repeat center right;
     background-size: cover;
+    h1 {
+      font-size: 3em;
+      letter-spacing: 0.3px;
+    }
      .strip {
        min-height: 700px;
+       margin-left: 15px;
+       margin-right: 15px;
      }
      .container {
       max-width: inherit;
     }
    }
    #steps{
+     text-align: center;
      .container{
        > div {
          .num{
            width: 80px;
            height: 80px;
+           font-size: 2.5em;
+         }
+         h2 {
+           font-size: 2em;
+         }
+         p {
+           font-size: 1em;
          }
        }
      }
@@ -264,8 +278,8 @@
    }
 
    #hero{
-     background: var(--bg-image) no-repeat right center;
-     background-size: cover;
+     background: var(--bg-image) no-repeat right top;
+     background-size: 180%;
    }
 
    #hero .banner + div{
@@ -284,17 +298,34 @@
       padding: 20px;
     } 
     #hero {
+      background: var(--bg-image) no-repeat center top;
+      background-size: cover;
       .strip {
-       -ms-flex: 0 0 33.333333%;
-       flex: 0 0 33.333333%;
-       max-width: 33.333333%;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        background: -moz-linear-gradient(top, rgba(0,159,227,0.8) 0%, rgba(236,0,139,0.8) 100%);
+        background: -webkit-linear-gradient(top, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
+        background: linear-gradient(to bottom, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc009fe3', endColorstr='#ccec008b',GradientType=0 );
       }
     }
-     #section3{
-       .container{
-         background: url(https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg) center center no-repeat;
-       }
-     }
+    #steps {
+      .container {
+        margin-top: 0;
+        > div {
+          > * {
+            display: inline-flex;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+    #section3{
+      .container{
+        background: url(https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg) center center no-repeat;
+      }
+    }
 }
 
 /* Large Devices, Wide Screens */
