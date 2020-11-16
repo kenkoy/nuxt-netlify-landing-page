@@ -37,8 +37,8 @@ collections:
     create: true
     identifier_field: "slug_name"
     slug: '{{slug}}'
-    preview_path: vjlp1/{{slug}}
-    show_preview_links: false
+    preview_path: marketing/vjlp1/{{slug}}
+    show_preview_links: true
     editor:
       preview: false
     fields:
