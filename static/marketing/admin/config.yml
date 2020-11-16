@@ -521,7 +521,7 @@ collections:
           - {label: "Terms Text", name: promo_terms_text, widget: "string"}
           - label: "Terms Underlined Link Texts"
             name: "promo_terms_link_text"
-            widget: "list"
+            widget: "object"
             summary: '{{field.text}}'
             required: false
             field: {label: Text, name: text, widget: string}
