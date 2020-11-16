@@ -46,7 +46,7 @@
                   <a :href="data_items.attributes.promo_banner.promo_join_button_redirect_url">{{data_items.attributes.promo_banner.promo_join_button}}</a></button>
                 <div class="small-terms banner-terms" data-v-835fbe4a="">
                   <a href="#terms" class="link-terms-conditions ctac"
-                    >{{data_items.attributes.promo_banner.promo_terms_link_text}}</a
+                    ><span v-for="(terms_data, terms_index) in data_items.attributes.promo_banner.promo_terms_link_text" :key="terms_index">{{terms_data}}</span></a
                   >{{data_items.attributes.promo_banner.promo_terms_text}}
                 </div>
               </div>
