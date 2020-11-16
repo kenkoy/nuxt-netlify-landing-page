@@ -18,5 +18,6 @@ module.exports = {
     '<rootDir>/components/**/*.vue',
     '<rootDir>/layouts/*.vue',
     '<rootDir>/pages/**/*.vue'
-  ]
+  ],
+  snapshotSerializers: ['jest-serializer-vue']
 }

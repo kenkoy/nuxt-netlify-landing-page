@@ -27,6 +27,10 @@ describe('Testing VJLP5 layout vjlp5.vue', () => {
     })
   })
 
+  test('Renders correctly', () => {
+    expect(wrapper.element).toMatchSnapshot()
+  })
+
   test('VJLP6 is a Vue instance', () => {
     expect(wrapper.vm).toBeTruthy()
   })
