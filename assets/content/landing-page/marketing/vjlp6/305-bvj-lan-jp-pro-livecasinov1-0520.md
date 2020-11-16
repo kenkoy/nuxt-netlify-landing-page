@@ -26,15 +26,15 @@ promo_banner:
   promo_title_highlighted:
     - $500
 promo_steps:
-  promo_step_1_title: "ご登録"
+  promo_step_1_title: ご登録
   promo_step_1_desc: " 日本１のカジノで安心"
-  promo_step_2_title: "入金"
-  promo_step_2_desc: "最大＄５００のボーナス付き"
+  promo_step_2_title: 入金
+  promo_step_2_desc: 最大＄５００のボーナス付き
   promo_step_3_title: プレイ
-  promo_step_3_desc: "賞金獲得"
+  promo_step_3_desc: 賞金獲得
 promo_template: VJLP6-NoForm
 ---
-<section id="section5">
+<section id="terms" class="section5">
 
 <div class="container">
 
