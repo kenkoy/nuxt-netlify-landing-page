@@ -71,13 +71,13 @@ export default {
     Object.entries(this.game).forEach(([key, value]) => {
       key.indexOf('game_icon_') === 0
         ? value != ''
-          ? this.icons.push(value)
-          : null
+            ? this.icons.push(value)
+            : null
         : null
       key.indexOf('game_url_') === 0
         ? value != ''
-          ? this.links.push(value)
-          : null
+            ? this.links.push(value)
+            : null
         : null
     })
   },

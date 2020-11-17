@@ -33,7 +33,6 @@ import TheBody from '~/components/templates/vjlp/vjlp3/TheBody.vue'
 import TheFooter from '~/components/templates/TheFooter.vue'
 
 export default {
-  layout: 'vjlp3',
   components: {
     TheHeader,
     TheBanner,
@@ -41,6 +40,7 @@ export default {
     TheBody,
     TheFooter
   },
+  layout: 'vjlp3',
   async asyncData ({ params }) {
     try {
       const post = await import(
@@ -55,13 +55,16 @@ export default {
   },
   head () {
     const goId = (this.post.attributes.field_ids && this.post.attributes.field_ids.go_container_id)
-      ? this.post.attributes.field_ids.go_container_id : 'OPT-PHSNXP6'
+      ? this.post.attributes.field_ids.go_container_id
+      : 'OPT-PHSNXP6'
 
     const gaId = (this.post.attributes.field_ids && this.post.attributes.field_ids.ga_tracking_id)
-      ? this.post.attributes.field_ids.ga_tracking_id : 'UA-142143961-1'
+      ? this.post.attributes.field_ids.ga_tracking_id
+      : 'UA-142143961-1'
 
     const gtmId = (this.post.attributes.field_ids && this.post.attributes.field_ids.gtm_container_id)
-      ? this.post.attributes.field_ids.gtm_container_id : 'GTM-MFD3NKM'
+      ? this.post.attributes.field_ids.gtm_container_id
+      : 'GTM-MFD3NKM'
 
     return {
       title: 'Vera&John',
@@ -82,7 +85,9 @@ export default {
               h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
               (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
             })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
-              { '${goId}': true })`
+              { '${goId}': true })`,
+          type: 'text/javascript',
+          charset: 'utf-8'
         },
         {
           hid: 'gaHead',
@@ -96,7 +101,9 @@ export default {
 
             ga('create', '${gaId}', 'auto');
             ga('require', '${goId}');
-            ga('send', 'pageview');`
+            ga('send', 'pageview');`,
+          type: 'text/javascript',
+          charset: 'utf-8'
         },
         {
           hid: 'gtmHead',
@@ -108,7 +115,9 @@ export default {
               }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                   'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', '${gtmId}');`
+            })(window, document, 'script', 'dataLayer', '${gtmId}');`,
+          type: 'text/javascript',
+          charset: 'utf-8'
         }
       ],
       noscript: [

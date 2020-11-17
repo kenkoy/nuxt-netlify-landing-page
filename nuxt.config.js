@@ -26,15 +26,15 @@ export default {
     routes: dynamicMarkdownRoutes,
     exclude: ['/marketing/admin']
   },
-  // router: {
-  //   extendRoutes(routes, resolve) {
-  //     routes.push({
-  //       name: 'home',
-  //       path: '/home/',
-  //       component: resolve(__dirname, 'pages/marketing/vjhp')
-  //     })
-  //   }
-  // },
+  router: {
+    extendRoutes (routes, resolve) {
+      routes.push({
+        name: 'home',
+        path: '/home/',
+        component: resolve(__dirname, 'pages/marketing/vjhp')
+      })
+    }
+  },
   // mode: 'universal',
   target: 'static',
   /*
@@ -69,8 +69,7 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+  plugins: [],
   /*
   ** Nuxt.js dev-modules
   */

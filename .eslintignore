@@ -8,3 +8,6 @@
 
 # Static JS files
 /static/marketing/js/**/*
+
+# Components
+/components/**/*

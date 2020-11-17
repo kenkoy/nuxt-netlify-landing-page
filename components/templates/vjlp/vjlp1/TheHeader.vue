@@ -110,7 +110,8 @@ export default {
       const bannerTitle = this.title.split(/\r?\n/)
         // .filter(title => title)
         .map(title => title.slice(-1) === '\\'
-          ? title.substring(0, title.length - 1) : title
+          ? title.substring(0, title.length - 1)
+          : title
         )
 
       let idx = 0
@@ -134,7 +135,8 @@ export default {
       const bannerSubTitle = this.subtitle.split(/\r?\n/)
         // .filter(title => title)
         .map(title => title.slice(-1) === '\\'
-          ? title.substring(0, title.length - 1) : title
+          ? title.substring(0, title.length - 1)
+          : title
         )
 
       let idx = 0

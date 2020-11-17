@@ -15,7 +15,11 @@
     <p id="firstview__touch" class="firstview__touch">
       <span>触ったら帯が緩んじゃう Touch</span>
     </p>
-    <a class="firstview__btn_inquiry" :href="joinURL">
+    <a
+      class="firstview__btn_inquiry"
+      aria-label="join"
+      :href="joinURL"
+    >
       <span>登録</span>
     </a>
     <div class="firstview__taparea">
@@ -63,7 +67,8 @@
                 id="spine-player-button-logo"
                 class="spine-player-button-icon-spine-logo"
                 src="/marketing/img/iclp3/spine-logo-white.svg"
-                alt=""
+                alt="spine-player-button-logo"
+                data-not-lazy
               >
             </div>
           </div>
@@ -73,9 +78,10 @@
         class="firstview__ie"
         src="/marketing/img/iclp3/oiran.png"
         alt="oiran"
+        data-not-lazy
       >
-      <canvas id="cvs" class="firstview__cvs" />
-      <!-- <canvas class="firstview__cvs" id="cvs" width="920" height="500"></canvas> -->
+      <!-- <canvas class="firstview__cvs" id="cvs"></canvas> -->
+      <canvas id="cvs" class="firstview__cvs" width="1920" height="500" />
     </div>
     <div id="firstvie__inquiry" class="firstvie__inquiry">
       <div class="firstvie__inquiry__inner">

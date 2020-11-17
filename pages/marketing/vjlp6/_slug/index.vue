@@ -13,17 +13,6 @@ export default {
       error(e)
     }
   },
-  mounted () {
-    this.emitData(this.markDownData)
-  },
-  methods: {
-    emitData (data) {
-      this.$root.$emit('vjlp6-data', {
-        yamlData: data.attributes,
-        htmlData: data.html
-      })
-    }
-  },
   head () {
     const tagIds = this.markDownData.attributes.field_ids
     const goId = tagIds.go_container_id || 'OPT-PHSNXP6'
@@ -51,7 +40,9 @@ export default {
               h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
               (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
             })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
-              { '${goId}': true })`
+              { '${goId}': true })`,
+          type: 'text/javascript',
+          charset: 'utf-8'
         },
         {
           hid: 'gaHead',
@@ -65,7 +56,9 @@ export default {
 
             ga('create', '${gaId}', 'auto');
             ga('require', '${goId}');
-            ga('send', 'pageview');`
+            ga('send', 'pageview');`,
+          type: 'text/javascript',
+          charset: 'utf-8'
         },
         {
           hid: 'gtmHead',
@@ -77,7 +70,9 @@ export default {
               }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                   'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', '${gtmId}');`
+            })(window, document, 'script', 'dataLayer', '${gtmId}');`,
+          type: 'text/javascript',
+          charset: 'utf-8'
         }
       ],
       noscript: [
@@ -93,6 +88,17 @@ export default {
         goHead: ['innerHTML'],
         gaHead: ['innerHTML']
       }
+    }
+  },
+  mounted () {
+    this.emitData(this.markDownData)
+  },
+  methods: {
+    emitData (data) {
+      this.$root.$emit('vjlp6-data', {
+        yamlData: data.attributes,
+        htmlData: data.html
+      })
     }
   }
 }

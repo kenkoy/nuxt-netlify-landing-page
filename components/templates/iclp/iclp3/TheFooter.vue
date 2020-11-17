@@ -3,7 +3,12 @@
     <div class="footer__inner">
       <ul class="footer__logo">
         <li class="age">
-          <a href="https://www.play-wise.com/intercasino-jp/" target="blank" rel="noopener">
+          <a
+            href="https://www.play-wise.com/intercasino-jp/"
+            target="blank"
+            rel="noopener"
+            aria-label="Play-Wise"
+          >
             <span>18+</span>
           </a>
         </li>
@@ -11,7 +16,12 @@
           class="gt"
           lazy-background="/marketing/img/iclp3/icon_gt.svg"
         >
-          <a href="https://www.gamblingtherapy.org/en" target="blank" rel="noopener">
+          <a
+            href="https://www.gamblingtherapy.org/en"
+            target="blank"
+            rel="noopener"
+            aria-label="Gambling Therapy"
+          >
             <span>gambling therapy</span>
           </a>
         </li>
@@ -27,6 +37,7 @@
           href="https://www.play-wise.com/intercasino-jp/"
           target="blank"
           rel="noopener"
+          aria-label="Play-Wise"
         >ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。</a>
       </p>
       <p />

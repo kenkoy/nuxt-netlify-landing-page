@@ -113,8 +113,10 @@ export default {
       const gameSubtitles = this.gameSmallSubtitle
         .split(/\r?\n/)
         .filter(sub => sub)
-        .map(sub => sub.slice(-1) === '\\'
-          ? sub.substring(0, sub.length - 1) : sub
+        .map(sub =>
+          sub.slice(-1) === '\\'
+            ? sub.substring(0, sub.length - 1)
+            : sub
         )
       let idx = 0
       this.gameSmallSubtitleHighlighted.filter(phrase => phrase)

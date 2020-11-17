@@ -36,10 +36,6 @@ describe('Testing VJLP5 index.vue', () => {
     locale = attributes.promo_locale
   })
 
-  test('Renders correctly', () => {
-    expect(wrapper.element).toMatchSnapshot()
-  })
-
   test('Title should be Vera&John', () => {
     const pageTitle = metaInfo.title
     expect(pageTitle).toBe('Vera&John')
