@@ -12,7 +12,7 @@ promo_banner:
   promo_join_button_redirect_url: https://verajohn.com/#join
   promo_images:
     promo_bg_desktop: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
-    promo_bg_mobile: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
+    promo_bg_mobile: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2-mV2.png
     promo_bg_banner: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
   promo_title: 306-bvj-lan-jp-pro-livecasino-v2-0520
 steps:
