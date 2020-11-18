@@ -36,15 +36,16 @@
     "node-sass": "^5.0.0",
     "sass-jest": "^0.1.7",
     "sass-loader": "^10.0.5",
+    "seed-barista": "^1.1.1",
     "vue-jest": "^3.0.7"
   },
   "jest": {
     "moduleFileExtensions": [
-        "js",
-        "scss"
+      "js",
+      "scss"
     ],
     "transform": {
-        "^.+\\.scss$": "sass-jest"
+      "^.+\\.scss$": "sass-jest"
     },
     "testRegex": "__tests__/.*\\.(js|scss)$"
   }
