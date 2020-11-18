@@ -15,11 +15,11 @@ export default {
     TheHeader,
     TheSidenav
   },
-  data() {
+  data () {
     return {
       displaySidenav: false
     }
-  },
+  }
 }
 </script>
 <style>

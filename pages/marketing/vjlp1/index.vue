@@ -9,14 +9,14 @@ import ThePostList from '~/components/templates/ThePostList'
 
 export default {
   components: { ThePostList },
-  async asyncData() {
-    const mdFiles = await require.context('~/assets/content/landing-page/marketing/vjlp1/', true, /\.md$/);
+  async asyncData () {
+    const mdFiles = await require.context('~/assets/content/landing-page/marketing/vjlp1/', true, /\.md$/)
     return {
       posts: await mdFiles.keys().map(key => ({
         ...mdFiles(key),
         slug: `${key.replace('.md', '').replace('./', '')}`,
         path: 'vjlp1'
-      })).reverse() 
+      })).reverse()
     }
   }
 }

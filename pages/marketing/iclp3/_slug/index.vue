@@ -1,16 +1,17 @@
 <template>
   <div>
-   <TheHeader
-      :registrationMessage="post.attributes.promo_banner.promo_register_message"
-      :joinMessage="post.attributes.promo_banner.promo_join_text"
-      :joinURL="post.attributes.promo_banner.promo_join_url"
-      :termsText="post.attributes.promo_banner.promo_terms_text"
-      :underlinedLinkText="post.attributes.promo_banner.promo_terms_underlined_text"
+    <TheHeader
+      :registration-message="post.attributes.promo_banner.promo_register_message"
+      :join-message="post.attributes.promo_banner.promo_join_text"
+      :join-u-r-l="post.attributes.promo_banner.promo_join_url"
+      :terms-text="post.attributes.promo_banner.promo_terms_text"
+      :underlined-link-text="post.attributes.promo_banner.promo_terms_underlined_text"
     />
-    <TheBonus 
-      :bonusData="post.attributes.bonus"
+    <TheBonus
+      :bonus-data="post.attributes.bonus"
     />
     <ThePayment />
+    <TheBody :promo_content="post.html" />
     <TheFooter />
   </div>
 </template>
@@ -28,27 +29,38 @@ export default {
     TheBonus,
     ThePayment,
     TheBody,
-    TheFooter,
+    TheFooter
   },
   layout: 'iclp3',
-  head() {
-    const goId = (this.post.attributes.field_ids && this.post.attributes.field_ids.go_container_id) ?
-      this.post.attributes.field_ids.go_container_id : 'OPT-PHSNXP6';
+  async asyncData ({ params }) {
+    try {
+      const post = await import('~/assets/content/landing-page/marketing/iclp3/' + params.slug + '.md')
+      return { post }
+    } catch (error) {
+      return false
+    }
+  },
+  head () {
+    const goId = (this.post.attributes.field_ids && this.post.attributes.field_ids.go_container_id)
+      ? this.post.attributes.field_ids.go_container_id
+      : 'OPT-PHSNXP6'
 
-    const gaId = (this.post.attributes.field_ids && this.post.attributes.field_ids.ga_tracking_id) ?
-      this.post.attributes.field_ids.ga_tracking_id : 'UA-142143961-1';
+    const gaId = (this.post.attributes.field_ids && this.post.attributes.field_ids.ga_tracking_id)
+      ? this.post.attributes.field_ids.ga_tracking_id
+      : 'UA-142143961-1'
 
-    const gtmId = (this.post.attributes.field_ids && this.post.attributes.field_ids.gtm_container_id) ?
-      this.post.attributes.field_ids.gtm_container_id : 'GTM-MFD3NKM';
-    
+    const gtmId = (this.post.attributes.field_ids && this.post.attributes.field_ids.gtm_container_id)
+      ? this.post.attributes.field_ids.gtm_container_id
+      : 'GTM-MFD3NKM'
+
     return {
       title: 'インターカジノ',
       htmlAttrs: {
         lang: this.post.attributes.promo_locale.promo_language_code
       },
       bodyAttrs: {
-        id: this.post.attributes.promo_locale.promo_language_code + '-' 
-          + this.post.attributes.promo_locale.promo_country_code
+        id: this.post.attributes.promo_locale.promo_language_code + '-' +
+          this.post.attributes.promo_locale.promo_country_code
       },
       style: [],
       script: [
@@ -61,6 +73,8 @@ export default {
               (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
             })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
               { '${goId}': true })`,
+          type: 'text/javascript',
+          charset: 'utf-8'
         },
         {
           hid: 'gaHead',
@@ -75,6 +89,8 @@ export default {
             ga('create', '${gaId}', 'auto');
             ga('require', '${goId}');
             ga('send', 'pageview');`,
+          type: 'text/javascript',
+          charset: 'utf-8'
         },
         {
           hid: 'gtmHead',
@@ -87,6 +103,8 @@ export default {
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                   'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
             })(window, document, 'script', 'dataLayer', '${gtmId}');`,
+          type: 'text/javascript',
+          charset: 'utf-8'
         }
       ],
       noscript: [
@@ -94,22 +112,14 @@ export default {
           hid: 'gtmBody',
           innerHTML: `<iframe src="https://www.googletagmanager.com/ns.html?id='${gtmId}'" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           pbody: true
-        },
+        }
       ],
       __dangerouslyDisableSanitizersByTagID: {
         gtmBody: ['innerHTML'],
         gtmHead: ['innerHTML'],
         goHead: ['innerHTML'],
-        gaHead: ['innerHTML'],
+        gaHead: ['innerHTML']
       }
-    }
-  },
-  async asyncData ({ params }) {
-    try {
-      const post = await import('~/assets/content/landing-page/marketing/iclp3/' + params.slug + '.md');
-      return { post }
-    } catch (error) {
-      return false
     }
   }
 }

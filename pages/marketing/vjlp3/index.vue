@@ -11,23 +11,23 @@ export default {
   components: {
     ThePostList
   },
-  async asyncData() {
+  async asyncData () {
     const mdFiles = await require.context(
       '~/assets/content/landing-page/marketing/vjlp3/',
       true,
       /\.md$/
-    );
+    )
     // add slug and path in key list of mdFiles
     const mdFilesContent = await mdFiles.keys().map(key => ({
       ...mdFiles(key),
-      slug: `${key.replace(".md", "").replace("./", "")}`,
+      slug: `${key.replace('.md', '').replace('./', '')}`,
       path: 'vjlp3'
-    }));
+    }))
     // filter to vjlp3 templates only
-    //.filter((mdFiles) => mdFiles.attributes.promo_template == 'VJLP3-NoForm')
+    // .filter((mdFiles) => mdFiles.attributes.promo_template == 'VJLP3-NoForm')
     return { posts: mdFilesContent.reverse() }
   }
-};
+}
 </script>
 
 <style scoped>

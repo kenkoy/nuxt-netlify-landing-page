@@ -1,7 +1,7 @@
 <template>
-  <section class="termsdetail" id="terms">
+  <section id="terms" class="termsdetail">
     <div class="termsdetail__inner">
-      <div v-html="promo_content"></div>
+      <div v-html="promo_content" />
     </div>
   </section>
 </template>
@@ -12,8 +12,8 @@ export default {
   props: {
     promo_content: {
       type: String,
-      required: false,
-    },
-  },
-};
+      required: false
+    }
+  }
+}
 </script>

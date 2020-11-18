@@ -5,8 +5,8 @@ promo_locale:
   promo_language_code: ja
 field_ids:
   go_container_id: OPT-PD9MB2F
-  ga_tracking_id: "UA-142143961-1"
-  gtm_container_id: "GTM-MFD3NKM"
+  ga_tracking_id: UA-142143961-1
+  gtm_container_id: GTM-MFD3NKM
 promo_banner:
   promo_title: |-
     最高$500までの

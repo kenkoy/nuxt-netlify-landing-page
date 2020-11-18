@@ -3,7 +3,7 @@
     <section id="terms" class="container animated fadeIn">
       <div class="row">
         <div class="col-12">
-          <div v-html="promo_content"></div>
+          <div v-html="promo_content" />
         </div>
       </div>
       <ul>
@@ -23,41 +23,41 @@ export default {
   props: {
     promo_content: {
       type: String,
-      required: true,
+      required: true
     },
     landing_page_type: {
       type: String,
-      required: false,
+      required: false
     }
   },
   computed: {
-    urlData: function () {
+    urlData () {
       let returnURL = {
         terms: '',
-        promotions: '',
-      };
+        promotions: ''
+      }
       switch (this.landing_page_type) {
         case 'verajohn':
           returnURL = {
             terms: 'https://verajohn.com/about/terms-and-conditions',
-            promotions: 'https://verajohn.com/about/promotions-terms-and-conditions',
-          };
-          break;
+            promotions: 'https://verajohn.com/about/promotions-terms-and-conditions'
+          }
+          break
         case 'intercasino':
           returnURL = {
             terms: 'https://intercasino.com/about/terms-and-conditions',
-            promotions: 'https://intercasino.com/about/promotions-terms-and-conditions',
-          };
-          break;
+            promotions: 'https://intercasino.com/about/promotions-terms-and-conditions'
+          }
+          break
         default:
           returnURL = {
             terms: '#',
-            promotions: '#',
-          };
-          break;
+            promotions: '#'
+          }
+          break
       }
-      return returnURL;
+      return returnURL
     }
   }
-};
+}
 </script>

@@ -1,9 +1,9 @@
 <template>
   <div>
     <section class="intro">
-      <h1>Digital Acquisition Services</h1>  
+      <h1>Digital Acquisition Services</h1>
     </section>
-  </div>  
+  </div>
 </template>
 
 <style scoped>

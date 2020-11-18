@@ -3,48 +3,47 @@
     <section class="container-flex bg-alt steps animated fadeIn fadebg-2">
       <div class="container text-center">
         <img
+          v-lazy-load
           style="max-width: 100%;"
           src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-welcome-title.png"
           alt=""
-          v-lazy-load
-        />
-        <br />
+        >
+        <br>
         <img
+          v-lazy-load
           style="max-width: 100%;"
           src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-500WC-stamp.png"
           alt=""
-          v-lazy-load
-        />
-        <br />
+        >
+        <br>
         <div>
-          <p class="text-center" v-html="firstWelcomeStatement">
-          </p>
+          <p class="text-center" v-html="firstWelcomeStatement" />
         </div>
         <div class="row" style="margin: 25px 0px 0px;">
           <div class="col-12 animated fadeIn delay-0.5s text-center">
             <div class="row">
-              <div class="col-lg-2 d-none d-md-block"></div>
+              <div class="col-lg-2 d-none d-md-block" />
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <img
+                  v-lazy-load
                   style="max-width: 100%;"
                   src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph1.png"
                   alt=""
-                  v-lazy-load
-                />
+                >
               </div>
               <div class="col-lg-4 col-md-6 col-sm-6">
                 <img
+                  v-lazy-load
                   style="max-width: 100%;"
                   src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph2.png"
                   alt=""
-                  v-lazy-load
-                />
+                >
               </div>
-              <div class="col-lg-2 d-none d-md-block"></div>
+              <div class="col-lg-2 d-none d-md-block" />
             </div>
           </div>
         </div>
-        <span class="queenprofile-star sprite"></span>
+        <span class="queenprofile-star sprite" />
         <div class="row" style="margin: 25px 0px 0px;">
           <div class="col-12 animated fadeIn delay-0.5s text-center">
             <div>
@@ -58,46 +57,46 @@
             <!--destop-->
             <div class="d-none d-md-block">
               <div class="row">
-                <div class="col-lg-2 d-none d-md-block"></div>
+                <div class="col-lg-2 d-none d-md-block" />
                 <div class="col-lg-7 col-md-9 col-sm-9">
                   <p class="speech-bubble-r">
                     <font color="#e10057">
                       <b>初めまして、ごきげんよう!</b>
-                      <br />
+                      <br>
                     </font> インターカジノではスリル満点の各種ゲームやイベントを毎月ご用意しているわ。勝ちたい方、長くじっくりプレイをしたい方にぴったりね。
-                    <br />私たちと一緒に、勝負してみない?
+                    <br>私たちと一緒に、勝負してみない?
                   </p>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-3">
                   <img
+                    v-lazy-load
                     style="max-width: 100%;"
                     src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-red-icon.png"
                     alt=""
-                    v-lazy-load
-                  />
+                  >
                 </div>
-                <div class="col-lg-1 d-none d-md-block"></div>
+                <div class="col-lg-1 d-none d-md-block" />
               </div>
               <div class="row">
-                <div class="col-lg-1 d-none d-md-block"></div>
+                <div class="col-lg-1 d-none d-md-block" />
                 <div class="col-lg-2 col-md-3 col-sm-3">
                   <img
+                    v-lazy-load
                     style="max-width: 100%;"
                     src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-black-icon.png"
                     alt=""
-                    v-lazy-load
-                  />
+                  >
                 </div>
                 <div class="col-lg-7 col-md-9 col-sm-9">
                   <p class="speech-bubble-c">
                     <font color="#a184d6">
                       <b style>チャオ! クロエだよ★</b>
-                      <br />
+                      <br>
                     </font> みんなも「なんとかなる!」精神で思いっきり勝ちを目指すよー!
-                    <br />クロエについて来れる人～？お先にカジノで待ってるね!
+                    <br>クロエについて来れる人～？お先にカジノで待ってるね!
                   </p>
                 </div>
-                <div class="col-lg-2 d-none d-md-block"></div>
+                <div class="col-lg-2 d-none d-md-block" />
               </div>
             </div>
             <!--mobile-->
@@ -106,20 +105,20 @@
                 <p class="speech-bubble-r-d">
                   <font color="#e10057">
                     <b>初めまして、ごきげんよう!</b>
-                    <br />
+                    <br>
                   </font>
-                  <span v-html="rougeSpeechStatement"></span>
+                  <span v-html="rougeSpeechStatement" />
                   <!-- インターカジノではスリル満点の各種ゲームやイベントを毎月ご用意しているわ。勝ちたい方、長くじっくりプレイをしたい方にぴったりね。
                   <br />私たちと一緒に、勝負してみない? -->
                 </p>
               </div>
               <div class="col-sm-12">
                 <img
+                  v-lazy-load
                   style="max-width: 100%;"
                   src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-red-icon.png"
                   alt=""
-                  v-lazy-load
-                />
+                >
               </div>
             </div>
             <div class="row d-block d-sm-none">
@@ -127,20 +126,20 @@
                 <p class="speech-bubble-c-d">
                   <font color="#a184d6">
                     <b style>チャオ! クロエだよ★</b>
-                    <br />
+                    <br>
                   </font>
-                  <span v-html="chloeSpeechStatement"></span>
+                  <span v-html="chloeSpeechStatement" />
                   <!-- みんなも「なんとかなる!」精神で思いっきり勝ちを目指すよー!
                   <br />クロエについて来れる人～？お先にカジノで待ってるね! -->
                 </p>
               </div>
               <div class="col-sm-12">
                 <img
+                  v-lazy-load
                   style="max-width: 100%;"
                   src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-black-icon.png"
                   alt=""
-                  v-lazy-load
-                />
+                >
               </div>
             </div>
           </div>
@@ -156,60 +155,60 @@ export default {
   props: {
     firstStatements: {
       type: String,
-      required: true,
+      required: true
     },
     highligtedFirstStatementPhrase: {
       type: String,
-      required: false,
+      required: false
     },
     secondStatements: {
       type: String,
-      required: true,
+      required: true
     },
     rougeSpeech: {
       type: String,
-      required: true,
+      required: true
     },
     chloeSpeech: {
       type: String,
-      required: true,
+      required: true
     }
   },
   computed: {
-    firstWelcomeStatement: function () {
+    firstWelcomeStatement () {
       return this.statementsParser(this.firstStatements, this.highligtedFirstStatementPhrase, 'redmark')
     },
-    secondWelcomeStatement: function () {
+    secondWelcomeStatement () {
       return this.statementsParser(this.secondStatements, null, null)
     },
-    rougeSpeechStatement: function () {
+    rougeSpeechStatement () {
       return this.statementsParser(this.rougeSpeech, null, null)
     },
-    chloeSpeechStatement: function () {
+    chloeSpeechStatement () {
       return this.statementsParser(this.chloeSpeech, null, null)
     }
   },
   methods: {
-    statementsParser: function (statements, highLigtedPhrase, classStyle) {
+    statementsParser (statements, highLigtedPhrase, classStyle) {
       let sentences = statements.split(/\r?\n/)
         .filter(statement => statement)
-        .map(statement => {
+        .map((statement) => {
           return statement.slice(-1) === '\\'
             ? statement.substring(0, statement.length - 1)
-            : statement;
-        });
+            : statement
+        })
       if (highLigtedPhrase && classStyle) {
-        const replacement = `<span class="${classStyle}">${highLigtedPhrase}</span>`;
-        sentences = sentences.map(line => {
+        const replacement = `<span class="${classStyle}">${highLigtedPhrase}</span>`
+        sentences = sentences.map((line) => {
           return line.includes(highLigtedPhrase)
             ? line.replace(highLigtedPhrase, replacement)
-            : line;
-        });
+            : line
+        })
       }
       return sentences.reduce((oldVal, newVal) => {
-        return oldVal + '<br />' + newVal;
-      });
+        return oldVal + '<br />' + newVal
+      })
     }
   }
-};
+}
 </script>

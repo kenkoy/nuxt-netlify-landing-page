@@ -1,0 +1,13 @@
+# Excluded files for linting
+
+# Generated files
+/.nuxt
+/dist
+/coverage
+/node_modules
+
+# Static JS files
+/static/marketing/js/**/*
+
+# Components
+/components/**/*

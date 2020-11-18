@@ -6,11 +6,11 @@
           <div class="row">
             <div class="col-12 animated fadeIn delay-0s text-center">
               <img
+                v-lazy-load
                 style="max-width: 100%;"
                 src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame1.png"
                 alt=""
-                v-lazy-load
-              />
+              >
             </div>
           </div>
         </div>
@@ -22,20 +22,20 @@
           <div class="row">
             <div class="col-12 animated fadeIn delay-0.5s text-center">
               <!-- title -->
-              <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame2.png" alt="" v-lazy-load/>
+              <img v-lazy-load style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame2.png" alt="">
               <!-- game cat -->
               <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                  <img style="max-width: 100%;" v-bind:src="game1" alt="" v-lazy-load/>
+                  <img v-lazy-load style="max-width: 100%;" :src="game1" alt="">
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                  <img style="max-width: 100%;" v-bind:src="game2" alt="" v-lazy-load/>
+                  <img v-lazy-load style="max-width: 100%;" :src="game2" alt="">
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                  <img style="max-width: 100%;" v-bind:src="game3" alt="" v-lazy-load/>
+                  <img v-lazy-load style="max-width: 100%;" :src="game3" alt="">
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                  <img style="max-width: 100%;" v-bind:src="game4" alt="" v-lazy-load/>
+                  <img v-lazy-load style="max-width: 100%;" :src="game4" alt="">
                 </div>
               </div>
 
@@ -43,10 +43,10 @@
                 <div class="col-12 animated fadeIn delay-0.5s text-center">
                   <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                      <img style="max-width: 100%;" v-bind:src="gamesInfo1" alt="" v-lazy-load/>
+                      <img v-lazy-load style="max-width: 100%;" :src="gamesInfo1" alt="">
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-6">
-                      <img style="max-width: 100%;" v-bind:src="gamesInfo2" alt="" v-lazy-load/>
+                      <img v-lazy-load style="max-width: 100%;" :src="gamesInfo2" alt="">
                     </div>
                   </div>
                 </div>
@@ -56,7 +56,7 @@
         </div>
       </section>
     </div>
-    <div id="detail" class="gb goldenbg"></div>
+    <div id="detail" class="gb goldenbg" />
   </div>
 </template>
 
@@ -66,28 +66,28 @@ export default {
   props: {
     game1: {
       type: String,
-      required: true,
+      required: true
     },
     game2: {
       type: String,
-      required: true,
+      required: true
     },
     game3: {
       type: String,
-      required: true,
+      required: true
     },
     game4: {
       type: String,
-      required: true,
+      required: true
     },
     gamesInfo1: {
       type: String,
-      required: true,
+      required: true
     },
     gamesInfo2: {
       type: String,
-      required: true,
-    },
+      required: true
+    }
   }
-};
+}
 </script>

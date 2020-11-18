@@ -1,12 +1,12 @@
 <template>
   <footer
+    v-if="promo_language_code === 'ja' && promo_country_code === 'jp'"
     id="footer"
     class="animated fadeIn"
-    v-if="promo_language_code === 'ja' && promo_country_code === 'jp'"
   >
     <div class="container-fluid pp" style="border-top: 0px;">
       <div class="row">
-        <div class="col-12"></div>
+        <div class="col-12" />
       </div>
     </div>
     <div class="container-fluid">
@@ -16,26 +16,36 @@
             <a
               :href="responsibleGamingURL"
               target="blank"
-              aria-label="Responsible Gaming">
-              <div class="age"></div>
+              aria-label="Responsible Gaming"
+            >
+              <div class="age" />
             </a>
           </div>
           <div class="icon">
-            <a href="https://www.gamstop.co.uk" target="blank"
-              aria-label="GamStop">
-              <div class="gamstop"></div>
+            <a
+              href="https://www.gamstop.co.uk"
+              target="blank"
+              aria-label="GamStop"
+            >
+              <div class="gamstop" />
             </a>
           </div>
           <div class="icon">
-            <a href="https://www.begambleaware.org" target="blank"
-              aria-label="Be Gamble Aware">
-              <div class="bga"></div>
+            <a
+              href="https://www.begambleaware.org"
+              target="blank"
+              aria-label="Be Gamble Aware"
+            >
+              <div class="bga" />
             </a>
           </div>
           <div class="icon">
-            <a href="https://www.gamblingtherapy.org/en" target="blank"
-              aria-label="Gambling Theraphy">
-              <div class="gt"></div>
+            <a
+              href="https://www.gamblingtherapy.org/en"
+              target="blank"
+              aria-label="Gambling Theraphy"
+            >
+              <div class="gt" />
             </a>
           </div>
           <div class="icon">
@@ -44,18 +54,21 @@
               target="blank"
               aria-label="UK Gambling Commission"
             >
-              <div class="ukgc"></div>
+              <div class="ukgc" />
             </a>
           </div>
           <div class="icon">
             <a href="#" target="blank" aria-label="Curacao">
-              <div class="curacao"></div>
+              <div class="curacao" />
             </a>
           </div>
           <div class="icon">
-            <a href="https://www.gamcare.org.uk" target="blank"
-              aria-label="GamCare">
-              <div class="gamcare"></div>
+            <a
+              href="https://www.gamcare.org.uk"
+              target="blank"
+              aria-label="GamCare"
+            >
+              <div class="gamcare" />
             </a>
           </div>
         </div>
@@ -71,19 +84,19 @@
           </p>
           <p style="font-size:14px; text-align:center">
             当ウェブサイトは、キュラソー政府の商業登記に登録されている、番号149132のBreckenridge Curacao B.V.（登録住所：Emancipatie Boulevard, Dominico F. “Don” Martina 31, Willemstad, Curaçao）により運営されています。
-            <br />Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster Gaming License #5536/JAZに基づく C.I.L Curacao Interavtive Licensing N.V. により付与されたサブライセンスを通して正式な許可を所持しています
+            <br>Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster Gaming License #5536/JAZに基づく C.I.L Curacao Interavtive Licensing N.V. により付与されたサブライセンスを通して正式な許可を所持しています
           </p>
         </div>
       </div>
     </div>
   </footer>
 
-  <footer id="footer" class="animated fadeIn" v-else>
+  <footer v-else id="footer" class="animated fadeIn">
     <div class="container-fluid pp">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="payment-providers"></div>
+            <div class="payment-providers" />
           </div>
         </div>
       </div>
@@ -95,26 +108,36 @@
             <a
               :href="responsibleGamingURL"
               target="blank"
-              aria-label="Responsible Gaming">
-              <div class="age"></div>
+              aria-label="Responsible Gaming"
+            >
+              <div class="age" />
             </a>
           </div>
           <div class="icon">
-            <a href="https://www.gamstop.co.uk" target="blank"
-              aria-label="GamStop">
-              <div class="gamstop"></div>
+            <a
+              href="https://www.gamstop.co.uk"
+              target="blank"
+              aria-label="GamStop"
+            >
+              <div class="gamstop" />
             </a>
           </div>
           <div class="icon">
-            <a href="https://www.begambleaware.org" target="blank"
-              aria-label="Be Gamble Aware">
-              <div class="bga"></div>
+            <a
+              href="https://www.begambleaware.org"
+              target="blank"
+              aria-label="Be Gamble Aware"
+            >
+              <div class="bga" />
             </a>
           </div>
           <div class="icon">
-            <a href="https://www.gamblingtherapy.org/en" target="blank"
-              aria-label="Gambling Theraphy">>
-              <div class="gt"></div>
+            <a
+              href="https://www.gamblingtherapy.org/en"
+              target="blank"
+              aria-label="Gambling Theraphy"
+            >>
+              <div class="gt" />
             </a>
           </div>
           <div class="icon">
@@ -123,7 +146,7 @@
               target="blank"
               aria-label="UK Gambling Commission"
             >
-              <div class="ukgc"></div>
+              <div class="ukgc" />
             </a>
           </div>
           <div class="icon">
@@ -132,18 +155,18 @@
               target="blank"
               aria-label="Malta Gaming Authority"
             >
-              <div class="mga"></div>
+              <div class="mga" />
             </a>
           </div>
           <div class="icon">
             <a href="https://www.gamcare.org.uk" target="blank" aria-label="GamCare">
-              <div class="gamcare"></div>
+              <div class="gamcare" />
             </a>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="footer-content col-12 text-center"></div>
+        <div class="footer-content col-12 text-center" />
       </div>
     </div>
   </footer>
@@ -155,33 +178,33 @@ export default {
   props: {
     promo_language_code: {
       type: String,
-      required: true,
+      required: true
     },
     promo_country_code: {
       type: String,
-      required: true,
+      required: true
     },
     landing_page_type: {
       type: String,
-      required: false,
+      required: false
     }
   },
   computed: {
-    responsibleGamingURL: function () {
+    responsibleGamingURL () {
       let returnURL = ''
       switch (this.landing_page_type) {
         case 'verajohn':
-          returnURL = 'https://www.verajohn.com/about/responsible-gaming';
-          break;
+          returnURL = 'https://www.verajohn.com/about/responsible-gaming'
+          break
         case 'intercasino':
-          returnURL = 'https://www.intercasino.com/about/responsible-gaming';
-          break;
+          returnURL = 'https://www.intercasino.com/about/responsible-gaming'
+          break
         default:
-          returnURL = '#';
-          break;
+          returnURL = '#'
+          break
       }
-      return returnURL;
+      return returnURL
     }
   }
-};
+}
 </script>

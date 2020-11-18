@@ -10,14 +10,14 @@
       <div class="row row-eq-height">
         <div id="strip" class="col-12 strip">
           <div class="strip-container animated fadeIn" style="margin-top: 56.5px;">
-            <div class="logo animated fadeIn"></div>
-            <div class="game-logo animated bounce delay-1s"></div>
-            <div class="title animated fadeIn delay-1s"></div>
+            <div class="logo animated fadeIn" />
+            <div class="game-logo animated bounce delay-1s" />
+            <div class="title animated fadeIn delay-1s" />
             <div>
               <h2>
                 <p style="text-align: center;">
                   <b>
-                    <br />
+                    <br>
                   </b>
                 </p>
                 <p style="text-align: center;">
@@ -26,18 +26,18 @@
                   </b>
                 </p>
                 <div style="text-align: center;">
-                  <span style="font-size: 0.75em; background-color: initial;"
+                  <span
+                    style="font-size: 0.75em; background-color: initial;"
                     v-html="bannerSubtitle"
-                  >
-                  </span>
+                  />
                 </div>
                 <p>
-                  <br />
+                  <br>
                 </p>
               </h2>
             </div>
             <!-- <div class="co-brand"></div>-->
-            
+
             <!-- id="signup-btn" -->
             <a
               :href="signUpURL"
@@ -61,89 +61,91 @@ export default {
   props: {
     loginText: {
       type: String,
-      required: true,
+      required: true
     },
     loginURL: {
       type: String,
-      required: true,
+      required: true
     },
     gameLargeSubtitle: {
       type: String,
-      required: true,
+      required: true
     },
     gameSmallSubtitle: {
       type: String,
-      required: true,
+      required: true
     },
     gameSmallSubtitleHighlighted: {
       type: Array,
-      required: false,
+      required: false
     },
     signUpText: {
       type: String,
-      required: true,
+      required: true
     },
     signUpURL: {
       type: String,
-      required: true,
+      required: true
     },
     termsLinkText: {
       type: Array,
-      required: false,
+      required: false
     },
     termsText: {
       type: String,
-      required: true,
+      required: true
     },
     images: {
       type: Object,
-      required: true,
+      required: true
     }
   },
   computed: {
-    cssHeaderVariables: function () {
+    cssHeaderVariables () {
       return {
         '--bg-image': `url('${this.images.promo_bg_desktop}')`,
         '--bg-image-m': `url('${this.images.promo_bg_mobile}')`,
         '--game-logo': `url('${this.images.promo_game_logo}')`,
-        '--game-title': `url('${this.images.promo_game_image}')`,
+        '--game-title': `url('${this.images.promo_game_image}')`
       }
     },
-    bannerSubtitle: function () {
-      let gameSubtitles = this.gameSmallSubtitle
+    bannerSubtitle () {
+      const gameSubtitles = this.gameSmallSubtitle
         .split(/\r?\n/)
         .filter(sub => sub)
-        .map(sub => sub.slice(-1) === '\\'
-          ? sub.substring(0, sub.length - 1) : sub
-        );
-      let idx = 0;
+        .map(sub =>
+          sub.slice(-1) === '\\'
+            ? sub.substring(0, sub.length - 1)
+            : sub
+        )
+      let idx = 0
       this.gameSmallSubtitleHighlighted.filter(phrase => phrase)
-        .forEach(phrase => {
+        .forEach((phrase) => {
           while (gameSubtitles.length > idx) {
             if (gameSubtitles[idx].includes(phrase)) {
-              gameSubtitles[idx] = gameSubtitles[idx].replace(phrase, `<font color="#ffff02"><b>${phrase}</b></font>`);
-              break;
+              gameSubtitles[idx] = gameSubtitles[idx].replace(phrase, `<font color="#ffff02"><b>${phrase}</b></font>`)
+              break
             } else {
-              idx++;
+              idx++
             }
           }
-        });
+        })
       return gameSubtitles.reduce((oldVal, newVal) => {
-        return oldVal + '<br />' + newVal;
-      });
+        return oldVal + '<br />' + newVal
+      })
     },
-    bannerTerms: function () {
-      let termsText = this.termsText;
+    bannerTerms () {
+      let termsText = this.termsText
       this.termsLinkText.filter(linkText => linkText)
-        .forEach(linkText => {
+        .forEach((linkText) => {
           if (this.termsText.includes(linkText)) {
-            termsText = termsText.replace(linkText, `<a href="#terms" class="link-terms-conditions ctac">${linkText}</a>`);
+            termsText = termsText.replace(linkText, `<a href="#terms" class="link-terms-conditions ctac">${linkText}</a>`)
           }
-        });
-      return termsText;
+        })
+      return termsText
     }
   }
-};
+}
 </script>
 
 <style scoped>
