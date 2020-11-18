@@ -1,11 +1,12 @@
 <template>
-  <div :class="{ vjlp5_wrapper: true }"> <!-- Change class name to actual page name -->
+  <div :class="{ vjlp5_wrapper: true }">
+    <!-- Change class name to actual page name -->
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
       class="vjlp5-main"
-    > <!-- Change class name to actual page name -->
-
+    >
+      <!-- Change class name to actual page name -->
 
       <!--
         TEMPLATE LAYOUT, HTML, CSS STARTS HERE
@@ -14,7 +15,6 @@
         - add <div class="container"> inside <section> tag
         - add alt tags for every <img/>
       -->
-
 
       <!-- USE THE CODE BELOW IF THE DESIGN / TEMPLATE HAVE BANNERS. ELSE, DELETE
         <section id="hero" :style="cssBackground">
@@ -60,13 +60,13 @@ export default {
     // }
   },
   created () {
-    this.$root.$once('vjlp5-data', (data) => { //Change to actual page name
+    this.$root.$once('vjlp5-data', (data) => { // Change to actual page name
       this.htmlBody = data.htmlData
       this.mdData = data.yamlData
     })
   },
   beforeDestroy () {
-    this.$root.$off('vjlp5-data') //Change to actual page name
+    this.$root.$off('vjlp5-data') // Change to actual page name
   }
 }
 </script>
