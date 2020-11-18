@@ -410,6 +410,8 @@
        }
    }
    #hero {
+    background: var(--bg-image) no-repeat 50%;
+    background-size: cover;
      .container {
        max-width: 1140px;
      }
