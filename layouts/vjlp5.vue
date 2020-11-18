@@ -144,16 +144,6 @@ export default {
       mobile: ''
     }
   },
-  head () {
-    return {
-      htmlAttrs: {
-        lang: this.language
-      },
-      link: [
-        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
-      ]
-    }
-  },
   computed: {
     cssBackground () {
       return {
@@ -177,6 +167,16 @@ export default {
         this.tablet = item.attributes.promo_banner.promo_images.promo_bg_banner
         this.mobile = item.attributes.promo_banner.promo_images.promo_bg_mobile
       })
+    }
+  },
+  head () {
+    return {
+      htmlAttrs: {
+        lang: this.language
+      },
+      link: [
+        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
+      ]
     }
   }
 }
