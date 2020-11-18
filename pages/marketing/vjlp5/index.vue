@@ -8,11 +8,10 @@
 import ThePostList from '~/components/Base/ThePostList'
 
 export default {
-  layout: 'default',
-
   components: {
     ThePostList
   },
+  layout: 'default',
   async asyncData () {
     const mdFiles = await require.context(
       '~/assets/content/landing-page/marketing/vjlp5/',
