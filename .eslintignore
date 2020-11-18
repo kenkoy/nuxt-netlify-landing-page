@@ -11,3 +11,7 @@
 
 # Components
 /components/**/*
+
+# Blank template
+/layouts/blank-template.vue
+/pages/marketing/blank-template/**/*
