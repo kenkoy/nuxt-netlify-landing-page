@@ -1,5 +1,5 @@
-const glob = require('glob')
-const path = require('path')
+import * as path from 'path'
+import * as glob from 'glob'
 
 const markdownPaths = [
   'marketing/vjlp1',
@@ -9,16 +9,16 @@ const markdownPaths = [
   'marketing/vjlp6',
   'marketing/iclp1',
   'marketing/iclp2',
-  'marketing/iclp3',
-];
+  'marketing/iclp3'
+]
 
-function dynamicMarkdownRoutes() {
+function dynamicMarkdownRoutes () {
   return [].concat(
-    ...markdownPaths.map(mdPath => {
+    ...markdownPaths.map((mdPath) => {
       return glob.sync(`${mdPath}/*.md`, { cwd: 'assets/content/landing-page/' })
-        .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`);
+        .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`)
     })
-  );
+  )
 }
 
 export default {
@@ -26,15 +26,15 @@ export default {
     routes: dynamicMarkdownRoutes,
     exclude: ['/marketing/admin']
   },
-  // router: {
-  //   extendRoutes(routes, resolve) {
-  //     routes.push({
-  //       name: 'home',
-  //       path: '/home/',
-  //       component: resolve(__dirname, 'pages/marketing/vjhp')
-  //     })
-  //   }
-  // },
+  router: {
+    extendRoutes (routes, resolve) {
+      routes.push({
+        name: 'home',
+        path: '/home/',
+        component: resolve(__dirname, 'pages/marketing/vjhp')
+      })
+    }
+  },
   // mode: 'universal',
   target: 'static',
   /*
@@ -49,7 +49,7 @@ export default {
       { hid: 'robots', name: 'robots', content: 'noindex' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/marketing/gamesys-favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/marketing/gamesys-favicon.ico' }
     ],
     style: [
       // { cssText: '.async-hide { opacity: 0 !important }', type: 'text/css' },
@@ -73,7 +73,10 @@ export default {
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [],
+  buildModules: [
+    // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/eslint-module'
+  ],
   /*
   ** Nuxt.js modules
   */
@@ -89,13 +92,22 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config, { isDev, isClient, loaders: { vue } }) {
+    extend (config, { isDev, isClient, loaders: { vue } }) {
       config.module.rules.push({
         test: /\.md$/,
         include: path.resolve(__dirname, 'assets/content/landing-page/marketing'),
-        loader: 'frontmatter-markdown-loader',
-      });
+        loader: 'frontmatter-markdown-loader'
+      })
+
+      if (isDev && isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/
+        })
+      }
     },
-    publicPath: process.env.NODE_ENV == 'production' ? 'marketing/_nuxt' : ''
+    publicPath: process.env.NODE_ENV === 'production' ? 'marketing/_nuxt' : ''
   }
 }

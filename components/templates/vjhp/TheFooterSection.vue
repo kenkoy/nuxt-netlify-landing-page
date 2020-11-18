@@ -3,16 +3,16 @@
     <h6>そのほかの情報ページ</h6>
     <ul class="items-list footer-menu">
       <li>
-        <a v-bind:href="footer_menu_1_redirect_url">{{ footer_menu_1_text }}</a>
+        <a :href="footer_menu_1_redirect_url">{{ footer_menu_1_text }}</a>
       </li>
       <li>
-        <a v-bind:href="footer_menu_2_redirect_url">{{ footer_menu_2_text }}</a>
+        <a :href="footer_menu_2_redirect_url">{{ footer_menu_2_text }}</a>
       </li>
       <li>
-        <a v-bind:href="footer_menu_3_redirect_url">{{ footer_menu_3_text }}</a>
+        <a :href="footer_menu_3_redirect_url">{{ footer_menu_3_text }}</a>
       </li>
       <li>
-        <a v-bind:href="footer_menu_4_redirect_url">{{ footer_menu_4_text }}</a>
+        <a :href="footer_menu_4_redirect_url">{{ footer_menu_4_text }}</a>
       </li>
     </ul>
     <p>
@@ -22,10 +22,10 @@
       により付与されたサブライセンスを通して正式な許可を所持しています
     </p>
     <a href="https://www.verajohn.com/home">
-      <img src="/marketing/img/vjhp/curacao.png" alt="Curacao" v-lazy-load/>
+      <img v-lazy-load src="/marketing/img/vjhp/curacao.png" alt="Curacao">
     </a>
     <a href="https://www.verajohn.com/home">
-      <img src="/marketing/img/vjhp/18Regulator.png" alt="18Regulator" v-lazy-load/>
+      <img v-lazy-load src="/marketing/img/vjhp/18Regulator.png" alt="18Regulator">
     </a>
   </footer>
 </template>
@@ -36,36 +36,36 @@ export default {
   props: {
     footer_menu_1_text: {
       type: String,
-      required: true,
+      required: true
     },
     footer_menu_2_text: {
       type: String,
-      required: true,
+      required: true
     },
     footer_menu_3_text: {
       type: String,
-      required: true,
+      required: true
     },
     footer_menu_4_text: {
       type: String,
-      required: true,
+      required: true
     },
     footer_menu_1_redirect_url: {
       type: String,
-      required: true,
+      required: true
     },
     footer_menu_2_redirect_url: {
       type: String,
-      required: true,
+      required: true
     },
     footer_menu_3_redirect_url: {
       type: String,
-      required: true,
+      required: true
     },
     footer_menu_4_redirect_url: {
       type: String,
-      required: true,
-    },
-  },
-};
+      required: true
+    }
+  }
+}
 </script>

@@ -54,11 +54,9 @@
        }
    }
 
-
-
    #hero{
      background: var(--bg-image-m) no-repeat center #000;
-     min-height: 160px;
+     min-height: 400px;
      background-size: cover;
    }
    #hero .container{
@@ -85,7 +83,7 @@
          vertical-align: top;
          width: 31%;
          overflow: hidden;
-         margin-top: -50px;
+         margin-top: -30px;
 
          .num{
            width: 50px;
@@ -155,6 +153,12 @@
    }
 }
 
+@media (max-height: 600px) and (max-width: 320px){
+    #hero{
+        min-height: 350px;
+    }
+}
+
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 576px) {
    #header .nav-links {
@@ -163,7 +167,7 @@
      }
    }
    #hero{
-       min-height: 200px;
+       min-height: 550px;
    }
    #steps{
      .container{

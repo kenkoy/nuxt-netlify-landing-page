@@ -4,24 +4,36 @@
       <div class="container">
         <div class="row">
           <div class="col-4 animated fadeIn delay-0s">
-            <div class="num">1</div>
+            <div class="num">
+              1
+            </div>
             <div class="step">
               <h2>{{ title1 }}</h2>
-              <h3 class="desc">{{ description1 }}</h3>
+              <h3 class="desc">
+                {{ description1 }}
+              </h3>
             </div>
           </div>
           <div class="col-4 animated fadeIn delay-1s">
-            <div class="num">2</div>
+            <div class="num">
+              2
+            </div>
             <div class="step">
               <h2>{{ title2 }}</h2>
-              <h3 class="desc">{{ description2 }}</h3>
+              <h3 class="desc">
+                {{ description2 }}
+              </h3>
             </div>
           </div>
           <div class="col-4 animated fadeIn delay-2s">
-            <div class="num">3</div>
+            <div class="num">
+              3
+            </div>
             <div class="step">
               <h2>{{ title3 }}</h2>
-              <h3 class="desc">{{ description3 }}</h3>
+              <h3 class="desc">
+                {{ description3 }}
+              </h3>
             </div>
           </div>
         </div>
@@ -59,7 +71,7 @@ export default {
       required: true
     }
   }
-};
+}
 </script>
 
 <style scoped>

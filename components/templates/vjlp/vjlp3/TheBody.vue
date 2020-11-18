@@ -1,6 +1,6 @@
 <template>
   <div v-html="promo_content" />
-</template> 
+</template>
 
 <script>
 export default {
@@ -11,7 +11,7 @@ export default {
       required: true
     }
   }
-};
+}
 </script>
 
 <style scoped>

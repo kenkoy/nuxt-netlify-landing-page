@@ -5,10 +5,12 @@
         <div class="row">
           <div class="col-12 animated fadeIn delay-0.5s text-center">
             <!-- title -->
-            <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty1.png" alt="" v-lazy-load/>
+            <img v-lazy-load style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty1.png" alt="">
             <!-- info -->
             <h3 class="text-center">
-              <font color="#ffffff">レベルが上がるとカジノ内での</font>
+              <font color="#ffffff">
+                レベルが上がるとカジノ内での
+              </font>
               <font color="#ff0375">
                 <b>地位向上</b>
               </font>
@@ -23,8 +25,8 @@
               <span class="redmark">インター大公</span>ではあの●●アイテムが出現
               <i>!?</i>
             </p>
-            <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty2.png" alt="" v-lazy-load/>
-            <img style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty3.png" alt="" v-lazy-load/>
+            <img v-lazy-load style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty2.png" alt="">
+            <img v-lazy-load style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty3.png" alt="">
           </div>
         </div>
       </div>
@@ -34,6 +36,6 @@
 
 <script>
 export default {
-  name: 'Loyalty',
-};
+  name: 'Loyalty'
+}
 </script>

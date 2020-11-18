@@ -11,13 +11,20 @@
     "generate": "nuxt generate && npm run copy:config",
     "copy:config": "cp -r static/marketing/admin/config.yml dist/marketing/",
     "test": "jest",
-    "test:unit": "npm test -- --watch"
+    "test:unit": "npm test -- --watch",
+    "lint:js": "eslint --ext .js,.vue,.yml .",
+    "lint:fix": "eslint --fix --ext .js,.vue,.yml .",
+    "lint": "npm run lint:js"
   },
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.9",
     "axios": "^0.19.2",
+    "core-js": "^3.7.0",
+    "eslint-loader": "^4.0.2",
     "frontmatter-markdown-loader": "^3.4.3",
+    "gray-matter": "^4.0.2",
     "jquery": "^3.5.1",
+    "lodash": "^4.17.20",
     "markdown-it": "^10.0.0",
     "nuxt": "^2.0.0",
     "nuxt-lazy-load": "^1.2.4",
@@ -26,18 +33,25 @@
     "vue-slick-carousel": "^1.0.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.1",
     "@vue/test-utils": "^1.1.1",
-    "babel-core": "^7.0.0-bridge.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
     "babel-jest": "^26.6.3",
+    "eslint": "^7.13.0",
+    "eslint-config-developit": "^1.2.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-vue-libs": "^4.0.0",
+    "eslint-plugin-yaml": "^0.3.0",
     "jest": "^26.6.3",
     "jest-serializer-vue": "^2.0.2",
     "node-sass": "^5.0.0",
-    "sass-jest": "^0.1.7",
     "sass-loader": "^10.0.5",
     "seed-barista": "^1.1.1",
     "vue-jest": "^3.0.7"
+<<<<<<< HEAD
   },
   "jest": {
     "moduleFileExtensions": [
@@ -48,5 +62,7 @@
       "^.+\\.scss$": "sass-jest"
     },
     "testRegex": "__tests__/.*\\.(js|scss)$"
+=======
+>>>>>>> ba7d28b82fb733a4a24c3ed51afff5fd3e1ef789
   }
 }

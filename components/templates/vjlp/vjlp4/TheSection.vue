@@ -3,10 +3,10 @@
     <div v-for="(datum, index) of sectionData" :key="index">
       <section class="container-flex bg-alt steps animated fadeIn painbg">
         <div class="container text-center">
-          <br />
-          <br />
-          <img style="max-width: 100%;" :src="datum.image" alt="" v-lazy-load/>
-          <br />
+          <br>
+          <br>
+          <img v-lazy-load style="max-width: 100%;" :src="datum.image" alt="">
+          <br>
 
           <!-- id="signup-btn" -->
           <a
@@ -14,8 +14,8 @@
             class="button button-lrg"
             style="display:block;margin-top: 0px;"
           >{{ datum.join_button }}</a>
-          <br />
-          <br />
+          <br>
+          <br>
         </div>
       </section>
     </div>
@@ -28,10 +28,10 @@ export default {
   props: {
     sectionData: {
       type: Array,
-      required: true,
+      required: true
     }
   }
-};
+}
 </script>
 
 <style scoped>
