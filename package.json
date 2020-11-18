@@ -51,18 +51,5 @@
     "sass-loader": "^10.0.5",
     "seed-barista": "^1.1.1",
     "vue-jest": "^3.0.7"
-<<<<<<< HEAD
-  },
-  "jest": {
-    "moduleFileExtensions": [
-      "js",
-      "scss"
-    ],
-    "transform": {
-      "^.+\\.scss$": "sass-jest"
-    },
-    "testRegex": "__tests__/.*\\.(js|scss)$"
-=======
->>>>>>> ba7d28b82fb733a4a24c3ed51afff5fd3e1ef789
   }
 }
