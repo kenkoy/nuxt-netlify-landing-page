@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
     <div :class="{ post_wrapper: true }">
         <section id="featured-posts" :class="$nuxt.$route.name">
             <div class="container">
@@ -14,20 +13,6 @@
             </div>
         </section>
     </div>
-=======
-  <section class="featured-posts">
-    <div class="container">
-      <div v-for="(post, post_index) in posts" :key="post_index">
-        <nuxt-link :to="'/marketing/' + post.path + '/' + post.slug" class="post-preview">
-          <article>
-            <h3>{{ post.attributes.slug_name }}</h3>
-            <p>{{ post.attributes.promo_banner.promo_title }}</p>
-          </article>
-        </nuxt-link>
-      </div>
-    </div>
-  </section>
->>>>>>> 29caa62c15775d8c85f7dd25476047d5342de3e2
 </template>
 
 <script>
@@ -108,11 +93,6 @@ export default {
         }
     }
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 29caa62c15775d8c85f7dd25476047d5342de3e2
     /* Custom, iPhone Retina */
     @media only screen and (min-width : 320px) {
         #featured-posts{
