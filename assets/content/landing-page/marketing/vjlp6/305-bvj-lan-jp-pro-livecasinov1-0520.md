@@ -9,9 +9,8 @@ field_ids:
   gtm_container_id: GTM-MFD3NKM
 promo_banner:
   promo_title: |-
-    今だけ
-    最高$500のボーナス
-    をプレゼント！
+    最大$1000
+    ビギナーズボーナス
   promo_images:
     promo_bg_desktop: /marketing/img/live-casino-bg.jpg
     promo_bg_mobile: /marketing/img/live-casino-bg-m.jpg
@@ -24,17 +23,17 @@ promo_banner:
   promo_join_button: ご登録はこちら
   promo_login_button: 登録
   promo_title_highlighted:
-    - $500
+    - $1000
 promo_steps:
-  promo_step_1_title: "ご登録"
+  promo_step_1_title: ご登録
   promo_step_1_desc: " 日本１のカジノで安心"
-  promo_step_2_title: "入金"
-  promo_step_2_desc: "最大＄５００のボーナス付き"
+  promo_step_2_title: 入金
+  promo_step_2_desc: 最大＄５００のボーナス付き
   promo_step_3_title: プレイ
-  promo_step_3_desc: "賞金獲得"
+  promo_step_3_desc: 賞金獲得
 promo_template: VJLP6-NoForm
 ---
-<section id="section5">
+<section id="terms" class="section5">
 
 <div class="container">
 

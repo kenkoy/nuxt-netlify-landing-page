@@ -18,11 +18,11 @@ export default {
     // TheSidenav
     Navigation
   },
-  data() {
+  data () {
     return {
       displaySidenav: false
     }
-  },
+  }
 }
 </script>
 <style>

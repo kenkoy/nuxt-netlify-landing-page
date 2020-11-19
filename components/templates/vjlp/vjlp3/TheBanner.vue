@@ -3,11 +3,15 @@
     <div class="container">
       <div class="row">
         <div id="bf-banner-img-2" class="col-lg-12">
-          <h1 v-if="promo_title_display">{{ promo_title }}</h1>
+          <h1 v-if="promo_title_display">
+            {{ promo_title }}
+          </h1>
           <h2>{{ promo_description }}</h2>
           <div :class="promo_join_button_location">
-            <a class="signup-btn d-none d-lg-block" 
-              :href="promo_join_button_redirect_url">
+            <a
+              class="signup-btn d-none d-lg-block"
+              :href="promo_join_button_redirect_url"
+            >
               <div class="bf-button bf-secondary-bg">
                 <!-- <p>
                   今
@@ -19,8 +23,10 @@
           </div>
         </div>
         <div class="d-block d-lg-none col-12">
-          <div class="center-button"
-            :class="{ hidden: promo_join_button_location === 'hidden' }">
+          <div
+            class="center-button"
+            :class="{ hidden: promo_join_button_location === 'hidden' }"
+          >
             <a class="signup-btn" :href="promo_join_button_redirect_url">
               <div class="bf-button bf-secondary-bg">
                 <!-- <p>
@@ -31,7 +37,7 @@
               </div>
             </a>
           </div>
-          <div style="margin: 20px 0;"></div>
+          <div style="margin: 20px 0;" />
           <!-- <div id="strip" class="col-12 align-bottom"></div> -->
         </div>
       </div>
@@ -45,37 +51,37 @@ export default {
   props: {
     images: {
       type: Object,
-      required: true,
+      required: true
     },
     promo_title: {
       type: String,
-      required: true,
+      required: true
     },
     promo_title_display: {
       type: Boolean,
-      required: true,
+      required: true
     },
     promo_description: {
       type: String,
       default: '',
-      required: false,
+      required: false
     },
     promo_join_button: {
       type: String,
-      required: true,
+      required: true
     },
     promo_join_button_location: {
       type: String,
       default: 'hidden',
-      required: false,
+      required: false
     },
     promo_join_button_redirect_url: {
       type: String,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
-    cssBackground: function () {
+    cssBackground () {
       return {
         '--bg-image': `url('${this.images.promo_bg_desktop}')`,
         '--bg-image-m': `url('${this.images.promo_bg_mobile}')`,
@@ -83,7 +89,7 @@ export default {
       }
     }
   }
-};
+}
 </script>
 
 <style scoped>
@@ -118,7 +124,6 @@ export default {
     min-height: 350px;
   }
 }
-
 
 .hidden { display: none; }
 

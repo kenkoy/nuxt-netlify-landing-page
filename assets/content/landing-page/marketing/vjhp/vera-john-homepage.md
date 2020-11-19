@@ -5,9 +5,9 @@ login_header_section:
   login_header_text: Sample Login
   login_header_redirect_url: https://www.google.com
 field_ids:
-  go_container_id: "OPT-PHSNXP6"
-  ga_tracking_id: "UA-142143961-1"
-  gtm_container_id: "GTM-MFD3NKM"
+  go_container_id: OPT-PHSNXP6
+  ga_tracking_id: UA-142143961-1
+  gtm_container_id: GTM-MFD3NKM
 header_section:
   header_section_heading_subtitle: "圧倒的な人気とシェア! さらに安心・安全・楽しいの3拍子がばっちり揃う、業界ナンバーワンカジノで遊んじゃおう! "
   header_section_best_deal_caption: 登録してからすぐ使える! 業界一お得なビギナーズボーナスのおまけつき!

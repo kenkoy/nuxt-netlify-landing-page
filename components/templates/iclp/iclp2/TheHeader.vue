@@ -1,7 +1,7 @@
 <template>
   <div>
     <header id="strip-container" class="container-flex h-100" :style="cssHeaderVariables">
-      <a id="login-btn" v-bind:href="signUpURL" class="login hvr-pulse">
+      <a id="login-btn" :href="signUpURL" class="login hvr-pulse">
         <div class="animated fadeIn">
           <i class="material-icons">home</i>
           <div class="login-txt">
@@ -13,11 +13,11 @@
         <div class="row row-eq-height">
           <div id="strip" class="col-12 strip">
             <div class="strip-container animated fadeIn" style="margin-top: 222px;">
-              <div class="logo animated fadeIn"></div>
-              <div class="title-1 animated fadeIn delay-0s"></div>
-              <div class="title-2 animated tada delay-1s"></div>
+              <div class="logo animated fadeIn" />
+              <div class="title-1 animated fadeIn delay-0s" />
+              <div class="title-2 animated tada delay-1s" />
             </div>
-            <span class="queenprofile-star sprite"></span>
+            <span class="queenprofile-star sprite" />
             <div>
               <p class="text-center" v-html="bannerStatement">
                 <!-- ✦新規プレイヤー限定特典✦
@@ -29,19 +29,19 @@
             </div>
             <!-- id="signup-btn" -->
             <a
-              v-bind:href="registerButtonURL"
+              :href="registerButtonURL"
               class="button button-lrg"
               style="display:block;margin-top: 0px;"
             >{{ registerButtonText }}</a>
             <!-- show button-->
             <div class="small-terms">
-              <a v-bind:href="termsURL" class="link-terms-conditions ctac">{{ termsTextLink }}</a>{{ termsText }}
+              <a :href="termsURL" class="link-terms-conditions ctac">{{ termsTextLink }}</a>{{ termsText }}
             </div>
           </div>
         </div>
       </div>
     </header>
-    <div id="detail" class="gb fadebg"></div>
+    <div id="detail" class="gb fadebg" />
   </div>
 </template>
 
@@ -51,85 +51,85 @@ export default {
   props: {
     statements: {
       type: String,
-      required: true,
+      required: true
     },
     higlightedPhrase: {
       type: String,
-      required: false,
+      required: false
     },
     registerButtonText: {
       type: String,
-      required: true,
+      required: true
     },
     registerButtonURL: {
       type: String,
-      required: true,
+      required: true
     },
     homeButtonText: {
       type: String,
-      required: true,
+      required: true
     },
     homeButtonURL: {
       type: String,
-      required: true,
+      required: true
     },
     termsText: {
       type: String,
-      required: true,
+      required: true
     },
     termsTextLink: {
       type: String,
-      required: true,
+      required: true
     },
     termsURL: {
       type: String,
-      required: true,
+      required: true
     },
     signUpText: {
       type: String,
-      required: true,
+      required: true
     },
     signUpURL: {
       type: String,
-      required: true,
+      required: true
     },
     images: {
       type: Object,
-      required: true,
-    },
+      required: true
+    }
   },
   computed: {
-    cssHeaderVariables: function () {
+    cssHeaderVariables () {
       return {
         '--bg-image': `url('${this.images.promo_bg_desktop}')`,
         '--bg-image-m': `url('${this.images.promo_bg_mobile}')`,
         '--game-logo': `url('${this.images.promo_game_logo}')`,
         '--title-01': `url('${this.images.promo_banner_image_title_1}')`,
-        '--title-02': `url('${this.images.promo_banner_image_title_2}')`,
+        '--title-02': `url('${this.images.promo_banner_image_title_2}')`
       }
     },
-    bannerStatement: function () {
+    bannerStatement () {
       let sentences = this.statements.split(/\r?\n/)
         .filter(statement => statement)
-        .map(statement => {
+        .map((statement) => {
           return statement.slice(-1) === '\\'
             ? statement.substring(0, statement.length - 1)
-            : statement;
-        });
+            : statement
+        })
       if (this.higlightedPhrase) {
-        const replacement = `<span class="redmark">${this.higlightedPhrase}</span>`;
-        sentences = sentences.map(sentence => {
+        const replacement = `<span class="redmark">${this.higlightedPhrase}</span>`
+        sentences = sentences.map((sentence) => {
           return sentence.includes(this.higlightedPhrase)
             ? sentence.replace(this.higlightedPhrase, replacement)
-            : sentence;
-        });
+            : sentence
+        })
       }
       return sentences.reduce((oldVal, newVal) => {
-        return oldVal + '<br />' + newVal;
-      });
+        return oldVal + '<br />' + newVal
+      })
     }
   }
-};
+}
 </script>
 
 <style scoped>

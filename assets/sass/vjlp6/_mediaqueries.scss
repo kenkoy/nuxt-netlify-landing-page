@@ -45,13 +45,43 @@
    section, footer {
     padding: 10px;
   }
+  .login-txt{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'MainFont-Bold', sans-serif;
+  }
   #hero {
-    background: var(--bg-image-m) no-repeat center;
-    background-size: 100%;
+    h1 {
+      font-size: 2em;
+      font-family: 'MainFont-DemiBold', sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-bottom: .5rem;
+      margin-top: -55px;
+      font-weight: bold;
+      line-height: 1.5em;
+      text-shadow: 0 0 0.6rem #FFFFFF, 0 0 1.5rem #FFFFFF, -0.2rem 0.1rem 1rem #FFFFFF, 0.2rem 0.1rem 1rem #FFFFFF, 0 -0.5rem 2rem #FFFFFF, 0 0.5rem 3rem #FFFFFF;
+      -webkit-animation: shine 2s forwards,flicker 3s infinite;
+      animation: shine 2s forwards,flicker 3s infinite;
+      color:#FFFFFF;
+      text-shadow:0 0 .6rem #FFFFFF,0 0 1.5rem #FFFFFF,-.2rem .1rem 1rem #FFFFFF,.2rem .1rem 1rem #FFFFFF,0 -.5rem 2rem #FFFFFF,0 .5rem 3rem #FFFFFF;
+      -webkit-animation:shine 2s forwards,flicker 3s infinite;
+      animation:shine 2s forwards,flicker 3s infinite}
+      @keyframes blink{0%,22%,36%,75%{
+        color:#FFFFFF;
+        text-shadow:0 0 .6rem #FFFFFF,0 0 1.5rem #FFFFFF,-.2rem .1rem 1rem #FFFFFF,.2rem .1rem 1rem #FFFFFF,0 -.5rem 2rem #FFFFFF,0 .5rem 3rem #ff2483}28%,33%{color:#FFFFFF;text-shadow:none}82%,97%{color:#FFFFFF;text-shadow:none}}
+        .flicker{animation:shine 2s forwards,blink 3s 2s infinite}
+        .fast-flicker{animation:shine 2s forwards,blink 10s 1s infinite}
+        @keyframes shine{0%{color:#6b1839;text-shadow:none}100%{color:#FFFFFF;text-shadow:0 0 .6rem #FFFFFF,0 0 1.5rem #FFFFFF,-.2rem .1rem 1rem #FFFFFF,.2rem .1rem 1rem #FFFFFF,0 -.5rem 2rem #FFFFFF,0 .5rem 3rem #FFFFFF}}
+        @keyframes flicker{from{opacity:1}4%{opacity:.9}6%{opacity:.85}8%{opacity:.95}10%{opacity:.9}11%{opacity:.922}12%{opacity:.9}14%{opacity:.95}16%{opacity:.98}17%{opacity:.9}19%{opacity:.93}20%{opacity:.99}24%{opacity:1}26%{opacity:.94}28%{opacity:.98}37%{opacity:.93}38%{opacity:.5}39%{opacity:.96}42%{opacity:1}44%{opacity:.97}46%{opacity:.94}56%{opacity:.9}58%{opacity:.9}60%{opacity:.99}68%{opacity:1}70%{opacity:.9}72%{opacity:.95}93%{opacity:.93}95%{opacity:.95}97%{opacity:.93}to{opacity:1}
+    }
+    background: var(--bg-image-m) no-repeat 50%;
+    background-size: cover;
     padding: 0;
     p, li {
-      line-height: 0;
-      margin-top: 7px;
+      margin-top: 0;
+      margin-bottom: 1rem;
     }
     .container {
       flex-wrap: nowrap;
@@ -66,28 +96,35 @@
     }
     button{
       display: block;
-      margin: 0 auto;
-      background: #FEE63D;
+      margin: 220px auto 0;
+      background: #fff;
       border-radius: 100px;
       animation-iteration-count: infinite;
+      font-size: 30px;
+      font-weight: bold;
+      color: #704B1F;
+      padding: 15px 25px;
+      a {
+        text-decoration: none;
+        border: none;
+      }
     }
     .small-terms {
       font-size: 11px;
       text-align: center;
-      margin: 2.5rem 0;
+      margin: -110px 0 2.5rem;
     }
     .strip {
-      background: linear-gradient(to bottom, rgba(0,159,227,0.5) 0%,rgba(236,0,139,0.5) 100%);
-      text-align: center;
+      text-align: left;
       color: #fff;
       position: relative;
       width: 100%;
       padding-right: 15px;
       padding-left: 15px;
-      min-height: 600px;
+      min-height: 800px;
       img {
-        height: 150px !important;
-        margin-top: 50px;
+        height: 100px !important;
+        margin-top: 15px;
       }
     }
     #strip-container[data-v-835fbe4a] {
@@ -122,6 +159,8 @@
     .container{
       display: block;
       text-align: center;
+      overflow: hidden;
+      margin-top: -40px;
       > div{
         display: inline-block;
         vertical-align: top;
@@ -141,11 +180,19 @@
           margin: auto;
           font-family: 'MainFont-DemiBold';
         }
+        h2 {
+          font-size: 1.2em;
+          text-align: center;
+          font-family: 'MainFont-DemiBold', sans-serif;
+          font-weight: 400;
+          margin-bottom: 8px;
+        }
         h3{
           color: $SUB_TITLE_COLOR;
         }
         p{
           text-align: center;
+          margin-top: 0;
         }
       }
     }
@@ -160,7 +207,25 @@
   #section3{
     .container{
       background: url('https://files.vjpromo.com/bannerflow/lp-core/pp/payment_jp.svg') center center no-repeat;
-      min-height: 150px;
+      min-height: 140px;
+      background-size: 90%;
+    }
+  }
+  #section5 {
+    h3 {
+      font-family: 'MainFont-Bold', sans-serif;
+      font-size: 1em;
+      margin-bottom: .5rem;
+      font-weight: 500;
+    }
+  }
+  .section5 {
+    h3 {
+      font-family: 'MainFont-Bold', sans-serif;
+      font-size: 1em;
+      margin-bottom: .5rem;
+      font-weight: 500;
+      color: #fee63d;
     }
   }
   footer{
@@ -173,6 +238,10 @@
         border: none;
         margin: 0 8px;
       }
+    }
+    .container > div {
+      padding-left: 0;
+      padding-right: 0;
     }
     .second-footer{
       padding: 25px 30px;
@@ -191,21 +260,35 @@
      }
    }
    #hero {
-    background: var(--bg-image) no-repeat center right;
+    background: var(--bg-image) no-repeat center center;
     background-size: cover;
+    h1 {
+      font-size: 3em;
+      letter-spacing: 0.3px;
+    }
      .strip {
-       min-height: 700px;
+       min-height: 845px;
+       margin-left: 15px;
+       margin-right: 15px;
      }
      .container {
       max-width: inherit;
     }
    }
    #steps{
+     text-align: center;
      .container{
        > div {
          .num{
            width: 80px;
            height: 80px;
+           font-size: 2.5em;
+         }
+         h2 {
+           font-size: 2em;
+         }
+         p {
+           font-size: 1em;
          }
        }
      }
@@ -214,17 +297,42 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-   #header .logo{
-       top: -30px;
-       img{
-         max-width: 128px;
-       }
-   }
+  #header .logo{
+      top: -30px;
+      img{
+        max-width: 128px;
+      }
+  }
 
-   #hero{
-     background: var(--bg-image) no-repeat right center;
-     background-size: cover;
-   }
+  #hero{
+    background: var(--bg-image) no-repeat center center;
+    background-size: 160%;
+      h1 {
+      line-height: 1.2;
+      }
+      .strip {
+      min-height: 400px;
+      background: -moz-linear-gradient(top, rgba(0,159,227,0.5) 0%, rgba(236,0,139,0.5) 100%);
+      background: -webkit-linear-gradient(top, rgba(0,159,227,0.5) 0%,rgba(236,0,139,0.5) 100%);
+      background: linear-gradient(to bottom, rgba(0,159,227,0.5) 0%,rgba(236,0,139,0.5) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc009fe3', endColorstr='#ccec008b',GradientType=0 );
+      text-align: center;
+      img {
+        margin-top: 60px;
+      }
+      button {
+        margin: 40px auto 0;
+        background: #FEE63D;
+        font-size: 1em;
+        a {
+          font-weight: 500;
+        }
+      }
+      .small-terms {
+        margin: 25px 0 2.5rem;
+      }
+    }
+  }
 
    #hero .banner + div{
        justify-content: flex-end;
@@ -242,17 +350,49 @@
       padding: 20px;
     } 
     #hero {
+      background: var(--bg-image) no-repeat center top;
+      background-size: cover;
       .strip {
-       -ms-flex: 0 0 33.333333%;
-       flex: 0 0 33.333333%;
-       max-width: 33.333333%;
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        max-width: 40%;
+        background: -moz-linear-gradient(top, rgba(0,159,227,0.8) 0%, rgba(236,0,139,0.8) 100%);
+        background: -webkit-linear-gradient(top, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
+        background: linear-gradient(to bottom, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc009fe3', endColorstr='#ccec008b',GradientType=0 );
       }
     }
-     #section3{
-       .container{
-         background: url(https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg) center center no-repeat;
-       }
-     }
+    #steps {
+      .container {
+        margin-top: 0;
+        display: block;
+        > div {
+          .num {
+            float: left;
+          }
+          > div {
+            width: 150px;
+          }
+          > * {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          h2 {
+            margin: 0;
+            text-align: left;
+          }
+          p {
+            text-align: left;
+          }
+        }
+        
+      }
+    }
+    #section3{
+      .container{
+        background: url(https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg) center center no-repeat;
+      }
+    }
 }
 
 /* Large Devices, Wide Screens */
@@ -270,8 +410,15 @@
        }
    }
    #hero {
+    background: var(--bg-image) no-repeat 50%;
+    background-size: cover;
      .container {
        max-width: 1140px;
+     }
+     .strip {
+      -ms-flex: 0 0 42%;
+      flex: 0 0 42%;
+      max-width: 42%;
      }
    }
    #steps{
@@ -307,4 +454,7 @@
    #section1 h2{
      font-size: 60px;
    }
+}
+body {
+  font-family: 'MainFont-Medium', sans-serif;
 }

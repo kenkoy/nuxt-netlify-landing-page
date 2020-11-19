@@ -1,20 +1,62 @@
 <template>
   <div class="sidenav-container">
-    <div v-if="show" class="sidenav-backdrop" @click="$emit('close')"></div>
+    <div v-if="show" class="sidenav-backdrop" @click="$emit('close')" />
     <transition name="slide-side">
       <div v-if="show" class="sidenav">
         <ul class="nav-list" @click="$emit('close')">
-          <li class="nav-item"><nuxt-link to="/marketing/vjlp1">VJLP 1</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/marketing/vjlp3">VJLP 3</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/marketing/vjlp4">VJLP 4</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/marketing/vjlp5">VJLP 5</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/marketing/vjlp6">VJLP 6</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/marketing/iclp1">ICLP 1</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/marketing/iclp2">ICLP 2</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/marketing/iclp3">ICLP 3</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/marketing/vjhp">VJ Stripped Down</nuxt-link></li>
-          <li class="nav-item"><nuxt-link to="/marketing/about">About</nuxt-link></li>
-          <li class="nav-item"><a href="/marketing/admin/#/" target="_blank">Admin</a></li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/vjlp1">
+              VJLP 1
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/vjlp3">
+              VJLP 3
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/vjlp4">
+              VJLP 4
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/vjlp5">
+              VJLP 5
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/vjlp6">
+              VJLP 6
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/iclp1">
+              ICLP 1
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/iclp2">
+              ICLP 2
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/iclp3">
+              ICLP 3
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/vjhp">
+              VJ Stripped Down
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/about">
+              About
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <a href="/marketing/admin/#/" target="_blank">Admin</a>
+          </li>
         </ul>
       </div>
     </transition>
@@ -23,16 +65,15 @@
 
 <script>
 export default {
-  name: "TheSidenav",
+  name: 'TheSidenav',
   props: {
     show: {
       type: Boolean,
       default: false
     }
   }
-};
+}
 </script>
-
 
 <style scoped>
 .sidenav-container {

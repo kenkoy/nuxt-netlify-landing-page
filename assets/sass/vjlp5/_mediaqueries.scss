@@ -18,7 +18,7 @@
 
    section,
    footer{
-       padding: 10px;
+       padding: 5px 10px;
    }
 
 
@@ -54,12 +54,34 @@
        }
    }
 
-
-
    #hero{
      background: var(--bg-image-m) no-repeat center #000;
-     min-height: 160px;
+     min-height: 400px;
      background-size: cover;
+
+     .banner{
+        position: absolute;
+        right: 0;
+        top: 100px;
+        max-width: 210px;
+     }
+
+     h1{
+       font-size: 20px;
+       text-shadow: rgb(255, 255, 255) 0px 0px 0.6rem,
+       rgb(255, 255, 255) 0px 0px 1.5rem,
+       rgb(255, 255, 255) -0.2rem 0.1rem 1rem,
+       rgb(255, 255, 255) 0.2rem 0.1rem 1rem,
+       rgb(255, 255, 255) 0px -0.5rem 2rem,
+       rgb(255, 255, 255) 0px 0.5rem 3rem;
+       color: $TEXT_COLOR;
+       font-weight: 700;
+       font-family: 'MainFont-Medium', sans-serif;
+
+       span{
+         color: rgb(255, 217, 102);
+       }
+     }
    }
    #hero .container{
        flex-wrap: wrap;
@@ -85,7 +107,7 @@
          vertical-align: top;
          width: 31%;
          overflow: hidden;
-         margin-top: -50px;
+         margin-top: -30px;
 
          .num{
            width: 50px;
@@ -155,6 +177,18 @@
    }
 }
 
+/* Iphone 5/SE */
+@media (max-height: 568px) and (max-width: 320px){
+    #hero{
+        min-height: 350px;
+
+        .banner{
+          top: 50px;
+          max-width: 150px;
+        }
+    }
+}
+
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 576px) {
    #header .nav-links {
@@ -163,7 +197,16 @@
      }
    }
    #hero{
-       min-height: 200px;
+       min-height: 650px;
+
+       .banner{
+         top: 200px;
+         max-width: 250px;
+
+         h1{
+           font-size: 23px;
+         }
+       }
    }
    #steps{
      .container{
@@ -199,6 +242,16 @@
      min-height: 320px;
      background: var(--bg-banner) no-repeat #000 center;
      background-size: cover;
+
+     .banner{
+       top: 100px;
+       left: 0;
+       max-width: 300px;
+
+       h1{
+         font-size: 26px;
+       }
+     }
    }
 
    #hero .banner + div{
@@ -215,6 +268,10 @@
 @media only screen and (min-width : 992px) {
      #hero{
          background-size: contain;
+
+         .banner{
+           left: 20%;
+         }
      }
      #section3{
        .container{

@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 <div class="header-container">
     <header class="the-header">
         <TheSideNavToggle @toggle="$emit('sidenav-toggle')" />
@@ -25,6 +26,76 @@
         </div>
     </header>
 </div>
+=======
+  <div class="header-container">
+    <header class="the-header">
+      <TheSideNavToggle @toggle="$emit('sidenav-toggle')" />
+      <div class="logo">
+        <nuxt-link to="/marketing">
+          <img src="~/assets/images/gamesys-logo.png">
+        </nuxt-link>
+      </div>
+      <div class="spacer" />
+      <div class="navigation-items">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <nuxt-link to="/marketing/vjlp1">
+              VJLP 1
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/vjlp3">
+              VJLP 3
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/vjlp4">
+              VJLP 4
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/vjlp5">
+              VJLP 5
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/vjlp6">
+              VJLP 6
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/iclp1">
+              ICLP 1
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/iclp2">
+              ICLP 2
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/iclp3">
+              ICLP 3
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/vjhp">
+              VJ Stripped Down
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <nuxt-link to="/marketing/about">
+              About
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
+            <a href="/marketing/admin/#/" target="_blank">Admin</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+  </div>
+>>>>>>> 29caa62c15775d8c85f7dd25476047d5342de3e2
 </template>
 
 <script>
@@ -35,7 +106,7 @@ export default {
   components: {
     TheSideNavToggle
   }
-};
+}
 </script>
 
 <style scoped>
