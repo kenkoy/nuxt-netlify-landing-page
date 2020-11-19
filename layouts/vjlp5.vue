@@ -26,10 +26,8 @@
         <section id="hero" :style="cssBackground">
           <div class="container">
             <div class="banner">
-              <h1>
-                最大$1000 <br>
-                ビギナーズボーナス
-              </h1>
+              <h1 v-html="bannerTitle"></h1>
+              <h1>{{ data_items.attributes.promo_banner.second_title }}</h1>
             </div>
           </div>
         </section>
@@ -146,7 +144,11 @@ export default {
 
       desktop: '',
       tablet: '',
-      mobile: ''
+      mobile: '',
+
+      first_title: '',
+      second_title: '',
+      phrase: ''
     }
   },
   computed: {
@@ -156,6 +158,12 @@ export default {
         '--bg-image-m': `url('${this.mobile}')`,
         '--bg-banner': `url('${this.tablet}')`
       }
+    },
+    bannerTitle () {
+      const position = this.first_title.indexOf(this.phrase)
+      const text = `<span>${this.phrase}</span>`
+      const output = [this.first_title.slice(0, position), text, this.first_title.slice(position, 0)].join('')
+      return output
     }
   },
   methods: {
@@ -171,6 +179,10 @@ export default {
         this.desktop = item.attributes.promo_banner.promo_images.promo_bg_desktop
         this.tablet = item.attributes.promo_banner.promo_images.promo_bg_banner
         this.mobile = item.attributes.promo_banner.promo_images.promo_bg_mobile
+
+        this.first_title = item.attributes.promo_banner.first_title
+        this.second_title = item.attributes.promo_banner.second_title
+        this.phrase = item.attributes.promo_banner.phrase
       })
     }
   },

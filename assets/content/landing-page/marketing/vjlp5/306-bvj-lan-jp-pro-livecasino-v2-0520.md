@@ -15,6 +15,9 @@ promo_banner:
     promo_bg_mobile: /marketing/img/bg-mob.jpg
     promo_bg_banner: /marketing/img/bg-dt.jpg
   promo_title: 306-bvj-lan-jp-pro-livecasino-v2-0520
+  first_title: '最大$1000'
+  second_title: 'ビギナーズボーナス'
+  phrase: '$1000'
 steps:
   step_title_1: ご登録
   step_description_1: 安全 & 安心！
