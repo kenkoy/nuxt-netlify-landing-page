@@ -58,6 +58,23 @@
      background: var(--bg-image-m) no-repeat center #000;
      min-height: 400px;
      background-size: cover;
+
+     h1{
+       font-size: 23px;
+       text-shadow: rgb(255, 255, 255) 0px 0px 0.6rem,
+       rgb(255, 255, 255) 0px 0px 1.5rem,
+       rgb(255, 255, 255) -0.2rem 0.1rem 1rem,
+       rgb(255, 255, 255) 0.2rem 0.1rem 1rem,
+       rgb(255, 255, 255) 0px -0.5rem 2rem,
+       rgb(255, 255, 255) 0px 0.5rem 3rem;
+       color: $TEXT_COLOR;
+       font-weight: 700;
+       font-family: 'MainFont-Medium', sans-serif;
+
+       position: absolute;
+      right: 0;
+      top: 100px;
+     }
    }
    #hero .container{
        flex-wrap: wrap;

@@ -25,7 +25,12 @@
         </header>
         <section id="hero" :style="cssBackground">
           <div class="container">
-            <div class="banner" />
+            <div class="banner">
+              <h1>
+                最大$1000 <br>
+                ビギナーズボーナス
+              </h1>
+            </div>
           </div>
         </section>
 
@@ -144,16 +149,6 @@ export default {
       mobile: ''
     }
   },
-  head () {
-    return {
-      htmlAttrs: {
-        lang: this.language
-      },
-      link: [
-        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
-      ]
-    }
-  },
   computed: {
     cssBackground () {
       return {
@@ -178,14 +173,24 @@ export default {
         this.mobile = item.attributes.promo_banner.promo_images.promo_bg_mobile
       })
     }
+  },
+  head () {
+    return {
+      htmlAttrs: {
+        lang: this.language
+      },
+      link: [
+        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
+      ]
+    }
   }
 }
 </script>
 
 <style lang="scss">
-.vjlp5_wrapper {
-  @import '@/assets/sass/base/fonts.css';
-  @import '@/assets/sass/vjlp5/style.scss';
-  @import '@/assets/sass/base/style.scss';
-}
+  .vjlp5_wrapper {
+    @import '@/assets/sass/base/fonts.css';
+    @import '@/assets/sass/vjlp5/style.scss';
+    @import '@/assets/sass/base/style.scss';
+  }
 </style>
