@@ -160,10 +160,13 @@ export default {
       }
     },
     bannerTitle () {
-      const position = this.first_title.indexOf(this.phrase)
-      const text = `<span>${this.phrase}</span>`
-      const output = [this.first_title.slice(0, position), text, this.first_title.slice(position, 0)].join('')
-      return output
+      if (this.phrase) {
+        const position = this.first_title.indexOf(this.phrase)
+        const text = `<span>${this.phrase}</span>`
+        const output = [this.first_title.slice(0, position), text, this.first_title.slice(position, 0)].join('')
+        return output
+      }
+      return this.first_title
     }
   },
   methods: {
