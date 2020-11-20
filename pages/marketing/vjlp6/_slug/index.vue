@@ -3,46 +3,46 @@
 </template>
 
 <script>
+
 export default {
   layout: 'vjlp6',
-  async asyncData ({ params, error }) {
+  async asyncData ({ params }) {
     try {
-      const markDownData = await import('~/assets/content/landing-page/marketing/vjlp6/' + params.slug + '.md')
-      return { markDownData }
-    } catch (e) {
-      error(e)
-    }
-  },
-  mounted () {
-    this.emitData(this.markDownData)
-  },
-  methods: {
-    emitData (data) {
-      this.$root.$emit('vjlp6-data', {
-        yamlData: data.attributes,
-        htmlData: data.html
-      })
-    }
-  },
-  head () {
-    const tagIds = this.markDownData.attributes.field_ids
-    const goId = tagIds.go_container_id || 'OPT-PHSNXP6'
-    const gaId = tagIds.ga_tracking_id || 'UA-142143961-1'
-    const gtmId = tagIds.gtm_container_id || 'GTM-MFD3NKM'
+      /* get MD FILE per PAGE / SLUG */
+      const PAGE_MDFILE = await import(
+        '~/assets/content/landing-page/marketing/vjlp6/' + params.slug + '.md'
+      )
 
+      /* store 'PAGE_MDFILE' data to 'dataMD' local variable' */
+      return { dataMD: PAGE_MDFILE }
+    } catch (error) {
+      return false
+    }
+  },
+  data: () => ({
+    dataMD: { }
+  }),
+  head () {
+    const goId = (this.dataMD.attributes.field_ids && this.dataMD.attributes.field_ids.go_container_id)
+      ? this.dataMD.attributes.field_ids.go_container_id
+      : 'OPT-PHSNXP6'
+    const gaId = (this.dataMD.attributes.field_ids && this.dataMD.attributes.field_ids.ga_tracking_id)
+      ? this.dataMD.attributes.field_ids.ga_tracking_id
+      : 'UA-142143961-1'
+    const gtmId = (this.dataMD.attributes.field_ids && this.dataMD.attributes.field_ids.gtm_container_id)
+      ? this.dataMD.attributes.field_ids.gtm_container_id
+      : 'GTM-MFD3NKM'
     return {
       title: 'Vera&John',
       htmlAttrs: {
-        lang: this.markDownData.attributes.promo_locale.promo_language_code
+        lang: this.dataMD.attributes.promo_locale.promo_language_code
       },
       bodyAttrs: {
-        id: this.markDownData.attributes.promo_locale.promo_language_code +
-          '-' + this.markDownData.attributes.promo_locale.promo_country_code
+        id: this.dataMD.attributes.promo_locale.promo_language_code +
+            '-' + this.dataMD.attributes.promo_locale.promo_country_code
       },
-      link: [
-        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
-      ],
-      script: [
+      style: [],
+      sscript: [
         {
           hid: 'goHead',
           innerHTML:
@@ -99,6 +99,15 @@ export default {
         goHead: ['innerHTML'],
         gaHead: ['innerHTML']
       }
+    }
+  },
+  mounted () {
+    this.emitData(this.dataMD)
+  },
+  methods: {
+    /* send the 'dataMD' data to 'LAYOUT' */
+    emitData (dataMD) {
+      this.$emit('emitMDcontent', dataMD)
     }
   }
 }

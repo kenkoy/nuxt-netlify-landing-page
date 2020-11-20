@@ -11,10 +11,13 @@ promo_banner:
   promo_join_button: 入金ボーナス獲得する
   promo_join_button_redirect_url: https://verajohn.com/#join
   promo_images:
-    promo_bg_desktop: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
-    promo_bg_mobile: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2-mV2.png
-    promo_bg_banner: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
+    promo_bg_desktop: /marketing/img/bg-dt.jpg
+    promo_bg_mobile: /marketing/img/bg-mob.jpg
+    promo_bg_banner: /marketing/img/bg-dt.jpg
   promo_title: 306-bvj-lan-jp-pro-livecasino-v2-0520
+  first_title: '最大$1000'
+  second_title: 'ビギナーズボーナス'
+  phrase: '$1000'
 steps:
   step_title_1: ご登録
   step_description_1: 安全 & 安心！
@@ -107,7 +110,7 @@ second_section:
   - second_section_title: 勝負金が2倍! 最高$500初回入金ボーナスをもらってお得にプレイ
     second_section_content: ベラジョンでの初回入金時には、軍資金が2倍になる★ビギナーズボーナス★がお待ちしています!     最高$500までもらえる、100%入金ボーナスを受け取って、いろんなゲームにトライしてみましょう！     さらに、キャンペーンメール限定ボーナスもご用意していますので、アカウント登録後、キャンペーンメールの配信設定をオンにすることをお忘れなく♪
 ---
-<section id="section5"> 
+<section id="section5">
     <div class="container">
         <div>
             <h2>最高$500初回入金ボーナス利用規約</h2>
