@@ -26,7 +26,7 @@
         <section id="hero" :style="cssBackground">
           <div class="container">
             <div class="banner">
-              <h1 v-html="bannerTitle"></h1>
+              <h1 v-html="bannerTitle" />
               <h1>{{ data_items.attributes.promo_banner.second_title }}</h1>
             </div>
           </div>
