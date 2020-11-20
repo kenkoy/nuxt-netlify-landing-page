@@ -1,5 +1,5 @@
 ---
-slug_name: 319-bic-lan-jp-pro-beginnersguide-0620
+slug_name: 319-bic-lan-jp-pro-beginnersguide-0620a
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
