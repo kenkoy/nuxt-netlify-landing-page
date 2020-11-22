@@ -67,14 +67,14 @@
             <img
               v-lazy-load
               style="max-width: 100%;"
-              src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-welcome-title.png"
+              :src="require('~/assets/images/iclp2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-title.png')"
               alt=""
             >
             <br>
             <img
               v-lazy-load
               style="max-width: 100%;"
-              src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-500WC-stamp.png"
+              :src="require('~/assets/images/iclp2/319-bic-lan-jp-pro-beginnersguide-0620-500WC-stamp.png')"
               alt=""
             >
             <br>
