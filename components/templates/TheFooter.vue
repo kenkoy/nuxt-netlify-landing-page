@@ -208,3 +208,21 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.icons { margin: 20px auto; display:inline-block; padding:20px; }
+.icon { float: left; margin-left: 10px; }
+
+
+.gt { width: 96px; height: 48px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_gt.svg') no-repeat center center; background-size: contain; border:none; }
+.age { width: 48px; height: 48px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_age.svg') no-repeat center center; background-size: contain; border:none; }
+.mga { width: 97px; height: 47px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_mga.svg') no-repeat center center; background-size: contain; border:none;  }
+.curacao { width: 97px; height: 47px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_curacao.svg') no-repeat center center; background-size: contain; border:none;  }
+
+.gamcare, .gamstop, .bga, .ukgc { display:none; }
+#en-gb .gamcare { width: 112px; height: 47px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_gamcare.svg') no-repeat center center; background-size: contain; border:none; }
+#en-gb .gamstop { display:block; width: 108px; height: 47px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_gamstop.svg') no-repeat center center; background-size: contain; border:none; }
+#en-gb .bga { display:block; width: 140px; height: 48px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_bga.svg') no-repeat center center; background-size: contain; border:none;  }
+#en-gb .ukgc { display:block; width: 96px; height: 48px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_ukgc.svg') no-repeat center center; background-size: contain; border:none;  }
+
+</style>

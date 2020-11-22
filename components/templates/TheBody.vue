@@ -61,3 +61,8 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.small-terms { font-size: 11px; text-align:center; margin:10px 0; }
+#terms ul { margin: 0px !important;}
+</style>

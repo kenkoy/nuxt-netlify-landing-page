@@ -29,3 +29,14 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.payment-providers { width:100%; height:100px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_en.svg") center center no-repeat; background-size: contain !important; float:left; clear:both; margin: 10px 0; }
+#en-gb .payment-providers {height:150px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_uk.svg") center center no-repeat;}
+#fi-fi .payment-providers {height:150px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_fi.svg") center center no-repeat;}
+#de-de .payment-providers {height:150px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_de.svg") center center no-repeat;}
+#nb-no .payment-providers {height:150px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_no.svg") center center no-repeat;}
+#sv-se .payment-providers {height:150px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_se.svg") center center no-repeat;}
+#pt-br .payment-providers {height:150px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_br.svg") center center no-repeat;}
+#ja-jp .payment-providers {height:150px; background: url("https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg") center center no-repeat;}
+</style>

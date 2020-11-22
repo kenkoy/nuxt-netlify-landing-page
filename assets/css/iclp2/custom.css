@@ -38,7 +38,7 @@
   display: inline-block;
   overflow: hidden;
   background-repeat: no-repeat;
-  background-image: url("/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png");
+  background-image: url("~assets/images/iclp2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png");
 }
 .queenprofile-blacktag {
   width: 201px;
@@ -73,12 +73,12 @@
     display: inline-table;
   }    
 }
-.redmark { 
+.parse >>> .redmark { 
   background-color: #ff0375;
   color: white;
   font-weight: bold;
 }
-.blackmark { 
+.parse >>> .blackmark { 
   background-color: #9f97e5;
   color: white;
   font-weight: bold;
