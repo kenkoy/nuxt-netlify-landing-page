@@ -13,17 +13,6 @@ export default {
       error(e)
     }
   },
-  mounted () {
-    this.emitData(this.markDownData)
-  },
-  methods: {
-    emitData (data) {
-      this.$root.$emit('iclp3-data', { // Change to actual page name
-        yamlData: data.attributes,
-        htmlData: data.html
-      })
-    }
-  },
   head () {
     const tagIds = this.markDownData.attributes.field_ids
     const goId = tagIds.go_container_id || 'OPT-PHSNXP6'
@@ -40,9 +29,23 @@ export default {
           '-' + this.markDownData.attributes.promo_locale.promo_country_code
       },
       link: [
-        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
+        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' },
+        { rel: 'shortcut icon', href: '/marketing/ic-favicon.ico', type: 'image/x-icon' },
+        // { rel: 'stylesheet', href: '/marketing/styles/iclp3/spine-player.min.css' },
+        { rel: 'stylesheet', href: 'https://esotericsoftware.com/files/spine-player/3.8/spine-player.css' },
+        { rel: 'stylesheet', href: '/marketing/styles/iclp3/firstview.css' },
+        { rel: 'stylesheet', body: true, href: '/marketing/styles/iclp3/style.css' },
+        { preload: true, rel: 'stylesheet', body: true, href: '/marketing/styles/iclp3/fonts.css' }
       ],
+      // plugins: [
+      //   { defer: true, body: true, src: '~/assets/jsiclp3/iclp3V2/spine-player.min.js' },
+      //   { defer: true, body: true, src: '~/assets/jsiclp3/iclp3V2/velocity.min.js' },
+      //   { defer: true, async: true, body: true, src: '~/assets/jsiclp3/iclp3V2/scripts.js' }
+      // ],
       script: [
+        // { src: '/marketing/js/iclp3/spine-player.min.js' },
+        // { defer: true, body: true, src: 'https://files.vjpromo.com/bannerflow/oiranslot/ic/10/assets/js/spine-player.min.js' },
+        // { src: 'https://esotericsoftware.com/files/spine-player/3.8/spine-player.js' },
         {
           hid: 'goHead',
           innerHTML:
@@ -93,6 +96,17 @@ export default {
         goHead: ['innerHTML'],
         gaHead: ['innerHTML']
       }
+    }
+  },
+  mounted () {
+    this.emitData(this.markDownData)
+  },
+  methods: {
+    emitData (data) {
+      this.$root.$emit('iclp3-data', { // Change to actual page name
+        yamlData: data.attributes,
+        htmlData: data.html
+      })
     }
   }
 }
