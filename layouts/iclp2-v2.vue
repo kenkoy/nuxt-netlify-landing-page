@@ -32,7 +32,7 @@
                 />
                 <div
                   class="title-2 animated tada delay-1s"
-                  :style="{ backgroundImage: 'url(' + mdData.promo_banner.promo_images.promo_banner_image_title_2 + ')' }"
+                  :style="{ backgroundImage: `url('${mdData.promo_banner.promo_images.promo_banner_image_title_2}')` }"
                 />
               </div>
               <span class="queenprofile-star sprite" />
