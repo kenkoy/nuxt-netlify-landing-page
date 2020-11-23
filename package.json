@@ -29,6 +29,7 @@
     "nuxt": "^2.0.0",
     "nuxt-lazy-load": "^1.2.4",
     "save": "^2.4.0",
+    "velocityjs": "^2.0.2",
     "vue-slick": "^1.1.15",
     "vue-slick-carousel": "^1.0.6"
   },

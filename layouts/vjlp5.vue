@@ -151,6 +151,16 @@ export default {
       phrase: ''
     }
   },
+  head () {
+    return {
+      htmlAttrs: {
+        lang: this.language
+      },
+      link: [
+        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
+      ]
+    }
+  },
   computed: {
     cssBackground () {
       return {
@@ -187,16 +197,6 @@ export default {
         this.second_title = item.attributes.promo_banner.second_title
         this.phrase = item.attributes.promo_banner.phrase
       })
-    }
-  },
-  head () {
-    return {
-      htmlAttrs: {
-        lang: this.language
-      },
-      link: [
-        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
-      ]
     }
   }
 }

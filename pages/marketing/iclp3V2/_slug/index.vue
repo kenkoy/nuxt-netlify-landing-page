@@ -38,14 +38,11 @@ export default {
         { preload: true, rel: 'stylesheet', body: true, href: '/marketing/styles/iclp3/fonts.css' }
       ],
       // plugins: [
-      //   { defer: true, body: true, src: '~/assets/jsiclp3/iclp3V2/spine-player.min.js' },
-      //   { defer: true, body: true, src: '~/assets/jsiclp3/iclp3V2/velocity.min.js' },
-      //   { defer: true, async: true, body: true, src: '~/assets/jsiclp3/iclp3V2/scripts.js' }
+      //   '~/assets/js/iclp3V2/spine.client.js',
+      //   '~/assets/js/iclp3V2/velocity.min.client.js',
+      //   '~/assets/js/iclp3V2/scripts.client.js'
       // ],
       script: [
-        // { src: '/marketing/js/iclp3/spine-player.min.js' },
-        // { defer: true, body: true, src: 'https://files.vjpromo.com/bannerflow/oiranslot/ic/10/assets/js/spine-player.min.js' },
-        // { src: 'https://esotericsoftware.com/files/spine-player/3.8/spine-player.js' },
         {
           hid: 'goHead',
           innerHTML:
