@@ -1,11 +1,7 @@
 backend:
   # name: git-gateway
-  # name: github
-  # repo: drap54/ds-gitlab
-  # branch: master
-
   name: github
-  repo: kenkoy/nuxt-netlify-landing-page
+  repo: mhfrancisco/mat-nuxt-netlify-landing-page
   branch: master
 
 publish_mode: editorial_workflow
@@ -29,7 +25,7 @@ collections:
     preview_path: marketing/vjlp1/{{slug}}
     show_preview_links: true
     editor:
-      preview: false
+      preview: true
     fields:
       - label: Slug
         widget: string

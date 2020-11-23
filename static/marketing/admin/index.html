@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
     <!-- Include the script that enables Netlify Identity on this page. -->
-    <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-    <script>CMS.registerPreviewStyle("/styles/previewPane.css");</script>
+    <script>
+      // CMS.registerPreviewStyle("/styles/previewPane.css");
+      var VLP1_PREVIEW = createClass({
+        render: function () {
+          var entry = this.props.entry;
+          // var image = entry.getIn(['data', 'image']);
+          // var bg = this.props.getAsset(image);  
+          var promoBanner = entry.getIn(['data','promo_banner']);
+          console.log(this.props.widgetsFor('promo_banner').getIn(['data', 'promo_title_highlighted']).map(function (data) {
+            return data
+          }));
+          return h('div', {});
+        }
+      });
+      CMS.registerPreviewTemplate("VJLP1-NoForm", VLP1_PREVIEW)
+    </script>
   </body>
 </html>
