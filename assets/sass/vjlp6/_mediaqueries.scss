@@ -254,45 +254,51 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 576px) {
-   #header .nav-links {
-     button:first-child{
-       display: inline-block;
-     }
-   }
-   #hero {
-    background: var(--bg-image) no-repeat center center;
+  #header .nav-links {
+    button:first-child{
+      display: inline-block;
+    }
+  }
+  #hero {
+    background: var(--bg-image-m) no-repeat center center;
     background-size: cover;
     h1 {
       font-size: 3em;
       letter-spacing: 0.3px;
     }
-     .strip {
-       min-height: 845px;
-       margin-left: 15px;
-       margin-right: 15px;
-     }
-     .container {
-      max-width: inherit;
+    .strip {
+      min-height: 845px;
+      margin-left: 15px;
+      margin-right: 15px;
     }
-   }
-   #steps{
-     text-align: center;
-     .container{
-       > div {
-         .num{
-           width: 80px;
-           height: 80px;
-           font-size: 2.5em;
-         }
-         h2 {
-           font-size: 2em;
-         }
-         p {
-           font-size: 1em;
-         }
-       }
-     }
-   }
+    .container {
+      max-width: inherit;
+      .strip > div {
+        margin-top: 80px;
+      }
+    }
+    button {
+      margin-top: 220px;
+    }
+  }
+  #steps{
+    text-align: center;
+    .container{
+      > div {
+        .num{
+          width: 80px;
+          height: 80px;
+          font-size: 2.5em;
+        }
+        h2 {
+          font-size: 2em;
+        }
+        p {
+          font-size: 1em;
+        }
+      }
+    }
+  }
 }
 
 /* Small Devices, Tablets */
