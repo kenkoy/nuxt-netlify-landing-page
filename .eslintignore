@@ -15,10 +15,3 @@
 # Blank template
 /layouts/blank-template.vue
 /pages/marketing/blank-template/**/*
-
-
-# Do not put these to master
-/layouts/vjlp5.vue
-/layouts/vjlp6.vue
-/pages/marketing/vjlp5/**/*
-/pages/marketing/vjlp6/**/*

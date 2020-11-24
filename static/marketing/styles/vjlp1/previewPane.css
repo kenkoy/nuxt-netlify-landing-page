@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("../vjlp-core/animate.min.css");
+@import url("../vjlp-core/bootstrap.min.css");
+@import url("../vjlp-core/fonts.css");
+@import url("../vjlp-core/hover-min.css");
+@import url("../vjlp-core/slick.css");
+@import url("./brand.css");
+@import url("./core.css");
+@import url("./responsive.css");
+
+.strip-container-div {
+  margin-top: 66px;
+}
+
+.footer-text {
+  font-size: 14px;
+  text-align: center;
+}
