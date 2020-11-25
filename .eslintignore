@@ -15,8 +15,3 @@
 # Blank template
 /layouts/blank-template.vue
 /pages/marketing/blank-template/**/*
-
-/pages/marketing/vjlp5/**/*
-/pages/marketing/vjlp6/**/*
-/layouts/vjlp5.vue
-/layouts/vjlp6.vue
