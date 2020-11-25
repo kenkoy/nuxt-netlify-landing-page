@@ -5,11 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
     <!-- Include the script that enables Netlify Identity on this page. -->
-    <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-    <script>CMS.registerPreviewStyle("/styles/previewPane.css");</script>
+    <script type="module">
+      CMS.registerPreviewStyle('/marketing/styles/vjlp1/previewPane.css');
+
+      import htm from 'https://unpkg.com/htm?module';
+      const html = htm.bind(h);
+
+      const VLP1_PREVIEW = createClass({
+        render: function () {
+          const entry = this.props.entry;
+          const locale = entry.getIn(['data', 'promo_locale']).toJS();
+          const banner = entry.getIn(['data','promo_banner']).toJS();
+          const steps = entry.getIn(['data', 'promo_steps']).toJS();
+          const body = this.props.widgetFor('body');
+          const images = banner.promo_images;
+          const cssBg = {
+            '--bg-image': `url('${images.promo_bg_desktop}')`,
+            '--bg-image-m': `url('${images.promo_bg_mobile}')`,
+            '--bg-banner': `url('${images.promo_game_logo}')`
+          };
+
+          return (
+            html`
+            <body id="${locale.promo_language_code}-${locale.promo_country_code}">
+              <header id="strip-container" class="container-flex h-100" style='${cssBg}'>
+                <a id="login-btn" href="${banner.promo_login_button_redirect_url}" class="login hvr-pulse">
+                  <div class="animated fadeIn">
+                    <i class="material-icons">exit_to_app</i>
+                    <div class="login-txt">
+                      ${banner.promo_login_button}
+                    </div>
+                  </div>
+                </a>
+                <div class="container">
+                  <div class="row row-eq-height">
+                    <div id="strip" class="col-lg-5 strip">
+                      <div class="strip-container animated fadeIn prev-strip-container">
+                        <div class="logo animated fadeIn"></div>
+                        <h1>${banner.promo_title}</h1>
+                        <a
+                          id="signup-btn" href="${banner.promo_join_button_redirect_url}"
+                          class="button button-lrg d-block"
+                        >
+                          ${banner.promo_join_button}
+                        </a>
+                      </div>
+                      <div class="small-terms prev-banner-terms">
+                        ${banner.promo_terms_text}
+                      </div>
+                    </div>
+                    <div id="stripblank" class="col-lg-7"></div>
+                  </div>
+                </div>
+              </header>
+              <section class="container-flex bg-alt steps animated fadeIn">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-4 animated fadeIn delay-0s">
+                      <div class="num">1</div>
+                      <div class="step">
+                        <h2>${steps.promo_step_1_title}</h2>
+                        <h3>${steps.promo_step_1_desc}</h3>
+                      </div>
+                    </div>
+                    <div class="col-4 animated fadeIn delay-1s">
+                      <div class="num">2</div>
+                      <div class="step">
+                        <h2>${steps.promo_step_2_title}</h2>
+                        <h3>${steps.promo_step_2_desc}</h3>
+                      </div>
+                    </div>
+                    <div class="col-4 animated fadeIn delay-2s">
+                      <div class="num">3</div>
+                      <div class="step">
+                        <h2>${steps.promo_step_3_title}</h2>
+                        <h3>${steps.promo_step_3_desc}</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section id="terms-anchor" class="container animated fadeIn"></section>
+              <div class="container-fluid pp">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="payment-providers"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <section id="terms" class="container animated fadeIn">
+                <div class="row">
+                  <div class="col-12">${body}</div>
+                </div>
+                <ul>
+                  <li>通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a
+                      href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</li>
+                </ul>
+              </section>
+              <footer id="footer" class="animated fadeIn">
+                <div class="container-fluid pp">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12"></div>
+                    </div>
+                  </div>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="icons text-center">
+                        <div class="icon">
+                          <a href="https://www.verajohn.com/about/responsible-gaming" target="blank">
+                            <div class="age"></div>
+                          </a>
+                        </div>
+                        <div class="icon">
+                          <a href="https://www.gamstop.co.uk" target="blank">
+                            <div class="gamstop"></div>
+                          </a>
+                        </div>
+                        <div class="icon">
+                          <a href="https://www.begambleaware.org" target="blank">
+                            <div class="bga"></div>
+                          </a>
+                        </div>
+                        <div class="icon">
+                          <a href="https://www.gamblingtherapy.org/en" target="blank">
+                            <div class="gt"></div>
+                          </a>
+                        </div>
+                        <div class="icon">
+                          <a href="https://secure.gamblingcommission.gov.uk/PublicRegister/Search/Detail/39408" target="blank">
+                            <div class="ukgc"></div>
+                          </a>
+                        </div>
+                        <div class="icon">
+                          <a href="#" target="blank">
+                            <div class="curacao"></div>
+                          </a>
+                        </div>
+                        <div class="icon">
+                          <a href="https://www.gamcare.org.uk" target="blank">
+                            <div class="gamcare"></div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="footer-content col-12 text-center">
+                        <p class="text-center">
+                          <a href="https://verajohn.com/about/responsible-gaming" target="blank">
+                            ギャンブルには中毒性があります。
+                            自己責任を持ってプレイしてください。
+                          </a>
+                        </p>
+                        <p class="prev-footer-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            </body>
+            `
+          );
+        }
+      });
+      CMS.registerPreviewTemplate('VJLP1-NoForm', VLP1_PREVIEW);
+    </script>
   </body>
 </html>

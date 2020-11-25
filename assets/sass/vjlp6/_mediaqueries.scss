@@ -76,8 +76,8 @@
         @keyframes shine{0%{color:#6b1839;text-shadow:none}100%{color:#FFFFFF;text-shadow:0 0 .6rem #FFFFFF,0 0 1.5rem #FFFFFF,-.2rem .1rem 1rem #FFFFFF,.2rem .1rem 1rem #FFFFFF,0 -.5rem 2rem #FFFFFF,0 .5rem 3rem #FFFFFF}}
         @keyframes flicker{from{opacity:1}4%{opacity:.9}6%{opacity:.85}8%{opacity:.95}10%{opacity:.9}11%{opacity:.922}12%{opacity:.9}14%{opacity:.95}16%{opacity:.98}17%{opacity:.9}19%{opacity:.93}20%{opacity:.99}24%{opacity:1}26%{opacity:.94}28%{opacity:.98}37%{opacity:.93}38%{opacity:.5}39%{opacity:.96}42%{opacity:1}44%{opacity:.97}46%{opacity:.94}56%{opacity:.9}58%{opacity:.9}60%{opacity:.99}68%{opacity:1}70%{opacity:.9}72%{opacity:.95}93%{opacity:.93}95%{opacity:.95}97%{opacity:.93}to{opacity:1}
     }
-    background: var(--bg-image-m) no-repeat 50%;
-    background-size: cover;
+    background: var(--bg-image-m) no-repeat center center;
+    background-size: 100%;
     padding: 0;
     p, li {
       margin-top: 0;
@@ -96,14 +96,14 @@
     }
     button{
       display: block;
-      margin: 220px auto 0;
+      margin: 40px auto 0;
       background: #fff;
       border-radius: 100px;
       animation-iteration-count: infinite;
       font-size: 30px;
       font-weight: bold;
       color: #704B1F;
-      padding: 15px 25px;
+      padding: 10px 20px;
       a {
         text-decoration: none;
         border: none;
@@ -112,7 +112,7 @@
     .small-terms {
       font-size: 11px;
       text-align: center;
-      margin: -110px 0 2.5rem;
+      margin: -95px 0 2.5rem;
     }
     .strip {
       text-align: left;
@@ -121,7 +121,7 @@
       width: 100%;
       padding-right: 15px;
       padding-left: 15px;
-      min-height: 800px;
+      min-height: 430px;
       img {
         height: 100px !important;
         margin-top: 15px;
@@ -251,6 +251,25 @@
     }
   }
 }
+
+/* Iphone 5/SE */
+// @media (max-height: 568px) and (max-width: 320px){
+//   #hero {
+//     background: var(--bg-image-m) no-repeat center -140px;
+//     background-size: 100%;
+//     .container {
+//       .strip > div {
+//         .button {
+//           margin: 60px auto 0;
+//           padding: 10px 20px;
+//         }
+//       }
+//     }
+//     .strip {
+//       min-height: 415px;
+//     }
+//   }
+// }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 576px) {

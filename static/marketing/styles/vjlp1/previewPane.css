@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("../vjlp-core/animate.min.css");
+@import url("../vjlp-core/bootstrap.min.css");
+@import url("../vjlp-core/fonts.css");
+@import url("../vjlp-core/hover-min.css");
+@import url("../vjlp-core/slick.css");
+@import url("./brand.css");
+@import url("./core.css");
+@import url("./responsive.css");
+
+.prev-strip-container {
+  margin-top: 66px;
+}
+
+.prev-footer-text {
+  font-size: 14px;
+  text-align: center;
+}
+
+.prev-banner-terms {
+  margin-bottom: 2.5rem;
+}
+
+#strip-container {
+  background: var(--bg-image) no-repeat center;
+  background-size: cover;
+}
+#stripblank {
+  background: none;
+}
+@media only screen and (max-width: 575px) {
+  #strip-container {
+    background: var(--bg-image-m) no-repeat center;
+    background-size: cover;
+  }
+}
+.game-logo {
+  background: var(--game-logo) no-repeat center;
+  background-size: contain;
+  width: auto;
+  height: 150px;
+  z-index: 999999;
+}
+.banner-terms {
+  margin-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 280px) {
+  .signup { width: 90%; }
+}
