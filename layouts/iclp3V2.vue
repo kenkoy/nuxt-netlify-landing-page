@@ -7,30 +7,24 @@
     >
       <!-- <header>
         <div class="container">
-          <img src="@/assets/images/iclp3V2/logo_inter_pc.png" alt="inter casino logo" data-not-lazy>
+          <div class="inter-casino-logo">
+            <img src="@/assets/images/iclp3V2/logo_inter_pc.png" alt="inter casino logo" data-not-lazy>
+          </div>
+          <div aria-label="join" :href="joinURL">
+            <img src="@/assets/images/iclp3V2/btn_signup.png" alt="inter casino logo">
+          </div>
         </div>
       </header> -->
       <section id="firstview" class="firstview">
         <div class="container">
-
           <div>
-            <div class="inter-casino-logo">
-              <img src="@/assets/images/iclp3V2/logo_inter_pc.png" alt="inter casino logo" data-not-lazy>
-            </div>
-
-            <div class="dream-logo">
-              <img src="@/assets/images/iclp3V2/logo_oiran.png" alt="inter casino logo">
-            </div>
-
-            <div id="firstview__touch" class="firstview__touch">
+            <div class="touch">
               <img src="@/assets/images/iclp3V2/touch.png" alt="inter casino logo">
-            </div>
-            <div class="firstview__btn_inquiry" aria-label="join" :href="joinURL">
-              <img src="@/assets/images/iclp3V2/btn_signup.png" alt="inter casino logo">
             </div>
             <div class="firstview__taparea">
               <span>タップエリア</span>
             </div>
+            <!-- GIRL IMAGE -->
             <div class="firstview__anime">
               <div id="player" class="player">
                 <div class="spine-player">
@@ -89,18 +83,7 @@
               <!-- <canvas class="firstview__cvs" id="cvs"></canvas> -->
               <canvas id="cvs" class="firstview__cvs" width="1920" height="500" />
             </div>
-            <div id="firstvie__inquiry" class="firstvie__inquiry">
-              <div class="firstvie__inquiry__inner">
-                <h3 v-html="formattedRegMessage" />
-                <a :href="joinURL">{{ joinMessage }}</a>
-                <button onclick="back()">
-                  ▶まだまだ触る！
-                </button>
-              </div>
-              <a class="firstvie__inquiry__turm" href="#terms" v-html="bannerTerms">
-                <!-- <span>利用規約</span>に同意します -->
-              </a>
-            </div>
+            <!-- COUNTER -->
             <div id="firstview__counter" class="firstview__counter">
               <div class="number main push">
                 <span class="back">0</span>
@@ -163,12 +146,37 @@
                 </div>
               </div>
             </div>
+            <div class="dream-logo">
+              <img src="@/assets/images/iclp3V2/logo_oiran.png" alt="inter casino logo">
+            </div>
+            <div id="firstvie__inquiry" class="firstvie__inquiry">
+              <div class="firstvie__inquiry__inner">
+                <h3 v-html="formattedRegMessage" />
+                <a :href="joinURL">{{ joinMessage }}</a>
+                <button onclick="back()">
+                  ▶まだまだ触る！
+                </button>
+              </div>
+              <a class="firstvie__inquiry__turm" href="#terms" v-html="bannerTerms">
+                <!-- <span>利用規約</span>に同意します -->
+              </a>
+            </div>
           </div>
-
         </div>
       </section>
 
-      <!--<div v-html="htmlBody" />-->
+      <section id="payment">
+        <div class="container">
+          <img class="desktop" src="@/assets/images/iclp3V2/payment_large_jp.svg"/>
+          <img class="mobile" src="@/assets/images/iclp3V2/payment_jp.svg"/>
+        </div>
+      </section>
+
+      <section id="main-content">
+        <div class="container">
+          <div v-html="htmlBody" />
+        </div>
+      </section>
 
       <Footer
         :promo_language_code="mdData.promo_locale.promo_language_code"
@@ -181,10 +189,6 @@
 
 <script>
 import Footer from '@/components/Base/TheFooter.vue'
-
-// import '~/assets/js/iclp3V2/spine.client.js'
-// import '~/assets/js/iclp3V2/velocity.min.client.js'
-// import '~/assets/js/iclp3V2/scripts.client.js'
 
 export default {
   components: {
@@ -212,6 +216,8 @@ export default {
   .iclp3_wrapper {
     @import '@/assets/sass/base/fonts.css';
     @import '@/assets/sass/iclp3V2/style.scss';
+    @import '@/assets/sass/iclp3V2/spine.css';
+    @import '@/assets/sass/iclp3V2/firstview.css';
     @import '@/assets/sass/base/style.scss';
   }
 </style>

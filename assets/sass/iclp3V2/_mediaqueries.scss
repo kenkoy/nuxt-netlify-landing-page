@@ -1,0 +1,99 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  section,
+  footer{
+    padding: 20px 10px;
+  }
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .firstview__anime{
+    top: -150px;
+  }
+
+  .touch{
+    width: 144px;
+    position: relative;
+    z-index: 1;
+  }
+  .dream-logo{
+    position: relative;
+    width: 280px;
+    margin: auto;
+  }
+
+  .firstvie__inquiry{
+    position: relative;
+    z-index: 1;
+  }
+
+  .firstview__counter{
+    overflow: hidden;
+    position: relative;
+
+    &:before{
+      background: url('../assets/images/iclp3V2/counter_touch.png');
+      width: 125px;
+      height: 40px;
+      display: block;
+      content: '';
+      background-size: cover;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -20px;
+    }
+  }
+
+
+  footer{
+
+    #footer-icon{
+      text-align: center;
+
+      > a{
+        display: inline-block;
+        min-width: 70px;
+        vertical-align: middle;
+        border: none;
+        margin: 0 8px;
+      }
+    }
+
+    .second-footer{
+       padding: 25px 30px;
+    }
+
+    p{
+      text-align: center;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 576px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .desktop{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

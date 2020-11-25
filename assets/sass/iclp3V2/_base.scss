@@ -1,66 +1,43 @@
 .iclp3-main{
   background: url('../assets/images/iclp3V2/oiran-bg.jpg') no-repeat;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
-#hero{
-  .firstview__counter{
-    > *{
-      display: inline-block;
-    }
+#main-content{
+  border-top: solid 3px $SEPARATION_BORDER_COLOR;
+  border-bottom: solid 3px $SEPARATION_BORDER_COLOR;
+}
 
-    .number{
-      font-family: Trebuchet MS, Arial, sans-serif;
-      font-size: 60px;
-      line-height: 60px;
-      display: block;
-      float: left;
-      width: 45px;
-      height: 60px;
-      text-align: center;
-      color: #fff;
-      border-radius: 5px;
-      background: #ff2896;
-      background: url('../assets/images/iclp3V2/bg_counter.png') no-repeat 50%;
-      background-size: 45px 60px;
+#main-content,
+#payment,
+footer{
+  background: $BODY_BG;
+  z-index: 1;
+  position: relative;
+}
 
-      .lower{
-        line-height: 0;
-        position: absolute;
-        top: 50%;
-        overflow: hidden;
-        height: 50%;
-        background-position: bottom;
-      }
+#payment{
+  border-top: solid 3px $SEPARATION_BORDER_COLOR;
+  img{
+    width: 100%;
+  }
+}
 
-      .fliptop {
-        position: absolute;
-        top: 0;
-        overflow: hidden;
-        height: 50%;
-        -webkit-transform: perspective(200px) rotateX(0deg);
-        transform: perspective(200px) rotateX(0deg);
-        -webkit-transform-origin: 30px 30px;
-        transform-origin: 30px 30px;
-        background-position: top;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
+dt{
+  color: $SUBTITLE_COLOR;
+  font-size: $TEXT_SIZE;
+}
+dd{
+  margin: 0;
 
-      .flipbottom {
-        line-height: 0;
-        position: absolute;
-        top: 50%;
-        overflow: hidden;
-        height: 50%;
-        -webkit-transform: perspective(200px) rotateX(180deg);
-        transform: perspective(200px) rotateX(180deg);
-        -webkit-transform-origin: 30px 0;
-        transform-origin: 30px 0;
-        background-position: bottom;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-      }
-    }
+  li{
+    color: $TEXT_COLOR;
+  }
+}
+
+footer{
+  p{
+    color: $TEXT_COLOR;
   }
 }

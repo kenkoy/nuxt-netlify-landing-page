@@ -32,17 +32,15 @@ export default {
         { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' },
         { rel: 'shortcut icon', href: '/marketing/ic-favicon.ico', type: 'image/x-icon' },
         // { rel: 'stylesheet', href: '/marketing/styles/iclp3/spine-player.min.css' },
-        { rel: 'stylesheet', href: 'https://esotericsoftware.com/files/spine-player/3.8/spine-player.css' },
-        { rel: 'stylesheet', href: '/marketing/styles/iclp3/firstview.css' },
-        { rel: 'stylesheet', body: true, href: '/marketing/styles/iclp3/style.css' },
-        { preload: true, rel: 'stylesheet', body: true, href: '/marketing/styles/iclp3/fonts.css' }
+        // { rel: 'stylesheet', href: 'https://esotericsoftware.com/files/spine-player/3.8/spine-player.css' },
+        // { rel: 'stylesheet', href: '/marketing/styles/iclp3/firstview.css' },
+        { rel: 'stylesheet', body: true, href: '/marketing/styles/iclp3/style.css' }
+        // { preload: true, rel: 'stylesheet', body: true, href: '/marketing/styles/iclp3/fonts.css' }
       ],
-      // plugins: [
-      //   '~/assets/js/iclp3V2/spine.client.js',
-      //   '~/assets/js/iclp3V2/velocity.min.client.js',
-      //   '~/assets/js/iclp3V2/scripts.client.js'
-      // ],
       script: [
+        { src: '/marketing/js/iclp3/spine.js' },
+        { defer: true, body: true, src: '/marketing/js/iclp3/velocity.min.js' },
+        { defer: true, async: true, body: true, src: '/marketing/js/iclp3/scripts.min.js' },
         {
           hid: 'goHead',
           innerHTML:

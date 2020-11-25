@@ -69,11 +69,7 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-    '~/assets/js/iclp3V2/spine.client.js',
-    '~/assets/js/iclp3V2/velocity.min.client.js',
-    '~/assets/js/iclp3V2/scripts.client.js'
-  ],
+  plugins: [],
   /*
   ** Nuxt.js dev-modules
   */
