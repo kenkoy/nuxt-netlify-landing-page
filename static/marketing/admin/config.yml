@@ -1,7 +1,7 @@
 backend:
   # name: git-gateway
   name: github
-  repo: mhfrancisco/mat-nuxt-netlify-landing-page
+  repo: kenkoy/nuxt-netlify-landing-page
   branch: master
 
 publish_mode: editorial_workflow
