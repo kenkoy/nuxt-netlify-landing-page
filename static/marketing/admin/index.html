@@ -12,41 +12,51 @@
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script type="module">
       CMS.registerPreviewStyle('/marketing/styles/vjlp1/previewPane.css');
-      import htm from 'https://unpkg.com/htm?module'
+
+      import htm from 'https://unpkg.com/htm?module';
       const html = htm.bind(h);
 
       const VLP1_PREVIEW = createClass({
         render: function () {
           const entry = this.props.entry;
-          const promoBanner = entry.getIn(['data','promo_banner']).toJS();
+          const locale = entry.getIn(['data', 'promo_locale']).toJS();
+          const banner = entry.getIn(['data','promo_banner']).toJS();
+          const steps = entry.getIn(['data', 'promo_steps']).toJS();
           const body = this.props.widgetFor('body');
+          const images = banner.promo_images;
+          const cssBg = {
+            '--bg-image': `url('${images.promo_bg_desktop}')`,
+            '--bg-image-m': `url('${images.promo_bg_mobile}')`,
+            '--bg-banner': `url('${images.promo_game_logo}')`
+          };
+
           return (
             html`
-            <body id="ja-jp">
-              <header id="strip-container" class="container-flex h-100">
-                <a id="login-btn" href="${promoBanner.promo_login_button_redirect_url}" class="login hvr-pulse">
+            <body id="${locale.promo_language_code}-${locale.promo_country_code}">
+              <header id="strip-container" class="container-flex h-100" style='${cssBg}'>
+                <a id="login-btn" href="${banner.promo_login_button_redirect_url}" class="login hvr-pulse">
                   <div class="animated fadeIn">
-                    <i class="material-icons">exit_to_app</i> 
+                    <i class="material-icons">exit_to_app</i>
                     <div class="login-txt">
-                      <p>${promoBanner.promo_login_button}</p>
+                      ${banner.promo_login_button}
                     </div>
                   </div>
                 </a>
                 <div class="container">
                   <div class="row row-eq-height">
                     <div id="strip" class="col-lg-5 strip">
-                      <div class="strip-container animated fadeIn strip-container-div">
+                      <div class="strip-container animated fadeIn prev-strip-container">
                         <div class="logo animated fadeIn"></div>
-                        <h1>${promoBanner.promo_title}</h1>
+                        <h1>${banner.promo_title}</h1>
                         <a
-                          id="signup-btn" href="${promoBanner.promo_join_button_redirect_url}"
+                          id="signup-btn" href="${banner.promo_join_button_redirect_url}"
                           class="button button-lrg d-block"
                         >
-                          ${promoBanner.promo_join_button}
+                          ${banner.promo_join_button}
                         </a>
                       </div>
-                      <div class="small-terms">
-                        <a class="link-terms-conditions ctac">利用規約</a>に同意します。
+                      <div class="small-terms prev-banner-terms">
+                        ${banner.promo_terms_text}
                       </div>
                     </div>
                     <div id="stripblank" class="col-lg-7"></div>
@@ -59,22 +69,22 @@
                     <div class="col-4 animated fadeIn delay-0s">
                       <div class="num">1</div>
                       <div class="step">
-                        <h2>ご登録</h2>
-                        <h3>安全安心！</h3>
+                        <h2>${steps.promo_step_1_title}</h2>
+                        <h3>${steps.promo_step_1_desc}</h3>
                       </div>
                     </div>
                     <div class="col-4 animated fadeIn delay-1s">
                       <div class="num">2</div>
                       <div class="step">
-                        <h2>ご入金</h2>
-                        <h3>100%ボーナス獲得!</h3>
+                        <h2>${steps.promo_step_2_title}</h2>
+                        <h3>${steps.promo_step_2_desc}</h3>
                       </div>
                     </div>
                     <div class="col-4 animated fadeIn delay-2s">
                       <div class="num">3</div>
                       <div class="step">
-                        <h2>毎日挑戦</h2>
-                        <h3>デイリーキャッシュ</h3>
+                        <h2>${steps.promo_step_3_title}</h2>
+                        <h3>${steps.promo_step_3_desc}</h3>
                       </div>
                     </div>
                   </div>
@@ -154,7 +164,7 @@
                             自己責任を持ってプレイしてください。
                           </a>
                         </p>
-                        <p class="footer-text"></p>
+                        <p class="prev-footer-text"></p>
                       </div>
                     </div>
                   </div>
