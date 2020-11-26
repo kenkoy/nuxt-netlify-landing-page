@@ -6,14 +6,14 @@ promo_locale:
 field_ids:
   go_container_id: OPT-PHSNXP6
   ga_tracking_id: UA-142143961-1
-  gtm_container_id: "GTM-MFD3NKM"
+  gtm_container_id: GTM-MFD3NKM
 promo_banner:
   promo_title: |-
     最高$500までの
     100%入金ボーナス
     を獲得しよう!
   promo_images:
-    promo_bg_desktop: /marketing/img/card-master-welcome-offer_bg.jpg
+    promo_bg_desktop: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
     promo_bg_mobile: /marketing/img/card-master-welcome-offer_bg_m.jpg
   promo_terms_link_text:
     - 利用規約
