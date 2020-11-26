@@ -17,6 +17,44 @@
       const html = htm.bind(h);
 
       const VLP1_PREVIEW = createClass({
+        formatTitle: function (title = ' ', higligtedPhrases = [' ']) {
+          const bannerTitle = title.split(/\r?\n/)
+            .filter(title => !!title)
+            .map(title => title.slice(-1) === '\\'
+              ? title.substring(0, title.length - 1)
+              : title
+            );
+
+          let idx = 0
+          higligtedPhrases.filter(phrase => !!phrase)
+            .forEach((phrase) => {
+              while (bannerTitle.length > idx) {
+                if (bannerTitle[idx].includes(phrase)) {
+                  bannerTitle[idx] = bannerTitle[idx].replace(phrase, `<font color="#ffd966"><b>${phrase}</b></font>`)
+                  break
+                } else {
+                  idx++
+                }
+              }
+            });
+
+          const _title =  bannerTitle.reduce((oldVal, newVal) => {
+            return oldVal + '<br />' + newVal
+          });
+          return { __html: _title };
+        },
+
+        formatTerms: function (terms = ' ', termsLinkText = [' ']) {
+          let termsText = terms;
+          termsLinkText.filter(linkText => !!linkText)
+            .forEach((linkText) => {
+              if (terms.includes(linkText)) {
+                termsText = termsText.replace(linkText, `<a href="#terms" class="link-terms-conditions ctac">${linkText}</a>`)
+              }
+            });
+          return { __html: termsText };
+        },
+
         render: function () {
           const entry = this.props.entry;
           const locale = this.props.widgetsFor('promo_locale');
@@ -29,9 +67,17 @@
             '--bg-banner': `url('${banner.getIn(['data', 'promo_images', 'promo_game_logo']) || ''}')`
           };
 
+          const titleText = this.formatTitle(
+            banner.getIn(['data', 'promo_title']),
+            banner.getIn(['data', 'promo_title_highlighted']));
+
+          const termsText = this.formatTerms(
+            banner.getIn(['data', 'promo_terms_text']),
+            banner.getIn(['data', 'promo_terms_link_text']));
+
           return (
             html`
-            <body 
+            <body
               id="${locale.getIn(['data', 'promo_language_code'])}-${locale.getIn(['data', 'promo_country_code'])}"
             >
               <header id="strip-container" class="container-flex h-100" style='${cssBg}'>
@@ -48,7 +94,7 @@
                     <div id="strip" class="col-lg-5 strip">
                       <div class="strip-container animated fadeIn prev-strip-container">
                         <div class="logo animated fadeIn"></div>
-                        <h1>${banner.getIn(['data', 'promo_title'])}</h1>
+                        <h1 dangerouslySetInnerHTML='${titleText}'></h1>
                         <a
                           id="signup-btn" href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}"
                           class="button button-lrg d-block"
@@ -56,9 +102,7 @@
                           ${banner.getIn(['data', 'promo_join_button'])}
                         </a>
                       </div>
-                      <div class="small-terms prev-banner-terms">
-                        ${banner.getIn(['data', 'promo_terms_text'])}
-                      </div>
+                      <div class="small-terms prev-banner-terms" dangerouslySetInnerHTML='${termsText}'></div>
                     </div>
                     <div id="stripblank" class="col-lg-7"></div>
                   </div>
