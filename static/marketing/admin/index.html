@@ -68,11 +68,11 @@
           };
 
           const titleText = this.formatTitle(
-            banner.getIn(['data', 'promo_title']),
+            banner.getIn(['data', 'promo_title']) || ' ',
             banner.getIn(['data', 'promo_title_highlighted']));
 
           const termsText = this.formatTerms(
-            banner.getIn(['data', 'promo_terms_text']),
+            banner.getIn(['data', 'promo_terms_text']) || ' ',
             banner.getIn(['data', 'promo_terms_link_text']));
 
           return (
