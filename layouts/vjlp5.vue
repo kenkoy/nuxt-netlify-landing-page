@@ -151,6 +151,16 @@ export default {
       phrase: ''
     }
   },
+  head () {
+    return {
+      htmlAttrs: {
+        lang: this.language
+      },
+      link: [
+        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
+      ]
+    }
+  },
   computed: {
     cssBackground () {
       return {
@@ -160,10 +170,13 @@ export default {
       }
     },
     bannerTitle () {
-      const position = this.first_title.indexOf(this.phrase)
-      const text = `<span>${this.phrase}</span>`
-      const output = [this.first_title.slice(0, position), text, this.first_title.slice(position, 0)].join('')
-      return output
+      if (this.phrase) {
+        const position = this.first_title.indexOf(this.phrase)
+        const text = `<span>${this.phrase}</span>`
+        const output = [this.first_title.slice(0, position), text, this.first_title.slice(position, 0)].join('')
+        return output
+      }
+      return this.first_title
     }
   },
   methods: {
@@ -184,16 +197,6 @@ export default {
         this.second_title = item.attributes.promo_banner.second_title
         this.phrase = item.attributes.promo_banner.phrase
       })
-    }
-  },
-  head () {
-    return {
-      htmlAttrs: {
-        lang: this.language
-      },
-      link: [
-        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
-      ]
     }
   }
 }

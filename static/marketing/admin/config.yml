@@ -1,19 +1,15 @@
 backend:
   # name: git-gateway
-  # name: github
-  # repo: drap54/ds-gitlab
-  # branch: master
-
   name: github
   repo: kenkoy/nuxt-netlify-landing-page
   branch: master
 
 publish_mode: editorial_workflow
-media_folder: static/marketing/img
-public_folder: /marketing/img
+# media_folder: static/marketing/img
+# public_folder: /marketing/img
 
-# media_folder: assets/images/cms_media
-# public_folder: ''
+media_folder: assets/images/marketing/img
+public_folder: /marketing/img
 
 # media_folder: assets/images/cms_media
 # public_folder: /_nuxt/assets/images/cms_media/
@@ -29,7 +25,7 @@ collections:
     preview_path: marketing/vjlp1/{{slug}}
     show_preview_links: true
     editor:
-      preview: false
+      preview: true
     fields:
       - label: Slug
         widget: string
@@ -354,6 +350,9 @@ collections:
         collapsed: true
         fields:
           - {label: "Title", name: "promo_title", widget: "string"}
+          - {label: "Banner first title", name: "first_title", widget: "string"}
+          - {label: "Banner text highlight", name: "phrase", widget: "string"}
+          - {label: "Banner second title", name: "second_title", widget: "string"}
           - {label: "Login Button", name: promo_login_button, widget: "string"}
           - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
           - {label: "Join Button", name: promo_join_button, widget: "string"}
