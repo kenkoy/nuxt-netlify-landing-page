@@ -17,28 +17,77 @@
       const html = htm.bind(h);
 
       const VLP1_PREVIEW = createClass({
+        formatTitle: function (title = ' ', higligtedPhrases = [' ']) {
+          const bannerTitle = title.split(/\r?\n/)
+            .filter(title => !!title)
+            .map(title => title.slice(-1) === '\\'
+              ? title.substring(0, title.length - 1)
+              : title
+            );
+
+          let idx = 0
+          higligtedPhrases.filter(phrase => !!phrase)
+            .forEach((phrase) => {
+              while (bannerTitle.length > idx) {
+                if (bannerTitle[idx].includes(phrase)) {
+                  bannerTitle[idx] = bannerTitle[idx].replace(phrase, `<font color="#ffd966"><b>${phrase}</b></font>`)
+                  break
+                } else {
+                  idx++
+                }
+              }
+            });
+
+          const _title =  bannerTitle.reduce((oldVal, newVal) => {
+            return oldVal + '<br />' + newVal
+          });
+          return { __html: _title };
+        },
+
+        formatTerms: function (terms = ' ', termsLinkText = [' ']) {
+          let termsText = terms;
+          termsLinkText.filter(linkText => !!linkText)
+            .forEach((linkText) => {
+              if (terms.includes(linkText)) {
+                termsText = termsText.replace(linkText, `<a href="#terms" class="link-terms-conditions ctac">${linkText}</a>`)
+              }
+            });
+          return { __html: termsText };
+        },
+
         render: function () {
           const entry = this.props.entry;
-          const locale = entry.getIn(['data', 'promo_locale']).toJS();
-          const banner = entry.getIn(['data','promo_banner']).toJS();
-          const steps = entry.getIn(['data', 'promo_steps']).toJS();
+          const locale = this.props.widgetsFor('promo_locale');
+          const banner = this.props.widgetsFor('promo_banner');
+          const steps = this.props.widgetsFor('promo_steps');
           const body = this.props.widgetFor('body');
-          const images = banner.promo_images;
           const cssBg = {
-            '--bg-image': `url('${images.promo_bg_desktop}')`,
-            '--bg-image-m': `url('${images.promo_bg_mobile}')`,
-            '--bg-banner': `url('${images.promo_game_logo}')`
+            '--bg-image': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_desktop'])}')`,
+            '--bg-image-m': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_mobile'])}')`,
+            '--bg-banner': `url('${banner.getIn(['data', 'promo_images', 'promo_game_logo']) || ''}')`
           };
+
+          const titleText = this.formatTitle(
+            banner.getIn(['data', 'promo_title']) || ' ',
+            banner.getIn(['data', 'promo_title_highlighted'])
+          );
+
+          const termsText = this.formatTerms(
+            banner.getIn(['data', 'promo_terms_text']) || ' ',
+            banner.getIn(['data', 'promo_terms_link_text'])
+          );
 
           return (
             html`
-            <body id="${locale.promo_language_code}-${locale.promo_country_code}">
+            <body
+              id="${locale.getIn(['data', 'promo_language_code'])}-${locale.getIn(['data', 'promo_country_code'])}"
+            >
               <header id="strip-container" class="container-flex h-100" style='${cssBg}'>
-                <a id="login-btn" href="${banner.promo_login_button_redirect_url}" class="login hvr-pulse">
+                <a id="login-btn" href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}" class="login hvr-pulse">
                   <div class="animated fadeIn">
                     <i class="material-icons">exit_to_app</i>
                     <div class="login-txt">
-                      ${banner.promo_login_button}
+                      ${banner.getIn(['data', 'promo_login_button'])}
                     </div>
                   </div>
                 </a>
@@ -47,17 +96,15 @@
                     <div id="strip" class="col-lg-5 strip">
                       <div class="strip-container animated fadeIn prev-strip-container">
                         <div class="logo animated fadeIn"></div>
-                        <h1>${banner.promo_title}</h1>
+                        <h1 dangerouslySetInnerHTML='${titleText}'></h1>
                         <a
-                          id="signup-btn" href="${banner.promo_join_button_redirect_url}"
+                          id="signup-btn" href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}"
                           class="button button-lrg d-block"
                         >
-                          ${banner.promo_join_button}
+                          ${banner.getIn(['data', 'promo_join_button'])}
                         </a>
                       </div>
-                      <div class="small-terms prev-banner-terms">
-                        ${banner.promo_terms_text}
-                      </div>
+                      <div class="small-terms prev-banner-terms" dangerouslySetInnerHTML='${termsText}'></div>
                     </div>
                     <div id="stripblank" class="col-lg-7"></div>
                   </div>
@@ -69,22 +116,22 @@
                     <div class="col-4 animated fadeIn delay-0s">
                       <div class="num">1</div>
                       <div class="step">
-                        <h2>${steps.promo_step_1_title}</h2>
-                        <h3>${steps.promo_step_1_desc}</h3>
+                        <h2>${steps.getIn(['data', 'promo_step_1_title'])}</h2>
+                        <h3>${steps.getIn(['data', 'promo_step_1_desc'])}</h3>
                       </div>
                     </div>
                     <div class="col-4 animated fadeIn delay-1s">
                       <div class="num">2</div>
                       <div class="step">
-                        <h2>${steps.promo_step_2_title}</h2>
-                        <h3>${steps.promo_step_2_desc}</h3>
+                        <h2>${steps.getIn(['data', 'promo_step_2_title'])}</h2>
+                        <h3>${steps.getIn(['data', 'promo_step_2_desc'])}</h3>
                       </div>
                     </div>
                     <div class="col-4 animated fadeIn delay-2s">
                       <div class="num">3</div>
                       <div class="step">
-                        <h2>${steps.promo_step_3_title}</h2>
-                        <h3>${steps.promo_step_3_desc}</h3>
+                        <h2>${steps.getIn(['data', 'promo_step_3_title'])}</h2>
+                        <h3>${steps.getIn(['data', 'promo_step_3_desc'])}</h3>
                       </div>
                     </div>
                   </div>
