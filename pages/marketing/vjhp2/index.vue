@@ -24,27 +24,27 @@ export default {
     dataMD: { }
   }),
   head () {
-    const goId = (this.dataMD.attributes.field_ids && this.dataMD.attributes.field_ids.go_container_id)
-      ? this.dataMD.attributes.field_ids.go_container_id
+    const goId = (this.dataMD.field_ids && this.dataMD.field_ids.go_container_id)
+      ? this.dataMD.field_ids.go_container_id
       : 'OPT-PHSNXP6'
 
-    const gaId = (this.dataMD.attributes.field_ids && this.dataMD.attributes.field_ids.ga_tracking_id)
-      ? this.dataMD.attributes.field_ids.ga_tracking_id
+    const gaId = (this.dataMD.field_ids && this.dataMD.field_ids.ga_tracking_id)
+      ? this.dataMD.field_ids.ga_tracking_id
       : 'UA-142143961-1'
 
-    const gtmId = (this.dataMD.attributes.field_ids && this.dataMD.attributes.field_ids.gtm_container_id)
-      ? this.dataMD.attributes.field_ids.gtm_container_id
+    const gtmId = (this.dataMD.field_ids && this.dataMD.field_ids.gtm_container_id)
+      ? this.dataMD.field_ids.gtm_container_id
       : 'GTM-MFD3NKM'
 
     return {
       title: 'Vera&John',
       htmlAttrs: {
-        lang: this.dataMD.attributes.promo_locale.promo_language_code
+        // lang: this.dataMD.attributes.promo_locale.promo_language_code
       },
-      bodyAttrs: {
-        id: this.dataMD.attributes.promo_locale.promo_language_code +
-            '-' + this.dataMD.attributes.promo_locale.promo_country_code
-      },
+      // bodyAttrs: {
+      //   id: this.dataMD.attributes.promo_locale.promo_language_code +
+      //       '-' + this.dataMD.attributes.promo_locale.promo_country_code
+      // },
       style: [],
       script: [
         {
