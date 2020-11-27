@@ -10,7 +10,7 @@
                         {{nav_links.name}}
                     </nuxt-link>
 
-                    <nuxt-link to="/marketing/admin">
+                    <nuxt-link to="/marketing/admin/#/">
                         Admin
                     </nuxt-link>
                 </div>
