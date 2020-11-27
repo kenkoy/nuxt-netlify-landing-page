@@ -11,10 +11,35 @@
 
 #main-content,
 #payment,
+#firstvie__inquiry,
 footer{
   background: $BODY_BG;
   z-index: 1;
   position: relative;
+}
+
+#firstvie__inquiry{
+  text-align: center;
+  padding: 4px;
+
+  .firstvie__inquiry__inner{
+    border: solid 2px #fff;
+    padding: 15px;
+  }
+
+  h3{
+    color: #ff0;
+    margin: 0;
+  }
+
+  button{
+    background: transparent;
+    border: none;
+    color: #fff;
+    border-bottom: solid 1px #fff;
+    font-size: 18px;
+    font-weight: 700;
+  }
 }
 
 #payment{

@@ -197,7 +197,17 @@ export default {
   data () {
     return {
       mdData: {},
-      htmlBody: ''
+      htmlBody: '',
+      registrationMessage: ''
+    }
+  },
+  computed: {
+    formattedRegMessage () {
+      return this.mdData.promo_banner.promo_register_message.split(/\r?\n/)
+        .filter(msg => msg)
+        .map(msg => msg.slice(-1) === '\\' ? msg.substring(0, msg.length - 1) : msg).reduce((oldVal, newVal) =>
+          oldVal + '<br class="pc" />' + newVal
+        )
     }
   },
   created () {

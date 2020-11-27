@@ -3,6 +3,7 @@
   section,
   footer{
     padding: 20px 10px;
+    box-sizing: border-box;
   }
   .desktop{
     display: none;
@@ -10,19 +11,34 @@
   .mobile{
     display: block;
   }
+
+  #firstview{
+    min-height: 600px;
+    .container{
+      display: block;
+    }
+  }
   .firstview__anime{
     top: -150px;
   }
 
   .touch{
-    width: 144px;
     position: relative;
     z-index: 1;
+
+    img{
+      width: 144px;
+    }
   }
   .dream-logo{
     position: relative;
-    width: 280px;
     margin: auto;
+
+    img{
+      width: 160px;
+      display: block;
+      margin: auto;
+    }
   }
 
   .firstvie__inquiry{
@@ -31,8 +47,12 @@
   }
 
   .firstview__counter{
-    overflow: hidden;
     position: relative;
+    left: -8%;
+    transform: scale(.8);
+    width: 320px;
+    min-height: 65px;
+    margin: 150px auto 0 auto;
 
     &:before{
       background: url('../assets/images/iclp3V2/counter_touch.png');
@@ -42,10 +62,15 @@
       content: '';
       background-size: cover;
       position: absolute;
-      right: 0;
-      top: 50%;
+      right: -10px;
+      top: 30px;
       margin-top: -20px;
     }
+  }
+
+  .number{
+    background: url("../assets/images/iclp3V2/bg_counter.png") no-repeat;
+    background-size: 45px 60px;
   }
 
 
@@ -80,7 +105,37 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+  .dream-logo{
+    position: absolute;
+    top: 0;
+    right: 0;
 
+    img{
+      width: 250px;
+    }
+  }
+  .firstview__counter{
+    width: 550px;
+    min-height: 100px;
+    left: 0;
+    margin-top: 350px;
+
+    &:before{
+      width: 200px;
+      height: 60px;
+    }
+  }
+
+  .number{
+    background-size: 75px 95px;
+  }
+
+  #firstvie__inquiry{
+    width: 300px;
+    position: absolute;
+    top: 44%;
+    right: 0;
+  }
 }
 
 /* Medium Devices, Desktops */
