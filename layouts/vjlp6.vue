@@ -2,7 +2,7 @@
   <div :class="{ vjlp6_wrapper: true }">
     <div class="vjlp6-main">
       <!-- PAGE HANDLING DATA -->
-      <Vjlp6Data @emitMDcontent="getMDcontent" />
+      <Vjlp6Data @emit-md-content="getMDcontent" />
 
       <div v-for="(data_items, data_index) in md_data" :key="data_index">
         <section id="hero" :style="cssBackground">

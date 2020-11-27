@@ -107,7 +107,7 @@ export default {
   methods: {
     /* send the 'dataMD' data to 'LAYOUT' */
     emitData (dataMD) {
-      this.$emit('emitMDcontent', dataMD)
+      this.$emit('emit-md-content', dataMD)
     }
   }
 }
