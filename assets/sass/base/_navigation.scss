@@ -40,18 +40,20 @@ $NAV_HAMBURGER_LINES_COLOR: #fff;
         }
     }
 }
-nav{
-    a{
-        text-decoration: none;
-        margin: $NAV_LINKS_SPACING;
-        color: $NAV_LINKS_COLOR;
-        font-size: $NAV_FONT_SIZE;
-        padding: 30px 10px;
-        display: inline-block;
-        text-transform: capitalize;
-        font-weight: 700;
-        text-transform: uppercase;
-    }
+@at-root .nav_wrapper{
+  nav{
+      a{
+          text-decoration: none;
+          margin: $NAV_LINKS_SPACING;
+          color: $NAV_LINKS_COLOR;
+          font-size: $NAV_FONT_SIZE;
+          padding: 30px 10px;
+          display: inline-block;
+          text-transform: capitalize;
+          font-weight: 700;
+          text-transform: uppercase;
+      }
+  }
 }
 
 
