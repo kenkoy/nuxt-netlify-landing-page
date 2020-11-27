@@ -106,7 +106,7 @@
             window.addEventListener("resize", this.myEventHandler)
 
             $nuxt.$router.options.routes.forEach(route => {
-                if(!route.name.includes('slug') && !route.name.includes('about') && !route.name.includes('admin') && !route.name.includes('nathan')){
+                if(!route.name.includes('slug') && !route.name.includes('about') && !route.name.includes('admin') && !route.name.includes('blank-template')){
                     this.nav_items.push({
                         name: route.name.substr(10, 10),
                         path: route.path

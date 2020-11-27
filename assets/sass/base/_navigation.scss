@@ -1,6 +1,6 @@
 $NAV_BG: #fff;
 $NAV_PADDING: 15px;
-$NAV_LINKS_SPACING: 0 10px;
+$NAV_LINKS_SPACING: 0 8px;
 $NAV_LINKS_COLOR: #243238;
 $NAV_FONT_SIZE: 14px;
 
@@ -50,6 +50,7 @@ nav{
         display: inline-block;
         text-transform: capitalize;
         font-weight: 700;
+        text-transform: uppercase;
     }
 }
 
