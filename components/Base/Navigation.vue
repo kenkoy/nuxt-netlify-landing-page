@@ -10,7 +10,7 @@
                         {{nav_links.name}}
                     </nuxt-link>
 
-                    <nuxt-link to="/marketing/admin/#/">
+                    <nuxt-link to="/marketing/admin/#/" target="_blank">
                         Admin
                     </nuxt-link>
                 </div>
@@ -35,7 +35,7 @@
                             </nuxt-link>
                         </li>
                         <li>
-                            <nuxt-link to="/marketing/admin/#/">
+                            <nuxt-link to="/marketing/admin/#/" target="_blank">
                                 Admin
                             </nuxt-link>
                         </li>
