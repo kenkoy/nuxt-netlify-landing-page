@@ -25,22 +25,22 @@
               </p>
               <div class="game-slider">
                 <a aria-label="link" :href="data_items.header_section.header_section_game_slider_url_1">
-                <img :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_1}`)" alt="alt img">
+                  <img :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_1}`)" alt="alt img">
                 </a>
                 <a aria-label="link" :href="data_items.header_section.header_section_game_slider_url_2">
-                <img :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_2}`)" alt="alt img">
+                  <img :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_2}`)" alt="alt img">
                 </a>
                 <a aria-label="link" :href="data_items.header_section.header_section_game_slider_url_3">
-                <img :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_3}`)" alt="alt img">
+                  <img :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_3}`)" alt="alt img">
                 </a>
                 <a aria-label="link" :href="data_items.header_section.header_section_game_slider_url_4">
-                <img :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_4}`)" alt="alt img">
+                  <img :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_4}`)" alt="alt img">
                 </a>
                 <a aria-label="link" :href="data_items.header_section.header_section_game_slider_url_5">
-                <img :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_5}`)" alt="alt img">
+                  <img :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_5}`)" alt="alt img">
                 </a>
                 <a aria-label="link" :href="data_items.header_section.header_section_game_slider_url_6">
-                <img :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_6}`)" alt="alt img">
+                  <img :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_6}`)" alt="alt img">
                 </a>
               </div>
               <p class="best-deal">
@@ -51,7 +51,7 @@
                 {{ data_items.header_section.header_section_best_deal_small_caption }}
               </p>
               <button class="warning">
-              <a aria-label="link" :href="data_items.header_section.header_section_best_deal_image_url">{{ data_items.header_section.header_section_register_button }}!</a>
+                <a aria-label="link" :href="data_items.header_section.header_section_best_deal_image_url">{{ data_items.header_section.header_section_register_button }}!</a>
               </button>
               <p class="account">
                 {{ data_items.header_section.header_section_account_text }}<a :href="data_items.header_section.header_section_best_deal_image_url">ログイン!</a>
@@ -75,7 +75,7 @@
               <img src="@/assets/images/vjhp2/mobile.png" alt="alt img">
               <p>定番ゲームから変わり種まで、その数なんと0000種類! 今まで海外カジノでしか楽しめなかった生ディーラーとの真剣勝負が、あなたのスマホにやってきます!</p>
               <button class="primary">
-              <a aria-label="link" :href="data_items.games_brick_section.games_brick_column_1.games_brick_column_1_button_redirect_url">{{ data_items.games_brick_section.games_brick_column_1.games_brick_column_1_button }}</a>
+                <a aria-label="link" :href="data_items.games_brick_section.games_brick_column_1.games_brick_column_1_button_redirect_url">{{ data_items.games_brick_section.games_brick_column_1.games_brick_column_1_button }}</a>
               </button>
             </div>
             <div>
@@ -83,7 +83,7 @@
               <img src="@/assets/images/vjhp2/ipad.png" alt="alt img">
               <p>その数1000種類以上! 人気スロットはもちろん、パチスロみたいな新感覚ゲームまでなんでもあり! 最新作がどこよりも早くプレイできちゃうのも業界ナンバーワンカジノならでは♪</p>
               <button class="error">
-              <a aria-label="link" :href="data_items.games_brick_section.games_brick_column_2.games_brick_column_2_button_redirect_url">{{ data_items.games_brick_section.games_brick_column_2.games_brick_column_2_button }}</a>
+                <a aria-label="link" :href="data_items.games_brick_section.games_brick_column_2.games_brick_column_2_button_redirect_url">{{ data_items.games_brick_section.games_brick_column_2.games_brick_column_2_button }}</a>
               </button>
             </div>
           </div>
@@ -125,7 +125,7 @@
               <p>ベラジョン・ファミリーのメンバー様からのコメントをご紹介♪ ほかにも、勝利を収めたプレイヤー様のリアルなお声は、毎月勝利者インタビューページで大公開し ちゃってます!</p>
               <article>「ゲームの種類がとにかく多い! 出金手続きが簡単で早いのも嬉しい!」</article>
               <button class="warning">
-              <a aria-label="link" :href="data_items.testimonials_section.testimonials_button_redirect_url">{{ data_items.testimonials_section.testimonials_button_text }}</a>
+                <a aria-label="link" :href="data_items.testimonials_section.testimonials_button_redirect_url">{{ data_items.testimonials_section.testimonials_button_text }}</a>
               </button>
             </div>
           </div>
@@ -159,10 +159,10 @@
               </div>
               <div>
                 <a aria-label="link" href="https://www.verajohn.com/home">
-                <img src="@/assets/images/vjhp2/curacao.png" alt="alt img">
+                  <img src="@/assets/images/vjhp2/curacao.png" alt="alt img">
                 </a>
                 <a aria-label="link" href="https://www.verajohn.com/home">
-                <img src="@/assets/images/vjhp2/18Regulator.png" alt="alt img">
+                  <img src="@/assets/images/vjhp2/18Regulator.png" alt="alt img">
                 </a>
               </div>
             </div>

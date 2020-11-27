@@ -30,16 +30,6 @@ export default {
       language: ''
     }
   },
-  methods: {
-    /* data from 'PAGE' store to 'md_data' local variable */
-    getMDcontent (emitData) {
-      this.md_data = [emitData]
-
-      this.md_data.forEach((item) => {
-        this.language = item.promo_locale.promo_language_code
-      })
-    }
-  },
   head () {
     return {
       htmlAttrs: {
@@ -48,6 +38,16 @@ export default {
       link: [
         { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
       ]
+    }
+  },
+  methods: {
+    /* data from 'PAGE' store to 'md_data' local variable */
+    getMDcontent (emitData) {
+      this.md_data = [emitData]
+
+      this.md_data.forEach((item) => {
+        this.language = item.promo_locale.promo_language_code
+      })
     }
   }
 }

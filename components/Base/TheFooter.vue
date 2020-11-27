@@ -91,17 +91,18 @@
 export default {
   name: 'Footer',
   props: {
-    promo_language_code: {
+    promoLanguageCode: {
       type: String,
       required: true
     },
-    promo_country_code: {
+    promoCountryCode: {
       type: String,
       required: true
     },
-    landing_page_type: {
+    landingPageType: {
       type: String,
-      required: false
+      required: false,
+      default: ''
     }
   },
   data () {
