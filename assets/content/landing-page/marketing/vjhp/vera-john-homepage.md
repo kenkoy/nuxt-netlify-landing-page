@@ -30,7 +30,7 @@ header_section:
   header_section_account_text: アカウントをお持ちの方はコチラから
   header_section_account_login: ログイン!
   header_section_register_button_url: https://verajohn.com/#join
-  header_section_game_slider_1: /marketing/img/game1.svg
+  header_section_game_slider_1: /marketing/img/image-2020-09-09-17-14-48-360.png
   header_section_game_slider_2: /marketing/img/game2.svg
   header_section_game_slider_3: /marketing/img/game3.svg
   header_section_background_image: /marketing/img/image-2020-09-09-17-14-48-442.png
