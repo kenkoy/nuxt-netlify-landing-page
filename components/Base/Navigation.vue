@@ -50,7 +50,10 @@ export default {
       desktop: true,
       mobile: false,
       isActive: false,
-      navItems: []
+      navItems: [{
+        name: '',
+        path: ''
+      }]
     }
   },
   destroyed () {
@@ -60,17 +63,16 @@ export default {
     this.myEventHandler()
     window.addEventListener('resize', this.myEventHandler)
 
-    this.$nuxt.$router.options.routes.forEach((route) => {
-      if (!route.name.includes('slug') && !route.name.includes('about') && !route.name.includes('admin') && !route.name.includes('blank-template')) {
-        this.navItems.push({
-          name: route.name.substr(10, 10),
-          path: route.path
-        })
-      }
+    this.navItems = this.$nuxt.$router.options.routes.map(route => ({
+      name: route.name.replace('marketing-', ''),
+      path: route.path
+    })).filter((route) => {
+      const containingWords = /slug|about|admin|blank-template|home|marketing/.test(route.name)
+      return !containingWords
     })
   },
   methods: {
-    myEventHandler (e) {
+    myEventHandler () {
       // your code for handling resize...
       if (window.innerWidth <= 767) {
         this.desktop = false
