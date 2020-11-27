@@ -35,7 +35,7 @@
                             </nuxt-link>
                         </li>
                         <li>
-                            <nuxt-link to="/marketing/admin">
+                            <nuxt-link to="/marketing/admin/#/">
                                 Admin
                             </nuxt-link>
                         </li>
