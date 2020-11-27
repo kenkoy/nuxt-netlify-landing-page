@@ -109,6 +109,15 @@ export default {
         gaHead: ['innerHTML']
       }
     }
+  },
+  mounted () {
+    this.emitData(this.dataMD)
+  },
+  methods: {
+    /* send the 'dataMD' data to 'LAYOUT' */
+    emitData (dataMD) {
+      this.$emit('emit-md-content', dataMD)
+    }
   }
 }
 </script>
