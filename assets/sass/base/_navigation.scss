@@ -1,0 +1,182 @@
+$NAV_BG: #fff;
+$NAV_PADDING: 15px;
+$NAV_LINKS_SPACING: 0 8px;
+$NAV_LINKS_COLOR: #243238;
+$NAV_FONT_SIZE: 14px;
+
+$NAV_HAMBURGER_BORDER_COLOR: #e33227;
+$NAV_HAMBURGER_BG_CONTENT: #fff;
+$NAV_HAMBURGER_BG_OVERLAY: #000;
+$NAV_HAMBURGER_LINES_COLOR: #fff;
+
+/*=== MAIN MENU ===*/
+@at-root body.noScroll{
+    overflow: hidden;
+}
+#nav-desktop{
+    background: $NAV_BG;
+
+    .container{
+        align-items: center;
+
+        img{
+            max-width: 150px;
+        }
+
+        > div:first-child{
+            -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+        > div:first-child + div{
+            -ms-flex: 0 0 80%;
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+
+        .nuxt-link-exact-active{
+            color: #EC0090;
+            border-bottom: solid 5px #EC0090;
+        }
+    }
+}
+@at-root .nav_wrapper{
+  nav{
+      a{
+          text-decoration: none;
+          margin: $NAV_LINKS_SPACING;
+          color: $NAV_LINKS_COLOR;
+          font-size: $NAV_FONT_SIZE;
+          padding: 30px 10px;
+          display: inline-block;
+          text-transform: capitalize;
+          font-weight: 700;
+          text-transform: uppercase;
+      }
+  }
+}
+
+
+/*=== HAMBURGER MENU ===*/
+#nav-mobile{
+    background: $NAV_HAMBURGER_BG_CONTENT;
+    padding: $NAV_PADDING $NAV_PADDING $NAV_PADDING 0;
+}
+#ham-menu {
+    display: none;
+}
+
+/*--hamburger--*/
+label[for="ham-menu"] {
+    display: block;
+    position: relative;
+    margin-left: $NAV_PADDING;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid $NAV_HAMBURGER_BORDER_COLOR;
+    background: darken($NAV_HAMBURGER_BORDER_COLOR, 5%);
+}
+.hide-des{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.hide-des span{
+    background: $NAV_HAMBURGER_LINES_COLOR;
+    width: 17px;
+    height: 2px;
+    margin: 2px 0;
+    display:block;
+    transition: all .4s ease;
+    transform-origin:0 0;
+}
+
+/*--hamburger expand content--*/
+.ham-menu {
+    width: 60vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    transform: translate(-110%);
+    z-index: 998;
+    background: $NAV_HAMBURGER_BG_CONTENT;
+    transition: 0.5s;
+    padding-top: 80px;
+}
+
+.ham-menu.vertical {
+    width: 100%;
+    height: auto;
+    transform: translateY(-110%);
+}
+
+.ham-menu ul{
+    list-style: none;
+    padding: 0;
+    background: darken($NAV_HAMBURGER_BG_CONTENT, 10%);
+    padding: 20px;
+    margin: 0;
+
+    li{
+        line-height: 45px;
+    }
+}
+
+/*--Overlay--*/
+.ham-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $NAV_HAMBURGER_BG_OVERLAY;
+    z-index: 997;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#ham-menu:checked ~ div.ham-overlay {
+    opacity: .8;
+}
+
+/*=======EXPANDED=======*/
+
+/*--show hamburger expand--*/
+#ham-menu:checked ~ div.ham-menu {
+    transform: translate(0);
+    visibility: visible;
+    overflow: scroll;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    a{
+        padding: 5px;
+    }
+}
+
+/*--hamburger lines - expanded--*/
+#ham-menu:checked + label span {
+    background: $NAV_HAMBURGER_LINES_COLOR;
+}
+#ham-menu:checked + label span:nth-child(2){
+    Transform: scaleX(0);
+}
+#ham-menu:checked + label span:nth-child(1) {
+    transform: rotate(45deg) translate(3px, -2px);
+}
+#ham-menu:checked + label span:nth-child(3) {
+    transform: rotate(-45deg) translate(2px, 2px);
+}

@@ -22,8 +22,9 @@ promo_banner:
   promo_subtitle: " "
   promo_title: "無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！ "
   promo_images:
-    promo_bg_desktop: /marketing/img/banner-dt.png
+    promo_bg_desktop: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-bg.jpg
     promo_bg_mobile: /marketing/img/banner-mob.png
+    promo_bg_banner: /marketing/img/dsgn-1306-vjlp1-dt-v2xxxx.jpg
   promo_title_display: false
   promo_login_button_redirect_url: https://www.verajohn.com/#join
   promo_join_button_redirect_url: "https://www.verajohn.com/#join "

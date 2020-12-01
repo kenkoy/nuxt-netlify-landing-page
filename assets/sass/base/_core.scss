@@ -28,7 +28,7 @@ a{
     .column-3,
     .column-4{
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
@@ -44,10 +44,10 @@ a{
     .container{
         max-width: 720px;
     }
-    .column-2{
-        flex-wrap: nowrap;
-        flex-direction: row;
-    }
+    // .column-2{
+    //     flex-wrap: nowrap;
+    //     flex-direction: row;
+    // }
 }
 
 /* Medium Devices, Desktops */
@@ -62,11 +62,11 @@ a{
         max-width: 50%;
     }
 
-    .column-3,
-    .column-4{
-        flex-wrap: nowrap;
-        flex-direction: row;
-    }
+    // .column-3,
+    // .column-4{
+    //     flex-wrap: nowrap;
+    //     flex-direction: row;
+    // }
 }
 
 /* Large Devices, Wide Screens */

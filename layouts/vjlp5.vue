@@ -26,7 +26,7 @@
         <section id="hero" :style="cssBackground">
           <div class="container">
             <div class="banner">
-              <h1 v-html="bannerTitle"></h1>
+              <h1 v-html="bannerTitle" />
               <h1>{{ data_items.attributes.promo_banner.second_title }}</h1>
             </div>
           </div>
@@ -116,9 +116,9 @@
         <div v-html="html" />
 
         <Footer
-          :promo_language_code="language"
-          :promo_country_code="country_code"
-          :landing_page_type="'verajohn'"
+          :promo-language-code="language"
+          :promo-country-code="country_code"
+          :landing-page-type="'verajohn'"
         />
       </div>
     </div>
@@ -149,6 +149,16 @@ export default {
       first_title: '',
       second_title: '',
       phrase: ''
+    }
+  },
+  head () {
+    return {
+      htmlAttrs: {
+        lang: this.language
+      },
+      link: [
+        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
+      ]
     }
   },
   computed: {
@@ -187,16 +197,6 @@ export default {
         this.second_title = item.attributes.promo_banner.second_title
         this.phrase = item.attributes.promo_banner.phrase
       })
-    }
-  },
-  head () {
-    return {
-      htmlAttrs: {
-        lang: this.language
-      },
-      link: [
-        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
-      ]
     }
   }
 }

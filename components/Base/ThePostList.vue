@@ -1,20 +1,21 @@
 <template>
-  <section class="featured-posts">
-    <div class="container">
-      <div v-for="(post, post_index) in posts" :key="post_index">
-        <nuxt-link :to="'/marketing/' + post.path + '/' + post.slug" class="post-preview">
-          <article>
-            <h3>{{ post.attributes.slug_name }}</h3>
-            <p>{{ post.attributes.promo_banner.promo_title }}</p>
-          </article>
-        </nuxt-link>
+  <div :class="{ post_wrapper: true }">
+    <section id="featured-posts" :class="$nuxt.$route.name">
+      <div class="container">
+        <div v-for="(post, post_index) in posts" :key="post_index" class="posts">
+          <nuxt-link :to="'/marketing/' + post.path + '/' + post.slug" class="post-preview">
+            <article>
+              <h3>{{ post.attributes.slug_name }}</h3>
+              <p>{{ post.attributes.promo_banner.promo_title }}</p>
+            </article>
+          </nuxt-link>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script>
-
 export default {
   props: {
     posts: {
@@ -26,63 +27,77 @@ export default {
 </script>
 
 <style lang="scss">
-    ul.nav-list a {
-        font-size: 15px;
+    .post_wrapper {
+        @import '@/assets/sass/base/style.scss';
     }
-    .featured-posts{
-        background: #fff;
 
-        .container {
-            display: block;
-            padding: 50px 0;
-            text-align: center;
+    .marketing-vjlp5,
+    .marketing-vjlp6{
+        background: #009FE3;
 
-            a {
-                text-decoration: none;
-                // color: #e33227;
-                color: #000;
-                display: block;
-                min-height: 130px;
-                height: 100%;
-                padding: 20px 50px;
-            }
+        a{
+            color: #08648a;
+            background: #fff;
 
-            > div{
-                vertical-align: top;
-                display: inline-block;
-                box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                background: #1e90ff;
-                box-shadow: 2px 2px 3px #bdbdbd;
-                position: relative;
+            &:hover{
+                background: #EC008B;
+                color: #fff;
 
-                &:hover{
-                    opacity: .8;
+                h3{
+                    color: #FEE63D;
                 }
             }
         }
+        h3{
+            color: #EC0090;
+        }
     }
 
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
+    #featured-posts{
+        background-size: cover;
+        padding: 50px 0;
+        min-height: calc(100vh - 180px);
+
+        a{
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 24px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
+            -moz-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
+            box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
         }
-        50% {
-            background-position: 100% 50%;
+        h3{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 25px;
+            text-transform: none;
+            margin: 0;
         }
-        100% {
-            background-position: 0% 50%;
+
+        .container{
+            flex-wrap: wrap;
+        }
+
+        .posts{
+            padding: 10px;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
         }
     }
 
     /* Custom, iPhone Retina */
     @media only screen and (min-width : 320px) {
-        .featured-posts{
-            padding: 0 20px;
-        }
-        .featured-posts .container > div{
-            width: 100%;
-            margin: 10px 0;
+        #featured-posts{
+            .container{
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
         }
     }
 
@@ -93,9 +108,10 @@ export default {
 
     /* Small Devices, Tablets */
     @media only screen and (min-width : 768px) {
-        .featured-posts .container > div{
-            width: 47%;
-            margin: 10px;
+        #featured-posts{
+            .posts{
+                max-width: 33.33%;
+            }
         }
     }
 
@@ -106,9 +122,6 @@ export default {
 
     /* Large Devices, Wide Screens */
     @media only screen and (min-width : 1200px) {
-        .featured-posts .container > div{
-            width: 31.5%;
-            margin: 10px;
-        }
+
     }
 </style>

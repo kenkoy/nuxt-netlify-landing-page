@@ -22,15 +22,6 @@ export default {
   data () {
     return {}
   },
-  mounted () {
-    this.emitData(this.dataMD)
-  },
-  methods: {
-    /* send the 'dataMD' data to 'LAYOUT' */
-    emitData (dataMD) {
-      this.$emit('emit-md-content', dataMD)
-    }
-  },
   head () {
     const goId = (this.dataMD.attributes.field_ids && this.dataMD.attributes.field_ids.go_container_id)
       ? this.dataMD.attributes.field_ids.go_container_id
@@ -111,6 +102,15 @@ export default {
         goHead: ['innerHTML'],
         gaHead: ['innerHTML']
       }
+    }
+  },
+  mounted () {
+    this.emitData(this.dataMD)
+  },
+  methods: {
+    /* send the 'dataMD' data to 'LAYOUT' */
+    emitData (dataMD) {
+      this.$emit('emit-md-content', dataMD)
     }
   }
 }
