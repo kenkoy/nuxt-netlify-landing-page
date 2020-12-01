@@ -11,15 +11,16 @@
 
 #main-content,
 #payment,
-#firstvie__inquiry,
+#firstvie__inquiry > div,
 footer{
   background: $BODY_BG;
   z-index: 1;
   position: relative;
 }
-
 #firstvie__inquiry{
   text-align: center;
+}
+#firstvie__inquiry > div{
   padding: 4px;
 
   .firstvie__inquiry__inner{
@@ -39,6 +40,21 @@ footer{
     border-bottom: solid 1px #fff;
     font-size: 18px;
     font-weight: 700;
+  }
+}
+
+.box{
+  background: url('../assets/images/iclp3V2/bg_patern_border.jpg');
+  max-width: 800px;
+  margin: 130px auto 10px auto;
+  border: 6px solid #faf299;
+  border-radius: 30px;
+  padding: 30px;
+
+  .image-title{
+    width: 90%;
+    margin: -130px auto 0 auto;
+    display: block;
   }
 }
 

@@ -5,16 +5,29 @@
       v-if="Object.keys(mdData).length > 0"
       class="iclp3-main"
     >
-      <!-- <header>
+      <header class="desktop">
         <div class="container">
           <div class="inter-casino-logo">
             <img src="@/assets/images/iclp3V2/logo_inter_pc.png" alt="inter casino logo" data-not-lazy>
           </div>
-          <div aria-label="join" :href="joinURL">
-            <img src="@/assets/images/iclp3V2/btn_signup.png" alt="inter casino logo">
+          <div class="join" aria-label="join">
+            <a :href="mdData.promo_banner.promo_join_url">
+              <img src="@/assets/images/iclp3V2/btn_signup.png" alt="inter casino logo">
+            </a>
           </div>
         </div>
-      </header> -->
+      </header>
+
+      <header class="mobile">
+        <div class="container">
+          <img src="@/assets/images/iclp3V2/logo_inter_sp.png" alt="inter casino logo" data-not-lazy>
+        </div>
+        <div class="join" aria-label="join">
+          <a :href="mdData.promo_banner.promo_join_url">
+            <img src="@/assets/images/iclp3V2/btn_signup.png" alt="inter casino logo">
+          </a>
+        </div>
+      </header>
       <section id="firstview" class="firstview">
         <div class="container">
           <div>
@@ -150,16 +163,29 @@
               <img src="@/assets/images/iclp3V2/logo_oiran.png" alt="inter casino logo">
             </div>
             <div id="firstvie__inquiry" class="firstvie__inquiry">
-              <div class="firstvie__inquiry__inner">
-                <h3 v-html="formattedRegMessage" />
-                <a :href="joinURL">{{ joinMessage }}</a>
-                <button onclick="back()">
-                  ▶まだまだ触る！
-                </button>
+              <div>
+                <div class="firstvie__inquiry__inner">
+                  <h3 v-html="formattedRegMessage" />
+                  <a :href="mdData.promo_banner.promo_join_url">{{ mdData.promo_banner.promo_join_text }}</a>
+                  <button onclick="back()">
+                    ▶まだまだ触る！
+                  </button>
+                </div>
               </div>
               <a class="firstvie__inquiry__turm" href="#terms" v-html="bannerTerms">
                 <!-- <span>利用規約</span>に同意します -->
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="bonus">
+        <div class="container" v-for="(summaryItems, summaryIndex) in mdData.bonus" :key="summaryIndex">
+          <div class="box">
+            <div>
+              <img class="image-title" :src="require(`~/assets/images${summaryItems.box_title_image}`)" alt="alt img">
+              <p>{{summaryItems.summary}}</p>
             </div>
           </div>
         </div>
@@ -208,6 +234,11 @@ export default {
         .map(msg => msg.slice(-1) === '\\' ? msg.substring(0, msg.length - 1) : msg).reduce((oldVal, newVal) =>
           oldVal + '<br class="pc" />' + newVal
         )
+    },
+    bannerTerms () {
+      return this.mdData.promo_banner.promo_terms_text.includes(this.mdData.promo_banner.promo_terms_underlined_text)
+        ? this.mdData.promo_banner.promo_terms_text.replace(this.mdData.promo_banner.promo_terms_underlined_text, `<span>${this.mdData.promo_banner.promo_terms_underlined_text}</span>`)
+        : this.mdData.promo_banner.promo_terms_text
     }
   },
   created () {

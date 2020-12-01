@@ -12,6 +12,35 @@
     display: block;
   }
 
+  header.desktop{
+    position: relative;
+    z-index: 2;
+  }
+
+  header.mobile{
+    background: #000;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+
+    img{
+      max-width: 120px;
+      display: block;
+      margin: auto;
+    }
+
+    .join{
+      position: absolute;
+      top: 80px;
+      right: 3%;
+      z-index: 3;
+
+      img{
+        max-width: 45px;
+      }
+    }
+  }
+
   #firstview{
     min-height: 600px;
     .container{
@@ -35,7 +64,7 @@
     margin: auto;
 
     img{
-      width: 160px;
+      width: 200px;
       display: block;
       margin: auto;
     }
@@ -105,6 +134,22 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+  .desktop{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
+  .inter-casino-logo{
+    img{
+      max-width: 180px;
+    }
+  }
+  .touch{
+    img{
+      width: 250px;
+    }
+  }
   .dream-logo{
     position: absolute;
     top: 0;
@@ -140,15 +185,41 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-  .desktop{
-    display: block;
+  header.desktop{
+    .join{
+      position: absolute;
+      top: 15px;
+      right: 0;
+
+      img{
+        max-width: 50px;
+      }
+    }
   }
-  .mobile{
-    display: none;
+
+  .dream-logo{
+    img{
+      width: 350px;
+    }
+  }
+
+  .touch{
+    left: 100px;
   }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+  .inter-casino-logo{
+    img{
+      max-width: 230px;
+    }
+  }
+  .touch{
+    left: 200px;
 
+    img{
+      width: 250px;
+    }
+  }
 }

@@ -89,30 +89,6 @@ a:hover {
     transform: translateX(-50%);
   }
 }
-/* }
-.point {
-  margin: 0;
-  padding: 10px 3px;
-  background: url("https://files.vjpromo.com/bannerflow/oiranslot/ic/10/assets/images/pattern.jpg") repeat top;
-  background-size: 20px;
-}
-.point ul {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.point ul img {
-  max-width: 100%;
-}
-.point ul li {
-  padding: 0 3px;
-}
-@media screen and (min-width: 768px) {
-  .point {
-    padding: 20px;
-    background-size: 40px;
-  }
-} */
 .number,
 .number.main {
   position: relative;
