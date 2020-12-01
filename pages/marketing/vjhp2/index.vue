@@ -38,6 +38,9 @@ export default {
 
     return {
       title: 'Vera&John',
+      link: [
+        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
+      ],
       htmlAttrs: {
         // lang: this.dataMD.attributes.promo_locale.promo_language_code
       },
