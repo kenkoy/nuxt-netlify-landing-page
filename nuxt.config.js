@@ -75,8 +75,16 @@ export default {
   */
   buildModules: [
     // https://go.nuxtjs.dev/eslint
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    // https://marquez.co/docs/nuxt-optimized-images
+    '@aceforth/nuxt-optimized-images'
   ],
+  /**
+   * Configuratiof for nuxt-optimized-images
+   */
+  optimizedImages: {
+    optimizeImages: true
+  },
   /*
   ** Nuxt.js modules
   */
