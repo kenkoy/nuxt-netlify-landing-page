@@ -72,7 +72,7 @@
           <div class="container column-2">
             <div>
               <h3>生配信で楽しめる! ライブカジノ</h3>
-              <img width="458" height="458" src="/marketing/img/vjhp/mobile.png" alt="alt img">
+              <img width="458" height="317" src="/marketing/img/vjhp/mobile.png" alt="alt img">
               <p>定番ゲームから変わり種まで、その数なんと0000種類! 今まで海外カジノでしか楽しめなかった生ディーラーとの真剣勝負が、あなたのスマホにやってきます!</p>
               <button class="primary">
                 <a aria-label="link" :href="data_items.games_brick_section.games_brick_column_1.games_brick_column_1_button_redirect_url">{{ data_items.games_brick_section.games_brick_column_1.games_brick_column_1_button }}</a>
@@ -80,7 +80,7 @@
             </div>
             <div>
               <h3>圧倒的ゲーム数! スロットゲーム</h3>
-              <img width="458" height="458" src="/marketing/img/vjhp/ipad.png" alt="alt img">
+              <img width="458" height="392" src="/marketing/img/vjhp/ipad.png" alt="alt img">
               <p>その数1000種類以上! 人気スロットはもちろん、パチスロみたいな新感覚ゲームまでなんでもあり! 最新作がどこよりも早くプレイできちゃうのも業界ナンバーワンカジノならでは♪</p>
               <button class="error">
                 <a aria-label="link" :href="data_items.games_brick_section.games_brick_column_2.games_brick_column_2_button_redirect_url">{{ data_items.games_brick_section.games_brick_column_2.games_brick_column_2_button }}</a>

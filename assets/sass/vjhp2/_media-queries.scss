@@ -39,13 +39,13 @@
 
     section,
     footer{
-        padding: 32px 10px;
+        padding: 10px;
     }
 
     #hero{
         .heading-sub-title{
             color: $TEXT;
-            font-size: calc(7px + #{$TEXT_SIZE});
+            font-size: calc(4px + #{$TEXT_SIZE});
             line-height: 25px;
         }
 
@@ -98,7 +98,9 @@
         }
 
         img{
-            width: 100%;
+          width: 100%;
+          height: auto;
+          max-width: 300px;
         }
         div:first-child{
             background: #db2d96;
@@ -137,8 +139,9 @@
         }
 
         img{
-            width: 100%;
-            max-width: 445px;
+          width: 100%;
+          height: auto;
+          max-width: 300px;
         }
     }
 
@@ -160,8 +163,9 @@
         }
 
         img{
-            width: 100%;
-            max-width: 334px;
+          width: 100%;
+          height: auto;
+          max-width: 300px;
         }
     }
 
@@ -194,8 +198,9 @@
         }
 
         img{
-            width: 100%;
-            max-width: 324px;
+          width: 100%;
+          height: auto;
+          max-width: 300px;
         }
 
         h3{
@@ -258,7 +263,11 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+  #section-2{
+    img{
+      max-width: initial;
+    }
+  }
 }
 
 /* Large Devices, Wide Screens */
