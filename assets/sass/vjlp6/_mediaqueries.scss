@@ -418,7 +418,8 @@
    }
    #hero {
     background: var(--bg-image) no-repeat 50%;
-    background-size: cover;
+    background-size: contain;
+    background-color: #000;
      .container {
        max-width: 1140px;
      }
