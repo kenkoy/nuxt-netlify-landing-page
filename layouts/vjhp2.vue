@@ -17,7 +17,7 @@
         <section id="hero">
           <div class="container">
             <div>
-              <img width="140" height="116" src="@/assets/images/vjhp2/logo.svg" alt="alt img">
+              <img src="/marketing/img/vjhp/logo.png" alt="alt img" data-not-lazy>
               <h2>{{ data_items.header_section.header_section_welcome_message }}</h2>
               <h1>{{ data_items.header_section.header_section_main_heading }}</h1>
               <p class="heading-sub-title">
@@ -25,22 +25,22 @@
               </p>
               <div class="game-slider">
                 <a aria-label="link" :href="data_items.header_section.header_section_game_slider_url_1">
-                  <img width="100" height="100" :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_1}`)" alt="alt img">
+                  <img :src="data_items.header_section.header_section_game_slider_1" alt="alt img">
                 </a>
                 <a aria-label="link" :href="data_items.header_section.header_section_game_slider_url_2">
-                  <img width="100" height="100" :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_2}`)" alt="alt img">
+                  <img :src="data_items.header_section.header_section_game_slider_2" alt="alt img">
                 </a>
                 <a aria-label="link" :href="data_items.header_section.header_section_game_slider_url_3">
-                  <img width="100" height="100" :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_3}`)" alt="alt img">
+                  <img :src="data_items.header_section.header_section_game_slider_3" alt="alt img">
                 </a>
                 <a aria-label="link" :href="data_items.header_section.header_section_game_slider_url_4">
-                  <img width="100" height="100" :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_4}`)" alt="alt img">
+                  <img :src="data_items.header_section.header_section_game_slider_4" alt="alt img">
                 </a>
                 <a aria-label="link" :href="data_items.header_section.header_section_game_slider_url_5">
-                  <img width="100" height="100" :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_5}`)" alt="alt img">
+                  <img :src="data_items.header_section.header_section_game_slider_5" alt="alt img">
                 </a>
                 <a aria-label="link" :href="data_items.header_section.header_section_game_slider_url_6">
-                  <img width="100" height="100" :src="require(`~/assets/images${data_items.header_section.header_section_game_slider_6}`)" alt="alt img">
+                  <img :src="data_items.header_section.header_section_game_slider_6" alt="alt img">
                 </a>
               </div>
               <p class="best-deal">
