@@ -17,7 +17,7 @@
         <section id="hero">
           <div class="container">
             <div>
-              <img width="140" height="116" src="/marketing/img/vjhp/logo.svg" alt="alt img">
+              <img width="140" height="116" src="/marketing/img/vjhp/logo.svg" alt="alt img" data-not-lazy>
               <h2>{{ data_items.header_section.header_section_welcome_message }}</h2>
               <h1>{{ data_items.header_section.header_section_main_heading }}</h1>
               <p class="heading-sub-title">
