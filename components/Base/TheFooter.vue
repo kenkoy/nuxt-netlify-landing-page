@@ -1,6 +1,6 @@
 <template>
   <div>
-    <footer v-if="promo_language_code === 'ja' && promo_country_code === 'jp'">
+    <footer :class="landing_page_type" v-if="promo_language_code === 'ja' && promo_country_code === 'jp'">
       <div class="container">
         <div>
           <div id="footer-icon">
@@ -45,7 +45,7 @@
       </div>
     </footer>
 
-    <footer v-else>
+    <footer :class="landing_page_type" v-else>
       <div class="container">
         <div id="footer-payment">
           <img v-if="desktop" src="https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_en.svg" alt="vjpromo payment">
@@ -91,15 +91,15 @@
 export default {
   name: 'Footer',
   props: {
-    promoLanguageCode: {
+    promo_language_code: {
       type: String,
       required: true
     },
-    promoCountryCode: {
+    promo_country_code: {
       type: String,
       required: true
     },
-    landingPageType: {
+    landing_page_type: {
       type: String,
       required: false,
       default: ''
