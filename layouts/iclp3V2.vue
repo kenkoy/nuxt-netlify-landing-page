@@ -181,11 +181,14 @@
       </section>
 
       <section id="bonus">
-        <div class="container" v-for="(summaryItems, summaryIndex) in mdData.bonus" :key="summaryIndex">
+        <div v-for="(summaryItems, summaryIndex) in mdData.bonus" :key="summaryIndex" class="container">
           <div class="box">
             <div>
               <img class="image-title" :src="require(`~/assets/images${summaryItems.box_title_image}`)" alt="alt img">
-              <p>{{summaryItems.summary}}</p>
+              <p v-html="formatSummary(summaryItems)" />
+              <a :href="summaryItems.box_button_image_url">
+                <img :src="summaryItems.box_button_image">
+              </a>
             </div>
           </div>
         </div>
@@ -193,8 +196,8 @@
 
       <section id="payment">
         <div class="container">
-          <img class="desktop" src="@/assets/images/iclp3V2/payment_large_jp.svg"/>
-          <img class="mobile" src="@/assets/images/iclp3V2/payment_jp.svg"/>
+          <img class="desktop" src="@/assets/images/iclp3V2/payment_large_jp.svg">
+          <img class="mobile" src="@/assets/images/iclp3V2/payment_jp.svg">
         </div>
       </section>
 
@@ -249,6 +252,48 @@ export default {
   },
   beforeDestroy () {
     this.$root.$off('iclp3-data')
+  },
+  methods: {
+    formatSummary (data) {
+      const summary = data.summary.split(/\r?\n/)
+        .filter(summary => summary)
+        .map(summary => summary.slice(-1) === '\\' ? summary.substring(0, summary.length - 1) : summary)
+
+      if (data.higlighted_phrases) {
+        let idx1 = 0
+        data.higlighted_phrases.filter(phrase => phrase)
+          .forEach((phrase) => {
+            while (summary.length > idx1) {
+              if (summary[idx1].includes(phrase)) {
+                summary[idx1] = summary[idx1].replace(phrase, `<strong>${phrase}</strong>`)
+                break
+              } else {
+                idx1++
+              }
+            }
+          })
+      }
+
+      if (data.highlighted_link_phrases) {
+        let idx2 = 0
+        data.highlighted_link_phrases.filter(phrase => phrase)
+          .forEach((phrase) => {
+            while (summary.length > idx2) {
+              if (summary[idx2].includes(phrase.text)) {
+                summary[idx2] = summary[idx2].replace(phrase.text,
+                  `<a href="${phrase.link}" target="_blank" rel="noopener">${phrase.text}</a>`)
+                break
+              } else {
+                idx2++
+              }
+            }
+          })
+      }
+
+      return summary.reduce((oldVal, newVal) => {
+        return oldVal + '<br />' + newVal
+      })
+    }
   }
 }
 </script>
