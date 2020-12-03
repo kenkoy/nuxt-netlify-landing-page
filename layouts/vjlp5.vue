@@ -116,9 +116,9 @@
         <div v-html="html" />
 
         <Footer
-          :promo-language-code="language"
-          :promo-country-code="country_code"
-          :landing-page-type="'verajohn'"
+          :promo_language_code="language"
+          :promo_country_code="country_code"
+          :landing_page_type="'verajohn'"
         />
       </div>
     </div>

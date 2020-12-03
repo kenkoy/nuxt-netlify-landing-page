@@ -210,7 +210,7 @@
       <Footer
         :promo_language_code="mdData.promo_locale.promo_language_code"
         :promo_country_code="mdData.promo_locale.promo_country_code"
-        :landing_page_type="'verajohn'"
+        :landing_page_type="'intercasino'"
       />
     </div>
   </div>
