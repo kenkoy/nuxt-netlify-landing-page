@@ -9,7 +9,7 @@
               target="_blank"
               :href="responsibleGamingURL"
             >
-              <img src="https://files.vjpromo.com/bannerflow/lp-core/ico/icon_age.svg" alt="alt img">
+              <img src="@/assets/images/footer/icon_age.svg" alt="alt img">
             </a>
 
             <a
@@ -17,7 +17,7 @@
               target="_blank"
               href="https://www.gamblingtherapy.org/en"
             >
-              <img src="https://files.vjpromo.com/bannerflow/lp-core/ico/icon_gt.svg" alt="alt img">
+              <img src="@/assets/images/footer/icon_gt.svg" alt="alt img">
             </a>
 
             <a
@@ -25,7 +25,7 @@
               target="_blank"
               href="#"
             >
-              <img src="https://files.vjpromo.com/bannerflow/lp-core/ico/icon_curacao.svg" alt="alt img">
+              <img src="@/assets/images/footer/icon_curacao.svg" alt="alt img">
             </a>
           </div>
 
@@ -48,8 +48,8 @@
     <footer :class="landing_page_type" v-else>
       <div class="container">
         <div id="footer-payment">
-          <img v-if="desktop" src="https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_en.svg" alt="vjpromo payment">
-          <img v-if="mobile" src="https://files.vjpromo.com/bannerflow/lp-core/pp/payment_en.svg" alt="vjpromo payment">
+          <img v-if="desktop" src="@/assets/images/footer/payment_large_en.svg" alt="vjpromo payment">
+          <img v-if="mobile" src="@/assets/images/footer/payment_en.svg" alt="vjpromo payment">
         </div>
       </div>
 
@@ -62,7 +62,7 @@
               target="_blank"
               :href="responsibleGamingURL"
             >
-              <img src="https://files.vjpromo.com/bannerflow/lp-core/ico/icon_age.svg" alt="responsible gaming">
+              <img src="@/assets/images/footer/icon_age.svg" alt="responsible gaming">
             </a>
 
             <a
@@ -70,7 +70,7 @@
               target="_blank"
               href="https://www.gamblingtherapy.org/en"
             >
-              <img src="https://files.vjpromo.com/bannerflow/lp-core/ico/icon_gt.svg" alt="gambling theraphy">
+              <img src="@/assets/images/footer/icon_gt.svg" alt="gambling theraphy">
             </a>
 
             <a
@@ -78,7 +78,7 @@
               target="_blank"
               href="https://www.authorisation.mga.org.mt/verification.aspx?lang=en&company=c0e82570-bf83-4ecc-bda3-89ecb92d5b0e"
             >
-              <img src="https://files.vjpromo.com/bannerflow/lp-core/ico/icon_mga.svg" alt="malta gambling authority">
+              <img src="@/assets/images/footer/icon_mga.svg" alt="malta gambling authority">
             </a>
           </div>
         </div>
