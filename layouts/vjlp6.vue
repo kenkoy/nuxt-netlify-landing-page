@@ -96,9 +96,9 @@
         <div v-html="html" />
 
         <Footer
-          :promo_language_code="language"
-          :promo_country_code="country_code"
-          :landing_page_type="'verajohn'"
+          :promo-language-code="language"
+          :promo-country-code="country_code"
+          :landing-page-type="'verajohn'"
         />
       </div>
     </div>
@@ -106,8 +106,8 @@
 </template>
 
 <script>
-import Vjlp6Data from '~/pages/marketing/vjlp6/_slug/index.vue'
-import Footer from '~/components/Base/TheFooter.vue'
+import Vjlp6Data from '@/pages/marketing/vjlp6/_slug/index.vue'
+import Footer from '@/components/Base/TheFooter.vue'
 
 export default {
   components: {

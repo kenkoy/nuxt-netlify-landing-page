@@ -10,7 +10,7 @@
 /static/marketing/js/**/*
 
 # Components
-/components/**/*
+/components/templates/**/*
 
 /assets/**/*
 

@@ -1,10 +1,10 @@
 <template>
-    <div>
-      <!-- <TheHeader @sidenav-toggle="displaySidenav = !displaySidenav" />
+  <div>
+    <!-- <TheHeader @sidenav-toggle="displaySidenav = !displaySidenav" />
       <TheSidenav :show="displaySidenav" @close="displaySidenav = false" /> -->
-      <Navigation />
-      <nuxt />
-    </div>
+    <Navigation />
+    <nuxt />
+  </div>
 </template>
 
 <script>

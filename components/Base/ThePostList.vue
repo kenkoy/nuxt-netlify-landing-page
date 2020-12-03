@@ -1,18 +1,18 @@
 <template>
-    <div :class="{ post_wrapper: true }">
-        <section id="featured-posts" :class="$nuxt.$route.name">
-            <div class="container">
-                <div class="posts" v-for="(post, post_index) in posts" :key="post_index">
-                    <nuxt-link :to="'/marketing/' + post.path + '/' + post.slug" class="post-preview">
-                        <article>
-                            <h3>{{post.attributes.slug_name}}</h3>
-                            <p>{{post.attributes.promo_banner.promo_title}}</p>
-                        </article>
-                    </nuxt-link>
-                </div>
-            </div>
-        </section>
-    </div>
+  <div :class="{ post_wrapper: true }">
+    <section id="featured-posts" :class="$nuxt.$route.name">
+      <div class="container">
+        <div v-for="(post, post_index) in posts" :key="post_index" class="posts">
+          <nuxt-link :to="'/marketing/' + post.path + '/' + post.slug" class="post-preview">
+            <article>
+              <h3>{{ post.attributes.slug_name }}</h3>
+              <p>{{ post.attributes.promo_banner.promo_title }}</p>
+            </article>
+          </nuxt-link>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
@@ -26,12 +26,10 @@ export default {
 }
 </script>
 
-
 <style lang="scss">
     .post_wrapper {
         @import '@/assets/sass/base/style.scss';
     }
-
 
     .marketing-vjlp5,
     .marketing-vjlp6{

@@ -27,9 +27,9 @@
       <div v-html="htmlBody" />
 
       <Footer
-        :promo_language_code="mdData.promo_locale.promo_language_code"
-        :promo_country_code="mdData.promo_locale.promo_country_code"
-        :landing_page_type="'verajohn'"
+        :promoLanguageCode="mdData.promo_locale.promo_language_code"
+        :promoCountryCode="mdData.promo_locale.promo_country_code"
+        :landingPageType="'verajohn'"
       />
     </div>
   </div>
