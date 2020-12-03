@@ -299,4 +299,14 @@
       width: 250px;
     }
   }
+
+  .firstview__counter{
+    width: 600px;
+    transform: scale(1);
+
+    &:before{
+      width: 260px;
+      height: 80px;
+    }
+  }
 }
