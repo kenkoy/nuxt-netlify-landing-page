@@ -5,7 +5,7 @@
 <script>
 
 export default {
-  layout: 'nathan',
+  layout: 'iclp3V2',
   async asyncData ({ params, error }) {
     try {
       /* get MD FILE per PAGE / SLUG */

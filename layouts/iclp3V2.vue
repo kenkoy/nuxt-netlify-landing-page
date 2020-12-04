@@ -217,7 +217,7 @@
 </template>
 
 <script>
-import Iclp3V2Data from '~/pages/marketing/nathan/_slug/index.vue'
+import Iclp3V2Data from '~/pages/marketing/iclp3V2/_slug/index.vue'
 import Footer from '~/components/Base/TheFooter.vue'
 
 export default {
@@ -249,16 +249,6 @@ export default {
         : this.filter_data.promo_banner.promo_terms_text
     }
   },
-  head () {
-    return {
-      htmlAttrs: {
-        lang: this.language
-      },
-      link: [
-        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
-      ]
-    }
-  },
   methods: {
     /* data from 'PAGE' store to 'md_data' local variable */
     getMDcontent (emitData) {
@@ -269,7 +259,6 @@ export default {
         this.html = item.html
         this.filter_data = item.attributes
       })
-      console.log('DATA', this.filter_data)
     },
     formatSummary (data) {
       const summary = data.summary.split(/\r?\n/)
