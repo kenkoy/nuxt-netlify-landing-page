@@ -36,7 +36,7 @@ export default {
       : 'GTM-MFD3NKM'
 
     return {
-      title: 'Vera&John',
+      title: 'インターカジノ',
       htmlAttrs: {
         lang: this.dataMD.attributes.promo_locale.promo_language_code
       },
@@ -45,7 +45,6 @@ export default {
             '-' + this.dataMD.attributes.promo_locale.promo_country_code
       },
       link: [
-        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' },
         { rel: 'shortcut icon', href: '/marketing/ic-favicon.ico', type: 'image/x-icon' },
         // { rel: 'stylesheet', href: '/marketing/styles/iclp3/spine-player.min.css' },
         // { rel: 'stylesheet', href: 'https://esotericsoftware.com/files/spine-player/3.8/spine-player.css' },
