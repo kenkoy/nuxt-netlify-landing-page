@@ -3,30 +3,46 @@
 </template>
 
 <script>
+
 export default {
-  layout: 'iclp3V2', // Change to actual layout
+  layout: 'nathan',
   async asyncData ({ params, error }) {
     try {
-      const markDownData = await import('~/assets/content/landing-page/marketing/iclp3/' + params.slug + '.md') // Change to actual slug
-      return { markDownData }
+      /* get MD FILE per PAGE / SLUG */
+      const PAGE_MDFILE = await import(
+        '~/assets/content/landing-page/marketing/iclp3/' + params.slug + '.md'
+      )
+
+      /* store 'PAGE_MDFILE' data to 'dataMD' local variable' */
+      return { dataMD: PAGE_MDFILE }
     } catch (e) {
       error(e)
     }
   },
+  data () {
+    return {}
+  },
   head () {
-    const tagIds = this.markDownData.attributes.field_ids
-    const goId = tagIds.go_container_id || 'OPT-PHSNXP6'
-    const gaId = tagIds.ga_tracking_id || 'UA-142143961-1'
-    const gtmId = tagIds.gtm_container_id || 'GTM-MFD3NKM'
+    const goId = (this.dataMD.attributes.field_ids && this.dataMD.attributes.field_ids.go_container_id)
+      ? this.dataMD.attributes.field_ids.go_container_id
+      : 'OPT-PHSNXP6'
+
+    const gaId = (this.dataMD.attributes.field_ids && this.dataMD.attributes.field_ids.ga_tracking_id)
+      ? this.dataMD.attributes.field_ids.ga_tracking_id
+      : 'UA-142143961-1'
+
+    const gtmId = (this.dataMD.attributes.field_ids && this.dataMD.attributes.field_ids.gtm_container_id)
+      ? this.dataMD.attributes.field_ids.gtm_container_id
+      : 'GTM-MFD3NKM'
 
     return {
       title: 'Vera&John',
       htmlAttrs: {
-        lang: this.markDownData.attributes.promo_locale.promo_language_code
+        lang: this.dataMD.attributes.promo_locale.promo_language_code
       },
       bodyAttrs: {
-        id: this.markDownData.attributes.promo_locale.promo_language_code +
-          '-' + this.markDownData.attributes.promo_locale.promo_country_code
+        id: this.dataMD.attributes.promo_locale.promo_language_code +
+            '-' + this.dataMD.attributes.promo_locale.promo_country_code
       },
       link: [
         { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' },
@@ -37,6 +53,7 @@ export default {
         { rel: 'stylesheet', body: true, href: '/marketing/styles/iclp3/style.css' }
         // { preload: true, rel: 'stylesheet', body: true, href: '/marketing/styles/iclp3/fonts.css' }
       ],
+      style: [],
       script: [
         { src: '/marketing/js/iclp3/spine.js' },
         { defer: true, body: true, src: '/marketing/js/iclp3/velocity.min.js' },
@@ -49,7 +66,9 @@ export default {
               h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
               (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
             })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
-              { '${goId}': true })`
+              { '${goId}': true })`,
+          type: 'text/javascript',
+          charset: 'utf-8'
         },
         {
           hid: 'gaHead',
@@ -63,7 +82,9 @@ export default {
 
             ga('create', '${gaId}', 'auto');
             ga('require', '${goId}');
-            ga('send', 'pageview');`
+            ga('send', 'pageview');`,
+          type: 'text/javascript',
+          charset: 'utf-8'
         },
         {
           hid: 'gtmHead',
@@ -75,7 +96,9 @@ export default {
               }); var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
                   'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', '${gtmId}');`
+            })(window, document, 'script', 'dataLayer', '${gtmId}');`,
+          type: 'text/javascript',
+          charset: 'utf-8'
         }
       ],
       noscript: [
@@ -94,14 +117,12 @@ export default {
     }
   },
   mounted () {
-    this.emitData(this.markDownData)
+    this.emitData(this.dataMD)
   },
   methods: {
-    emitData (data) {
-      this.$root.$emit('iclp3-data', { // Change to actual page name
-        yamlData: data.attributes,
-        htmlData: data.html
-      })
+    /* send the 'dataMD' data to 'LAYOUT' */
+    emitData (dataMD) {
+      this.$emit('emit-md-content', dataMD)
     }
   }
 }

@@ -14,7 +14,7 @@ export default {
   layout: 'default',
   async asyncData () {
     const mdFiles = await require.context(
-      '~/assets/content/landing-page/marketing/iclp3/', // Change to actual md file
+      '~/assets/content/landing-page/marketing/iclp3/',
       true,
       /\.md$/
     )
@@ -22,7 +22,7 @@ export default {
     const mdFilesContent = await mdFiles.keys().map(key => ({
       ...mdFiles(key),
       slug: `${key.replace('.md', '').replace('./', '')}`,
-      path: 'iclp3V2'
+      path: 'nathan'
     }))
     // filter to vjlp3 templates only
     // .filter((mdFiles) => mdFiles.attributes.promo_template == 'VJLP3-NoForm')
@@ -32,7 +32,7 @@ export default {
   },
   head () {
     return {
-      title: 'Vera&John - The fun online casino',
+      title: 'インターカジノ',
       htmlAttrs: {
         lang: 'ja'
       },
