@@ -2,7 +2,7 @@
   <div :class="{ iclp3_wrapper: true }">
     <div class="iclp3-main">
       <!-- PAGE HANDLING DATA -->
-      <NathanData @emit-md-content="getMDcontent" />
+      <Iclp3V2Data @emit-md-content="getMDcontent" />
       <div v-for="(data_items, data_index) in md_data" :key="data_index">
         <header class="desktop">
           <div class="container">
@@ -217,44 +217,36 @@
 </template>
 
 <script>
-import NathanData from '~/pages/marketing/nathan/_slug/index.vue'
+import Iclp3V2Data from '~/pages/marketing/nathan/_slug/index.vue'
 import Footer from '~/components/Base/TheFooter.vue'
 
 export default {
   components: {
-    NathanData,
+    Iclp3V2Data,
     Footer
   },
   data () {
     return {
       layout: false,
       md_data: { },
-      body_data: { },
+      filter_data: { },
       language: '',
       country_code: '',
-      html: '',
-
-      desktop: '',
-      tablet: '',
-      mobile: '',
-
-      first_title: '',
-      second_title: '',
-      phrase: ''
+      html: ''
     }
   },
   computed: {
     formattedRegMessage () {
-      return this.body_data.promo_banner.promo_register_message.split(/\r?\n/)
+      return this.filter_data.promo_banner.promo_register_message.split(/\r?\n/)
         .filter(msg => msg)
         .map(msg => msg.slice(-1) === '\\' ? msg.substring(0, msg.length - 1) : msg).reduce((oldVal, newVal) =>
           oldVal + '<br class="pc" />' + newVal
         )
     },
     bannerTerms () {
-      return this.body_data.promo_banner.promo_terms_text.includes(this.body_data.promo_banner.promo_terms_underlined_text)
-        ? this.body_data.promo_banner.promo_terms_text.replace(this.body_data.promo_banner.promo_terms_underlined_text, `<span>${this.body_data.promo_banner.promo_terms_underlined_text}</span>`)
-        : this.body_data.promo_banner.promo_terms_text
+      return this.filter_data.promo_banner.promo_terms_text.includes(this.filter_data.promo_banner.promo_terms_underlined_text)
+        ? this.filter_data.promo_banner.promo_terms_text.replace(this.filter_data.promo_banner.promo_terms_underlined_text, `<span>${this.filter_data.promo_banner.promo_terms_underlined_text}</span>`)
+        : this.filter_data.promo_banner.promo_terms_text
     }
   },
   head () {
@@ -275,9 +267,9 @@ export default {
         this.language = item.attributes.promo_locale.promo_language_code
         this.country_code = item.attributes.promo_locale.promo_country_code
         this.html = item.html
-        this.body_data = item.attributes
+        this.filter_data = item.attributes
       })
-      console.log('DATA', this.body_data)
+      console.log('DATA', this.filter_data)
     },
     formatSummary (data) {
       const summary = data.summary.split(/\r?\n/)
