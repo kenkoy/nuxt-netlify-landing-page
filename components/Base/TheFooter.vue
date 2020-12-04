@@ -1,6 +1,6 @@
 <template>
   <div>
-    <footer :class="landing_page_type" v-if="promo_language_code === 'ja' && promo_country_code === 'jp'">
+    <footer v-if="promo_language_code === 'ja' && promo_country_code === 'jp'" :class="landing_page_type">
       <div class="container">
         <div>
           <div id="footer-icon">
@@ -45,7 +45,7 @@
       </div>
     </footer>
 
-    <footer :class="landing_page_type" v-else>
+    <footer v-else :class="landing_page_type">
       <div class="container">
         <div id="footer-payment">
           <img v-if="desktop" src="@/assets/images/footer/payment_large_en.svg" alt="vjpromo payment">
