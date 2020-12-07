@@ -9,14 +9,15 @@ const markdownPaths = [
   'marketing/vjlp6',
   'marketing/iclp1',
   'marketing/iclp2',
-  'marketing/iclp3'
+  'marketing/iclp3',
+  'marketing/iclp3V2'
 ]
 
 function dynamicMarkdownRoutes () {
   return [].concat(
     ...markdownPaths.map((mdPath) => {
       return glob.sync(`${mdPath}/*.md`, { cwd: 'assets/content/landing-page/' })
-        .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`)
+        .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}/`)
     })
   )
 }
@@ -33,8 +34,7 @@ export default {
         path: '/home/',
         component: resolve(__dirname, 'pages/marketing/vjhp')
       })
-    },
-    trailingSlash: false
+    }
   },
   // mode: 'universal',
   target: 'static',
