@@ -33,7 +33,8 @@ export default {
         path: '/home/',
         component: resolve(__dirname, 'pages/marketing/vjhp')
       })
-    }
+    },
+    trailingSlash: false
   },
   // mode: 'universal',
   target: 'static',
