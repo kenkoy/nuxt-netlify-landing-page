@@ -51,10 +51,11 @@ export const VJLP1_PREVIEW = createClass({
   },
 
   render () {
-    const locale = this.props.widgetsFor('promo_locale')
-    const banner = this.props.widgetsFor('promo_banner')
-    const steps = this.props.widgetsFor('promo_steps')
-    const body = this.props.widgetFor('body')
+    const { widgetFor, widgetsFor } = this.props
+    const locale = widgetsFor('promo_locale')
+    const banner = widgetsFor('promo_banner')
+    const steps = widgetsFor('promo_steps')
+    const body = widgetFor('body')
     const cssBg = {
       '--bg-image': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_desktop'])}')`,
       '--bg-image-m': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_mobile'])}')`,

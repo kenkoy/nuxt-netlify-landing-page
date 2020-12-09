@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("../vjlp-core/animate.min.css");
+@import url("../vjlp-core/bootstrap.min.css");
+@import url("../vjlp-core/fonts.css");
+@import url("../vjlp-core/hover-min.css");
+@import url("../vjlp-core/slick.css");
+@import url("./brand.css");
+@import url("./core.css");
+@import url("./responsive.css");
+
+.prev-join-button {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.prev-game-slider {
+  opacity: 1; width: 2990px; transform: translate3d(-1150px, 0px, 0px);
+}
+
+.prev-game-icon {
+  width: 230px;
+}
+
+.prev-footer-notes {
+  font-size: 14px; text-align: center;
+}
+
+.bf-game-icon-1 {
+  background: var(--game-icon-1) center no-repeat;
+  background-size: contain;
+}
+
+.bf-game-icon-2 {
+  background: var(--game-icon-2) center no-repeat;
+  background-size: contain;
+}
+
+.bf-game-icon-3 {
+  background: var(--game-icon-3) center no-repeat;
+  background-size: contain;
+}
+
+.bf-game-icon-4 {
+  background: var(--game-icon-4) center no-repeat;
+  background-size: contain;
+}
+
+.bf-game-icon-5 {
+  background: var(--game-icon-5) center no-repeat;
+  background-size: contain;
+}
+
+#bf-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    var(--bg-banner) center no-repeat;
+  background-size: cover;
+}
+#strip .small-terms {
+  display: block;
+}
+#strip {
+  background: none;
+}
+#bf-banner-img-2 {
+  background: var(--bg-image) bottom center no-repeat;
+  background-size: contain;
+}
+@media only screen and (max-width: 767px) {
+  #bf-banner-img-2 {
+    background: var(--bg-image-m) bottom center no-repeat;
+    /* background-size: cover; */
+    background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .bf-logo {
+    width: 75px !important;
+  }
+  #bf-banner-img-2 {
+    min-height: 350px;
+  }
+}
