@@ -29,7 +29,6 @@ export const VJLP3_PREVIEW = createClass({
     }
 
     const buttonLocation = banner.getIn(['data', 'promo_join_button_location'])
-
     let joinBtnStyle = {}
     let bottomJoinBtnStyle = {}
     if (buttonLocation === 'hidden') {
@@ -41,6 +40,8 @@ export const VJLP3_PREVIEW = createClass({
         right: '0px',
         bottom: '0px'
       }
+    } else if (buttonLocation === 'upper-right') {
+      joinBtnStyle = {}
     }
 
     return (html`
