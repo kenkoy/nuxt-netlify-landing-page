@@ -200,7 +200,7 @@
           </div>
         </section>
 
-        <section id="main-content">
+        <section id="terms">
           <div class="container">
             <div v-html="html" />
           </div>

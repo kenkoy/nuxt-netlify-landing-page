@@ -11,12 +11,12 @@ header.desktop{
   overflow: hidden;
 }
 
-#main-content{
+#terms{
   border-top: solid 3px $SEPARATION_BORDER_COLOR;
   border-bottom: solid 3px $SEPARATION_BORDER_COLOR;
 }
 
-#main-content,
+#terms,
 #payment,
 #firstvie__inquiry > div,
 footer{
@@ -46,7 +46,6 @@ footer{
   .box{
     background: url('../assets/images/iclp3V2/bg_patern_border.jpg');
     max-width: 800px;
-    margin: 130px auto 10px auto;
     border: 6px solid #faf299;
     border-radius: 30px;
     padding: 30px;

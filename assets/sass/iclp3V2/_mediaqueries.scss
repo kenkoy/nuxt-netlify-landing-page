@@ -130,11 +130,12 @@
 
   .firstview__counter{
     position: relative;
-    left: -8%;
-    transform: scale(.8);
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(.8);
+    transform: translateX(-50%) scale(.8);
     width: 320px;
     min-height: 65px;
-    margin: 150px auto 0 auto;
+    margin-top: 150px;
 
     &:before{
       background: url('../assets/images/iclp3V2/counter_touch.png');
@@ -157,6 +158,9 @@
 
   #bonus{
     .box{
+      margin: 50px auto 10px auto;
+      font-size: $TEXT_SIZE;
+
       .image-title{
         margin: -70px auto 0 auto;
         max-width: none;
@@ -164,6 +168,15 @@
         display: block;
       }
     }
+  }
+
+  #terms{
+    ul{
+      padding-left: 19px;
+      margin-left: 0;
+    }
+    font-size: calc(#{$TEXT_SIZE} - 5px);
+    font-weight: 700;
   }
 }
 
@@ -185,6 +198,17 @@
   }
   .mobile{
     display: none;
+  }
+  header.desktop{
+    .join{
+      position: absolute;
+      top: 15px;
+      right: 0;
+
+      img{
+        max-width: 50px;
+      }
+    }
   }
   .inter-casino-logo{
     img{
@@ -213,8 +237,7 @@
   .firstview__counter{
     width: 550px;
     min-height: 100px;
-    left: 0;
-    margin-top: 250px;
+    margin-top: 300px;
 
     &:before{
       width: 200px;
@@ -253,21 +276,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-  header.desktop{
-    .join{
-      position: absolute;
-      top: 15px;
-      right: 0;
-
-      img{
-        max-width: 50px;
-      }
-    }
-  }
-
   .dream-logo{
     img{
-      width: 350px;
+      width: 300px;
     }
   }
 
@@ -277,10 +288,17 @@
 
   #bonus{
     .box{
+      margin: 100px auto 10px auto;
+      p{
+        font-size: calc(#{$TEXT_SIZE} + 7px);
+      }
       .image-title{
         margin: -130px auto 0 auto;
       }
     }
+  }
+  #terms{
+    font-size: calc(#{$TEXT_SIZE} - 3px);
   }
 }
 
@@ -296,13 +314,14 @@
     left: 200px;
 
     img{
-      width: 250px;
+      width: 200px;
     }
   }
 
   .firstview__counter{
     width: 600px;
-    transform: scale(1);
+    -webkit-transform: translateX(-50%) scale(1);
+    transform: translateX(-50%) scale(1);
 
     &:before{
       width: 260px;
