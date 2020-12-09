@@ -28,6 +28,21 @@ export const VJLP3_PREVIEW = createClass({
       '--game-icon-5': `url('${banner.getIn(['data', 'game_images', 'game_icon_5'])}')`
     }
 
+    const buttonLocation = banner.getIn(['data', 'promo_join_button_location'])
+
+    let joinBtnStyle = {}
+    let bottomJoinBtnStyle = {}
+    if (buttonLocation === 'hidden') {
+      joinBtnStyle = { display: 'none' }
+      bottomJoinBtnStyle = joinBtnStyle
+    } else if (buttonLocation === 'lower-right') {
+      joinBtnStyle = {
+        position: 'absolute',
+        right: '0px',
+        bottom: '0px'
+      }
+    }
+
     return (html`
     <body
       id="${locale.getIn(['data', 'promo_language_code'])}-${locale.getIn(['data', 'promo_country_code'])}"
@@ -56,9 +71,11 @@ export const VJLP3_PREVIEW = createClass({
         <div class="container">
           <div class="row">
             <div id="bf-banner-img-2" class="col-lg-12">
+              <h1>${banner.getIn(['data', 'promo_title'])}</h1>
+              <h2></h2>
 
               <a class="signup-btn d-none d-lg-block" href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
-                <div class="bf-button bf-secondary-bg">${banner.getIn(['data', 'promo_join_button'])}</div>
+                <div class="bf-button bf-secondary-bg" style='${joinBtnStyle}'>${banner.getIn(['data', 'promo_join_button'])}</div>
               </a>
 
             </div>
@@ -66,7 +83,7 @@ export const VJLP3_PREVIEW = createClass({
               <div class="center-button">
 
                 <a class="signup-btn" href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
-                  <div class="bf-button bf-secondary-bg">
+                  <div class="bf-button bf-secondary-bg" style='${bottomJoinBtnStyle}'>
                     <p><span class="prev-join-button">${banner.getIn(['data', 'promo_join_button'])}</span></p>
                   </div>
                 </a>
