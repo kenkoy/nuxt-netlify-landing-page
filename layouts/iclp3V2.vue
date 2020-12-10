@@ -205,11 +205,10 @@
             <div v-html="html" />
           </div>
         </section>
-
         <Footer
-          :promo_language_code="language"
-          :promo_country_code="country_code"
-          :landing_page_type="'intercasino'"
+          :promo-language-code="language"
+          :promo-country-code="country_code"
+          :landing-page-type="'intercasino'"
         />
       </div>
     </div>
