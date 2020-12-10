@@ -44,7 +44,7 @@ export const VJLP3_PREVIEW = createClass({
       joinBtnStyle = {}
     }
 
-    const bannerTitle = banner.get(['data', 'promo_title_display'])
+    const bannerTitle = banner.getIn(['data', 'promo_title_display'])
       ? banner.getIn(['data', 'promo_title'])
       : ''
 
