@@ -9,8 +9,6 @@ field_ids:
   gtm_container_id: GTM-MFD3NKM
 promo_banner:
   promo_title: |-
-    
-
     最大$1000
     ビギナーズボーナス
   promo_images:
