@@ -45,11 +45,11 @@ export default {
             '-' + this.dataMD.attributes.promo_locale.promo_country_code
       },
       link: [
-        { rel: 'shortcut icon', href: '/marketing/ic-favicon.ico', type: 'image/x-icon' },
+        { rel: 'shortcut icon', href: '/marketing/ic-favicon.ico', type: 'image/x-icon' }
         // { rel: 'stylesheet', href: '/marketing/styles/iclp3/spine-player.min.css' },
         // { rel: 'stylesheet', href: 'https://esotericsoftware.com/files/spine-player/3.8/spine-player.css' },
         // { rel: 'stylesheet', href: '/marketing/styles/iclp3/firstview.css' },
-        { rel: 'stylesheet', body: true, href: '/marketing/styles/iclp3/style.css' }
+        // { rel: 'stylesheet', body: true, href: '/marketing/styles/iclp3/style.css' }
         // { preload: true, rel: 'stylesheet', body: true, href: '/marketing/styles/iclp3/fonts.css' }
       ],
       style: [],
