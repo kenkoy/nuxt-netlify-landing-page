@@ -16,12 +16,17 @@ header.desktop{
   border-bottom: solid 3px $SEPARATION_BORDER_COLOR;
 }
 
+#bonus,
+#payment,
+#terms{
+  z-index: 3;
+}
+
 #terms,
 #payment,
 #firstvie__inquiry > div,
 footer{
   background: $BODY_BG;
-  z-index: 1;
   position: relative;
 }
 #firstvie__inquiry{
