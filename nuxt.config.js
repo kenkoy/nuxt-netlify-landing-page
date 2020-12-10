@@ -17,7 +17,7 @@ function dynamicMarkdownRoutes () {
   return [].concat(
     ...markdownPaths.map((mdPath) => {
       return glob.sync(`${mdPath}/*.md`, { cwd: 'assets/content/landing-page/' })
-        .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}/`)
+        .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`)
     })
   )
 }
