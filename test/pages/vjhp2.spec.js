@@ -1,56 +1,53 @@
-import { mount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
-import index from '@/pages/marketing/vjlp5/_slug/index.vue'
+import index from '@/pages/marketing/vjhp/index.vue'
 import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.js'
 
-const VJLP5_DIR = '/assets/content/landing-page/marketing/vjlp5/'
+const VJHP_DIR = '/assets/content/landing-page/marketing/vjhp/'
 
-describe('Testing VJLP5 index.vue', () => {
-  let wrapper, metaInfo, tagIds, locale
+describe('Testing VJHP2 index.vue', () => {
+  let wrapper, metaInfo, tagIds
 
   beforeAll(async () => {
     const localVue = createLocalVue()
     localVue.use(VueMeta, { keyName: 'head' })
 
     const md = _
-      .chain(await retrieveFiles(VJLP5_DIR, '.md'))
-      .map(files => VJLP5_DIR + files)
+      .chain(await retrieveFiles(VJHP_DIR, '.md'))
+      .map(files => VJHP_DIR + files)
       .sample()
       .value()
-    const dataMD = retriveFrontMattertoJSON(md)
-    wrapper = mount(index, {
+    const post = retriveFrontMattertoJSON(md)
+    wrapper = shallowMount(index, {
       localVue,
       data () {
         return {
-          dataMD
+          post
         }
       }
     })
     metaInfo = wrapper.vm.$metaInfo
-    tagIds = dataMD.attributes.field_ids
-    locale = dataMD.attributes.promo_locale
+    tagIds = post.attributes.field_ids
   })
 
-  test('Title should be Vera&John', () => {
+  test('Title should be Vera&John - The fun online casino', () => {
     const pageTitle = metaInfo.title
-    expect(pageTitle).toBe('Vera&John')
+    expect(pageTitle).toBe('Vera&John - The fun online casino')
   })
 
-  test('HTML language attribute should not be null or undefined', () => {
+  test.skip('HTML language attribute should not be null or undefined', () => {
     const languageAttribute = metaInfo.htmlAttrs.lang
     expect(languageAttribute).not.toBeNull()
     expect(languageAttribute).not.toHaveLength(0)
   })
 
-  test('Body ID attriute should be LANGUAGE CODE-COUNTRY_CODE', () => {
-    const countryCode = locale.promo_country_code
-    const languageCode = locale.promo_language_code
-    expect(countryCode).not.toBeNull()
-    expect(countryCode).not.toHaveLength(0)
+  test.skip('Body ID attriute should be LANGUAGE CODE-COUNTRY_CODE', () => {
+    const langHtmlAttribute = metaInfo.htmlAttrs.lang
+    expect(langHtmlAttribute).toBe('ja')
 
-    const idAttribute = metaInfo.bodyAttrs.id
-    expect(idAttribute).toBe(`${languageCode}-${countryCode}`)
+    const idBodyAttribute = metaInfo.bodyAttrs.id
+    expect(idBodyAttribute).toBe('ja-jp')
   })
 
   test('Google Optimize ID and scripts should be present', () => {

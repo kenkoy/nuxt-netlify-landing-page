@@ -1,12 +1,12 @@
-import { mount, createLocalVue } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
-import index from '@/pages/marketing/vjlp5/_slug/index.vue'
+import index from '@/pages/marketing/vjlp4/_slug/index.vue'
 import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.js'
 
-const VJLP5_DIR = '/assets/content/landing-page/marketing/vjlp5/'
+const VJLP4_DIR = '/assets/content/landing-page/marketing/vjlp4/'
 
-describe('Testing VJLP5 index.vue', () => {
+describe('Testing VJLP4 index.vue', () => {
   let wrapper, metaInfo, tagIds, locale
 
   beforeAll(async () => {
@@ -14,22 +14,22 @@ describe('Testing VJLP5 index.vue', () => {
     localVue.use(VueMeta, { keyName: 'head' })
 
     const md = _
-      .chain(await retrieveFiles(VJLP5_DIR, '.md'))
-      .map(files => VJLP5_DIR + files)
+      .chain(await retrieveFiles(VJLP4_DIR, '.md'))
+      .map(files => VJLP4_DIR + files)
       .sample()
       .value()
-    const dataMD = retriveFrontMattertoJSON(md)
-    wrapper = mount(index, {
+    const post = retriveFrontMattertoJSON(md)
+    wrapper = shallowMount(index, {
       localVue,
       data () {
         return {
-          dataMD
+          post
         }
       }
     })
     metaInfo = wrapper.vm.$metaInfo
-    tagIds = dataMD.attributes.field_ids
-    locale = dataMD.attributes.promo_locale
+    tagIds = post.attributes.field_ids
+    locale = post.attributes.promo_locale
   })
 
   test('Title should be Vera&John', () => {

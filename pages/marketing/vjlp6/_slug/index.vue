@@ -51,7 +51,7 @@ export default {
             '-' + this.dataMD.attributes.promo_locale.promo_country_code
       },
       style: [],
-      sscript: [
+      script: [
         {
           hid: 'goHead',
           innerHTML:
