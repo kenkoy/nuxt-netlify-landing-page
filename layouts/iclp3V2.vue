@@ -2,16 +2,16 @@
   <div :class="{ iclp3_wrapper: true }">
     <div class="iclp3-main">
       <!-- PAGE HANDLING DATA -->
-      <Iclp3V2Data @emit-md-content="getMDcontent" />
+      <iclp3v2Data @emit-md-content="getMDcontent" />
       <div v-for="(data_items, data_index) in md_data" :key="data_index">
         <header class="desktop">
           <div class="container">
             <div class="inter-casino-logo">
-              <img src="@/assets/images/iclp3V2/logo_inter_pc.png" alt="inter casino logo" data-not-lazy>
+              <img src="@/assets/images/iclp3v2/logo_inter_pc.png" alt="inter casino logo" data-not-lazy>
             </div>
             <div class="join" aria-label="join">
               <a :href="data_items.attributes.promo_banner.promo_join_url">
-                <img src="@/assets/images/iclp3V2/btn_signup.png" alt="inter casino logo">
+                <img src="@/assets/images/iclp3v2/btn_signup.png" alt="inter casino logo">
               </a>
             </div>
           </div>
@@ -19,11 +19,11 @@
 
         <header class="mobile">
           <div class="container">
-            <img src="@/assets/images/iclp3V2/logo_inter_sp.png" alt="inter casino logo" data-not-lazy>
+            <img src="@/assets/images/iclp3v2/logo_inter_sp.png" alt="inter casino logo" data-not-lazy>
           </div>
           <div class="join" aria-label="join">
             <a :href="data_items.attributes.promo_banner.promo_join_url">
-              <img src="@/assets/images/iclp3V2/btn_signup.png" alt="inter casino logo">
+              <img src="@/assets/images/iclp3v2/btn_signup.png" alt="inter casino logo">
             </a>
           </div>
         </header>
@@ -31,7 +31,7 @@
           <div class="container">
             <div>
               <div class="touch">
-                <img src="@/assets/images/iclp3V2/touch.png" alt="inter casino logo">
+                <img src="@/assets/images/iclp3v2/touch.png" alt="inter casino logo">
               </div>
               <div class="firstview__taparea">
                 <span>タップエリア</span>
@@ -159,7 +159,7 @@
                 </div>
               </div>
               <div class="dream-logo">
-                <img src="@/assets/images/iclp3V2/logo_oiran.png" alt="inter casino logo">
+                <img src="@/assets/images/iclp3v2/logo_oiran.png" alt="inter casino logo">
               </div>
               <div id="firstvie__inquiry" class="firstvie__inquiry">
                 <div>
@@ -195,8 +195,8 @@
 
         <section id="payment">
           <div class="container">
-            <img class="desktop" src="@/assets/images/iclp3V2/payment_large_jp.svg">
-            <img class="mobile" src="@/assets/images/iclp3V2/payment_jp.svg">
+            <img class="desktop" src="@/assets/images/iclp3v2/payment_large_jp.svg">
+            <img class="mobile" src="@/assets/images/iclp3v2/payment_jp.svg">
           </div>
         </section>
 
@@ -216,12 +216,12 @@
 </template>
 
 <script>
-import Iclp3V2Data from '~/pages/marketing/iclp3V2/_slug/index.vue'
+import iclp3v2Data from '~/pages/marketing/iclp3v2/_slug/index.vue'
 import Footer from '~/components/Base/TheFooter.vue'
 
 export default {
   components: {
-    Iclp3V2Data,
+    iclp3v2Data,
     Footer
   },
   data () {
@@ -306,9 +306,9 @@ export default {
 <style lang="scss"> //Change to actual path, all assets should be on asset folder. Create separate assets / sass for each templates
   .iclp3_wrapper {
     @import '@/assets/sass/base/fonts.css';
-    @import '@/assets/sass/iclp3V2/style.scss';
-    @import '@/assets/sass/iclp3V2/spine.css';
-    @import '@/assets/sass/iclp3V2/firstview.css';
+    @import '@/assets/sass/iclp3v2/style.scss';
+    @import '@/assets/sass/iclp3v2/spine.css';
+    @import '@/assets/sass/iclp3v2/firstview.css';
     @import '@/assets/sass/base/style.scss';
   }
 </style>
