@@ -12,7 +12,7 @@ promo_banner:
     最大$1000
     ビギナーズボーナス
   promo_images:
-    promo_bg_desktop: /marketing/img/bg_hdnight_banner.png
+    promo_bg_desktop: /marketing/img/bg_hdnight_banner-copy.png
     promo_bg_mobile: /marketing/img/live-casino-bg-m.jpg
   promo_terms_link_text:
     - 利用規約
