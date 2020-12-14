@@ -1,5 +1,5 @@
 ---
-slug_name: 305-bvj-lan-jp-pro-livecasinov1-0520
+slug_name: 296-bvj-lan-jp-pro-hdnight-1220
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -12,7 +12,7 @@ promo_banner:
     最大$1000
     ビギナーズボーナス
   promo_images:
-    promo_bg_desktop: /marketing/img/live-casino-bg.jpg
+    promo_bg_desktop: /marketing/img/bg_hdnight_banner.png
     promo_bg_mobile: /marketing/img/live-casino-bg-m.jpg
   promo_terms_link_text:
     - 利用規約
