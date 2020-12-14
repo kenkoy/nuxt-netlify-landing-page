@@ -43,11 +43,11 @@ export const VJLP3_PREVIEW = createClass({
     } else if (buttonLocation === 'upper-right') {
       joinBtnStyle = {}
     }
-    
+
     const bannerTitle = banner.getIn(['data', 'promo_title_display'])
       ? banner.getIn(['data', 'promo_title'])
       : ''
-    
+
     return (html`
     <body
       id="${locale.getIn(['data', 'promo_language_code'])}-${locale.getIn(['data', 'promo_country_code'])}"
