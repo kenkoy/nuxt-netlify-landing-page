@@ -1,0 +1,64 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  footer{
+    p{
+      color: #fff;
+    }
+  }
+  #hero {
+    background: url('../assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-bg_m.jpg') no-repeat top;
+    background-size: cover;
+    padding: 10px;
+    .container {
+      > div {
+        text-align: center;
+        img:first-child {
+          max-width: 200px;
+          width: 100%;
+        }
+        img:first-child + img {
+          max-width: 288px;
+          width: 100%;
+        }
+        img:first-child + img + img {
+          max-width: 288px;
+          width: 100%;
+        }
+      }
+    }
+    p {
+      color: #fff;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 576px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .desktop{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

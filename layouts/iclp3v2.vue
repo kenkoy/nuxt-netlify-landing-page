@@ -183,7 +183,7 @@
           <div v-for="(summaryItems, summaryIndex) in data_items.attributes.bonus" :key="summaryIndex" class="container">
             <div class="box">
               <div>
-                <img class="image-title" :src="require(`~/assets/images${summaryItems.box_title_image}`)" alt="alt img">
+                <img class="image-title" :src="summaryItems.box_title_image" alt="alt img">
                 <p v-html="formatSummary(summaryItems)" />
                 <a :href="summaryItems.box_button_image_url">
                   <img :src="summaryItems.box_button_image">

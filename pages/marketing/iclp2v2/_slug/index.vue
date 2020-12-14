@@ -4,10 +4,10 @@
 
 <script>
 export default {
-  layout: 'iclp2', //Change to actual layout
+  layout: 'iclp2v2', // Change to actual layout
   async asyncData ({ params, error }) {
     try {
-      const markDownData = await import('~/assets/content/landing-page/marketing/iclp2/' + params.slug + '.md') //Change to actual slug
+      const markDownData = await import('~/assets/content/landing-page/marketing/iclp2/' + params.slug + '.md') // Change to actual slug
       return { markDownData }
     } catch (e) {
       error(e)
@@ -18,7 +18,7 @@ export default {
   },
   methods: {
     emitData (data) {
-      this.$root.$emit('iclp2-data', { //Change to actual page name
+      this.$root.$emit('iclp2-data', { // Change to actual page name
         yamlData: data.attributes,
         htmlData: data.html
       })

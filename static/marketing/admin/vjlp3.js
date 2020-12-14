@@ -77,6 +77,7 @@ export const VJLP3_PREVIEW = createClass({
           <div class="row">
             <div id="bf-banner-img-2" class="col-lg-12">
               <h1>${bannerTitle}</h1>
+
               <h2></h2>
 
               <a class="signup-btn d-none d-lg-block" href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">

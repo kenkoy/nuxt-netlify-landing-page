@@ -53,8 +53,8 @@ export default {
         }
     }
 
-    .marketing-iclp3V2,
-    .marketing-iclp2V2{
+    .marketing-iclp3v2,
+    .marketing-iclp2v2{
         background: #230c33;
 
         a{

@@ -14,7 +14,7 @@ export default {
   },
   async asyncData () {
     const mdFiles = await require.context(
-      '~/assets/content/landing-page/marketing/iclp2/', //Change to actual md file
+      '~/assets/content/landing-page/marketing/iclp2/', // Change to actual md file
       true,
       /\.md$/
     )
@@ -32,7 +32,7 @@ export default {
   },
   head () {
     return {
-      title: 'インターカジノ',
+      title: 'Vera&John - The fun online casino',
       htmlAttrs: {
         lang: 'ja'
       },

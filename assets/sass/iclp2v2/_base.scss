@@ -1,0 +1,46 @@
+section,
+footer{
+  padding: 20px;
+  background: $BG_MAIN;
+}
+
+a{
+  color: $LINK_COLOR;
+
+  &:hover{
+    color: $LINK_COLOR_HOVER;
+  }
+}
+
+button {
+  background-color: #FF6200;
+  border-radius: 100px;
+  padding: 10px 40px;
+  border: 0;
+  color: #fff;
+  font-size: 1.5em;
+  width: 280px;
+}
+
+#payment {
+  img {
+    width: 100%;
+  }
+}
+
+#terms{
+  background: $BG_MAIN;
+  border-top: solid 2px $BORDER_COLOR;
+  border-bottom: solid 2px $BORDER_COLOR;
+
+  h3{
+    color: $H3_COLOR;
+    text-transform: uppercase;
+  }
+
+  ul{
+    li{
+      color: #fff;
+    }
+  }
+}

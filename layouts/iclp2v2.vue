@@ -6,26 +6,38 @@
       v-if="Object.keys(mdData).length > 0"
       class="iclp2-main"
     >
-      <!-- Change class name to actual page name -->
-
-      <!--
-        TEMPLATE LAYOUT, HTML, CSS STARTS HERE
-        - Use <header> tag for header
-        - use <section> tag for every row, add relevant ID name for each section
-        - add <div class="container"> inside <section> tag
-        - add alt tags for every <img/>
-      -->
-
-      <!-- USE THE CODE BELOW IF THE DESIGN / TEMPLATE HAVE BANNERS. ELSE, DELETE
-        <section id="hero" :style="cssBackground">
-          <div class="container">
-            <div class="banner" />
+      <section id ="hero">
+        <div class="container">
+          <!-- <div>
+            <a href="#">home</a>
+            <p class="login-text">ホーム</p>
+          </div> -->
+          <div>
+            <div>
+              <img src="@/assets/images/iclp2v2/logo.png">
+              <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-01.png">
+              <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-02.png">
+            </div>
+            <div>
+              <p>✦新規プレイヤー限定特典✦</p>
+              <p>プレイし続けるほどお得な<span>総額$500のウェルカムキャッシュ</span>をゲットしよう！このビギナーズガイドでは、インターカジノをどこよりも詳しく解説しちゃいます★</p>
+              <button onclick="location.href='#'" type="button">今すぐ登録</button>
+              <p><a href="#">利用規約</a>に同意します。</p>
+            </div>
           </div>
-        </section>
-      -->
-
-      <div v-html="htmlBody" />
-
+        </div>
+      </section>
+      <section id="payment">
+        <div class="container">
+          <img class="desktop" src="@/assets/images/iclp2v2/payment_large_jp.svg">
+          <img class="mobile" src="@/assets/images/iclp2v2/payment_jp.svg">
+        </div>
+      </section>
+      <section id="terms">
+        <div class="container">
+          <div v-html="htmlBody" />
+        </div>
+      </section>
       <Footer
         :promoLanguageCode="mdData.promo_locale.promo_language_code"
         :promoCountryCode="mdData.promo_locale.promo_country_code"
@@ -71,10 +83,10 @@ export default {
 }
 </script>
 
-<style lang="scss"> //Change to actual path, all assets should be on asset folder. Create separate assets / sass for each templates
+<style lang="scss"> // Change to actual path, all assets should be on asset folder. Create separate assets / sass for each templates
   .iclp2_wrapper {
     @import '@/assets/sass/base/fonts.css';
-    @import '@/assets/sass/iclp2/style.scss';
+    @import '@/assets/sass/iclp2v2/style.scss';
     @import '@/assets/sass/base/style.scss';
   }
 </style>
