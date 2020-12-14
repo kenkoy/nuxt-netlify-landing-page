@@ -91,7 +91,8 @@ a:visited { font-family: 'MainFont-Bold', sans-serif; color: #F20574;  }
 .button:hover { background: #FF7C2B; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.60); color: #FFFFFF; text-decoration: none; border: none; }
 .button:active { background: #FF7C2B; text-decoration: none; border: none; }
 .button:visited { color: #FFFFFF; text-decoration: none; border: none; }
-#strip .button { display:none; font-family: 'MainFont-Bold', sans-serif !important; font-size:1.5em }
+/* #strip .button { display:none; font-family: 'MainFont-Bold', sans-serif !important; font-size:1.5em } */
+#strip .button { font-family: 'MainFont-Bold', sans-serif !important; font-size:1.5em }
 
 
 /* Steps */
