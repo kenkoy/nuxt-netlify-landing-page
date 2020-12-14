@@ -22,6 +22,14 @@ export const ICLP1_PREVIEW = createClass({
       '--bg-image-m': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_mobile'])}')`
     }
 
+    const signStyle = banner.getIn(['data', 'promo_title_animate'])
+      ? {
+          color: '#ffe6ff',
+          textShadow: '0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd, -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd, 0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483',
+          animation: 'shine 2s forwards, flicker 3s infinite'
+        }
+      : {}
+
     return (html`
     <body
       id="${locale.getIn(['data', 'promo_language_code'])}-${locale.getIn(['data', 'promo_country_code'])}"
@@ -44,7 +52,7 @@ export const ICLP1_PREVIEW = createClass({
                 <div>
                   <h2>${banner.getIn(['data', 'promo_subtitle_1'])}</h2>
                   <div><br/></div>
-                  <div class="sign">
+                  <div style=${signStyle}>
                     <h1 class="color-alt-two prev-main-heading">
                       <font color="#ffffff">${banner.getIn(['data', 'promo_main_heading'])}</font>
                     </h1>
