@@ -12,9 +12,11 @@
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script type="module">
       import { VJLP1_PREVIEW } from './vjlp1.js';
-      CMS.registerPreviewTemplate('VJLP1-NoForm', VJLP1_PREVIEW);
       import { VJLP3_PREVIEW } from './vjlp3.js';
+      import { ICLP1_PREVIEW } from './iclp1.js';
+      CMS.registerPreviewTemplate('VJLP1-NoForm', VJLP1_PREVIEW);
       CMS.registerPreviewTemplate('VJLP3-NoForm', VJLP3_PREVIEW);
+      CMS.registerPreviewTemplate('ICLP1-NoForm', ICLP1_PREVIEW);
     </script>
   </body>
 </html>
