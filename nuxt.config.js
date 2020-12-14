@@ -9,7 +9,8 @@ const markdownPaths = [
   'marketing/vjlp6',
   'marketing/iclp1',
   'marketing/iclp2',
-  'marketing/iclp3'
+  'marketing/iclp3',
+  'marketing/iclp3V2'
 ]
 
 function dynamicMarkdownRoutes () {

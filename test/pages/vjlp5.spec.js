@@ -18,22 +18,18 @@ describe('Testing VJLP5 index.vue', () => {
       .map(files => VJLP5_DIR + files)
       .sample()
       .value()
-
-    const { html, attributes } = retriveFrontMattertoJSON(md)
+    const dataMD = retriveFrontMattertoJSON(md)
     wrapper = mount(index, {
       localVue,
       data () {
         return {
-          markDownData: {
-            html,
-            attributes
-          }
+          dataMD
         }
       }
     })
     metaInfo = wrapper.vm.$metaInfo
-    tagIds = attributes.field_ids
-    locale = attributes.promo_locale
+    tagIds = dataMD.attributes.field_ids
+    locale = dataMD.attributes.promo_locale
   })
 
   test('Title should be Vera&John', () => {

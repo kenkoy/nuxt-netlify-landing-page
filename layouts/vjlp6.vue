@@ -127,20 +127,6 @@ export default {
       mobile: ''
     }
   },
-  head () {
-    return {
-      htmlAttrs: {
-        lang: this.language
-      },
-      link: [
-        {
-          rel: 'shortcut icon',
-          href: '/marketing/vj-favicon.ico',
-          type: 'image/x-icon'
-        }
-      ]
-    }
-  },
   computed: {
     cssBackground () {
       return {
@@ -230,6 +216,20 @@ export default {
       return bannerSubTitle.reduce((oldVal, newVal) => {
         return oldVal + '<br />' + newVal
       })
+    }
+  },
+  head () {
+    return {
+      htmlAttrs: {
+        lang: this.language
+      },
+      link: [
+        {
+          rel: 'shortcut icon',
+          href: '/marketing/vj-favicon.ico',
+          type: 'image/x-icon'
+        }
+      ]
     }
   }
 }

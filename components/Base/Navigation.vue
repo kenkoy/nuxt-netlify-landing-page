@@ -67,7 +67,7 @@ export default {
       name: route.name.replace('marketing-', ''),
       path: route.path
     })).filter((route) => {
-      const containingWords = /slug|about|admin|blank-template|home|marketing/.test(route.name)
+      const containingWords = /slug|about|admin|blank-template|home|marketing|index/.test(route.name)
       return !containingWords
     })
   },

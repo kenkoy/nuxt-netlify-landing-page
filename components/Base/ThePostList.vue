@@ -53,6 +53,28 @@ export default {
         }
     }
 
+    .marketing-iclp3v2,
+    .marketing-iclp2v2{
+        background: #230c33;
+
+        a{
+            color: #000;
+            background: #ef0a8b;
+
+            &:hover{
+                background: #9E03EF;
+                color: #fff;
+
+                h3{
+                    color: #000;
+                }
+            }
+        }
+        h3{
+            color: #fff;
+        }
+    }
+
     #featured-posts{
         background-size: cover;
         padding: 50px 0;

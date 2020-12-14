@@ -51,6 +51,11 @@
             </nuxt-link>
           </li>
           <li class="nav-item">
+            <nuxt-link to="/marketing/iclp3v2">
+              ICLP 3 V2
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
             <nuxt-link to="/marketing/vjhp">
               VJ Stripped Down
             </nuxt-link>

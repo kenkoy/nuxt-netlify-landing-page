@@ -12,6 +12,10 @@
 # Components
 /components/templates/**/*
 
+/assets/**/*
+
 # Blank template
+/layouts/vjlp6.vue
+/pages/marketing/vjlp6/**/*
 /layouts/blank-template.vue
 /pages/marketing/blank-template/**/*

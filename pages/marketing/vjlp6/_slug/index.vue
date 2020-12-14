@@ -22,6 +22,15 @@ export default {
   data: () => ({
     dataMD: { }
   }),
+  mounted () {
+    this.emitData(this.dataMD)
+  },
+  methods: {
+    /* send the 'dataMD' data to 'LAYOUT' */
+    emitData (dataMD) {
+      this.$emit('emitMDcontent', dataMD)
+    }
+  },
   head () {
     const goId = (this.dataMD.attributes.field_ids && this.dataMD.attributes.field_ids.go_container_id)
       ? this.dataMD.attributes.field_ids.go_container_id
@@ -42,7 +51,7 @@ export default {
             '-' + this.dataMD.attributes.promo_locale.promo_country_code
       },
       style: [],
-      sscript: [
+      script: [
         {
           hid: 'goHead',
           innerHTML:
