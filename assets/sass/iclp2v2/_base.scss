@@ -1,0 +1,30 @@
+section,
+footer{
+  padding: 20px;
+  background: $BG_MAIN;
+}
+
+a{
+  color: $LINK_COLOR;
+
+  &:hover{
+    color: $LINK_COLOR_HOVER;
+  }
+}
+
+#terms{
+  background: $BG_MAIN;
+  border-top: solid 2px $BORDER_COLOR;
+  border-bottom: solid 2px $BORDER_COLOR;
+
+  h3{
+    color: $H3_COLOR;
+    text-transform: uppercase;
+  }
+
+  ul{
+    li{
+      color: #fff;
+    }
+  }
+}
