@@ -36,6 +36,17 @@
       color: #fff;
     }
   }
+
+  #games{
+    text-align: center;
+    
+    .game-third-section{
+      img{
+        max-width: 420px;
+        width: 100%;
+      }
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */

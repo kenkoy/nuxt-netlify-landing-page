@@ -79,13 +79,13 @@
           <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame1.png"/>
         </div>
       </section>
-      <section>
-        <div class="container">
+      <section id="games">
+        <div class="container game-first-section">
           <div>
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame2.png"/>
           </div>
         </div>
-        <div class="container">
+        <div class="container game-second-section">
           <div>
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-livecasino.png"/>
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-tablegame.png"/>
@@ -95,7 +95,7 @@
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-jackpot.png"/>
           </div>
         </div>
-        <div class="container">
+        <div class="container game-third-section">
           <div>
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-CS.png"/>
           </div>

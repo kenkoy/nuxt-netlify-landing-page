@@ -24,9 +24,12 @@ button {
 
 #detail{
   background: linear-gradient( 180deg, rgba(159, 15, 79, 1) 0%, rgba(79, 23, 117, 1) 28%, rgba(0, 0, 0, 1) 88% );
+  text-align: center;
 }
 #testimonials{
   .container:first-child{
+    margin: 20px auto;
+
     h3{
       color: #e10057;
     }
@@ -58,6 +61,8 @@ button {
   }
 
   .container:first-child + div{
+    margin: 20px auto;
+
     h3{
       color: #a184d6;
     }
