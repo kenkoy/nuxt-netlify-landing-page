@@ -1,3 +1,6 @@
+* {
+  font-family: 'MainFont-Medium';
+}
 section,
 footer{
   padding: 20px;
@@ -12,6 +15,10 @@ a{
   }
 }
 
+p {
+  color: $TEXT_COLOR;
+}
+
 button {
   background-color: #FF6200;
   border-radius: 100px;
@@ -20,6 +27,11 @@ button {
   color: #fff;
   font-size: 1.5em;
   width: 280px;
+  margin: 20px 0;
+}
+
+img {
+  width: 100%;
 }
 
 #detail{
@@ -60,21 +72,6 @@ button {
       -webkit-box-shadow: 3px 3px 0px 0px rgba(255, 0, 72, 1);
       -moz-box-shadow: 3px 3px 0px 0px rgba(255, 0, 72, 1);
       box-shadow: 3px 3px 0px 0px rgba(255, 0, 72, 1);
-
-      &:after{
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 50%;
-        width: 0;
-        height: 0;
-        border: 1.031em solid transparent;
-        border-left-color: #ffffff;
-        border-right: 0;
-        border-bottom: 0;
-        margin-top: -0.516em;
-        margin-right: -1.031em;
-      }
     }
   }
 
@@ -93,31 +90,13 @@ button {
       -webkit-box-shadow: 5px 5px 0px 0px rgba(168, 138, 225, 1);
       -moz-box-shadow: 5px 5px 0px 0px rgba(168, 138, 225, 1);
       box-shadow: 5px 5px 0px 0px rgba(168, 138, 225, 1);
-
-      &:after{
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 50%;
-        width: 0;
-        height: 0;
-        border: 1.031em solid transparent;
-        border-right-color: #ffffff;
-        border-left: 0;
-        border-bottom: 0;
-        margin-top: -0.516em;
-        margin-left: -1.031em;
-      }
     }
   }
 }
 
-#golden-separation{
+#golden-separation {
     background: radial-gradient( ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80% ), radial-gradient( ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100% );
-    img{
-      display: block;
-      margin: auto;
-    }
+    padding: 15px 0;
 }
 
 #payment {
@@ -141,4 +120,11 @@ button {
       color: #fff;
     }
   }
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  color: $TEXT_COLOR;
+  font-style: normal;
+  font-size: 30px;
 }

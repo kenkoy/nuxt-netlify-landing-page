@@ -8,10 +8,10 @@
     >
       <section id ="hero">
         <div class="container">
-          <!-- <div>
-            <a href="#">home</a>
+          <div class="loginbtn">
+            <i class="material-icons" data-v-7c308f66="">home</i>
             <p class="login-text">ホーム</p>
-          </div> -->
+          </div>
           <div>
             <div>
               <img src="@/assets/images/iclp2v2/logo.png">
@@ -36,7 +36,7 @@
               プレイを続けながら、 総額$500キャッシュを獲得しましょう。</p>
           </div>
         </div>
-        <div class="container">
+        <div class="container column-2">
           <div>
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph1.png"/>
           </div>
@@ -85,7 +85,7 @@
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame2.png"/>
           </div>
         </div>
-        <div class="container game-second-section">
+        <div class="container game-second-section column-2">
           <div>
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-livecasino.png"/>
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-tablegame.png"/>
@@ -95,13 +95,23 @@
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-jackpot.png"/>
           </div>
         </div>
-        <div class="container game-third-section">
+        <div class="container game-third-section column-2">
           <div>
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-CS.png"/>
           </div>
           <div>
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-MOBILE.png"/>
           </div>
+        </div>
+      </section>
+      <section id="#golden-separation"></section>
+      <section id="">
+        <div class="container">
+          <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty1.png">
+          <h3>レベルが上がるとカジノ内での <span>地位向上</span> !</h3>
+          <p><span>レベル7の最高ランク</span>、 <em>インター大公</em>ではあの●●アイテムが出現 !?</p>
+          <img src="">
+          <img src="">
         </div>
       </section>
       <section id="payment">

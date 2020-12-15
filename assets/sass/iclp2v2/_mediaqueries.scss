@@ -6,44 +6,111 @@
   .mobile{
     display: block;
   }
-  footer{
-    p{
-      color: #fff;
-    }
-  }
   #hero {
     background: url('../assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-bg_m.jpg') no-repeat top;
     background-size: cover;
     padding: 10px;
+    .loginbtn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      p {
+        margin: 0;
+      }
+    }
     .container {
       > div {
         text-align: center;
+        &:last-child div:first-child {
+            margin-top: 200px;
+        }
         img:first-child {
           max-width: 200px;
-          width: 100%;
         }
         img:first-child + img {
           max-width: 288px;
-          width: 100%;
         }
         img:first-child + img + img {
           max-width: 288px;
-          width: 100%;
+        }
+      }
+      > div {
+        div:last-child {
+          p {
+            font-size: 14px;
+            margin: 0;
+            span {
+              background-color: #ff0375;
+            }
+          }
+          button + p {
+            font-size: 11px;
+          }
+          &:before {
+            background: url('../assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png') no-repeat center right;
+            content: "";
+            display: block;
+            height: 30px;
+            width: 65px;
+            margin: auto;
+          }
         }
       }
     }
+  }
+
+  #testimonials{
     p {
-      color: #fff;
+      font-size: 14px;
+      color: #000;
+    }
+    .container:first-child{
+      .testi{ 
+        &:after{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0;
+          height: 0;
+          border: 1.031em solid transparent;
+          border-top-color: #ffffff;
+          border-bottom: 0;
+          margin-left: -1.031em;
+          margin-bottom: -1.031em;
+        }
+      }
+    }
+    .container:first-child + div{
+      .testi{
+        &:after{
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0;
+          height: 0;
+          border: 1.031em solid transparent;
+          border-top-color: #ffffff;
+          border-bottom: 0;
+          margin-left: -1.031em;
+          margin-bottom: -1.031em;
+        }
+      }
+    }
+  }
+
+  #golden-separation {
+    > div img {
+      width: 290px;
     }
   }
 
   #games{
     text-align: center;
-
     .game-third-section{
       img{
         max-width: 420px;
-        width: 100%;
       }
     }
   }
@@ -51,7 +118,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 576px) {
-
+  #testimonials {
+    display: none;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -62,11 +131,51 @@
   .mobile{
     display: none;
   }
+  #testimonials {
+    display: block;
+  }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+  #testimonials{
+    .container:first-child{
+      .testi{ 
+        &:after{
+          content: '';
+          position: absolute;
+          right: 0;
+          top: 50%;
+          width: 0;
+          height: 0;
+          border: 1.031em solid transparent;
+          border-left-color: #ffffff;
+          border-right: 0;
+          border-bottom: 0;
+          margin-top: -0.516em;
+          margin-right: -1.031em;
+        }
+      }
+    }
+    .container:first-child + div{
+      .testi{
+        &:after{
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 0;
+          height: 0;
+          border: 1.031em solid transparent;
+          border-right-color: #ffffff;
+          border-left: 0;
+          border-bottom: 0;
+          margin-top: -0.516em;
+          margin-left: -1.031em;
+        }
+      }
+    }
+  }
 }
 
 /* Large Devices, Wide Screens */
