@@ -22,6 +22,81 @@ button {
   width: 280px;
 }
 
+#detail{
+  background: linear-gradient( 180deg, rgba(159, 15, 79, 1) 0%, rgba(79, 23, 117, 1) 28%, rgba(0, 0, 0, 1) 88% );
+}
+#testimonials{
+  .container:first-child{
+    h3{
+      color: #e10057;
+    }
+    .testi{
+      position: relative;
+      background: #fff;
+      border-radius: 30px;
+      color: black;
+      padding: 20px;
+      -webkit-box-shadow: 3px 3px 0px 0px rgba(255, 0, 72, 1);
+      -moz-box-shadow: 3px 3px 0px 0px rgba(255, 0, 72, 1);
+      box-shadow: 3px 3px 0px 0px rgba(255, 0, 72, 1);
+
+      &:after{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 1.031em solid transparent;
+        border-left-color: #ffffff;
+        border-right: 0;
+        border-bottom: 0;
+        margin-top: -0.516em;
+        margin-right: -1.031em;
+      }
+    }
+  }
+
+  .container:first-child + div{
+    h3{
+      color: #a184d6;
+    }
+    .testi{
+      position: relative;
+      background: #fff;
+      border-radius: 30px;
+      color: black;
+      padding: 20px;
+      -webkit-box-shadow: 5px 5px 0px 0px rgba(168, 138, 225, 1);
+      -moz-box-shadow: 5px 5px 0px 0px rgba(168, 138, 225, 1);
+      box-shadow: 5px 5px 0px 0px rgba(168, 138, 225, 1);
+
+      &:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 1.031em solid transparent;
+        border-right-color: #ffffff;
+        border-left: 0;
+        border-bottom: 0;
+        margin-top: -0.516em;
+        margin-left: -1.031em;
+      }
+    }
+  }
+}
+
+#golden-separation{
+    background: radial-gradient( ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80% ), radial-gradient( ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100% );
+    img{
+      display: block;
+      margin: auto;
+    }
+}
+
 #payment {
   img {
     width: 100%;

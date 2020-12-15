@@ -27,6 +27,83 @@
           </div>
         </div>
       </section>
+      <section id="detail">
+        <div class="container">
+          <div>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-title.png"/>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-500WC-stamp.png"/>
+            <p>リアルマネープレイが追加キャッシュに変わる!
+              プレイを続けながら、 総額$500キャッシュを獲得しましょう。</p>
+          </div>
+        </div>
+        <div class="container">
+          <div>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph1.png"/>
+          </div>
+          <div>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph2.png"/>
+          </div>
+        </div>
+        <div class="container">
+          <div>
+            <p>ボーナスやカジノ最新情報をはじめ、
+            テーブルゲーム・スロット界のトップに君臨するクイーンが
+            選んだ 一押しゲームをいち早くお届けいたします♠</p>
+          </div>
+        </div>
+        <div id="testimonials">
+          <div class="container">
+            <div class="testi">
+              <h3>初めまして、ごきげんよう!</h3>
+              <p>インターカジノではスリル満点の各種ゲームやイベントを毎月ご用意しているわ。勝ちたい方、長くじっくりプレイをしたい方にぴったりね。
+                私たちと一緒に、勝負してみない?</p>
+            </div>
+            <div class="feature-img">
+              <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-red-icon.png"/>
+            </div>
+          </div>
+          <div class="container">
+            <div class="feature-img">
+              <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-black-icon.png"/>
+            </div>
+            <div class="testi">
+              <h3>チャオ! クロエだよ★</h3>
+              <p>みんなも「なんとかなる!」精神で思いっきり勝ちを目指すよー!
+                クロエについて来れる人～？お先にカジノで待ってるね!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="golden-separation">
+        <div class="container">
+          <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame1.png"/>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame2.png"/>
+          </div>
+        </div>
+        <div class="container">
+          <div>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-livecasino.png"/>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-tablegame.png"/>
+          </div>
+          <div>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-slot.png"/>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-jackpot.png"/>
+          </div>
+        </div>
+        <div class="container">
+          <div>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-CS.png"/>
+          </div>
+          <div>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-MOBILE.png"/>
+          </div>
+        </div>
+      </section>
       <section id="payment">
         <div class="container">
           <img class="desktop" src="@/assets/images/iclp2v2/payment_large_jp.svg">
