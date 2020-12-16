@@ -90,6 +90,15 @@ button {
   background: linear-gradient( 180deg, rgba(159, 15, 79, 1) 0%, rgba(79, 23, 117, 1) 28%, rgba(0, 0, 0, 1) 88% );
   text-align: center;
 
+  .testi{
+    text-align: left;
+    padding: 20px 50px;
+
+    h3{
+      margin: 0;
+    }
+  }
+
   > .column-2{
     img{
       max-width: 345px;
