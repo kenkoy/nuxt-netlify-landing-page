@@ -15,7 +15,7 @@
             </a>
           </div>
           <div>
-            <div>
+            <div id="header-text-wrapper">
               <img alt="alt img" src="@/assets/images/iclp2v2/logo.png" />
               <img alt="alt img" :src="mdData.promo_banner.promo_images.promo_banner_image_title_1" />
               <img alt="alt img" :src="mdData.promo_banner.promo_images.promo_banner_image_title_2" />
@@ -175,7 +175,16 @@
       </section>
       <section id="terms">
         <div class="container">
-          <div v-html="htmlBody" />
+          <div>
+            <div v-html="htmlBody" />
+            <ul>
+              <li>
+                通常の
+                <a href="">利用規約</a>と
+                <a href="">キャンペーン一般利用規約</a>が適用されます。
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <Footer

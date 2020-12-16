@@ -13,10 +13,12 @@
   #hero {
     background: linear-gradient(rgba(132,5,217,.2),rgba(0,0,0,.6)),var(--bg-image-m) no-repeat top;
     background-size: cover;
+
     .loginbtn {
       position: absolute;
       top: 10px;
       right: 10px;
+
       a{
         text-decoration: none;
         color: inherit;
@@ -28,7 +30,8 @@
     .container {
       > div {
         text-align: center;
-        &:last-child div:first-child {
+
+        #header-text-wrapper {
             margin-top: 200px;
             width: 100%;
         }
@@ -44,8 +47,7 @@
           max-width: 288px;
           width: 100%;
         }
-      }
-      > div {
+
         div:last-child {
           p {
             font-size: 14px;
@@ -214,6 +216,7 @@
     }
     .container:first-child + div{
       flex-direction: row;
+
       .testi{
         &:after{
           content: "";
