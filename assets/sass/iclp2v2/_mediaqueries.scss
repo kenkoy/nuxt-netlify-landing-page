@@ -6,10 +6,13 @@
   .mobile{
     display: block;
   }
+  section,
+  footer{
+    padding: 20px 10px;
+  }
   #hero {
     background: linear-gradient(rgba(132,5,217,.2),rgba(0,0,0,.6)),var(--bg-image-m) no-repeat top;
     background-size: cover;
-    padding: 10px;
     .loginbtn {
       position: absolute;
       top: 10px;
@@ -111,12 +114,6 @@
           margin-bottom: -1.031em;
         }
       }
-    }
-  }
-
-  #golden-separation {
-    > div img {
-      width: 290px;
     }
   }
 
@@ -251,5 +248,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+  section,
+  footer{
+    padding: 50px 0;
+  }
 }

@@ -64,6 +64,19 @@ button {
 
 #hero{
   height: 100%;
+  position: relative;
+
+  &:after{
+    display: block;
+    content: '';
+    background: linear-gradient( 90deg, rgba(131, 58, 180, 1) 0%, rgba(255, 0, 90, 1) 50%, rgba(252, 176, 69, 1) 100% );
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+
   img{
     display: block;
     margin: auto;
@@ -132,11 +145,13 @@ button {
 
 #golden-separation {
     background: radial-gradient( ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80% ), radial-gradient( ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100% );
-    padding: 15px 0;
+    padding: 25px 0;
 
     img{
       display: block;
       margin: auto;
+      max-width: 609px;
+      width: 100%;
     }
 }
 
@@ -172,6 +187,19 @@ button {
   }
 }
 #loyalty-program{
+  position: relative;
+  text-align: center;
+
+  &:before{
+    display: block;
+    content: '';
+    background: radial-gradient( ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80% ), radial-gradient( ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100% );
+    width: 100%;
+    height: 4px;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
   p{
     line-height: 21px;
     margin: 0;
@@ -212,6 +240,29 @@ button {
 
 #history{
   background: url('../assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-history-bg.jpg');
+  position: relative;
+
+  &:before{
+    display: block;
+    content: '';
+    background: radial-gradient( ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80% ), radial-gradient( ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100% );
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+  &:after{
+    display: block;
+    content: '';
+    background: linear-gradient( 90deg, rgba(131, 58, 180, 1) 0%, rgba(255, 0, 90, 1) 50%, rgba(252, 176, 69, 1) 100% );
+    width: 100%;
+    height: 4px;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
   > .column-2 > div:first-child{
     > img{
       max-width: 500px;
