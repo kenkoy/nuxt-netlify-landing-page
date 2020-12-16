@@ -7,13 +7,17 @@
     display: block;
   }
   #hero {
-    background: url('../assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-bg_m.jpg') no-repeat top;
+    background: linear-gradient(rgba(132,5,217,.2),rgba(0,0,0,.6)),var(--bg-image-m) no-repeat top;
     background-size: cover;
     padding: 10px;
     .loginbtn {
       position: absolute;
       top: 10px;
       right: 10px;
+      a{
+        text-decoration: none;
+        color: inherit;
+      }
       p {
         margin: 0;
       }
@@ -181,6 +185,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+  #hero{
+    background: linear-gradient(rgba(132,5,217,.2),rgba(0,0,0,.6)),var(--bg-image) no-repeat top;
+    background-size: cover;
+  }
   #detail .container{
     padding-left: 25%;
     padding-right: 25%;

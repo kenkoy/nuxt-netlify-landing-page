@@ -3,7 +3,7 @@
 }
 section,
 footer{
-  padding: 20px;
+  padding: 20px 10px;
   background: $BG_MAIN;
 }
 
@@ -19,27 +19,36 @@ p {
   color: $TEXT_COLOR;
 }
 .redmark{
-  background-color: #ff0375;
+  background-color: $REDMARK;
   color: white;
   font-weight: bold;
 }
 .blackmark{
-  background-color: #9f97e5;
+  background-color: $BLACKMARK;
   color: white;
   font-weight: bold;
 }
 
 button {
-  background-color: #FF6200;
+  background-color: $WARNING;
   border-radius: 100px;
   padding: 10px 40px;
   border: 0;
-  color: #fff;
+  color: $TEXT_COLOR;
   font-size: 1.5em;
   width: 280px;
   margin: 20px 0;
   display: block;
   margin: 20px auto;
+
+  &:hover{
+    background: $BTN_HOVER;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .separation-star{
@@ -54,6 +63,7 @@ button {
 }
 
 #hero{
+  height: 100%;
   img{
     display: block;
     margin: auto;
@@ -162,6 +172,14 @@ button {
   }
 }
 #loyalty-program{
+  p{
+    line-height: 21px;
+    margin: 0;
+  }
+  span{
+    color: #ff0375;
+    font-weight: 700;
+  }
   > .container:first-child img{
     max-width: 900px;
     width: 100%;

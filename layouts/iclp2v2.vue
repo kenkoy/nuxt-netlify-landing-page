@@ -6,7 +6,7 @@
       v-if="Object.keys(mdData).length > 0"
       class="iclp2-main"
     >
-      <section id ="hero">
+      <section id ="hero" :style="cssBackground">
         <div class="container">
           <div class="loginbtn">
             <a :href="mdData.promo_banner.promo_home_button_redirect_url">
@@ -108,8 +108,8 @@
         </div>
         <div class="container">
           <div>
-            <h3>レベルが上がるとカジノ内での <span>地位向上</span> !</h3>
-            <p><span>レベル7の最高ランク</span>、 <em>インター大公</em>ではあの●●アイテムが出現 !?</p>
+            <p>レベルが上がるとカジノ内での <span>地位向上</span> !</p>
+            <p><span>レベル7の最高ランク</span>、 <em class="redmark">インター大公</em>ではあの●●アイテムが出現 !?</p>
           </div>
         </div>
         <div class="container">
@@ -238,16 +238,15 @@ export default {
     },
     historyChloeParsedStatement () {
       return this.statementsParser(this.mdData.history_section.history_chloe_statement, this.mdData.history_section.history_chloe_highlighted_phrase, 'blackmark')
+    },
+    cssBackground () {
+      const images = this.mdData.promo_banner.promo_images
+      return {
+        '--bg-image': `url('${images.promo_bg_desktop}')`,
+        '--bg-image-m': `url('${images.promo_bg_mobile}')`,
+        '--bg-banner': `url('${images.promo_bg_banner}')`
+      }
     }
-    // USE THE CODE BELOW IF THE DESIGN / TEMPLATE HAVE BANNERS. ELSE, DELETE
-    // cssBackground () {
-    //   const images = this.mdData.promo_banner.promo_images
-    //   return {
-    //     '--bg-image': `url('${images.promo_bg_desktop}')`,
-    //     '--bg-image-m': `url('${images.promo_bg_mobile}')`,
-    //     '--bg-banner': `url('${images.promo_bg_banner}')`
-    //   }
-    // }
   },
   methods: {
     statementsParser (statements, highLigtedPhrase, classStyle) {
