@@ -7,11 +7,6 @@ footer{
   background: $BG_MAIN;
 }
 
-.container{
-  padding-left: 25%;
-  padding-right: 25%;
-}
-
 a{
   color: $LINK_COLOR;
 
@@ -33,6 +28,8 @@ button {
   font-size: 1.5em;
   width: 280px;
   margin: 20px 0;
+  display: block;
+  margin: 20px auto;
 }
 
 #hero{
@@ -132,6 +129,60 @@ button {
     li{
       color: #fff;
     }
+  }
+}
+#loyalty-program{
+  > .container:first-child img{
+    max-width: 900px;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+  > .container:nth-child(3) img{
+    max-width: 825px;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+  > .container:nth-child(4) img{
+    max-width: 854px;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+#gradient-separation{
+  background: linear-gradient( 90deg, rgba(131, 58, 180, 1) 0%, rgba(255, 0, 90, 1) 50%, rgba(252, 176, 69, 1) 100% );
+  img{
+    max-width: 364px;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+}
+
+#history{
+  background: url('../assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-history-bg.jpg');
+  > .column-2 > div:first-child{
+    overflow: hidden;
+    width: 200px;
+    margin: auto;
+    img{
+      margin-left: -200px;
+    }
+  }
+  > .container:first-child img{
+    max-width: 863px;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  > .container:first-child + div img{
+    max-width: 428px;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
   }
 }
 

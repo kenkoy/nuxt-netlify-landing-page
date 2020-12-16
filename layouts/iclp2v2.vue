@@ -104,14 +104,67 @@
           </div>
         </div>
       </section>
-      <section id="#golden-separation"></section>
-      <section id="">
+      <section id="loyalty-program">
         <div class="container">
           <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty1.png">
-          <h3>レベルが上がるとカジノ内での <span>地位向上</span> !</h3>
-          <p><span>レベル7の最高ランク</span>、 <em>インター大公</em>ではあの●●アイテムが出現 !?</p>
-          <img src="">
-          <img src="">
+        </div>
+        <div class="container">
+          <div>
+            <h3>レベルが上がるとカジノ内での <span>地位向上</span> !</h3>
+            <p><span>レベル7の最高ランク</span>、 <em>インター大公</em>ではあの●●アイテムが出現 !?</p>
+          </div>
+        </div>
+        <div class="container">
+          <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty2.png">
+        </div>
+        <div class="container">
+          <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty3.png">
+        </div>
+      </section>
+      <section id="gradient-separation">
+        <div class="container">
+          <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-title.png"/>
+        </div>
+      </section>
+      <section id="pods">
+        <div class="container">
+          <div>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-fair.png"/>
+          </div>
+          <div>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-visa.png"/>
+          </div>
+          <div>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-wa.png"/>
+          </div>
+        </div>
+      </section>
+      <section id="history">
+        <div class="container">
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-History1.png"/>
+        </div>
+        <div class="container">
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile-title.png"/>
+        </div>
+        <div class="container column-2">
+            <div>
+              <div class="title">
+                <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png"/>
+              </div>
+              <p>ライブカジノやテーブルゲームのスキルは王国一! おしとやかな見た目とは裏腹に、その圧倒的な頭脳と センスで、実力派揃いの赤の王国のトップに長らく 君臨する実力派クイーン。</p>
+              <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Rouge.png"/>
+            </div>
+
+            <div>
+              <div class="title">
+                <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png"/>
+              </div>
+              <p>日々運試しで盛り上がる 黒の王国。 負け知らずのクイーンとしてその存在感はピカイチ! 幸運の女神とも噂される、ちょっぴりお茶目な強運クイーン。</p>
+              <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Chole.png"/>
+            </div>
+        </div>
+        <div class="container">
+            <button class="warning">今すぐ登録</button>
         </div>
       </section>
       <section id="payment">
