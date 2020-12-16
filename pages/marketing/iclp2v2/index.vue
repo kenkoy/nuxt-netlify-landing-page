@@ -32,7 +32,7 @@ export default {
   },
   head () {
     return {
-      title: 'Vera&John - The fun online casino',
+      title: 'インターカジノ',
       htmlAttrs: {
         lang: 'ja'
       },

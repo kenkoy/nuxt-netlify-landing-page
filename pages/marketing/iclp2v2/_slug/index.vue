@@ -31,7 +31,7 @@ export default {
     const gtmId = tagIds.gtm_container_id || 'GTM-MFD3NKM'
 
     return {
-      title: 'Vera&John',
+      title: 'インターカジノ',
       htmlAttrs: {
         lang: this.markDownData.attributes.promo_locale.promo_language_code
       },
@@ -40,7 +40,7 @@ export default {
           '-' + this.markDownData.attributes.promo_locale.promo_country_code
       },
       link: [
-        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
+        { rel: 'shortcut icon', href: '/marketing/ic-favicon.ico', type: 'image/x-icon' }
       ],
       script: [
         {
