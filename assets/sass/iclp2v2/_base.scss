@@ -18,6 +18,16 @@ a{
 p {
   color: $TEXT_COLOR;
 }
+.redmark{
+  background-color: #ff0375;
+  color: white;
+  font-weight: bold;
+}
+.blackmark{
+  background-color: #9f97e5;
+  color: white;
+  font-weight: bold;
+}
 
 button {
   background-color: #FF6200;
@@ -32,6 +42,17 @@ button {
   margin: 20px auto;
 }
 
+.separation-star{
+  &:before {
+    background: url('../assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png') no-repeat center right;
+    content: "";
+    display: block;
+    height: 30px;
+    width: 65px;
+    margin: auto;
+  }
+}
+
 #hero{
   img{
     display: block;
@@ -42,6 +63,15 @@ button {
 #detail{
   background: linear-gradient( 180deg, rgba(159, 15, 79, 1) 0%, rgba(79, 23, 117, 1) 28%, rgba(0, 0, 0, 1) 88% );
   text-align: center;
+
+  > .column-2{
+    img{
+      max-width: 345px;
+      width: 100%;
+      display: block;
+      margin: 20px auto;
+    }
+  }
 
   > .container:first-child img:first-child{
     max-width: 500px;
@@ -165,11 +195,32 @@ button {
 #history{
   background: url('../assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-history-bg.jpg');
   > .column-2 > div:first-child{
-    overflow: hidden;
-    width: 200px;
-    margin: auto;
-    img{
-      margin-left: -200px;
+    > img{
+      max-width: 500px;
+      width: 100%;
+      display: block;
+      margin: 20px auto;
+    }
+    .title{
+      overflow: hidden;
+      width: 200px;
+      margin: auto;
+      img{
+        margin-left: -200px;
+      }
+    }
+  }
+  > .column-2 > div:first-child + div{
+    > img{
+      max-width: 500px;
+      width: 100%;
+      display: block;
+      margin: 20px auto;
+    }
+    .title{
+      overflow: hidden;
+      width: 200px;
+      margin: auto;
     }
   }
   > .container:first-child img{

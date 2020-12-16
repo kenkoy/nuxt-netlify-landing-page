@@ -23,15 +23,19 @@
         text-align: center;
         &:last-child div:first-child {
             margin-top: 200px;
+            width: 100%;
         }
         img:first-child {
           max-width: 200px;
+          width: 100%;
         }
         img:first-child + img {
           max-width: 288px;
+          width: 100%;
         }
         img:first-child + img + img {
           max-width: 288px;
+          width: 100%;
         }
       }
       > div {
@@ -45,14 +49,6 @@
           }
           button + p {
             font-size: 11px;
-          }
-          &:before {
-            background: url('../assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png') no-repeat center right;
-            content: "";
-            display: block;
-            height: 30px;
-            width: 65px;
-            margin: auto;
           }
         }
       }

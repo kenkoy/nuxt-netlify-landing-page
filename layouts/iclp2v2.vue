@@ -9,20 +9,23 @@
       <section id ="hero">
         <div class="container">
           <div class="loginbtn">
-            <i class="material-icons" data-v-7c308f66="">home</i>
-            <p class="login-text">ホーム</p>
+            <a :href="mdData.promo_banner.promo_home_button_redirect_url">
+              <i class="material-icons" data-v-7c308f66="">home</i>
+              <p class="login-text">{{mdData.promo_banner.promo_home_button}}</p>
+            </a>
           </div>
           <div>
             <div>
-              <img src="@/assets/images/iclp2v2/logo.png">
-              <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-01.png">
-              <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-02.png">
+              <img src="@/assets/images/iclp2v2/logo.png" />
+              <img :src="mdData.promo_banner.promo_images.promo_banner_image_title_1" />
+              <img :src="mdData.promo_banner.promo_images.promo_banner_image_title_2" />
             </div>
-            <div>
-              <p>✦新規プレイヤー限定特典✦</p>
-              <p>プレイし続けるほどお得な<span>総額$500のウェルカムキャッシュ</span>をゲットしよう！このビギナーズガイドでは、インターカジノをどこよりも詳しく解説しちゃいます★</p>
-              <button onclick="location.href='#'" type="button">今すぐ登録</button>
-              <p><a href="#">利用規約</a>に同意します。</p>
+            <div class="separation-star">
+              <p v-html="bannerStatement"></p>
+              <button onclick="location.href='#'" type="button">
+                <a :href="mdData.promo_banner.promo_register_button_redirect_url">{{mdData.promo_banner.promo_register_button_text}}</a>
+              </button>
+              <p><a :href="mdData.promo_banner.promo_smallterm_redirect_url">{{mdData.promo_banner.promo_smallterm_text_link}}</a>{{mdData.promo_banner.promo_smallterm_text}}</p>
             </div>
           </div>
         </div>
@@ -32,8 +35,7 @@
           <div>
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-title.png"/>
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-500WC-stamp.png"/>
-            <p>リアルマネープレイが追加キャッシュに変わる!
-              プレイを続けながら、 総額$500キャッシュを獲得しましょう。</p>
+            <p v-html="firstWelcomeStatement" />
           </div>
         </div>
         <div class="container column-2">
@@ -45,18 +47,15 @@
           </div>
         </div>
         <div class="container">
-          <div>
-            <p>ボーナスやカジノ最新情報をはじめ、
-            テーブルゲーム・スロット界のトップに君臨するクイーンが
-            選んだ 一押しゲームをいち早くお届けいたします♠</p>
+          <div class="separation-star">
+            <p class="text-center" v-html="secondWelcomeStatement"></p>
           </div>
         </div>
         <div id="testimonials">
           <div class="container">
             <div class="testi">
               <h3>初めまして、ごきげんよう!</h3>
-              <p>インターカジノではスリル満点の各種ゲームやイベントを毎月ご用意しているわ。勝ちたい方、長くじっくりプレイをしたい方にぴったりね。
-                私たちと一緒に、勝負してみない?</p>
+              <p class="text-center" v-html="rougeSpeechStatement"></p>
             </div>
             <div class="feature-img">
               <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-red-icon.png"/>
@@ -68,8 +67,7 @@
             </div>
             <div class="testi">
               <h3>チャオ! クロエだよ★</h3>
-              <p>みんなも「なんとかなる!」精神で思いっきり勝ちを目指すよー!
-                クロエについて来れる人～？お先にカジノで待ってるね!</p>
+              <p class="text-center" v-html="chloeSpeechStatement"></p>
             </div>
           </div>
         </div>
@@ -87,12 +85,12 @@
         </div>
         <div class="container game-second-section column-2">
           <div>
-            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-livecasino.png"/>
-            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-tablegame.png"/>
+            <img :src="mdData.top_game_section.top_game_game1"/>
+            <img :src="mdData.top_game_section.top_game_game2"/>
           </div>
           <div>
-            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-slot.png"/>
-            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-jackpot.png"/>
+            <img :src="mdData.top_game_section.top_game_game3"/>
+            <img :src="mdData.top_game_section.top_game_game4"/>
           </div>
         </div>
         <div class="container game-third-section column-2">
@@ -149,22 +147,24 @@
         <div class="container column-2">
             <div>
               <div class="title">
-                <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png"/>
+                <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png" data-not-lazy/>
               </div>
-              <p>ライブカジノやテーブルゲームのスキルは王国一! おしとやかな見た目とは裏腹に、その圧倒的な頭脳と センスで、実力派揃いの赤の王国のトップに長らく 君臨する実力派クイーン。</p>
-              <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Rouge.png"/>
+              <p class="separation-star" v-html="historyRougeParsedStatement"></p>
+              <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Rouge.png" data-not-lazy/>
             </div>
 
             <div>
               <div class="title">
-                <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png"/>
+                <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png" data-not-lazy/>
               </div>
-              <p>日々運試しで盛り上がる 黒の王国。 負け知らずのクイーンとしてその存在感はピカイチ! 幸運の女神とも噂される、ちょっぴりお茶目な強運クイーン。</p>
-              <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Chole.png"/>
+              <p class="separation-star" v-html="historyChloeParsedStatement"></p>
+              <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Chole.png" data-not-lazy/>
             </div>
         </div>
         <div class="container">
-            <button class="warning">今すぐ登録</button>
+            <button class="warning">
+              <a :href="mdData.history_section.history_register_button_redirect_url">{{mdData.history_section.history_register_button_text}}</a>
+            </button>
         </div>
       </section>
       <section id="payment">
@@ -201,6 +201,44 @@ export default {
     }
   },
   computed: {
+    bannerStatement () {
+      let sentences = this.mdData.promo_banner.promo_banner_statement.split(/\r?\n/)
+        .filter(statement => statement)
+        .map((statement) => {
+          return statement.slice(-1) === '\\'
+            ? statement.substring(0, statement.length - 1)
+            : statement
+        })
+      if (this.mdData.promo_banner.promo_banner_highlighted_phrase) {
+        const replacement = `<span class="redmark">${this.mdData.promo_banner.promo_banner_highlighted_phrase}</span>`
+        sentences = sentences.map((sentence) => {
+          return sentence.includes(this.mdData.promo_banner.promo_banner_highlighted_phrase)
+            ? sentence.replace(this.mdData.promo_banner.promo_banner_highlighted_phrase, replacement)
+            : sentence
+        })
+      }
+      return sentences.reduce((oldVal, newVal) => {
+        return oldVal + '<br />' + newVal
+      })
+    },
+    firstWelcomeStatement () {
+      return this.statementsParser(this.mdData.welcome_section.welcome_first_statement, this.mdData.welcome_section.welcome_first_statement_highlighted_phrase, 'redmark')
+    },
+    secondWelcomeStatement () {
+      return this.statementsParser(this.mdData.welcome_section.welcome_second_statement, null, null)
+    },
+    rougeSpeechStatement () {
+      return this.statementsParser(this.mdData.welcome_section.welcome_rouge_speech_bubble, null, null)
+    },
+    chloeSpeechStatement () {
+      return this.statementsParser(this.mdData.welcome_section.welcome_chloe_speech_bubble, null, null)
+    },
+    historyRougeParsedStatement () {
+      return this.statementsParser(this.mdData.history_section.history_rouge_statement, this.mdData.history_section.history_rouge_highlighted_phrase, 'redmark')
+    },
+    historyChloeParsedStatement () {
+      return this.statementsParser(this.mdData.history_section.history_chloe_statement, this.mdData.history_section.history_chloe_highlighted_phrase, 'blackmark')
+    }
     // USE THE CODE BELOW IF THE DESIGN / TEMPLATE HAVE BANNERS. ELSE, DELETE
     // cssBackground () {
     //   const images = this.mdData.promo_banner.promo_images
@@ -210,6 +248,28 @@ export default {
     //     '--bg-banner': `url('${images.promo_bg_banner}')`
     //   }
     // }
+  },
+  methods: {
+    statementsParser (statements, highLigtedPhrase, classStyle) {
+      let sentences = statements.split(/\r?\n/)
+        .filter(statement => statement)
+        .map((statement) => {
+          return statement.slice(-1) === '\\'
+            ? statement.substring(0, statement.length - 1)
+            : statement
+        })
+      if (highLigtedPhrase && classStyle) {
+        const replacement = `<span class="${classStyle}">${highLigtedPhrase}</span>`
+        sentences = sentences.map((line) => {
+          return line.includes(highLigtedPhrase)
+            ? line.replace(highLigtedPhrase, replacement)
+            : line
+        })
+      }
+      return sentences.reduce((oldVal, newVal) => {
+        return oldVal + '<br />' + newVal
+      })
+    }
   },
   created () {
     this.$root.$once('iclp2-data', (data) => { // Change to actual page name
