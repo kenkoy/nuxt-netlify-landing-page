@@ -153,6 +153,9 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
   #testimonials{
+    .container{
+      flex-wrap: nowrap;
+    }
     .container:first-child{
       .testi{
         &:after{
@@ -172,6 +175,7 @@
       }
     }
     .container:first-child + div{
+      flex-direction: row;
       .testi{
         &:after{
           content: "";
@@ -189,6 +193,18 @@
         }
       }
     }
+  }
+
+  .testi{
+    -ms-flex: 0 0 70%;
+    flex: 0 0 70%;
+    max-width: 0 0 70%;
+  }
+
+  .feature-img{
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    max-width: 0 0 30%;
   }
 }
 
