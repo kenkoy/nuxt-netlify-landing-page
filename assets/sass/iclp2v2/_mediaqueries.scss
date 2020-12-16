@@ -64,13 +64,27 @@
       font-size: 14px;
       color: #000;
     }
+    .container{
+      flex-wrap: wrap;
+      flex-direction: row;
+
+      .feature-img{
+        margin-top: 20px;
+        img{
+          width: auto;
+        }
+      }
+    }
+    .container:first-child + div{
+      flex-direction: column-reverse;
+    }
     .container:first-child{
-      .testi{ 
+      .testi{
         &:after{
           content: "";
           position: absolute;
           bottom: 0;
-          left: 50%;
+          right: 50%;
           width: 0;
           height: 0;
           border: 1.031em solid transparent;
@@ -140,7 +154,7 @@
 @media only screen and (min-width : 992px) {
   #testimonials{
     .container:first-child{
-      .testi{ 
+      .testi{
         &:after{
           content: '';
           position: absolute;
