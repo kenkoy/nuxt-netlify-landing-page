@@ -16,9 +16,9 @@
           </div>
           <div>
             <div id="header-text-wrapper">
-              <img alt="alt img" src="@/assets/images/iclp2v2/logo.png" />
-              <img alt="alt img" :src="mdData.promo_banner.promo_images.promo_banner_image_title_1" />
-              <img alt="alt img" :src="mdData.promo_banner.promo_images.promo_banner_image_title_2" />
+              <img class="animated fadeIn" alt="alt img" src="@/assets/images/iclp2v2/logo.png" />
+              <img class="animated fadeIn" alt="alt img" :src="mdData.promo_banner.promo_images.promo_banner_image_title_1" />
+              <img class="animated tada delay-1s" alt="alt img" :src="mdData.promo_banner.promo_images.promo_banner_image_title_2" />
             </div>
             <div class="separation-star">
               <p v-html="bannerStatement"></p>
