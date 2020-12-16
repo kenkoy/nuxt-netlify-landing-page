@@ -180,8 +180,8 @@
             <ul>
               <li>
                 通常の
-                <a href="">利用規約</a>と
-                <a href="">キャンペーン一般利用規約</a>が適用されます。
+                <a href="https://intercasino.com/about/terms-and-conditions">利用規約</a>と
+                <a href="https://intercasino.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。
               </li>
             </ul>
           </div>
