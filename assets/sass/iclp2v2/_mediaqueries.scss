@@ -46,14 +46,6 @@
           button + p {
             font-size: 11px;
           }
-          &:before {
-            background: url('../assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png') no-repeat center right;
-            content: "";
-            display: block;
-            height: 30px;
-            width: 65px;
-            margin: auto;
-          }
         }
       }
     }
@@ -154,6 +146,7 @@
   }
 
   #loyalty {
+    text-align: center;
     h3 {
       color: $TEXT_COLOR;
     }
@@ -167,13 +160,49 @@
     }
   }
 
-  #pods {
+  #pods, #profile {
     .container {
       flex-wrap: wrap;
       flex-direction: row;
+      justify-content: center;
     }
   }
 
+  #history {
+    .container {
+      .desktop {
+        width: 100%;
+        max-width: 863px;
+      }
+      .mobile {
+        width: 100%;
+        max-width: 700px;
+      }
+    }
+    img {
+      margin: auto;
+    }
+  }
+
+  #profile {
+    figure {
+      margin: 10px auto;
+      > img {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+    .container {
+      > div:first-child .sprite img {
+        margin-left: -201px;
+      }
+    }
+   .sprite {
+     width: 201px;
+     margin: auto;
+     overflow: hidden;
+   }
+  }
 }
 
 
@@ -184,7 +213,7 @@
     display: none;
   }
   #pods {
-    figure {
+    article {
       -ms-flex: 0 0 33.333333%;
       flex: 0 0 33.333333%;
       max-width: 33.333333%;
@@ -252,8 +281,31 @@
 
   #detail {
     .container{
-      padding-left: 25%;
-      padding-right: 25%;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+
+  #pods {
+    .container {
+      flex-wrap: nowrap;
+      flex-direction: row;
+      img {
+        width: 100%;
+        max-width: 295px;
+      }
+    }
+  }
+
+  #profile {
+    p {
+      padding: 0 10px;
+    }
+    figure {
+      -ms-flex: 0 0 40%;
+      flex: 0 0 40%;
+      max-width: 40%;
+      margin: 10px;
     }
   }
 

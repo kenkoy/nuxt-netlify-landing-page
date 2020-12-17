@@ -20,14 +20,14 @@ p {
 }
 
 button {
-  background-color: #FF6200;
+  background: $WARNING;
   border-radius: 100px;
   padding: 10px 40px;
   border: 0;
-  color: #fff;
+  color: $TEXT_COLOR;
   font-size: 1.5em;
   width: 280px;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 
 #hero{
@@ -42,15 +42,6 @@ button {
 #detail{
   background: linear-gradient( 180deg, rgba(159, 15, 79, 1) 0%, rgba(79, 23, 117, 1) 28%, rgba(0, 0, 0, 1) 88% );
   text-align: center;
-
-  // > .container:first-child img:first-child{
-  //   max-width: 500px;
-  //   width: 100%;
-  // }
-  // > .container:first-child img:first-child + img{
-  //   max-width: 664px;
-  //   width: 100%;
-  // }
 }
 
 #testimonials{
@@ -125,9 +116,11 @@ button {
 
 #steps {
   background: linear-gradient( 90deg, rgba(131, 58, 180, 1) 0%, rgba(255, 0, 90, 1) 50%, rgba(252, 176, 69, 1) 100% );
+  text-align: center;
   img {
     width: 100%;
     max-width: 364px;
+    margin: auto;
   }
 }
 
@@ -164,4 +157,15 @@ button {
   color: $TEXT_COLOR;
   font-style: normal;
   font-size: 30px;
+}
+
+.star {
+  &:before {
+    background: url('../assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png') no-repeat center right;
+    content: "";
+    display: block;
+    height: 30px;
+    width: 65px;
+    margin: auto;
+  }
 }
