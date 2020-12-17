@@ -94,7 +94,6 @@ button {
 #golden-separation {
     background: radial-gradient( ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80% ), radial-gradient( ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100% );
     padding: 15px 0;
-
     img{
       display: block;
       margin: auto;
@@ -108,6 +107,33 @@ button {
       width: 100%;
     }
   }
+}
+
+#loyalty {
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: radial-gradient( ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80% ), radial-gradient( ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100% );
+  }
+}
+
+#steps {
+  background: linear-gradient( 90deg, rgba(131, 58, 180, 1) 0%, rgba(255, 0, 90, 1) 50%, rgba(252, 176, 69, 1) 100% );
+  img {
+    width: 100%;
+    max-width: 364px;
+  }
+}
+
+#pods img {
+  width: 100%;
+  max-width: 295px;
 }
 
 #payment {

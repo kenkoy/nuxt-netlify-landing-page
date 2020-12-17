@@ -135,7 +135,16 @@
       img:first-child {
         width: 100%;
         max-width: 500px;
-        border: 1px solid red;
+      }
+      img:first-child + img {
+        width: 100%;
+        max-width: 664px;
+      }
+    }
+    .column-2 {
+      img:first-child {
+        width: 100%;
+        max-width: 500px;
       }
       img:first-child + img {
         width: 100%;
@@ -143,7 +152,28 @@
       }
     }
   }
-  
+
+  #loyalty {
+    h3 {
+      color: $TEXT_COLOR;
+    }
+    img {
+      width: 100%;
+      max-width: 900px;
+    }
+    .banner img {
+        width: 100%;
+        max-width: 900px;
+    }
+  }
+
+  #pods {
+    .container {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  }
+
 }
 
 
@@ -152,6 +182,13 @@
 @media only screen and (min-width : 576px) {
   #testimonials {
     display: none;
+  }
+  #pods {
+    figure {
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+    }
   }
 }
 

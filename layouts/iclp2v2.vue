@@ -36,7 +36,7 @@
               プレイを続けながら、 総額$500キャッシュを獲得しましょう。</p>
           </div>
         </div>
-        <div class="container column-2 test">
+        <div class="container column-2">
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph1.png"/>
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph2.png"/>
         </div>
@@ -100,14 +100,29 @@
           </div>
         </div>
       </section>
-      <section id="#golden-separation"></section>
-      <section id="">
+      <section id="loyalty">
         <div class="container">
-          <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty1.png">
-          <h3>レベルが上がるとカジノ内での <span>地位向上</span> !</h3>
-          <p><span>レベル7の最高ランク</span>、 <em>インター大公</em>ではあの●●アイテムが出現 !?</p>
-          <img src="">
-          <img src="">
+          <div>
+            <div class="banner">
+              <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty1.png"/>
+              <h3>レベルが上がるとカジノ内での <span>地位向上</span> !</h3>
+              <p><span>レベル7の最高ランク</span>、 <em>インター大公</em>ではあの●●アイテムが出現 !?</p>
+            </div>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty2.png"/>
+            <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty3.png"/>
+          </div>
+        </div>
+      </section>
+      <section id="steps">
+        <div class="container">
+          <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-title.png"/>
+        </div>
+      </section>
+      <section id="pods">
+        <div class="container">
+          <figure><img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-fair.png"/></figure>
+          <figure><img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-visa.png"/></figure>
+          <figure><img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-wa.png"/></figure>
         </div>
       </section>
       <section id="payment">
