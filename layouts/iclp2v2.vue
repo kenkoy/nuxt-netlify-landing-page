@@ -28,7 +28,7 @@
         </div>
       </section>
       <section id="detail">
-        <div class="container">
+        <div class="container welcome">
           <div>
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-title.png"/>
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-500WC-stamp.png"/>
@@ -36,13 +36,9 @@
               プレイを続けながら、 総額$500キャッシュを獲得しましょう。</p>
           </div>
         </div>
-        <div class="container column-2">
-          <div>
+        <div class="container column-2 test">
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph1.png"/>
-          </div>
-          <div>
             <img src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph2.png"/>
-          </div>
         </div>
         <div class="container">
           <div>

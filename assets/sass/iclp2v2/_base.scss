@@ -7,11 +7,6 @@ footer{
   background: $BG_MAIN;
 }
 
-.container{
-  padding-left: 25%;
-  padding-right: 25%;
-}
-
 a{
   color: $LINK_COLOR;
 
@@ -39,6 +34,8 @@ button {
   img{
     display: block;
     margin: auto;
+    width: 100%;
+    max-width: 510px;
   }
 }
 
@@ -46,15 +43,16 @@ button {
   background: linear-gradient( 180deg, rgba(159, 15, 79, 1) 0%, rgba(79, 23, 117, 1) 28%, rgba(0, 0, 0, 1) 88% );
   text-align: center;
 
-  > .container:first-child img:first-child{
-    max-width: 500px;
-    width: 100%;
-  }
-  > .container:first-child img:first-child + img{
-    max-width: 664px;
-    width: 100%;
-  }
+  // > .container:first-child img:first-child{
+  //   max-width: 500px;
+  //   width: 100%;
+  // }
+  // > .container:first-child img:first-child + img{
+  //   max-width: 664px;
+  //   width: 100%;
+  // }
 }
+
 #testimonials{
   .container:first-child{
     margin: 20px auto;

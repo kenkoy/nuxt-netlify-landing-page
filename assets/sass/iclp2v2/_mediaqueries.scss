@@ -125,10 +125,28 @@
     .game-third-section{
       img{
         max-width: 420px;
+        width: 100%;
       }
     }
   }
+
+  #detail {
+    .welcome {
+      img:first-child {
+        width: 100%;
+        max-width: 500px;
+        border: 1px solid red;
+      }
+      img:first-child + img {
+        width: 100%;
+        max-width: 664px;
+      }
+    }
+  }
+  
 }
+
+
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 576px) {
@@ -192,6 +210,13 @@
           margin-left: -1.031em;
         }
       }
+    }
+  }
+
+  #detail {
+    .container{
+      padding-left: 25%;
+      padding-right: 25%;
     }
   }
 
