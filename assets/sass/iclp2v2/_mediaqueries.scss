@@ -26,25 +26,30 @@
         }
         img:first-child {
           max-width: 200px;
+          margin-bottom: 20px;
         }
         img:first-child + img {
           max-width: 288px;
+          margin-bottom: 20px;
         }
         img:first-child + img + img {
           max-width: 288px;
+          margin-bottom: 20px;
         }
       }
       > div {
         div:last-child {
           p {
             font-size: 14px;
-            margin: 0;
+            margin: 0 auto;
+            text-align: center;
             span {
               background-color: #ff0375;
             }
           }
           button + p {
             font-size: 11px;
+            margin-bottom: 50px;
           }
         }
       }
@@ -107,8 +112,11 @@
   }
 
   #golden-separation {
+    padding-right: 15px;
+    padding-left: 15px;
     > div img {
-      width: 290px;
+      max-width: 609px;
+      width: 100%;
     }
   }
 
@@ -185,6 +193,7 @@
   }
 
   #profile {
+    text-align: center;
     figure {
       margin: 10px auto;
       > img {
@@ -193,7 +202,7 @@
       }
     }
     .container {
-      > div:first-child .sprite img {
+      > figure:first-child .sprite img {
         margin-left: -201px;
       }
     }
@@ -209,6 +218,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 576px) {
+  #hero {
+    background: url('../assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-bg.jpg') no-repeat top;
+  }
   #testimonials {
     display: none;
   }
@@ -217,6 +229,17 @@
       -ms-flex: 0 0 33.333333%;
       flex: 0 0 33.333333%;
       max-width: 33.333333%;
+    }
+  }
+
+  /* Testing only */
+  #history-profile {
+    background: url('../assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-history-bg.jpg');
+    content: "";
+    width: 100%;
+    height: 100%;
+    &:before {
+      border-top: 1px solid red;
     }
   }
 }
@@ -231,6 +254,9 @@
   }
   #testimonials {
     display: block;
+  }
+  #profile {
+    text-align: center;
   }
 }
 
