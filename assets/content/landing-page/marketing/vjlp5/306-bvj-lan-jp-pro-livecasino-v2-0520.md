@@ -1,13 +1,13 @@
 ---
-slug_name: 306-bvj-lan-jp-pro-livecasino-v2-0520
+slug_name: 306-bvj-lan-jp-pro-livecasino-v2-0520 xxxxxxx
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 promo_banner:
   promo_title: 306-bvj-lan-jp-pro-livecasino-v2-0520
   promo_images:
-    promo_bg_desktop: /marketing/img/dsgn-1567-bg-vjlp2-dt.png
-    promo_bg_mobile: /marketing/img/dsgn-1567-vjlp2-mob.png
+    promo_bg_desktop: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
+    promo_bg_mobile: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2-mV2.png
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
   first_title: 最大$1000
   second_title: ビギナーズボーナス
