@@ -74,7 +74,9 @@
       </section>
       <section id="golden-separation">
         <div class="container">
-          <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame1.png"/>
+          <div>
+            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame1.png"/>
+          </div>
         </div>
       </section>
       <section id="games">
@@ -104,7 +106,7 @@
       </section>
       <section id="loyalty-program">
         <div class="container">
-          <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty1.png">
+          <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty1.png" data-not-lazy>
         </div>
         <div class="container">
           <div>
