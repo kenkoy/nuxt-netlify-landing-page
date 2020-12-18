@@ -27,9 +27,9 @@
       <div v-html="htmlBody" />
 
       <Footer
-        :promoLanguageCode="mdData.promo_locale.promo_language_code"
-        :promoCountryCode="mdData.promo_locale.promo_country_code"
-        :landingPageType="'verajohn'"
+        :promo-language-code="mdData.promo_locale.promo_language_code"
+        :promo-country-code="mdData.promo_locale.promo_country_code"
+        :landing-page-type="'verajohn'"
       />
     </div>
   </div>
@@ -71,7 +71,7 @@ export default {
 }
 </script>
 
-<style lang="scss"> //Change to actual path, all assets should be on asset folder. Create separate assets / sass for each templates
+<style lang="scss"> // Change to actual path, all assets should be on asset folder. Create separate assets / sass for each templates
   .vjlp5_wrapper {
     @import '@/assets/sass/base/fonts.css';
     @import '@/assets/sass/vjlp5/style.scss';

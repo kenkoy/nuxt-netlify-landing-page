@@ -4,24 +4,13 @@
 
 <script>
 export default {
-  layout: 'vjlp5', //Change to actual layout
+  layout: 'vjlp5', // Change to actual layout
   async asyncData ({ params, error }) {
     try {
-      const markDownData = await import('~/assets/content/landing-page/marketing/vjlp5/' + params.slug + '.md') //Change to actual slug
+      const markDownData = await import('~/assets/content/landing-page/marketing/vjlp5/' + params.slug + '.md') // Change to actual slug
       return { markDownData }
     } catch (e) {
       error(e)
-    }
-  },
-  mounted () {
-    this.emitData(this.markDownData)
-  },
-  methods: {
-    emitData (data) {
-      this.$root.$emit('vjlp5-data', { //Change to actual page name
-        yamlData: data.attributes,
-        htmlData: data.html
-      })
     }
   },
   head () {
@@ -93,6 +82,17 @@ export default {
         goHead: ['innerHTML'],
         gaHead: ['innerHTML']
       }
+    }
+  },
+  mounted () {
+    this.emitData(this.markDownData)
+  },
+  methods: {
+    emitData (data) {
+      this.$root.$emit('vjlp5-data', { // Change to actual page name
+        yamlData: data.attributes,
+        htmlData: data.html
+      })
     }
   }
 }
