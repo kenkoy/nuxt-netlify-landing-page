@@ -139,7 +139,14 @@
       </section>
       <section id="history">
         <div class="container">
-            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-History1.png"/>
+            <div>
+              <div class="desktop">
+                <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-History1.png"/>
+              </div>
+              <div class="mobile">
+                <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-History2.png"/>
+              </div>
+            </div>
         </div>
         <div class="container">
             <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile-title.png"/>
@@ -147,7 +154,7 @@
         <div class="container column-2">
             <div>
               <div class="title">
-                <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png"/>
+                <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png" data-not-lazy/>
               </div>
               <p class="separation-star" v-html="historyRougeParsedStatement"></p>
               <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Rouge.png"/>
@@ -155,7 +162,7 @@
 
             <div>
               <div class="title">
-                <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png"/>
+                <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png" data-not-lazy/>
               </div>
               <p class="separation-star" v-html="historyChloeParsedStatement"></p>
               <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Chole.png"/>
