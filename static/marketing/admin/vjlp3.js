@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import htm from 'https://unpkg.com/htm?module'
+import htm from './external-scripts/htm.module.js'
 
 const html = htm.bind(h)
 export const VJLP3_PREVIEW = createClass({
