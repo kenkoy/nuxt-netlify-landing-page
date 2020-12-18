@@ -322,7 +322,7 @@
        background: var(--bg-banner) center;
        .container{
          background: var(--bg-image) no-repeat center;
-         background-size: cover;
+         background-size: contain;
        }
    }
 
