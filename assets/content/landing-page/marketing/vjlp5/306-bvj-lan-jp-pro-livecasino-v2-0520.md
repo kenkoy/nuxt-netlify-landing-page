@@ -4,20 +4,20 @@ promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 promo_banner:
+  promo_title: 306-bvj-lan-jp-pro-livecasino-v2-0520
+  promo_images:
+    promo_bg_desktop: /marketing/img/dsgn-1567-bg-vjlp2-dt.png
+    promo_bg_mobile: /marketing/img/dsgn-1567-vjlp2-mob.png
+    promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
+  first_title: 最大$1000
+  second_title: ビギナーズボーナス
+  promo_login_button_redirect_url: https://verajohn.com/#join
+  promo_join_button_redirect_url: https://verajohn.com/#join
+  promo_join_button: 入金ボーナス獲得する
+  promo_login_button: 登録
+  phrase: $1000
   promo_join_button_location:
     - hidden
-  promo_login_button: 登録
-  promo_login_button_redirect_url: https://verajohn.com/#join
-  promo_join_button: 入金ボーナス獲得する
-  promo_join_button_redirect_url: https://verajohn.com/#join
-  promo_images:
-    promo_bg_desktop: /marketing/img/bg-dt.jpg
-    promo_bg_mobile: /marketing/img/bg-mob.jpg
-    promo_bg_banner: /marketing/img/bg-dt.jpg
-  promo_title: 306-bvj-lan-jp-pro-livecasino-v2-0520
-  first_title: '最大$1000'
-  second_title: 'ビギナーズボーナス'
-  phrase: '$1000'
 steps:
   step_title_1: ご登録
   step_description_1: 安全 & 安心！
