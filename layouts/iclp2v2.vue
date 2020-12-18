@@ -6,26 +6,29 @@
       v-if="Object.keys(mdData).length > 0"
       class="iclp2-main"
     >
-      <section id ="hero" :style="cssBackground">
+      <section id="hero" :style="cssBackground">
         <div class="container">
           <div class="loginbtn">
             <a rel="noopener" :href="mdData.promo_banner.promo_home_button_redirect_url">
               <i class="material-icons" data-v-7c308f66="">home</i>
-              <p class="login-text">{{mdData.promo_banner.promo_home_button}}</p>
+              <p class="login-text">{{ mdData.promo_banner.promo_home_button }}</p>
             </a>
           </div>
           <div>
             <div id="header-text-wrapper">
-              <img class="animated fadeIn" alt="alt img" src="@/assets/images/iclp2v2/logo.png" />
-              <img class="animated fadeIn" alt="alt img" :src="mdData.promo_banner.promo_images.promo_banner_image_title_1" />
-              <img class="animated tada delay-1s" alt="alt img" :src="mdData.promo_banner.promo_images.promo_banner_image_title_2" />
+              <img class="animated fadeIn" alt="alt img" src="@/assets/images/iclp2v2/logo.png">
+              <img class="animated fadeIn" alt="alt img" :src="mdData.promo_banner.promo_images.promo_banner_image_title_1">
+              <img class="animated tada delay-1s" alt="alt img" :src="mdData.promo_banner.promo_images.promo_banner_image_title_2">
             </div>
             <div class="separation-star">
-              <p v-html="bannerStatement"></p>
+              <p v-html="bannerStatement" />
               <button onclick="location.href='#'" type="button">
-                <a rel="noopener" :href="mdData.promo_banner.promo_register_button_redirect_url">{{mdData.promo_banner.promo_register_button_text}}</a>
+                <a rel="noopener" :href="mdData.promo_banner.promo_register_button_redirect_url">{{ mdData.promo_banner.promo_register_button_text }}</a>
               </button>
-              <p><a rel="noopener" :href="mdData.promo_banner.promo_smallterm_redirect_url">{{mdData.promo_banner.promo_smallterm_text_link}}</a>{{mdData.promo_banner.promo_smallterm_text}}</p>
+              <p>
+                <a rel="noopener" :href="mdData.promo_banner.promo_smallterm_redirect_url">{{ mdData.promo_banner.promo_smallterm_text_link }}</a>
+                {{ mdData.promo_banner.promo_smallterm_text }}
+              </p>
             </div>
           </div>
         </div>
@@ -33,41 +36,41 @@
       <section id="detail">
         <div class="container">
           <div>
-            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-title.png"/>
-            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-500WC-stamp.png"/>
+            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-title.png">
+            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-500WC-stamp.png">
             <p v-html="firstWelcomeStatement" />
           </div>
         </div>
         <div class="container column-2">
           <div>
-            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph1.png"/>
+            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph1.png">
           </div>
           <div>
-            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph2.png"/>
+            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph2.png">
           </div>
         </div>
         <div class="container">
           <div class="separation-star">
-            <p class="text-center" v-html="secondWelcomeStatement"></p>
+            <p class="text-center" v-html="secondWelcomeStatement" />
           </div>
         </div>
         <div id="testimonials">
           <div class="container">
             <summary>
               <h3>初めまして、ごきげんよう!</h3>
-              <p class="text-center" v-html="rougeSpeechStatement"></p>
+              <p class="text-center" v-html="rougeSpeechStatement" />
             </summary>
             <div class="feature-img">
-              <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-red-icon.png"/>
+              <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-red-icon.png">
             </div>
           </div>
           <div class="container">
             <div class="feature-img">
-              <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-black-icon.png"/>
+              <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-black-icon.png">
             </div>
             <summary>
               <h3>チャオ! クロエだよ★</h3>
-              <p class="text-center" v-html="chloeSpeechStatement"></p>
+              <p class="text-center" v-html="chloeSpeechStatement" />
             </summary>
           </div>
         </div>
@@ -75,32 +78,32 @@
       <section id="golden-separation">
         <div class="container">
           <div>
-            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame1.png"/>
+            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame1.png">
           </div>
         </div>
       </section>
       <section id="games">
         <div class="container game-first-section">
           <div>
-            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame2.png"/>
+            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame2.png">
           </div>
         </div>
         <div class="container game-second-section column-2">
           <div>
-            <img alt="alt img" :src="mdData.top_game_section.top_game_game1"/>
-            <img alt="alt img" :src="mdData.top_game_section.top_game_game2"/>
+            <img alt="alt img" :src="mdData.top_game_section.top_game_game1">
+            <img alt="alt img" :src="mdData.top_game_section.top_game_game2">
           </div>
           <div>
-            <img alt="alt img" :src="mdData.top_game_section.top_game_game3"/>
-            <img alt="alt img" :src="mdData.top_game_section.top_game_game4"/>
+            <img alt="alt img" :src="mdData.top_game_section.top_game_game3">
+            <img alt="alt img" :src="mdData.top_game_section.top_game_game4">
           </div>
         </div>
         <div class="container game-third-section column-2">
           <div>
-            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-CS.png"/>
+            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-CS.png">
           </div>
           <div>
-            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-MOBILE.png"/>
+            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-MOBILE.png">
           </div>
         </div>
       </section>
@@ -123,57 +126,57 @@
       </section>
       <section id="gradient-separation">
         <div class="container">
-          <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-title.png"/>
+          <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-title.png">
         </div>
       </section>
       <section id="pods">
         <div class="container">
           <figure>
-            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-fair.png"/>
+            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-fair.png">
           </figure>
           <figure>
-            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-visa.png"/>
+            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-visa.png">
           </figure>
           <figure>
-            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-wa.png"/>
+            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-wa.png">
           </figure>
         </div>
       </section>
       <section id="history">
         <div class="container">
-            <div>
-              <div class="desktop">
-                <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-History1.png"/>
-              </div>
-              <div class="mobile">
-                <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-History2.png"/>
-              </div>
+          <div>
+            <div class="desktop">
+              <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-History1.png">
             </div>
+            <div class="mobile">
+              <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-History2.png">
+            </div>
+          </div>
         </div>
         <div class="container">
-            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile-title.png"/>
+          <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile-title.png">
         </div>
         <div class="container column-2">
-            <div>
-              <div class="title">
-                <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png" data-not-lazy/>
-              </div>
-              <p class="separation-star" v-html="historyRougeParsedStatement"></p>
-              <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Rouge.png"/>
+          <div>
+            <div class="title">
+              <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png" data-not-lazy>
             </div>
+            <p class="separation-star" v-html="historyRougeParsedStatement" />
+            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Rouge.png">
+          </div>
 
-            <div>
-              <div class="title">
-                <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png" data-not-lazy/>
-              </div>
-              <p class="separation-star" v-html="historyChloeParsedStatement"></p>
-              <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Chole.png"/>
+          <div>
+            <div class="title">
+              <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png" data-not-lazy>
             </div>
+            <p class="separation-star" v-html="historyChloeParsedStatement" />
+            <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Chole.png">
+          </div>
         </div>
         <div class="container">
-            <button class="warning">
-              <a rel="noopener" :href="mdData.history_section.history_register_button_redirect_url">{{mdData.history_section.history_register_button_text}}</a>
-            </button>
+          <button class="warning">
+            <a rel="noopener" :href="mdData.history_section.history_register_button_redirect_url">{{ mdData.history_section.history_register_button_text }}</a>
+          </button>
         </div>
       </section>
       <section id="payment">
@@ -197,9 +200,9 @@
         </div>
       </section>
       <Footer
-        :promoLanguageCode="mdData.promo_locale.promo_language_code"
-        :promoCountryCode="mdData.promo_locale.promo_country_code"
-        :landingPageType="'intercasino'"
+        :promo-language-code="mdData.promo_locale.promo_language_code"
+        :promo-country-code="mdData.promo_locale.promo_country_code"
+        :landing-page-type="'intercasino'"
       />
     </div>
   </div>
@@ -266,6 +269,15 @@ export default {
       }
     }
   },
+  created () {
+    this.$root.$once('iclp2-data', (data) => { // Change to actual page name
+      this.htmlBody = data.htmlData
+      this.mdData = data.yamlData
+    })
+  },
+  beforeDestroy () {
+    this.$root.$off('iclp2-data') // Change to actual page name
+  },
   methods: {
     statementsParser (statements, highLigtedPhrase, classStyle) {
       let sentences = statements.split(/\r?\n/)
@@ -287,15 +299,6 @@ export default {
         return oldVal + '<br />' + newVal
       })
     }
-  },
-  created () {
-    this.$root.$once('iclp2-data', (data) => { // Change to actual page name
-      this.htmlBody = data.htmlData
-      this.mdData = data.yamlData
-    })
-  },
-  beforeDestroy () {
-    this.$root.$off('iclp2-data') // Change to actual page name
   }
 }
 </script>

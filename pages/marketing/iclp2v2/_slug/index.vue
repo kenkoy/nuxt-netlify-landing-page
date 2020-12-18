@@ -13,17 +13,6 @@ export default {
       error(e)
     }
   },
-  mounted () {
-    this.emitData(this.markDownData)
-  },
-  methods: {
-    emitData (data) {
-      this.$root.$emit('iclp2-data', { // Change to actual page name
-        yamlData: data.attributes,
-        htmlData: data.html
-      })
-    }
-  },
   head () {
     const tagIds = this.markDownData.attributes.field_ids
     const goId = tagIds.go_container_id || 'OPT-PHSNXP6'
@@ -93,6 +82,17 @@ export default {
         goHead: ['innerHTML'],
         gaHead: ['innerHTML']
       }
+    }
+  },
+  mounted () {
+    this.emitData(this.markDownData)
+  },
+  methods: {
+    emitData (data) {
+      this.$root.$emit('iclp2-data', { // Change to actual page name
+        yamlData: data.attributes,
+        htmlData: data.html
+      })
     }
   }
 }
