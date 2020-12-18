@@ -84,7 +84,7 @@
       flex-direction: column-reverse;
     }
     .container:first-child{
-      .testi{
+      summary{
         &:after{
           content: "";
           position: absolute;
@@ -101,7 +101,7 @@
       }
     }
     .container:first-child + div{
-      .testi{
+      summary{
         &:after{
           content: "";
           position: absolute;
@@ -138,6 +138,7 @@
   }
   #pods{
     .container{
+        justify-content: center;
         flex-wrap: wrap;
         flex-direction: row;
 
@@ -157,10 +158,11 @@
     display: none;
   }
   #pods{
-    .container > div{
+    .container > figure{
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
+        margin: 0;
 
         img{
           width: 100%;
@@ -197,7 +199,7 @@
       flex-wrap: nowrap;
     }
     .container:first-child{
-      .testi{
+      summary{
         &:after{
           content: '';
           position: absolute;
@@ -217,7 +219,7 @@
     .container:first-child + div{
       flex-direction: row;
 
-      .testi{
+      summary{
         &:after{
           content: "";
           position: absolute;
@@ -236,7 +238,7 @@
     }
   }
 
-  .testi{
+  summary{
     -ms-flex: 0 0 70%;
     flex: 0 0 70%;
     max-width: 0 0 70%;

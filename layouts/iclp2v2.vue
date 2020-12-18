@@ -53,10 +53,10 @@
         </div>
         <div id="testimonials">
           <div class="container">
-            <div class="testi">
+            <summary>
               <h3>初めまして、ごきげんよう!</h3>
               <p class="text-center" v-html="rougeSpeechStatement"></p>
-            </div>
+            </summary>
             <div class="feature-img">
               <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-red-icon.png"/>
             </div>
@@ -65,10 +65,10 @@
             <div class="feature-img">
               <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-black-icon.png"/>
             </div>
-            <div class="testi">
+            <summary>
               <h3>チャオ! クロエだよ★</h3>
               <p class="text-center" v-html="chloeSpeechStatement"></p>
-            </div>
+            </summary>
           </div>
         </div>
       </section>
@@ -126,15 +126,15 @@
       </section>
       <section id="pods">
         <div class="container">
-          <div>
+          <figure>
             <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-fair.png"/>
-          </div>
-          <div>
+          </figure>
+          <figure>
             <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-visa.png"/>
-          </div>
-          <div>
+          </figure>
+          <figure>
             <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-wa.png"/>
-          </div>
+          </figure>
         </div>
       </section>
       <section id="history">
