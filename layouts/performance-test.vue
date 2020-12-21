@@ -23,11 +23,11 @@
         </section>
       -->
       <!-- <div v-html="htmlBody" /> -->
-      <!-- <Footer
+      <Footer
         :promo-language-code="mdData.promo_locale.promo_language_code"
         :promo-country-code="mdData.promo_locale.promo_country_code"
         :landing-page-type="'verajohn'"
-      /> -->
+      />
     </div>
   </div>
 </template>
