@@ -33,12 +33,12 @@
 </template>
 
 <script>
-// import Footer from '@/components/Base/TheFooter.vue'
+import Footer from '@/components/Base/TheFooter.vue'
 
 export default {
-  // components: {
-  //   Footer
-  // },
+  components: {
+    Footer
+  },
   data () {
     return {
       mdData: {},
