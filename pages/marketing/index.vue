@@ -1,7 +1,9 @@
 <template>
-  <div>
+  <div class="home_wrapper">
     <section class="intro">
-      <h1>Digital Acquisition Services</h1>
+      <div class="container">
+        <h1>Digital Acquisition Services</h1>
+      </div>
     </section>
   </div>
 </template>
@@ -21,23 +23,28 @@ export default {
 }
 </script>
 <style scoped>
+.home_wrapper{
+  background: url('~assets/images/home-bg2.jpg') no-repeat;
+  background-attachment: fixed;
+}
 .intro {
-  height: 300px;
+  min-height: 800px;
   position: relative;
   padding: 30px;
   box-sizing: border-box;
-  background-image: url('~assets/images/banner-desktop-new.png');
+  background: url('~assets/images/home-bg.png') no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .intro h1 {
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 5%;
   width: 90%;
   font-size: 4.5rem;
-  color: white;
+  color: #989898;
+  max-width: 30%;
 }
 
 @media (min-width: 768px) {
