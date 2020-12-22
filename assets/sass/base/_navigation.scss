@@ -1,6 +1,6 @@
 $NAV_BG: #fff;
 $NAV_PADDING: 15px;
-$NAV_LINKS_SPACING: 0 8px;
+$NAV_LINKS_SPACING: 0 6px;
 $NAV_LINKS_COLOR: #243238;
 $NAV_FONT_SIZE: 11px;
 
@@ -29,11 +29,13 @@ $NAV_HAMBURGER_LINES_COLOR: #fff;
       font-weight: 700;
     }
 
-    #vj.active{
+    #vj.active,
+    #vj:hover{
       background: linear-gradient(to bottom, #fb57cc, #de1681);
       color: #fff;
     }
-    #ic.active{
+    #ic.active,
+    #ic:hover{
       background: #FF6200;
       color: #fff;
     }
@@ -46,14 +48,14 @@ $NAV_HAMBURGER_LINES_COLOR: #fff;
         }
 
         > div:first-child{
-            -ms-flex: 0 0 20%;
-            flex: 0 0 20%;
-            max-width: 20%;
+            -ms-flex: 0 0 15%;
+            flex: 0 0 15%;
+            max-width: 15%;
         }
         > div:first-child + div{
-            -ms-flex: 0 0 80%;
-            flex: 0 0 80%;
-            max-width: 80%;
+            -ms-flex: 0 0 85%;
+            flex: 0 0 85%;
+            max-width: 85%;
         }
 
         .nuxt-link-exact-active{
