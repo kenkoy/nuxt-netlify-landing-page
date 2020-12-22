@@ -6,12 +6,18 @@
           <img src="~/assets/images/gamesys-logo.png">
         </div>
         <div>
-          <nuxt-link v-for="(navLinks, navIndex) in navItems" :key="navIndex" :to="navLinks.path">
-            {{ navLinks.name }}
-          </nuxt-link>
-          <nuxt-link to="/marketing/admin/#/" target="_blank">
-            Admin
-          </nuxt-link>
+          <span v-for="(navLinks, navIndex) in navItems" :key="navIndex">
+            <nuxt-link v-if="(navLinks.name.includes(switchTemplate))" :to="navLinks.path">
+              {{ navLinks.name }}
+            </nuxt-link>
+          </span>
+          <div id="switch">
+            <nuxt-link to="/marketing/admin/#/" target="_blank">
+              Admin
+            </nuxt-link>
+            <button id="vj" :class="switchTemplate === 'vj' ? 'active' : ''" @click="switchTemplate ='vj'">VJ</button>
+            <button id="ic" :class="switchTemplate === 'ic' ? 'active' : ''" @click="switchTemplate = 'ic'">IC</button>
+          </div>
         </div>
       </div>
     </nav>
@@ -50,6 +56,7 @@ export default {
       desktop: true,
       mobile: false,
       isActive: false,
+      switchTemplate: 'vj',
       navItems: [{
         name: '',
         path: ''
@@ -95,6 +102,6 @@ export default {
 </script>
 <style lang="scss">
   .nav_wrapper {
-  @import '@/assets/sass/base/style.scss';
+    @import '@/assets/sass/base/style.scss';
   }
 </style>

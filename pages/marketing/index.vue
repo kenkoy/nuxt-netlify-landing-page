@@ -6,6 +6,20 @@
   </div>
 </template>
 
+<script>
+export default {
+  head () {
+    return {
+      htmlAttrs: {
+        lang: 'ja'
+      },
+      bodyAttrs: {
+        id: 'ja-jp'
+      }
+    }
+  }
+}
+</script>
 <style scoped>
 .intro {
   height: 300px;

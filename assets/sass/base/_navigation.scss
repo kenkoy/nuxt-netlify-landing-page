@@ -2,7 +2,7 @@ $NAV_BG: #fff;
 $NAV_PADDING: 15px;
 $NAV_LINKS_SPACING: 0 8px;
 $NAV_LINKS_COLOR: #243238;
-$NAV_FONT_SIZE: 14px;
+$NAV_FONT_SIZE: 11px;
 
 $NAV_HAMBURGER_BORDER_COLOR: #e33227;
 $NAV_HAMBURGER_BG_CONTENT: #fff;
@@ -15,6 +15,28 @@ $NAV_HAMBURGER_LINES_COLOR: #fff;
 }
 #nav-desktop{
     background: $NAV_BG;
+
+    #switch{
+      float: right;
+    }
+
+    #vj, #ic{
+      background: #e4e4e4;
+      color: #a9a9a9;
+      border-radius: 3px;
+      padding: 5px 10px;
+      border: none;
+      font-weight: 700;
+    }
+
+    #vj.active{
+      background: linear-gradient(to bottom, #fb57cc, #de1681);
+      color: #fff;
+    }
+    #ic.active{
+      background: #FF6200;
+      color: #fff;
+    }
 
     .container{
         align-items: center;
@@ -41,18 +63,18 @@ $NAV_HAMBURGER_LINES_COLOR: #fff;
     }
 }
 @at-root .nav_wrapper{
-  nav{
-      a{
-          text-decoration: none;
-          margin: $NAV_LINKS_SPACING;
-          color: $NAV_LINKS_COLOR;
-          font-size: $NAV_FONT_SIZE;
-          padding: 30px 10px;
-          display: inline-block;
-          text-transform: capitalize;
-          font-weight: 700;
-          text-transform: uppercase;
-      }
+  nav a {
+      font-family: 'Open Sans', sans-serif;
+      text-decoration: none;
+      margin: $NAV_LINKS_SPACING;
+      color: $NAV_LINKS_COLOR;
+      font-size: $NAV_FONT_SIZE;
+      padding: 30px 10px;
+      display: inline-block;
+      text-transform: capitalize;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-bottom: solid 5px transparent;
   }
 }
 
