@@ -24,8 +24,9 @@ export default {
 </script>
 <style scoped>
 .home_wrapper{
-  background: url('~assets/images/home-bg2.jpg') no-repeat;
+  background: url('~assets/images/home-bg2.jpg') no-repeat #c21a1a;
   background-attachment: fixed;
+  min-height: 800px;
 }
 .intro {
   min-height: 800px;
