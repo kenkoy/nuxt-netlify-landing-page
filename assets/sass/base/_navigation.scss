@@ -65,6 +65,9 @@ $NAV_HAMBURGER_LINES_COLOR: #fff;
     }
 }
 @at-root .nav_wrapper{
+  z-index: 1;
+  position: relative;
+  
   nav a {
       font-family: 'Open Sans', sans-serif;
       text-decoration: none;

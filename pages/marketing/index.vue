@@ -1,5 +1,6 @@
 <template>
   <div :class="{ home_wrapper: true }">
+    <div id="gradient-wrapper"> </div>
     <section class="intro">
       <div class="container">
         <h1 class="animated fadeIn delay-1s">Digital Acquisition Services</h1>
@@ -10,7 +11,7 @@
     <section id="section-1">
       <div class="container">
         <div>
-          <img src="@/assets/images/gamesys-logo.png"/>
+          <img src="@/assets/images/gamesys-logo.png" >
         </div>
 
         <div>
@@ -47,11 +48,24 @@ export default {
   background-attachment: fixed;
 
   .intro .container{
-    height: calc(100vh - 126.4px);
+    height: calc(100vh - 143.4px);
+  }
+  #gradient-wrapper{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    mix-blend-mode: soft-light;
+    opacity: .9;
   }
 
   #section-1{
-    background: #232323;
+    background: #31312E;
     padding: 30px;
     .container{
       align-items: center;
@@ -113,6 +127,17 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 </style>
 
