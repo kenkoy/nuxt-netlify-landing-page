@@ -10,21 +10,17 @@
     <section id="section-1">
       <div class="container">
         <div>
-          <p><strong>Rainbow Riches Casino</strong></p>
-          <p>Launched in late 2019, this latest addition to the Gamesys portfolio leverages the powerful brand equity of the nation’s most loved slots game</p>
-          <p>Includes exclusive Rainbow Riches titles</p>
+          <img src="@/assets/images/gamesys-logo.png"/>
         </div>
 
         <div>
-          <p><strong>Virgin Games</strong></p>
-          <p>Partnered with Sir Richard Branson in 2013 to become the UK’s leading casino-led brand</p>
-          <p>Winner of ‘Innovation in Casino’ and ‘Best Marketing Campaign’ awards</p>
-          <p>A rewarding, trusted online casino that dares to do things differently</p>
+          <p><strong>Play Online Casino at Vera&John</strong></p>
+          <p>Ladies and gentlemen, welcome to Vera&John casino, home to hundreds of amazing online slot games, table games, live casino games, and much more. Whether you want to play at home on your PC or tablet, or on the go with our amazing online mobile casino, you can be sure of a fun-filled casino experience with us.</p>
         </div>
 
         <div>
-          <p><strong>Virgin Casino</strong></p>
-          <p>Extending the relationship with Virgin further, Virgin Casino was launched in January 2014 in New Jersey, USA</p>
+          <p><strong>InterCasino</strong></p>
+          <p>At InterCasino, you’re the real deal. You’re what matters most. And you deserve the best. That’s why you’re reading about one of the longest-running, prestigious and most trusted online casinos in the world.</p>
         </div>
       </div>
     </section>
@@ -57,6 +53,13 @@ export default {
   #section-1{
     background: #232323;
     padding: 30px;
+    .container{
+      align-items: center;
+    }
+    img{
+      opacity: .8;
+      max-width: 250px;
+    }
 
     p strong{
       color: #fff;
@@ -79,20 +82,22 @@ export default {
 .intro h1 {
   position: absolute;
   top: 15%;
-  left: 5%;
+  left: 0;
   width: 90%;
   font-size: 25px;
   color: #989898;
   max-width: 30%;
+  transform: rotate(-23deg);
 }
 .intro p {
   position: absolute;
-  bottom: 10%;
-  right: 5%;
+  bottom: 17%;
+  right: 0;
   width: 90%;
   font-size: 16px;
   color: #989898;
   max-width: 30%;
+  transform: rotate(-23deg);
 }
 
 @media (min-width: 768px) {
