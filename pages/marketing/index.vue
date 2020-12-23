@@ -53,7 +53,7 @@ export default {
   #gradient-wrapper{
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
-    animation: gradient 12s ease infinite;
+    animation: gradient 6s ease infinite;
     position: absolute;
     top: 0;
     left: 0;
