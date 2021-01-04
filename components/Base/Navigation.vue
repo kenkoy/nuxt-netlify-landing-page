@@ -2,8 +2,10 @@
   <div :class="{ nav_wrapper: true }">
     <nav v-if="desktop === true" id="nav-desktop">
       <div class="container">
-        <div>
-          <img src="~/assets/images/gamesys-logo.png">
+        <div id="logo">
+          <nuxt-link to="/">
+            <img src="~/assets/images/gamesys-logo.png">
+          </nuxt-link>
         </div>
         <div>
           <span v-for="(navLinks, navIndex) in navItems" :key="navIndex">
