@@ -1,0 +1,66 @@
+.vjlp1-main{
+  background: $BODY_BG;
+}
+
+.logo{
+  max-width: 150px;
+  width: 100%;
+}
+
+h1{
+  font-weight: 300;
+  font-size: $HERO_TITLE_SIZE;
+  color: $HERO_TITLE_COLOR;
+  font-family: 'MainFont-DemiBold', sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.highlight{
+  color: $TEXT_HIGHLIGHT;
+}
+
+h3{
+  color: $H3_COLOR;
+  font-size: $TEXT_SIZE;
+}
+
+p {
+  color: $TEXT_COLOR;
+  font-size: $TEXT_SIZE;
+}
+a {
+  text-decoration: none;
+  border-bottom: 2px dashed #FEE63D;
+  color: inherit;
+}
+
+button{
+  background: $BTN_BG;
+  width: 280px;
+  border-radius: 100px;
+  font-size: $TEXT_SIZE;
+  border: none;
+  padding: 10px 20px;
+}
+
+#steps{
+  .num{
+    background: #fff;
+    color: $STEPS_NUM_COLOR;
+  }
+  p{
+    color: $STEPS_DESC_COLOR;
+    font-size: calc(#{$TEXT_SIZE} - 2px);
+  }
+}
+
+footer{
+  color: $TEXT_COLOR;
+  font-size: $TEXT_SIZE;
+}
+
+#payment{
+  img{
+    width: 100%;
+  }
+}

@@ -31,7 +31,8 @@ export default {
         @import '@/assets/sass/base/style.scss';
 
         .marketing-vjlp5,
-        .marketing-vjlp6{
+        .marketing-vjlp6,
+        .marketing-vjlp1v2{
             background: #009FE3;
 
             a{
