@@ -9,6 +9,12 @@
         <div class="container">
           <div id="hero-text-wrapper">
             <div>
+              <div id="login">
+                <a :href="mdData.promo_banner.promo_login_button_redirect_url">
+                  <i class="material-icons">exit_to_app</i>
+                  <span>{{mdData.promo_banner.promo_login_button}}</span>
+                </a>
+              </div>
               <img class="logo" src="@/assets/images/vjlp1v2/logo.png" alt="verajohn logo" />
               <div v-if="mdData.promo_banner.promo_render_title_first">
                 <h1 v-if="mdData.promo_banner.promo_title" v-html="bannerTitle" />
@@ -19,9 +25,11 @@
                 <h1 v-if="mdData.promo_banner.promo_title" v-html="bannerTitle" />
               </div>
 
-              <button>ご登録はこちら</button>
+              <button>
+                <a :href="mdData.promo_banner.promo_join_button_redirect_url">{{mdData.promo_banner.promo_join_button}}</a>
+              </button>
               <div>
-                <small>に同意します。</small>
+                <small v-html="bannerTerms" />
               </div>
             </div>
           </div>
@@ -148,6 +156,16 @@ export default {
       return bannerSubTitle.reduce((oldVal, newVal) => {
         return oldVal + '<br />' + newVal
       })
+    },
+    bannerTerms () {
+      let termsText = this.mdData.promo_banner.promo_terms_text
+      this.mdData.promo_banner.promo_terms_link_text.filter(linkText => linkText)
+        .forEach((linkText) => {
+          if (this.mdData.promo_banner.promo_terms_text.includes(linkText)) {
+            termsText = this.mdData.promo_banner.promo_terms_text.replace(linkText, `<a href="#terms" class="link-terms-conditions ctac">${linkText}</a>`)
+          }
+        })
+      return termsText
     }
   },
   created () {

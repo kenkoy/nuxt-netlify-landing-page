@@ -6,7 +6,9 @@
   max-width: 150px;
   width: 100%;
 }
-
+.material-icons {
+  font-family: 'Material Icons';
+}
 h1{
   font-weight: 300;
   font-size: $HERO_TITLE_SIZE;
@@ -41,6 +43,12 @@ button{
   font-size: $TEXT_SIZE;
   border: none;
   padding: 10px 20px;
+}
+
+#login{
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 #steps{
