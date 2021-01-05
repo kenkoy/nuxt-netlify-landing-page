@@ -1,17 +1,21 @@
 <template>
   <div :class="{ home_wrapper: true }">
-    <div id="gradient-wrapper"> </div>
+    <div id="gradient-wrapper" />
     <section class="intro">
       <div class="container">
-        <h1 class="animated fadeIn delay-1s">Digital Acquisition Services</h1>
-        <p class="animated fadeIn delay-2s">We are a leading international online gaming operator, well positioned strategically for future growth in an evolving global sector.</p>
+        <h1 class="animated fadeIn delay-1s">
+          Digital Acquisition Services
+        </h1>
+        <p class="animated fadeIn delay-2s">
+          We are a leading international online gaming operator, well positioned strategically for future growth in an evolving global sector.
+        </p>
       </div>
     </section>
 
     <section id="section-1">
       <div class="container">
         <div>
-          <img src="@/assets/images/gamesys-logo.png" >
+          <img src="@/assets/images/gamesys-logo.png">
         </div>
 
         <div>

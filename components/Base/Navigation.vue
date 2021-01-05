@@ -17,8 +17,12 @@
             <nuxt-link to="/marketing/admin/#/" target="_blank">
               Admin
             </nuxt-link>
-            <button id="vj" :class="switchTemplate === 'vj' ? 'active' : ''" @click="switchTemplate ='vj'">VJ</button>
-            <button id="ic" :class="switchTemplate === 'ic' ? 'active' : ''" @click="switchTemplate = 'ic'">IC</button>
+            <button id="vj" :class="switchTemplate === 'vj' ? 'active' : ''" @click="switchTemplate ='vj'">
+              VJ
+            </button>
+            <button id="ic" :class="switchTemplate === 'ic' ? 'active' : ''" @click="switchTemplate = 'ic'">
+              IC
+            </button>
           </div>
         </div>
       </div>
@@ -83,7 +87,7 @@ export default {
   methods: {
     myEventHandler () {
       // your code for handling resize...
-      if (window.innerWidth <= 767) {
+      if (window.innerWidth <= 992) {
         this.desktop = false
         this.mobile = true
       } else {
