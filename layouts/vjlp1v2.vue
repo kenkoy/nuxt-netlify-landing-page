@@ -27,7 +27,7 @@
                 <h1 v-if="mdData.promo_banner.promo_title" v-html="bannerTitle" />
               </div>
 
-              <button class="animated infinite vjlp1v2pulse">
+              <button class="animated infinite pulse">
                 <a :href="mdData.promo_banner.promo_join_button_redirect_url">{{ mdData.promo_banner.promo_join_button }}</a>
               </button>
               <div>
