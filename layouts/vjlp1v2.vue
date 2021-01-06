@@ -10,7 +10,7 @@
           <div id="hero-text-wrapper">
             <div>
               <div id="login" class="animated">
-                <div class="vjlp1v2fadeIn animated">
+                <div class="fadeIn animated">
                   <a :href="mdData.promo_banner.promo_login_button_redirect_url">
                     <i class="material-icons">exit_to_app</i>
                     <span>{{ mdData.promo_banner.promo_login_button }}</span>
@@ -152,18 +152,20 @@ export default {
         )
 
       let idx = 0
-      this.mdData.promo_banner.promo_subtitle_highlighted.filter(phrase => phrase)
-        .forEach((phrase) => {
-          while (bannerSubTitle.length > idx) {
-            if (bannerSubTitle[idx].includes(phrase)) {
-              bannerSubTitle[idx] = bannerSubTitle[idx].replace(phrase, `<span class="color-alt-two">${phrase}</span>`)
-              break
-            } else {
-              idx++
-            }
-          }
-        })
 
+      if (this.mdData.promo_banner.promo_subtitle_highlighted) {
+        this.mdData.promo_banner.promo_subtitle_highlighted.filter(phrase => phrase)
+          .forEach((phrase) => {
+            while (bannerSubTitle.length > idx) {
+              if (bannerSubTitle[idx].includes(phrase)) {
+                bannerSubTitle[idx] = bannerSubTitle[idx].replace(phrase, `<span class="color-alt-two">${phrase}</span>`)
+                break
+              } else {
+                idx++
+              }
+            }
+          })
+      }
       return bannerSubTitle.reduce((oldVal, newVal) => {
         return oldVal + '<br />' + newVal
       })

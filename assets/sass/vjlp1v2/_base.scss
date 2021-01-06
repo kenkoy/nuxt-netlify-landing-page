@@ -25,6 +25,7 @@ h1{
 h3{
   color: $H3_COLOR;
   font-size: $TEXT_SIZE;
+  font-family: 'MainFont-Bold', sans-serif;
 }
 
 ul li, p {
@@ -52,7 +53,10 @@ button{
   font-size: $TEXT_SIZE;
   border: none;
   padding: 10px 20px;
-  color: $BTN_COLOR;
+
+  a, a:hover{
+    color: $BTN_COLOR;
+  }
 
   &:hover{
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.60);
@@ -68,6 +72,14 @@ button{
   top: 10px;
   right: 10px;
   color: $TEXT_COLOR;
+
+  &:hover{
+    -webkit-animation-name: pulse;
+  	animation-name: pulse;
+    -webkit-animation-iteration-count: infinite;
+  	animation-iteration-count: infinite;
+  }
+
 
   a{
     border: none;

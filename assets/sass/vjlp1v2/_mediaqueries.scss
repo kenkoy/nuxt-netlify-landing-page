@@ -73,6 +73,14 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 576px) {
+  #hero{
+    background: var(--bg-image) no-repeat center;
+    background-size: cover;
+
+    .container{
+      min-height: 500px;
+    }
+  }
   #steps{
     .container{
       > div {
@@ -94,13 +102,6 @@
     display: none;
   }
   #hero{
-    background: var(--bg-image) no-repeat center left;
-    background-size: cover;
-
-    .container{
-      min-height: 500px;
-    }
-
     #hero-text-wrapper{
       -ms-flex: 0 0 41.666667%;
       flex: 0 0 41.666667%;
