@@ -139,6 +139,10 @@
 
         .num + div{
           margin-left: 20px;
+          max-width: 200px;
+          p{
+            text-align: left;
+          }
         }
 
         .num{
