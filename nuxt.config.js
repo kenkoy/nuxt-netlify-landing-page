@@ -65,7 +65,8 @@ export default {
   ** Global CSS
   */
   css: [
-    '~/assets/sass/base/animate.min.css'
+    '~/assets/sass/base/animate.min.css',
+    '~/assets/sass/base/fonts.css'
   ],
   /*
   ** Plugins to load before mounting the App

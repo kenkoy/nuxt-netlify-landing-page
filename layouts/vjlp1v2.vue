@@ -12,10 +12,10 @@
               <div id="login">
                 <a :href="mdData.promo_banner.promo_login_button_redirect_url">
                   <i class="material-icons">exit_to_app</i>
-                  <span>{{mdData.promo_banner.promo_login_button}}</span>
+                  <span>{{ mdData.promo_banner.promo_login_button }}</span>
                 </a>
               </div>
-              <img class="logo" src="@/assets/images/vjlp1v2/logo.png" alt="verajohn logo" />
+              <img class="logo" src="@/assets/images/vjlp1v2/logo.png" alt="verajohn logo">
               <div v-if="mdData.promo_banner.promo_render_title_first">
                 <h1 v-if="mdData.promo_banner.promo_title" v-html="bannerTitle" />
                 <h2 v-if="mdData.promo_banner.promo_subtitle" v-html="bannerSubtitle" />
@@ -26,7 +26,7 @@
               </div>
 
               <button>
-                <a :href="mdData.promo_banner.promo_join_button_redirect_url">{{mdData.promo_banner.promo_join_button}}</a>
+                <a :href="mdData.promo_banner.promo_join_button_redirect_url">{{ mdData.promo_banner.promo_join_button }}</a>
               </button>
               <div>
                 <small v-html="bannerTerms" />
@@ -182,7 +182,6 @@ export default {
 
 <style lang="scss">
   .vjlp1_wrapper {
-    @import '@/assets/sass/base/fonts.css';
     @import '@/assets/sass/vjlp1v2/style.scss';
     @import '@/assets/sass/base/style.scss';
   }
