@@ -1,0 +1,55 @@
+* {
+  font-family: 'MainFont-Medium';
+}
+section,
+footer{
+  padding: 20px 10px;
+  background: $BG_MAIN;
+}
+
+a{
+  color: $LINK_COLOR;
+
+  // &:hover{
+  //   color: $LINK_COLOR_HOVER;
+  // }
+}
+
+p {
+  color: $TEXT_COLOR;
+}
+ul{
+  margin: 0;
+}
+.redmark{
+  background-color: $REDMARK;
+  color: white;
+  font-weight: bold;
+}
+.blackmark{
+  background-color: $BLACKMARK;
+  color: white;
+  font-weight: bold;
+}
+
+button {
+  background-color: $WARNING;
+  border-radius: 100px;
+  padding: 10px 40px;
+  border: 0;
+  color: $TEXT_COLOR;
+  font-size: 1.5em;
+  width: 280px;
+  margin: 20px 0;
+  display: block;
+  margin: 20px auto;
+
+  &:hover{
+    background: $BTN_HOVER;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+}

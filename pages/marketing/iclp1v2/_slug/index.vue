@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  layout: 'vjlp5', // Change to actual layout
+  layout: 'iclp1v2', // Change to actual layout
   async asyncData ({ params, error }) {
     try {
       const markDownData = await import('~/assets/content/landing-page/marketing/iclp1/' + params.slug + '.md') // Change to actual slug
@@ -20,7 +20,7 @@ export default {
     const gtmId = tagIds.gtm_container_id || 'GTM-MFD3NKM'
 
     return {
-      title: 'Vera&John',
+      title: 'インターカジノ',
       htmlAttrs: {
         lang: this.markDownData.attributes.promo_locale.promo_language_code
       },
