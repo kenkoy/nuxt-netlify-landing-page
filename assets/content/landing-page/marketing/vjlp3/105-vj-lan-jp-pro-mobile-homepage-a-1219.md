@@ -1,5 +1,5 @@
 ---
-slug_name: 105 VJ lan JP Pro Mobile Homepage a 1219
+slug_name: 105 VJ lan JP Pro Mobile Homepage a 1219 Sample
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -19,13 +19,13 @@ promo_banner:
     game_icon_3: /marketing/img/card-master.png
     game_icon_4: /marketing/img/live-casino.png
     game_icon_5: /marketing/img/payment-option.png
-  promo_subtitle: " "
+  promo_subtitle: " Sample"
   promo_title: 無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！
   promo_images:
     promo_bg_desktop: /marketing/img/digital-welcomeoffer-mob-cta-1000x300-a_nocta.png
     promo_bg_mobile: /marketing/img/digital-welcomeoffer-mob-cta-767x493-b_nocta.png
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
-  promo_title_display: false
+  promo_title_display: true
   promo_login_button_redirect_url: https://verajohn.com/#join
   promo_join_button_redirect_url: https://verajohn.com/#join
   promo_join_button: 今すぐプレイ
