@@ -1,0 +1,159 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  #hero .banner {
+    background: var(--bg-image-m) no-repeat center;
+    background-size: contain;
+    width: 100%;
+    min-height: 400px;
+  }
+
+  h1 {
+    font-size: 1.75em;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 1.125em
+  }
+
+  p,
+  li {
+    font-size: $TEXT_SIZE;
+    text-align: justify;
+  }
+
+  button {
+    font-size: $BTN_SIZE;
+    padding: 6px 12px;
+    color: $BTN_COLOR;
+  }
+
+  section,
+  footer {
+    padding: 5px 10px;
+  }
+
+  #header {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #header .container {
+    justify-content: flex-end;
+  }
+
+  #header .logo {
+    position: absolute;
+    left: 0;
+    top: -8px;
+
+    img {
+      width: 75px;
+      height: 75px;
+    }
+  }
+
+  #header .nav-links {
+    margin: 15px 0;
+    flex-grow: 0;
+
+    button:first-child {
+      display: none;
+    }
+
+    > button {
+      margin: 0 5px;
+      font-size: 14px;
+    }
+  }
+
+  footer {
+    #footer-icon {
+      text-align: center;
+
+      > a {
+        display: inline-block;
+        min-width: 70px;
+        vertical-align: middle;
+        border: none;
+        margin: 0 8px;
+      }
+    }
+
+    .second-footer {
+      padding: 25px 30px;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}
+
+/* Iphone 5/SE */
+@media (max-height: 568px) and (max-width: 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 576px) {
+  #header .nav-links {
+    button:first-child {
+      display: inline-block;
+    }
+  }
+
+  #hero .banner {
+    background: var(--bg-image) no-repeat center;
+    background-size: contain;
+    width: 100%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  #header .logo {
+    top: -30px;
+    img {
+      max-width: 128px;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  h1,
+  h2 {
+    text-align: left;
+    // font-size: 1.5em;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  #header {
+    .nav-links {
+      -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      padding: 8px;
+
+      button {
+        min-width: 150px;
+        a {
+          padding: 6px 50px;
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
