@@ -9,11 +9,13 @@
         <div class="container">
           <div id="hero-text-wrapper">
             <div>
-              <div id="login">
-                <a :href="mdData.promo_banner.promo_login_button_redirect_url">
-                  <i class="material-icons">exit_to_app</i>
-                  <span>{{ mdData.promo_banner.promo_login_button }}</span>
-                </a>
+              <div id="login" class="animated">
+                <div class="vjlp1v2fadeIn animated">
+                  <a :href="mdData.promo_banner.promo_login_button_redirect_url">
+                    <i class="material-icons">exit_to_app</i>
+                    <span>{{ mdData.promo_banner.promo_login_button }}</span>
+                  </a>
+                </div>
               </div>
               <img class="logo" src="@/assets/images/vjlp1v2/logo.png" alt="verajohn logo">
               <div v-if="mdData.promo_banner.promo_render_title_first">
@@ -25,7 +27,7 @@
                 <h1 v-if="mdData.promo_banner.promo_title" v-html="bannerTitle" />
               </div>
 
-              <button>
+              <button class="animated infinite vjlp1v2pulse">
                 <a :href="mdData.promo_banner.promo_join_button_redirect_url">{{ mdData.promo_banner.promo_join_button }}</a>
               </button>
               <div>
@@ -64,16 +66,25 @@
         </div>
       </section>
 
-      <section id="payment">
+      <section id="payment" class="separator">
         <div class="container">
-          <img class="desktop" src="@/assets/images/vjlp1v2/payment_large_jp.svg">
-          <img class="mobile" src="@/assets/images/vjlp1v2/payment_jp.svg">
+          <img class="desktop" src="@/assets/images/vjlp1v2/payment_large_jp.svg" alt="payment verajohn desktop">
+          <img class="mobile" src="@/assets/images/vjlp1v2/payment_jp.svg" alt="payment verajohn mobile">
         </div>
       </section>
 
-      <section id="terms">
+      <section id="terms" class="separator">
         <div class="container">
-          <div v-html="htmlBody" />
+          <div>
+            <div v-html="htmlBody" />
+            <ul>
+              <li>
+                通常の
+                <a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と
+                <a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 

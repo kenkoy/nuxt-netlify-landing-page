@@ -15,6 +15,7 @@ h1{
   color: $HERO_TITLE_COLOR;
   font-family: 'MainFont-DemiBold', sans-serif;
   letter-spacing: 0.3px;
+  line-height: 38.4px;
 }
 
 .highlight{
@@ -26,7 +27,7 @@ h3{
   font-size: $TEXT_SIZE;
 }
 
-p {
+ul li, p {
   color: $TEXT_COLOR;
   font-size: $TEXT_SIZE;
 }
@@ -34,6 +35,14 @@ a {
   text-decoration: none;
   border-bottom: 2px dashed #FEE63D;
   color: inherit;
+
+  &:hover{
+    color: #FEE63D;
+  }
+}
+
+ul{
+  padding-left: 20px;
 }
 
 button{
@@ -43,12 +52,51 @@ button{
   font-size: $TEXT_SIZE;
   border: none;
   padding: 10px 20px;
+  color: $BTN_COLOR;
+
+  &:hover{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.60);
+  }
+}
+
+.separator{
+  border-bottom: 3px solid #0093D4;
 }
 
 #login{
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
+  color: $TEXT_COLOR;
+
+  a{
+    border: none;
+  }
+
+  i{
+    font-size: 32px;
+    display: block;
+    font-style: normal;
+  }
+
+  span{
+    color: $TEXT_COLOR;
+    font-size: $TEXT_SIZE;
+  }
+}
+
+#hero{
+  #hero-text-wrapper{
+    background: -webkit-linear-gradient(top, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
+    background: linear-gradient(to bottom, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc009fe3', endColorstr='#ccec008b',GradientType=0);
+  }
+  small{
+    color: $TEXT_COLOR;
+    font-size: 11px;
+    margin-top: 20px;
+    display: block;
+  }
 }
 
 #steps{
