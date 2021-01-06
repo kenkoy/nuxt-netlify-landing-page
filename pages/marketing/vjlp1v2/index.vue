@@ -14,7 +14,7 @@ export default {
   layout: 'default',
   async asyncData () {
     const mdFiles = await require.context(
-      '~/assets/content/landing-page/marketing/vjlp5/', // Change to actual md file
+      '~/assets/content/landing-page/marketing/vjlp1/', // Change to actual md file
       true,
       /\.md$/
     )
@@ -22,7 +22,7 @@ export default {
     const mdFilesContent = await mdFiles.keys().map(key => ({
       ...mdFiles(key),
       slug: `${key.replace('.md', '').replace('./', '')}`,
-      path: 'performance-test'
+      path: 'vjlp1v2'
     }))
     // filter to vjlp3 templates only
     // .filter((mdFiles) => mdFiles.attributes.promo_template == 'VJLP3-NoForm')

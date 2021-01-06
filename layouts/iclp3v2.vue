@@ -307,8 +307,6 @@ export default {
   .iclp3_wrapper {
     @import '@/assets/sass/base/fonts.css';
     @import '@/assets/sass/iclp3v2/style.scss';
-    @import '@/assets/sass/iclp3v2/spine.css';
-    @import '@/assets/sass/iclp3v2/firstview.css';
     @import '@/assets/sass/base/style.scss';
   }
 </style>

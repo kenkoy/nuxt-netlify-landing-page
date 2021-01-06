@@ -4,10 +4,10 @@
 
 <script>
 export default {
-  layout: 'performance-test', // Change to actual layout
+  layout: 'vjlp1v2', // Change to actual layout
   async asyncData ({ params, error }) {
     try {
-      const markDownData = await import('~/assets/content/landing-page/marketing/vjlp5/' + params.slug + '.md') // Change to actual slug
+      const markDownData = await import('~/assets/content/landing-page/marketing/vjlp1/' + params.slug + '.md') // Change to actual slug
       return { markDownData }
     } catch (e) {
       error(e)
@@ -89,7 +89,7 @@ export default {
   },
   methods: {
     emitData (data) {
-      this.$root.$emit('vjlp5-data', { // Change to actual page name
+      this.$root.$emit('vjlp1-data', { // Change to actual page name
         yamlData: data.attributes,
         htmlData: data.html
       })
