@@ -74,13 +74,13 @@
                 :key="index"
                 :href="data.link"
               >
-                <!-- <div :style="{'background': `center / contain no-repeat url('${data.icon}')`}" /> -->
-                <img :src="data.icon"/>
+                <img :src="data.icon">
               </a>
             </VueSlickCarousel>
           </div>
         </div>
       </section>
+      <div v-html="htmlBody" />
       <Footer
         :promo-language-code="mdData.promo_locale.promo_language_code"
         :promo-country-code="mdData.promo_locale.promo_country_code"
