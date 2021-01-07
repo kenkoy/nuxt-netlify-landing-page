@@ -536,6 +536,112 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP6-NoForm"}
 
+  - name: 'VJLP7-NoForm'
+    label: 'Vera&John Template 1'
+    format: 'frontmatter'
+    folder: 'assets/content/landing-page/marketing/vjlp1'
+    create: true
+    identifier_field: "slug_name"
+    slug: '{{slug}}'
+    preview_path: marketing/vjlp1/{{slug}}
+    show_preview_links: true
+    editor:
+      preview: true
+    fields:
+      - label: Slug
+        widget: string
+        name: slug_name
+        required: true
+        hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
+      - label: "Locale"
+        name: "promo_locale"
+        widget: "object"
+        colapsed: true
+        fields:
+          - label: "Country Code"
+            name: "promo_country_code"
+            widget: "select"
+            default: ["jp"]
+            options:
+              - { label: "Japan", value: "jp" }
+              - { label: "Sweden", value: "se" }
+              - { label: "Germany", value: "de" }
+          - label: "Language Code"
+            name: "promo_language_code"
+            widget: "select"
+            default: ["ja"]
+            options:
+              - { label: "Japanese", value: "ja" }
+              - { label: "Swedish", value: "sv" }
+              - { label: "German", value: "de" }
+      - label: "Tag, Optimize and Analytics ID"
+        name: "field_ids"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false, default: "UA-142143961-1"}
+          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
+          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
+      - label: "Versions"
+        name: "versions"
+        widget: "select"
+        default: ["version1"]
+        options:
+          - { label: "Version 1", value: "version1" }
+          - { label: "Version 12", value: "version2" }
+      - label: "Promotion Banner"
+        name: "promo_banner"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Display Title First", name: "promo_render_title_first", widget: "boolean", default: true, required: false}
+          - {label: "Title", name: "promo_title", widget: "text"}
+          - label: "Highlighted Title Phrases"
+            name: "promo_title_highlighted"
+            widget: "list"
+            summary: '{{field.phrase}}'
+            required: false
+            field: {label: Phrase, name: phrase, widget: string}
+          - {label: "Subtitle", name: "promo_subtitle", widget: "text", required: false}
+          - label: "Highlighted Subtitle Phrases"
+            name: "promo_subtitle_highlighted"
+            widget: "list"
+            summary: '{{field.phrase}}'
+            required: false
+            field: {label: Phrase, name: phrase, widget: string}
+          - {label: "Login Button", name: promo_login_button, widget: "string"}
+          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
+          - {label: "Join Button", name: promo_join_button, widget: "string"}
+          - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}
+          - {label: "Terms Text", name: promo_terms_text, widget: "string"}
+          - label: "Terms Underlined Link Texts"
+            name: "promo_terms_link_text"
+            widget: "list"
+            summary: '{{field.text}}'
+            required: false
+            field: {label: Text, name: text, widget: string}
+          - label: "Images"
+            name: "promo_images"
+            widget: "object"
+            colapsed: true
+            fields:
+              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
+              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
+              - {label: "Game Logo", name: promo_game_logo, widget: image, required: false}
+      - label: "Promotion Steps"
+        name: "promo_steps"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {label: "Step 1 Title", name: promo_step_1_title, widget: "string"}
+          - {label: "Step 1 Description", name: promo_step_1_desc, widget: "string"}
+          - {label: "Step 2 Title", name: promo_step_2_title, widget: "string"}
+          - {label: "Step 2 Description", name: promo_step_2_desc, widget: "string"}
+          - {label: "Step 3 Title", name: promo_step_3_title, widget: "string"}
+          - {label: "Step 3 Description", name: promo_step_3_desc, widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}
+
   - name: 'ICLP1-NoForm'
     label: 'InterCasino Template 1'
     format: 'frontmatter'
