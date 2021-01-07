@@ -1,5 +1,24 @@
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+  .version2{
+    #hero{
+      &:before{
+        background-color: rgba(0,0,0,0.7);
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+      }
+    }
+    #hero{
+      overflow: hidden;
+      position: relative;
+    }
+  }
+
   .desktop{
     display: none;
   }
@@ -73,6 +92,13 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 576px) {
+  .version2{
+    #hero{
+      &:before{
+        display: none;
+      }
+    }
+  }
   #hero{
     background: var(--bg-image) no-repeat center;
     background-size: cover;

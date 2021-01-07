@@ -14,7 +14,7 @@ export default {
   layout: 'default',
   async asyncData () {
     const mdFiles = await require.context(
-      '~/assets/content/landing-page/marketing/vjlp1/', // Change to actual md file
+      '~/assets/content/landing-page/marketing/vjlp7/', // Change to actual md file
       true,
       /\.md$/
     )
