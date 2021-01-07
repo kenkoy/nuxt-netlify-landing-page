@@ -537,7 +537,7 @@ collections:
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP6-NoForm"}
 
   - name: 'VJLP7-NoForm'
-    label: 'Vera&John Template 1'
+    label: 'Vera&John Template 7'
     format: 'frontmatter'
     folder: 'assets/content/landing-page/marketing/vjlp7'
     create: true
