@@ -31,7 +31,52 @@
             <h1 v-if="mdData.promo_banner.promo_title_display">
               {{ mdData.promo_banner.promo_title }}
             </h1>
-            <h2>{{ mdData.promo_banner.promo_subtitle }}</h2>
+            <h2 v-if="mdData.promo_banner.promo_title_display">
+              {{ mdData.promo_banner.promo_subtitle }}
+            </h2>
+            <div :class="mdData.promo_banner.promo_join_button_location">
+              <button class="error">
+                <a :href="mdData.promo_banner.promo_login_button_redirect_url">
+                  {{ mdData.promo_banner.promo_join_button }}
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div
+            class="center"
+            :class="{hidden: mdData.promo_banner.promo_join_button_location === 'hidden'}"
+          >
+            <button class="error">
+              <a :href="mdData.promo_banner.promo_login_button_redirect_url">
+                {{ mdData.promo_banner.promo_join_button }}
+              </a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="game-slider">
+        <div class="container">
+          <div class="slider">
+            <VueSlickCarousel
+              :arrows="false"
+              :dots="false"
+              :infinite="true"
+              :autoplay="true"
+              :speed="300"
+              :slides-to-show="5"
+              :slides-to-scroll="1"
+              v-bind="carouselSettings"
+            >
+              <a
+                v-for="(data, index) in carouselData"
+                :key="index"
+                :href="data.link"
+              >
+                <div :style="{'background': `center / contain no-repeat url('${data.icon}')`}" />
+              </a>
+            </VueSlickCarousel>
           </div>
         </div>
       </section>
@@ -46,15 +91,30 @@
 
 <script>
 import Footer from '@/components/Base/TheFooter.vue'
+import VueSlickCarousel from 'vue-slick-carousel'
 
 export default {
   components: {
-    Footer
+    Footer,
+    VueSlickCarousel
   },
   data () {
     return {
       mdData: {},
-      htmlBody: ''
+      htmlBody: '',
+      carouselSettings: {
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              infinite: true,
+              autoplay: true
+            }
+          }
+        ]
+      }
     }
   },
   computed: {
@@ -65,6 +125,18 @@ export default {
         '--bg-image-m': `url('${images.promo_bg_mobile}')`,
         '--bg-banner': `url('${images.promo_bg_banner}')`
       }
+    },
+    carouselData () {
+      const games = this.mdData.promo_banner.game_images
+      const links = Object.entries(games)
+        .filter(data => data[0].includes('url'))
+        .map(data => data[1])
+      const icons = Object.entries(games)
+        .filter(data => data[0].includes('icon'))
+        .map(data => data[1])
+      return links.map((data, index) => ({
+        link: data, icon: icons[index]
+      }))
     }
   },
   created () {
