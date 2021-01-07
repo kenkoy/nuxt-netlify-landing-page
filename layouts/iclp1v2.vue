@@ -1,6 +1,5 @@
 <template>
   <div :class="{ iclp1_wrapper: true }">
-    <!-- Change class name to actual page name -->
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
@@ -9,45 +8,51 @@
       <section id="hero" :style="cssBackground">
         <div class="container">
           <div class="loginbtn">
-            <a rel="noopener" :href="mdData.promo_banner.promo_home_button_redirect_url">
-              <i class="material-icons" data-v-7c308f66="">home</i>
-              <p class="login-text">ログイン{{ mdData.promo_banner.promo_home_button }}</p>
+            <a rel="noopener" :href="mdData.promo_banner.ppromo_login_button_redirect_url">
+              <i class="material-icons" data-v-7c308f66="">exit_to_app</i>
+              <p class="login-text">{{ mdData.promo_banner.promo_login_button_text }}</p>
             </a>
           </div>
-          <div>
-            <div id="header-text-wrapper">
-              <img class="animated fadeIn" alt="alt img" src="@/assets/images/iclp2v2/logo.png">
-              <h2>新規プレイヤー特典! 総額$500 ウェルカムキャッシュ</h2>
-            </div>
-            <div>
-              <p v-html="bannerStatement" />
-              <button onclick="location.href='#'" type="button">
-                <a rel="noopener" :href="mdData.promo_banner.promo_register_button_redirect_url">今すぐ登録{{ mdData.promo_banner.promo_register_button_text }}</a>
-              </button>
-              <p>
-                <a rel="noopener" :href="mdData.promo_banner.promo_smallterm_redirect_url">{{ mdData.promo_banner.promo_smallterm_text_link }}</a>
-                {{ mdData.promo_banner.promo_smallterm_text }}
-              </p>
-            </div>
+          <div id="header-text-wrapper">
+            <img class="animated fadeIn" alt="alt img" src="@/assets/images/iclp2v2/logo.png">
+            <h2>{{ mdData.promo_banner.promo_subtitle_1 }}</h2>
+            <h1>{{ mdData.promo_banner.promo_main_heading }}</h1>
+            <h2>{{ mdData.promo_banner.promo_subtitle_2 }}</h2>
+            <button onclick="location.href='#'" type="button">
+              <a rel="noopener" :href="mdData.promo_banner.promo_register_button_redirect_url">{{ mdData.promo_banner.promo_signup_button }}</a>
+            </button>
+            <p>
+              <a rel="noopener" :href="mdData.promo_banner.promo_smallterm_redirect_url">{{ mdData.promo_banner.promo_smallterm_text_link }}</a>
+              {{ mdData.promo_banner.promo_smallterm_text }}
+            </p>
           </div>
         </div>
       </section>
+
       <section id="steps">
         <div class="container column-3">
-          <div>
+          <div class="animated fadeIn delay-halfs">
             <span>1</span>
-            <h2>登録</h2>
-            <p>簡単登録でお試しプレイ&amp;無料$10ボーナス獲得!</p>
+            <div>
+              <h2>{{ mdData.promo_steps.promo_step_1_title }}</h2>
+              <p>{{ mdData.promo_steps.promo_step_1_desc }}</p>
+            </div>
           </div>
-          <div>
+
+          <div class="animated fadeIn delay-1s">
             <span>2</span>
-            <h2>入金</h2>
-            <p>ビットコインで即入金! リアルマネープレイを始めよう!</p>
+            <div>
+              <h2>{{ mdData.promo_steps.promo_step_2_title }}</h2>
+              <p>{{ mdData.promo_steps.promo_step_2_desc }}</p>
+            </div>
           </div>
-          <div>
+
+          <div class="animated fadeIn delay-1-and-halfs">
             <span>3</span>
-            <h2>ボーナス</h2>
-            <p>総額$500ウェルカムキャッシュアイテムをゲット!</p>
+            <div>
+              <h2>{{ mdData.promo_steps.promo_step_3_title }}</h2>
+              <p>{{ mdData.promo_steps.promo_step_3_desc }}</p>
+            </div>
           </div>
         </div>
       </section>
@@ -94,7 +99,6 @@ export default {
     }
   },
   computed: {
-    // USE THE CODE BELOW IF THE DESIGN / TEMPLATE HAVE BANNERS. ELSE, DELETE
     cssBackground () {
       const images = this.mdData.promo_banner.promo_images
       return {
@@ -105,18 +109,18 @@ export default {
     }
   },
   created () {
-    this.$root.$once('iclp1-data', (data) => { // Change to actual page name
+    this.$root.$once('iclp1-data', (data) => {
       this.htmlBody = data.htmlData
       this.mdData = data.yamlData
     })
   },
   beforeDestroy () {
-    this.$root.$off('iclp1-data') // Change to actual page name
+    this.$root.$off('iclp1-data')
   }
 }
 </script>
 
-<style lang="scss"> // Change to actual path, all assets should be on asset folder. Create separate assets / sass for each templates
+<style lang="scss">
   .iclp1_wrapper {
     @import '@/assets/sass/base/fonts.css';
     @import '@/assets/sass/iclp1v2/style.scss';
