@@ -24,9 +24,7 @@ promo_banner:
   promo_join_button: 入金ボーナスを獲得する
   promo_login_button: 登録
   promo_title_highlighted:
-    - 最大
-    - の
-    - ビギナーズボーナス
+    - $1000
 promo_steps:
   promo_step_1_title: 登録
   promo_step_1_desc: 1番人気のオンラインカジノだから安心!

@@ -30,7 +30,15 @@
   }
 }
 
+//===VERSION 2===//
 .version2{
+  h1{
+    animation: vjlp7text-flicker-promo 5s linear forwards;
+    text-shadow: 0 0 20px rgb(236, 0, 139);
+    color: $HERO_TITLE_COLOR2;
+    font-weight: 700;
+    font-family: 'MainFont-DemiBold', sans-serif;
+  }
   .highlight{
     color: $TEXT_HIGHLIGHT2;
   }
@@ -46,17 +54,17 @@
     font-size: $TEXT_SIZE;
     border: none;
     padding: 10px 20px;
-    color: $TEXT_COLOR;
 
-    a{
+    a {
       border: none;
+      color: $TEXT_COLOR;
+      animation: vjlp7text-flicker 3s linear forwards infinite;
     }
-
-    animation: border-flicker 3s linear forwards infinite;
+    animation: vjlp7border-flicker 3s linear forwards infinite;
   }
 }
 
-@keyframes border-flicker{
+@keyframes vjlp7border-flicker{
   2% {
       border: 3px solid rgb(255, 21, 222);
       box-shadow: 0 0 15px -1px rgb(255, 21, 222), 0 0 12px -1px rgb(255, 21, 222) inset;
@@ -112,6 +120,132 @@
   100% {
       border: 3px solid rgb(255, 21, 222);
       box-shadow: 0 0 15px -1px rgb(255, 21, 222), 0 0 12px -1px rgb(255, 21, 222) inset;
+  }
+}
+
+@keyframes vjlp7text-flicker-promo{
+  2% {
+      color: rgb(236, 0, 139);
+      text-shadow: 0 0 20px rgb(236, 0, 139);
+  }
+  3% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+  }
+  6% {
+      color: rgb(236, 0, 139);
+      text-shadow: 0 0 20px rgb(236, 0, 139);
+  }
+  9% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+  }
+  11% {
+      color: rgb(236, 0, 139);
+      text-shadow: 0 0 20px rgb(236, 0, 139);
+  }
+  14% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+  }
+  18% {
+      color: rgb(236, 0, 139);
+      text-shadow: 0 0 20px rgb(236, 0, 139);
+  }
+  32% {
+      color: rgb(236, 0, 139);
+      text-shadow: 0 0 20px rgb(236, 0, 139);
+  }
+  33% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+  }
+  37% {
+      color: rgb(236, 0, 139);
+      text-shadow: 0 0 20px rgb(236, 0, 139);
+  }
+  39% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+  }
+  43% {
+      color: rgb(236, 0, 139);
+      text-shadow: 0 0 20px rgb(236, 0, 139);
+  }
+  46% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+  }
+  47% {
+      color: rgb(236, 0, 139);
+      text-shadow: 0 0 20px rgb(236, 0, 139);
+  }
+  100% {
+      color: rgb(236, 0, 139);
+      text-shadow: 0 0 20px rgb(236, 0, 139);
+  }
+}
+
+@keyframes vjlp7text-flicker{
+  2% {
+      color: rgb(255,255,255);
+      text-shadow: 0 0 15px rgb(255,255,255);
+  }
+  3% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+  }
+  6% {
+      color: rgb(255,255,255);
+      text-shadow: 0 0 15px rgb(255,255,255);
+  }
+  9% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+  }
+  11% {
+      color: rgb(255,255,255);
+      text-shadow: 0 0 15px rgb(255,255,255);
+  }
+  14% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+  }
+  18% {
+      color: rgb(255,255,255);
+      text-shadow: 0 0 15px rgb(255,255,255);
+  }
+  32% {
+      color: rgb(255,255,255);
+      text-shadow: 0 0 15px rgb(255,255,255);
+  }
+  33% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+  }
+  37% {
+      color: rgb(255,255,255);
+      text-shadow: 0 0 15px rgb(255,255,255);
+  }
+  39% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+  }
+  43% {
+      color: rgb(255,255,255);
+      text-shadow: 0 0 15px rgb(255,255,255);
+  }
+  46% {
+      color: rgba(120, 0, 50, .5);
+      text-shadow: none;
+  }
+  47% {
+      color: rgb(255,255,255);
+      text-shadow: 0 0 15px rgb(255,255,255);
+  }
+  100% {
+      color: rgb(255,255,255);
+      text-shadow: 0 0 15px rgb(255,255,255);
   }
 }
 
