@@ -588,7 +588,7 @@ collections:
         default: ["version1"]
         options:
           - { label: "Version 1", value: "version1" }
-          - { label: "Version 12", value: "version2" }
+          - { label: "Version 2", value: "version2" }
       - label: "Promotion Banner"
         name: "promo_banner"
         widget: "object"
