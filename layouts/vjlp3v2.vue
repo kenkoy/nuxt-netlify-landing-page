@@ -74,7 +74,8 @@
                 :key="index"
                 :href="data.link"
               >
-                <div :style="{'background': `center / contain no-repeat url('${data.icon}')`}" />
+                <!-- <div :style="{'background': `center / contain no-repeat url('${data.icon}')`}" /> -->
+                <img :src="data.icon"/>
               </a>
             </VueSlickCarousel>
           </div>
@@ -92,6 +93,8 @@
 <script>
 import Footer from '@/components/Base/TheFooter.vue'
 import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 export default {
   components: {
