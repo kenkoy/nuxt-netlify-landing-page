@@ -539,11 +539,11 @@ collections:
   - name: 'VJLP7-NoForm'
     label: 'Vera&John Template 1'
     format: 'frontmatter'
-    folder: 'assets/content/landing-page/marketing/vjlp1'
+    folder: 'assets/content/landing-page/marketing/vjlp7'
     create: true
     identifier_field: "slug_name"
     slug: '{{slug}}'
-    preview_path: marketing/vjlp1/{{slug}}
+    preview_path: marketing/vjlp7/{{slug}}
     show_preview_links: true
     editor:
       preview: true
