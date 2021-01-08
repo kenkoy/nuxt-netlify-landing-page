@@ -63,86 +63,14 @@ export const VJLP7_PREVIEW = createClass({
                     <div class="fadeIn animated">
                       <a :href="mdData.promo_banner.promo_login_button_redirect_url">
                         <i class="material-icons">exit_to_app</i>
-                        <span>{{ mdData.promo_banner.promo_login_button }}</span>
+                        <span>${banner.getIn(['data', 'promo_login_button'])}</span>
                       </a>
                     </div>
                   </div>
-                  <img class="logo" src="@/assets/images/vjlp1v2/logo.png" alt="verajohn logo">
-                  <div v-if="mdData.promo_banner.promo_render_title_first">
-                    <h1 v-if="mdData.promo_banner.promo_title" v-html="bannerTitle" />
-                    <h2 v-if="mdData.promo_banner.promo_subtitle" v-html="bannerSubtitle" />
-                  </div>
-                  <div v-else>
-                    <h2 v-if="mdData.promo_banner.promo_subtitle" v-html="bannerSubtitle" />
-                    <h1 v-if="mdData.promo_banner.promo_title" v-html="bannerTitle" />
-                  </div>
-
-                  <button class="animated infinite pulse">
-                    <a :href="mdData.promo_banner.promo_join_button_redirect_url">{{ mdData.promo_banner.promo_join_button }}</a>
-                  </button>
-                  <div>
-                    <small v-html="bannerTerms" />
-                  </div>
                 </div>
               </div>
             </div>
           </section>
-
-          <section id="steps">
-            <div class="container">
-              <div class="animated fadeIn delay-halfs">
-                <span class="num">1</span>
-                <div>
-                  <h3>{{ mdData.promo_steps.promo_step_1_title }}</h3>
-                  <p>{{ mdData.promo_steps.promo_step_1_desc }}</p>
-                </div>
-              </div>
-
-              <div class="animated fadeIn delay-1s">
-                <span class="num">2</span>
-                <div>
-                  <h3>{{ mdData.promo_steps.promo_step_2_title }}</h3>
-                  <p>{{ mdData.promo_steps.promo_step_2_desc }}</p>
-                </div>
-              </div>
-
-              <div class="animated fadeIn delay-1-and-halfs">
-                <span class="num">3</span>
-                <div>
-                  <h3>{{ mdData.promo_steps.promo_step_3_title }}</h3>
-                  <p>{{ mdData.promo_steps.promo_step_3_desc }}</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section id="payment" class="separator">
-            <div class="container">
-              <img class="desktop" src="@/assets/images/vjlp1v2/payment_large_jp.svg" alt="payment verajohn desktop">
-              <img class="mobile" src="@/assets/images/vjlp1v2/payment_jp.svg" alt="payment verajohn mobile">
-            </div>
-          </section>
-
-          <section id="terms" class="separator">
-            <div class="container">
-              <div>
-                <div v-html="htmlBody" />
-                <ul>
-                  <li>
-                    通常の
-                    <a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と
-                    <a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          <Footer
-            :promo-language-code="mdData.promo_locale.promo_language_code"
-            :promo-country-code="mdData.promo_locale.promo_country_code"
-            :landing-page-type="'verajohn'"
-          />
         </div>
       </div>
     </body>`
