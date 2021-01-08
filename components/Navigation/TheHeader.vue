@@ -41,11 +41,6 @@
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/marketing/iclp1v2">
-              ICLP 1 V2
-            </nuxt-link>
-          </li>
-          <li class="nav-item">
             <nuxt-link to="/marketing/iclp2">
               ICLP 2
             </nuxt-link>
