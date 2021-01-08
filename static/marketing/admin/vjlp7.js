@@ -2,7 +2,7 @@
 import htm from './external-scripts/htm.module.js'
 
 const html = htm.bind(h)
-export const VJLP3_PREVIEW = createClass({
+export const VJLP7_PREVIEW = createClass({
   componentDidMount () {
     const { document } = this.props
     const link = document.createElement('link')
@@ -20,12 +20,7 @@ export const VJLP3_PREVIEW = createClass({
     const cssBg = {
       '--bg-image': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_desktop'])}')`,
       '--bg-image-m': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_mobile'])}')`,
-      '--bg-banner': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_banner']) || ''}')`,
-      '--game-icon-1': `url('${banner.getIn(['data', 'game_images', 'game_icon_1'])}')`,
-      '--game-icon-2': `url('${banner.getIn(['data', 'game_images', 'game_icon_2'])}')`,
-      '--game-icon-3': `url('${banner.getIn(['data', 'game_images', 'game_icon_3'])}')`,
-      '--game-icon-4': `url('${banner.getIn(['data', 'game_images', 'game_icon_4'])}')`,
-      '--game-icon-5': `url('${banner.getIn(['data', 'game_images', 'game_icon_5'])}')`
+      '--bg-banner': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_banner']) || ''}')`
     }
 
     const buttonLocation = banner.getIn(['data', 'promo_join_button_location'])
@@ -53,157 +48,103 @@ export const VJLP3_PREVIEW = createClass({
       id="${locale.getIn(['data', 'promo_language_code'])}-${locale.getIn(['data', 'promo_country_code'])}"
       style='${cssBg}'
     >
-      <header>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <a href="#" class="bf-logo"></a>
-              <div class="bf-btn-container">
-                <a id="login-btn" href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}">
-                  <div class="bf-button bf-third-bg">${banner.getIn(['data', 'promo_login_button'])}</div>
-                </a>
-                <a id="signup-btn" href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
-                  <div class="bf-button bf-secondary-bg">
-                    <p><span class="prev-join-button">${banner.getIn(['data', 'promo_join_button'])}</span></p>
+      <div :class="{ vjlp7_wrapper: true }">
+        <nuxt />
+        <div
+          v-if="Object.keys(mdData).length > 0"
+          class="vjlp7-main"
+          :class="mdData.styles"
+        >
+          <section id="hero" :style="cssBackground">
+            <div class="container">
+              <div id="hero-text-wrapper">
+                <div>
+                  <div id="login" class="animated">
+                    <div class="fadeIn animated">
+                      <a :href="mdData.promo_banner.promo_login_button_redirect_url">
+                        <i class="material-icons">exit_to_app</i>
+                        <span>{{ mdData.promo_banner.promo_login_button }}</span>
+                      </a>
+                    </div>
                   </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <section id="bf-banner">
-        <div class="container">
-          <div class="row">
-            <div id="bf-banner-img-2" class="col-lg-12">
-              <h1>${bannerTitle}</h1>
-
-              <h2></h2>
-
-              <a class="signup-btn d-none d-lg-block" href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
-                <div class="bf-button bf-secondary-bg" style='${joinBtnStyle}'>${banner.getIn(['data', 'promo_join_button'])}</div>
-              </a>
-
-            </div>
-            <div class="d-block d-lg-none col-12">
-              <div class="center-button">
-
-                <a class="signup-btn" href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
-                  <div class="bf-button bf-secondary-bg" style='${bottomJoinBtnStyle}'>
-                    <p><span class="prev-join-button">${banner.getIn(['data', 'promo_join_button'])}</span></p>
+                  <img class="logo" src="@/assets/images/vjlp1v2/logo.png" alt="verajohn logo">
+                  <div v-if="mdData.promo_banner.promo_render_title_first">
+                    <h1 v-if="mdData.promo_banner.promo_title" v-html="bannerTitle" />
+                    <h2 v-if="mdData.promo_banner.promo_subtitle" v-html="bannerSubtitle" />
                   </div>
-                </a>
+                  <div v-else>
+                    <h2 v-if="mdData.promo_banner.promo_subtitle" v-html="bannerSubtitle" />
+                    <h1 v-if="mdData.promo_banner.promo_title" v-html="bannerTitle" />
+                  </div>
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="bf-game-slider">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="slider slick-initialized slick-slider">
-                <div class="slick-list draggable">
-                  <div class="slick-track prev-game-slider"><a
-                      href="${banner.getIn(['data', 'game_images', 'game_url_3'])}" class="hvr-shrink slick-slide slick-cloned prev-game-icon"
-                      tabindex="-1" data-slick-index="-3" aria-hidden="true">
-                      <div class="bf-game-icon-3"></div>
-                    </a><a href="${banner.getIn(['data', 'game_images', 'game_url_4'])}"
-                      class="hvr-shrink slick-slide slick-cloned prev-game-icon" tabindex="-1" data-slick-index="-2"
-                      aria-hidden="true">
-                      <div class="bf-game-icon-4"></div>
-                    </a><a href="${banner.getIn(['data', 'game_images', 'game_url_5'])}" class="hvr-shrink slick-slide slick-cloned prev-game-icon"
-                      tabindex="-1" data-slick-index="-1" aria-hidden="true">
-                      <div class="bf-game-icon-5"></div>
-                    </a><a href="${banner.getIn(['data', 'game_images', 'game_url_1'])}" class="hvr-shrink slick-slide prev-game-icon"
-                      tabindex="-1" data-slick-index="0" aria-hidden="true">
-                      <div class="bf-game-icon-1"></div>
-                    </a><a href="${banner.getIn(['data', 'game_images', 'game_url_2'])}" class="hvr-shrink slick-slide prev-game-icon"
-                      tabindex="-1" data-slick-index="1" aria-hidden="true">
-                      <div class="bf-game-icon-2"></div>
-                    </a><a href="${banner.getIn(['data', 'game_images', 'game_url_3'])}"
-                      class="hvr-shrink slick-slide slick-current slick-active prev-game-icon" tabindex="0"
-                      data-slick-index="2" aria-hidden="false">
-                      <div class="bf-game-icon-3"></div>
-                    </a><a href="${banner.getIn(['data', 'game_images', 'game_url_4'])}"
-                      class="hvr-shrink slick-slide slick-active prev-game-icon" tabindex="0" data-slick-index="3"
-                      aria-hidden="false">
-                      <div class="bf-game-icon-4"></div>
-                    </a><a href="${banner.getIn(['data', 'game_images', 'game_url_5'])}" class="hvr-shrink slick-slide slick-active prev-game-icon"
-                      tabindex="0" data-slick-index="4" aria-hidden="false">
-                      <div class="bf-game-icon-5"></div>
-                    </a><a href="${banner.getIn(['data', 'game_images', 'game_url_1'])}"
-                      class="hvr-shrink slick-slide slick-cloned prev-game-icon" tabindex="-1" data-slick-index="5"
-                      aria-hidden="true">
-                      <div class="bf-game-icon-1"></div>
-                    </a><a href="${banner.getIn(['data', 'game_images', 'game_url_2'])}"
-                      class="hvr-shrink slick-slide slick-cloned prev-game-icon" tabindex="-1" data-slick-index="6"
-                      aria-hidden="true">
-                      <div class="bf-game-icon-2"></div>
-                    </a><a href="${banner.getIn(['data', 'game_images', 'game_url_3'])}"
-                      class="hvr-shrink slick-slide slick-cloned prev-game-icon" tabindex="-1" data-slick-index="7"
-                      aria-hidden="true">
-                      <div class="bf-game-icon-3"></div>
-                    </a><a href="${banner.getIn(['data', 'game_images', 'game_url_4'])}"
-                      class="hvr-shrink slick-slide slick-cloned prev-game-icon" tabindex="-1" data-slick-index="8"
-                      aria-hidden="true">
-                      <div class="bf-game-icon-4"></div>
-                    </a><a href="${banner.getIn(['data', 'game_images', 'game_url_5'])}" class="hvr-shrink slick-slide slick-cloned prev-game-icon"
-                      tabindex="-1" data-slick-index="9" aria-hidden="true">
-                      <div class="bf-game-icon-5"></div>
-                    </a></div>
+                  <button class="animated infinite pulse">
+                    <a :href="mdData.promo_banner.promo_join_button_redirect_url">{{ mdData.promo_banner.promo_join_button }}</a>
+                  </button>
+                  <div>
+                    <small v-html="bannerTerms" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      ${body}
-      <footer id="footer" class="animated fadeIn">
-        <div class="container-fluid pp">
-          <div class="container">
-            <div class="row">
-              <div class="col-12"> </div>
-            </div>
-          </div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="icons text-center">
-                <div class="icon"> <a href="https://www.verajohn.com/about/responsible-gaming" target="blank">
-                    <div class="age"></div>
-                  </a> </div>
-                <div class="icon"> <a href="https://www.gamstop.co.uk" target="blank">
-                    <div class="gamstop"></div>
-                  </a> </div>
-                <div class="icon"> <a href="https://www.begambleaware.org" target="blank">
-                    <div class="bga"></div>
-                  </a> </div>
-                <div class="icon"> <a href="https://www.gamblingtherapy.org/en" target="blank">
-                    <div class="gt"></div>
-                  </a> </div>
-                <div class="icon"> <a href="https://secure.gamblingcommission.gov.uk/PublicRegister/Search/Detail/39408"
-                    target="blank">
-                    <div class="ukgc"></div>
-                  </a> </div>
-                <div class="icon"> <a href="#" target="blank">
-                    <div class="curacao"></div>
-                  </a> </div>
-                <div class="icon"> <a href="https://www.gamcare.org.uk" target="blank">
-                    <div class="gamcare"></div>
-                  </a> </div>
+          </section>
+
+          <section id="steps">
+            <div class="container">
+              <div class="animated fadeIn delay-halfs">
+                <span class="num">1</span>
+                <div>
+                  <h3>{{ mdData.promo_steps.promo_step_1_title }}</h3>
+                  <p>{{ mdData.promo_steps.promo_step_1_desc }}</p>
+                </div>
+              </div>
+
+              <div class="animated fadeIn delay-1s">
+                <span class="num">2</span>
+                <div>
+                  <h3>{{ mdData.promo_steps.promo_step_2_title }}</h3>
+                  <p>{{ mdData.promo_steps.promo_step_2_desc }}</p>
+                </div>
+              </div>
+
+              <div class="animated fadeIn delay-1-and-halfs">
+                <span class="num">3</span>
+                <div>
+                  <h3>{{ mdData.promo_steps.promo_step_3_title }}</h3>
+                  <p>{{ mdData.promo_steps.promo_step_3_desc }}</p>
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="footer-content col-12 text-center">
-                <p class="text-center"><a href="https://verajohn.com/about/responsible-gaming"
-                  target="blank">ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。</a>
-                </p>
+          </section>
+
+          <section id="payment" class="separator">
+            <div class="container">
+              <img class="desktop" src="@/assets/images/vjlp1v2/payment_large_jp.svg" alt="payment verajohn desktop">
+              <img class="mobile" src="@/assets/images/vjlp1v2/payment_jp.svg" alt="payment verajohn mobile">
+            </div>
+          </section>
+
+          <section id="terms" class="separator">
+            <div class="container">
+              <div>
+                <div v-html="htmlBody" />
+                <ul>
+                  <li>
+                    通常の
+                    <a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と
+                    <a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
+          </section>
+
+          <Footer
+            :promo-language-code="mdData.promo_locale.promo_language_code"
+            :promo-country-code="mdData.promo_locale.promo_country_code"
+            :landing-page-type="'verajohn'"
+          />
         </div>
-      </footer>
+      </div>
     </body>`
     )
   }
