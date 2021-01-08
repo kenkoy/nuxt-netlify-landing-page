@@ -8,6 +8,7 @@
               aria-label="Responsible Gaming"
               target="_blank"
               :href="responsibleGamingURL"
+              rel="noopener"
             >
               <img src="@/assets/images/footer/icon_age.svg" alt="alt img">
             </a>
@@ -16,6 +17,7 @@
               aria-label="Gambling Theraphy"
               target="_blank"
               href="https://www.gamblingtherapy.org/en"
+              rel="noopener"
             >
               <img src="@/assets/images/footer/icon_gt.svg" alt="alt img">
             </a>
@@ -34,6 +36,7 @@
               aria-label="Responsible Gaming"
               target="blank"
               :href="responsibleGamingURL"
+              rel="noopener"
             >
               ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。
             </a>
@@ -61,6 +64,7 @@
               aria-label="Responsible Gaming"
               target="_blank"
               :href="responsibleGamingURL"
+              rel="noopener"
             >
               <img src="@/assets/images/footer/icon_age.svg" alt="responsible gaming">
             </a>
@@ -69,6 +73,7 @@
               aria-label="Gambling Theraphy"
               target="_blank"
               href="https://www.gamblingtherapy.org/en"
+              rel="noopener"
             >
               <img src="@/assets/images/footer/icon_gt.svg" alt="gambling theraphy">
             </a>
@@ -77,6 +82,7 @@
               aria-label="Malta Gaming Authority"
               target="_blank"
               href="https://www.authorisation.mga.org.mt/verification.aspx?lang=en&company=c0e82570-bf83-4ecc-bda3-89ecb92d5b0e"
+              rel="noopener"
             >
               <img src="@/assets/images/footer/icon_mga.svg" alt="malta gambling authority">
             </a>
