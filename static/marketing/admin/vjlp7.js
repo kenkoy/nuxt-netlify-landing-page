@@ -8,7 +8,7 @@ export const VJLP7_PREVIEW = createClass({
     const link = document.createElement('link')
     link.rel = 'stylesheet'
     link.type = 'text/css'
-    link.href = '~/assets/sass/vjlp7/style.scss'
+    link.href = '../../assets/sass/vjlp7/style.scss'
     document.head.appendChild(link)
   },
 
@@ -61,7 +61,7 @@ export const VJLP7_PREVIEW = createClass({
                 <div>
                   <div id="login" class="animated">
                     <div class="fadeIn animated">
-                      <a :href="mdData.promo_banner.promo_login_button_redirect_url">
+                      <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}">
                         <i class="material-icons">exit_to_app</i>
                         <span>${banner.getIn(['data', 'promo_login_button'])}</span>
                       </a>
