@@ -1,6 +1,6 @@
 <template>
   <div :class="{ post_wrapper: true }">
-    <section id="featured-posts" :class="$nuxt.$route.name">
+    <section id="featured-posts" :class="$nuxt.$route.name.includes('vj') ? 'vj-post-wrapper' : 'ic-post-wrapper'">
       <div class="container">
         <div v-for="(post, post_index) in posts" :key="post_index" class="posts">
           <nuxt-link :to="'/marketing/' + post.path + '/' + post.slug" class="post-preview">
@@ -30,10 +30,7 @@ export default {
     .post_wrapper {
         @import '@/assets/sass/base/style.scss';
 
-        .marketing-vjlp5,
-        .marketing-vjlp6,
-        .marketing-vjlp1v2,
-        .marketing-vjlp7{
+        .vj-post-wrapper{
             background: #009FE3;
 
             a{
@@ -54,8 +51,7 @@ export default {
             }
         }
 
-        .marketing-iclp3v2,
-        .marketing-iclp2v2{
+        .ic-post-wrapper{
             background: #230c33;
 
             a{

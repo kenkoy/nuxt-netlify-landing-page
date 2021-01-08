@@ -7,7 +7,7 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   go_container_id: OPT-PHSNXP6
   gtm_container_id: GTM-MFD3NKM
-versions: version2
+styles: version1
 promo_banner:
   promo_title: |-
     最大$1000の
@@ -24,9 +24,7 @@ promo_banner:
   promo_join_button: 入金ボーナスを獲得する
   promo_login_button: 登録
   promo_title_highlighted:
-    - 最大
-    - の
-    - ビギナーズボーナス
+    - $1000
 promo_steps:
   promo_step_1_title: 登録
   promo_step_1_desc: 1番人気のオンラインカジノだから安心!
