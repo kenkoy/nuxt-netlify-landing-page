@@ -11,7 +11,7 @@
             <div>
               <div id="login" class="animated">
                 <div class="fadeIn animated">
-                  <a :href="mdData.promo_banner.promo_login_button_redirect_url">
+                  <a rel="noopener" :href="mdData.promo_banner.promo_login_button_redirect_url">
                     <i class="material-icons">exit_to_app</i>
                     <span>{{ mdData.promo_banner.promo_login_button }}</span>
                   </a>
@@ -28,7 +28,7 @@
               </div>
 
               <button class="animated infinite pulse">
-                <a :href="mdData.promo_banner.promo_join_button_redirect_url">{{ mdData.promo_banner.promo_join_button }}</a>
+                <a rel="noopener" :href="mdData.promo_banner.promo_join_button_redirect_url">{{ mdData.promo_banner.promo_join_button }}</a>
               </button>
               <div>
                 <small v-html="bannerTerms" />
@@ -80,8 +80,8 @@
             <ul>
               <li>
                 通常の
-                <a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と
-                <a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。
+                <a rel="noopener" href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と
+                <a rel="noopener" href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。
               </li>
             </ul>
           </div>
@@ -175,7 +175,7 @@ export default {
       this.mdData.promo_banner.promo_terms_link_text.filter(linkText => linkText)
         .forEach((linkText) => {
           if (this.mdData.promo_banner.promo_terms_text.includes(linkText)) {
-            termsText = this.mdData.promo_banner.promo_terms_text.replace(linkText, `<a href="#terms" class="link-terms-conditions ctac">${linkText}</a>`)
+            termsText = this.mdData.promo_banner.promo_terms_text.replace(linkText, `<a rel="noopener" href="#terms" class="link-terms-conditions ctac">${linkText}</a>`)
           }
         })
       return termsText
