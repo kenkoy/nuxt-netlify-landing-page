@@ -2,7 +2,7 @@
 import htm from './external-scripts/htm.module.js'
 
 const html = htm.bind(h)
-export const VJLP7_PREVIEW = createClass({
+export const VJLP3_PREVIEW = createClass({
   componentDidMount () {
     const { document } = this.props
     const link = document.createElement('link')
