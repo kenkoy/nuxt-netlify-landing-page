@@ -1,4 +1,22 @@
 /*--BACKGROUNDS COLORS / IMAGES--*/
+#terms{
+  display: block;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
 .vjlp3v2-main {
   background: $BODY_BG;
 }
