@@ -73,8 +73,9 @@
                 v-for="(data, index) in carouselData"
                 :key="index"
                 :href="data.link"
+                :aria-label="`link_${index + 1}`"
               >
-                <img :src="data.icon">
+                <img :alt="`image_${index + 1}`" :src="data.icon">
               </a>
             </VueSlickCarousel>
           </div>
