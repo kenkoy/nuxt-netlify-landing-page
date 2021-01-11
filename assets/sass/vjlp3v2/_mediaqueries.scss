@@ -1,5 +1,9 @@
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
+  .payment-providers {
+    background: var(--payment-small) center center no-repeat;
+  }
+
   #hero {
     h1 {
       font-size: 1.75em;
@@ -155,6 +159,10 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
+  .payment-providers {
+    background: var(--payment-large) center center no-repeat;
+  }
+
   #hero {
     h1,
     h2 {

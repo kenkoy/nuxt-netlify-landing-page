@@ -1,22 +1,47 @@
 /*--BACKGROUNDS COLORS / IMAGES--*/
-#terms{
+#terms {
   display: block;
 }
+#intro h3 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.5em
+}
+
+.payment-providers {
+  border-bottom: 3px solid #0093D4;
+  border-top: 3px solid #0093D4;
+  width: 100%;
+  height: 150px;
+  // background: var(--payment-large) center center no-repeat;
+  background-size: contain !important;
+  float: left;
+  clear: both;
+  margin: 10px 0;
+}
+
 .row{
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
 }
+
 .col-12 {
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    box-sizing: border-box;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
 }
+
+.bf-separator {
+  border-top: 3px solid #0093D4;
+  margin: 40px 0;
+}
+
+
+
 .vjlp3v2-main {
   background: $BODY_BG;
 }
@@ -164,25 +189,5 @@ button.error {
   a {
     text-decoration: none;
     border-bottom: none
-  }
-
-
-  #terms {
-    display: block;
-  }
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .col-12 {
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-      max-width: 100%;
-      width: 100%;
-  }
-
-  .bf-separator {
-    border-top: 3px solid #0093D4;
-    margin: 40px 0;
   }
 }

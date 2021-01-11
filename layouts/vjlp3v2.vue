@@ -80,8 +80,7 @@
           </div>
         </div>
       </section>
-      <!-- eslint-disable-next-line vue/no-lone-template -->
-      <span v-html="htmlBody" />
+      <span :style="paymentProviders" v-html="htmlBody" />
       <Footer
         :promo-language-code="mdData.promo_locale.promo_language_code"
         :promo-country-code="mdData.promo_locale.promo_country_code"
@@ -141,6 +140,15 @@ export default {
       return links.map((data, index) => ({
         link: data, icon: icons[index]
       }))
+    },
+    paymentProviders () {
+      const country = this.mdData.promo_locale.promo_country_code || 'en'
+      const mobile = require(`~/assets/images/payment/payment_${country}.svg`)
+      const desktop = require(`~/assets/images/payment/payment_large_${country}.svg`)
+      return {
+        '--payment-small': `url('${mobile}')`,
+        '--payment-large': `url('${desktop}')`
+      }
     }
   },
   created () {
