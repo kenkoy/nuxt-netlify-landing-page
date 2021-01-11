@@ -1,20 +1,21 @@
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
-  #hero .banner {
-    background: var(--bg-image-m) no-repeat center;
-    background-size: contain;
-    width: 100%;
-    min-height: 400px;
-  }
+  #hero {
+    h1 {
+      font-size: 1.75em;
+      text-align: center;
+    }
 
-  h1 {
-    font-size: 1.75em;
-    text-align: center;
-  }
-
-  h2 {
-    text-align: center;
-    font-size: 1.125em;
+    h2 {
+      text-align: center;
+      font-size: 1.125em;
+    }
+    .banner {
+      background: var(--bg-image-m) no-repeat center;
+      background-size: contain;
+      width: 100%;
+      min-height: 400px;
+    }
   }
 
   p,
@@ -92,10 +93,10 @@
   }
 
   #game-slider {
-    max-height: 100px;
+    max-height: 120px;
 
     img {
-      height: 9vh;
+      height: 11vh;
     }
   }
 }
@@ -137,8 +138,10 @@
     }
   }
 
-  h2 {
-    font-size: 1.5em;
+  #hero {
+    h2 {
+      font-size: 1.5em;
+    }
   }
 
   #game-slider {
@@ -152,12 +155,12 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-  h1,
-  h2 {
-    text-align: left;
-  }
-
   #hero {
+    h1,
+    h2 {
+      text-align: left;
+    }
+
     .center {
       display: none;
     }
@@ -169,6 +172,12 @@
     button {
       margin-top: 10px
     }
+  }
+
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
