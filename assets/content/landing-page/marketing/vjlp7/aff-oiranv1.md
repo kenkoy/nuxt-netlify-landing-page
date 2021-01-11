@@ -7,9 +7,10 @@ field_ids:
   go_container_id: OPT-PD9MB2F
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
+styles: version1
 promo_banner:
   promo_title: |-
-    
+
     今だけ
     最高$500のボーナス
     をプレゼント！
