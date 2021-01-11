@@ -1,0 +1,212 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  section,
+  footer {
+    padding: 20px 10px;
+  }
+  footer {
+    border-top: solid 2px $BORDER_COLOR;
+  }
+  #hero {
+    background: linear-gradient(rgba(132,5,217,.2),rgba(0,0,0,.6)),var(--bg-image-m) no-repeat top;
+    background-size: cover;
+    padding: 20px;
+    .loginbtn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      p {
+        margin: 0;
+      }
+    }
+    .container {
+      #header-text-wrapper {
+          margin-top: 75px;
+          margin-bottom: 25px;
+          width: 100%;
+          text-align: center;
+          line-height: 45px;
+          padding: 0;
+          h1 {
+            font-size: 60px;
+          }
+          h2 {
+            font-size: 22px;
+          }
+      }
+      img:first-child {
+        max-width: 200px;
+        width: 100%;
+      }
+      div:last-child {
+        p {
+          font-size: 14px;
+          line-height: 14px;
+          margin: 0;
+          span {
+            background-color: #ff0375;
+          }
+        }
+        button + p {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+  #steps {
+    background: $BG_MAIN;
+    .container {
+      display: block;
+      text-align: center;
+      overflow: hidden;
+      margin-top: -40px;
+      > div {
+        display: inline-block;
+        vertical-align: top;
+        width: 31%;
+        overflow: hidden;
+        span {
+          background-color: #FFF;
+          width: 50px;
+          height: 50px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          border-radius: 50%;
+          -moz-border-radius: 50%;
+          color: #F20574;
+          font-size: 36px;
+          font-weight: 700;
+          margin: auto;
+          font-family: 'MainFont-Bold', sans-serif;
+        }
+        h2 {
+          font-size: 22px;
+          color: $H2_COLOR;
+          margin-bottom: 8px;
+        }
+        p {
+          font-family: 'MainFont-Medium', sans-serif;
+          font-size: 11px;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  #terms-anchor {
+    display: none;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 576px) {
+  #steps {
+    .container > div {
+      h2 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+  #hero {
+    background: linear-gradient(rgba(132,5,217,.2),rgba(0,0,0,.6)),var(--bg-image) no-repeat top;
+    background-size: cover;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  #hero {
+    .container {
+      #header-text-wrapper {
+        margin-bottom: 0;
+        h1, h2 {
+          margin: 10px auto;
+        }
+      }
+      img:first-child {
+        margin: 10px auto;
+      }
+    }
+    button {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  }
+  #steps {
+    padding: 20px 0;
+    .container {
+      margin-top: 0;
+      display: block;
+      > div {
+        span {
+          width: 100px;
+          height: 100px;
+          font-size: 80px;
+          float: left;
+        }
+        > div {
+          width: 150px;
+        }
+        > * {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        h2 {
+          font-size: 32px;
+          margin: 0;
+          text-align: left;
+        }
+        p {
+          font-size: 16px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  section,
+  footer {
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (min-width : 1440px) {
+  section,
+  footer {
+    padding: 50px 0;
+  }
+  #hero {
+    .container {
+      img:first-child {
+        max-width: 400px;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -959,7 +959,7 @@ export const VJLP7_PREVIEW = createClass({
       id="${locale.getIn(['data', 'promo_language_code'])}-${locale.getIn(['data', 'promo_country_code'])}"
       style='${cssBg}'
     >
-      <div :class="{ vjlp7_wrapper: true }">
+      <div class="vjlp7_wrapper">
         <nuxt />
         <div
           v-if="Object.keys(mdData).length > 0"
