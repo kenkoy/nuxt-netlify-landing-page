@@ -19,7 +19,7 @@ promo_banner:
     game_icon_3: /marketing/img/card-master.png
     game_icon_4: /marketing/img/live-casino.png
     game_icon_5: /marketing/img/payment-option.png
-  promo_subtitle: " Sample"
+  promo_subtitle: "Sample"
   promo_title: 無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！
   promo_images:
     promo_bg_desktop: /marketing/img/digital-welcomeoffer-mob-cta-1000x300-a_nocta.png

@@ -1,20 +1,25 @@
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
-  #hero .banner {
-    background: var(--bg-image-m) no-repeat center;
-    background-size: contain;
-    width: 100%;
-    min-height: 400px;
+  .payment-providers {
+    background: var(--payment-small) center center no-repeat;
   }
 
-  h1 {
-    font-size: 1.75em;
-    text-align: center;
-  }
+  #hero {
+    h1 {
+      font-size: 1.75em;
+      text-align: center;
+    }
 
-  h2 {
-    text-align: center;
-    font-size: 1.125em;
+    h2 {
+      text-align: center;
+      font-size: 1.125em;
+    }
+    .banner {
+      background: var(--bg-image-m) no-repeat center;
+      background-size: contain;
+      width: 100%;
+      min-height: 400px;
+    }
   }
 
   p,
@@ -90,11 +95,25 @@
       text-align: center;
     }
   }
+
+  #game-slider {
+    max-height: 120px;
+
+    img {
+      height: 11vh;
+    }
+  }
 }
 
 /* Iphone 5/SE */
 @media (max-height: 568px) and (max-width: 320px) {
+  #game-slider {
+    height: 100px;
 
+    img {
+      height: 13vh;
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -123,27 +142,53 @@
     }
   }
 
-  h2 {
-    font-size: 1.5em;
+  #hero {
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+
+  #game-slider {
+    max-height: 100%;
+
+    img {
+      height: 100%;
+    }
   }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
-  h1,
-  h2 {
-    text-align: left;
-    // font-size: 1.5em;
+  .payment-providers {
+    background: var(--payment-large) center center no-repeat;
   }
 
   #hero {
-    .center {
-      visibility: hidden
+    h1,
+    h2 {
+      text-align: left;
     }
+
+    .center {
+      display: none;
+    }
+
     .lower-right,
     .upper-left {
-      visibility: visible;
+      display: block;
     }
+    button {
+      margin-top: 10px
+    }
+  }
+
+  .col-md-6{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
   }
 }
 

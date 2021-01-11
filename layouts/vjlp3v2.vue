@@ -59,37 +59,28 @@
       <section id="game-slider">
         <div class="container">
           <div class="slider">
-            <VueSlickCarousel :arrows="true" :dots="true" :slides-to-show="desktop ? 5 : 3">
-              <div class="slide-content">
-                  <a :href="mdData.promo_banner.game_images.game_url_1">
-                      <img :src="mdData.promo_banner.game_images.game_icon_1" alt="alt img"/>
-                  </a>
-              </div>
-              <div class="slide-content">
-                  <a :href="mdData.promo_banner.game_images.game_url_2">
-                      <img :src="mdData.promo_banner.game_images.game_icon_2" alt="alt img"/>
-                  </a>
-              </div>
-              <div class="slide-content">
-                  <a :href="mdData.promo_banner.game_images.game_url_3">
-                      <img :src="mdData.promo_banner.game_images.game_icon_3" alt="alt img"/>
-                  </a>
-              </div>
-              <div class="slide-content">
-                  <a :href="mdData.promo_banner.game_images.game_url_4">
-                      <img :src="mdData.promo_banner.game_images.game_icon_4" alt="alt img"/>
-                  </a>
-              </div>
-              <div class="slide-content">
-                  <a :href="mdData.promo_banner.game_images.game_url_5">
-                      <img :src="mdData.promo_banner.game_images.game_icon_5" alt="alt img"/>
-                  </a>
-              </div>
+            <VueSlickCarousel
+              :arrows="false"
+              :dots="false"
+              :infinite="true"
+              :autoplay="true"
+              :speed="300"
+              :slides-to-show="5"
+              :slides-to-scroll="1"
+              v-bind="carouselSettings"
+            >
+              <a
+                v-for="(data, index) in carouselData"
+                :key="index"
+                :href="data.link"
+              >
+                <img :src="data.icon">
+              </a>
             </VueSlickCarousel>
           </div>
         </div>
       </section>
-      <div v-html="htmlBody" />
+      <span :style="paymentProviders" v-html="htmlBody" />
       <Footer
         :promo-language-code="mdData.promo_locale.promo_language_code"
         :promo-country-code="mdData.promo_locale.promo_country_code"
@@ -112,8 +103,6 @@ export default {
   },
   data () {
     return {
-      desktop: true,
-      mobile: false,
       mdData: {},
       htmlBody: '',
       carouselSettings: {
@@ -151,6 +140,15 @@ export default {
       return links.map((data, index) => ({
         link: data, icon: icons[index]
       }))
+    },
+    paymentProviders () {
+      const country = this.mdData.promo_locale.promo_country_code || 'en'
+      const mobile = require(`~/assets/images/payment/payment_${country}.svg`)
+      const desktop = require(`~/assets/images/payment/payment_large_${country}.svg`)
+      return {
+        '--payment-small': `url('${mobile}')`,
+        '--payment-large': `url('${desktop}')`
+      }
     }
   },
   created () {
@@ -161,23 +159,6 @@ export default {
   },
   beforeDestroy () {
     this.$root.$off('vjlp3-data')
-    window.removeEventListener('resize', this.myEventHandler)
-  },
-  mounted () {
-    window.addEventListener('resize', this.myEventHandler)
-    this.myEventHandler()
-  },
-  methods: {
-    myEventHandler () {
-      // your code for handling resize...
-      if (window.innerWidth <= 992) {
-        this.desktop = false
-        this.mobile = true
-      } else {
-        this.desktop = true
-        this.mobile = false
-      }
-    }
   }
 }
 </script>
