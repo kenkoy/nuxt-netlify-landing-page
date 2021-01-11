@@ -90,11 +90,25 @@
       text-align: center;
     }
   }
+
+  #game-slider {
+    max-height: 100px;
+
+    img {
+      height: 9vh;
+    }
+  }
 }
 
 /* Iphone 5/SE */
 @media (max-height: 568px) and (max-width: 320px) {
+  #game-slider {
+    height: 100px;
 
+    img {
+      height: 13vh;
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -126,6 +140,14 @@
   h2 {
     font-size: 1.5em;
   }
+
+  #game-slider {
+    max-height: 100%;
+
+    img {
+      height: 100%;
+    }
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -133,7 +155,6 @@
   h1,
   h2 {
     text-align: left;
-    // font-size: 1.5em;
   }
 
   #hero {
