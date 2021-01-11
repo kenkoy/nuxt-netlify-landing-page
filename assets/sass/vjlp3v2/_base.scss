@@ -7,7 +7,8 @@ h1 {
   font-family: 'SubFont', sans-serif;
   color: $TITLE_COLOR;font-size: 1.75em;
   text-shadow: 0 2px 2px rgba(0,0,0,0.3);
-  margin: 13px 0 0 0;
+  margin: 0px 0 0 0;
+  line-height: 1.2;
 }
 
 h2 {
@@ -15,7 +16,6 @@ h2 {
   font-family: 'SubFont', sans-serif;
   text-shadow: 0 2px 2px rgba(0,0,0,0.3);
   margin: -5px 0 0 0;
-  padding: 0
 }
 
 #header {
@@ -77,8 +77,11 @@ button.error {
   background: linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.15)), var(--bg-banner) 50% no-repeat;
   background-size: cover;
 
+  .container:first-child {
+    margin-top: 22px;
+  }
+
   button {
-    margin-top: -50px;
     min-width: 200px;
     a {
       text-decoration: none;
@@ -94,19 +97,19 @@ button.error {
   }
 
   .hidden {
-    visibility: hidden;
+    display: none;
   }
 
   .lower-right {
     position: absolute;
     right: 0px;
     bottom: 0px;
-    visibility: hidden;
+    display: none;
   }
 
   .upper-left {
     position: absolute;
-    visibility: hidden;
+    display: none;
   }
 }
 

@@ -159,11 +159,15 @@
 
   #hero {
     .center {
-      visibility: hidden
+      display: none;
     }
+
     .lower-right,
     .upper-left {
-      visibility: visible;
+      display: block;
+    }
+    button {
+      margin-top: 10px
     }
   }
 }
