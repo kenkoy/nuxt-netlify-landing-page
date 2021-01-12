@@ -19,18 +19,18 @@ describe('Testing vjlp1 version 2 index.vue', () => {
       .sample()
       .value()
 
-    const dataMD = retriveFrontMattertoJSON(md)
+    const markDownData = retriveFrontMattertoJSON(md)
     wrapper = mount(index, {
       localVue,
       data () {
         return {
-          dataMD
+          markDownData
         }
       }
     })
     metaInfo = wrapper.vm.$metaInfo
-    tagIds = dataMD.attributes.field_ids
-    locale = dataMD.attributes.promo_locale
+    tagIds = markDownData.attributes.field_ids
+    locale = markDownData.attributes.promo_locale
   })
 
   test('Title should be Vera&John', () => {
