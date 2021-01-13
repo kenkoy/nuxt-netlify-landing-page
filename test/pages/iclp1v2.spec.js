@@ -1,4 +1,4 @@
-import { markDownData, createLocalVue } from '@vue/test-utils'
+import { mount, createLocalVue } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
 import index from '@/pages/marketing/iclp1v2/_slug/index.vue'
@@ -23,7 +23,7 @@ describe('Testing ICLP1 index.vue', () => {
       localVue,
       data () {
         return {
-            markDownData
+          markDownData
         }
       }
     })

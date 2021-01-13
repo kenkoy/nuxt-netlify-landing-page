@@ -36,13 +36,13 @@ describe('Testing VJHP2 index.vue', () => {
     expect(pageTitle).toBe('Vera&John - The fun online casino')
   })
 
-  test.skip('HTML language attribute should not be null or undefined', () => {
+  test('HTML language attribute should not be null or undefined', () => {
     const languageAttribute = metaInfo.htmlAttrs.lang
     expect(languageAttribute).not.toBeNull()
     expect(languageAttribute).not.toHaveLength(0)
   })
 
-  test.skip('Body ID attriute should be LANGUAGE CODE-COUNTRY_CODE', () => {
+  test('Body ID attriute should be LANGUAGE CODE-COUNTRY_CODE', () => {
     const langHtmlAttribute = metaInfo.htmlAttrs.lang
     expect(langHtmlAttribute).toBe('ja')
 
