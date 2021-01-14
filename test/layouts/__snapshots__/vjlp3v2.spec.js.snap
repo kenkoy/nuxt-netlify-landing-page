@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing VJLP3v2 layout vjlp3v2.vue Renders correctly 1`] = `
+<div
+  class="vjlp3v2_wrapper"
+>
+  <nuxt-stub />
+   
+  <!---->
+</div>
+`;

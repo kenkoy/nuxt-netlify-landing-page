@@ -2,7 +2,8 @@ module.exports = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
     '^~/(.*)$': '<rootDir>/$1',
-    '^vue$': 'vue/dist/vue.common.js'
+    '^vue$': 'vue/dist/vue.common.js',
+    '^.+\\.(css|less)$': '<rootDir>/test/utils/cssStub.js'
   },
   moduleFileExtensions: [
     'js',
@@ -16,7 +17,7 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     // '<rootDir>/components/**/*.vue',
-    // '<rootDir>/layouts/*.vue',
+    '<rootDir>/layouts/*.vue',
     '<rootDir>/pages/**/*.vue'
   ],
   snapshotSerializers: ['jest-serializer-vue'],
