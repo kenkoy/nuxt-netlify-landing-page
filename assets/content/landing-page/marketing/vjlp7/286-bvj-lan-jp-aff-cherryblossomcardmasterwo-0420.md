@@ -1,5 +1,5 @@
 ---
-slug_name: 286 BVJ lan JP aff Cherryblossomcardmasterwo 0420
+slug_name: 286 BVJ lan JP aff Cherryblossomcardmasterwo 0420_Test
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -9,24 +9,24 @@ field_ids:
   gtm_container_id: GTM-MFD3NKM
 styles: version1
 promo_banner:
-  promo_render_title_first: true
   promo_title: |-
     最高$500までの
     100%入金ボーナス
     を獲得しよう!
-  promo_title_highlighted:
-    - $500
-    - 100%入金ボーナス
   promo_images:
     promo_bg_desktop: /marketing/img/card-master-blosson_bg.jpg
     promo_bg_mobile: /marketing/img/card-master-blossom_bg_m.jpg
-  promo_login_button_redirect_url: https://verajohn.com/#join
-  promo_join_button: ご登録はこちら
-  promo_join_button_redirect_url: https://verajohn.com/#join
-  promo_login_button: 登録
   promo_terms_link_text:
     - 利用規約
+  promo_render_title_first: true
+  promo_login_button_redirect_url: https://verajohn.com/#join
+  promo_join_button_redirect_url: https://verajohn.com/#join
   promo_terms_text: 利用規約に同意します。
+  promo_join_button: ご登録はこちら
+  promo_login_button: 登録
+  promo_title_highlighted:
+    - $500
+    - 100%入金ボーナス
 promo_steps:
   promo_step_1_title: ご登録
   promo_step_1_desc: 無料だから 安心!
