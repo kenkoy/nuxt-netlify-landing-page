@@ -14,15 +14,15 @@
             </nuxt-link>
           </span>
           <div id="switch">
-            <nuxt-link to="/marketing/admin/#/" target="_blank">
+            <nuxt-link to="/marketing/admin#/" target="_blank">
               Admin
             </nuxt-link>
-            <button id="vj" :class="switchTemplate === 'vj' ? 'active' : ''" @click="switchTemplate ='vj'">
-              VJ
-            </button>
-            <button id="ic" :class="switchTemplate === 'ic' ? 'active' : ''" @click="switchTemplate = 'ic'">
-              IC
-            </button>
+            <nuxt-link to="/marketing/vjlp1v2/" id="vj" :class="switchTemplate === 'vj' ? 'active' : ''" @click.native="switchTemplate ='vj'">
+              <strong>VJ</strong>
+            </nuxt-link>
+            <nuxt-link to="/marketing/iclp1v2/" id="ic" :class="switchTemplate === 'ic' ? 'active' : ''" @click.native="switchTemplate = 'ic'">
+              <strong>IC</strong>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/marketing/admin/#/" target="_blank">
+            <nuxt-link to="/marketing/admin#/" target="_blank">
               Admin
             </nuxt-link>
           </li>
