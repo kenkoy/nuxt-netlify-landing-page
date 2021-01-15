@@ -546,7 +546,7 @@ collections:
     preview_path: marketing/vjlp7/{{slug}}
     show_preview_links: true
     editor:
-      preview: true
+      preview: false
     fields:
       - label: Slug
         widget: string

@@ -1,39 +1,40 @@
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { mount, createLocalVue } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
-import index from '@/pages/marketing/vjhp/index.vue'
+import index from '@/pages/marketing/iclp1v2/_slug/index.vue'
 import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.js'
 
-const VJHP_DIR = '/assets/content/landing-page/marketing/vjhp/'
+const ICLP1_DIR = '/assets/content/landing-page/marketing/iclp1/'
 
-describe('Testing VJHP2 index.vue', () => {
-  let wrapper, metaInfo, tagIds
+describe('Testing ICLP1 index.vue', () => {
+  let wrapper, metaInfo, tagIds, locale
 
   beforeAll(async () => {
     const localVue = createLocalVue()
     localVue.use(VueMeta, { keyName: 'head' })
 
     const md = _
-      .chain(await retrieveFiles(VJHP_DIR, '.md'))
-      .map(files => VJHP_DIR + files)
+      .chain(await retrieveFiles(ICLP1_DIR, '.md'))
+      .map(files => ICLP1_DIR + files)
       .sample()
       .value()
-    const post = retriveFrontMattertoJSON(md)
-    wrapper = shallowMount(index, {
+    const markDownData = retriveFrontMattertoJSON(md)
+    wrapper = mount(index, {
       localVue,
       data () {
         return {
-          post
+          markDownData
         }
       }
     })
     metaInfo = wrapper.vm.$metaInfo
-    tagIds = post.attributes.field_ids
+    tagIds = markDownData.attributes.field_ids
+    locale = markDownData.attributes.promo_locale
   })
 
-  test('Title should be Vera&John - The fun online casino', () => {
+  test('Title should be インターカジノ', () => {
     const pageTitle = metaInfo.title
-    expect(pageTitle).toBe('Vera&John - The fun online casino')
+    expect(pageTitle).toBe('インターカジノ')
   })
 
   test('HTML language attribute should not be null or undefined', () => {
@@ -43,11 +44,13 @@ describe('Testing VJHP2 index.vue', () => {
   })
 
   test('Body ID attriute should be LANGUAGE CODE-COUNTRY_CODE', () => {
-    const langHtmlAttribute = metaInfo.htmlAttrs.lang
-    expect(langHtmlAttribute).toBe('ja')
+    const countryCode = locale.promo_country_code
+    const languageCode = locale.promo_language_code
+    expect(countryCode).not.toBeNull()
+    expect(countryCode).not.toHaveLength(0)
 
-    const idBodyAttribute = metaInfo.bodyAttrs.id
-    expect(idBodyAttribute).toBe('ja-jp')
+    const idAttribute = metaInfo.bodyAttrs.id
+    expect(idAttribute).toBe(`${languageCode}-${countryCode}`)
   })
 
   test('Google Optimize ID and scripts should be present', () => {

@@ -1,5 +1,5 @@
 ---
-slug_name: 206 BVJ lan JP Pro Dailycashwo 1219_Test
+slug_name: 206 BVJ lan JP Pro Dailycashwo 1219 Internal Test
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -7,7 +7,7 @@ field_ids:
   go_container_id: OPT-PHSNXP6
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
-styles: version1
+styles: version2
 promo_banner:
   promo_title: |-
     最高$500までの
@@ -36,9 +36,8 @@ promo_steps:
   promo_step_3_desc: デイリーキャッシュ
 promo_template: VJLP1-NoForm
 ---
-QA Test  
 
-<h3 class="text-left">カード・オブ・フロンティア利用規約</h3>
+  <h3 class="text-left">カード・オブ・フロンティア利用規約</h3>
   <ul class="terms-ul">
       <p>1. このキャンペーンでは、毎日1回、守護者から配られる5枚のカードの中から1枚を選択することにより、選択したカードに記載されている賞金を受け取ることができます<br>2. このキャンペーンは、お一人様1日1回参加することができます。<br>3. このキャンペーンでの1日とは、日本時間20:00から翌日19:59までとします。<br>4. 通常モードの賞金は、ボーナスキャッシュとしてボーナス残高へ進呈され、獲得額の1倍にあたる出金賭け条件を30日以内にゲームで賭けて満たす必要があります。ジャックポットチャレンジ・モードの賞金は、キャッシュとしてアカウントに進呈され、賭け条件の設定はございません。<br>5. 賞金は、最低$1、最高$20000までとなります。<br>6. 獲得できる賞金額はランダムに生成され、プレイヤーごとに異なります。ハズレカードも中には含まれ、必ずしも賞金を獲得できるとは限りません。<br>7. このキャンペーンは、ベラジョンで1回以上の入金履歴のあるプレイヤーが対象です。<br>8. 入金履歴のないプレイヤーは、日本時間15:59までに初回入金完了することで、当日20:00以降にキャンペーンに参加することが可能です。<br>9. べラジョンは、このキャンペーンを、いつでも終了または変更する権利を有します。<br></p>
   </ul>
