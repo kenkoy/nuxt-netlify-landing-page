@@ -21,6 +21,9 @@
             <div class="banner">
               <img alt="alt img" :src="mdData.promo_banner.promo_images.promo_game_logo">
               <img alt="alt img" :src="mdData.promo_banner.promo_images.promo_game_image">
+
+              <h1>{{ mdData.promo_banner.promo_large_subtitle }}</h1>
+              <p v-if="mdData.promo_banner.promo_small_subtitle" v-html="bannerDesc" />
             </div>
 
             <div id="banner-terms">
@@ -89,6 +92,30 @@ export default {
         '--bg-image-m': `url('${images.promo_bg_mobile}')`,
         '--bg-banner': `url('${images.promo_bg_banner}')`
       }
+    },
+    bannerDesc () {
+      const bannerTitle = this.mdData.promo_banner.promo_small_subtitle.split(/\r?\n/)
+        .map(title => this.mdData.promo_banner.promo_small_subtitle.slice(-1) === '\\'
+          ? this.mdData.promo_banner.promo_small_subtitle.substring(0, this.mdData.promo_banner.promo_small_subtitle.length - 1)
+          : title
+        )
+
+      let idx = 0
+      this.mdData.promo_banner.promo_small_subtitle_highlighted.filter(phrase => phrase)
+        .forEach((phrase) => {
+          while (bannerTitle.length > idx) {
+            if (bannerTitle[idx].includes(phrase)) {
+              bannerTitle[idx] = bannerTitle[idx].replace(phrase, `<span class="highlight"><b>${phrase}</b></span>`)
+              break
+            } else {
+              idx++
+            }
+          }
+        })
+
+      return bannerTitle.reduce((oldVal, newVal) => {
+        return oldVal + '<br />' + newVal
+      })
     },
     bannerTerms () {
       let termsText = this.mdData.promo_banner.promo_terms

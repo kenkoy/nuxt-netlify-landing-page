@@ -12,6 +12,20 @@
   font-family: "Material Icons";
   font-style: normal;
 }
+.highlight{
+  color: $HIGHLIGHT;
+}
+
+h1{
+  color: $TITLE_COLOR;
+  font-size: $TITLE_SIZE;
+}
+
+h2{
+  color: $SUBTITLE_COLOR;
+  font-size: $SUBTITLE_SIZE;
+}
+
 h3{
   color: $H3_COLOR;
   font-size: $TEXT_SIZE;
@@ -67,7 +81,7 @@ button{
 }
 
 #hero{
-
+  text-align: center;
   .container > div{
     position: relative;
   }
@@ -113,6 +127,7 @@ button{
 
 #details{
   background: linear-gradient(180deg, rgba(0,79,184,1) 0%, rgba(0,175,255,1) 50%);
+  text-align: center;
 
   button{
     margin: 20px auto;

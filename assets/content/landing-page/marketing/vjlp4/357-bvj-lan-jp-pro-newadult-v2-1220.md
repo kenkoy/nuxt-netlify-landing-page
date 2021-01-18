@@ -8,22 +8,15 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
 promo_banner:
-  promo_small_subtitle: |-
-    $1000のウェルカムボーナスをゲットできるのは新規プレイヤーのあなた様のみ！
-    このビギナーズガイドを読んで、安心してベラジョンカジノを始めよう！
   promo_title: 324 BVJ lan JP Pro Beginnersguide 0720
   promo_images:
     promo_game_image: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-title.png
     promo_game_logo: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-game-logo.png
     promo_bg_mobile: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-bg_m.jpg
     promo_bg_desktop: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-bg.jpg
-  promo_large_subtitle: ■新規プレイヤー限定特典■
   promo_link_terms:
     - 利用規約
   promo_login_button_redirect_url: https://verajohn.com/#signin
-  promo_small_subtitle_highlighted:
-    - $1000のウェルカムボーナス
-    - 新規プレイヤー
   promo_join_button_redirect_url: https://verajohn.com/#join
   promo_join_button: ボーナスを今すぐゲット！
   promo_terms: 利用規約に同意します。
