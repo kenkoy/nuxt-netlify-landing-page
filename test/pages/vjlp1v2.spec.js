@@ -19,10 +19,6 @@ describe('Testing vjlp1 version 2 index.vue', () => {
       .sample()
       .value()
 
-    /**
-     * Changed the variable name from dataMD to markDownData
-     * since it is the variable name used in the index.vue file
-     */
     const markDownData = retriveFrontMattertoJSON(md)
     wrapper = mount(index, {
       localVue,
