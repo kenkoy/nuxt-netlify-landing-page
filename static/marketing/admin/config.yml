@@ -283,7 +283,6 @@ collections:
             name: "promo_images"
             widget: "object"
             colapsed: true
-            required: false
             fields:
               - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
               - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
@@ -294,7 +293,7 @@ collections:
         widget: "list"
         collapsed: true
         fields:
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Title", name: "title", widget: "string", required: false}
           - {label: "Join Button Text", name: "join_button", widget: "string"}
           - {label: "Join Button Redirect URL", name: "join_button_redirect_url", widget: "string"}
           - {label: "Image", name: image, widget: image}

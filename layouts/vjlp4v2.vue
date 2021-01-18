@@ -36,6 +36,7 @@
       <section v-for="(sections, sections_index) in mdData.section" id="details" :key="sections_index" class="separator">
         <div class="container">
           <div>
+            <h2>{{ sections.title }}</h2>
             <img alt="alt img" :src="sections.image">
             <button>
               <a rel="noopener" :href="sections.join_button_redirect_url">
