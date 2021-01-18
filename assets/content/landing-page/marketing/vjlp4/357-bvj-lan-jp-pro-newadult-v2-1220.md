@@ -34,7 +34,7 @@ section:
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-bonus.png
   - join_button: 今すぐ登録
-    title: 人気機種「花魁ドリーム」で大勝利するには？
+    title: "人気機種「花魁ドリーム」で大勝利するには？ "
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-CM.png
   - join_button: 今すぐ登録
