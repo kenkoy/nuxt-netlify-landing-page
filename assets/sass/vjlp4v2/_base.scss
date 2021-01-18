@@ -5,7 +5,7 @@
 .logo{
   max-width: 80px;
   display: block;
-  margin: 25px auto;
+  margin: 70px auto 25px auto;
 }
 
 .material-icons{
@@ -67,11 +67,28 @@ button{
 }
 
 #hero{
-  position: relative;
+
+  .container > div{
+    position: relative;
+  }
 
   small{
     color: $TEXT_COLOR;
     font-size: calc(#{$TEXT_SIZE - 5px});
+  }
+
+  .banner{
+    img{
+      display: block;
+      margin: auto;
+      width: 100%;
+    }
+    img:first-child{
+      max-width: 430px;
+    }
+    img:first-child + img{
+      max-width: 350px;
+    }
   }
 
   #banner-terms{
@@ -80,7 +97,7 @@ button{
     width: 100%;
     transform: translate(-50%);
     left: 50%;
-    bottom: 0;
+    bottom: 20px;
 
     button{
       margin-bottom: 50px;

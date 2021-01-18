@@ -293,6 +293,7 @@ collections:
         widget: "list"
         collapsed: true
         fields:
+          - {label: "Title", name: "title", widget: "string"}
           - {label: "Join Button Text", name: "join_button", widget: "string"}
           - {label: "Join Button Redirect URL", name: "join_button_redirect_url", widget: "string"}
           - {label: "Image", name: image, widget: image}

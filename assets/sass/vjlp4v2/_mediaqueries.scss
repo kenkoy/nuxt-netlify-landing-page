@@ -6,12 +6,21 @@
   .mobile{
     display: block;
   }
+  section,
+  footer{
+    padding: 20px 0;
+  }
   #hero{
     background: var(--bg-image-m) no-repeat center;
     background-size: cover;
+    padding: 0;
 
     .container{
       min-height: 770px;
+    }
+
+    button{
+      max-width: 85%;
     }
   }
 }
@@ -51,17 +60,8 @@
       min-height: 815px;
     }
 
-    .banner{
-      img{
-        display: block;
-        margin: auto;
-      }
-      img:first-child{
-        max-width: 430px;
-      }
-      img:first-child + img{
-        max-width: 350px;
-      }
+    button{
+      max-width: 555px;
     }
   }
 }
