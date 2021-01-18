@@ -50,6 +50,8 @@ button{
   width: 100%;
   margin: auto;
   display: block;
+  font-size: $TEXT_SIZE;
+  color: $BTN_COLOR;
 
   &:hover{
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.60);
