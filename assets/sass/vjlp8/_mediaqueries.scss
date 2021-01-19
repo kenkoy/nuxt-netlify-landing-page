@@ -29,6 +29,10 @@
   footer{
     padding: 20px 0;
   }
+  h1{
+    font-size: calc(#{$TITLE_SIZE} - 3px);
+    margin-top: 55px;
+  }
 
   h2{
     color: $SUBTITLE_COLOR;
@@ -42,6 +46,13 @@
 
     .container{
       min-height: 770px;
+    }
+
+    #banner-terms{
+      margin: 50px auto 45px auto;
+      button{
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -90,12 +101,25 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
+  h1{
+    font-size: $TITLE_SIZE;
+  }
   h2{
     font-size: $SUBTITLE_SIZE;
   }
   section,
   footer{
     padding: 40px 0;
+  }
+
+  #hero{
+    #banner-terms{
+      margin: 100px auto 45px auto;
+
+      button{
+        margin-bottom: 50px;
+      }
+    }
   }
 }
 
