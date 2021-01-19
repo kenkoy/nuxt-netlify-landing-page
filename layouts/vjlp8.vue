@@ -1,9 +1,9 @@
 <template>
-  <div :class="{ vjlp4_wrapper: true }">
+  <div :class="{ vjlp8_wrapper: true }">
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
-      class="vjlp4-main"
+      class="vjlp8-main"
       :class="mdData.styles"
     >
       <section id="hero" :style="cssBackground">
@@ -18,7 +18,7 @@
               </div>
             </div>
 
-            <img alt="alt img" class="logo" src="@/assets/images/vjlp4v2/logo.png">
+            <img alt="alt img" class="logo" src="@/assets/images/vjlp8/logo.png">
             <div class="banner">
               <img alt="alt img" class="bounce animated delay-1s" :src="mdData.promo_banner.promo_images.promo_game_logo">
               <img alt="alt img" :src="mdData.promo_banner.promo_images.promo_game_image">
@@ -55,8 +55,8 @@
 
       <section id="payment" class="separator">
         <div class="container">
-          <img class="desktop" src="@/assets/images/vjlp4v2/payment_large_jp.svg" alt="payment verajohn desktop">
-          <img class="mobile" src="@/assets/images/vjlp4v2/payment_jp.svg" alt="payment verajohn mobile">
+          <img class="desktop" src="@/assets/images/vjlp8/payment_large_jp.svg" alt="payment verajohn desktop">
+          <img class="mobile" src="@/assets/images/vjlp8/payment_jp.svg" alt="payment verajohn mobile">
         </div>
       </section>
 
@@ -132,20 +132,20 @@ export default {
     }
   },
   created () {
-    this.$root.$once('vjlp4-data', (data) => {
+    this.$root.$once('vjlp8-data', (data) => {
       this.htmlBody = data.htmlData
       this.mdData = data.yamlData
     })
   },
   beforeDestroy () {
-    this.$root.$off('vjlp4-data')
+    this.$root.$off('vjlp8-data')
   }
 }
 </script>
 
 <style lang="scss">
-  .vjlp4_wrapper {
-    @import '@/assets/sass/vjlp4v2/style.scss';
+  .vjlp8_wrapper {
+    @import '@/assets/sass/vjlp8/style.scss';
     @import '@/assets/sass/base/style.scss';
   }
 </style>

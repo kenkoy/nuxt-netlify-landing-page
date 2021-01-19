@@ -1,12 +1,13 @@
 ---
-slug_name: AFF-VJBG
+slug_name: 324 BVJ lan JP Pro Beginnersguide 0720
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 field_ids:
-  go_container_id: OPT-PD9MB2F
+  go_container_id: OPT-PHSNXP6
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
+styles: version1
 promo_banner:
   promo_small_subtitle: |-
     $1000のウェルカムボーナスをゲットできるのは新規プレイヤーのあなた様のみ！
