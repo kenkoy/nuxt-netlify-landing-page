@@ -29,7 +29,9 @@
 
             <div id="banner-terms">
               <button :class="mdData.styles === 'version2' ? 'animated pulse infinite' : ''">
-                {{ mdData.promo_banner.promo_join_button }}
+                <a :href="mdData.promo_banner.promo_join_button_redirect_url">
+                  {{ mdData.promo_banner.promo_join_button }}
+                </a>
               </button>
               <small v-html="bannerTerms" />
             </div>

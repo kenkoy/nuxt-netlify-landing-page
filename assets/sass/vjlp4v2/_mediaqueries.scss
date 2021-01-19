@@ -46,9 +46,13 @@
   }
 }
 
-/* Iphone 5/SE */
-@media (max-height: 568px) and (max-width: 320px) {
-
+/* Iphone 5 / Small devices */
+@media (max-height: 667px) and (min-width: 320px) {
+  #hero{
+    .container{
+      min-height: 600px;
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */

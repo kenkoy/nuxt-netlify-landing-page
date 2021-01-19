@@ -9,6 +9,11 @@
 .version2{
   button{
     max-width: 555px;
+
+    a{
+      font-family: 'MainFont-Bold', sans-serif;
+      font-weight: 600;
+    }
   }
 }
 
@@ -33,6 +38,9 @@
 h1{
   color: $TITLE_COLOR;
   font-size: $TITLE_SIZE;
+}
+h2{
+  font-family: 'MainFont-DemiBold', sans-serif;
 }
 
 h3{
@@ -121,7 +129,7 @@ button{
     width: 100%;
     transform: translate(-50%);
     left: 50%;
-    bottom: 20px;
+    bottom: 45px;
 
     button{
       margin-bottom: 50px;
