@@ -7,6 +7,7 @@ field_ids:
   go_container_id: OPT-PHSNXP6
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
+styles: version2
 promo_banner:
   promo_title: 324 BVJ lan JP Pro Beginnersguide 0720
   promo_images:

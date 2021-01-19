@@ -1,3 +1,17 @@
+//VERSION 1
+.version1{
+  button{
+    max-width: 280px;
+  }
+}
+
+//VERSION 2
+.version2{
+  button{
+    max-width: 555px;
+  }
+}
+
 .vjlp4-main {
   background: $BODY_BG;
 }
@@ -21,11 +35,6 @@ h1{
   font-size: $TITLE_SIZE;
 }
 
-h2{
-  color: $SUBTITLE_COLOR;
-  font-size: $SUBTITLE_SIZE;
-}
-
 h3{
   color: $H3_COLOR;
   font-size: $TEXT_SIZE;
@@ -46,7 +55,6 @@ button{
   border: none;
   border-radius: 100px;
   padding: 10px;
-  max-width: 555px;
   width: 100%;
   margin: auto;
   display: block;

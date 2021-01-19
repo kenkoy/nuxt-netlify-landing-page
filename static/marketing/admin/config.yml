@@ -254,6 +254,13 @@ collections:
           - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false, default: "UA-142143961-1"}
           - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
           - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
+      - label: "Styles"
+        name: "styles"
+        widget: "select"
+        default: ["version1"]
+        options:
+          - { label: "Version 1", value: "version1" }
+          - { label: "Version 2", value: "version2" }
       - label: "Promotion Banner"
         name: "promo_banner"
         widget: "object"

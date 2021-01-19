@@ -4,6 +4,7 @@
     <div
       v-if="Object.keys(mdData).length > 0"
       class="vjlp4-main"
+      :class="mdData.styles"
     >
       <section id="hero" :style="cssBackground">
         <div class="container">
@@ -19,7 +20,7 @@
 
             <img alt="alt img" class="logo" src="@/assets/images/vjlp4v2/logo.png">
             <div class="banner">
-              <img alt="alt img" :src="mdData.promo_banner.promo_images.promo_game_logo">
+              <img alt="alt img" class="bounce animated delay-1s" :src="mdData.promo_banner.promo_images.promo_game_logo">
               <img alt="alt img" :src="mdData.promo_banner.promo_images.promo_game_image">
 
               <h1>{{ mdData.promo_banner.promo_large_subtitle }}</h1>
@@ -27,7 +28,7 @@
             </div>
 
             <div id="banner-terms">
-              <button class="animated pulse infinite">
+              <button :class="mdData.styles === 'version2' ? 'animated pulse infinite' : ''">
                 {{ mdData.promo_banner.promo_join_button }}
               </button>
               <small v-html="bannerTerms" />
