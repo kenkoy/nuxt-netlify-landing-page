@@ -62,7 +62,12 @@
 
       <section id="testi" class="separator">
         <div class="container">
-          <div v-html="htmlBody" />
+          <div>
+            <div v-html="htmlBody" />
+            <ul>
+              <li>通常の<a rel="noopener" href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a rel="noopener" href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</li>
+            </ul>
+          </div>
         </div>
       </section>
       <Footer

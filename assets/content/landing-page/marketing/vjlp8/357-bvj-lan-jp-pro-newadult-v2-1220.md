@@ -23,15 +23,15 @@ promo_banner:
   promo_terms: 利用規約に同意します。
   promo_login_button: ログイン
 section:
-  - join_button: 今すぐ登録
+  - join_button: ボーナスを今すぐゲット！
     title: 人気機種「花魁ドリーム」で大勝利するには？
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-bonus.png
-  - join_button: 今すぐ登録
+  - join_button: ボーナスを今すぐゲット！
     title: "人気機種「花魁ドリーム」で大勝利するには？ "
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-CM.png
-  - join_button: 今すぐ登録
+  - join_button: ボーナスを今すぐゲット！
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-details.png
 ---
