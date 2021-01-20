@@ -60,7 +60,7 @@
         </div>
       </section>
 
-      <section id="testi" class="separator">
+      <section id="terms" class="separator">
         <div class="container">
           <div>
             <div v-html="htmlBody" />
