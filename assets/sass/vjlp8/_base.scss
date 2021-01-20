@@ -47,6 +47,13 @@ h3{
   font-size: $TEXT_SIZE;
 }
 
+small a,
+ul li a{
+  &:hover{
+    color: #fee63d;
+  }
+}
+
 a {
   color: inherit;
   text-decoration: none;
