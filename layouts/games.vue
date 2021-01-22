@@ -60,8 +60,6 @@ export default {
     this.$root.$once('game-data', (data) => {
       this.htmlBody = data.htmlData
       this.mdData = data.yamlData
-      // eslint-disable-next-line no-console
-      console.log(this.mdData.games)
     })
   },
   beforeDestroy () {
