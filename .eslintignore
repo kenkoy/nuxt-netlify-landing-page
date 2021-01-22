@@ -8,6 +8,7 @@
 
 # Static JS files
 /static/marketing/js/**/*
+/plugins/iclp3V2/*
 
 # Components
 /components/templates/**/*
@@ -19,3 +20,5 @@
 /pages/marketing/vjlp6/**/*
 /layouts/blank-template.vue
 /pages/marketing/blank-template/**/*
+
+/static/marketing/admin/vjlp7.js
