@@ -1,0 +1,59 @@
+@mixin main-content{
+  background: $MAIN_CONTENT_BG;
+  box-shadow: 12px 0 15px -10px #9e9e9e, -12px 0 8px -10px #9e9e9e;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@mixin game-list{
+  color: $GAME_TITLE_COLOR;
+  font-size: $GAME_FONT_SIZE;
+  text-align: center;
+}
+
+@mixin sub-content{
+  background: $ARTICLE_BG;
+  border-top: $BORER;
+  border-bottom: $BORER;
+
+  h2{
+    color: $ARTICLE_SUBTITLE_COLOR;
+    font-size: 36px;
+  }
+  h3{
+    color: $H3_COLOR;
+    font-size: 17px;
+  }
+  p{
+    color: $ARTICLE_TEXT_COLOR;
+    font-size: 14px;
+  }
+}
+
+@mixin input{
+  font-size: 13px;
+  box-shadow: inset 0 3px 3px rgb(10 50 70 / 16%);
+  outline: 0;
+  padding: 5px;
+  border: none;
+}
+
+// BUTTONS
+@mixin button-primary {
+  background: $BTN_PRIMARY_BG;
+  border: solid 1px $WARNING;
+  color: $BTN_PRIMARY_COLOR;
+
+  &:hover{
+    background: $BTN_PRIMARY_HOVER_BG;
+  }
+}
+
+@mixin button-warning {
+  background: $BTN_WARNING_BG;
+  color: $BTN_WARNING_COLOR;
+
+  &:hover{
+    background: $BTN_WARNING_HOVER_BG;
+  }
+}

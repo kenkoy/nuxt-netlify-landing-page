@@ -1,0 +1,70 @@
+@at-root .verajohn-theme{
+    background-image: url('../assets/images/games/verajohnbg.jpg');
+    background-color: $MAIN_CONTENT_BG;
+}
+
+.main-content{
+  @include main-content;
+  border-top: 1px solid #75cbf0;
+}
+
+#list-games{
+  @include game-list;
+  .game{
+    margin: 30px;
+    display: inline-block;
+  }
+}
+
+#sub-content{
+  @include sub-content;
+  padding: 40px;
+}
+
+// Buttons
+button{
+  border: none;
+  outline: 0;
+  min-width: 90px;
+  padding: 8px;
+  border-radius: 5px;
+}
+.btn-primary{
+  @include button-primary;
+}
+.btn-warning{
+  @include button-warning;
+}
+
+.highlight{
+  color: $HIGHLIGHT;
+}
+
+//FORM
+input{
+  @include input;
+}
+
+#filter-bar{
+  display: flex;
+  align-items: center;
+
+  p{
+    margin: 0;
+  }
+
+  > div{
+    padding: 0 10px;
+  }
+
+  #description{
+    flex-grow: 2;
+    text-align: left;
+  }
+  #search{
+    > * {
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+}

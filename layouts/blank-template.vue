@@ -24,7 +24,7 @@
         </section>
       -->
 
-      <section id="testi">
+      <section id="terms">
         <div class="container">
           <div v-html="htmlBody" />
         </div>
