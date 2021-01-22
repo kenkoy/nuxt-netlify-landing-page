@@ -14,9 +14,6 @@
             </nuxt-link>
           </span>
           <div id="switch">
-            <nuxt-link to="/marketing/games/" target="_blank">
-              Games
-            </nuxt-link>
             <nuxt-link to="/marketing/admin#/" target="_blank">
               Admin
             </nuxt-link>
