@@ -1052,6 +1052,13 @@ export const VJLP7_PREVIEW = createClass({
         text-align: center;
       }
 
+      .vjlp7_wrapper .version1 .material-icons{
+        color: red !important;
+      }
+      .vjlp7_wrapper .version2 .material-icons{
+        color: yellow !important;
+      }
+
       </style>
     </head>
     <body
