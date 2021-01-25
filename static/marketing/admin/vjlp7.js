@@ -1071,7 +1071,7 @@ export const VJLP7_PREVIEW = createClass({
         <div
           v-if="Object.keys(mdData).length > 0"
           class="vjlp7-main"
-          :class="${style.getIn(['data', 'styles'])}"
+          :class="${style.getIn(['styles'])}"
         >
           <section id="hero" :style="cssBackground">
             <div class="container">
