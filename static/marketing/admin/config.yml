@@ -544,11 +544,9 @@ collections:
     identifier_field: "slug_name"
     slug: '{{slug}}'
     preview_path: marketing/vjlp7/{{slug}}
-    editor:
-      preview: true
     show_preview_links: true
     editor:
-      preview: false
+      preview: true
     fields:
       - label: Slug
         widget: string
