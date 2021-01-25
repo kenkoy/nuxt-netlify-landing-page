@@ -5,6 +5,7 @@ const html = htm.bind(h)
 export const VJLP7_PREVIEW = createClass({
   render () {
     const { widgetFor, widgetsFor } = this.props
+    const style = widgetsFor('styles')
     const locale = widgetsFor('promo_locale')
     const banner = widgetsFor('promo_banner')
     const body = widgetFor('body')
@@ -1070,7 +1071,7 @@ export const VJLP7_PREVIEW = createClass({
         <div
           v-if="Object.keys(mdData).length > 0"
           class="vjlp7-main"
-          :class="${locale.getIn(['data', 'styles'])}"
+          :class="${style.getIn(['data', 'styles'])}"
         >
           <section id="hero" :style="cssBackground">
             <div class="container">
