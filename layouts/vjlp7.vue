@@ -39,33 +39,19 @@
         </div>
       </section>
 
-      <section id="steps">
-        <div class="container">
-          <div class="animated fadeIn delay-halfs">
-            <span class="num">1</span>
-            <div>
-              <h3>{{ mdData.promo_steps.promo_step_1_title }}</h3>
-              <p>{{ mdData.promo_steps.promo_step_1_desc }}</p>
-            </div>
-          </div>
-
-          <div class="animated fadeIn delay-1s">
-            <span class="num">2</span>
-            <div>
-              <h3>{{ mdData.promo_steps.promo_step_2_title }}</h3>
-              <p>{{ mdData.promo_steps.promo_step_2_desc }}</p>
-            </div>
-          </div>
-
-          <div class="animated fadeIn delay-1-and-halfs">
-            <span class="num">3</span>
-            <div>
-              <h3>{{ mdData.promo_steps.promo_step_3_title }}</h3>
-              <p>{{ mdData.promo_steps.promo_step_3_desc }}</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Steps
+        v-if="mdData.first_section === 'steps'"
+        :title1="mdData.promo_steps.promo_step_1_title"
+        :description1="mdData.promo_steps.promo_step_1_desc"
+        :title2="mdData.promo_steps.promo_step_2_title"
+        :description2="mdData.promo_steps.promo_step_2_desc"
+        :title3="mdData.promo_steps.promo_step_3_title"
+        :description3="mdData.promo_steps.promo_step_3_desc"
+      />
+      <GameSlider
+        v-if="mdData.first_section === 'game_slider'"
+        :gameData="mdData.game_images"
+      />
 
       <section id="payment" class="separator">
         <div class="container">
@@ -99,10 +85,14 @@
 </template>
 
 <script>
+import Steps from '@/components/Views/Steps.vue'
+import GameSlider from '@/components/Views/GameSlider.vue'
 import Footer from '@/components/Base/TheFooter.vue'
 
 export default {
   components: {
+    Steps,
+    GameSlider,
     Footer
   },
   data () {
