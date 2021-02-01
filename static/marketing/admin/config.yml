@@ -652,7 +652,7 @@ collections:
     preview_path: marketing/vjlp8/{{slug}}
     show_preview_links: true
     editor:
-      preview: false
+      preview: true
     fields:
       - label: Slug
         widget: string
@@ -667,7 +667,7 @@ collections:
           - label: "Country Code"
             name: "promo_country_code"
             widget: "select"
-            default: ["jp"]
+            default: "jp"
             options:
               - { label: "Japan", value: "jp" }
               - { label: "Sweden", value: "se" }
@@ -675,7 +675,7 @@ collections:
           - label: "Language Code"
             name: "promo_language_code"
             widget: "select"
-            default: ["ja"]
+            default: "ja"
             options:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
@@ -691,7 +691,7 @@ collections:
       - label: "Styles"
         name: "styles"
         widget: "select"
-        default: ["version1"]
+        default: "version1"
         options:
           - { label: "Version 1", value: "version1" }
           - { label: "Version 2", value: "version2" }
