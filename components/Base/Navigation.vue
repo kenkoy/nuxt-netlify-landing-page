@@ -80,7 +80,7 @@ export default {
       name: route.name.replace('marketing-', ''),
       path: route.path
     })).filter((route) => {
-      const containingWords = /slug|about|admin|blank-template|home|marketing|index/.test(route.name)
+      const containingWords = /slug|vjlp1|vjlp1v2|vjlp3|vjlp3v2|vjlp4|vjlp6|about|admin|blank-template|home|marketing|index/.test(route.name)
       return !containingWords
     })
   },

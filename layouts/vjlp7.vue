@@ -7,7 +7,7 @@
       :class="mdData.styles"
     >
       <section id="hero" :style="cssBackground">
-        <div class="container">
+        <div class="container" style="height: calc(100vh - 150px)">
           <div id="hero-text-wrapper">
             <div>
               <div id="login" class="animated">
