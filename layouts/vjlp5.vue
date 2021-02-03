@@ -25,9 +25,12 @@
         </header>
         <section id="hero" :style="cssBackground">
           <div class="container">
-            <div class="banner">
-              <h1 v-html="bannerTitle" />
-              <h1>{{ data_items.attributes.promo_banner.second_title }}</h1>
+            <div>
+              <div class="banner">
+                <h1 v-if="first_title" v-html="bannerTitle" />
+                <h1 v-if="second_title">{{ data_items.attributes.promo_banner.banner_subtitle }}</h1>
+              </div>
+              <button id="banner-button" v-if="data_items.attributes.promo_banner.banner_promo_join_button" class="error">{{ data_items.attributes.promo_banner.banner_promo_join_button }}</button>
             </div>
           </div>
         </section>
@@ -205,8 +208,8 @@ export default {
         this.tablet = item.attributes.promo_banner.promo_images.promo_bg_banner
         this.mobile = item.attributes.promo_banner.promo_images.promo_bg_mobile
 
-        this.first_title = item.attributes.promo_banner.first_title
-        this.second_title = item.attributes.promo_banner.second_title
+        this.first_title = item.attributes.promo_banner.banner_title
+        this.second_title = item.attributes.promo_banner.banner_subtitle
         this.phrase = item.attributes.promo_banner.phrase
       })
     }
@@ -218,6 +221,5 @@ export default {
   .vjlp5_wrapper {
     @import '@/assets/sass/base/fonts.css';
     @import '@/assets/sass/vjlp5/style.scss';
-    @import '@/assets/sass/base/style.scss';
   }
 </style>

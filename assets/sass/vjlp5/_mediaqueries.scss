@@ -68,6 +68,9 @@
        min-height: 400px;
        background-size: cover;
      }
+     #banner-button{
+        margin-bottom: 30px;
+     }
 
      .banner{
         position: absolute;
@@ -335,6 +338,11 @@
        .container{
          background: var(--bg-image) no-repeat center;
          background-size: contain;
+       }
+
+       #banner-button{
+         float: right;
+         margin-bottom: 0;
        }
    }
 
