@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ vjlp7_wrapper: true }">
+  <div class="core-wrapper" :class="{ vjlp7_wrapper: true }">
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
@@ -187,6 +187,5 @@ export default {
 <style lang="scss">
   .vjlp7_wrapper {
     @import '@/assets/sass/vjlp7/style.scss';
-    @import '@/assets/sass/base/style.scss';
   }
 </style>

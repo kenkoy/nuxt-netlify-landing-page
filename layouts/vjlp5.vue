@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ vjlp5_wrapper: true }">
+  <div class="core-wrapper" :class="{ vjlp5_wrapper: true }">
     <div class="vjlp5-main">
       <!-- PAGE HANDLING DATA -->
       <Vjlp5Data @emit-md-content="getMDcontent" />
@@ -221,7 +221,6 @@ export default {
 
 <style lang="scss">
   .vjlp5_wrapper {
-    @import '@/assets/sass/base/fonts.css';
     @import '@/assets/sass/vjlp5/style.scss';
   }
 </style>

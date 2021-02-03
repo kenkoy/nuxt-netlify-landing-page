@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ iclp2_wrapper: true }">
+  <div class="core-wrapper" :class="{ iclp2_wrapper: true }">
     <!-- Change class name to actual page name -->
     <nuxt />
     <div

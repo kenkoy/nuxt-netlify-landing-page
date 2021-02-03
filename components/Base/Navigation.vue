@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ nav_wrapper: true }">
+  <div class="core-wrapper" :class="{ nav_wrapper: true }">
     <nav v-if="desktop === true" id="nav-desktop">
       <div class="container">
         <div id="logo">

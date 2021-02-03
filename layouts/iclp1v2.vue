@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ iclp1_wrapper: true }">
+  <div class="core-wrapper" :class="{ iclp1_wrapper: true }">
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"

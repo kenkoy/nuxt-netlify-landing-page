@@ -78,6 +78,6 @@ export default {
 <style lang="scss"> // Change to actual path, all assets should be on asset folder. Create separate assets / sass for each templates
   .vjlp5_wrapper {
     @import '@/assets/sass/vjlp5/style.scss';
-    @import '@/assets/sass/base/style.scss';
+    // @import '@/assets/sass/base/style.scss';
   }
 </style>

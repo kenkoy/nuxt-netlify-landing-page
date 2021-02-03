@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ iclp3_wrapper: true }">
+  <div class="core-wrapper" :class="{ iclp3_wrapper: true }">
     <div class="iclp3-main">
       <!-- PAGE HANDLING DATA -->
       <iclp3v2Data @emit-md-content="getMDcontent" />

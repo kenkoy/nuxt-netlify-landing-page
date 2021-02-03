@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ vjhp2_wrapper: true }">
+  <div class="core-wrapper" :class="{ vjhp2_wrapper: true }">
     <div class="vjhp2-main">
       <!-- PAGE HANDLING DATA -->
       <Vjhp2Data @emit-md-content="getMDcontent" />

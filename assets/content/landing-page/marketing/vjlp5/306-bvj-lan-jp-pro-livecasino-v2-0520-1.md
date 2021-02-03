@@ -29,6 +29,7 @@ promo_banner:
   banner_subtitle: ビギナーズボーナス
   promo_login_button_redirect_url: https://verajohn.com/#join
   promo_join_button_redirect_url: https://verajohn.com/#join
+  banner_promo_join_button:
   promo_join_button: 入金ボーナス獲得する
   promo_login_button: 登録
   phrase: $1000
