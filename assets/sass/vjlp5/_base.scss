@@ -46,7 +46,7 @@
           background: linear-gradient(180deg,#ff65e5,#fa1e93);
       }
   }
-  
+
   .separator{
       border-bottom: 3px solid #0093D4;
       margin-top: 50px;
@@ -78,9 +78,11 @@
   }
 
 
-
   #hero {
       background-color: $HERO_BG;
+      #banner-button a{
+        border: none;
+      }
   }
   #hero .banner{
     background-repeat: no-repeat;

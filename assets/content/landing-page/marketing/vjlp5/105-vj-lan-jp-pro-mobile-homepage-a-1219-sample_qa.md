@@ -7,6 +7,7 @@ field_ids:
   gtm_container_id: GTM-MFD3NKM
   ga_tracking_id: UA-142143961-1
   go_container_id: OPT-PHSNXP6
+styles: version2
 promo_banner:
   game_images:
     game_url_1: https://www.verajohn.com/ja/about/loyalty-program
