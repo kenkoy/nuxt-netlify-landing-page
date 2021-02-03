@@ -91,9 +91,13 @@
           </div>
         </section>
 
-        <section id="section3">
+        <section id="payment">
           <div class="container">
-            <div class="separator" />
+            <div>
+              <img class="desktop" src="@/assets/images/vjlp5/payment_large_jp.svg" alt="payment verajohn desktop">
+              <img class="mobile" src="@/assets/images/vjlp5/payment_jp.svg" alt="payment verajohn mobile">
+              <div class="separator" />
+            </div>
           </div>
         </section>
 
@@ -113,7 +117,15 @@
           </div>
         </section>
 
-        <div v-html="html" />
+        <section id="terms">
+          <div class="container">
+            <div>
+              <div v-html="html" />
+              <p>通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</p>
+              <div class="separator" />
+            </div>
+          </div>
+        </section>
 
         <Footer
           :promo_language_code="language"

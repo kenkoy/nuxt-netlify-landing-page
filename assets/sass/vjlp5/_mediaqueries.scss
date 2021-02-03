@@ -1,5 +1,11 @@
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
    /*--FONT SIZE--*/
    h2{
      font-size: $SUB_TITLE_SIZE;
@@ -239,6 +245,12 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+  .desktop{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
    #header .logo{
        top: -30px;
        img{

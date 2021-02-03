@@ -58,7 +58,6 @@
 
       <div class="container">
         <div>
-          <div class="separator" />
           <div id="footer-icon" class="second-footer">
             <a
               aria-label="Responsible Gaming"
