@@ -23,6 +23,7 @@
             </div>
           </div>
         </header>
+
         <section id="hero" :style="cssBackground">
           <div class="container">
             <div>
@@ -36,6 +37,7 @@
             </div>
           </div>
         </section>
+
         <Steps
           v-if="data_items.attributes.template === 'steps'"
           :title1="data_items.attributes.steps.step_title_1"
@@ -49,6 +51,7 @@
           v-if="data_items.attributes.template === 'game_slider'"
           :gameData="data_items.attributes.game_images"
         />
+
         <section id="section1">
           <div class="container">
             <div>

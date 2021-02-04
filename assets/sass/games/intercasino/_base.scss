@@ -19,6 +19,18 @@
   padding: 40px;
 }
 
+.no-available-games{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  h4{
+    font-size: 30px;
+    color: #cecece;
+  }
+}
+
 // Buttons
 button{
   border: none;

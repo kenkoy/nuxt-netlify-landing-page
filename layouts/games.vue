@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ game_wrapper: true }">
+  <div class="core-wrapper" :class="{ game_wrapper: true }">
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
@@ -28,8 +28,14 @@
 
             <div>
               <div v-for="(game, gameIndex) in filteredGames" :key="gameIndex" class="game">
-                <img :src="game.image">
-                <p>{{ game.title }}</p>
+                <div v-if="gameIndex < limit">
+                  <img :src="game.image">
+                  <p>{{ game.title }}</p>
+                </div>
+              </div>
+              <button v-if="filteredGames.length !== 0" class="btn-warning" @click="showMore">Show more</button>
+              <div class="no-available-games" v-if="filteredGames.length === 0">
+                <h4>No Games Available</h4>
               </div>
             </div>
           </div>
@@ -46,7 +52,9 @@ export default {
     return {
       mdData: {},
       htmlBody: '',
-      search: ''
+      search: '',
+      limit: 18,
+      showMoreAddItems: 6
     }
   },
   computed: {
@@ -64,6 +72,11 @@ export default {
   },
   beforeDestroy () {
     this.$root.$off('game-data')
+  },
+  methods: {
+    showMore () {
+      this.limit += this.showMoreAddItems
+    }
   }
 }
 </script>
