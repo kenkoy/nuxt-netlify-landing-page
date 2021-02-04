@@ -13,7 +13,7 @@ promo_banner:
     最大$1000の
     ビギナーズボーナス
   promo_images:
-    promo_bg_desktop: /marketing/img/ezgif.com-gif-maker.png
+    promo_bg_desktop: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-bg.jpg
     promo_bg_mobile: /marketing/img/vjlp7bg_m.jpg
   promo_terms_link_text:
     - 利用規約
