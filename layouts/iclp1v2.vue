@@ -122,8 +122,6 @@ export default {
 
 <style lang="scss">
   .iclp1_wrapper {
-    @import '@/assets/sass/base/fonts.css';
     @import '@/assets/sass/iclp1v2/style.scss';
-    @import '@/assets/sass/base/style.scss';
   }
 </style>

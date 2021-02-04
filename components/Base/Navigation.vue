@@ -17,7 +17,7 @@
             <nuxt-link to="/marketing/admin#/" target="_blank">
               Admin
             </nuxt-link>
-            <nuxt-link id="vj" to="/marketing/vjlp1v2/" :class="switchTemplate === 'vj' ? 'active' : ''" @click.native="switchTemplate ='vj'">
+            <nuxt-link id="vj" to="/marketing/vjlp5/" :class="switchTemplate === 'vj' ? 'active' : ''" @click.native="switchTemplate ='vj'">
               <strong>VJ</strong>
             </nuxt-link>
             <nuxt-link id="ic" to="/marketing/iclp1v2/" :class="switchTemplate === 'ic' ? 'active' : ''" @click.native="switchTemplate = 'ic'">

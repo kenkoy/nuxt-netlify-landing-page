@@ -1,10 +1,10 @@
 <template>
-  <div :class="{ vjlp5_wrapper: true }">
+  <div :class="{ blank_wrapper: true }">
     <!-- Change class name to actual page name -->
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
-      class="vjlp5-main"
+      class="blank-main"
     >
       <!-- Change class name to actual page name -->
 
@@ -64,20 +64,19 @@ export default {
     // }
   },
   created () {
-    this.$root.$once('vjlp5-data', (data) => { // Change to actual page name
+    this.$root.$once('blank-data', (data) => { // Change to actual page name
       this.htmlBody = data.htmlData
       this.mdData = data.yamlData
     })
   },
   beforeDestroy () {
-    this.$root.$off('vjlp5-data') // Change to actual page name
+    this.$root.$off('blank-data') // Change to actual page name
   }
 }
 </script>
 
 <style lang="scss"> // Change to actual path, all assets should be on asset folder. Create separate assets / sass for each templates
-  .vjlp5_wrapper {
-    @import '@/assets/sass/vjlp5/style.scss';
-    // @import '@/assets/sass/base/style.scss';
+  .blank_wrapper {
+    // @import '@/assets/sass/blank/style.scss';
   }
 </style>

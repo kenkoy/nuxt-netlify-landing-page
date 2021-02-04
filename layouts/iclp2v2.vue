@@ -305,8 +305,6 @@ export default {
 
 <style lang="scss"> // Change to actual path, all assets should be on asset folder. Create separate assets / sass for each templates
   .iclp2_wrapper {
-    @import '@/assets/sass/base/fonts.css';
     @import '@/assets/sass/iclp2v2/style.scss';
-    @import '@/assets/sass/base/style.scss';
   }
 </style>
