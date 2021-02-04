@@ -33,10 +33,14 @@
                   <p>{{ game.title }}</p>
                 </div>
               </div>
-              <button v-if="filteredGames.length !== 0" class="btn-warning" @click="showMore">Show more</button>
               <div class="no-available-games" v-if="filteredGames.length === 0">
                 <h4>No Games Available</h4>
               </div>
+            </div>
+
+            <div id="pagination-wrapper">
+              <p class="pagination-text" v-if="filteredGames.length !== 0">Showing {{ (filteredGames.length + limit) - filteredGames.length }} of {{ mdData.games.length }} games</p>
+              <a class="load-more" v-if="filteredGames.length !== 0" @click="showMore">Load more</a>
             </div>
           </div>
         </div>
@@ -84,6 +88,5 @@ export default {
 <style lang="scss">
   .game_wrapper {
     @import '@/assets/sass/games/style.scss';
-    @import '@/assets/sass/base/style.scss';
   }
 </style>

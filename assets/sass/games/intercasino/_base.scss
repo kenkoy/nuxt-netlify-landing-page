@@ -9,8 +9,10 @@
 #list-games{
   @include game-list;
   .game{
-    margin: 30px;
     display: inline-block;
+    > div{
+      margin: $GAME_LIST_MARGIN;
+    }
   }
 }
 
@@ -28,6 +30,41 @@
   h4{
     font-size: 30px;
     color: #cecece;
+  }
+}
+
+#pagination-wrapper{
+  .pagination-text{
+    color: #ffea00;
+    font-size: 20px;
+    position: relative;
+
+    &:before{
+      content: '';
+      display: block;
+      background: #0093d4;
+      height: 2px;
+      width: 200px;
+      position: absolute;
+      left: 17%;
+      transform: translate(0, -50%);
+      top: 50%;
+    }
+    &:after{
+      content: '';
+      display: block;
+      background: #0093d4;
+      height: 2px;
+      width: 200px;
+      position: absolute;
+      right: 17%;
+      transform: translate(0, -50%);
+      top: 50%;
+    }
+  }
+  .load-more{
+    font-size: 15px;
+    border-bottom: 2px dotted #85ceef;
   }
 }
 
