@@ -40,16 +40,16 @@
       </section>
 
       <Steps
-        v-if="mdData.first_section === 'steps'"
-        :title1="mdData.promo_steps.promo_step_1_title"
-        :description1="mdData.promo_steps.promo_step_1_desc"
-        :title2="mdData.promo_steps.promo_step_2_title"
-        :description2="mdData.promo_steps.promo_step_2_desc"
-        :title3="mdData.promo_steps.promo_step_3_title"
-        :description3="mdData.promo_steps.promo_step_3_desc"
+        v-if="mdData.template === 'steps'"
+        :title1="mdData.steps.step_title_1"
+        :description1="mdData.steps.step_description_1"
+        :title2="mdData.steps.step_title_2"
+        :description2="mdData.steps.step_description_2"
+        :title3="mdData.steps.step_title_3"
+        :description3="mdData.steps.step_description_3"
       />
       <GameSlider
-        v-if="mdData.first_section === 'game_slider'"
+        v-if="mdData.template === 'game_slider'"
         :gameData="mdData.game_images"
       />
 

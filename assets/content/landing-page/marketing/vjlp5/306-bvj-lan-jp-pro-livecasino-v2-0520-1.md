@@ -8,18 +8,8 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   go_container_id: OPT-PHSNXP6
 styles: version1
+template: steps
 promo_banner:
-  game_images:
-    game_url_1: https://www.verajohn.com/ja/about/loyalty-program
-    game_url_2: https://www.verajohn.com/ja/game/hawaiian-dream
-    game_url_3: https://www.verajohn.com/ja/about/cardmaster
-    game_url_4: https://www.verajohn.com/ja/livecasino
-    game_url_5: https://www.verajohn.com/ja/about/paymentoption
-    game_icon_1: /marketing/img/loyalty-program.png
-    game_icon_2: /marketing/img/hawaiian-dream.png
-    game_icon_3: /marketing/img/card-master.png
-    game_icon_4: /marketing/img/live-casino.png
-    game_icon_5: /marketing/img/payment-option.png
   promo_title: 306-bvj-lan-jp-pro-livecasino-v2-0520
   promo_images:
     promo_bg_desktop: /marketing/img/dsgn-1567-bg-vjlp2-dt.png
@@ -42,6 +32,17 @@ steps:
   step_description_2: ボーナス獲得！
   step_title_3: プレイ!
   step_description_3: お楽しみください！
+game_images:
+  game_url_1: https://www.verajohn.com/ja/about/loyalty-program
+  game_url_2: https://www.verajohn.com/ja/game/hawaiian-dream
+  game_url_3: https://www.verajohn.com/ja/about/cardmaster
+  game_url_4: https://www.verajohn.com/ja/livecasino
+  game_url_5: https://www.verajohn.com/ja/about/paymentoption
+  game_icon_1: /marketing/img/loyalty-program.png
+  game_icon_2: /marketing/img/hawaiian-dream.png
+  game_icon_3: /marketing/img/card-master.png
+  game_icon_4: /marketing/img/live-casino.png
+  game_icon_5: /marketing/img/payment-option.png
 first_section:
   - first_section_title: ライブカジノで一攫千金ッ！
     first_section_description: いつでもどこでも、本場カジノの臨場感が楽しめるライブカジノ。ディーラーの動きがリアルタイムで見えるので、イカサマの心配もありません。しかも、還元率は他のギャンブルよりもはるかに高いともいわれています。パチスロの一般的な還元率は約80%と言われていますが、オンラインカジノでは、なんと最低でも「95％」はあるんです！さぁ、日本No.1オンラインカジノのベラジョンで、今をときめく最先端のライブカジノを堪能しましょう！

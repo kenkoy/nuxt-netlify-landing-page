@@ -36,35 +36,19 @@
             </div>
           </div>
         </section>
-
-        <section id="steps">
-          <div class="container column-3">
-            <div class="animated fadeIn delay-halfs">
-              <span class="num">1</span>
-              <div>
-                <h3>{{ data_items.attributes.steps.step_title_1 }}</h3>
-                <p>{{ data_items.attributes.steps.step_description_1 }}</p>
-              </div>
-            </div>
-
-            <div class="animated fadeIn delay-1s">
-              <span class="num">2</span>
-              <div>
-                <h3>{{ data_items.attributes.steps.step_title_2 }}</h3>
-                <p>{{ data_items.attributes.steps.step_description_2 }}</p>
-              </div>
-            </div>
-
-            <div class="animated fadeIn delay-1-and-halfs">
-              <span class="num">3</span>
-              <div>
-                <h3>{{ data_items.attributes.steps.step_title_3 }}</h3>
-                <p>{{ data_items.attributes.steps.step_description_3 }}</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
+        <Steps
+          v-if="data_items.attributes.template === 'steps'"
+          :title1="data_items.attributes.steps.step_title_1"
+          :description1="data_items.attributes.steps.step_description_1"
+          :title2="data_items.attributes.steps.step_title_2"
+          :description2="data_items.attributes.steps.step_description_2"
+          :title3="data_items.attributes.steps.step_title_3"
+          :description3="data_items.attributes.steps.step_description_3"
+        />
+        <GameSlider
+          v-if="data_items.attributes.template === 'game_slider'"
+          :gameData="data_items.attributes.game_images"
+        />
         <section id="section1">
           <div class="container">
             <div>
@@ -143,12 +127,16 @@
 </template>
 
 <script>
+import Steps from '@/components/Views/Steps.vue'
+import GameSlider from '@/components/Views/GameSlider.vue'
 import Vjlp5Data from '~/pages/marketing/vjlp5/_slug/index.vue'
 import Footer from '~/components/Base/TheFooter.vue'
 
 export default {
   components: {
     Vjlp5Data,
+    Steps,
+    GameSlider,
     Footer
   },
   data () {

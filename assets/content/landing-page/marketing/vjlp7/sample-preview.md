@@ -8,7 +8,7 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
 styles: version1
-first_section: steps
+template: steps
 promo_banner:
   promo_title: |-
     最高$500までの
@@ -28,13 +28,13 @@ promo_banner:
   promo_title_highlighted:
     - $500
     - 100%入金ボーナス
-promo_steps:
-  promo_step_1_title: ご登録
-  promo_step_1_desc: 安全 & 安心！
-  promo_step_2_title: ご入金
-  promo_step_2_desc: 100%ボーナス獲得!
-  promo_step_3_title: 毎日挑戦
-  promo_step_3_desc: デイリーキャッシュ
+steps:
+  step_title_1: ご登録
+  step_description_1: 安全 & 安心！
+  step_title_2: ご入金
+  step_description_2: 100%ボーナス獲得!
+  step_title_3: 毎日挑戦
+  step_description_3: デイリーキャッシュ
 game_images:
   game_url_1: https://www.verajohn.com/ja/about/loyalty-program
   game_url_2: https://www.verajohn.com/ja/game/hawaiian-dream

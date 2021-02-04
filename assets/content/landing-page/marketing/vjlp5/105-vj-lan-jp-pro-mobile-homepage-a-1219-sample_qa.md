@@ -8,18 +8,8 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   go_container_id: OPT-PHSNXP6
 styles: version2
+template: game_slider
 promo_banner:
-  game_images:
-    game_url_1: https://www.verajohn.com/ja/about/loyalty-program
-    game_url_2: https://www.verajohn.com/ja/game/hawaiian-dream
-    game_url_3: https://www.verajohn.com/ja/about/cardmaster
-    game_url_4: https://www.verajohn.com/ja/livecasino
-    game_url_5: https://www.verajohn.com/ja/about/paymentoption
-    game_icon_1: /marketing/img/loyalty-program.png
-    game_icon_2: /marketing/img/hawaiian-dream.png
-    game_icon_3: /marketing/img/card-master.png
-    game_icon_4: /marketing/img/live-casino.png
-    game_icon_5: /marketing/img/payment-option.png
   promo_title: 無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！
   promo_images:
     promo_bg_desktop: /marketing/img/digital-welcomeoffer-mob-cta-1000x300-a_nocta.png
@@ -42,6 +32,17 @@ steps:
   step_description_2: ボーナス獲得！
   step_title_3: プレイ!
   step_description_3: お楽しみください！
+game_images:
+  game_url_1: https://www.verajohn.com/ja/about/loyalty-program
+  game_url_2: https://www.verajohn.com/ja/game/hawaiian-dream
+  game_url_3: https://www.verajohn.com/ja/about/cardmaster
+  game_url_4: https://www.verajohn.com/ja/livecasino
+  game_url_5: https://www.verajohn.com/ja/about/paymentoption
+  game_icon_1: /marketing/img/loyalty-program.png
+  game_icon_2: /marketing/img/hawaiian-dream.png
+  game_icon_3: /marketing/img/card-master.png
+  game_icon_4: /marketing/img/live-casino.png
+  game_icon_5: /marketing/img/payment-option.png
 first_section:
   - first_section_title: 日本No. 1カジノで今日からプレイをはじめちゃおう
     first_section_description: 安心・安全・楽しいの3拍子が揃った、ベラジョン・オンラインカジノは、初心者の方でも気軽に、そして簡単にプレイを楽しむことができます。インターネット環境さえあれば、パソコン以外にも、モバイル版の利用が可能なiPhone やアンドロイドといったスマホ、iPadなどといったタブレットで、24時間365日プレイを楽しむことができるので、いつでもどこでも、オンラインで一獲千金を狙うことができちゃいます！<br><br>ベラジョンでは、数百種類ものゲームを取り揃えており、StarburstやMoon Princess、Gemixなどの大人気スロットはもちろん、バカラやブラックジャック、ルーレットなどのテーブルゲーム、本場カジノの興奮を楽しめる臨場感あふれたライブカジノ、さらには、1千万円を超えるジャックポットを叩き出すことで有名なCleopatraやDivine Fortune、Mega Moolahなどのプログレッシブ・ジャックポットスロット。さらに、日本で大人気のパチンコのようなボーナスゲームや、パチスロをそのままオンラインで体感できるようなスロットも見つけることができます。なんと競馬のゲームもあるんです！<br><br>今すぐベラジョンで、日本でカジノ体験を楽しみましょう！
