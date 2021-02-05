@@ -2,7 +2,7 @@
   background: $MAIN_CONTENT_BG;
   padding: 20px;
   box-sizing: border-box;
-  min-height: 100vh;
+  min-height: calc(100vh - 250px);
 }
 
 @mixin game-list{

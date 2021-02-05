@@ -34,7 +34,7 @@
                 </div>
               </div>
               <div class="no-available-games" v-if="filteredGames.length === 0">
-                <h4>No Games Available</h4>
+                <h4>No Results</h4>
               </div>
             </div>
 
