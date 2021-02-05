@@ -10,7 +10,7 @@
               :href="responsibleGamingURL"
               rel="noopener"
             >
-              <img src="@/assets/images/footer/icon_age.svg" alt="alt img">
+              <img src="@/assets/images/footer/icon_age_twenty.svg" alt="alt img">
             </a>
 
             <a
@@ -27,7 +27,7 @@
               target="_blank"
               href="#"
             >
-              <img src="@/assets/images/footer/icon_curacao.svg" alt="alt img">
+              <img src="@/assets/images/footer/CEG_logo.png" alt="alt img">
             </a>
           </div>
 
@@ -42,8 +42,8 @@
             </a>
           </p>
 
-          <p>当ウェブサイトは、キュラソー政府の商業登記に登録されている、番号149132のBreckenridge Curacao B.V.（登録住所：Emancipatie Boulevard, Dominico F. “Don” Martina 31, Willemstad, Curaçao）により運営されています。</p>
-          <p>Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster Gaming License #5536/JAZに基づく C.I.L Curacao Interavtive Licensing N.V. により付与されたサブライセンスを通して正式な許可を所持しています</p>
+          <p>当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。</p>
+          <p>Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster Gaming License #1668/JAZに基づくCEG Curaçao Egaming により付与されたサブライセンスを通して、正式に認可されています。</p>
         </div>
       </div>
     </footer>
@@ -65,7 +65,7 @@
               :href="responsibleGamingURL"
               rel="noopener"
             >
-              <img src="@/assets/images/footer/icon_age.svg" alt="responsible gaming">
+              <img src="@/assets/images/footer/icon_age_twenty.svg" alt="responsible gaming">
             </a>
 
             <a

@@ -10,6 +10,10 @@ footer{
   #footer-icon{
     text-align: center;
 
+    img{
+      max-width: 70px;
+    }
+
     > a{
       display: inline-block;
       min-width: 70px;
