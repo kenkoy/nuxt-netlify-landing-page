@@ -1,3 +1,10 @@
+.overlay{
+  @include overlay;
+}
+.switch{
+  @include checkbox-switch;
+}
+
 @at-root .verajohn-theme{
     background-image: url('../assets/images/games/verajohnbg.jpg');
     background-color: $MAIN_CONTENT_BG;
@@ -97,6 +104,7 @@ input{
 #filter-bar{
   display: flex;
   align-items: center;
+  position: relative;
 
   p{
     margin: 0;

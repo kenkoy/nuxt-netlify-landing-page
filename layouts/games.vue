@@ -11,7 +11,8 @@
           <div>
             <div id="filter-bar">
               <div>
-                <button class="btn-primary">
+                <FilterSearch v-if="modalFilter" />
+                <button @click="modalFilterFn()" class="btn-primary">
                   Find game you'll love
                 </button>
               </div>
@@ -40,7 +41,8 @@
 
             <div id="pagination-wrapper">
               <p class="pagination-text" v-if="filteredGames.length !== 0">Showing {{ (filteredGames.length + limit) - filteredGames.length }} of {{ mdData.games.length }} games</p>
-              <a class="load-more" v-if="filteredGames.length !== 0" @click="showMore">Load more</a>
+              <a class="load-more" v-if="filteredGames.length !== 0 && (filteredGames.length + limit) - filteredGames.length < mdData.games.length" @click="showMore">Load more</a>
+              <h3 v-if="(filteredGames.length + limit) - filteredGames.length === mdData.games.length">All games shown</h3>
             </div>
           </div>
         </div>
@@ -50,10 +52,15 @@
 </template>
 
 <script>
+import FilterSearch from '@/components/Views/FilterSearch.vue'
 
 export default {
+  components: {
+    FilterSearch
+  },
   data () {
     return {
+      modalFilter: false,
       mdData: {},
       htmlBody: '',
       search: '',
@@ -80,6 +87,9 @@ export default {
   methods: {
     showMore () {
       this.limit += this.showMoreAddItems
+    },
+    modalFilterFn () {
+      this.modalFilter = !this.modalFilter
     }
   }
 }

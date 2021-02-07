@@ -1,3 +1,11 @@
+.overlay{
+  @include overlay;
+}
+.switch{
+  @include checkbox-switch;
+}
+
+
 @at-root .intercasino-theme{
     background: #e5e5e5;
 }
@@ -35,14 +43,14 @@
 
 #pagination-wrapper{
   .pagination-text{
-    color: #ffea00;
+    color: #000;
     font-size: 20px;
     position: relative;
 
     &:before{
       content: '';
       display: block;
-      background: #0093d4;
+      background: #000;
       height: 2px;
       width: 200px;
       position: absolute;
@@ -53,7 +61,7 @@
     &:after{
       content: '';
       display: block;
-      background: #0093d4;
+      background: #000;
       height: 2px;
       width: 200px;
       position: absolute;
@@ -64,7 +72,7 @@
   }
   .load-more{
     font-size: 15px;
-    border-bottom: 2px dotted #85ceef;
+    color: #d2ac48;
   }
 }
 
@@ -94,6 +102,7 @@ input{
 #filter-bar{
   display: flex;
   align-items: center;
+  position: relative;
 
   p{
     margin: 0;
