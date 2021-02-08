@@ -11,7 +11,7 @@
           <div>
             <div id="filter-bar">
               <div>
-                <FilterSearch v-if="modalFilter" />
+                <FilterSearch v-if="modal" />
                 <button @click="modalFilterFn()" class="btn-primary">
                   Find game you'll love
                 </button>
@@ -39,7 +39,7 @@
               </div>
             </div>
 
-            <div id="pagination-wrapper">
+            <div id="pagination-wrapper" v-if="filteredGames.length >= limit">
               <p class="pagination-text" v-if="filteredGames.length !== 0">Showing {{ (filteredGames.length + limit) - filteredGames.length }} of {{ mdData.games.length }} games</p>
               <a class="load-more" v-if="filteredGames.length !== 0 && (filteredGames.length + limit) - filteredGames.length < mdData.games.length" @click="showMore">Load more</a>
               <h3 v-if="(filteredGames.length + limit) - filteredGames.length === mdData.games.length">All games shown</h3>
@@ -60,7 +60,7 @@ export default {
   },
   data () {
     return {
-      modalFilter: false,
+      modal: false,
       mdData: {},
       htmlBody: '',
       search: '',
@@ -89,7 +89,7 @@ export default {
       this.limit += this.showMoreAddItems
     },
     modalFilterFn () {
-      this.modalFilter = !this.modalFilter
+      this.modal = !this.modal
     }
   }
 }

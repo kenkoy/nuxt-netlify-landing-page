@@ -41,11 +41,11 @@
 
 @mixin overlay{
   position: absolute;
-  top: 40px;
+  top: 50px;
   left: 0;
   background: $OVERLAY_BG;
   border-radius: 10px;
-  padding: 15px;
+  padding: 30px;
   width: 100%;
   min-height: 60vh;
   height: 100%;
@@ -66,6 +66,7 @@
 
   h3{
     color: #fff;
+    margin-top: 0;
   }
 }
 
@@ -86,8 +87,8 @@
       border-radius: 20px;
       padding: 10px 20px;
       cursor: pointer;
-      display: inline-block;
-      margin-bottom: 10px;
+      float: left;
+      margin: 5px;
       color: #fff;
     }
 

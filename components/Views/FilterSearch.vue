@@ -6,7 +6,7 @@
 
         <label class="switch" v-for="(cats, cats_index) in categories" :key="cats_index">
           <input type="radio" name="cat">
-          <a class="slider">{{ cats.name }}</a>
+          <a class="slider noselect">{{ cats.name }}</a>
         </label>
       </form>
     </div>
