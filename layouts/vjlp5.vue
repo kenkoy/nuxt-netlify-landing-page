@@ -120,9 +120,9 @@
         </section>
 
         <Footer
-          :promo_language_code="language"
-          :promo_country_code="country_code"
-          :landing_page_type="'verajohn'"
+          :promo-language-code="language"
+          :promo-country-code="country_code"
+          :landing-page-type="'verajohn'"
         />
       </div>
     </div>

@@ -27,7 +27,7 @@
         </li>
         <li
           class="curacao"
-          lazy-background="/marketing/img/iclp3/icon_curacao.svg"
+          lazy-background="/marketing/img/footer/CEG_logo.png"
         >
           <span>curacao</span>
         </li>
@@ -42,8 +42,8 @@
       </p>
       <p />
       <p>
-        当ウェブサイトは、キュラソー政府の商業登記に登録されている、番号149132のBreckenridge Curacao B.V.（登録住所：Emancipatie Boulevard, Dominico F. “Don” Martina 31, Willemstad, Curaçao）により運営されています。
-        <br>Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster Gaming License #5536/JAZに基づく C.I.L Curacao Interavtive Licensing N.V. により付与されたサブライセンスを通して正式な許可を所持しています。
+        当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。
+        <br>Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster Gaming License #1668/JAZに基づくCEG Curaçao Egaming により付与されたサブライセンスを通して、正式に認可されています。
       </p>
       <p />
     </div>

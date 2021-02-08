@@ -10,7 +10,7 @@
               :href="responsibleGamingURL"
               rel="noopener"
             >
-              <img src="@/assets/images/footer/icon_age_twenty.svg" alt="alt img">
+              <img src="@/assets/images/footer/20+.svg" alt="alt img">
             </a>
 
             <a
@@ -23,11 +23,11 @@
             </a>
 
             <a
-              aria-label="Curacao"
+              aria-label="CEG"
               target="_blank"
-              href="#"
+              :href="landingPageType === 'verajohn' ? 'https://validator.curacao-egaming.com/validate?domain=www.verajohn.com&seal_id=cc15cb374804a763a5f82ff0a72fd6b436659d0061b3201e86431fa8afff305e39a7bbbadf89ae9274d2e9ee4bd923c3&stamp=ae85a35fb4a6c5816b8b9f17e5b6be96' : 'https://validator.curacao-egaming.com/validate?domain=www.intercasino.com&seal_id=141a575e2e4b5593af3dc1b19e2517deaa0ed9a17b9f809f1ffd32fa97098f83e664f6df6801db35fd76f6bef7f63663&stamp=ae85a35fb4a6c5816b8b9f17e5b6be96'"
             >
-              <img src="@/assets/images/footer/CEG_logo.png" alt="alt img">
+              <img class="ceg-logo" src="@/assets/images/footer/CEG_logo.png" alt="alt img">
             </a>
           </div>
 
@@ -65,7 +65,7 @@
               :href="responsibleGamingURL"
               rel="noopener"
             >
-              <img src="@/assets/images/footer/icon_age_twenty.svg" alt="responsible gaming">
+              <img src="@/assets/images/footer/20+.svg" alt="responsible gaming">
             </a>
 
             <a

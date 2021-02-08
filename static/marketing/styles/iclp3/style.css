@@ -238,9 +238,15 @@
   display: block;
   width: 48px;
   height: 48px;
-  background: url("/marketing/img/iclp3/icon_age.svg") no-repeat 50%;
+  background: url("/marketing/img/footer/20+.svg") no-repeat 50%;
   background-size: contain;
 }
+.curacao{
+  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(1);
+  filter: grayscale(100%);
+}
+
 .footer__logo .age a,
 .footer__logo .curacao a,
 .footer__logo .gt a {

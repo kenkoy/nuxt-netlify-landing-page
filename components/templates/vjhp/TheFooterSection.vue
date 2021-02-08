@@ -16,16 +16,13 @@
       </li>
     </ul>
     <p>
-      当ウェブサイトは、キュラソー政府の商業登記に登録されている、番号149132のBreckenridge Curacao B.V.（登録住所：Emancipatie Boulevard, Dominico F.
-      “Don” Martina 31, Willemstad, Curaçao）により運営されています。Breckenridge Curaçao B.V. __ はキュラソー州知事により発行されたMaster
-      Gaming License #5536/JAZ __ に基づく __ C.I.L Curacao Interactive Licensing N.V. __
-      により付与されたサブライセンスを通して正式な許可を所持しています
+      当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster Gaming License #1668/JAZに基づくCEG Curaçao Egaming により付与されたサブライセンスを通して、正式に認可されています。
     </p>
-    <a href="https://www.verajohn.com/home">
-      <img v-lazy-load src="/marketing/img/vjhp/curacao.png" alt="Curacao">
+    <a href="https://validator.curacao-egaming.com/validate?domain=www.verajohn.com&seal_id=cc15cb374804a763a5f82ff0a72fd6b436659d0061b3201e86431fa8afff305e39a7bbbadf89ae9274d2e9ee4bd923c3&stamp=ae85a35fb4a6c5816b8b9f17e5b6be96">
+      <img width="34" height="31" v-lazy-load src="/marketing/img/vjhp/CEG_logo.png" alt="Curacao">
     </a>
-    <a href="https://www.verajohn.com/home">
-      <img v-lazy-load src="/marketing/img/vjhp/18Regulator.png" alt="18Regulator">
+    <a href="https://www.verajohn.com/about/responsible-gaming">
+      <img width="34" height="31" v-lazy-load src="/marketing/img/vjhp/icon_age_twenty.svg" alt="18Regulator">
     </a>
   </footer>
 </template>

@@ -6,12 +6,18 @@
   }
 }
 
+.ceg-logo{
+  -webkit-filter: grayscale(100%);
+  -webkit-filter: grayscale(1);
+  filter: grayscale(100%);
+}
+
 footer{
   #footer-icon{
     text-align: center;
 
     img{
-      max-width: 70px;
+      width: 70px;
     }
 
     > a{

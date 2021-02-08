@@ -1,6 +1,6 @@
 /* { border: #FF0004 solid 1px; } */
 
-/* Language ID's 
+/* Language ID's
 https://docs.microsoft.com/en-us/previous-versions/commerce-server/ee825488(v=cs.20)
 #en-us, #en-en (ROTW)
 #en-gb (UK)
@@ -23,8 +23,8 @@ body, h1, h2, h3, h4, h5, h6, section { font-family: 'MainFont-Medium', sans-ser
 h1 {font-family: 'MainFont-DemiBold', sans-serif; font-size:3em; text-align:center; text-transform: uppercase; letter-spacing: 0.3px;}
 h2 {font-family: 'MainFont-DemiBold', sans-serif; font-size:1.75em; text-align:center;   }
 h3 {font-family: 'MainFont-Bold', sans-serif;font-size:1em; text-align:center;  }
-h4 {font-family: 'MainFont-Bold', sans-serif;font-size:2em; text-align:center; } 
-h5 {font-family: 'MainFont-Medium', sans-serif;font-size:1.75em; text-align:center; font-weight:300;  } 
+h4 {font-family: 'MainFont-Bold', sans-serif;font-size:2em; text-align:center; }
+h5 {font-family: 'MainFont-Medium', sans-serif;font-size:1.75em; text-align:center; font-weight:300;  }
 #strip h1 { font-size: 3.5em; }
 #strip-container { height: 75vh; position: relative; }
 .login { color: white; position: absolute; top:10px; right:15px; z-index: 999999;  }
@@ -64,9 +64,9 @@ form .title { padding-top: 4px; display: block; width: 90%; float: left; }
 
 
 .gt { width: 96px; height: 48px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_gt.svg') no-repeat center center; background-size: contain; border:none; }
-.age { width: 48px; height: 48px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_age.svg') no-repeat center center; background-size: contain; border:none; }
+.age { width: 48px; height: 48px; background: url('/marketing/img/footer/20+.svg') no-repeat center center; background-size: contain; border:none; }
 .mga { width: 97px; height: 47px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_mga.svg') no-repeat center center; background-size: contain; border:none;  }
-.curacao { width: 97px; height: 47px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_curacao.svg') no-repeat center center; background-size: contain; border:none;  }
+.curacao { width: 97px; height: 47px; background: url('/marketing/img/footer/CEG_logo.png') no-repeat center center; background-size: contain; border:none;  }
 
 .gamcare, .gamstop, .bga, .ukgc { display:none; }
 #en-gb .gamcare { width: 112px; height: 47px; background: url('https://files.vjpromo.com/bannerflow/lp-core/ico/icon_gamcare.svg') no-repeat center center; background-size: contain; border:none; }
