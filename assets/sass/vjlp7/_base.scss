@@ -1,32 +1,12 @@
-//===VERSION 1===//
+/*==VERSION 1===*/
 .version1{
+  h1{
+    text-shadow: 0 0 0.6rem #ffffff, 0 0 1.5rem #ffffff, -0.2rem 0.1rem 1rem #ffffff, 0.2rem 0.1rem 1rem #ffffff, 0 -0.5rem 2rem #ffffff, 0 0.5rem 3rem #ffffff;
+    animation: shine 2s forwards, flicker 3s infinite;
+    font-weight: 700;
+  }
   .highlight{
     color: $TEXT_HIGHLIGHT;
-  }
-  #hero-text-wrapper{
-    background: -webkit-linear-gradient(top, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
-    background: linear-gradient(to bottom, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc009fe3', endColorstr='#ccec008b',GradientType=0);
-  }
-  .logo{
-    max-width: 150px;
-    width: 100%;
-  }
-  button{
-    background: $BTN_BG;
-    width: 280px;
-    border-radius: 100px;
-    font-size: $TEXT_SIZE;
-    border: none;
-    padding: 10px 20px;
-
-    a, a:hover{
-      color: $BTN_COLOR;
-    }
-
-    &:hover{
-      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.60);
-    }
   }
 }
 
@@ -41,10 +21,6 @@
   }
   .highlight{
     color: $TEXT_HIGHLIGHT2;
-  }
-  .logo{
-    max-width: 100px;
-    width: 100%;
   }
 
   button{
@@ -250,22 +226,7 @@
   }
 }
 
-/*== VERSION 3 ===*/
-.version3{
-  h1{
-    text-shadow: 0 0 0.6rem #ffffff, 0 0 1.5rem #ffffff, -0.2rem 0.1rem 1rem #ffffff, 0.2rem 0.1rem 1rem #ffffff, 0 -0.5rem 2rem #ffffff, 0 0.5rem 3rem #ffffff;
-    animation: shine 2s forwards, flicker 3s infinite;
-    line-height: 58px;
-    font-weight: 700;
-  }
-  .highlight{
-    color: $TEXT_HIGHLIGHT;
-  }
-  .logo{
-    max-width: 150px;
-    width: 100%;
-  }
-}
+
 
 @keyframes shine{
   0% {
@@ -457,6 +418,10 @@ ul{
 }
 
 #hero{
+  .logo{
+    max-width: 100px;
+    width: 100%;
+  }
   small{
     color: $TEXT_COLOR;
     font-size: 11px;

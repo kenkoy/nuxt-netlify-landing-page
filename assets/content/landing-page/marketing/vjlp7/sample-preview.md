@@ -7,16 +7,14 @@ field_ids:
   go_container_id: OPT-PHSNXP6
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
-styles: version3
+styles: version1
 template: steps
 promo_banner:
-  promo_title: |-
-    最高$500までの
-    100%入金ボーナス
-    を獲得しよう!
+  promo_title: 最大$1000
+    ビギナーズボーナス
   promo_images:
-    promo_bg_desktop: /marketing/img/card-master-welcome-offer_bg.jpg
-    promo_bg_mobile: /marketing/img/card-master-welcome-offer_bg_m.jpg
+    promo_bg_desktop: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-bg.jpg
+    promo_bg_mobile: /marketing/img/vjlp7bg_m.jpg
   promo_terms_link_text:
     - 利用規約
   promo_render_title_first: true
@@ -26,8 +24,7 @@ promo_banner:
   promo_join_button: ご登録はこちら
   promo_login_button: 登録
   promo_title_highlighted:
-    - $500
-    - 100%入金ボーナス
+    - $1000
 steps:
   step_title_1: ご登録
   step_description_1: 安全 & 安心！
