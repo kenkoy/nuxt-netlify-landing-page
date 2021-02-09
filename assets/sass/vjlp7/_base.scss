@@ -250,8 +250,128 @@
   }
 }
 
+/*== VERSION 3 ===*/
+.version3{
+  h1{
+    text-shadow: 0 0 0.6rem #ffffff, 0 0 1.5rem #ffffff, -0.2rem 0.1rem 1rem #ffffff, 0.2rem 0.1rem 1rem #ffffff, 0 -0.5rem 2rem #ffffff, 0 0.5rem 3rem #ffffff;
+    animation: shine 2s forwards, flicker 3s infinite;
+    line-height: 58px;
+    font-weight: 700;
+  }
+  .highlight{
+    color: $TEXT_HIGHLIGHT;
+  }
+  .logo{
+    max-width: 150px;
+    width: 100%;
+  }
+}
 
-
+@keyframes shine{
+  0% {
+      color: #6b1839;
+      text-shadow: none;
+  }
+  100% {
+    color: #FFFFFF;
+    text-shadow: 0 0 0.6rem #ffffff, 0 0 1.5rem #ffffff, -0.2rem 0.1rem 1rem #ffffff, 0.2rem 0.1rem 1rem #ffffff, 0 -0.5rem 2rem #ffffff, 0 0.5rem 3rem #ffffff;
+  }
+}
+@keyframes flicker {
+	from {
+		opacity: 1
+	}
+	4% {
+		opacity: .9
+	}
+	6% {
+		opacity: .85
+	}
+	8% {
+		opacity: .95
+	}
+	10% {
+		opacity: .9
+	}
+	11% {
+		opacity: .922
+	}
+	12% {
+		opacity: .9
+	}
+	14% {
+		opacity: .95
+	}
+	16% {
+		opacity: .98
+	}
+	17% {
+		opacity: .9
+	}
+	19% {
+		opacity: .93
+	}
+	20% {
+		opacity: .99
+	}
+	24% {
+		opacity: 1
+	}
+	26% {
+		opacity: .94
+	}
+	28% {
+		opacity: .98
+	}
+	37% {
+		opacity: .93
+	}
+	38% {
+		opacity: .5
+	}
+	39% {
+		opacity: .96
+	}
+	42% {
+		opacity: 1
+	}
+	44% {
+		opacity: .97
+	}
+	46% {
+		opacity: .94
+	}
+	56% {
+		opacity: .9
+	}
+	58% {
+		opacity: .9
+	}
+	60% {
+		opacity: .99
+	}
+	68% {
+		opacity: 1
+	}
+	70% {
+		opacity: .9
+	}
+	72% {
+		opacity: .95
+	}
+	93% {
+		opacity: .93
+	}
+	95% {
+		opacity: .95
+	}
+	97% {
+		opacity: .93
+	}
+	to {
+		opacity: 1
+	}
+}
 
 
 .vjlp7-main{
