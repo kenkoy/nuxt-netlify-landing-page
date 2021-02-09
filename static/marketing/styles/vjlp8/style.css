@@ -157,6 +157,10 @@ button:hover {
   height: 48px;
 }
 
+.ceg-icon {
+  filter: grayscale(100%)
+}
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
   .desktop {
