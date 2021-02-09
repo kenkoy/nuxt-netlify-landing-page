@@ -12,7 +12,7 @@
             <div id="filter-bar">
               <div>
                 <FilterSearch v-if="modal" />
-                <button @click="modalFilterFn()" class="btn-primary">
+                <button class="btn-primary" @click="modalFilterFn()">
                   Find game you'll love
                 </button>
               </div>
@@ -34,15 +34,21 @@
                   <p>{{ game.title }}</p>
                 </div>
               </div>
-              <div class="no-available-games" v-if="filteredGames.length === 0">
+              <div v-if="filteredGames.length === 0" class="no-available-games">
                 <h4>No Results</h4>
               </div>
             </div>
 
-            <div id="pagination-wrapper" v-if="filteredGames.length >= limit">
-              <p class="pagination-text" v-if="filteredGames.length !== 0">Showing {{ (filteredGames.length + limit) - filteredGames.length }} of {{ mdData.games.length }} games</p>
-              <a class="load-more" v-if="filteredGames.length !== 0 && (filteredGames.length + limit) - filteredGames.length < mdData.games.length" @click="showMore">Load more</a>
-              <h3 v-if="(filteredGames.length + limit) - filteredGames.length === mdData.games.length">All games shown</h3>
+            <div v-if="filteredGames.length >= limit" id="pagination-wrapper">
+              <p v-if="filteredGames.length !== 0" class="pagination-text">
+                Showing {{ (filteredGames.length + limit) - filteredGames.length }} of {{ mdData.games.length }} games
+              </p>
+              <a v-if="filteredGames.length !== 0 && (filteredGames.length + limit) - filteredGames.length < mdData.games.length" class="load-more" @click="showMore">
+                Load more
+              </a>
+              <h3 v-if="(filteredGames.length + limit) - filteredGames.length === mdData.games.length">
+                All games shown
+              </h3>
             </div>
           </div>
         </div>

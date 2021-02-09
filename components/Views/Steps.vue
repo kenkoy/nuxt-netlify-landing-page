@@ -28,13 +28,31 @@
 
 <script>
 export default {
-  props: [
-    'title1',
-    'description1',
-    'title2',
-    'description2',
-    'title3',
-    'description3'
-  ]
+  props: {
+    title1: {
+      type: String,
+      required: true
+    },
+    description1: {
+      type: String,
+      required: true
+    },
+    title2: {
+      type: String,
+      required: true
+    },
+    description2: {
+      type: String,
+      required: true
+    },
+    title3: {
+      type: String,
+      required: true
+    },
+    description3: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>

@@ -50,7 +50,7 @@
       />
       <GameSlider
         v-if="mdData.template === 'game_slider'"
-        :gameData="mdData.game_images"
+        :game-data="mdData.game_images"
       />
 
       <section id="payment" class="separator">

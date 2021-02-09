@@ -29,9 +29,11 @@
             <div>
               <div class="banner">
                 <h1 v-if="banner_title" v-html="bannerTitle" />
-                <h1 v-if="banner_subtitle">{{ data_items.attributes.promo_banner.banner_subtitle }}</h1>
+                <h1 v-if="banner_subtitle">
+                  {{ data_items.attributes.promo_banner.banner_subtitle }}
+                </h1>
               </div>
-              <button id="banner-button" v-if="data_items.attributes.promo_banner.banner_promo_join_button" class="error">
+              <button v-if="data_items.attributes.promo_banner.banner_promo_join_button" id="banner-button" class="error">
                 <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url"><strong>{{ data_items.attributes.promo_banner.banner_promo_join_button }}</strong></a>
               </button>
             </div>
@@ -49,7 +51,7 @@
         />
         <GameSlider
           v-if="data_items.attributes.template === 'game_slider'"
-          :gameData="data_items.attributes.game_images"
+          :game-data="data_items.attributes.game_images"
         />
 
         <section id="section1">

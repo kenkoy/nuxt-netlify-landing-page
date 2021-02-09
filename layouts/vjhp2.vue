@@ -155,8 +155,7 @@
                 <a aria-label="link" :href="data_items.footer_section.footer_menu_4_redirect_url">{{ data_items.footer_section.footer_menu_4_text }}</a>
               </div>
               <div class="copyright">
-                <small>当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。 Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster
-                Gaming License #1668/JAZに基づくCEG Curaçao Egaming により付与されたサブライセンスを通して、正式に認可されています。</small>
+                <small>当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。 Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster Gaming License #1668/JAZに基づくCEG Curaçao Egaming により付与されたサブライセンスを通して、正式に認可されています。</small>
               </div>
               <div>
                 <a aria-label="link" href="https://validator.curacao-egaming.com/validate?domain=www.verajohn.com&seal_id=cc15cb374804a763a5f82ff0a72fd6b436659d0061b3201e86431fa8afff305e39a7bbbadf89ae9274d2e9ee4bd923c3&stamp=ae85a35fb4a6c5816b8b9f17e5b6be96" target="_blank">

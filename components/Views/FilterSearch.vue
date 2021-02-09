@@ -4,7 +4,7 @@
       <form>
         <h3>Choose your favourite categories to find more games you'll love!</h3>
 
-        <label class="switch" v-for="(cats, cats_index) in categories" :key="cats_index">
+        <label v-for="(cats, cats_index) in categories" :key="cats_index" class="switch">
           <input type="radio" name="cat">
           <a class="slider noselect">{{ cats.name }}</a>
         </label>

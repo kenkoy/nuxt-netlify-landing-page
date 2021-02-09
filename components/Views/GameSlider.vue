@@ -27,25 +27,6 @@
   </section>
 </template>
 
-<style lang="scss" scoped>
-  #game-slider{
-    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
-    padding: 10px 0;
-
-    .container{
-      display: block;
-    }
-  }
-  .slick-slide{
-    img{
-      margin: auto;
-    }
-    a{
-      border: none;
-    }
-  }
-</style>
-
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
@@ -55,9 +36,12 @@ export default {
   components: {
     VueSlickCarousel
   },
-  props: [
-    'gameData'
-  ],
+  props: {
+    gameData: {
+      type: Array,
+      required: true
+    }
+  },
   data () {
     return {
       carouselSettings: {
@@ -91,3 +75,22 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  #game-slider{
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
+    padding: 10px 0;
+
+    .container{
+      display: block;
+    }
+  }
+  .slick-slide{
+    img{
+      margin: auto;
+    }
+    a{
+      border: none;
+    }
+  }
+</style>
