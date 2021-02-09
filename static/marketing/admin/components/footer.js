@@ -34,7 +34,7 @@ export const FOOTER = createClass({
                 href="${responsibleGamingURL}"
                 rel="noopener"
               >
-                <img src="../img/footer/icon_age.svg" alt="alt img"></img>
+                <img class="reg-icon" src="../img/footer/20+.svg" alt="alt img"></img>
               </a>
 
               <a
@@ -51,7 +51,7 @@ export const FOOTER = createClass({
                 target="_blank"
                 href="#"
               >
-                <img src="../img/footer/icon_curacao.svg" alt="alt img"></img>
+                <img class="reg-icon" src="../img/footer/CEG_logo.png" alt="alt img"></img>
               </a>
             </div>
 

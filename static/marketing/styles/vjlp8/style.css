@@ -152,6 +152,11 @@ button:hover {
   background: #009FE3;
 }
 
+.reg-icon {
+  width: 48px;
+  height: 48px;
+}
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
   .desktop {
