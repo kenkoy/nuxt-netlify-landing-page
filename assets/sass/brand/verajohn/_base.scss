@@ -102,6 +102,24 @@ button{
   @include button-warning;
 }
 
+.find{
+  position: relative;
+  padding-left: 35px;
+
+  &:before{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background-image: url(https://cdn.plaingaming.net/files/repository/105/1/10003/all/all/image/visible-on-load.png?qo78mr&601b&6012);
+    background-repeat: no-repeat;
+    background-position: -84px -180px;
+    height: 16px;
+    width: 16px;
+    content: '';
+  }
+}
+
 .highlight{
   color: $HIGHLIGHT;
 }

@@ -40,6 +40,7 @@
 }
 
 @mixin overlay{
+  backdrop-filter: blur(15px);
   position: absolute;
   top: 50px;
   left: 0;
@@ -90,8 +91,12 @@
       margin: 5px;
     }
 
+    input + .slider:hover,
     input:checked + .slider {
       background-color: $CHECKBOX_BG_CURRENT;
+    }
+    input:checked + .slider {
+      box-shadow: 1px 1px 8px lighten($CHECKBOX_BG_CURRENT, 10%);
     }
 }
 

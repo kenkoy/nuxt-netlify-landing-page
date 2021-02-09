@@ -12,7 +12,7 @@
             <div id="filter-bar">
               <div>
                 <FilterSearch v-if="modal" />
-                <button class="btn-primary" @click="modalFilterFn()">
+                <button class="btn-primary find" @click="modalFilterFn()">
                   Find game you'll love
                 </button>
               </div>
