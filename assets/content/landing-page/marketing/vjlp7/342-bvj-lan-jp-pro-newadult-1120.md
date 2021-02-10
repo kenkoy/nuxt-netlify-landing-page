@@ -8,12 +8,13 @@ field_ids:
   go_container_id: OPT-PHSNXP6
   gtm_container_id: GTM-MFD3NKM
 styles: version2
+template: steps
 promo_banner:
   promo_title: |-
     最大$1000の
     ビギナーズボーナス
   promo_images:
-    promo_bg_desktop: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-bg.jpg
+    promo_bg_desktop: /marketing/img/vjlp7.jpg
     promo_bg_mobile: /marketing/img/vjlp7bg_m.jpg
   promo_terms_link_text:
     - 利用規約
@@ -25,13 +26,24 @@ promo_banner:
   promo_login_button: 登録
   promo_title_highlighted:
     - $1000
-promo_steps:
-  promo_step_1_title: 登録
-  promo_step_1_desc: 1番人気のオンラインカジノだから安心!
-  promo_step_2_title: 入金
-  promo_step_2_desc: お得なボーナスを獲得!
-  promo_step_3_title: " プレイ"
-  promo_step_3_desc: 今すぐ勝って、楽しもう!
+steps:
+  step_title_1: 登録
+  step_description_1: 1番人気のオンラインカジノだから安心!
+  step_title_2: 入金
+  step_description_2: お得なボーナスを獲得!
+  step_title_3: " プレイ"
+  step_description_3: 今すぐ勝って、楽しもう!
+game_images:
+  game_url_1: https://www.verajohn.com/ja/about/loyalty-program
+  game_url_2: https://www.verajohn.com/ja/game/hawaiian-dream
+  game_url_3: https://www.verajohn.com/ja/about/cardmaster
+  game_url_4: https://www.verajohn.com/ja/livecasino
+  game_url_5: https://www.verajohn.com/ja/about/paymentoption
+  game_icon_1: /marketing/img/loyalty-program.png
+  game_icon_2: /marketing/img/hawaiian-dream.png
+  game_icon_3: /marketing/img/card-master.png
+  game_icon_4: /marketing/img/live-casino.png
+  game_icon_5: /marketing/img/payment-option.png
 promo_template: VJLP1-NoForm
 ---
 <h3>ビギナーズボーナス利用規約</h3>
