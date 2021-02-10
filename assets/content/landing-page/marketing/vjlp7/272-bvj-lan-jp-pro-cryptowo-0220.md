@@ -8,6 +8,7 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
 styles: version1
+template: steps
 promo_banner:
   promo_render_title_first: true
   promo_title: |-
@@ -31,12 +32,23 @@ promo_banner:
     promo_bg_desktop: /marketing/img/welcome-offer-crypto_bg.jpg
     promo_bg_mobile: /marketing/img/welcome-offer-crypto_bg_m.jpg
 promo_steps:
-  promo_step_1_title: 登録
-  promo_step_1_desc: 1番人気のオンラインカジノだから安心!
-  promo_step_2_title: 入金
-  promo_step_2_desc: お得なボーナスを獲得!
-  promo_step_3_title: プレイ
-  promo_step_3_desc: 今すぐ勝って、楽しもう!
+  step_title_1: 登録
+  step_description_1: 1番人気のオンラインカジノだから安心!
+  step_title_2: 入金
+  step_description_2: お得なボーナスを獲得!
+  step_title_3: プレイ
+  step_description_3: 今すぐ勝って、楽しもう!
+game_images:
+  game_url_1: https://www.verajohn.com/ja/about/loyalty-program
+  game_url_2: https://www.verajohn.com/ja/game/hawaiian-dream
+  game_url_3: https://www.verajohn.com/ja/about/cardmaster
+  game_url_4: https://www.verajohn.com/ja/livecasino
+  game_url_5: https://www.verajohn.com/ja/about/paymentoption
+  game_icon_1: /marketing/img/loyalty-program.png
+  game_icon_2: /marketing/img/hawaiian-dream.png
+  game_icon_3: /marketing/img/card-master.png
+  game_icon_4: /marketing/img/live-casino.png
+  game_icon_5: /marketing/img/payment-option.png
 promo_template: VJLP1-NoForm
 ---
 
