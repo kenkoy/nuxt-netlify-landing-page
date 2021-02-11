@@ -4,7 +4,7 @@
       <ul class="footer__logo">
         <li class="age">
           <a
-            href="https://www.play-wise.com/intercasino-jp/"
+            href="https://www.intercasino.com/about/responsible-gaming"
             target="blank"
             rel="noopener"
             aria-label="Play-Wise"
@@ -29,12 +29,14 @@
           class="curacao"
           lazy-background="/marketing/img/footer/CEG_logo.png"
         >
-          <span>curacao</span>
+          <a href="https://validator.curacao-egaming.com/validate?domain=www.intercasino.com&seal_id=141a575e2e4b5593af3dc1b19e2517deaa0ed9a17b9f809f1ffd32fa97098f83e664f6df6801db35fd76f6bef7f63663&stamp=ae85a35fb4a6c5816b8b9f17e5b6be96">
+            <span>curacao</span>
+          </a>
         </li>
       </ul>
       <p>
         <a
-          href="https://www.play-wise.com/intercasino-jp/"
+          href="https://www.intercasino.com/about/responsible-gaming"
           target="blank"
           rel="noopener"
           aria-label="Play-Wise"

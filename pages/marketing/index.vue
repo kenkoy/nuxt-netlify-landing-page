@@ -1,5 +1,5 @@
 <template>
-  <div class="core-wrapper" :class="{ home_wrapper: true }">
+  <div :class="{ home_wrapper: true }">
     <div id="gradient-wrapper" />
     <section class="intro">
       <div class="container">

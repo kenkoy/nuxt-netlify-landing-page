@@ -5,21 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Manager</title>
     <!-- Include the script that enables Netlify Identity on this page. -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
   </head>
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script type="module">
-      import { VJLP1_PREVIEW } from './vjlp1.js';
-      import { VJLP3_PREVIEW } from './vjlp3.js';
-      import { VJLP7_PREVIEW } from './vjlp7.js';
-      import { ICLP1_PREVIEW } from './iclp1.js';
-      import { VJLP8_PREVIEW } from './vjlp8.js';
-      CMS.registerPreviewTemplate('VJLP8-NoForm', VJLP8_PREVIEW);
+      import { VJLP1_PREVIEW } from '/marketing/admin/vjlp1.js';
       CMS.registerPreviewTemplate('VJLP1-NoForm', VJLP1_PREVIEW);
+      import { VJLP3_PREVIEW } from '/marketing/admin/vjlp3.js';
       CMS.registerPreviewTemplate('VJLP3-NoForm', VJLP3_PREVIEW);
-      CMS.registerPreviewTemplate('VJLP7-NoForm', VJLP7_PREVIEW);
+      import { VJLP8_PREVIEW } from '/marketing/admin/vjlp8.js';
+      CMS.registerPreviewTemplate('VJLP8-NoForm', VJLP8_PREVIEW);
+      import { ICLP1_PREVIEW } from '/marketing/admin/iclp1.js';
       CMS.registerPreviewTemplate('ICLP1-NoForm', ICLP1_PREVIEW);
     </script>
   </body>

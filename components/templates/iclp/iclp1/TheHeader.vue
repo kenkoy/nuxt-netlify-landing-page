@@ -102,18 +102,9 @@ export default {
       type: String,
       required: true
     },
-    promo_title_animate: {
-      type: Boolean,
-      required: true
-    },
     images: {
       type: Object,
       required: true
-    }
-  },
-  data () {
-    return {
-      title_animate: true
     }
   },
   computed: {
@@ -128,7 +119,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .game-logo {
   background: var(--game-logo) no-repeat center;
   background-size: contain;
@@ -159,6 +150,19 @@ export default {
   text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
     -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
     0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-  animation: shine 2s forwards, flicker 3s infinite;
+  animation: shineIclp1 2s forwards, flicker 3s infinite;
+
+  @keyframes shineIclp1 {
+    0% {
+      color: #6b1839;
+      text-shadow: none;
+    }
+    100% {
+      color: #ffe6ff;
+      text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+        -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+        0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    }
+  }
 }
 </style>

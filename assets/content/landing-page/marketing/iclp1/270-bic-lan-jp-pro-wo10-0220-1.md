@@ -12,7 +12,7 @@ promo_banner:
   promo_smallterm_redirect_url: "#terms"
   promo_title: 270-bic-lan-jp-pro-wo10-0220
   promo_images:
-    promo_bg_desktop: /marketing/img/bg.jpg
+    promo_bg_desktop: /marketing/img/icbg.jpg
     promo_bg_mobile: /marketing/img/bg_m.jpg
   promo_signup_button: 今すぐ登録
   promo_smallterm_text: に同意します。

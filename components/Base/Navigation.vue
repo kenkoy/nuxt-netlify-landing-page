@@ -1,5 +1,5 @@
 <template>
-  <div class="core-wrapper" :class="{ nav_wrapper: true }">
+  <div :class="{ nav_wrapper: true }">
     <nav v-if="desktop === true" id="nav-desktop">
       <div class="container">
         <div id="logo">
@@ -17,7 +17,7 @@
             <nuxt-link to="/marketing/admin#/" target="_blank">
               Admin
             </nuxt-link>
-            <nuxt-link id="vj" to="/marketing/vjlp5/" :class="switchTemplate === 'vj' ? 'active' : ''" @click.native="switchTemplate ='vj'">
+            <nuxt-link id="vj" to="/marketing/vjlp1v2/" :class="switchTemplate === 'vj' ? 'active' : ''" @click.native="switchTemplate ='vj'">
               <strong>VJ</strong>
             </nuxt-link>
             <nuxt-link id="ic" to="/marketing/iclp1v2/" :class="switchTemplate === 'ic' ? 'active' : ''" @click.native="switchTemplate = 'ic'">
@@ -80,7 +80,7 @@ export default {
       name: route.name.replace('marketing-', ''),
       path: route.path
     })).filter((route) => {
-      const containingWords = /slug|vjlp1|vjlp1v2|vjlp3|vjlp3v2|vjlp4|vjlp6|about|admin|blank-template|home|marketing|index/.test(route.name)
+      const containingWords = /slug|about|admin|blank-template|home|marketing|index/.test(route.name)
       return !containingWords
     })
   },

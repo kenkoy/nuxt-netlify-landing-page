@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import htm from './external-scripts/htm.module.js'
+import htm from 'https://unpkg.com/htm?module'
 
 const html = htm.bind(h)
 export const VJLP3_PREVIEW = createClass({
@@ -77,7 +77,6 @@ export const VJLP3_PREVIEW = createClass({
           <div class="row">
             <div id="bf-banner-img-2" class="col-lg-12">
               <h1>${bannerTitle}</h1>
-
               <h2></h2>
 
               <a class="signup-btn d-none d-lg-block" href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
@@ -186,7 +185,7 @@ export const VJLP3_PREVIEW = createClass({
                     target="blank">
                     <div class="ukgc"></div>
                   </a> </div>
-                <div class="icon"> <a href="#" target="blank">
+                <div class="icon"> <a href="https://validator.curacao-egaming.com/validate?domain=www.verajohn.com&seal_id=cc15cb374804a763a5f82ff0a72fd6b436659d0061b3201e86431fa8afff305e39a7bbbadf89ae9274d2e9ee4bd923c3&stamp=ae85a35fb4a6c5816b8b9f17e5b6be96" target="blank">
                     <div class="curacao"></div>
                   </a> </div>
                 <div class="icon"> <a href="https://www.gamcare.org.uk" target="blank">

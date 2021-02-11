@@ -3,7 +3,6 @@ import VueMeta from 'vue-meta'
 import _ from 'lodash'
 import index from '@/pages/marketing/vjlp3/_slug/index.vue'
 import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.js'
-import '@/test/utils/matchMedia.js'
 
 const VJLP3_DIR = '/assets/content/landing-page/marketing/vjlp3/'
 

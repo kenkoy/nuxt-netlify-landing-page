@@ -1,5 +1,5 @@
 <template>
-  <div class="core-wrapper" :class="{ post_wrapper: true }">
+  <div :class="{ post_wrapper: true }">
     <section id="featured-posts" :class="$nuxt.$route.name.includes('vj') ? 'vj-post-wrapper' : 'ic-post-wrapper'">
       <div class="container">
         <div v-for="(post, post_index) in posts" :key="post_index" class="posts">
