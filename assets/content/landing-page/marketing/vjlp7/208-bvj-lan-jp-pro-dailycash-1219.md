@@ -8,6 +8,7 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
 styles: version1
+template: steps
 promo_banner:
   promo_render_title_first: false
   promo_title: |-
@@ -29,13 +30,24 @@ promo_banner:
   promo_images:
     promo_bg_desktop: /marketing/img/cm-daily-cash-bg.jpg
     promo_bg_mobile: /marketing/img/cm-daily-cash-bg-m.jpg
-promo_steps:
-  promo_step_1_title: ご登録
-  promo_step_1_desc: 安全 & 安心！
-  promo_step_2_title: ご入金
-  promo_step_2_desc: ボーナス獲得！
-  promo_step_3_title: 運試し
-  promo_step_3_desc: 1日1回無料で現金をもらおう！
+steps:
+  step_title_1: ご登録
+  step_description_1: 安全 & 安心！
+  step_title_2: ご入金
+  step_description_2: ボーナス獲得！
+  step_title_3: 運試し
+  step_description_3: 1日1回無料で現金をもらおう！
+game_images:
+  game_url_1: https://www.verajohn.com/ja/about/loyalty-program
+  game_url_2: https://www.verajohn.com/ja/game/hawaiian-dream
+  game_url_3: https://www.verajohn.com/ja/about/cardmaster
+  game_url_4: https://www.verajohn.com/ja/livecasino
+  game_url_5: https://www.verajohn.com/ja/about/paymentoption
+  game_icon_1: /marketing/img/loyalty-program.png
+  game_icon_2: /marketing/img/hawaiian-dream.png
+  game_icon_3: /marketing/img/card-master.png
+  game_icon_4: /marketing/img/live-casino.png
+  game_icon_5: /marketing/img/payment-option.png
 promo_template: VJLP1-NoForm
 ---
    <h3 class="text-left">カード・オブ・フロンティア利用規約</h3>
