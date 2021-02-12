@@ -1,5 +1,9 @@
 /*==VERSION 1===*/
 .version1{
+  .logo{
+    max-width: 150px;
+    width: 100%;
+  }
   h1{
     text-shadow: 0 0 0.6rem #ffffff, 0 0 1.5rem #ffffff, -0.2rem 0.1rem 1rem #ffffff, 0.2rem 0.1rem 1rem #ffffff, 0 -0.5rem 2rem #ffffff, 0 0.5rem 3rem #ffffff;
     animation: shine 2s forwards, flicker 3s infinite;
@@ -12,6 +16,10 @@
 
 //===VERSION 2===//
 .version2{
+  .logo{
+    max-width: 100px;
+    width: 100%;
+  }
   h1{
     animation: vjlp7text-flicker-promo 5s linear forwards;
     text-shadow: 0 0 20px rgb(236, 0, 139);
@@ -418,10 +426,6 @@ ul{
 }
 
 #hero{
-  .logo{
-    max-width: 100px;
-    width: 100%;
-  }
   small{
     color: $TEXT_COLOR;
     font-size: 11px;

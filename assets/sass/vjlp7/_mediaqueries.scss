@@ -20,7 +20,7 @@
 
       button {
         background: #fff;
-        font-size: 25px;
+        font-size: 22px;
         font-weight: 700;
         width: 280px;
         border-radius: 100px;
@@ -70,8 +70,9 @@
     padding: 0 10px;
 
     .container{
-      height: calc(100vh - 160px);
-      min-height: 400px;
+      height: 100%;
+      min-height: calc(100vh - 160px);
+      // min-height: 400px;
     }
 
     #hero-text-wrapper{
@@ -139,9 +140,9 @@
     background: var(--bg-image) no-repeat center;
     background-size: cover;
 
-    .container{
-      min-height: 500px;
-    }
+    // .container{
+    //   min-height: 500px;
+    // }
   }
   #steps{
     .container{
@@ -162,6 +163,10 @@
       h1{
         line-height: 58px;
       }
+      .container{
+        min-height: 730px;
+        height: 100%;
+      }
       #hero-text-wrapper{
         background: -webkit-linear-gradient(top, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
         background: linear-gradient(to bottom, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
@@ -181,6 +186,12 @@
           }
         }
       }
+    }
+  }
+  .version2{
+    #hero .container{
+      min-height: 500px;
+      height: 100%;
     }
   }
   .desktop{
@@ -214,9 +225,6 @@
     }
   }
   #hero{
-    .container{
-      height: 100vh;
-    }
     #hero-text-wrapper{
       -ms-flex: 0 0 41.666667%;
       flex: 0 0 41.666667%;
