@@ -12,98 +12,20 @@ field_ids:
 games:
   - title: Book of Dead
     image: /marketing/img/games/1.png
+    tags: promoted
   - title: Legacy of Dead
     image: /marketing/img/games/2.png
+    tags: all_games
   - title: Fire Joke
     image: /marketing/img/games/3.png
+    tags: slots
   - title: Cystal Ball
     image: /marketing/img/games/4.png
+    tags: provider_of_the_month
   - title: Rise of Merlin
     image: /marketing/img/games/5.png
+    tags: slots
   - title: Magic 10
     image: /marketing/img/games/6.png
-  - title: Book of Dead
-    image: /marketing/img/games/1.png
-  - title: Legacy of Dead
-    image: /marketing/img/games/2.png
-  - title: Fire Joke
-    image: /marketing/img/games/3.png
-  - title: Cystal Ball
-    image: /marketing/img/games/4.png
-  - title: Rise of Merlin
-    image: /marketing/img/games/5.png
-  - title: Magic 10
-    image: /marketing/img/games/6.png
-  - title: Book of Dead
-    image: /marketing/img/games/1.png
-  - title: Legacy of Dead
-    image: /marketing/img/games/2.png
-  - title: Fire Joke
-    image: /marketing/img/games/3.png
-  - title: Cystal Ball
-    image: /marketing/img/games/4.png
-  - title: Rise of Merlin
-    image: /marketing/img/games/5.png
-  - title: Magic 10
-    image: /marketing/img/games/6.png
-  - title: Book of Dead
-    image: /marketing/img/games/1.png
-  - title: Legacy of Dead
-    image: /marketing/img/games/2.png
-  - title: Fire Joke
-    image: /marketing/img/games/3.png
-  - title: Cystal Ball
-    image: /marketing/img/games/4.png
-  - title: Rise of Merlin
-    image: /marketing/img/games/5.png
-  - title: Magic 10
-    image: /marketing/img/games/6.png
-  - title: Book of Dead
-    image: /marketing/img/games/1.png
-  - title: Legacy of Dead
-    image: /marketing/img/games/2.png
-  - title: Fire Joke
-    image: /marketing/img/games/3.png
-  - title: Cystal Ball
-    image: /marketing/img/games/4.png
-  - title: Rise of Merlin
-    image: /marketing/img/games/5.png
-  - title: Magic 10
-    image: /marketing/img/games/6.png
-  - title: Book of Dead
-    image: /marketing/img/games/1.png
-  - title: Legacy of Dead
-    image: /marketing/img/games/2.png
-  - title: Fire Joke
-    image: /marketing/img/games/3.png
-  - title: Cystal Ball
-    image: /marketing/img/games/4.png
-  - title: Rise of Merlin
-    image: /marketing/img/games/5.png
-  - title: Magic 10
-    image: /marketing/img/games/6.png
-  - title: Book of Dead
-    image: /marketing/img/games/1.png
-  - title: Legacy of Dead
-    image: /marketing/img/games/2.png
-  - title: Fire Joke
-    image: /marketing/img/games/3.png
-  - title: Cystal Ball
-    image: /marketing/img/games/4.png
-  - title: Rise of Merlin
-    image: /marketing/img/games/5.png
-  - title: Magic 10
-    image: /marketing/img/games/6.png
-  - title: Book of Dead
-    image: /marketing/img/games/1.png
-  - title: Legacy of Dead
-    image: /marketing/img/games/2.png
-  - title: Fire Joke
-    image: /marketing/img/games/3.png
-  - title: Cystal Ball
-    image: /marketing/img/games/4.png
-  - title: Rise of Merlin
-    image: /marketing/img/games/5.png
-  - title: Magic 10
-    image: /marketing/img/games/6.png
+    tags: provider_of_the_month
 ---

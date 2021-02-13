@@ -5,7 +5,12 @@
         <h3>Choose your favourite categories to find more games you'll love!</h3>
 
         <label v-for="(cats, cats_index) in categories" :key="cats_index" class="switch">
-          <input type="radio" name="cat">
+          <input
+            type="radio"
+            name="cat"
+            :value="cats.tags"
+            @click="gameDataEmit(cats.tags)"
+          >
           <a class="slider noselect">{{ cats.name }}</a>
         </label>
       </form>
@@ -35,6 +40,11 @@ export default {
           tags: 'provider_of_the_month'
         }
       ]
+    }
+  },
+  methods: {
+    gameDataEmit (gameCat) {
+      this.$emit('game-data-emit', gameCat)
     }
   }
 }

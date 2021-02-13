@@ -6,12 +6,13 @@
       :class="mdData.slug_name"
       class="game-main"
     >
+    ==== {{ gameCat }}
       <section id="list-games">
         <div class="container main-content">
           <div>
             <div id="filter-bar">
               <div>
-                <FilterSearch v-if="modal" />
+                <FilterSearch v-if="modal" @game-data-emit="getGameCaregoryEmit" />
                 <button class="btn-primary find" @click="modalFilterFn()">
                   Find game you'll love
                 </button>
@@ -29,9 +30,11 @@
 
             <div>
               <div v-for="(game, gameIndex) in filteredGames" :key="gameIndex" class="game">
-                <div v-if="gameIndex < limit">
-                  <img :src="game.image">
-                  <p>{{ game.title }}</p>
+                <div v-if="gameCat === game.tags">
+                  <div v-if="gameIndex < limit">
+                    <img :src="game.image">
+                    <p>{{ game.title }}</p>
+                  </div>
                 </div>
               </div>
               <div v-if="filteredGames.length === 0" class="no-available-games">
@@ -71,7 +74,8 @@ export default {
       htmlBody: '',
       search: '',
       limit: 18,
-      showMoreAddItems: 6
+      showMoreAddItems: 6,
+      gameCat: 'all_games'
     }
   },
   computed: {
@@ -96,6 +100,9 @@ export default {
     },
     modalFilterFn () {
       this.modal = !this.modal
+    },
+    getGameCaregoryEmit (gameDataEmit) {
+      this.gameCat = gameDataEmit
     }
   }
 }
