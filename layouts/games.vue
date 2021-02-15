@@ -6,7 +6,6 @@
       :class="mdData.slug_name"
       class="game-main"
     >
-    ==== {{ gameCat }}
       <section id="list-games">
         <div class="container main-content">
           <div>
@@ -30,7 +29,7 @@
 
             <div>
               <div v-for="(game, gameIndex) in filteredGames" :key="gameIndex" class="game">
-                <div v-if="gameCat === game.tags">
+                <div>
                   <div v-if="gameIndex < limit">
                     <img :src="game.image">
                     <p>{{ game.title }}</p>
