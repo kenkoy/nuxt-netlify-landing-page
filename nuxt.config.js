@@ -10,7 +10,8 @@ const markdownPaths = [
   'marketing/vjlp6',
   'marketing/iclp1',
   'marketing/iclp2',
-  'marketing/iclp3'
+  'marketing/iclp3',
+  'marketing/iclp3V2'
 ]
 
 function dynamicMarkdownRoutes () {
@@ -66,7 +67,8 @@ export default {
   */
   css: [
     '~/assets/sass/base/animate.min.css',
-    '~/assets/sass/base/fonts.css'
+    '~/assets/sass/base/fonts.css',
+    '~/assets/sass/base/style.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -104,7 +106,7 @@ export default {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
-          test: /\.(js|vue|md)$/,
+          test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })

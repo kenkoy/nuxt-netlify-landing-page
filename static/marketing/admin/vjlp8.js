@@ -68,6 +68,14 @@ export const VJLP8_PREVIEW = createClass({
       '--bg-image-m': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_mobile'])}')`
     }
 
+    const gameLogo = banner.getIn(['data', 'promo_images', 'promo_game_logo'])
+      ? banner.getIn(['data', 'promo_images', 'promo_game_logo']).replace('/marketing', '..')
+      : ''
+
+    const gameImage = banner.getIn(['data', 'promo_images', 'promo_game_image'])
+      ? banner.getIn(['data', 'promo_images', 'promo_game_image']).replace('/marketing', '..')
+      : ''
+
     const bannerDescription = this.setBannerDesc(
       banner.getIn(['data', 'promo_small_subtitle']) || ' ',
       banner.getIn(['data', 'promo_small_subtitle_highlighted'])
@@ -97,10 +105,10 @@ export const VJLP8_PREVIEW = createClass({
                 </div>
               </div>
 
-              <img alt="alt img" class="logo" src="/marketing/img/vjlp8/logo.png"></img>
+              <img alt="alt img" class="logo" src="../img/vjlp8/logo.png"></img>
               <div class="banner">
-                <img alt="alt img" class="bounce animated delay-1s" src="${banner.getIn(['data', 'promo_images', 'promo_game_logo']) || ''}"></img>
-                <img alt="alt img" src="${banner.getIn(['data', 'promo_images', 'promo_game_image']) || ''}"></img>
+                <img alt="alt img" class="bounce animated delay-1s" src="${gameLogo}"></img>
+                <img alt="alt img" src="${gameImage}"></img>
                 <h1>${banner.getIn(['data', 'promo_large_subtitle'])}</h1>
                 <p dangerouslySetInnerHTML='${bannerDescription}'></p>
               </div>
@@ -136,8 +144,8 @@ export const VJLP8_PREVIEW = createClass({
 
         <section id="payment" class="separator">
           <div class="container">
-            <img class="desktop" src="/marketing/img/payment/payment_large_${country}.svg" alt="payment verajohn desktop"></img>
-            <img class="mobile" src="/marketing/img/payment/payment_${country}.svg" alt="payment verajohn mobile"></img>
+            <img class="desktop" src="../img/payment/payment_large_${country}.svg" alt="payment verajohn desktop"></img>
+            <img class="mobile" src="../img/payment/payment_${country}.svg" alt="payment verajohn mobile"></img>
           </div>
         </section>
 

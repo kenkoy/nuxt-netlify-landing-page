@@ -1,4 +1,3 @@
-
 <template>
   <div :class="{ vjlp6_wrapper: true }">
     <div class="vjlp6-main">
@@ -93,7 +92,9 @@
             <div class="separator" />
           </div>
         </section>
+
         <div v-html="html" />
+
         <Footer
           :promo-language-code="language"
           :promo-country-code="country_code"
@@ -105,8 +106,8 @@
 </template>
 
 <script>
-import Vjlp6Data from '~/pages/marketing/vjlp6/_slug/index.vue'
-import Footer from '~/components/Base/TheFooter.vue'
+import Vjlp6Data from '@/pages/marketing/vjlp6/_slug/index.vue'
+import Footer from '@/components/Base/TheFooter.vue'
 
 export default {
   components: {
@@ -116,28 +117,14 @@ export default {
   data () {
     return {
       layout: false,
-      desktop: true,
-      mobile: false,
       titleFirst: true,
       md_data: {},
       language: '',
       country_code: '',
       html: '',
-      tablet: ''
-    }
-  },
-  head () {
-    return {
-      htmlAttrs: {
-        lang: this.language
-      },
-      link: [
-        {
-          rel: 'shortcut icon',
-          href: '/marketing/vj-favicon.ico',
-          type: 'image/x-icon'
-        }
-      ]
+      desktop: '',
+      tablet: '',
+      mobile: ''
     }
   },
   computed: {
@@ -229,6 +216,20 @@ export default {
       return bannerSubTitle.reduce((oldVal, newVal) => {
         return oldVal + '<br />' + newVal
       })
+    }
+  },
+  head () {
+    return {
+      htmlAttrs: {
+        lang: this.language
+      },
+      link: [
+        {
+          rel: 'shortcut icon',
+          href: '/marketing/vj-favicon.ico',
+          type: 'image/x-icon'
+        }
+      ]
     }
   }
 }

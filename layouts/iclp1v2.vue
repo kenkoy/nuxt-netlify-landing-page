@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ iclp1_wrapper: true }">
+  <div class="core-wrapper" :class="{ iclp1_wrapper: true }">
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
@@ -8,7 +8,7 @@
       <section id="hero" :style="cssBackground">
         <div class="container">
           <div class="loginbtn">
-            <a rel="noopener" :href="mdData.promo_banner.promo_signup_button_redirect_url">
+            <a rel="noopener" :href="mdData.promo_banner.ppromo_login_button_redirect_url">
               <i class="material-icons" data-v-7c308f66="">exit_to_app</i>
               <p class="login-text">{{ mdData.promo_banner.promo_login_button_text }}</p>
             </a>
@@ -18,8 +18,8 @@
             <h2>{{ mdData.promo_banner.promo_subtitle_1 }}</h2>
             <h1>{{ mdData.promo_banner.promo_main_heading }}</h1>
             <h2>{{ mdData.promo_banner.promo_subtitle_2 }}</h2>
-            <button type="button">
-              <a rel="noopener" :href="mdData.promo_banner.promo_login_button_redirect_url">{{ mdData.promo_banner.promo_signup_button }}</a>
+            <button onclick="location.href='#'" type="button">
+              <a rel="noopener" :href="mdData.promo_banner.promo_register_button_redirect_url">{{ mdData.promo_banner.promo_signup_button }}</a>
             </button>
             <p>
               <a rel="noopener" :href="mdData.promo_banner.promo_smallterm_redirect_url">{{ mdData.promo_banner.promo_smallterm_text_link }}</a>
@@ -122,8 +122,6 @@ export default {
 
 <style lang="scss">
   .iclp1_wrapper {
-    @import '@/assets/sass/base/fonts.css';
     @import '@/assets/sass/iclp1v2/style.scss';
-    @import '@/assets/sass/base/style.scss';
   }
 </style>

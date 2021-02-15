@@ -46,11 +46,6 @@
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link to="/marketing/iclp2v2">
-              ICLP 2 V2
-            </nuxt-link>
-          </li>
-          <li class="nav-item">
             <nuxt-link to="/marketing/iclp3">
               ICLP 3
             </nuxt-link>
@@ -80,7 +75,7 @@
 </template>
 
 <script>
-import TheSideNavToggle from '~/components/navigation/TheSideNavToggle'
+import TheSideNavToggle from '~/components/Navigation/TheSideNavToggle'
 
 export default {
   name: 'TheHeader',

@@ -6,7 +6,7 @@ promo_locale:
 field_ids:
   go_container_id: OPT-PHSNXP6
   ga_tracking_id: UA-142143961-1
-  gtm_container_id: "GTM-MFD3NKM"
+  gtm_container_id: GTM-MFD3NKM
 promo_banner:
   promo_title: |-
     最高$500までの

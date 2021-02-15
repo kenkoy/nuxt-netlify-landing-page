@@ -1,3 +1,5 @@
-@import 'core';
-@import 'navigation';
-@import 'footer';
+.core-wrapper {
+  @import 'core';
+  @import 'navigation';
+  @import 'footer';
+}

@@ -22,8 +22,8 @@ collections:
     create: true
     identifier_field: "slug_name"
     slug: '{{slug}}'
-    preview_path: vjlp1/{{slug}}
-    show_preview_links: false
+    preview_path: marketing/vjlp1/{{slug}}
+    show_preview_links: true
     editor:
       preview: true
     fields:
@@ -113,6 +113,7 @@ collections:
           - {label: "Step 3 Description", name: promo_step_3_desc, widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}
+
   - name: "VJLP3-NoForm"
     label: "Vera&John Template 3"
     format: 'frontmatter'
@@ -120,8 +121,8 @@ collections:
     create: true
     identifier_field: "slug_name"
     slug: '{{slug}}'
-    preview_path: vjlp3/{{slug}}
-    show_preview_links: false
+    preview_path: marketing/vjlp3/{{slug}}
+    show_preview_links: true
     editor:
       preview: true
     fields:
@@ -214,8 +215,8 @@ collections:
     create: true
     identifier_field: "slug_name"
     slug: '{{slug}}'
-    preview_path: vjlp4/{{slug}}
-    show_preview_links: false
+    preview_path: marketing/vjlp4/{{slug}}
+    show_preview_links: true
     editor:
       preview: false
     fields:
@@ -304,8 +305,8 @@ collections:
     create: true
     identifier_field: "slug_name"
     slug: '{{slug}}'
-    preview_path: vjlp5/{{slug}}
-    show_preview_links: false
+    preview_path: marketing/vjlp5/{{slug}}
+    show_preview_links: true
     editor:
       preview: false
     fields:
@@ -349,11 +350,12 @@ collections:
         collapsed: true
         fields:
           - {label: "Title", name: "promo_title", widget: "string"}
-          - {label: "Banner first title", name: "first_title", widget: "string"}
+          - {label: "Banner first title", name: "banner_title", widget: "string"}
           - {label: "Banner text highlight", name: "phrase", widget: "string"}
-          - {label: "Banner second title", name: "second_title", widget: "string"}
+          - {label: "Banner second title", name: "banner_subtitle", widget: "string"}
           - {label: "Login Button", name: promo_login_button, widget: "string"}
           - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
+          - {label: "Join Button", name: banner_promo_join_button, widget: "string"}
           - {label: "Join Button", name: promo_join_button, widget: "string"}
           - label: "Join Button Location"
             name: "promo_join_button_location"
@@ -443,8 +445,8 @@ collections:
     create: true
     identifier_field: "slug_name"
     slug: '{{slug}}'
-    preview_path: vjlp1/{{slug}}
-    show_preview_links: false
+    preview_path: marketing/vjlp6/{{slug}}
+    show_preview_links: true
     editor:
       preview: false
     fields:
@@ -545,7 +547,7 @@ collections:
     preview_path: marketing/vjlp7/{{slug}}
     show_preview_links: true
     editor:
-      preview: false
+      preview: true
     fields:
       - label: Slug
         widget: string
@@ -588,6 +590,12 @@ collections:
         options:
           - { label: "Version 1", value: "version1" }
           - { label: "Version 2", value: "version2" }
+      - label: "Template"
+        name: "template"
+        widget: "select"
+        options:
+          - { label: "Steps", value: "steps" }
+          - { label: "Game Slider", value: "game_slider" }
       - label: "Promotion Banner"
         name: "promo_banner"
         widget: "object"
@@ -627,17 +635,32 @@ collections:
               - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
               - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
               - {label: "Game Logo", name: promo_game_logo, widget: image, required: false}
-      - label: "Promotion Steps"
-        name: "promo_steps"
+      - label: "Steps"
+        name: "steps"
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Step 1 Title", name: promo_step_1_title, widget: "string"}
-          - {label: "Step 1 Description", name: promo_step_1_desc, widget: "string"}
-          - {label: "Step 2 Title", name: promo_step_2_title, widget: "string"}
-          - {label: "Step 2 Description", name: promo_step_2_desc, widget: "string"}
-          - {label: "Step 3 Title", name: promo_step_3_title, widget: "string"}
-          - {label: "Step 3 Description", name: promo_step_3_desc, widget: "string"}
+          - {label: "Step 1 Title", name: step_title_1, widget: "string"}
+          - {label: "Step 1 Description", name: step_description_1, widget: "string"}
+          - {label: "Step 2 Title", name: step_title_2, widget: "string"}
+          - {label: "Step 2 Description", name: step_description_2, widget: "string"}
+          - {label: "Step 3 Title", name: step_title_3, widget: "string"}
+          - {label: "Step 3 Description", name: step_description_3, widget: "string"}
+      - label: "Game Slider"
+        name: "game_images"
+        widget: "object"
+        colapsed: true
+        fields:
+          - {label: "Game Icon 1", name: game_icon_1, widget: image, required: false, default: "/marketing/img/loyalty-program.png"}
+          - {label: "Game URL", name: game_url_1, widget: string, required: false, default: "https://www.verajohn.com/ja/about/loyalty-program"}
+          - {label: "Game Icon 2", name: game_icon_2, widget: image, required: false, default: "/marketing/img/hawaiian-dream.png"}
+          - {label: "Game URL", name: game_url_2, widget: string, required: false, default: "https://www.verajohn.com/ja/game/hawaiian-dream"}
+          - {label: "Game Icon 3", name: game_icon_3, widget: image, required: false, default: "/marketing/img/card-master.png"}
+          - {label: "Game URL", name: game_url_3, widget: string, required: false, default: "https://www.verajohn.com/ja/about/cardmaster"}
+          - {label: "Game Icon 4", name: game_icon_4, widget: image, required: false, default: "/marketing/img/live-casino.png"}
+          - {label: "Game URL", name: game_url_4, widget: string, required: false, default: "https://www.verajohn.com/ja/livecasino"}
+          - {label: "Game Icon 5", name: game_icon_5, widget: image, required: false, default: "/marketing/img/payment-option.png"}
+          - {label: "Game URL", name: game_url_5, widget: string, required: false, default: "https://www.verajohn.com/ja/about/paymentoption"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}
 
@@ -746,8 +769,8 @@ collections:
     create: true
     identifier_field: "slug_name"
     slug: '{{slug}}'
-    preview_path: iclp1/{{slug}}
-    show_preview_links: false
+    preview_path: marketing/iclp1/{{slug}}
+    show_preview_links: true
     editor:
       preview: true
     fields:
@@ -823,6 +846,7 @@ collections:
           - {label: "Step 3 Description", name: promo_step_3_desc, widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}
+
   - name: 'ICLP2-NoForm'
     label: 'InterCasino Template 2'
     format: 'frontmatter'
@@ -830,8 +854,8 @@ collections:
     create: true
     identifier_field: "slug_name"
     slug: '{{slug}}'
-    preview_path: iclp2/{{slug}}
-    show_preview_links: false
+    preview_path: marketing/iclp2/{{slug}}
+    show_preview_links: true
     editor:
       preview: false
     fields:
@@ -927,6 +951,7 @@ collections:
           - {label: "Register Button Text", name: history_register_button_text, widget: "string"}
           - {label: "Register Button Redirect URL", name: history_register_button_redirect_url, widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+
   - name: 'ICLP3-NoForm'
     label: 'InterCasino Template 3'
     format: 'frontmatter'
@@ -934,8 +959,8 @@ collections:
     create: true
     identifier_field: "slug_name"
     slug: '{{slug}}'
-    preview_path: iclp3/{{slug}}
-    show_preview_links: false
+    preview_path: marketing/iclp3/{{slug}}
+    show_preview_links: true
     editor:
       preview: false
     fields:
@@ -1005,10 +1030,12 @@ collections:
               - {label: "Text", name: "text", widget: "string", required: false}
               - {label: "Link", name: "link", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+
   - label: "Vera&John Homepage"
     name: "VJ-Homepage"
     format: 'frontmatter'
-    show_preview_links: false
+    preview_path: marketing/vjhp
+    show_preview_links: true
     editor:
       preview: false
     files:

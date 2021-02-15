@@ -6,231 +6,244 @@
   .mobile{
     display: block;
   }
-  /*--FONT SIZE--*/
-  h2{
-    font-size: $SUB_TITLE_SIZE;
-    text-align: center;
-  }
-  p, li{
-    font-size: $TEXT_SIZE;
-    text-align: justify;
-  }
-  button{
-    font-size: $BTN_SIZE;
-    padding: 6px 12px;
-    color: $BTN_COLOR;
-  }
+   /*--FONT SIZE--*/
+   h2{
+     font-size: $SUB_TITLE_SIZE;
+     text-align: center;
+   }
+   p, li{
+     font-size: $TEXT_SIZE;
+     text-align: justify;
+   }
+   button{
+     font-size: $BTN_SIZE;
+     padding: 6px 12px;
+     color: $BTN_COLOR;
+   }
 
 
-  section,
-  footer{
-      padding: 5px 10px;
-  }
+   section,
+   footer{
+       padding: 5px 10px;
+   }
 
 
-  #header{
-    position: relative;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  #header .container{
-    justify-content: flex-end;
-  }
-  #header .logo{
-    position: absolute;
-    left: 0;
-    top: -8px;
+   #header{
+     position: relative;
+     padding-left: 15px;
+     padding-right: 15px;
+   }
+   #header .container{
+     justify-content: flex-end;
+   }
+   #header .logo{
+     position: absolute;
+     left: 0;
+     top: -8px;
 
-    img{
-      width: 75px;
-      height: 75px;
-    }
-  }
-  #header .nav-links {
-      margin: 15px 0;
-      flex-grow: 0;
+     img{
+       width: 75px;
+       height: 75px;
+     }
+   }
+   #header .nav-links {
+       margin: 15px 0;
+       flex-grow: 0;
 
-      button:first-child{
-        display: none;
-      }
+       button:first-child{
+         display: none;
+       }
 
-      > button{
-        margin: 0 5px;
-        font-size: 14px;
-      }
-  }
+       > button{
+         margin: 0 5px;
+         font-size: 14px;
+       }
+   }
 
-  #hero{
-    background: var(--bg-image-m) no-repeat center #000;
-    min-height: 400px;
-    background-size: cover;
+   #hero{
+     background: var(--bg-banner);
+     background-color: #000;
+     .container{
+       background: var(--bg-image-m) no-repeat center;
+       min-height: 400px;
+       background-size: cover;
+     }
+     #banner-button{
+        margin-bottom: 30px;
+     }
 
-    .banner{
-       position: absolute;
-       right: 0;
-       top: 100px;
-       max-width: 210px;
-    }
+     .banner{
+        position: absolute;
+        right: 0;
+        top: 100px;
+        max-width: 210px;
+     }
 
-    h1{
-      font-size: 20px;
-      text-shadow: rgb(255, 255, 255) 0px 0px 0.6rem,
-      rgb(255, 255, 255) 0px 0px 1.5rem,
-      rgb(255, 255, 255) -0.2rem 0.1rem 1rem,
-      rgb(255, 255, 255) 0.2rem 0.1rem 1rem,
-      rgb(255, 255, 255) 0px -0.5rem 2rem,
-      rgb(255, 255, 255) 0px 0.5rem 3rem;
-      color: $TEXT_COLOR;
-      font-weight: 700;
-      font-family: 'MainFont-Medium', sans-serif;
+     h1{
+       font-size: 20px;
+       text-shadow: rgb(255, 255, 255) 0px 0px 0.6rem,
+       rgb(255, 255, 255) 0px 0px 1.5rem,
+       rgb(255, 255, 255) -0.2rem 0.1rem 1rem,
+       rgb(255, 255, 255) 0.2rem 0.1rem 1rem,
+       rgb(255, 255, 255) 0px -0.5rem 2rem,
+       rgb(255, 255, 255) 0px 0.5rem 3rem;
+       color: $TEXT_COLOR;
+       font-weight: 700;
+       font-family: 'MainFont-Medium', sans-serif;
 
-      span{
-        color: rgb(255, 217, 102);
-      }
-    }
-  }
-  #hero .container{
-      flex-wrap: wrap;
-      align-items: flex-end;
-  }
+       span{
+         color: rgb(255, 217, 102);
+       }
+     }
+   }
+   #hero .container{
+       flex-wrap: wrap;
+       align-items: flex-end;
+   }
 
-  #hero button{
-      display: block;
-      margin: 0 auto;
-      min-width: 150px;
-      padding: 6px 50px;
-  }
+   #hero button{
+       display: block;
+       margin: 0 auto;
+       min-width: 150px;
+       padding: 6px 50px;
+   }
 
-  #steps{
-    background: #EC008B;
+   #steps{
+     background: #EC008B;
 
-    .container{
-      display: block;
-      text-align: center;
+     .container{
+       display: block;
+       text-align: center;
 
-      > div{
-        display: inline-block;
-        vertical-align: top;
-        width: 31%;
-        overflow: hidden;
-        margin-top: -30px;
+       > div{
+         display: inline-block;
+         vertical-align: top;
+         width: 31%;
+         overflow: hidden;
+         margin-top: -30px;
 
-        .num{
-          width: 50px;
-          height: 50px;
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          border-radius: 50%;
-          -moz-border-radius: 50%;
-          color: #EC008B;
-          font-size: 40px;
-          font-weight: 700;
-          margin: auto;
-          font-family: 'MainFont-DemiBold';
-        }
+         .num{
+           width: 50px;
+           height: 50px;
+           align-items: center;
+           display: flex;
+           justify-content: center;
+           border-radius: 50%;
+           -moz-border-radius: 50%;
+           color: #EC008B;
+           font-size: 40px;
+           font-weight: 700;
+           margin: auto;
+           font-family: 'MainFont-DemiBold';
+         }
 
-        h3{
-          color: $SUB_TITLE_COLOR;
-        }
+         h3{
+           color: $SUB_TITLE_COLOR;
+         }
 
-        p{
-          text-align: center;
-        }
+         p{
+           text-align: center;
+         }
 
-      }
-    }
-  }
+       }
+     }
+   }
 
-  #section1 h2{
-    font-size: 46px;
-    line-height: 55px;
-  }
+   #section1 h2{
+     font-size: 46px;
+     line-height: 55px;
+   }
 
-  #section2 h2{
-      text-align: left;
-  }
+   #section2 h2{
+       text-align: left;
+   }
 
-  #section3{
-    .container{
-      background: url('https://files.vjpromo.com/bannerflow/lp-core/pp/payment_jp.svg') center center no-repeat;
-      min-height: 100px;
-    }
-  }
+   #section3{
+     .container{
+       background: url('https://files.vjpromo.com/bannerflow/lp-core/pp/payment_jp.svg') center center no-repeat;
+       min-height: 100px;
+     }
+   }
 
 
-  footer{
+   footer{
 
-    #footer-icon{
-      text-align: center;
+     #footer-icon{
+       text-align: center;
 
-      > a{
-        display: inline-block;
-        min-width: 70px;
-        vertical-align: middle;
-        border: none;
-        margin: 0 8px;
-      }
-    }
+       > a{
+         display: inline-block;
+         min-width: 70px;
+         vertical-align: middle;
+         border: none;
+         margin: 0 8px;
+       }
+     }
 
-    .second-footer{
-       padding: 25px 30px;
-    }
+     .second-footer{
+        padding: 25px 30px;
+     }
 
-    p{
-      text-align: center;
-    }
-  }
+     p{
+       text-align: center;
+     }
+   }
 }
 
 /* Iphone 5/SE */
 @media (max-height: 568px) and (max-width: 320px){
-   #hero{
-       min-height: 300px;
-
-       .banner{
-         top: 50px;
-         max-width: 150px;
-       }
-   }
+    #hero{
+      .container{
+        min-height: 350px;
+      }
+        .banner{
+          top: 50px;
+          max-width: 150px;
+        }
+    }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 576px) {
-  #header .nav-links {
-    button:first-child{
-      display: inline-block;
-    }
-  }
-  #hero{
-      min-height: 650px;
+   #header .nav-links {
+     button:first-child{
+       display: inline-block;
+     }
+   }
+   #hero{
+     background: var(--bg-banner);
+     .container{
+       background: var(--bg-image-m) no-repeat center;
+       min-height: 650px;
+       background-size: cover;
+     }
 
-      .banner{
-        top: 200px;
-        max-width: 250px;
+       .banner{
+         top: 200px;
+         max-width: 250px;
 
-        h1{
-          font-size: 23px;
-        }
-      }
-  }
-  #steps{
-    .container{
+         h1{
+           font-size: 23px;
+         }
+       }
+   }
+   #steps{
+     .container{
 
-      > div {
-        .num{
-          width: 80px;
-          height: 80px;
-        }
-      }
-    }
-  }
+       > div {
+         .num{
+           width: 80px;
+           height: 80px;
+         }
+       }
+     }
+   }
 
-  #section3{
-      .container{
-          min-height: 200px;
-      }
-  }
+   #section3{
+       .container{
+           min-height: 200px;
+       }
+   }
 }
 
 /* Small Devices, Tablets */
@@ -241,112 +254,129 @@
   .mobile{
     display: none;
   }
-  #header .logo{
-      top: -30px;
-      img{
-        max-width: 128px;
-        width: 100%;
-        height: auto;
-      }
-  }
+   #header .logo{
+       top: -30px;
+       img{
+         max-width: 128px;
+         width: 100%;
+         height: auto;
+       }
+   }
 
-  #hero{
-    min-height: 320px;
-    background: var(--bg-banner) no-repeat #000 center;
-    background-size: cover;
+   #hero{
+     // min-height: 320px;
+     // background: var(--bg-banner) no-repeat #000 center;
+     // background-size: cover;
 
-    .banner{
-      top: 100px;
-      left: 0;
-      max-width: 300px;
+     background: var(--bg-banner) center;
+     .container{
+       background: var(--bg-image) no-repeat center;
+       min-height: 320px;
+       background-size: cover;
+     }
 
-      h1{
-        font-size: 26px;
-      }
-    }
-  }
+     .banner{
+       top: 40px;
+       left: 0;
+       max-width: 300px;
 
-  #hero .banner + div{
-      justify-content: flex-end;
-      display: flex;
+       h1{
+         font-size: 26px;
+       }
+     }
+   }
 
-      button{
-        margin: 0;
-      }
-  }
+   #hero .banner + div{
+       justify-content: flex-end;
+       display: flex;
+
+       button{
+         margin: 0;
+       }
+   }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    #hero{
-        background-size: contain;
+     #hero{
+         background-size: cover;
 
-        .banner{
-          left: 20%;
-        }
-    }
-    #section3{
-      .container{
-        background: url(https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg) center center no-repeat;
-      }
-    }
+         .banner{
+           left: 20%;
+         }
+     }
+     #section3{
+       .container{
+         background: url(https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg) center center no-repeat;
+       }
+     }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-  #header{
-      .nav-links{
-          -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
-          -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
-          box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
-          border-radius: 5px;
-          padding: 8px;
+   #header{
+       .nav-links{
+           -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+           -moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+           box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+           border-radius: 5px;
+           padding: 8px;
 
-          button{
-              min-width: 150px;
-              a{
-                  padding: 6px 50px;
-                  font-size: 17px;
-              }
-          }
-      }
-  }
-  #hero{
-      background: var(--bg-image) no-repeat #000 center;
-      background-size: contain;
-  }
+           button{
+               min-width: 150px;
+               a{
+                   padding: 6px 50px;
+                   font-size: 17px;
+               }
+           }
+       }
+   }
+   #hero{
+       // background: var(--bg-image) no-repeat #000 center;
+       // background-size: contain;
+       background: var(--bg-banner) center;
+       .container{
+         background: var(--bg-image) no-repeat center;
+         background-size: contain;
+       }
 
-  #steps{
-    .container{
+       #banner-button{
+         float: right;
+         margin-bottom: 0;
+       }
+   }
 
-      > div {
-        margin-top: 0;
+   #steps{
+     .container{
 
-        > * {
-          float: left;
-          text-align: left;
-        }
+       > div {
+         margin-top: 0;
 
-        h3{
-          font-size: 32px;
-          margin: 0;
-          font-weight: 400;
-        }
+         > * {
+           float: left;
+           text-align: left;
+         }
 
-        .num + div{
-          margin-left: 20px;
-        }
+         h3{
+           font-size: 32px;
+           margin: 0;
+           font-weight: 400;
+         }
 
-        .num{
-          width: 100px;
-          height: 100px;
-          font-size: 80px;
-        }
-      }
-    }
-  }
+         .num + div{
+           margin-left: 20px;
+         }
 
-  #section1 h2{
-    font-size: 60px;
-  }
+         .num{
+           width: 100px;
+           height: 100px;
+           font-size: 80px;
+         }
+       }
+     }
+   }
+
+   #section1 h2{
+     font-size: 60px;
+   }
 }

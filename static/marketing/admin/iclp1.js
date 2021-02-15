@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import htm from 'https://unpkg.com/htm?module'
+import htm from './external-scripts/htm.module.js'
 
 const html = htm.bind(h)
 export const ICLP1_PREVIEW = createClass({
@@ -146,7 +146,7 @@ export const ICLP1_PREVIEW = createClass({
                   target="blank">
                   <div class="ukgc"></div>
                 </a> </div>
-              <div class="icon"> <a href="https://validator.curacao-egaming.com/validate?domain=www.intercasino.com&seal_id=141a575e2e4b5593af3dc1b19e2517deaa0ed9a17b9f809f1ffd32fa97098f83e664f6df6801db35fd76f6bef7f63663&stamp=ae85a35fb4a6c5816b8b9f17e5b6be96" target="blank">
+              <div class="icon"> <a href="#" target="blank">
                   <div class="curacao"></div>
                 </a> </div>
               <div class="icon"> <a href="https://www.gamcare.org.uk" target="blank">

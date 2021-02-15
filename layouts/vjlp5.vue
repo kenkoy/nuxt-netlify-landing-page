@@ -40,31 +40,19 @@
           </div>
         </section>
 
-        <section id="steps">
-          <div class="container">
-            <div class="animated fadeIn delay-halfs">
-              <span class="num">1</span>
-              <div>
-                <h3>{{ data_items.attributes.steps.step_title_1 }}</h3>
-                <p>{{ data_items.attributes.steps.step_description_1 }}</p>
-              </div>
-            </div>
-            <div class="animated fadeIn delay-1s">
-              <span class="num">2</span>
-              <div>
-                <h3>{{ data_items.attributes.steps.step_title_2 }}</h3>
-                <p>{{ data_items.attributes.steps.step_description_2 }}</p>
-              </div>
-            </div>
-            <div class="animated fadeIn delay-1-and-halfs">
-              <span class="num">3</span>
-              <div>
-                <h3>{{ data_items.attributes.steps.step_title_3 }}</h3>
-                <p>{{ data_items.attributes.steps.step_description_3 }}</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Steps
+          v-if="data_items.attributes.template === 'steps'"
+          :title1="data_items.attributes.steps.step_title_1"
+          :description1="data_items.attributes.steps.step_description_1"
+          :title2="data_items.attributes.steps.step_title_2"
+          :description2="data_items.attributes.steps.step_description_2"
+          :title3="data_items.attributes.steps.step_title_3"
+          :description3="data_items.attributes.steps.step_description_3"
+        />
+        <GameSlider
+          v-if="data_items.attributes.template === 'game_slider'"
+          :game-data="data_items.attributes.game_images"
+        />
 
         <section id="section1">
           <div class="container">
@@ -127,6 +115,8 @@
           <div class="container">
             <div>
               <div v-html="html" />
+              <p>通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</p>
+              <div class="separator" />
             </div>
           </div>
         </section>
@@ -142,12 +132,16 @@
 </template>
 
 <script>
+import Steps from '@/components/Views/Steps.vue'
+import GameSlider from '@/components/Views/GameSlider.vue'
 import Vjlp5Data from '~/pages/marketing/vjlp5/_slug/index.vue'
 import Footer from '~/components/Base/TheFooter.vue'
 
 export default {
   components: {
     Vjlp5Data,
+    Steps,
+    GameSlider,
     Footer
   },
   data () {
@@ -220,7 +214,6 @@ export default {
 
 <style lang="scss">
   .vjlp5_wrapper {
-    @import '@/assets/sass/base/style.scss';
     @import '@/assets/sass/vjlp5/style.scss';
   }
 </style>

@@ -76,9 +76,10 @@
   #hero{
     background: var(--bg-image) no-repeat center;
     background-size: cover;
-  }
-  #hero .container{
-    min-height: 540px;
+
+    .container{
+      min-height: 540px;
+    }
   }
   #steps{
     .container{
