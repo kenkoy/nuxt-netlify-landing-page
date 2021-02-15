@@ -1,5 +1,5 @@
 .version2{
-  @media (min-height: 750px) and (min-width: 320px) {
+  @media (min-height: 750px) and (min-width: 320px) and (max-width: 568px) {
     .logo {
       max-width: 180px;
       width: 100%;
