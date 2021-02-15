@@ -371,7 +371,9 @@ h3{
   font-family: 'MainFont-Bold', sans-serif;
 }
 
-ul li, p {
+ul li,
+ol li,
+p {
   color: $TEXT_COLOR;
   font-size: $TEXT_SIZE;
   font-family: 'MainFont-Medium', sans-serif;
