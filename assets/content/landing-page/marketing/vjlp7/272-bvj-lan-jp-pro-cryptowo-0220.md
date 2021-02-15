@@ -31,7 +31,7 @@ promo_banner:
   promo_images:
     promo_bg_desktop: /marketing/img/welcome-offer-crypto_bg.jpg
     promo_bg_mobile: /marketing/img/welcome-offer-crypto_bg_m.jpg
-promo_steps:
+steps:
   step_title_1: 登録
   step_description_1: 1番人気のオンラインカジノだから安心!
   step_title_2: 入金

@@ -112,10 +112,6 @@ promo_template: VJLP6-NoForm
 
 </ol>
 
-<p>通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</p>
-
-<div class="separator"> </div>
-
 </div>
 
 </div>
