@@ -562,7 +562,7 @@ collections:
           - label: "Country Code"
             name: "promo_country_code"
             widget: "select"
-            default: ["jp"]
+            default: "jp"
             options:
               - { label: "Japan", value: "jp" }
               - { label: "Sweden", value: "se" }
@@ -570,7 +570,7 @@ collections:
           - label: "Language Code"
             name: "promo_language_code"
             widget: "select"
-            default: ["ja"]
+            default: "ja"
             options:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
@@ -586,13 +586,14 @@ collections:
       - label: "Styles"
         name: "styles"
         widget: "select"
-        default: ["version1"]
+        default: "version1"
         options:
           - { label: "Version 1", value: "version1" }
           - { label: "Version 2", value: "version2" }
       - label: "Template"
         name: "template"
         widget: "select"
+        default: "steps"
         options:
           - { label: "Steps", value: "steps" }
           - { label: "Game Slider", value: "game_slider" }
