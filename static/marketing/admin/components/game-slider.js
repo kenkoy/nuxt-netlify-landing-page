@@ -18,7 +18,8 @@ export const GAME_SLIDER = createClass({
       slider: {
         display: 'flex',
         'justify-content': 'space-evenly'
-      }
+      },
+      link: { 'border-bottom': 'none' }
     }
 
     return (html`
@@ -26,7 +27,9 @@ export const GAME_SLIDER = createClass({
       <div style=${styles.container}>
         <div style=${styles.slider}>
           ${games.map(game =>
-            html`<a href="${game.link}"><img src="${game.icon}"></img></a>`
+            html`<a style=${styles.link} href="${game.link}">
+              <img style="${styles.image}" src="${game.icon}"></img>
+            </a>`
           )}
         </div>
       </div>
