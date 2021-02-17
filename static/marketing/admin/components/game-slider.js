@@ -26,7 +26,7 @@ export const GAME_SLIDER = createClass({
       <div style=${styles.container}>
         <div style=${styles.slider}>
           ${games.map(game =>
-            html`<img src="${game.icon}"></img>`
+            html`<a href="${game.link}"><img src="${game.icon}"></img></a>`
           )}
         </div>
       </div>
