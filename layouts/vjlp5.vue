@@ -28,9 +28,9 @@
           <div class="container">
             <div>
               <div class="banner">
-                <h1 v-if="banner_title" v-html="bannerTitle" />
-                <h1 v-if="banner_subtitle">
-                  {{ data_items.attributes.promo_banner.banner_subtitle }}
+                <h1 v-if="first_title" v-html="bannerTitle" />
+                <h1 v-if="second_title">
+                  {{ data_items.attributes.promo_banner.second_title }}
                 </h1>
               </div>
               <button v-if="data_items.attributes.promo_banner.banner_promo_join_button" id="banner-button" class="error">
@@ -156,8 +156,8 @@ export default {
       tablet: '',
       mobile: '',
 
-      banner_title: '',
-      banner_subtitle: '',
+      first_title: '',
+      second_title: '',
       phrase: ''
     }
   },
@@ -181,12 +181,12 @@ export default {
     },
     bannerTitle () {
       if (this.phrase) {
-        const position = this.banner_title.indexOf(this.phrase)
+        const position = this.first_title.indexOf(this.phrase)
         const text = `<span>${this.phrase}</span>`
-        const output = [this.banner_title.slice(0, position), text, this.banner_title.slice(position, 0)].join('')
+        const output = [this.first_title.slice(0, position), text, this.first_title.slice(position, 0)].join('')
         return output
       }
-      return this.banner_title
+      return this.first_title
     }
   },
   methods: {
@@ -203,8 +203,8 @@ export default {
         this.tablet = item.attributes.promo_banner.promo_images.promo_bg_banner
         this.mobile = item.attributes.promo_banner.promo_images.promo_bg_mobile
 
-        this.banner_title = item.attributes.promo_banner.banner_title
-        this.banner_subtitle = item.attributes.promo_banner.banner_subtitle
+        this.first_title = item.attributes.promo_banner.first_title
+        this.second_title = item.attributes.promo_banner.second_title
         this.phrase = item.attributes.promo_banner.phrase
       })
     }

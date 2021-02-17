@@ -350,9 +350,9 @@ collections:
         collapsed: true
         fields:
           - {label: "Title", name: "promo_title", widget: "string"}
-          - {label: "Banner first title", name: "banner_title", widget: "string"}
+          - {label: "Banner first title", name: "first_title", widget: "string"}
           - {label: "Banner text highlight", name: "phrase", widget: "string"}
-          - {label: "Banner second title", name: "banner_subtitle", widget: "string"}
+          - {label: "Banner second title", name: "second_title", widget: "string"}
           - {label: "Login Button", name: promo_login_button, widget: "string"}
           - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
           - {label: "Join Button", name: banner_promo_join_button, widget: "string"}
