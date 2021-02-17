@@ -297,6 +297,11 @@ ul {
   background: #009FE3;
 }
 
+#game-slider {
+  border-bottom: 3px solid #0093D4;
+  background: #009FE3;
+}
+
 .reg-icon {
   width: 48px;
   height: 48px;
