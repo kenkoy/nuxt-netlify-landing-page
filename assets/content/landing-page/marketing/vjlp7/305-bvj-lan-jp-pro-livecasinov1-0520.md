@@ -12,9 +12,6 @@ template: steps
 promo_banner:
   promo_subtitle: ""
   promo_title: |-
-
-
-
     今だけ
     最高$500のボーナス
     をプレゼント！
