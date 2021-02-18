@@ -22,14 +22,14 @@
               </div>
 
               <div id="search">
-                <p>Reset filters</p>
+                <a @click="gameCat = 'all_games'">Reset filters</a>
                 <input v-model="search" placeholder="Search" type="text">
               </div>
             </div>
 
             <div>
               <div v-for="(game, gameIndex) in filteredGames" :key="gameIndex" class="game">
-                <div>
+                <div v-if="game.tags.includes(gameCat)">
                   <div v-if="gameIndex < limit">
                     <img :src="game.image">
                     <p>{{ game.title }}</p>
