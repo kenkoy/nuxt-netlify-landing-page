@@ -1,0 +1,54 @@
+// === FORMS, BUTTONS ===//
+@mixin input{
+  border-radius: 5px;
+  font-size: 13px;
+  border: 1px solid #2a87b0;
+  outline: 0;
+  padding: 5px;
+  box-shadow: inset 0 3px 3px rgba(10,50,70,.6);
+}
+@mixin checkbox-switch{
+    display: inline-block;
+    input {
+      opacity: 0;
+      height: 0;
+      width: 0;
+      margin: 0;
+    }
+    .slider {
+      -webkit-transition: .1s;
+      transition: .1s;
+      border: 2px solid $CHECBOXK_BORDER;
+      border-radius: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      float: left;
+      margin: 5px;
+    }
+
+    input + .slider:hover,
+    input:checked + .slider {
+      background-color: $CHECKBOX_BG_CURRENT;
+    }
+    input:checked + .slider {
+      box-shadow: 1px 1px 8px lighten($CHECKBOX_BG_CURRENT, 10%);
+    }
+}
+
+@mixin button-primary {
+  background: $BTN_PRIMARY_BG;
+  color: $BTN_PRIMARY_COLOR;
+
+  &:hover{
+    background: $BTN_PRIMARY_HOVER_BG;
+  }
+}
+
+@mixin button-warning {
+  background: $BTN_WARNING_BG;
+  color: $BTN_WARNING_COLOR;
+
+  &:hover{
+    background: $BTN_WARNING_HOVER_BG;
+  }
+}

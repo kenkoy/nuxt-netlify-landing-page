@@ -1,0 +1,23 @@
+// === CONTENT === //
+@mixin main-content{
+  background: $MAIN_CONTENT_BG;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: calc(100vh - 250px);
+}
+@mixin sub-content{
+  background: $ARTICLE_BG;
+
+  h2{
+    color: $ARTICLE_SUBTITLE_COLOR;
+    font-size: 20px;
+  }
+  h3{
+    color: $H3_COLOR;
+    font-size: 17px;
+  }
+  p{
+    color: $ARTICLE_TEXT_COLOR;
+    font-size: 13px;
+  }
+}

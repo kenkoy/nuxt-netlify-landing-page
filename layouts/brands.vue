@@ -4,14 +4,14 @@
     <div
       v-if="Object.keys(mdData).length > 0"
       :class="mdData.slug_name"
-      class="game-main"
+      class="brands-main"
     >
       <section id="list-games">
         <div class="container main-content">
           <div>
             <div id="filter-bar">
               <div>
-                <FilterSearch v-if="modal" @game-data-emit="getGameCaregoryEmit" />
+                <FilterSearch v-if="modal" @brands-data-emit="getGameCaregoryEmit" />
                 <button class="btn-primary find" @click="modalFilterFn()">
                   Find game you'll love
                 </button>
@@ -60,7 +60,7 @@
 </template>
 
 <script>
-import FilterSearch from '@/components/Views/FilterSearch.vue'
+import FilterSearch from '@/components/Brands/FilterSearch.vue'
 
 export default {
   components: {
@@ -85,13 +85,13 @@ export default {
     }
   },
   created () {
-    this.$root.$once('game-data', (data) => {
+    this.$root.$once('brands-data', (data) => {
       this.htmlBody = data.htmlData
       this.mdData = data.yamlData
     })
   },
   beforeDestroy () {
-    this.$root.$off('game-data')
+    this.$root.$off('brands-data')
   },
   methods: {
     showMore () {
@@ -109,6 +109,6 @@ export default {
 
 <style lang="scss">
   .game_wrapper {
-    @import '@/assets/sass/games/style.scss';
+    @import '@/assets/sass/brands/style.scss';
   }
 </style>
