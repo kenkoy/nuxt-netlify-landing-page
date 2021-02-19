@@ -1,7 +1,7 @@
 # nuxt-netlify-landing-page
 
 > InterCasino Landing Page
-
+#
 ## Build Setup
 
 ```bash
