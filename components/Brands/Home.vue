@@ -161,17 +161,23 @@
       </div>
     </section>
     <section id="loyalty">
-      <div class="container">
-        <div>
-          <h3>Jackpot</h3>
+      <div class="container column-3">
+        <div class="jackpot">
+          <div>
+            <h4>Jackpot</h4>
+          </div>
         </div>
 
         <div>
-          <h3>I'm on the wild side</h3>
+          <div>
+            <h4>I'm on the wild side</h4>
+          </div>
         </div>
 
         <div>
-          <h3>The Loyalty Program</h3>
+          <div>
+            <h3>The Loyalty Program</h3>
+          </div>
         </div>
       </div>
     </section>

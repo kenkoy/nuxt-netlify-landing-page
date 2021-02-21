@@ -34,3 +34,50 @@
     margin-top: 0;
   }
 }
+@mixin loyalty{
+  background: $LOYALTY_BG;
+  padding: 50px 0;
+
+  h3, h4{
+    font-weight: 400;
+    color: #ffea00;
+  }
+
+  .jackpot{
+    position: relative;
+
+    &:before{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: '';
+      background-image: url('https://cdn.plaingaming.net/files/repository/105/1/10003/all/all/image/visible-on-load.png?qopuiq&601b&6012');
+      background-repeat: no-repeat;
+      background-position: 50% -431px;
+      width: 150px;
+      height: 137px;
+      overflow: hidden;
+    }
+  }
+
+  .container{
+    > div:first-child > div{
+      margin-left: 0;
+    }
+    > div:last-child > div{
+      margin-right: 0;
+    }
+    > div {
+      padding: 0;
+
+      > div{
+        background-color: #0093d4;
+        border-radius: 10px;
+        min-height: 226px;
+        text-align: center;
+        margin: 0 10px;
+      }
+    }
+  }
+}
