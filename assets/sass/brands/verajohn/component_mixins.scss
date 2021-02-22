@@ -34,6 +34,7 @@
     margin-top: 0;
   }
 }
+
 @mixin loyalty{
   background: $LOYALTY_BG;
   padding: 50px 0;
@@ -41,42 +42,89 @@
   h3, h4{
     font-weight: 400;
     color: #ffea00;
+    margin: 0;
+  }
+  p{
+    color: #fff;
+  }
+
+  .price{
+    color: #ffea00;
+  }
+
+  .usp-loyalty {
+    > * {
+      display: inline-block;
+      vertical-align: top;
+      width: 49%;
+      text-align: left;
+
+      img {
+        width: 100%;
+      }
+    }
   }
 
   .jackpot{
-    position: relative;
-
-    &:before{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      content: '';
-      background-image: url('https://cdn.plaingaming.net/files/repository/105/1/10003/all/all/image/visible-on-load.png?qopuiq&601b&6012');
-      background-repeat: no-repeat;
-      background-position: 50% -431px;
-      width: 150px;
-      height: 137px;
-      overflow: hidden;
+    > div{
+      position: relative;
+      &:before{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+        background-image: url('https://cdn.plaingaming.net/files/repository/105/1/10003/all/all/image/visible-on-load.png?qopuiq&601b&6012');
+        background-repeat: no-repeat;
+        background-position: 50% -431px;
+        width: 150px;
+        height: 137px;
+        overflow: hidden;
+        z-index: 0;
+      }
     }
   }
 
+  .feat-img{
+    overflow: hidden;
+    width: 125px;
+    height: 120px;
+    margin: 10px auto;
+
+    img{
+      margin-top: -1000px;
+    }
+  }
+
+  button{
+    width: 100%;
+  }
+
   .container{
-    > div:first-child > div{
+    > div:first-child > .items{
       margin-left: 0;
     }
-    > div:last-child > div{
+    > div:last-child > .items{
       margin-right: 0;
     }
+
     > div {
       padding: 0;
 
-      > div{
+      > .items{
         background-color: #0093d4;
         border-radius: 10px;
         min-height: 226px;
         text-align: center;
         margin: 0 10px;
+        padding: 15px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+
+        * {
+          position: relative;
+          z-index: 1;
+        }
       }
     }
   }

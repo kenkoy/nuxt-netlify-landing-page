@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="home">
     <section id="list-games">
       <div class="container main-content">
         <div>
@@ -163,20 +163,39 @@
     <section id="loyalty">
       <div class="container column-3">
         <div class="jackpot">
-          <div>
+          <div class="items">
             <h4>Jackpot</h4>
+            <p>Sisters of Oz Jackpot</p>
+            <p class="price">12,845.61</p>
           </div>
         </div>
 
         <div>
-          <div>
+          <div class="items">
             <h4>I'm on the wild side</h4>
+
+            <div class="feat-img">
+              <img src="https://cdn.plaingaming.net/files/repository/105/1/10003/all/all/image/generic.png?qopuiq&601b&6012">
+            </div>
+
+            <button class="btn-primary">Play random game</button>
           </div>
         </div>
 
         <div>
-          <div>
-            <h3>The Loyalty Program</h3>
+          <div class="items usp-loyalty">
+            <div>
+              <h3>The Loyalty Program</h3>
+              <p>Play games.<br/>
+              Level up.<br/>
+              Buy stuff!
+              </p>
+
+              <p class="price">Our Loyalty Program</p>
+            </div>
+            <div>
+              <img src="https://casino.verajohn.com/fragment/loyalty/assets/images/f2797b32eae32f95baa859b510df8a45.png">
+            </div>
           </div>
         </div>
       </div>
