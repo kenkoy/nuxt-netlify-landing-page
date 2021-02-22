@@ -91,7 +91,7 @@ export const VJLP5_PREVIEW = createClass({
           </div>
         </section>
 
-        ===== ${gamesData}
+        ===== ${steps}
 
       </body>
     `)
