@@ -45,18 +45,18 @@ export const VJLP5_PREVIEW = createClass({
     }]
 
     const gamesData = widgetsFor('game_images').getIn(['data'])
-    // let games = []
-    // if (typeof gamesData.toJS() !== 'undefined') {
-    //   const links = Object.entries(gamesData.toJS())
-    //     .filter(data => data[0].includes('url'))
-    //     .map(data => data[1])
-    //   const icons = Object.entries(gamesData.toJS())
-    //     .filter(data => data[0].includes('icon'))
-    //     .map(data => data[1])
-    //   games = links.map((data, index) => ({
-    //     link: data, icon: icons[index]
-    //   }))
-    // }
+    let games = []
+    if (typeof gamesData.toJS() !== 'undefined') {
+      const links = Object.entries(gamesData.toJS())
+        .filter(data => data[0].includes('url'))
+        .map(data => data[1])
+      const icons = Object.entries(gamesData.toJS())
+        .filter(data => data[0].includes('icon'))
+        .map(data => data[1])
+      games = links.map((data, index) => ({
+        link: data, icon: icons[index]
+      }))
+    }
 
     return (html`
       <body
@@ -91,7 +91,9 @@ export const VJLP5_PREVIEW = createClass({
           </div>
         </section>
 
-        ===== ${steps}
+        ${widgetsFor('template').getIn(['data']) === 'steps'
+          ? html`<${STEPS} steps="${stepData}" />`
+          : html`<${GAME_SLIDER} games="${games}" />`}
 
       </body>
     `)
