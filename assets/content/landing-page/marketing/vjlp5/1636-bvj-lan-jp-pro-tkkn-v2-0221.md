@@ -3,6 +3,8 @@ slug_name: 1636-bvj-lan-jp-pro-tkkn-v2-0221
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
+styles: version1
+template: steps
 promo_banner:
   promo_title: 1636-bvj-lan-jp-pro-tkkn-v2-0221
   promo_images:

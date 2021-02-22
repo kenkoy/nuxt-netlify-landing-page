@@ -3,6 +3,8 @@ slug_name: 306-bvj-lan-jp-pro-livecasino-v2-0520
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
+styles: version1
+template: steps
 promo_banner:
   promo_title: 306-bvj-lan-jp-pro-livecasino-v2-0520
   promo_images:
@@ -25,6 +27,17 @@ steps:
   step_description_2: ボーナス獲得！
   step_title_3: プレイ!
   step_description_3: お楽しみください！
+game_images:
+  game_url_1: https://www.verajohn.com/ja/about/loyalty-program
+  game_url_2: https://www.verajohn.com/ja/game/hawaiian-dream
+  game_url_3: https://www.verajohn.com/ja/about/cardmaster
+  game_url_4: https://www.verajohn.com/ja/livecasino
+  game_url_5: https://www.verajohn.com/ja/about/paymentoption
+  game_icon_1: /marketing/img/loyalty-program.png
+  game_icon_2: /marketing/img/hawaiian-dream.png
+  game_icon_3: /marketing/img/card-master.png
+  game_icon_4: /marketing/img/live-casino.png
+  game_icon_5: /marketing/img/payment-option.png
 second_section_left:
   - second_section_title: 勝負金が2倍！最高$500初回入金ボーナスをもらってお得にプレイ！
     second_section_content: ベラジョンでの初回入金時には、軍資金が2倍になる★ビギナーズボーナス★がお待ちしています！最高$500までもらえる、100%入金ボーナスを受け取って、いろんなゲームにトライしてみましょう！

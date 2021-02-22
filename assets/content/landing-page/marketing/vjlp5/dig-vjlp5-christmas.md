@@ -3,6 +3,8 @@ slug_name: DIG-VJLP5-Christmas
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
+styles: version1
+template: steps
 promo_banner:
   promo_title: DIG-VJLP5-Christmas
   promo_images:
