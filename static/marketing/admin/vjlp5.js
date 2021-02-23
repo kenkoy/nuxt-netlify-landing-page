@@ -45,23 +45,30 @@ export const VJLP5_PREVIEW = createClass({
     }]
 
     const gamesData = widgetsFor('game_images').getIn(['data'])
-    // let games = []
-    // if (typeof gamesData.toJS() !== 'undefined') {
-    //   const links = Object.entries(gamesData.toJS())
-    //     .filter(data => data[0].includes('url'))
-    //     .map(data => data[1])
-    //   const icons = Object.entries(gamesData.toJS())
-    //     .filter(data => data[0].includes('icon'))
-    //     .map(data => data[1])
-    //   games = links.map((data, index) => ({
-    //     link: data, icon: icons[index]
-    //   }))
-    // }
+    let games = []
+    if (typeof gamesData.toJS() !== 'undefined') {
+      const links = Object.entries(gamesData.toJS())
+        .filter(data => data[0].includes('url'))
+        .map(data => data[1])
+      const icons = Object.entries(gamesData.toJS())
+        .filter(data => data[0].includes('icon'))
+        .map(data => data[1])
+      games = links.map((data, index) => ({
+        link: data, icon: icons[index]
+      }))
+    }
+
+    const firstData = widgetsFor('first_section').getIn(['data'])
+    let sectionData = []
+      const secData = Object.entries(firstData).map(data => data)
+    sectionData = secData.map((data, index) => ({
+      datum: data
+    }))
 
     return (html`
       <body
-        class="vjlp5_wrapper"
         className="${version}"
+        class="vjlp5_wrapper"
       >
         <header id="header">
           <div class="container">
@@ -91,7 +98,20 @@ export const VJLP5_PREVIEW = createClass({
           </div>
         </section>
 
-        ===== ${steps}
+        ${widgetsFor('template').getIn(['data']) === 'steps'
+          ? html`<${STEPS} steps="${stepData}" />`
+          : html`<${GAME_SLIDER} games="${games}" />`}
+
+        <section id="section1">
+          <div class="container">
+            <div>
+                <div key>
+                  <h2>${sectionData}</h2>
+                </div>
+              <div class="separator" />
+            </div>
+          </div>
+        </section>
 
       </body>
     `)
