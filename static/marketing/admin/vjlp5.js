@@ -74,8 +74,8 @@ export const VJLP5_PREVIEW = createClass({
     }
 
     const firstData = widgetsFor('first_section')
-    const secondLeftData = widgetsFor('second_section_left')
-    const secondRightData = widgetsFor('second_section_right')
+    const uspLeftData = widgetsFor('usp_left')
+    const uspRightData = widgetsFor('usp_right')
 
     return (html`
       <body class="vjlp5_wrapper">
@@ -86,7 +86,7 @@ export const VJLP5_PREVIEW = createClass({
             <header id="header">
               <div class="container">
                 <div class="logo">
-                  <!-- <img alt="alt logo" src="@/assets/images/vjlp5/vj-logo.png" data-not-lazy> -->
+                  <img alt="alt logo" src="/marketing/img/vjlp5/vj-logo.png"></img>
                 </div>
 
                 <div class="nav-links">
@@ -142,28 +142,48 @@ export const VJLP5_PREVIEW = createClass({
             <section id="section2">
               <div class="container column-2">
                 <div>
-                  ${secondLeftData.filter(sect => !!sect).map(sect =>
+                  ${uspLeftData.filter(sect => !!sect).map(sect =>
                     html`
                     <div>
-                      <h2>${sect.getIn(['data', 'second_section_title'])}</h2>
-                      <p>${sect.getIn(['data', 'second_section_content'])}</p>
+                      <h2>${sect.getIn(['data', 'usp_title'])}</h2>
+                      <p>${sect.getIn(['data', 'usp_content'])}</p>
                     </div>
                     `
                   )}
                 </div>
 
                 <div>
-                  ${secondRightData.filter(sect => !!sect).map(sect =>
+                  ${uspRightData.filter(sect => !!sect).map(sect =>
                       html`
                       <div>
-                        <h2>${sect.getIn(['data', 'second_section_title'])}</h2>
-                        <p>${sect.getIn(['data', 'second_section_content'])}</p>
+                        <h2>${sect.getIn(['data', 'usp_title'])}</h2>
+                        <p>${sect.getIn(['data', 'usp_content'])}</p>
                       </div>
                       `
                     )}
                 </div>
               </div>
             </section>
+
+            <section id="payment">
+              <div class="container">
+                <div>
+                  <img class="desktop" src="/marketing/img/payment/payment_large_${country}.svg" alt="payment verajohn desktop"></img>
+                  <img class="mobile" src="/marketing/img/payment/payment_${country}.svg" alt="payment verajohn mobile"></img>
+                  <div class="separator" />
+                </div>
+              </div>
+            </section>
+
+            <div class="container">
+              <div id="terms">
+                <div>
+                  ${body}
+                </div>
+                <p>通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</p>
+                <div class="separator" />
+              </div>
+            </div>
           </div>
         </div>
 
