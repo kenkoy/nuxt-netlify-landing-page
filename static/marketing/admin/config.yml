@@ -308,7 +308,7 @@ collections:
     preview_path: marketing/vjlp5/{{slug}}
     show_preview_links: true
     editor:
-      preview: false
+      preview: true
     fields:
       - label: Slug
         widget: string
@@ -344,6 +344,20 @@ collections:
           - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false}
           - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
           - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false}
+      - label: "Styles"
+        name: "styles"
+        widget: "select"
+        default: "version1"
+        options:
+          - { label: "Version 1", value: "version1" }
+          - { label: "Version 2", value: "version2" }
+      - label: "Template"
+        name: "template"
+        widget: "select"
+        default: "steps"
+        options:
+          - { label: "Steps", value: "steps" }
+          - { label: "Game Slider", value: "game_slider" }
       - label: "Promotion Banner"
         name: "promo_banner"
         widget: "object"
@@ -387,6 +401,21 @@ collections:
 
           - {label: "Step 3 Title", name: step_title_3, widget: string, required: false, default: ""}
           - {label: "Step 3 Description", name: step_description_3, widget: "string", required: false, default: ""}
+      - label: "Game Slider"
+        name: "game_images"
+        widget: "object"
+        colapsed: true
+        fields:
+          - {label: "Game Icon 1", name: game_icon_1, widget: image, required: false, default: "/marketing/img/loyalty-program.png"}
+          - {label: "Game URL", name: game_url_1, widget: string, required: false, default: "https://www.verajohn.com/ja/about/loyalty-program"}
+          - {label: "Game Icon 2", name: game_icon_2, widget: image, required: false, default: "/marketing/img/hawaiian-dream.png"}
+          - {label: "Game URL", name: game_url_2, widget: string, required: false, default: "https://www.verajohn.com/ja/game/hawaiian-dream"}
+          - {label: "Game Icon 3", name: game_icon_3, widget: image, required: false, default: "/marketing/img/card-master.png"}
+          - {label: "Game URL", name: game_url_3, widget: string, required: false, default: "https://www.verajohn.com/ja/about/cardmaster"}
+          - {label: "Game Icon 4", name: game_icon_4, widget: image, required: false, default: "/marketing/img/live-casino.png"}
+          - {label: "Game URL", name: game_url_4, widget: string, required: false, default: "https://www.verajohn.com/ja/livecasino"}
+          - {label: "Game Icon 5", name: game_icon_5, widget: image, required: false, default: "/marketing/img/payment-option.png"}
+          - {label: "Game URL", name: game_url_5, widget: string, required: false, default: "https://www.verajohn.com/ja/about/paymentoption"}
       - label: "First Section"
         name: "first_section"
         widget: "list"
@@ -394,46 +423,20 @@ collections:
         fields:
           - {label: "Title", name: "first_section_title", widget: "string"}
           - {label: "Description", name: "first_section_description", widget: "string"}
-      - label: "Second Section Left"
-        name: "second_section_left"
+      - label: "USP Left"
+        name: "usp_left"
         widget: "list"
         collapsed: true
         fields:
-          - {label: "Title", name: "second_section_title", widget: "string"}
-          - {label: "Content", name: "second_section_content", widget: "string"}
-      - label: "Second Section Right"
-        name: "second_section_right"
+          - {label: "USP Title", name: "usp_title", widget: "string"}
+          - {label: "USP Content", name: "usp_content", widget: "string"}
+      - label: "USP Right"
+        name: "usp_right"
         widget: "list"
         collapsed: true
         fields:
-          - {label: "Title", name: "second_section_title", widget: "string"}
-          - {label: "Content", name: "second_section_content", widget: "string"}
-      - label: "Third Section"
-        name: "third_section"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Title", name: "third_section_title", widget: "string"}
-          - label: "Bullet list"
-            name: "third_bullet_list"
-            widget: "list"
-            collapsed: true
-            fields:
-                - {label: "Bullet List", name: "third_section_content", widget: "string"}
-      - label: "Fourth Section"
-        name: "fourth_section"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Title", name: "fourth_section_title", widget: "string"}
-          - label: "Bullet list"
-            name: "fourth_bullet_list"
-            widget: "list"
-            collapsed: true
-            fields:
-              - label: Bullet List
-                name: fourth_section_content
-                widget: string
+          - {label: "USP Title", name: "usp_title", widget: "string"}
+          - {label: "USP Content", name: "usp_content", widget: "string"}
       - label: Body
         name: body
         widget: markdown
