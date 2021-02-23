@@ -60,8 +60,8 @@ export const VJLP5_PREVIEW = createClass({
 
     return (html`
       <body
-        class="vjlp5_wrapper"
         className="${version}"
+        class="vjlp5_wrapper"
       >
         <header id="header">
           <div class="container">
