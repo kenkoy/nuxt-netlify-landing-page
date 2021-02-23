@@ -118,11 +118,15 @@
 <script>
 import Vjlp5Data from '~/pages/marketing/vjlp5/_slug/index.vue'
 import Footer from '~/components/Base/TheFooter.vue'
+import Steps from '@/components/Views/Steps.vue'
+import GameSlider from '@/components/Views/GameSlider.vue'
 
 export default {
   components: {
     Vjlp5Data,
-    Footer
+    Footer,
+    Steps,
+    GameSlider
   },
   data () {
     return {
