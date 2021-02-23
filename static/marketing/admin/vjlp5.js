@@ -26,6 +26,15 @@ export const VJLP5_PREVIEW = createClass({
   //   }
   //   return { __html: first_title }
   // }
+  formatTitle(title, phrase){
+    if (phrase) {
+     const position = title.indexOf(phrase)
+     const text = `<span>${phrase}</span>`
+     const output = [title.slice(0, position), text, title.slice(position, 0)].join('')
+     return output
+   }
+   return title
+  }
 
   render () {
     const { widgetsFor, widgetFor } = this.props
@@ -36,6 +45,10 @@ export const VJLP5_PREVIEW = createClass({
     //   banner.getIn(['data', 'first_title']),
     //   banner.getIn(['data', 'phrase'])
     // )
+    const title = this.formatTitle(
+      banner.getIn(['data', 'first_title']),
+      banner.getIn(['data', 'phrase'])
+    )
     const steps = widgetsFor('steps')
     const body = widgetFor('body')
 
@@ -112,7 +125,8 @@ export const VJLP5_PREVIEW = createClass({
                       {{ data_items.attributes.promo_banner.second_title }}
                     </h1>
                   </div> -->
-                  <button ${banner.getIn(['data', 'promo_join_button'])} id="banner-button" class="error">
+                  <p>${title}</p>
+                  <button id="banner-button" class="error">
                     <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
                   </button>
                 </div>
