@@ -24,20 +24,6 @@
           </div>
         </header>
 
-        <Steps
-          v-if="data_items.attributes.template === 'steps'"
-          :title1="data_items.attributes.steps.step_title_1"
-          :description1="data_items.attributes.steps.step_description_1"
-          :title2="data_items.attributes.steps.step_title_2"
-          :description2="data_items.attributes.steps.step_description_2"
-          :title3="data_items.attributes.steps.step_title_3"
-          :description3="data_items.attributes.steps.step_description_3"
-        />
-        <GameSlider
-          v-if="data_items.attributes.template === 'game_slider'"
-          :game-data="data_items.attributes.game_images"
-        />
-
         <section id="hero" :style="cssBackground">
           <div class="container">
             <div>
@@ -55,6 +41,20 @@
             </div>
           </div>
         </section>
+
+        <Steps
+          v-if="data_items.attributes.template === 'steps'"
+          :title1="data_items.attributes.steps.step_title_1"
+          :description1="data_items.attributes.steps.step_description_1"
+          :title2="data_items.attributes.steps.step_title_2"
+          :description2="data_items.attributes.steps.step_description_2"
+          :title3="data_items.attributes.steps.step_title_3"
+          :description3="data_items.attributes.steps.step_description_3"
+        />
+        <GameSlider
+          v-if="data_items.attributes.template === 'game_slider'"
+          :game-data="data_items.attributes.game_images"
+        />
 
         <section id="section1">
           <div class="container">
@@ -118,8 +118,8 @@
 <script>
 import Vjlp5Data from '~/pages/marketing/vjlp5/_slug/index.vue'
 import Footer from '~/components/Base/TheFooter.vue'
-import Steps from '@/components/Views/Steps.vue'
-import GameSlider from '@/components/Views/GameSlider.vue'
+import Steps from '~/components/Views/Steps.vue'
+import GameSlider from '~/components/Views/GameSlider.vue'
 
 export default {
   components: {
