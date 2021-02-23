@@ -437,18 +437,6 @@ collections:
         fields:
           - {label: "USP Title", name: "usp_title", widget: "string"}
           - {label: "USP Content", name: "usp_content", widget: "string"}
-      - label: "Third Section"
-        name: "third_section"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Title", name: "third_section_title", widget: "string"}
-          - label: "Bullet list"
-            name: "third_bullet_list"
-            widget: "list"
-            collapsed: true
-            fields:
-                - {label: "Bullet List", name: "third_section_content", widget: "string"}
       - label: Body
         name: body
         widget: markdown
