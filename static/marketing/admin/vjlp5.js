@@ -184,6 +184,10 @@ export const VJLP5_PREVIEW = createClass({
                 <div class="separator" />
               </div>
             </div>
+
+            <section class="separator">
+              <${FOOTER} landingPageType="verajohn" languageCode=${language} countryCode=${country} />
+            </section>
           </div>
         </div>
 
