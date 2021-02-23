@@ -423,20 +423,20 @@ collections:
         fields:
           - {label: "Title", name: "first_section_title", widget: "string"}
           - {label: "Description", name: "first_section_description", widget: "string"}
-      - label: "Second Section Left"
-        name: "second_section_left"
+      - label: "USP Left"
+        name: "usp_left"
         widget: "list"
         collapsed: true
         fields:
-          - {label: "Title", name: "second_section_title", widget: "string"}
-          - {label: "Content", name: "second_section_content", widget: "string"}
-      - label: "Second Section Right"
-        name: "second_section_right"
+          - {label: "USP Title", name: "usp_title", widget: "string"}
+          - {label: "USP Content", name: "usp_content", widget: "string"}
+      - label: "USP Right"
+        name: "usp_right"
         widget: "list"
         collapsed: true
         fields:
-          - {label: "Title", name: "second_section_title", widget: "string"}
-          - {label: "Content", name: "second_section_content", widget: "string"}
+          - {label: "USP Title", name: "usp_title", widget: "string"}
+          - {label: "USP Content", name: "usp_content", widget: "string"}
       - label: "Third Section"
         name: "third_section"
         widget: "object"
@@ -449,20 +449,6 @@ collections:
             collapsed: true
             fields:
                 - {label: "Bullet List", name: "third_section_content", widget: "string"}
-      - label: "Fourth Section"
-        name: "fourth_section"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Title", name: "fourth_section_title", widget: "string"}
-          - label: "Bullet list"
-            name: "fourth_bullet_list"
-            widget: "list"
-            collapsed: true
-            fields:
-              - label: Bullet List
-                name: fourth_section_content
-                widget: string
       - label: Body
         name: body
         widget: markdown

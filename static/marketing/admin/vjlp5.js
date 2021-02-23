@@ -16,11 +16,26 @@ export const VJLP5_PREVIEW = createClass({
     document.head.appendChild(link)
   },
 
+  // bannerTitle (first_title = '', phrase = '') {
+  //   var bannerText = first_title
+  //   if (phrase) {
+  //     const position = first_title.indexOf(phrase)
+  //     const text = `<span>${phrase}</span>`
+  //     const output = [first_title.slice(0, position), text, first_title.slice(position, 0)].join('')
+  //     bannerText = output
+  //   }
+  //   return { __html: first_title }
+  // }
+
   render () {
     const { widgetsFor, widgetFor } = this.props
     const banner = widgetsFor('promo_banner')
     const locale = widgetsFor('promo_locale')
     const version = widgetsFor('styles').getIn(['data'])
+    // const bannerText = this.bannerTitle(
+    //   banner.getIn(['data', 'first_title']),
+    //   banner.getIn(['data', 'phrase'])
+    // )
     const steps = widgetsFor('steps')
     const body = widgetFor('body')
 
@@ -58,42 +73,99 @@ export const VJLP5_PREVIEW = createClass({
       }))
     }
 
+    const firstData = widgetsFor('first_section')
+    const secondLeftData = widgetsFor('second_section_left')
+    const secondRightData = widgetsFor('second_section_right')
+
     return (html`
-      <body
-        className="${version}"
-        class="vjlp5_wrapper"
-      >
-        <header id="header">
-          <div class="container">
-            <div class="logo">
-              <!-- <img alt="alt logo" src="@/assets/images/vjlp5/vj-logo.png" data-not-lazy> -->
-            </div>
+      <body class="vjlp5_wrapper">
+        <div
+          class="vjlp5-main"
+        >
+          <div className="${version}">
+            <header id="header">
+              <div class="container">
+                <div class="logo">
+                  <!-- <img alt="alt logo" src="@/assets/images/vjlp5/vj-logo.png" data-not-lazy> -->
+                </div>
 
-            <div class="nav-links">
-              <button class="warning">
-                <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
-                  ${banner.getIn(['data', 'promo_login_button'])}
-                </a>
-              </button>
-              <button class="error animated pulse infinite">
-                <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}">
-                  <strong>${banner.getIn(['data', 'promo_join_button'])}</strong>
-                </a>
-              </button>
-            </div>
-          </div>
-        </header>
-        <section id="hero" style="${imageBG}">
-          <div class="container">
-            <div>
-              ${banner.getIn(['data', 'promo_join_button'])}
-            </div>
-          </div>
-        </section>
+                <div class="nav-links">
+                  <button class="warning">
+                    <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
+                      ${banner.getIn(['data', 'promo_login_button'])}
+                    </a>
+                  </button>
+                  <button class="error animated pulse infinite">
+                    <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}">
+                      <strong>${banner.getIn(['data', 'promo_join_button'])}</strong>
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </header>
+            <section id="hero" style="${imageBG}">
+              <div class="container">
+                <div>
+                  <!-- <div class="banner">
+                    <h1 v-if="first_title" v-html="bannerTitle" />
+                    <h1 v-if="second_title">
+                      {{ data_items.attributes.promo_banner.second_title }}
+                    </h1>
+                  </div> -->
+                  <button ${banner.getIn(['data', 'promo_join_button'])} id="banner-button" class="error">
+                    <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
+                  </button>
+                </div>
+              </div>
+            </section>
 
-        ${widgetsFor('template').getIn(['data']) === 'steps'
-          ? html`<${STEPS} steps="${stepData}" />`
-          : html`<${GAME_SLIDER} games="${games}" />`}
+            ${widgetsFor('template').getIn(['data']) === 'steps'
+              ? html`<${STEPS} steps="${stepData}" />`
+              : html`<${GAME_SLIDER} games="${games}" />`}
+
+            <section id="section1">
+              <div class="container">
+                <div>
+                  ${firstData.filter(sect => !!sect).map(sect =>
+                      html`
+                      <div>
+                        <h2>${sect.getIn(['data', 'first_section_title'])}</h2>
+                        <p>${sect.getIn(['data', 'first_section_description'])}</p>
+                      </div>
+                      `
+                    )}
+                  <div class="separator" />
+                </div>
+              </div>
+            </section>
+
+            <section id="section2">
+              <div class="container column-2">
+                <div>
+                  ${secondLeftData.filter(sect => !!sect).map(sect =>
+                    html`
+                    <div>
+                      <h2>${sect.getIn(['data', 'second_section_title'])}</h2>
+                      <p>${sect.getIn(['data', 'second_section_content'])}</p>
+                    </div>
+                    `
+                  )}
+                </div>
+
+                <div>
+                  ${secondRightData.filter(sect => !!sect).map(sect =>
+                      html`
+                      <div>
+                        <h2>${sect.getIn(['data', 'second_section_title'])}</h2>
+                        <p>${sect.getIn(['data', 'second_section_content'])}</p>
+                      </div>
+                      `
+                    )}
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
 
       </body>
     `)
