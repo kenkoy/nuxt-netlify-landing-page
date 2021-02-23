@@ -16,16 +16,7 @@ export const VJLP5_PREVIEW = createClass({
     document.head.appendChild(link)
   },
 
-  // bannerTitle (first_title = '', phrase = '') {
-  //   var bannerText = first_title
-  //   if (phrase) {
-  //     const position = first_title.indexOf(phrase)
-  //     const text = `<span>${phrase}</span>`
-  //     const output = [first_title.slice(0, position), text, first_title.slice(position, 0)].join('')
-  //     bannerText = output
-  //   }
-  //   return { __html: first_title }
-  // }
+
   formatTitle(title, phrase){
     if (phrase) {
      const position = title.indexOf(phrase)
@@ -33,7 +24,7 @@ export const VJLP5_PREVIEW = createClass({
      const output = [title.slice(0, position), text, title.slice(position, 0)].join('')
      return output
    }
-   return title
+   return bannerTitle
   }
 
   render () {
@@ -41,14 +32,12 @@ export const VJLP5_PREVIEW = createClass({
     const banner = widgetsFor('promo_banner')
     const locale = widgetsFor('promo_locale')
     const version = widgetsFor('styles').getIn(['data'])
-    // const bannerText = this.bannerTitle(
-    //   banner.getIn(['data', 'first_title']),
-    //   banner.getIn(['data', 'phrase'])
-    // )
-    const title = this.formatTitle(
+
+    const bannerTitle = this.formatTitle(
       banner.getIn(['data', 'first_title']),
       banner.getIn(['data', 'phrase'])
     )
+
     const steps = widgetsFor('steps')
     const body = widgetFor('body')
 
@@ -125,7 +114,7 @@ export const VJLP5_PREVIEW = createClass({
                       {{ data_items.attributes.promo_banner.second_title }}
                     </h1>
                   </div> -->
-                  <p>${title}</p>
+                  <small dangerouslySetInnerHTML='${bannerTitle}'></small>
                   <button id="banner-button" class="error">
                     <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
                   </button>
