@@ -25,17 +25,17 @@
         </header>
 
         <Steps
-          v-if="mdData.template === 'steps'"
-          :title1="mdData.steps.step_title_1"
-          :description1="mdData.steps.step_description_1"
-          :title2="mdData.steps.step_title_2"
-          :description2="mdData.steps.step_description_2"
-          :title3="mdData.steps.step_title_3"
-          :description3="mdData.steps.step_description_3"
+          v-if="data_items.attributes.template === 'steps'"
+          :title1="data_items.attributes.steps.step_title_1"
+          :description1="data_items.attributes.steps.step_description_1"
+          :title2="data_items.attributes.steps.step_title_2"
+          :description2="data_items.attributes.steps.step_description_2"
+          :title3="data_items.attributes.steps.step_title_3"
+          :description3="data_items.attributes.steps.step_description_3"
         />
         <GameSlider
-          v-if="mdData.template === 'game_slider'"
-          :game-data="mdData.game_images"
+          v-if="data_items.attributes.template === 'game_slider'"
+          :game-data="data_items.attributes.game_images"
         />
 
         <section id="hero" :style="cssBackground">
