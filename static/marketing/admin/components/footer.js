@@ -51,7 +51,7 @@ export const FOOTER = createClass({
                 target="_blank"
                 href="#"
               >
-                <img class="reg-icon ceg-icon" src="../img/footer/CEG_logo.png" alt="alt img"></img>
+                <img class="reg-icon ceg-logo" src="../img/footer/CEG_logo.png" alt="alt img"></img>
               </a>
             </div>
 

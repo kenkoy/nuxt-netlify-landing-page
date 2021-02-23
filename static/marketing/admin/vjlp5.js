@@ -78,7 +78,7 @@ export const VJLP5_PREVIEW = createClass({
     const uspRightData = widgetsFor('usp_right')
 
     return (html`
-      <body class="vjlp5_wrapper">
+      <body class="vjlp5_wrapper core-wrapper">
         <div
           class="vjlp5-main"
         >
