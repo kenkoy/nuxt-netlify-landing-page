@@ -17,15 +17,15 @@ export const VJLP5_PREVIEW = createClass({
   },
 
 
-  formatTitle(title, phrase){
-    if (phrase) {
-     const position = title.indexOf(phrase)
-     const text = `<span>${phrase}</span>`
-     const output = [title.slice(0, position), text, title.slice(position, 0)].join('')
-     return output
-   }
-   return bannerTitle
-  }
+  formatTitle (title, phrase) {
+    if (phrase && title) {
+      const position = title.indexOf(phrase)
+      const text = `<span>${phrase}</span>`
+      const output = [title.slice(0, position), text, title.slice(position, 0)].join('')
+      return { __html: output }
+    }
+    return { __html: title }
+  },
 
   render () {
     const { widgetsFor, widgetFor } = this.props
@@ -108,16 +108,17 @@ export const VJLP5_PREVIEW = createClass({
             <section id="hero" style="${imageBG}">
               <div class="container">
                 <div>
-                  <!-- <div class="banner">
-                    <h1 v-if="first_title" v-html="bannerTitle" />
-                    <h1 v-if="second_title">
-                      {{ data_items.attributes.promo_banner.second_title }}
-                    </h1>
-                  </div> -->
-                  <small dangerouslySetInnerHTML='${bannerTitle}'></small>
-                  <button id="banner-button" class="error">
-                    <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
-                  </button>
+                  <div class="banner">
+                    <h1 dangerouslySetInnerHTML='${bannerTitle}'></h1>
+                    <h1>${banner.getIn(['data', 'second_title'])}</h1>
+                  </div>
+
+
+                  ${widgetsFor('promo_banner').getIn(['data', 'promo_join_button_location']) === 'hidden'
+                    ? ''
+                    : html`<button id="banner-button" class="error">
+                            <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
+                          </button>`}
                 </div>
               </div>
             </section>
