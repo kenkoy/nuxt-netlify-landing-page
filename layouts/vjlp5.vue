@@ -32,6 +32,13 @@
                 <h1 v-if="second_title">
                   {{ data_items.attributes.promo_banner.second_title }}
                 </h1>
+                <div :class="mdData.promo_banner.promo_join_button_location">
+                  <button class="error">
+                    <a :href="mdData.promo_banner.promo_login_button_redirect_url">
+                      {{ mdData.promo_banner.promo_join_button }}
+                    </a>
+                  </button>
+                </div>
               </div>
               <button v-if="data_items.attributes.promo_banner.promo_join_button_location != 'hidden'" id="banner-button" class="error">
                 <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url">

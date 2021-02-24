@@ -16,7 +16,6 @@ export const VJLP5_PREVIEW = createClass({
     document.head.appendChild(link)
   },
 
-
   formatTitle (title, phrase) {
     if (phrase && title) {
       const position = title.indexOf(phrase)
@@ -42,14 +41,11 @@ export const VJLP5_PREVIEW = createClass({
 
     if (buttonLocation === 'hidden') {
       joinBtnStyle = 'hidden'
-    }
-    else if (buttonLocation === 'lower-right') {
+    } else if (buttonLocation === 'lower-right') {
       joinBtnStyle = 'lower-right'
-    }
-    else if (buttonLocation === 'upper-left') {
+    } else if (buttonLocation === 'upper-left') {
       joinBtnStyle = 'upper-left'
-    }
-    else{
+    } else {
       joinBtnStyle = ''
     }
 
