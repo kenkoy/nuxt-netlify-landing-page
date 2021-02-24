@@ -3269,6 +3269,18 @@ html {
 }
 
 @media only screen and (min-width:1200px) {
+	#hero .lower-right{
+		position: absolute;
+		bottom: 10px;
+		right: 0;
+	}
+
+	#hero .upper-left{
+		position: absolute;
+		top: 10px;
+		left: 0;
+	}
+
 	.core-wrapper .column-3>div {
 		flex: 0 0 33.333333%;
 		max-width: 33.333333%

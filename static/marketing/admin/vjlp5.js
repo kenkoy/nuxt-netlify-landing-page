@@ -27,11 +27,31 @@ export const VJLP5_PREVIEW = createClass({
     return { __html: title }
   },
 
+  buttonLocation (style) {
+    return style.toString()
+  },
+
   render () {
     const { widgetsFor, widgetFor } = this.props
     const banner = widgetsFor('promo_banner')
     const locale = widgetsFor('promo_locale')
     const version = widgetsFor('styles').getIn(['data'])
+
+    const buttonLocation = banner.getIn(['data', 'promo_join_button_location'])
+    let joinBtnStyle = ''
+
+    if (buttonLocation === 'hidden') {
+      joinBtnStyle = 'hidden'
+    }
+    else if (buttonLocation === 'lower-right') {
+      joinBtnStyle = 'lower-right'
+    }
+    else if (buttonLocation === 'upper-left') {
+      joinBtnStyle = 'upper-left'
+    }
+    else{
+      joinBtnStyle = ''
+    }
 
     const bannerTitle = this.formatTitle(
       banner.getIn(['data', 'first_title']),
@@ -116,7 +136,7 @@ export const VJLP5_PREVIEW = createClass({
 
                   ${widgetsFor('promo_banner').getIn(['data', 'promo_join_button_location']) === 'hidden'
                     ? ''
-                    : html`<button id="banner-button" class="error">
+                    : html`<button id="banner-button" class="error ${joinBtnStyle}">
                             <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
                           </button>`}
                 </div>
