@@ -31,7 +31,37 @@
   }
 
   h3{
-    color: #fff;
     margin-top: 0;
+  }
+}
+
+@mixin loyalty-list{
+  .container{
+    > div:first-child > .items{
+      margin-left: 0;
+    }
+    > div:last-child > .items{
+      margin-right: 0;
+    }
+    > div {
+      padding: 0;
+
+      > .items {
+        background-color: #0093d4;
+        border-radius: 10px;
+        height: 100%;
+        min-height: 226px;
+        text-align: center;
+        margin: 0 10px;
+        padding: 15px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+
+        * {
+          position: relative;
+          z-index: 1;
+        }
+      }
+    }
   }
 }

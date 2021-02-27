@@ -166,7 +166,9 @@
           <div class="items">
             <h4>Jackpot</h4>
             <p>Sisters of Oz Jackpot</p>
-            <p class="price">12,845.61</p>
+            <p class="price">
+              12,845.61
+            </p>
           </div>
         </div>
 
@@ -178,7 +180,9 @@
               <img src="https://cdn.plaingaming.net/files/repository/105/1/10003/all/all/image/generic.png?qopuiq&601b&6012">
             </div>
 
-            <button class="btn-primary">Play random game</button>
+            <button class="btn-primary">
+              Play random game
+            </button>
           </div>
         </div>
 
@@ -186,17 +190,35 @@
           <div class="items usp-loyalty">
             <div>
               <h3>The Loyalty Program</h3>
-              <p>Play games.<br/>
-              Level up.<br/>
-              Buy stuff!
+              <p>
+                Play games.<br>
+                Level up.<br>
+                Buy stuff!
               </p>
 
-              <p class="price">Our Loyalty Program</p>
+              <p class="price">
+                Our Loyalty Program
+              </p>
             </div>
             <div>
               <img src="https://casino.verajohn.com/fragment/loyalty/assets/images/f2797b32eae32f95baa859b510df8a45.png">
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="seo">
+      <div class="container column-2">
+        <div>
+          <h2>Play Online Casino at Vera&John</h2>
+          <p>Ladies and gentlemen, welcome to Vera&John casino, home to hundreds of amazing online slot games, table games, live casino games, and much more. Whether you want to play at home on your PC or tablet, or on the go with our amazing online mobile casino, you can be sure of a fun-filled casino experience with us.</p>
+          <p>In the following sections, we’ll introduce you to our amazing online casino and show you some special features (and even a way to get casino bonuses) that simply can’t be missed. So, read on to discover how you can become a casino master.</p>
+        </div>
+
+        <div>
+          <h2>Live Casino Games at Vera&John</h2>
+          <p>For the truest casino experience on the web, take the virtual step into our live casino. Vera&John live casino will transport you right onto the casino floor where real life table games are streamed straight to your device live, allowing you to bet on every single roll, spin or turn of the cards in real-time using the interactive elements on the screen.</p>
         </div>
       </div>
     </section>

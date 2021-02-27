@@ -152,3 +152,90 @@ input{
     }
   }
 }
+
+//LOYALTY
+#loyalty{
+  @include loyalty-list;
+
+  background: $LOYALTY_BG;
+  padding: 50px 0;
+
+  button{
+    width: 100%;
+  }
+  h3{
+    color: $LOYALTY_TITLE_COLOR;
+    font-size: $LOYALTY_TITLE_SIZE;
+    margin: 0;
+  }
+  h4{
+    font-weight: 300;
+    color: $LOYALTY_SUBTITLE_COLOR;
+    font-size: $LOYALTY_SUBTITLE_SIZE;
+    margin: 0;
+  }
+  p{
+    color: #fff;
+  }
+  .price{
+    color: #ffea00;
+  }
+
+  .jackpot{
+
+    > div{
+      position: relative;
+      &:before{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+        background-image: url('https://cdn.plaingaming.net/files/repository/105/1/10003/all/all/image/visible-on-load.png?qopuiq&601b&6012');
+        background-repeat: no-repeat;
+        background-position: 50% -431px;
+        width: 150px;
+        height: 137px;
+        overflow: hidden;
+        z-index: 0;
+      }
+    }
+  }
+
+  .feat-img{
+    overflow: hidden;
+    width: 125px;
+    height: 120px;
+    margin: 10px auto;
+
+    img{
+      margin-top: -1000px;
+    }
+  }
+
+  .usp-loyalty {
+    background: url("https://casino.intercasino.com/fragment/loyalty/assets/images/38753c639527a58d073d8db57796952b.png");
+    img {
+      width: 100%;
+      display: none;
+    }
+    p{
+      color: #333;
+    }
+  }
+}
+
+#seo{
+  background: $SEO_BG;
+
+  h2{
+    color: $SEO_TITLE_COLOR;
+    font-size: $SEO_TITLE_SIZE;
+    font-weight: 300;
+  }
+
+  p{
+    color: #fff;
+    font-size: 13px;
+  }
+}

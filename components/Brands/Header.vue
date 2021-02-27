@@ -1,22 +1,20 @@
 <template>
   <header>
-    <div id="logo">
-
-    </div>
+    <div id="logo" />
 
     <nav>
       <div>
-        <img src=""/>
+        <img src="">
         <p>VJ's casino</p>
       </div>
 
       <div>
-        <img src=""/>
+        <img src="">
         <p>Live casino</p>
       </div>
 
       <div>
-        <img src=""/>
+        <img src="">
         <p>Promotions</p>
       </div>
     </nav>

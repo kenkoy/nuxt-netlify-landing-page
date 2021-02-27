@@ -31,75 +31,12 @@
   }
 
   h3{
+    color: #fff;
     margin-top: 0;
   }
 }
 
-@mixin loyalty{
-  background: $LOYALTY_BG;
-  padding: 50px 0;
-
-  h3, h4{
-    font-weight: 400;
-    color: #ffea00;
-    margin: 0;
-  }
-  p{
-    color: #fff;
-  }
-
-  .price{
-    color: #ffea00;
-  }
-
-  .usp-loyalty {
-    > * {
-      display: inline-block;
-      vertical-align: top;
-      width: 49%;
-      text-align: left;
-
-      img {
-        width: 100%;
-      }
-    }
-  }
-
-  .jackpot{
-    > div{
-      position: relative;
-      &:before{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        content: '';
-        background-image: url('https://cdn.plaingaming.net/files/repository/105/1/10003/all/all/image/visible-on-load.png?qopuiq&601b&6012');
-        background-repeat: no-repeat;
-        background-position: 50% -431px;
-        width: 150px;
-        height: 137px;
-        overflow: hidden;
-        z-index: 0;
-      }
-    }
-  }
-
-  .feat-img{
-    overflow: hidden;
-    width: 125px;
-    height: 120px;
-    margin: 10px auto;
-
-    img{
-      margin-top: -1000px;
-    }
-  }
-
-  button{
-    width: 100%;
-  }
-
+@mixin loyalty-list{
   .container{
     > div:first-child > .items{
       margin-left: 0;
@@ -112,8 +49,9 @@
       padding: 0;
 
       > .items{
-        background-color: #0093d4;
+        background-color: #212121;
         border-radius: 10px;
+        height: 100%;
         min-height: 226px;
         text-align: center;
         margin: 0 10px;
