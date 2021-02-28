@@ -22,8 +22,7 @@ promo_banner:
   promo_join_button: 入金ボーナス獲得する
   promo_login_button: 登録
   phrase: " "
-  promo_join_button_location:
-    - hidden
+  promo_join_button_location: hidden
 steps:
   step_title_1: ご登録
   step_description_1: 安全 & 安心！

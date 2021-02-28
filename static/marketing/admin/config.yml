@@ -373,7 +373,7 @@ collections:
           - label: "Join Button Location"
             name: "promo_join_button_location"
             widget: "select"
-            default: "hidden"
+            default: ["hidden"]
             options:
               - { label: "Upper Left", value: "upper-left" }
               - { label: "Lower Right", value: "lower-right" }
