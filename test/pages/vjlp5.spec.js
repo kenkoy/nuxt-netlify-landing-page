@@ -7,7 +7,7 @@ import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.j
 const VJLP5_DIR = '/assets/content/landing-page/marketing/vjlp5/'
 
 describe('Testing VJLP5 index.vue', () => {
-  let wrapper, metaInfo, tagIds, locale
+  let wrapper, metaInfo, tagIds, locale, bannerTitle
 
   beforeAll(async () => {
     const localVue = createLocalVue()
@@ -30,11 +30,17 @@ describe('Testing VJLP5 index.vue', () => {
     metaInfo = wrapper.vm.$metaInfo
     tagIds = dataMD.attributes.field_ids
     locale = dataMD.attributes.promo_locale
+    bannerTitle = dataMD.attributes.promo_banner
   })
 
   test('Title should be Vera&John', () => {
     const pageTitle = metaInfo.title
     expect(pageTitle).toBe('Vera&John')
+  })
+
+  test('Banner should be first_title', () => {
+    const title = bannerTitle.first_title
+    expect(title).toBe(`${title}`)
   })
 
   test('HTML language attribute should not be null or undefined', () => {
