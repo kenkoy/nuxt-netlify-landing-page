@@ -100,3 +100,19 @@
           }
       }
   }
+
+  .version1 {
+      button {
+          &.warning {
+              display: inline-block;
+          }
+      }
+  }
+
+  .version2 {
+      button {
+          &.warning {
+              display: none;
+          }
+      }
+  }
