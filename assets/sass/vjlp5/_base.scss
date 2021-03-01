@@ -107,6 +107,16 @@
               display: inline-block;
           }
       }
+
+      h2 {
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+    #section1 {
+        h2 {
+            font-size: 1.5em;
+        }
+    }
   }
 
   .version2 {
