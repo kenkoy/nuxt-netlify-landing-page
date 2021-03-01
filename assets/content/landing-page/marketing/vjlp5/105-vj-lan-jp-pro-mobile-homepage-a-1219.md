@@ -8,28 +8,30 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
 styles: version1
-template: steps
+template: game_slider
 promo_banner:
+  banner_promo_join_button: ""
   promo_title: 105-vj-lan-jp-pro-mobile-homepage-a-1219
   promo_images:
     promo_bg_desktop: /marketing/img/digital-welcomeoffer-mob-cta-1000x300-a_nocta.png
     promo_bg_mobile: /marketing/img/digital-welcomeoffer-mob-cta-767x493-b_nocta.png
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
-  first_title: " "
-  second_title: " "
+  first_title: ""
+  second_title: ""
+  promo_title_display: false
   promo_login_button_redirect_url: https://verajohn.com/#join
   promo_join_button_redirect_url: https://verajohn.com/#join
   promo_join_button: 今すぐプレイ
   promo_login_button: 登録
-  phrase: " "
+  phrase: ""
   promo_join_button_location: upper-left
 steps:
-  step_title_1: ご登録
-  step_description_1: 安全 & 安心！
-  step_title_2: ご入金
-  step_description_2: ボーナス獲得！
-  step_title_3: プレイ!
-  step_description_3: お楽しみください！
+  step_title_1: ""
+  step_description_1: ""
+  step_title_2: ""
+  step_description_2: ""
+  step_title_3: ""
+  step_description_3: ""
 game_images:
   game_url_1: https://www.verajohn.com/ja/about/loyalty-program
   game_url_2: https://www.verajohn.com/ja/game/hawaiian-dream
