@@ -204,6 +204,7 @@ export default {
 
 <style lang="scss">
   .vjlp5_wrapper {
+    @import '@/assets/sass/base/style.scss';
     @import '@/assets/sass/vjlp5/style.scss';
   }
 </style>
