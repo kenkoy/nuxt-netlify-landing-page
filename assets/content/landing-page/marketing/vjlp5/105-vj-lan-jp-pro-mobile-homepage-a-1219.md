@@ -8,7 +8,7 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
 styles: version1
-template: game_slider
+template: steps
 promo_banner:
   promo_title: 105-vj-lan-jp-pro-mobile-homepage-a-1219
   promo_images:
