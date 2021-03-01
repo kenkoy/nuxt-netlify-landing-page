@@ -61,7 +61,7 @@
    }
 
    #hero{
-     background: var(--bg-banner);
+     background: var(--bg-banner) 50% no-repeat;
      background-color: #000;
      .container{
        background: var(--bg-image-m) no-repeat center;
