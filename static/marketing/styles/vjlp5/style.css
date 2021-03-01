@@ -3906,6 +3906,12 @@ body.noScroll {
 	.vjlp5_wrapper .mobile {
 		display: block
 	}
+	.vjlp5_wrapper .version1 h2,
+	.vjlp5_wrapper .version1 #section1 h2 {
+		font-size: 24px;
+		font-weight: 500;
+		font-family: 'MainFont-Medium', sans-serif;
+	}
 	.vjlp5_wrapper h2 {
 		font-size: 24px;
 		text-align: center
@@ -3945,7 +3951,7 @@ body.noScroll {
 		margin: 15px 0;
 		flex-grow: 0
 	}
-	.vjlp5_wrapper #header .nav-links button:first-child {
+	.vjlp5_wrapper .version2 #header .nav-links button:first-child {
 		display: none
 	}
 	.vjlp5_wrapper #header .nav-links>button {
@@ -3953,8 +3959,8 @@ body.noScroll {
 		font-size: 14px
 	}
 	.vjlp5_wrapper #hero {
-		background: var(--bg-banner);
-		background-color: #000
+		background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)), var(--bg-banner);
+		background-color: #0684b6;
 	}
 	.vjlp5_wrapper #hero .container {
 		background: var(--bg-image-m) no-repeat 50%;
@@ -4064,7 +4070,7 @@ body.noScroll {
 }
 
 @media only screen and (min-width:576px) {
-	.vjlp5_wrapper #header .nav-links button:first-child {
+	.vjlp5_wrapper .version2 #header .nav-links button:first-child {
 		display: inline-block
 	}
 	.vjlp5_wrapper #hero {

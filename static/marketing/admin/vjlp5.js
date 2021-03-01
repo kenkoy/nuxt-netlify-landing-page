@@ -125,11 +125,11 @@ export const VJLP5_PREVIEW = createClass({
               <div class="container">
                 <div>
                   <div class="banner">
-                    ${widgetsFor('promo_banner').getIn(['data', 'first_title']) != ''
+                    ${widgetsFor('promo_banner').getIn(['data', 'first_title']) !== ''
                     ? html`<h1 dangerouslySetInnerHTML='${bannerTitle}'></h1>`
                     : ''}
 
-                    ${widgetsFor('promo_banner').getIn(['data', 'second_title']) != ''
+                    ${widgetsFor('promo_banner').getIn(['data', 'second_title']) !== ''
                     ? html`<h1>${banner.getIn(['data', 'second_title'])}</h1>`
                     : ''}
                   </div>
