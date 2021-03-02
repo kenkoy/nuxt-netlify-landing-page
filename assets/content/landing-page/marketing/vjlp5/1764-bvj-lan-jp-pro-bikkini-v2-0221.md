@@ -1,5 +1,5 @@
 ---
-slug_name: DIG-VJLP5-Christmas
+slug_name: 1764-bvj-lan-jp-pro-bikkini-v2-0221
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -10,18 +10,18 @@ field_ids:
 styles: version2
 template: steps
 promo_banner:
-  promo_title: DIG-VJLP5-Christmas
+  promo_title: 1764-bvj-lan-jp-pro-bikkini-v2-0221
   promo_images:
-    promo_bg_desktop: /marketing/img/dsgn-1567-bg-vjlp2-dt.png
-    promo_bg_mobile: /marketing/img/dsgn-1567-vjlp2-mob.png
-    promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
-  first_title: '  '
-  second_title: ' '
+    promo_bg_desktop: /marketing/img/dsgn-1763-vj-jp-cms-desktop-1920x1080.png
+    promo_bg_mobile: /marketing/img/dsgn-1763-vj-jp-cms-mobile-767x800-2.png
+    promo_bg_banner: /marketing/img/vjlp5-banner.jpg
+  first_title: 最大$1000
+  second_title: ビギナーズボーナス
   promo_login_button_redirect_url: 'https://verajohn.com/#join'
   promo_join_button_redirect_url: 'https://verajohn.com/#join'
   promo_join_button: 入金ボーナス獲得する
   promo_login_button: 登録
-  phrase: ' '
+  phrase: $1000
   promo_join_button_location: hidden
 steps:
   step_title_1: ご登録
