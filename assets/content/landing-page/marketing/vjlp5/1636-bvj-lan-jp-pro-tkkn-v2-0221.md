@@ -112,7 +112,7 @@ usp_right:
     </ol>
     <div class="separator" />
   </div>
-</section>a
+</section>
 <section>
   <div>
     <h2>最高$500初回入金ボーナス利用規約</h2>
