@@ -183,7 +183,7 @@ export const VJLP5_PREVIEW = createClass({
                     html`
                     <div>
                       <h2>${sect.getIn(['data', 'usp_title'])}</h2>
-                      <p>${sect.getIn(['data', 'usp_content'])}</p>
+                      <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'usp_content']))}'/>
                     </div>
                     `
                   )}
@@ -194,7 +194,7 @@ export const VJLP5_PREVIEW = createClass({
                       html`
                       <div>
                         <h2>${sect.getIn(['data', 'usp_title'])}</h2>
-                        <p>${sect.getIn(['data', 'usp_content'])}</p>
+                          <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'usp_content']))}'/>
                       </div>
                       `
                     )}
