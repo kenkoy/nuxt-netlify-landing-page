@@ -26,6 +26,17 @@ export const VJLP5_PREVIEW = createClass({
     return { __html: title }
   },
 
+  nextlineToBr (paragraphs = '') {
+    const text = paragraphs.split(/\r?\n/).map((sentence) => {
+      return paragraphs.slice(-1) === '\\'
+        ? paragraphs.substring(0, paragraphs.length - 1)
+        : sentence
+    }).reduce((oldVal, newVal) => {
+      return oldVal + '<br />' + newVal
+    })
+    return { __html: text }
+  },
+
   buttonLocation (style) {
     return style.toString()
   },
@@ -35,6 +46,10 @@ export const VJLP5_PREVIEW = createClass({
     const banner = widgetsFor('promo_banner')
     const locale = widgetsFor('promo_locale')
     const version = widgetsFor('styles').getIn(['data'])
+
+    const firstData = widgetsFor('first_section')
+    const uspLeftData = widgetsFor('usp_left')
+    const uspRightData = widgetsFor('usp_right')
 
     const buttonLocation = banner.getIn(['data', 'promo_join_button_location'])
     let joinBtnStyle = ''
@@ -52,6 +67,10 @@ export const VJLP5_PREVIEW = createClass({
     const bannerTitle = this.formatTitle(
       banner.getIn(['data', 'first_title']),
       banner.getIn(['data', 'phrase'])
+    )
+
+    const nextLine = this.nextlineToBr(
+      firstData.getIn(['data', 'first_section_description'])
     )
 
     const steps = widgetsFor('steps')
@@ -90,10 +109,6 @@ export const VJLP5_PREVIEW = createClass({
         link: data, icon: icons[index]
       }))
     }
-
-    const firstData = widgetsFor('first_section')
-    const uspLeftData = widgetsFor('usp_left')
-    const uspRightData = widgetsFor('usp_right')
 
     return (html`
       <body class="vjlp5_wrapper core-wrapper">
@@ -155,7 +170,7 @@ export const VJLP5_PREVIEW = createClass({
                       html`
                       <div>
                         <h2>${sect.getIn(['data', 'first_section_title'])}</h2>
-                        <p>${sect.getIn(['data', 'first_section_description'])}</p>
+                        <p dangerouslySetInnerHTML='${nextLine}'/>
                       </div>
                       `
                     )}
