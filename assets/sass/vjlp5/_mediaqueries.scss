@@ -61,8 +61,7 @@
    }
 
    #hero{
-     background: var(--bg-banner);
-     background-color: #000;
+     background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)), var(--bg-banner) 50% no-repeat;
      .container{
        background: var(--bg-image-m) no-repeat center;
        min-height: 400px;
@@ -211,7 +210,7 @@
      }
    }
    #hero{
-     background: var(--bg-banner);
+     background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)), var(--bg-banner) 50%;
      .container{
        background: var(--bg-image-m) no-repeat center;
        min-height: 650px;
@@ -268,7 +267,7 @@
      // background: var(--bg-banner) no-repeat #000 center;
      // background-size: cover;
 
-     background: var(--bg-banner) center;
+     background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)), var(--bg-banner) center;
      .container{
        background: var(--bg-image) no-repeat center;
        min-height: 320px;
@@ -309,9 +308,6 @@
            top: 10px;
            left: 0;
          }
-         .hidden {
-           display: none;
-         }
      }
      #section3{
        .container{
@@ -342,7 +338,7 @@
    #hero{
        // background: var(--bg-image) no-repeat #000 center;
        // background-size: contain;
-       background: var(--bg-banner) center;
+       background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)), var(--bg-banner) center;
        .container{
          background: var(--bg-image) no-repeat center;
          background-size: contain;

@@ -33,7 +33,11 @@
                   {{ data_items.attributes.promo_banner.second_title }}
                 </h1>
               </div>
-              <div id="banner-button" :class="data_items.attributes.promo_banner.promo_join_button_location">
+              <div
+                v-if="data_items.attributes.promo_banner.promo_join_button_location !=='hidden'"
+                id="banner-button"
+                :class="data_items.attributes.promo_banner.promo_join_button_location"
+              >
                 <button class="error">
                   <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url">
                     <strong>{{ data_items.attributes.promo_banner.promo_join_button }}</strong>
@@ -200,6 +204,7 @@ export default {
 
 <style lang="scss">
   .vjlp5_wrapper {
+    @import '@/assets/sass/base/style.scss';
     @import '@/assets/sass/vjlp5/style.scss';
   }
 </style>
