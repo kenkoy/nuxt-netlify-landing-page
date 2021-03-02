@@ -69,10 +69,6 @@ export const VJLP5_PREVIEW = createClass({
       banner.getIn(['data', 'phrase'])
     )
 
-    const nextLine = this.nextlineToBr(
-      firstData.getIn(['data', 'first_section_description'])
-    )
-
     const steps = widgetsFor('steps')
     const body = widgetFor('body')
 
@@ -152,9 +148,10 @@ export const VJLP5_PREVIEW = createClass({
 
                   ${widgetsFor('promo_banner').getIn(['data', 'promo_join_button_location']) === 'hidden'
                     ? ''
-                    : html`<button id="banner-button" class="error ${joinBtnStyle}">
-                            <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
-                          </button>`}
+                    : html`
+                      <button id="banner-button" class="error ${joinBtnStyle}">
+                        <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
+                      </button>`}
                 </div>
               </div>
             </section>
@@ -170,7 +167,7 @@ export const VJLP5_PREVIEW = createClass({
                       html`
                       <div>
                         <h2>${sect.getIn(['data', 'first_section_title'])}</h2>
-                        <p dangerouslySetInnerHTML='${nextLine}'/>
+                        <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'first_section_description']))}'/>
                       </div>
                       `
                     )}
