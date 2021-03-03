@@ -420,22 +420,22 @@ collections:
         widget: "list"
         collapsed: true
         fields:
-          - {label: "Title", name: "first_section_title", widget: "string"}
-          - {label: "Description", name: "first_section_description", widget: "text"}
+          - {label: "Title", name: "first_section_title", widget: "string", default: "Title"}
+          - {label: "Description", name: "first_section_description", widget: "text", default: "Description"}
       - label: "USP Left"
         name: "usp_left"
         widget: "list"
         collapsed: true
         fields:
-          - {label: "USP Title", name: "usp_title", widget: "string"}
-          - {label: "USP Content", name: "usp_content", widget: "text"}
+          - {label: "USP Title", name: "usp_title", widget: "string", default: "USP Left Title"}
+          - {label: "USP Content", name: "usp_content", widget: "text", default: "USP Left Description"}
       - label: "USP Right"
         name: "usp_right"
         widget: "list"
         collapsed: true
         fields:
-          - {label: "USP Title", name: "usp_title", widget: "string"}
-          - {label: "USP Content", name: "usp_content", widget: "text"}
+          - {label: "USP Title", name: "usp_title", widget: "string", default: "USP Right Title"}
+          - {label: "USP Content", name: "usp_content", widget: "text", default: "USP Right Description"}
       - label: Body
         name: body
         widget: markdown
