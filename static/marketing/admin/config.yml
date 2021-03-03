@@ -323,7 +323,7 @@ collections:
           - label: "Country Code"
             name: "promo_country_code"
             widget: "select"
-            default: ["jp"]
+            default: "jp"
             options:
               - { label: "Japan", value: "jp" }
               - { label: "Sweden", value: "se" }
@@ -331,7 +331,7 @@ collections:
           - label: "Language Code"
             name: "promo_language_code"
             widget: "select"
-            default: ["ja"]
+            default: "ja"
             options:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
