@@ -1,50 +1,58 @@
 ---
-slug_name: 306-bvj-lan-jp-pro-livecasino-v2-0520
+slug_name: 214 BVJ lan JP Pro hdflow 1219
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 field_ids:
-  gtm_container_id: GTM-MFD3NKM
-  ga_tracking_id: UA-142143961-1
   go_container_id: OPT-PHSNXP6
-styles: version2
-template: steps
+  ga_tracking_id: UA-142143961-1
+  gtm_container_id: GTM-MFD3NKM
+styles: version1
+template: game_slider
 promo_banner:
-  promo_title: 306-bvj-lan-jp-pro-livecasino-v2-0520
+  banner_promo_join_button: ''
+  promo_title: 214-bvj-lan-jp-pro-hdflow-1219
   promo_images:
-    promo_bg_desktop: /marketing/img/bg-dt.jpg
-    promo_bg_mobile: /marketing/img/bg-mob.jpg
-    promo_bg_banner: /marketing/img/vjlp5-banner.jpg
-  first_title: 最大$1000
-  second_title: ビギナーズボーナス
-  promo_login_button_redirect_url: 'https://verajohn.com/#join'
-  promo_join_button_redirect_url: 'https://verajohn.com/#join'
-  promo_join_button: 入金ボーナス獲得する
+    promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
+    promo_bg_desktop: /marketing/img/hd-pachinko-v2-banner-2-d.png
+    promo_bg_mobile: /marketing/img/hd-pachinko-v2-banner-2-m.png
+  first_title: ''
+  second_title: ''
+  promo_title_display: false
+  promo_login_button_redirect_url: 'https://casino.verajohn.com/#signin'
+  promo_join_button_redirect_url: 'https://casino.verajohn.com/#join'
+  promo_join_button: 今すぐプレイ
   promo_login_button: 登録
-  phrase: $1000
-  promo_join_button_location: hidden
+  phrase: ''
+  promo_join_button_location: lower-right
 steps:
-  step_title_1: ご登録
-  step_description_1: 安全 & 安心！
-  step_title_2: ご入金
-  step_description_2: ボーナス獲得！
-  step_title_3: プレイ!
-  step_description_3: お楽しみください！
+  step_title_1: ''
+  step_description_1: ''
+  step_title_2: ''
+  step_description_2: ''
+  step_title_3: ''
+  step_description_3: ''
 game_images:
   game_url_1: 'https://www.verajohn.com/ja/about/loyalty-program'
   game_url_2: 'https://www.verajohn.com/ja/game/hawaiian-dream'
   game_url_3: 'https://www.verajohn.com/ja/about/cardmaster'
   game_url_4: 'https://www.verajohn.com/ja/livecasino'
   game_url_5: 'https://www.verajohn.com/ja/about/paymentoption'
+  game_url_6: 'https://www.verajohn.com/ja/game/hawaiian-dream'
   game_icon_1: /marketing/img/loyalty-program.png
   game_icon_2: /marketing/img/hawaiian-dream.png
   game_icon_3: /marketing/img/card-master.png
   game_icon_4: /marketing/img/live-casino.png
   game_icon_5: /marketing/img/payment-option.png
+  game_icon_6: /marketing/img/hawaiian-dream.png
 first_section:
-  - first_section_title: ライブカジノで一攫千金ッ！
+  - first_section_title: 日本No. 1カジノで今日からプレイをはじめちゃおう！
     first_section_description: |-
-      いつでもどこでも、本場カジノの臨場感が楽しめるライブカジノ。ディーラーの動きがリアルタイムで見えるので、イカサマの心配もありません。しかも、還元率は他のギャンブルよりもはるかに高いともいわれています。パチスロの一般的な還元率は約80%と言われていますが、オンラインカジノでは、なんと最低でも「95％」はあるんです！さぁ、日本No.1オンラインカジノのベラジョンで、今をときめく最先端のライブカジノを堪能しましょう！
+      安心・安全・楽しいの3拍子が揃った、ベラジョン・オンラインカジノは、初心者の方でも気軽に、そして簡単にプレイを楽しむことができます。インターネット環境さえあれば、パソコン以外にも、モバイル版の利用が可能なiPhone やアンドロイドといったスマホ、iPadなどといったタブレットで、24時間365日プレイを楽しむことができるので、いつでもどこでも、オンラインで一獲千金を狙うことができちゃいます！
+
+      ベラジョンでは、数百種類ものゲームを取り揃えており、StarburstやMoon Princess、Gemixなどの大人気スロットはもちろん、バカラやブラックジャック、ルーレットなどのテーブルゲーム、本場カジノの興奮を楽しめる臨場感あふれたライブカジノ、さらには、1千万円を超えるジャックポットを叩き出すことで有名なCleopatraやDivine Fortune、Mega Moolahなどのプログレッシブ・ジャックポットスロット。さらに、日本で大人気のパチンコのようなボーナスゲームや、パチスロをそのままオンラインで体感できるようなスロットも見つけることができます。なんと競馬のゲームもあるんです！
+
+      今すぐベラジョンで、日本でカジノ体験を楽しみましょう！
 usp_left:
   - usp_title: 勝負金が2倍！最高$500初回入金ボーナスをもらってお得にプレイ！
     usp_content: |-
@@ -57,26 +65,28 @@ usp_left:
       また、プレイヤーの皆様には、ご自身のゲームプレイ習慣を理解し、健全にカジノをお楽しみいただきたいと思っています。当サイトでご利用いただける「自己規制」機能で、サイトへのアクセス制限や入金に上限を設定することが可能です。安心・安全に、楽しくカジノライフを始めちゃおう！ 
   - usp_title: ご褒美プログラムとベラジョン・ショップ
     usp_content: |-
-      ベラジョンでは、ログインや入金、アカウント認証など、サイト上で行うあらゆるアクションにより、ご褒美としてコインがもらえます。これらのコインは、ベラジョン・ショップでのお得なアイテムを購入時に使用できちゃいます！コインが増えるとレベルも更新され、入金ボーナス、フリースピン、特定のゲームで利用できるボーナスなど、様々なアイテムの購入が可能になります。期間限定アイテムやお得なアイテムも盛りだくさん！中には、キャッシュに変換できるコインもありますよ！ベラジョン・ショップでは様々な人気アイテムを多数取り揃えていますので、ぜひ合わせてご利用ください♪
+      ベラジョンでは、ログインや入金、アカウント認証など、サイト上で行うあらゆるアクションにより、ご褒美がもらえます。 これらのご褒美は、ベラジョン・ショップでお得なアイテムを購入するのに使用できる、コインとして獲得できます。コインが増えるとレベルも更新され、入金ボーナス、フリースピン、特定のゲームで利用できるボーナスなどといったアイテムの購入が可能。期間限定アイテムやお得なアイテム盛りだくさん！
+      コインがキャッシュに変わっちゃう!? ベラジョン・ショップの目玉アイテムも取り揃えていますので、ぜひご利用ください♪
+  - usp_title: 素晴らしいスロットの数々
+    usp_content: |-
+      リムジンに乗り込み、シャンパンの栓を抜くことを想像しながら、人気スロットゲームをプレイし始めませんか?! パチスロ風スロットの元祖、Hawaiian Dream、クレイジーなゲーム体験を求めて宇宙に旅立つStarburst、さらに一攫千金ジャックポットゲームをプレイしたりして、お気に入りゲームを見つけてみてください！もちろん、パソコン、モバイルなど、利用端末に関わらず、最高のゲームをお楽しみいただけます！
 usp_right:
   - usp_title: 完全生配信！ライブカジノゲーム
     usp_content: |-
       テーブルゲームファンに特におすすめ！ブラックジャックやルーレット、バカラやビデオポーカーなど、バライティ豊かなゲームをと揃えています♪しかも、ライブカジノだから、リアルタイムでディーラーと対戦できるんです！
       実際にチャットを通じて会話までできちゃうので、まるで海外カジノのテーブルに座り、実際にディーラーと対戦してるかのような感覚を味わえます！
       なかには、本場の海外カジノから直接配信されているテーブルもあるんです！日本に居ながらにして本場カジノがお手軽に体験できちゃう、オンラインカジノならではのライブゲームはクセになること間違いなし★
-  - usp_title: 素晴らしいスロットの数々
+  - usp_title: モバイル・カジノ
     usp_content: |-
-      リムジンに乗り込み、シャンパンの栓を抜くことを想像しながら、人気スロットゲームをプレイし始めませんか？パチスロ風スロットの元祖、Hawaiian
-      Dream、クレイジーなゲーム体験を求めて宇宙に旅立つStarburst、さらに一攫千金ジャックポットゲームなど。今すぐプレイして、お気に入りゲームを見つけてみてください！もちろん、パソコン、モバイルなど、利用端末に関わらず、いつでもどこでも最高のゲームをお楽しみいただけます！
-  - usp_title: ライブチャット＆Eメール日本語サポート
+      ベラジョンでは、パソコン版と変わらない最高のカジノ体験を、そっくりそのままモバイル版でもお楽しみいただけます! リアルタイムでディーラーと繋がるライブカジノを電車の中で、エキサイティングなスロットゲームを外出中に、いつでもどこでもお好きなゲームを快適な環境で遊べるのが、ベラジョンのモバイル・カジノです！
+  - usp_title: ライブチャットおよびEメールによる日本語サポート
     usp_content: |-
-      ベラジョンの日本語カスタマーサポートは、迅速かつ丁寧！何かお困りのことがありましたら、お気軽にお問い合わせください♪
-      多くのプレイヤーからお寄せいただく質問は、ヘルプ・センタ―のよくある質問(FAQ)または「ヘルプ」よりご確認いただけます。
+      ベラジョンの日本語カスタマーサポートは、迅速かつ丁寧! 何かお困りのことがありましたら、お気軽にお問い合わせください♪ 多くのプレイヤーからお寄せいただく質問は、ヘルプ・センタ―のよくある質問(FAQ)または「ヘルプ」よりご確認いただけます。
   - usp_title: ものの5分でスピーディー! 今すぐ登録しよう!
     usp_content: |-
       最高の環境が整ったベラジョンオンラインカジノに登録するなら今でしょ！
       しかも、ベラジョンでの初めてのご入金時には、勝負金が2倍になる★初回入金ボーナス★が、最大$500までもらえます！
-      安心・安全・楽しいベラジョンカジノで、今日こそカジノライフをスタートしちゃいましょう！グッドラック！
+      安心・安全・楽しいベラジョンカジノで、今日こそカジノライフをスタートしちゃいましょう! グッドラック
 ---
 <section>
   <div>

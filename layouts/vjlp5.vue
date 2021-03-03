@@ -33,11 +33,17 @@
                   {{ data_items.attributes.promo_banner.second_title }}
                 </h1>
               </div>
-              <button v-if="data_items.attributes.promo_banner.promo_join_button_location != 'hidden'" id="banner-button" class="error">
-                <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url">
-                  <strong>{{ data_items.attributes.promo_banner.promo_join_button }}</strong>
-                </a>
-              </button>
+              <div
+                v-if="data_items.attributes.promo_banner.promo_join_button_location !=='hidden'"
+                id="banner-button"
+                :class="data_items.attributes.promo_banner.promo_join_button_location"
+              >
+                <button class="error">
+                  <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url">
+                    <strong>{{ data_items.attributes.promo_banner.promo_join_button }}</strong>
+                  </a>
+                </button>
+              </div>
             </div>
           </div>
         </section>
@@ -61,7 +67,7 @@
             <div>
               <div v-for="(first_section, first_index) in data_items.attributes.first_section" :key="first_index">
                 <h2>{{ first_section.first_section_title }}</h2>
-                <p>{{ first_section.first_section_description }}</p>
+                <p v-html="nextlineToBr(first_section.first_section_description)" />
               </div>
 
               <div class="separator" />
@@ -74,14 +80,14 @@
             <div>
               <div v-for="(usp_left, second_left_index) in data_items.attributes.usp_left" :key="second_left_index">
                 <h2>{{ usp_left.usp_title }}</h2>
-                <p>{{ usp_left.usp_content }}</p>
+                <p v-html="nextlineToBr(usp_left.usp_content)" />
               </div>
             </div>
 
             <div>
               <div v-for="(usp_right, second_right_index) in data_items.attributes.usp_right" :key="second_right_index">
                 <h2>{{ usp_right.usp_title }}</h2>
-                <p>{{ usp_right.usp_content }}</p>
+                <p v-html="nextlineToBr(usp_right.usp_content)" />
               </div>
             </div>
           </div>
@@ -191,6 +197,15 @@ export default {
         this.second_title = item.attributes.promo_banner.second_title
         this.phrase = item.attributes.promo_banner.phrase
       })
+    },
+    nextlineToBr (paragraphs = '') {
+      return paragraphs.split(/\r?\n/).map((sentence) => {
+        return paragraphs.slice(-1) === '\\'
+          ? paragraphs.substring(0, paragraphs.length - 1)
+          : sentence
+      }).reduce((oldVal, newVal) => {
+        return oldVal + '<br />' + newVal
+      })
     }
   }
 }
@@ -198,6 +213,7 @@ export default {
 
 <style lang="scss">
   .vjlp5_wrapper {
+    @import '@/assets/sass/base/style.scss';
     @import '@/assets/sass/vjlp5/style.scss';
   }
 </style>

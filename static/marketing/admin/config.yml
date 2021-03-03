@@ -323,7 +323,7 @@ collections:
           - label: "Country Code"
             name: "promo_country_code"
             widget: "select"
-            default: ["jp"]
+            default: "jp"
             options:
               - { label: "Japan", value: "jp" }
               - { label: "Sweden", value: "se" }
@@ -331,7 +331,7 @@ collections:
           - label: "Language Code"
             name: "promo_language_code"
             widget: "select"
-            default: ["ja"]
+            default: "ja"
             options:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
@@ -341,9 +341,9 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false}
-          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false}
-          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false}
+          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false, default: "UA-142143961-1"}
+          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
+          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
       - label: "Styles"
         name: "styles"
         widget: "select"
@@ -369,7 +369,6 @@ collections:
           - {label: "Banner second title", name: "second_title", widget: "string"}
           - {label: "Login Button", name: promo_login_button, widget: "string"}
           - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
-          - {label: "Join Button", name: banner_promo_join_button, widget: "string"}
           - {label: "Join Button", name: promo_join_button, widget: "string"}
           - label: "Join Button Location"
             name: "promo_join_button_location"
@@ -421,22 +420,22 @@ collections:
         widget: "list"
         collapsed: true
         fields:
-          - {label: "Title", name: "first_section_title", widget: "string"}
-          - {label: "Description", name: "first_section_description", widget: "string"}
+          - {label: "Title", name: "first_section_title", widget: "string", default: "Title"}
+          - {label: "Description", name: "first_section_description", widget: "text", default: "Description"}
       - label: "USP Left"
         name: "usp_left"
         widget: "list"
         collapsed: true
         fields:
-          - {label: "USP Title", name: "usp_title", widget: "string"}
-          - {label: "USP Content", name: "usp_content", widget: "string"}
+          - {label: "USP Title", name: "usp_title", widget: "string", default: "USP Left Title"}
+          - {label: "USP Content", name: "usp_content", widget: "text", default: "USP Left Description"}
       - label: "USP Right"
         name: "usp_right"
         widget: "list"
         collapsed: true
         fields:
-          - {label: "USP Title", name: "usp_title", widget: "string"}
-          - {label: "USP Content", name: "usp_content", widget: "string"}
+          - {label: "USP Title", name: "usp_title", widget: "string", default: "USP Right Title"}
+          - {label: "USP Content", name: "usp_content", widget: "text", default: "USP Right Description"}
       - label: Body
         name: body
         widget: markdown

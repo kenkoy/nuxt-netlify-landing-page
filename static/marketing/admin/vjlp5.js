@@ -26,6 +26,17 @@ export const VJLP5_PREVIEW = createClass({
     return { __html: title }
   },
 
+  nextlineToBr (paragraphs = '') {
+    const text = paragraphs.split(/\r?\n/).map((sentence) => {
+      return paragraphs.slice(-1) === '\\'
+        ? paragraphs.substring(0, paragraphs.length - 1)
+        : sentence
+    }).reduce((oldVal, newVal) => {
+      return oldVal + '<br />' + newVal
+    })
+    return { __html: text }
+  },
+
   buttonLocation (style) {
     return style.toString()
   },
@@ -35,6 +46,10 @@ export const VJLP5_PREVIEW = createClass({
     const banner = widgetsFor('promo_banner')
     const locale = widgetsFor('promo_locale')
     const version = widgetsFor('styles').getIn(['data'])
+
+    const firstData = widgetsFor('first_section')
+    const uspLeftData = widgetsFor('usp_left')
+    const uspRightData = widgetsFor('usp_right')
 
     const buttonLocation = banner.getIn(['data', 'promo_join_button_location'])
     let joinBtnStyle = ''
@@ -91,10 +106,6 @@ export const VJLP5_PREVIEW = createClass({
       }))
     }
 
-    const firstData = widgetsFor('first_section')
-    const uspLeftData = widgetsFor('usp_left')
-    const uspRightData = widgetsFor('usp_right')
-
     return (html`
       <body class="vjlp5_wrapper core-wrapper">
         <div
@@ -125,16 +136,22 @@ export const VJLP5_PREVIEW = createClass({
               <div class="container">
                 <div>
                   <div class="banner">
-                    <h1 dangerouslySetInnerHTML='${bannerTitle}'></h1>
-                    <h1>${banner.getIn(['data', 'second_title'])}</h1>
+                    ${widgetsFor('promo_banner').getIn(['data', 'first_title']) !== ''
+                    ? html`<h1 dangerouslySetInnerHTML='${bannerTitle}'></h1>`
+                    : ''}
+
+                    ${widgetsFor('promo_banner').getIn(['data', 'second_title']) !== ''
+                    ? html`<h1>${banner.getIn(['data', 'second_title'])}</h1>`
+                    : ''}
                   </div>
 
 
                   ${widgetsFor('promo_banner').getIn(['data', 'promo_join_button_location']) === 'hidden'
                     ? ''
-                    : html`<button id="banner-button" class="error ${joinBtnStyle}">
-                            <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
-                          </button>`}
+                    : html`
+                      <button id="banner-button" class="error ${joinBtnStyle}">
+                        <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
+                      </button>`}
                 </div>
               </div>
             </section>
@@ -150,7 +167,7 @@ export const VJLP5_PREVIEW = createClass({
                       html`
                       <div>
                         <h2>${sect.getIn(['data', 'first_section_title'])}</h2>
-                        <p>${sect.getIn(['data', 'first_section_description'])}</p>
+                        <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'first_section_description']))}'/>
                       </div>
                       `
                     )}
@@ -166,7 +183,7 @@ export const VJLP5_PREVIEW = createClass({
                     html`
                     <div>
                       <h2>${sect.getIn(['data', 'usp_title'])}</h2>
-                      <p>${sect.getIn(['data', 'usp_content'])}</p>
+                      <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'usp_content']))}'/>
                     </div>
                     `
                   )}
@@ -177,7 +194,7 @@ export const VJLP5_PREVIEW = createClass({
                       html`
                       <div>
                         <h2>${sect.getIn(['data', 'usp_title'])}</h2>
-                        <p>${sect.getIn(['data', 'usp_content'])}</p>
+                          <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'usp_content']))}'/>
                       </div>
                       `
                     )}

@@ -100,3 +100,30 @@
           }
       }
   }
+
+  .version1 {
+      button {
+          &.warning {
+              display: inline-block;
+          }
+      }
+
+      h2 {
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+    #section1 {
+        h2 {
+            font-size: 1.5em;
+        }
+    }
+
+  }
+
+  .version2 {
+      button {
+          &.warning {
+              display: none;
+          }
+      }
+  }
