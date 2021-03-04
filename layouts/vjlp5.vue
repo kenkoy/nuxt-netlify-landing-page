@@ -68,6 +68,8 @@
               <div v-for="(first_section, first_index) in data_items.attributes.first_section" :key="first_index">
                 <h2>{{ first_section.first_section_title }}</h2>
                 <p v-html="nextlineToBr(first_section.first_section_description)" />
+                <p v-html="textLink.toString()" v-if="additional_links"></p>
+
               </div>
 
               <div class="separator" />
@@ -148,7 +150,9 @@ export default {
 
       first_title: '',
       second_title: '',
-      phrase: ''
+      phrase: '',
+
+      additional_links: ''
     }
   },
   head () {
@@ -177,6 +181,18 @@ export default {
         return output
       }
       return this.first_title
+    },
+
+    textLink () {
+      return this.additional_links.map((item) => {
+        if (item.text_link) {
+          const position = item.text.indexOf(item.text_link)
+          const text = `<a href=${item.link}>${item.text_link}</a>`
+          const output = [item.text.slice(0, position), text, item.text.slice(position, 0)].join(' ')
+          return `<p style="margin: 0">${output}</p>`
+        }
+        return item.text
+      }).join(' ')
     }
   },
   methods: {
@@ -196,6 +212,7 @@ export default {
         this.first_title = item.attributes.promo_banner.first_title
         this.second_title = item.attributes.promo_banner.second_title
         this.phrase = item.attributes.promo_banner.phrase
+        this.additional_links = item.attributes.additional_links
       })
     },
     nextlineToBr (paragraphs = '') {
