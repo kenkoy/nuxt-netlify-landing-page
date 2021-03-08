@@ -145,6 +145,8 @@ export default {
       desktop: '',
       tablet: '',
       mobile: '',
+      desktop_width_banner: '',
+      mobile_width_banner: '',
 
       first_title: '',
       second_title: '',
@@ -166,7 +168,9 @@ export default {
       return {
         '--bg-image': `url('${this.desktop}')`,
         '--bg-image-m': `url('${this.mobile}')`,
-        '--bg-banner': `url('${this.tablet}')`
+        '--bg-banner': `url('${this.tablet}')`,
+        '--desktop-width-banner': this.desktop_width_banner ? 'cover' : 'contain',
+        '--mobile-width-banner': this.mobile_width_banner ? 'cover' : 'contain'
       }
     },
     bannerTitle () {
@@ -192,6 +196,8 @@ export default {
         this.desktop = item.attributes.promo_banner.promo_images.promo_bg_desktop
         this.tablet = item.attributes.promo_banner.promo_images.promo_bg_banner
         this.mobile = item.attributes.promo_banner.promo_images.promo_bg_mobile
+        this.desktop_width_banner = item.attributes.promo_banner.desktop_full
+        this.mobile_width_banner = item.attributes.promo_banner.mobile_full
 
         this.first_title = item.attributes.promo_banner.first_title
         this.second_title = item.attributes.promo_banner.second_title

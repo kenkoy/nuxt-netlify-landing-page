@@ -12,6 +12,8 @@ template: game_slider
 promo_banner:
   banner_promo_join_button: ''
   promo_title: aff-livecasinov2
+  desktop_full: false
+  mobile_full: false
   promo_images:
     promo_bg_desktop: /marketing/img/bg-dt.jpg
     promo_bg_mobile: /marketing/img/bg-mob.jpg
@@ -57,7 +59,7 @@ first_section:
       バトルドワーフ- コチラ
       ゴールデンドリーム- コチラ
       ハワイアンドリームX’mas- コチラ
-      さぁ、日本No.1オンラインカジノのベラジョンで今をときめく最先端のパチスロ型スロットを堪能しましょう‼ 
+      さぁ、日本No.1オンラインカジノのベラジョンで今をときめく最先端のパチスロ型スロットを堪能しましょう‼
 usp_left:
   - usp_title: 入金不要30ドルがもらえる上に、勝負金が2倍に！30ドルプレゼント＋最高500ドルの初回入金ボーナスでお得にプレイ♪
     usp_content: |-
@@ -134,4 +136,3 @@ usp_right:
     </ul>
   </dd>
 </dl>
-          

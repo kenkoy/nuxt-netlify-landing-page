@@ -12,6 +12,8 @@ template: game_slider
 promo_banner:
   banner_promo_join_button: ''
   promo_title: 224-bvj-lan-jp-pro-top5games-0120
+  desktop_full: false
+  mobile_full: false
   promo_images:
     promo_bg_desktop: /marketing/img/new-top-5-games-banner-2-d.png
     promo_bg_mobile: /marketing/img/new-top-5-games-banner-2-m.png

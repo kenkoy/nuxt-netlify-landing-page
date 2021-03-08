@@ -11,6 +11,8 @@ styles: version2
 template: steps
 promo_banner:
   promo_title: 1636-bvj-lan-jp-pro-tkkn-v2-0221
+  desktop_full: false
+  mobile_full: false
   promo_images:
     promo_bg_desktop: /marketing/img/dsgn-1636-vj-lp5-bg-image-1000x350.png
     promo_bg_mobile: /marketing/img/dsgn-1636-vj-lp5-bg-image-m-375x400.png

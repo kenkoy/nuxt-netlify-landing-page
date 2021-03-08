@@ -12,6 +12,8 @@ template: game_slider
 promo_banner:
   banner_promo_join_button: ''
   promo_title: 289-bvj-lan-jp-pro-instantsports-0420
+  desktop_full: false
+  mobile_full: false
   promo_images:
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
     promo_bg_desktop: /marketing/img/virtual-instant-sports-banner-2-d.png

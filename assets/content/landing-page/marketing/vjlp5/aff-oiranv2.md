@@ -12,6 +12,8 @@ template: game_slider
 promo_banner:
   banner_promo_join_button: ''
   promo_title: aff-oiranv2
+  desktop_full: false
+  mobile_full: false
   promo_images:
     promo_bg_desktop: /marketing/img/banner-dt.png
     promo_bg_mobile: /marketing/img/banner-mob.png

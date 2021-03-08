@@ -12,6 +12,8 @@ template: game_slider
 promo_banner:
   banner_promo_join_button: ''
   promo_title: aff-hd-pachinko
+  desktop_full: false
+  mobile_full: false
   promo_images:
     promo_bg_desktop: /marketing/img/hd-pachinko-v1-banner-2-d.png
     promo_bg_mobile: /marketing/img/hd-pachinko-v1-banner-2-m.png
@@ -47,7 +49,7 @@ first_section:
   - first_section_title: 今超話題のパチスロ型スロットを遊んでみよう‼
     first_section_description: |-
       パチスロとカジノスロットって実はとても似てるんです!しかも統計的にはなんと還元率はパチンコ、パチスロよりもはるかに高い！?パチスロの一般的な還元率は約80%と言われています。カジノスロットだとなんと最低でも「95％」はあるんです‼
-      はい、もうやってみたくなりましたよね? なんと今なら無料で体験プレイが可能。しかもパチスロでもおなじみなゲーム概要がこの下からすべてチェックすることができちゃいます！ 
+      はい、もうやってみたくなりましたよね? なんと今なら無料で体験プレイが可能。しかもパチスロでもおなじみなゲーム概要がこの下からすべてチェックすることができちゃいます！
 
       ゲーム概要一覧
 
@@ -55,7 +57,7 @@ first_section:
       バトルドワーフ- コチラ
       ゴールデンドリーム- コチラ
       ハワイアンドリームX’mas- コチラ
-      さぁ、日本No.1オンラインカジノのベラジョンで今をときめく最先端のパチスロ型スロットを堪能しましょう‼ 
+      さぁ、日本No.1オンラインカジノのベラジョンで今をときめく最先端のパチスロ型スロットを堪能しましょう‼
 usp_left:
   - usp_title: 勝負金が2倍! 最高$500初回入金ボーナスをもらってお得にプレイ！
     usp_content: |-

@@ -11,6 +11,8 @@ styles: version1
 template: game_slider
 promo_banner:
   promo_title: 105-vj-lan-jp-pro-mobile-homepage-a-1219
+  desktop_full: false
+  mobile_full: false
   promo_images:
     promo_bg_desktop: /marketing/img/digital-welcomeoffer-mob-cta-1000x300-a_nocta.png
     promo_bg_mobile: /marketing/img/digital-welcomeoffer-mob-cta-767x493-b_nocta.png

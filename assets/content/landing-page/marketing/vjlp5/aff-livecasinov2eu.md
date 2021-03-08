@@ -12,6 +12,8 @@ template: game_slider
 promo_banner:
   banner_promo_join_button: ''
   promo_title: aff-livecasinov2eu
+  desktop_full: false
+  mobile_full: false
   promo_images:
     promo_bg_desktop: /marketing/img/329-bg.png
     promo_bg_mobile: /marketing/img/329-bg-m.png
