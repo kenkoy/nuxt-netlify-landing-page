@@ -28,8 +28,8 @@
           <div class="container">
             <div>
               <div class="banner">
-                <h1 v-if="first_title" v-html="bannerTitle" />
-                <h1 v-if="second_title">
+                <h1 v-if="firstTitle" v-html="bannerTitle" />
+                <h1 v-if="secondTitle">
                   {{ data_items.attributes.promo_banner.second_title }}
                 </h1>
               </div>
@@ -145,11 +145,11 @@ export default {
       desktop: '',
       tablet: '',
       mobile: '',
-      desktop_width_banner: '',
-      mobile_width_banner: '',
+      desktopWidthBanner: '',
+      mobileWidthBanner: '',
 
-      first_title: '',
-      second_title: '',
+      firstTitle: '',
+      secondTitle: '',
       phrase: ''
     }
   },
@@ -169,18 +169,18 @@ export default {
         '--bg-image': `url('${this.desktop}')`,
         '--bg-image-m': `url('${this.mobile}')`,
         '--bg-banner': `url('${this.tablet}')`,
-        '--desktop-width-banner': this.desktop_width_banner ? 'cover' : 'contain',
-        '--mobile-width-banner': this.mobile_width_banner ? 'cover' : 'contain'
+        '--desktop-width-banner': this.desktopWidthBanner ? 'cover' : 'contain',
+        '--mobile-width-banner': this.mobileWidthBanner ? 'cover' : 'contain'
       }
     },
     bannerTitle () {
       if (this.phrase) {
-        const position = this.first_title.indexOf(this.phrase)
+        const position = this.firstTitle.indexOf(this.phrase)
         const text = `<span>${this.phrase}</span>`
-        const output = [this.first_title.slice(0, position), text, this.first_title.slice(position, 0)].join('')
+        const output = [this.firstTitle.slice(0, position), text, this.firstTitle.slice(position, 0)].join('')
         return output
       }
-      return this.first_title
+      return this.firstTitle
     }
   },
   methods: {
@@ -196,11 +196,11 @@ export default {
         this.desktop = item.attributes.promo_banner.promo_images.promo_bg_desktop
         this.tablet = item.attributes.promo_banner.promo_images.promo_bg_banner
         this.mobile = item.attributes.promo_banner.promo_images.promo_bg_mobile
-        this.desktop_width_banner = item.attributes.promo_banner.desktop_full
-        this.mobile_width_banner = item.attributes.promo_banner.mobile_full
+        this.desktopWidthBanner = item.attributes.promo_banner.desktop_full
+        this.mobileWidthBanner = item.attributes.promo_banner.mobile_full
 
-        this.first_title = item.attributes.promo_banner.first_title
-        this.second_title = item.attributes.promo_banner.second_title
+        this.firstTitle = item.attributes.promo_banner.first_title
+        this.secondTitle = item.attributes.promo_banner.second_title
         this.phrase = item.attributes.promo_banner.phrase
       })
     },
