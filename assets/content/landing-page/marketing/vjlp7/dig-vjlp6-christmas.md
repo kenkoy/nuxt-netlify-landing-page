@@ -1,5 +1,5 @@
 ---
-slug_name: 296-bvj-lan-jp-pro-hdnight-1220
+slug_name: DIG-VJLP6-Christmas
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -16,8 +16,8 @@ promo_banner:
   desktop_full: false
   mobile_full: false
   promo_images:
-    promo_bg_desktop: /marketing/img/bg_hdnight.jpg
-    promo_bg_mobile: /marketing/img/bg_m_hdnight.jpg
+    promo_bg_desktop: /marketing/img/dsgn-1567-vjlp1-dt.jpg
+    promo_bg_mobile: /marketing/img/xmas-vj.jpg
   promo_terms_link_text:
     - 利用規約
   promo_render_title_first: true
@@ -48,12 +48,6 @@ game_images:
   game_icon_5: /marketing/img/payment-option.png
 promo_template: VJLP6-NoForm
 ---
-<section id="terms" class="section5">
-
-<div class="container">
-
-<div>
-
 <h3>ビギナーズボーナス利用規約</h3>
 
 <ol>
@@ -113,9 +107,3 @@ promo_template: VJLP6-NoForm
 <li>ベラジョンはいかなるときも通告なしでこのキャンペーンを変更、終了できる権利を有します。</li>
 
 </ol>
-
-</div>
-
-</div>
-
-</section>

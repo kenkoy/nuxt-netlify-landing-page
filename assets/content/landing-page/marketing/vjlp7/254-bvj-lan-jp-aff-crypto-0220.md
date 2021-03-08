@@ -25,6 +25,8 @@ promo_banner:
     - 利用規約
     - キャンペーン一般利用規約
   promo_terms_text: 通常の利用規約とキャンペーン一般利用規約が適用されます。
+  desktop_full: false
+  mobile_full: false
   promo_images:
     promo_bg_desktop: /marketing/img/crypto_bg.jpg
     promo_bg_mobile: /marketing/img/crypto_bg_m.jpg

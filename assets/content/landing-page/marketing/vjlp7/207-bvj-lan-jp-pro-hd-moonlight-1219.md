@@ -25,6 +25,8 @@ promo_banner:
   promo_terms_link_text:
     - 利用規約
   promo_terms_text: 利用規約に同意します。
+  desktop_full: false
+  mobile_full: false
   promo_images:
     promo_bg_desktop: /marketing/img/hd-moonlight_bg.jpg
     promo_bg_mobile: /marketing/img/hd-moonlight_bg_m.jpg

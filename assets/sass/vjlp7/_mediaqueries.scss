@@ -66,7 +66,7 @@
   }
   #hero{
     background: var(--bg-image-m) no-repeat center;
-    background-size: cover;
+    background-size: var(--mobile-width-banner);
     padding: 0 10px;
 
     .container{
@@ -138,7 +138,7 @@
   }
   #hero{
     background: var(--bg-image) no-repeat center;
-    background-size: cover;
+    background-size: var(--mobile-width-banner);
 
     // .container{
     //   min-height: 500px;
@@ -214,6 +214,9 @@
   section,
   footer{
     padding: 30px 0;
+  }
+  #hero{
+    background-size: var(--desktop-width-banner);
   }
 }
 

@@ -18,6 +18,8 @@ promo_banner:
   promo_title_highlighted:
     - $500
     - 100%入金ボーナス
+  desktop_full: false
+  mobile_full: false
   promo_images:
     promo_bg_desktop: /marketing/img/card-master-blosson_bg.jpg
     promo_bg_mobile: /marketing/img/card-master-blossom_bg_m.jpg
