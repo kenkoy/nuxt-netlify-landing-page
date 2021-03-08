@@ -16,7 +16,7 @@ promo_banner:
     promo_bg_mobile: /marketing/img/digital-welcomeoffer-mob-cta-767x493-b_nocta.png
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
   first_title: " "
-  mobile_full: false
+  mobile_full: true
   second_title: " "
   desktop_full: true
   promo_login_button_redirect_url: https://verajohn.com/#join
