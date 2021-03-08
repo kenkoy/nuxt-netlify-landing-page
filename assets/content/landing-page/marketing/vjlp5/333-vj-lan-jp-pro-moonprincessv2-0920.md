@@ -12,13 +12,13 @@ template: game_slider
 promo_banner:
   banner_promo_join_button: ''
   promo_title: 333-vj-lan-jp-pro-moonprincessv2-0920
-  desktop_full: false
-  mobile_full: false
   promo_images:
     promo_bg_desktop: /marketing/img/333-bg.png
     promo_bg_mobile: /marketing/img/333-bg-m.png
   first_title: ''
   second_title: ''
+  desktop_full: false
+  mobile_full: false
   promo_title_display: false
   promo_login_button_redirect_url: 'https://verajohn.com/#join'
   promo_join_button_redirect_url: 'https://verajohn.com/#join'

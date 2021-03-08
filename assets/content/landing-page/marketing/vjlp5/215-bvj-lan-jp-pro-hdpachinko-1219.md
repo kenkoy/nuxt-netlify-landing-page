@@ -12,14 +12,14 @@ template: game_slider
 promo_banner:
   banner_promo_join_button: ''
   promo_title: 215-bvj-lan-jp-pro-hdpachinko-1219
-  desktop_full: false
-  mobile_full: false
   promo_images:
     promo_bg_desktop: /marketing/img/hd-pachinko-v1-banner-2-d.png
     promo_bg_mobile: /marketing/img/hd-pachinko-v1-banner-2-m.png
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
   first_title: ''
   second_title: ''
+  desktop_full: false
+  mobile_full: false
   promo_title_display: false
   promo_login_button_redirect_url: 'https://casino.verajohn.com/#signin'
   promo_join_button_redirect_url: 'https://casino.verajohn.com/#join'

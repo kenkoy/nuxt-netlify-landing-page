@@ -11,14 +11,14 @@ styles: version2
 template: steps
 promo_banner:
   promo_title: DIG-VJLP5-Christmas
-  desktop_full: false
-  mobile_full: false
   promo_images:
     promo_bg_desktop: /marketing/img/dsgn-1567-bg-vjlp2-dt.png
     promo_bg_mobile: /marketing/img/dsgn-1567-vjlp2-mob.png
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
   first_title: '  '
   second_title: ' '
+  desktop_full: false
+  mobile_full: false
   promo_login_button_redirect_url: 'https://verajohn.com/#join'
   promo_join_button_redirect_url: 'https://verajohn.com/#join'
   promo_join_button: 入金ボーナス獲得する

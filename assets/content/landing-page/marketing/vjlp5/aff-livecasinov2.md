@@ -12,14 +12,14 @@ template: game_slider
 promo_banner:
   banner_promo_join_button: ''
   promo_title: aff-livecasinov2
-  desktop_full: false
-  mobile_full: false
   promo_images:
     promo_bg_desktop: /marketing/img/bg-dt.jpg
     promo_bg_mobile: /marketing/img/bg-mob.jpg
     promo_bg_banner: /marketing/img/vjlp3-black-red-bg.jpg
   first_title: ''
   second_title: ''
+  desktop_full: false
+  mobile_full: false
   promo_title_display: false
   promo_login_button_redirect_url: 'https://verajohn.com/?member=SRSW30v56&profile=DZpvIjV#join'
   promo_join_button_redirect_url: 'https://verajohn.com/?member=SRSW30v56&profile=DZpvIjV#join'

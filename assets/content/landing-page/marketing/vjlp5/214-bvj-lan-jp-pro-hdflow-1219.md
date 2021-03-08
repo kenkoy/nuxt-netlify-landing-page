@@ -18,7 +18,7 @@ promo_banner:
     promo_bg_mobile: /marketing/img/hd-pachinko-v2-banner-2-m.png
   first_title: ''
   second_title: ''
-  desktop_full: true
+  desktop_full: false
   mobile_full: false
   promo_title_display: false
   promo_login_button_redirect_url: 'https://casino.verajohn.com/#signin'

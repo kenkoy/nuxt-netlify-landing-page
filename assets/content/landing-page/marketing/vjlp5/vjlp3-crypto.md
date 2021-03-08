@@ -12,14 +12,14 @@ template: game_slider
 promo_banner:
   banner_promo_join_button: ''
   promo_title: vjlp3-crypto
-  desktop_full: false
-  mobile_full: false
   promo_images:
     promo_bg_desktop: /marketing/img/dsgn-1306-bg-vjlp2-dt.png
     promo_bg_mobile: /marketing/img/dsgn-1306-vjlp2-mob.png
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
   first_title: ''
   second_title: ''
+  desktop_full: false
+  mobile_full: false
   promo_title_display: false
   promo_login_button_redirect_url: 'https://www.verajohn.com/#join'
   promo_join_button_redirect_url: 'https://www.verajohn.com/#join'
