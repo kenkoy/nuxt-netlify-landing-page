@@ -636,6 +636,12 @@ collections:
             summary: '{{field.text}}'
             required: false
             field: {label: Text, name: text, widget: string}
+          - label: "Desktop banner size cover"
+            name: "desktop_full"
+            widget: "boolean"
+          - label: "Mobile banner size cover"
+            name: "mobile_full"
+            widget: "boolean"
           - label: "Images"
             name: "promo_images"
             widget: "object"

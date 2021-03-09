@@ -93,7 +93,9 @@ export const VJLP7_PREVIEW = createClass({
     const imageBG = {
       '--bg-image': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_desktop'])}')`,
       '--bg-image-m': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_mobile'])}')`,
-      '--bg-banner': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_banner'])}')`
+      '--bg-banner': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_banner'])}')`,
+      '--desktop-width-banner': banner.getIn(['data', 'desktop_full']) ? 'cover' : 'contain',
+      '--mobile-width-banner': banner.getIn(['data', 'mobile_full']) ? 'cover' : 'contain',
     }
 
     const termsText = this.formatTerms(
@@ -142,64 +144,65 @@ export const VJLP7_PREVIEW = createClass({
 
     return (html`
       <body
-        class="vjlp7-main"
-        style="${imageBG}"
-        className="${version}"
+        class="vjlp7_wrapper core-wrapper"
       >
-        <section id="hero">
-          <div class="container">
-            <div id="hero-text-wrapper">
-              <div>
-                <div id="login" class="animated">
-                  <div class="fadeIn animated">
-                    <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}">
-                      <i class="material-icons">exit_to_app</i>
-                      <span>${banner.getIn(['data', 'promo_login_button'])}</span>
-                    </a>
+        <div class="vjlp7-main">
+          <div className="${version}" style="${imageBG}">
+            <section id="hero">
+              <div class="container">
+                <div id="hero-text-wrapper">
+                  <div>
+                    <div id="login" class="animated">
+                      <div class="fadeIn animated">
+                        <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}">
+                          <i class="material-icons">exit_to_app</i>
+                          <span>${banner.getIn(['data', 'promo_login_button'])}</span>
+                        </a>
+                      </div>
+                    </div>
+                    <img class="logo" src="/marketing/img/vjlp7/logo.png" alt="verajohn logo"></img>
+                    <div dangerouslySetInnerHTML='${bannerTexts}'></div>
+                    <button class="animated infinite pulse">
+                      <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
+                        ${banner.getIn(['data', 'promo_join_button'])}
+                      </a>
+                    </button>
+                    <div>
+                      <small dangerouslySetInnerHTML='${termsText}'></small>
+                    </div>
                   </div>
                 </div>
-                <img class="logo" src="/marketing/img/vjlp7/logo.png" alt="verajohn logo"></img>
-                <div dangerouslySetInnerHTML='${bannerTexts}'></div>
-                <button class="animated infinite pulse">
-                  <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
-                    ${banner.getIn(['data', 'promo_join_button'])}
-                  </a>
-                </button>
+              </div>
+            </section>
+
+            ${widgetsFor('template').getIn(['data']) === 'steps'
+              ? html`<${STEPS} steps="${stepData}" />`
+              : html`<${GAME_SLIDER} games="${games}" />`}
+
+            <section id="payment" class="separator">
+              <div class="container">
+                <img class="desktop" src="/marketing/img/payment/payment_large_${country}.svg" alt="payment verajohn desktop"></img>
+                <img class="mobile" src="/marketing/img/payment/payment_${country}.svg" alt="payment verajohn mobile"></img>
+              </div>
+            </section>
+
+            <section id="terms" class="separator">
+              <div class="container">
                 <div>
-                  <small dangerouslySetInnerHTML='${termsText}'></small>
+                  <div>${body}</div>
+                  <ul>
+                    <li>
+                      通常の<a rel="noopener" href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a rel="noopener" href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
-        </section>
-
-        ${widgetsFor('template').getIn(['data']) === 'steps'
-          ? html`<${STEPS} steps="${stepData}" />`
-          : html`<${GAME_SLIDER} games="${games}" />`}
-
-        <section id="payment" class="separator">
-          <div class="container">
-            <img class="desktop" src="/marketing/img/payment/payment_large_${country}.svg" alt="payment verajohn desktop"></img>
-            <img class="mobile" src="/marketing/img/payment/payment_${country}.svg" alt="payment verajohn mobile"></img>
-          </div>
-        </section>
-
-        <section id="terms" class="separator">
-          <div class="container">
-            <div>
-              <div>${body}</div>
-              <ul>
-                <li>
-                  通常の<a rel="noopener" href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a rel="noopener" href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section class="separator">
-          <${FOOTER} landingPageType="verajohn" languageCode=${language} countryCode=${country} />
-        </section>
+          <section class="separator">
+            <${FOOTER} landingPageType="verajohn" languageCode=${language} countryCode=${country} />
+          </section>
+        </div>
       </body>
     `)
   }
