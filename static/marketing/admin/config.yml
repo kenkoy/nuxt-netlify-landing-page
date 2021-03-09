@@ -375,9 +375,8 @@ collections:
             widget: "select"
             default: ["hidden"]
             options:
-              - { label: "Upper Left", value: "upper-left" }
-              - { label: "Lower Right", value: "lower-right" }
-              - { label: "Hidden", value: "hidden" }
+              - { label: "Show", value: "show" }
+              - { label: "Hide", value: "hidden" }
           - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}
           - label: "Desktop banner size cover"
             name: "desktop_full"
