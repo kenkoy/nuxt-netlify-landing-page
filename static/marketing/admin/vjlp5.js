@@ -56,13 +56,7 @@ export const VJLP5_PREVIEW = createClass({
 
     if (buttonLocation === 'hidden') {
       joinBtnStyle = 'hidden'
-    } else if (buttonLocation === 'lower-right') {
-      joinBtnStyle = 'lower-right'
-    } else if (buttonLocation === 'upper-left') {
-      joinBtnStyle = 'upper-left'
-    } else {
-      joinBtnStyle = ''
-    }
+    } 
 
     const bannerTitle = this.formatTitle(
       banner.getIn(['data', 'first_title']),

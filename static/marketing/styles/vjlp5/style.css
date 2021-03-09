@@ -601,11 +601,11 @@ body.noScroll {
 .vjlp5_wrapper #hero .banner {
     left: 20%;
 }
-.vjlp5_wrapper #hero .upper-left {
+/* .vjlp5_wrapper #hero .upper-left {
     position: absolute;
     top: 10px;
     left: 0;
-}
+} */
 .vjlp5_wrapper #section3 .container {
     background: url(https://files.vjpromo.com/bannerflow/lp-core/pp/payment_large_jp.svg) center center no-repeat;
 }
@@ -626,10 +626,10 @@ body.noScroll {
 .vjlp5_wrapper #hero {
     background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), var(--bg-banner) center;
 }
-.vjlp5_wrapper #hero #banner-button {
+/* .vjlp5_wrapper #hero #banner-button {
     float: right;
     margin-bottom: 0;
-}
+} */
 .vjlp5_wrapper #steps .container > div {
     margin-top: 0;
 }
