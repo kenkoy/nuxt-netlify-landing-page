@@ -36,7 +36,6 @@
               <div
                 v-if="data_items.attributes.promo_banner.promo_join_button_location !=='hidden'"
                 id="banner-button"
-                :class="data_items.attributes.promo_banner.promo_join_button_location"
               >
                 <button class="error">
                   <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url">
