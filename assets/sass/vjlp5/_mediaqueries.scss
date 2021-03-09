@@ -211,6 +211,7 @@
      .container{
        background: var(--bg-image-m) no-repeat center;
        min-height: 650px;
+       background-size: cover;
      }
 
        .banner{
@@ -285,11 +286,6 @@
 
          .banner{
            left: 20%;
-         }
-         .upper-left {
-           position: absolute;
-           top: 10px;
-           left: 0;
          }
      }
      #section3{
