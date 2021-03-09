@@ -80,7 +80,7 @@ export const VJLP5_PREVIEW = createClass({
       '--bg-image-m': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_mobile'])}')`,
       '--bg-banner': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_banner'])}')`,
       '--desktop-width-banner': banner.getIn(['data', 'desktop_full']) ? 'cover' : 'contain',
-      '--mobile-width-banner': banner.getIn(['data', 'mobile_full']) ? 'cover' : 'contain',
+      '--mobile-width-banner': banner.getIn(['data', 'mobile_full']) ? 'cover' : 'contain'
     }
 
     const stepData = [{

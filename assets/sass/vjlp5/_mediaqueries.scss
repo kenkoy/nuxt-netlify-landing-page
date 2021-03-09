@@ -50,10 +50,6 @@
        margin: 15px 0;
        flex-grow: 0;
 
-      //  button:first-child{
-      //    display: none;
-      //  }
-
        > button{
          margin: 0 5px;
          font-size: 14px;
@@ -280,15 +276,6 @@
        }
      }
    }
-
-   #hero .banner + div{
-       justify-content: flex-end;
-       display: flex;
-
-       button{
-         margin: 0;
-       }
-   }
 }
 
 /* Medium Devices, Desktops */
@@ -333,15 +320,6 @@
    }
    #hero{
        background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)), var(--bg-banner) center;
-       // .container{
-       //   background: var(--bg-image) no-repeat center;
-       //   background-size: var(--desktop-width-banner);
-       // }
-
-       #banner-button{
-         float: right;
-         margin-bottom: 0;
-       }
    }
 
    #steps{
