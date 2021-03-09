@@ -14,8 +14,8 @@ promo_banner:
     最高$500までの
     100%入金ボーナス
     を獲得しよう!
-  desktop_full: false
-  mobile_full: false
+  desktop_full: true
+  mobile_full: true
   promo_images:
     promo_bg_desktop: /marketing/img/dsgn-1306-vjlp1-dt-v2.jpg
     promo_bg_mobile: /marketing/img/dsgn-1306-vjlp1-mob.jpg

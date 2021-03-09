@@ -13,8 +13,8 @@ promo_banner:
   promo_title: |-
     最大$1000の
     ビギナーズボーナス
-  desktop_full: false
-  mobile_full: false
+  desktop_full: true
+  mobile_full: true
   promo_images:
     promo_bg_desktop: /marketing/img/vjlp7.jpg
     promo_bg_mobile: /marketing/img/vjlp7bg_m.jpg

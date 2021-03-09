@@ -13,8 +13,8 @@ promo_banner:
   promo_title: |-
     最大$1000の
     ビギナーズボーナス
-  desktop_full: false
-  mobile_full: false
+  desktop_full: true
+  mobile_full: true
   promo_images:
     promo_bg_desktop: /marketing/img/dsgn-1763-vj-jp-cms-desktop-1920x1080.png
     promo_bg_mobile: /marketing/img/dsgn-1763-vj-jp-cms-mobile-767x800.png
