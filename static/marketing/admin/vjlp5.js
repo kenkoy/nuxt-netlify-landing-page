@@ -51,10 +51,10 @@ export const VJLP5_PREVIEW = createClass({
     const uspLeftData = widgetsFor('usp_left')
     const uspRightData = widgetsFor('usp_right')
 
-    const buttonLocation = banner.getIn(['data', 'promo_join_button_location'])
+    const buttonLocation = banner.getIn(['data', 'promo_join_button_option'])
     let joinBtnStyle = ''
 
-    if (buttonLocation === 'hidden') {
+    if (buttonLocation === true) {
       joinBtnStyle = 'hidden'
     } 
 
@@ -142,7 +142,7 @@ export const VJLP5_PREVIEW = createClass({
                   </div>
 
 
-                  ${widgetsFor('promo_banner').getIn(['data', 'promo_join_button_location']) === 'hidden'
+                  ${widgetsFor('promo_banner').getIn(['data', 'promo_join_button_option']) === 'hidden'
                     ? ''
                     : html`
                       <button id="banner-button" class="error ${joinBtnStyle}">

@@ -26,7 +26,7 @@ promo_banner:
   promo_join_button: 今すぐプレイ
   promo_login_button: 登録
   phrase: ''
-  promo_join_button_location: hidden
+  promo_join_button_option: true
 steps:
   step_title_1: ''
   step_description_1: ''

@@ -370,13 +370,10 @@ collections:
           - {label: "Login Button", name: promo_login_button, widget: "string"}
           - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
           - {label: "Join Button", name: promo_join_button, widget: "string"}
-          - label: "Join Button Location"
-            name: "promo_join_button_location"
-            widget: "select"
-            default: ["hidden"]
-            options:
-              - { label: "Show", value: "show" }
-              - { label: "Hide", value: "hidden" }
+          - label: "Show Button"
+            name: "promo_join_button_option"
+            widget: "boolean"
+            default: true
           - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}
           - label: "Desktop banner size cover"
             name: "desktop_full"
