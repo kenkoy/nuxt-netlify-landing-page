@@ -18,6 +18,8 @@ promo_banner:
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
   first_title: ''
   second_title: ''
+  desktop_full: false
+  mobile_full: false
   promo_title_display: false
   promo_login_button_redirect_url: 'https://www.verajohn.com/#join'
   promo_join_button_redirect_url: 'https://www.verajohn.com/#join'

@@ -17,6 +17,8 @@ promo_banner:
     promo_bg_banner: /marketing/img/dsgn-1636-vj-lp5-bg-banner-3840x908.png
   first_title: ' '
   second_title: ' '
+  desktop_full: false
+  mobile_full: false
   promo_login_button_redirect_url: 'https://verajohn.com/#join'
   promo_join_button_redirect_url: 'https://verajohn.com/#join'
   promo_join_button: 入金ボーナス獲得する

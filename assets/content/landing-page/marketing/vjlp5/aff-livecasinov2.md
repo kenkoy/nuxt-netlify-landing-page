@@ -18,6 +18,8 @@ promo_banner:
     promo_bg_banner: /marketing/img/vjlp3-black-red-bg.jpg
   first_title: ''
   second_title: ''
+  desktop_full: false
+  mobile_full: false
   promo_title_display: false
   promo_login_button_redirect_url: 'https://verajohn.com/?member=SRSW30v56&profile=DZpvIjV#join'
   promo_join_button_redirect_url: 'https://verajohn.com/?member=SRSW30v56&profile=DZpvIjV#join'
@@ -57,7 +59,7 @@ first_section:
       バトルドワーフ- コチラ
       ゴールデンドリーム- コチラ
       ハワイアンドリームX’mas- コチラ
-      さぁ、日本No.1オンラインカジノのベラジョンで今をときめく最先端のパチスロ型スロットを堪能しましょう‼ 
+      さぁ、日本No.1オンラインカジノのベラジョンで今をときめく最先端のパチスロ型スロットを堪能しましょう‼
 usp_left:
   - usp_title: 入金不要30ドルがもらえる上に、勝負金が2倍に！30ドルプレゼント＋最高500ドルの初回入金ボーナスでお得にプレイ♪
     usp_content: |-
@@ -134,4 +136,3 @@ usp_right:
     </ul>
   </dd>
 </dl>
-          

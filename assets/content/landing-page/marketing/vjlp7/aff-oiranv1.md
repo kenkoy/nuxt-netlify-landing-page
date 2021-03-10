@@ -15,6 +15,8 @@ promo_banner:
     今だけ
     最高$500のボーナス
     をプレゼント！
+  desktop_full: true
+  mobile_full: true
   promo_images:
     promo_bg_desktop: /marketing/img/banner-dt.jpg
     promo_bg_mobile: /marketing/img/banner-mob.jpg

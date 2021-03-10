@@ -1,5 +1,5 @@
 ---
-slug_name: 342-bvj-lan-jp-pro-newadult-1120
+slug_name: 1763-bvj-lan-jp-pro-bikini-0221
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -7,7 +7,7 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   go_container_id: OPT-PHSNXP6
   gtm_container_id: GTM-MFD3NKM
-styles: version2
+styles: version1
 template: steps
 promo_banner:
   promo_title: |-
@@ -16,8 +16,8 @@ promo_banner:
   desktop_full: true
   mobile_full: true
   promo_images:
-    promo_bg_desktop: /marketing/img/vjlp7.jpg
-    promo_bg_mobile: /marketing/img/vjlp7bg_m.jpg
+    promo_bg_desktop: /marketing/img/dsgn-1763-vj-jp-cms-desktop-1920x1080.png
+    promo_bg_mobile: /marketing/img/dsgn-1763-vj-jp-cms-mobile-767x800.png
   promo_terms_link_text:
     - 利用規約
   promo_render_title_first: true

@@ -14,6 +14,8 @@ promo_banner:
     最高$500までの
     100%入金ボーナス
     を獲得しよう!
+  desktop_full: true
+  mobile_full: true
   promo_images:
     promo_bg_desktop: /marketing/img/hdday_desktop_bg.jpg
     promo_bg_mobile: /marketing/img/hdday_mobile_bg.jpg

@@ -104,10 +104,14 @@ export default {
   computed: {
     cssBackground () {
       const images = this.mdData.promo_banner.promo_images
+      const desktopWidthBanner = this.mdData.promo_banner.desktop_full
+      const mobileWidthBanner = this.mdData.promo_banner.mobile_full
       return {
         '--bg-image': `url('${images.promo_bg_desktop}')`,
         '--bg-image-m': `url('${images.promo_bg_mobile}')`,
-        '--bg-banner': `url('${images.promo_bg_banner}')`
+        '--bg-banner': `url('${images.promo_bg_banner}')`,
+        '--desktop-width-banner': desktopWidthBanner ? 'cover' : 'contain',
+        '--mobile-width-banner': mobileWidthBanner ? 'cover' : 'contain'
       }
     },
     bannerTitle () {

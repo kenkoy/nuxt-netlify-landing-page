@@ -56,13 +56,7 @@ export const VJLP5_PREVIEW = createClass({
 
     if (buttonLocation === 'hidden') {
       joinBtnStyle = 'hidden'
-    } else if (buttonLocation === 'lower-right') {
-      joinBtnStyle = 'lower-right'
-    } else if (buttonLocation === 'upper-left') {
-      joinBtnStyle = 'upper-left'
-    } else {
-      joinBtnStyle = ''
-    }
+    } 
 
     const bannerTitle = this.formatTitle(
       banner.getIn(['data', 'first_title']),
@@ -78,7 +72,9 @@ export const VJLP5_PREVIEW = createClass({
     const imageBG = {
       '--bg-image': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_desktop'])}')`,
       '--bg-image-m': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_mobile'])}')`,
-      '--bg-banner': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_banner'])}')`
+      '--bg-banner': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_banner'])}')`,
+      '--desktop-width-banner': banner.getIn(['data', 'desktop_full']) ? 'cover' : 'contain',
+      '--mobile-width-banner': banner.getIn(['data', 'mobile_full']) ? 'cover' : 'contain'
     }
 
     const stepData = [{
