@@ -34,7 +34,7 @@
                 </h1>
               </div>
               <div
-                v-if="data_items.attributes.promo_banner.promo_join_button_location !=='hidden'"
+                v-if="data_items.attributes.promo_banner.promo_join_button_option == true"
                 id="banner-button"
               >
                 <button class="error">
