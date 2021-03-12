@@ -16,20 +16,21 @@ describe('Testing VJLP5 index.vue', () => {
     const md = _
       .chain(await retrieveFiles(VJLP5_DIR, '.md'))
       .map(files => VJLP5_DIR + files)
+      .sample()
       .value()
 
 
-    // const dataMD = retriveFrontMattertoJSON(md)
-    let dataMD = []
-    let jsonData = []
-
-    md.forEach((item, i) => {
-      jsonData.push(retriveFrontMattertoJSON(item))
-      jsonData.forEach((attr, i) => {
-        dataMD = attr.attributes
-      })
-    })
-
+    const dataMD = retriveFrontMattertoJSON(md)
+    // let dataMD = []
+    // let jsonData = []
+    //
+    // md.forEach((item, i) => {
+    //   jsonData.push(retriveFrontMattertoJSON(item))
+    //   jsonData.forEach((attr, i) => {
+    //     dataMD = attr.attributes
+    //   })
+    // })
+    //
     console.log("xxxxxxxx", dataMD)
 
 
@@ -41,21 +42,21 @@ describe('Testing VJLP5 index.vue', () => {
         }
       }
     })
-    // metaInfo = wrapper.vm.$metaInfo
-    // tagIds = dataMD.field_ids
-    // locale = dataMD.promo_locale
-    bannerTitle = dataMD.promo_banner
+    metaInfo = wrapper.vm.$metaInfo
+    tagIds = dataMD.attributes.field_ids
+    locale = dataMD.attributes.promo_locale
+    bannerTitle = dataMD.attributes.promo_banner
   })
-  //
-  // test('Title should be Vera&John', () => {
-  //   const pageTitle = metaInfo.title
-  //   expect(pageTitle).toBe('Vera&John')
+
+  test('Title should be Vera&John', () => {
+    const pageTitle = metaInfo.title
+    expect(pageTitle).toBe('Vera&John')
+  })
+
+  // test('Banner should be first_title', () => {
+  //   const title = bannerTitle.first_title
+  //   expect(title).toBe(`${title}`)
   // })
-  //
-  test('Banner should be first_title', () => {
-    const title = bannerTitle.first_title
-    expect(title).toBe(`${title}`)
-  })
   //
   // test('HTML language attribute should not be null or undefined', () => {
   //   const languageAttribute = metaInfo.htmlAttrs.lang
