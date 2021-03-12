@@ -31,18 +31,26 @@
       .header-link-active{
         color: #fff !important;
       }
+
+      .css-tsu4ds-DropdownList-dropdownList-DropdownList,
       .css-pp9jk1-DropdownList-dropdownList-DropdownList{
         background: rgba(0,0,0,.8) !important;
       }
-      .css-1u5l62d-button-dropdownItem-StyledMenuItem{
+      .css-1u5l62d-button-dropdownItem-StyledMenuItem,
+      .css-zcym63-button-dropdownItem-StyledMenuItem{
         background: transparent !important;
         padding: 15px 15px !important;
         border: none !important;
       }
+
+      .css-tsu4ds-DropdownList-dropdownList-DropdownList span,
       .css-pp9jk1-DropdownList-dropdownList-DropdownList span{
         color: #fff !important;
         font-size: 12px !important;
       }
+
+      .css-zcym63-button-dropdownItem-StyledMenuItem:not(:focus),
+      .css-zcym63-button-dropdownItem-StyledMenuItem:not(:active),
       .css-1u5l62d-button-dropdownItem-StyledMenuItem:hover{
         background: #464d52 !important;
       }
@@ -72,9 +80,27 @@
       }
 
       /*CARD*/
+      .css-1iwq7gj-GridCard-card{
+        background: #2c3035 !important;
+      }
+      .css-ltypdx-GridCardLink:hover{
+        background: #34383d !important;
+      }
+      .css-ltypdx-GridCardLink{
+        background: none !important;
+      }
+      .css-17fei3e-CardHeading{
+        color: #fff;
+        font-weight: 300;
+      }
+      .css-1tsjwkh-CardBody:after{
+        display: none !important;
+      }
+
+
       .css-5wgw3f-ListCard-card{
-        width: 32% !important;
-        min-height: 90px;
+        width: 100% !important;
+        min-height: 60px;
         display: inline-block;
         background: #2c3035 !important;
       }
@@ -83,6 +109,7 @@
       }
       .css-1t9i08i-ListCardLink{
         background: none !important;
+        min-height: 60px;
       }
       .css-1mtos59-ListCardTitle{
         color: #fff;
@@ -136,33 +163,69 @@
         border-left-color: #18fff6 !important;
         background: #34383d !important;
       }
-      input{
-        background: #272727 !important;
-        color: #fff !important;
-      }
-      ::-webkit-input-placeholder { /* Edge */
-        color: #fff !important;
-      }
-
-      :-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color: #fff !important;
-      }
-
-      ::placeholder {
-        color: #fff !important;
+      .css-clb1p4-InputContainer svg{
+        color: #2c3035 !important;
       }
 
 
-      .css-182avcw{
-        background: #24242d;
+
+
+      /*LP PREVIEW*/
+      .css-abwcjt-ToolbarSectionBackLink-toolbarSection{
+        border: none !important;
+      }
+      .css-abwcjt-ToolbarSectionBackLink-toolbarSection:hover{
+        background: #000 !important;
+      }
+      .css-179mynt-BackArrow{
+        color: #fff !important;
+      }
+      .css-1whurdv-BackCollection{
+        color: #fff !important;
+      }
+      .css-epy1pj-BackStatus-BackStatusUnchanged-badge-textBadge-textBadgeSuccess{
+        color: #5F8A65 !important;
+      }
+      .css-1fi2uoj-ToolbarButton-button-default-buttonMargin-noOverflow-SaveButton-lightBlue{
+        background: #1a96c5 !important;
+        color: #fff !important;
+      }
+      .css-1ixjrmh-ToolbarButton-button-default-buttonMargin-noOverflow-DeleteButton-lightRed{
+        background: #d25151 !important;
+        color: #fff !important;
+      }
+      .css-16pehfe-StyledDropdownButton-button-default-caret-caretDown-DropdownButton-noOverflow-PublishedToolbarButton-publishedButton{
+        background: #5F8A65 !important;
+        color: #fff !important;
+      }
+
+      .Resizer.vertical{
+        background: #2c3135;
       }
       .css-pcief1-FieldLabel-fieldLabel{
-        background: #ff6180 !important;
+        background: #3a3a3a !important;
         color: #fff !important;
       }
       .css-pcief1-FieldLabel-fieldLabel:before,
       .css-pcief1-FieldLabel-fieldLabel:after{
         display: none !important;
+      }
+
+      .css-e55nd1-StyledToolbarButton-button svg,
+      .css-16878oz-TopBarButton-button svg,
+      .css-1265b6l-TopBarContainer svg{
+        color: #2c3035 !important;
+      }
+      .css-182avcw{
+        background: #fff !important;
+        border: none !important
+      }
+      .css-12vfcwo{
+        background: #000 !important;
+        border: none !important;
+      }
+      .css-12vfcwo span{
+        color: #cccccc !important;
       }
     </style>
   </head>
@@ -170,15 +233,11 @@
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
     <script type="module">
-      import { VJLP1_PREVIEW } from './vjlp1.js';
-      import { VJLP3_PREVIEW } from './vjlp3.js';
       import { VJLP5_PREVIEW } from './vjlp5.js';
       import { VJLP7_PREVIEW } from './vjlp7.js';
       import { ICLP1_PREVIEW } from './iclp1.js';
       import { VJLP8_PREVIEW } from './vjlp8.js';
       CMS.registerPreviewTemplate('VJLP8-NoForm', VJLP8_PREVIEW);
-      CMS.registerPreviewTemplate('VJLP1-NoForm', VJLP1_PREVIEW);
-      CMS.registerPreviewTemplate('VJLP3-NoForm', VJLP3_PREVIEW);
       CMS.registerPreviewTemplate('VJLP5-NoForm', VJLP5_PREVIEW);
       CMS.registerPreviewTemplate('VJLP7-NoForm', VJLP7_PREVIEW);
       CMS.registerPreviewTemplate('ICLP1-NoForm', ICLP1_PREVIEW);
