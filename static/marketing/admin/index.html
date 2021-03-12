@@ -6,6 +6,165 @@
     <title>Content Manager</title>
     <!-- Include the script that enables Netlify Identity on this page. -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <style>
+      body{
+        height: 100vh;
+      }
+      #nc-root{
+        background: #24232d;
+        min-height: 100vh;
+        padding-bottom: 50px !important;
+      }
+
+      .css-y7r3-AppHeader,
+      .css-2oej7z-ToolbarContainer{
+        background: #24232d !important;
+        box-shadow: none !important;
+      }
+      .css-12yqrwa-AppHeaderNavLink-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton,
+      .css-104dqk8-AppHeaderButton-button-buttonActive-buttonActive-buttonActive-buttonActive-AppHeaderButton{
+        color: #97989a !important;
+        font-weight: 300 !important;
+        font-size: 14px !important;
+      }
+
+      .header-link-active{
+        color: #fff !important;
+      }
+      .css-pp9jk1-DropdownList-dropdownList-DropdownList{
+        background: rgba(0,0,0,.8) !important;
+      }
+      .css-1u5l62d-button-dropdownItem-StyledMenuItem{
+        background: transparent !important;
+        padding: 15px 15px !important;
+        border: none !important;
+      }
+      .css-pp9jk1-DropdownList-dropdownList-DropdownList span{
+        color: #fff !important;
+        font-size: 12px !important;
+      }
+      .css-1u5l62d-button-dropdownItem-StyledMenuItem:hover{
+        background: #464d52 !important;
+      }
+
+      /*HEADER*/
+      .css-1hvrgvd-CollectionTopContainer-card-cardTop{
+        width: 100% !important;
+        border-radius: 0 !important;
+        border-bottom: solid 1px #656569
+      }
+      .css-1hvrgvd-CollectionTopContainer-card-cardTop{
+        background: transparent !important;
+        box-shadow: none !important;
+      }
+      .css-37khcc-CollectionTopHeading-cardTopHeading{
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+      .css-1qfk5ut-CollectionTopNewButton-button-default-gray{
+        border: solid 1px #5f9847 !important;
+        background: #5F8A65 !important;
+        color: #fff !important;
+      }
+      .css-p5sjac-CollectionControlsContainer{
+        flex-direction: row !important;
+      }
+
+      /*CARD*/
+      .css-5wgw3f-ListCard-card{
+        width: 32% !important;
+        min-height: 90px;
+        display: inline-block;
+        background: #2c3035 !important;
+      }
+      .css-5wgw3f-ListCard-card:hover{
+        background: #34383d !important;
+      }
+      .css-1t9i08i-ListCardLink{
+        background: none !important;
+      }
+      .css-1mtos59-ListCardTitle{
+        color: #fff;
+        font-weight: 300;
+      }
+
+
+      /*NAV*/
+      .css-npvq26-SidebarHeading{
+        color: #fff !important;
+        margin: 15px 15px 30px 15px !important;
+        position: absolute;
+        top: 20px;
+        right: 5px;
+        font-size: 18px !important;
+      }
+      .css-1gj57a0-SidebarContainer-card{
+        position: relative;
+        padding-top: 100px !important;
+      }
+      .css-1gj57a0-SidebarContainer-card:before{
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url('../img/gamesyslogo.png') no-repeat #e93230;
+        background-size: contain;
+        width: 100%;
+        height: 70px;
+      }
+      .Pane.vertical,
+      .css-1gj57a0-SidebarContainer-card{
+        background: #2c3035 !important;
+      }
+
+      span.ei6fm2r1 svg {
+        /* color: #ff6180; */
+        color: #18fff6;
+        width: 18px;
+      }
+      .css-u2webi-SidebarNavLink-sidebarNavLinkActive-SidebarNavLink{
+        font-weight: 300 !important;
+        border-left-color: transparent !important;
+        padding: 20px 10px !important;
+      }
+      .css-u2webi-SidebarNavLink-sidebarNavLinkActive-SidebarNavLink:hover,
+      .sidebar-active{
+        color: #fff !important;
+        /* border-left-color: #ff6180 !important; */
+        border-left-color: #18fff6 !important;
+        background: #34383d !important;
+      }
+      input{
+        background: #272727 !important;
+        color: #fff !important;
+      }
+      ::-webkit-input-placeholder { /* Edge */
+        color: #fff !important;
+      }
+
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #fff !important;
+      }
+
+      ::placeholder {
+        color: #fff !important;
+      }
+
+
+      .css-182avcw{
+        background: #24242d;
+      }
+      .css-pcief1-FieldLabel-fieldLabel{
+        background: #ff6180 !important;
+        color: #fff !important;
+      }
+      .css-pcief1-FieldLabel-fieldLabel:before,
+      .css-pcief1-FieldLabel-fieldLabel:after{
+        display: none !important;
+      }
+    </style>
   </head>
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
