@@ -10,9 +10,6 @@ describe('Testing VJLP5 index.vue', () => {
   let wrapper, metaInfo, tagIds, locale, datum
 
   beforeAll(async () => {
-    const localVue = createLocalVue()
-    localVue.use(VueMeta, { keyName: 'head' })
-
     //==== For MD Files ====
     const md = _
       .chain(await retrieveFiles(VJLP5_DIR, '.md'))
@@ -31,6 +28,9 @@ describe('Testing VJLP5 index.vue', () => {
 
 
     //==== For Vue Components ====
+    const localVue = createLocalVue()
+    localVue.use(VueMeta, { keyName: 'head' })
+
     const mdComponents = _
       .chain(await retrieveFiles(VJLP5_DIR, '.md'))
       .map(files => VJLP5_DIR + files)
