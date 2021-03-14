@@ -53,6 +53,7 @@ describe('Testing VJLP5 index.vue', () => {
 
 
   //====  MD FILES TEST ====
+  //HERO SECTION
   test('Banner title should be first_title', () => {
     const title = datum
     title.forEach((item, i) => {
@@ -65,6 +66,50 @@ describe('Testing VJLP5 index.vue', () => {
     subtitle.forEach((item, i) => {
       const banner_subtitle = item.promo_banner.second_title
       expect(banner_subtitle).toBe(`${item.promo_banner.second_title}`)
+    })
+  })
+  //STEPS / CAROUSEL
+  test('Steps title shoud be step_title_1', () => {
+    const steps = datum
+    steps.forEach((item, i) => {
+      const title_1 = item.steps.step_title_1
+      expect(title_1).toBe(`${item.steps.step_title_1}`)
+    })
+  })
+  test('Steps title shoud be step_title_2', () => {
+    const steps = datum
+    steps.forEach((item, i) => {
+      const title_2 = item.steps.step_title_2
+      expect(title_2).toBe(`${item.steps.step_title_2}`)
+    })
+  })
+  test('Steps title shoud be step_title_3', () => {
+    const steps = datum
+    steps.forEach((item, i) => {
+      const title_3 = item.steps.step_title_3
+      expect(title_3).toBe(`${item.steps.step_title_3}`)
+    })
+  })
+
+  test('Steps description shoud be step_description_1', () => {
+    const steps = datum
+    steps.forEach((item, i) => {
+      const desc_1 = item.steps.step_description_1
+      expect(desc_1).toBe(`${item.steps.step_description_1}`)
+    })
+  })
+  test('Steps description shoud be step_description_2', () => {
+    const steps = datum
+    steps.forEach((item, i) => {
+      const desc_2 = item.steps.step_description_2
+      expect(desc_2).toBe(`${item.steps.step_description_2}`)
+    })
+  })
+  test('Steps description shoud be step_description_3', () => {
+    const steps = datum
+    steps.forEach((item, i) => {
+      const desc_3 = item.steps.step_description_3
+      expect(desc_3).toBe(`${item.steps.step_description_3}`)
     })
   })
 
