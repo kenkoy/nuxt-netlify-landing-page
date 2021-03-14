@@ -53,11 +53,18 @@ describe('Testing VJLP5 index.vue', () => {
 
 
   //====  MD FILES TEST ====
-  test('Banner should be first_title', () => {
+  test('Banner title should be first_title', () => {
     const title = datum
     title.forEach((item, i) => {
       const banner_title = item.promo_banner.first_title
       expect(banner_title).toBe(`${item.promo_banner.first_title}`)
+    })
+  })
+  test('Banner subtitle should be second_title', () => {
+    const subtitle = datum
+    subtitle.forEach((item, i) => {
+      const banner_subtitle = item.promo_banner.second_title
+      expect(banner_subtitle).toBe(`${item.promo_banner.second_title}`)
     })
   })
 
