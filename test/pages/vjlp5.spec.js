@@ -2,7 +2,7 @@
 // npm run test -- --silent=false
 // to see console error
 
-import { mount, createLocalVue, createWrapper } from '@vue/test-utils'
+import { mount, createLocalVue } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
 import index from '@/pages/marketing/vjlp5/_slug/index.vue'
@@ -14,13 +14,13 @@ describe('Testing VJLP5 index.vue', () => {
   let wrapper, metaInfo, tagIds, locale, datum
 
   beforeAll(async () => {
-    //==== For MD Files ====
+    //  ==== For MD Files ====
     const md = _
       .chain(await retrieveFiles(VJLP5_DIR, '.md'))
       .map(files => VJLP5_DIR + files)
       .value()
-    let dataMDContent = []
-    let jsonData = []
+    const dataMDContent = []
+    const jsonData = []
 
     md.forEach((item, i) => {
       jsonData.push(retriveFrontMattertoJSON(item))
@@ -30,8 +30,7 @@ describe('Testing VJLP5 index.vue', () => {
     })
     datum = dataMDContent
 
-
-    //==== For Vue Components ====
+    //  ==== For Vue Components ====
     const localVue = createLocalVue()
     localVue.use(VueMeta, { keyName: 'head' })
 
@@ -55,15 +54,14 @@ describe('Testing VJLP5 index.vue', () => {
     locale = dataMD.attributes.promo_locale
   })
 
-
-  //====  MD FILES TEST ====
-  //HERO SECTION
+  //  ====  MD FILES TEST ====
+  //  HERO SECTION
   test('Banner title should be first_title', () => {
     const title = datum
     title.forEach((item, i) => {
       const bannerTitle = item.promo_banner.first_title
-      if(bannerTitle !== `${item.promo_banner.first_title}`){
-        console.log("ERROR FILE", item.slug_name)
+      if (bannerTitle !== `${item.promo_banner.first_title}`) {
+        console.log('ERROR FILE', item.slug_name)
       }
       expect(bannerTitle).toBe(`${item.promo_banner.first_title}`)
     })
@@ -72,19 +70,19 @@ describe('Testing VJLP5 index.vue', () => {
     const subtitle = datum
     subtitle.forEach((item, i) => {
       const bannerSubtitle = item.promo_banner.second_title
-      if(bannerSubtitle !== `${item.promo_banner.second_title}`){
-        console.log("ERROR FILE", item.slug_name)
+      if (bannerSubtitle !== `${item.promo_banner.second_title}`) {
+        console.log('ERROR FILE', item.slug_name)
       }
       expect(bannerSubtitle).toBe(`${item.promo_banner.second_title}`)
     })
   })
-  //STEPS / CAROUSEL
+  //  STEPS / CAROUSEL
   test('Steps title shoud be step_title_1', () => {
     const steps = datum
     steps.forEach((item, i) => {
       const titleOne = item.steps.step_title_1
-      if(titleOne !== `${item.steps.step_title_1}`){
-        console.log("ERROR FILE", item.slug_name)
+      if (titleOne !== `${item.steps.step_title_1}`) {
+        console.log('ERROR FILE', item.slug_name)
       }
       expect(titleOne).toBe(`${item.steps.step_title_1}`)
     })
@@ -93,8 +91,8 @@ describe('Testing VJLP5 index.vue', () => {
     const steps = datum
     steps.forEach((item, i) => {
       const titleTwo = item.steps.step_title_2
-      if(titleTwo !== `${item.steps.step_title_2}`){
-        console.log("ERROR FILE", item.slug_name)
+      if (titleTwo !== `${item.steps.step_title_2}`) {
+        console.log('ERROR FILE', item.slug_name)
       }
       expect(titleTwo).toBe(`${item.steps.step_title_2}`)
     })
@@ -103,8 +101,8 @@ describe('Testing VJLP5 index.vue', () => {
     const steps = datum
     steps.forEach((item, i) => {
       const titleThree = item.steps.step_title_3
-      if(titleThree !== `${item.steps.step_title_3}`){
-        console.log("ERROR FILE", item.slug_name)
+      if (titleThree !== `${item.steps.step_title_3}`) {
+        console.log('ERROR FILE', item.slug_name)
       }
       expect(titleThree).toBe(`${item.steps.step_title_3}`)
     })
@@ -114,8 +112,8 @@ describe('Testing VJLP5 index.vue', () => {
     const steps = datum
     steps.forEach((item, i) => {
       const descOne = item.steps.step_description_1
-      if(descOne !== `${item.steps.step_description_1}`){
-        console.log("ERROR FILE", item.slug_name)
+      if (descOne !== `${item.steps.step_description_1}`) {
+        console.log('ERROR FILE', item.slug_name)
       }
       expect(descOne).toBe(`${item.steps.step_description_1}`)
     })
@@ -124,8 +122,8 @@ describe('Testing VJLP5 index.vue', () => {
     const steps = datum
     steps.forEach((item, i) => {
       const descTwo = item.steps.step_description_2
-      if(descTwo !== `${item.steps.step_description_2}`){
-        console.log("ERROR FILE", item.slug_name)
+      if (descTwo !== `${item.steps.step_description_2}`) {
+        console.log('ERROR FILE', item.slug_name)
       }
       expect(descTwo).toBe(`${item.steps.step_description_2}`)
     })
@@ -134,15 +132,14 @@ describe('Testing VJLP5 index.vue', () => {
     const steps = datum
     steps.forEach((item, i) => {
       const descThree = item.steps.step_description_3
-      if(descThree !== `${item.steps.step_description_3}`){
-        console.log("ERROR FILE", item.slug_name)
+      if (descThree !== `${item.steps.step_description_3}`) {
+        console.log('ERROR FILE', item.slug_name)
       }
       expect(descThree).toBe(`${item.steps.step_description_3}`)
     })
   })
 
-
-  //==== COMPONENTS TEST ====
+  //  ==== COMPONENTS TEST ====
   test('Title should be Vera&John', () => {
     const pageTitle = metaInfo.title
     expect(pageTitle).toBe('Vera&John')
