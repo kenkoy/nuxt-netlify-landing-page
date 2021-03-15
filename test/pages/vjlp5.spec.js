@@ -1,5 +1,5 @@
 // RUN
-// npm run test -- --silent=falseclear
+// npm run test -- --silent=false
 // to see console error
 
 import { mount, createLocalVue, createWrapper } from '@vue/test-utils'
@@ -61,83 +61,83 @@ describe('Testing VJLP5 index.vue', () => {
   test('Banner title should be first_title', () => {
     const title = datum
     title.forEach((item, i) => {
-      const banner_title = item.promo_banner.first_title
-      if(banner_title !== `${item.promo_banner.first_title}`){
+      const bannerTitle = item.promo_banner.first_title
+      if(bannerTitle !== `${item.promo_banner.first_title}`){
         console.log("ERROR FILE", item.slug_name)
       }
-      expect(banner_title).toBe(`${item.promo_banner.first_title}`)
+      expect(bannerTitle).toBe(`${item.promo_banner.first_title}`)
     })
   })
   test('Banner subtitle should be second_title', () => {
     const subtitle = datum
     subtitle.forEach((item, i) => {
-      const banner_subtitle = item.promo_banner.second_title
-      if(banner_subtitle !== `${item.promo_banner.second_title}`){
+      const bannerSubtitle = item.promo_banner.second_title
+      if(bannerSubtitle !== `${item.promo_banner.second_title}`){
         console.log("ERROR FILE", item.slug_name)
       }
-      expect(banner_subtitle).toBe(`${item.promo_banner.second_title}`)
+      expect(bannerSubtitle).toBe(`${item.promo_banner.second_title}`)
     })
   })
   //STEPS / CAROUSEL
   test('Steps title shoud be step_title_1', () => {
     const steps = datum
     steps.forEach((item, i) => {
-      const title_1 = item.steps.step_title_1
-      if(title_1 !== `${item.steps.step_title_1}`){
+      const titleOne = item.steps.step_title_1
+      if(titleOne !== `${item.steps.step_title_1}`){
         console.log("ERROR FILE", item.slug_name)
       }
-      expect(title_1).toBe(`${item.steps.step_title_1}`)
+      expect(titleOne).toBe(`${item.steps.step_title_1}`)
     })
   })
   test('Steps title shoud be step_title_2', () => {
     const steps = datum
     steps.forEach((item, i) => {
-      const title_2 = item.steps.step_title_2
-      if(title_2 !== `${item.steps.step_title_2}`){
+      const titleTwo = item.steps.step_title_2
+      if(titleTwo !== `${item.steps.step_title_2}`){
         console.log("ERROR FILE", item.slug_name)
       }
-      expect(title_2).toBe(`${item.steps.step_title_2}`)
+      expect(titleTwo).toBe(`${item.steps.step_title_2}`)
     })
   })
   test('Steps title shoud be step_title_3', () => {
     const steps = datum
     steps.forEach((item, i) => {
-      const title_3 = item.steps.step_title_3
-      if(title_3 !== `${item.steps.step_title_3}`){
+      const titleThree = item.steps.step_title_3
+      if(titleThree !== `${item.steps.step_title_3}`){
         console.log("ERROR FILE", item.slug_name)
       }
-      expect(title_3).toBe(`${item.steps.step_title_3}`)
+      expect(titleThree).toBe(`${item.steps.step_title_3}`)
     })
   })
 
   test('Steps description shoud be step_description_1', () => {
     const steps = datum
     steps.forEach((item, i) => {
-      const desc_1 = item.steps.step_description_1
-      if(desc_1 !== `${item.steps.step_description_1}`){
+      const descOne = item.steps.step_description_1
+      if(descOne !== `${item.steps.step_description_1}`){
         console.log("ERROR FILE", item.slug_name)
       }
-      expect(desc_1).toBe(`${item.steps.step_description_1}`)
+      expect(descOne).toBe(`${item.steps.step_description_1}`)
     })
   })
   test('Steps description shoud be step_description_2', () => {
     const steps = datum
     steps.forEach((item, i) => {
-      const desc_2 = item.steps.step_description_2
-      if(desc_2 !== `${item.steps.step_description_2}`){
+      const descTwo = item.steps.step_description_2
+      if(descTwo !== `${item.steps.step_description_2}`){
         console.log("ERROR FILE", item.slug_name)
       }
-      expect(desc_2).toBe(`${item.steps.step_description_2}`)
+      expect(descTwo).toBe(`${item.steps.step_description_2}`)
     })
   })
   test('Steps description shoud be step_description_3', () => {
     const steps = datum
     steps.forEach((item, i) => {
-      const desc_3 = item.steps.step_description_3
-      if(desc_3 !== `${item.steps.step_description_3}`){
+      const descThree = item.steps.step_description_3
+      if(descThree !== `${item.steps.step_description_3}`){
         console.log("ERROR FILE", item.slug_name)
       }
-      expect(desc_3).toBe(`${item.steps.step_description_3}`)
+      expect(descThree).toBe(`${item.steps.step_description_3}`)
     })
   })
 
