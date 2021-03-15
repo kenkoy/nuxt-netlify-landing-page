@@ -1,3 +1,7 @@
+// RUN
+// npm run test -- --silent=falseclear
+// to see console error
+
 import { mount, createLocalVue, createWrapper } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
@@ -58,6 +62,9 @@ describe('Testing VJLP5 index.vue', () => {
     const title = datum
     title.forEach((item, i) => {
       const banner_title = item.promo_banner.first_title
+      if(banner_title !== `${item.promo_banner.first_title}`){
+        console.log("ERROR FILE", item.slug_name)
+      }
       expect(banner_title).toBe(`${item.promo_banner.first_title}`)
     })
   })
@@ -65,6 +72,9 @@ describe('Testing VJLP5 index.vue', () => {
     const subtitle = datum
     subtitle.forEach((item, i) => {
       const banner_subtitle = item.promo_banner.second_title
+      if(banner_subtitle !== `${item.promo_banner.second_title}`){
+        console.log("ERROR FILE", item.slug_name)
+      }
       expect(banner_subtitle).toBe(`${item.promo_banner.second_title}`)
     })
   })
@@ -73,6 +83,9 @@ describe('Testing VJLP5 index.vue', () => {
     const steps = datum
     steps.forEach((item, i) => {
       const title_1 = item.steps.step_title_1
+      if(title_1 !== `${item.steps.step_title_1}`){
+        console.log("ERROR FILE", item.slug_name)
+      }
       expect(title_1).toBe(`${item.steps.step_title_1}`)
     })
   })
@@ -80,6 +93,9 @@ describe('Testing VJLP5 index.vue', () => {
     const steps = datum
     steps.forEach((item, i) => {
       const title_2 = item.steps.step_title_2
+      if(title_2 !== `${item.steps.step_title_2}`){
+        console.log("ERROR FILE", item.slug_name)
+      }
       expect(title_2).toBe(`${item.steps.step_title_2}`)
     })
   })
@@ -87,6 +103,9 @@ describe('Testing VJLP5 index.vue', () => {
     const steps = datum
     steps.forEach((item, i) => {
       const title_3 = item.steps.step_title_3
+      if(title_3 !== `${item.steps.step_title_3}`){
+        console.log("ERROR FILE", item.slug_name)
+      }
       expect(title_3).toBe(`${item.steps.step_title_3}`)
     })
   })
@@ -95,6 +114,9 @@ describe('Testing VJLP5 index.vue', () => {
     const steps = datum
     steps.forEach((item, i) => {
       const desc_1 = item.steps.step_description_1
+      if(desc_1 !== `${item.steps.step_description_1}`){
+        console.log("ERROR FILE", item.slug_name)
+      }
       expect(desc_1).toBe(`${item.steps.step_description_1}`)
     })
   })
@@ -102,6 +124,9 @@ describe('Testing VJLP5 index.vue', () => {
     const steps = datum
     steps.forEach((item, i) => {
       const desc_2 = item.steps.step_description_2
+      if(desc_2 !== `${item.steps.step_description_2}`){
+        console.log("ERROR FILE", item.slug_name)
+      }
       expect(desc_2).toBe(`${item.steps.step_description_2}`)
     })
   })
@@ -109,6 +134,9 @@ describe('Testing VJLP5 index.vue', () => {
     const steps = datum
     steps.forEach((item, i) => {
       const desc_3 = item.steps.step_description_3
+      if(desc_3 !== `${item.steps.step_description_3}`){
+        console.log("ERROR FILE", item.slug_name)
+      }
       expect(desc_3).toBe(`${item.steps.step_description_3}`)
     })
   })
