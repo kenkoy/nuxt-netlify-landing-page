@@ -605,7 +605,7 @@ collections:
           label: Template,
           name: promo_template,
           widget: hidden,
-          default: "VJLP1-NoForm",
+          default: "VJLP7-NoForm",
         }
 
   - name: "VJLP8-NoForm"
@@ -955,7 +955,7 @@ collections:
           label: Template,
           name: promo_template,
           widget: hidden,
-          default: "VJLP1-NoForm",
+          default: "ICLP1-NoForm",
         }
 
   - name: "ICLP2-NoForm"
