@@ -12,47 +12,47 @@
       }
 
       /*CHRISTMAS*/
-      /* .css-1gj57a0-SidebarContainer-card:after {
+      .christmas .css-1gj57a0-SidebarContainer-card:after {
           display: block;
           content: '';
           position: absolute;
           top: -33px;
           right: -21px;
-          background: url(https://www.searchpng.com/wp-content/uploads/2018/12/Santa-hat-png.png) no-repeat;
+          background: url('../img/santa-hat.png') no-repeat;
           background-size: contain;
           width: 70px;
           height: 70px;
           z-index: 2;
-      } */
+      }
 
       /*HOLLOWEEN*/
-      /* .css-1gj57a0-SidebarContainer-card:after {
+      .holloween .css-1gj57a0-SidebarContainer-card:after {
           display: block;
           content: '';
           position: absolute;
           top: -25px;
           right: -25px;
-          background: url(https://thumbs.gfycat.com/PlumpNeatErne-max-1mb.gif) no-repeat;
+          background: url('../img/bat.gif') no-repeat;
           background-size: contain;
           width: 70px;
           height: 80px;
           z-index: 2;
       }
-      .css-npvq26-SidebarHeading:before{
+      .holloween .css-npvq26-SidebarHeading:before{
         background-color: transparent !important;
       }
-      .css-npvq26-SidebarHeading:after{
+      .holloween .css-npvq26-SidebarHeading:after{
         display: block;
         content: '';
         position: absolute;
         top: 0;
-        left: 0;
-        background: url(https://lh3.googleusercontent.com/proxy/oLS7naw-2CjhUu4rbmfBxQdvqrAdy0fOaP_OOMHJXw8yAYyFS7uu32PRFRrXCU5JTXOHAQhrlW2f1EDR91DfUmgaf018kmLQK8x5_dm6Ljg) no-repeat;
+        right: 0;
+        background: url('../img/holloween-bg.jpeg') no-repeat;
         background-size: cover;
-        width: 100%;
+        width: 72%;
         height: 100%;
         z-index: -2;
-      } */
+      }
 
 
 
@@ -285,6 +285,22 @@
   <body>
     <!-- Include the script that builds the page and powers Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script>
+      let d = new Date();
+      let month = d.getMonth();
+
+      // Holloween
+      if(month === 10){
+        var element = document.getElementById('nc-root');
+        element.classList.add('holloween');
+      }
+
+      // Christmas
+      else if(month === 11){
+        var element = document.getElementById('nc-root');
+        element.classList.add('christmas');
+      }
+    </script>
     <script type="module">
       import { VJLP5_PREVIEW } from './vjlp5.js';
       import { VJLP7_PREVIEW } from './vjlp7.js';
