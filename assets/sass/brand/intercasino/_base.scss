@@ -18,9 +18,6 @@
   @include game-list;
   .game{
     display: inline-block;
-    > div{
-      margin: $GAME_LIST_MARGIN;
-    }
   }
 }
 
@@ -125,30 +122,4 @@ button{
 //FORM
 input{
   @include input;
-}
-
-#filter-bar{
-  display: flex;
-  align-items: center;
-  position: relative;
-
-  p{
-    margin: 0;
-  }
-
-  > div{
-    padding: 0 10px;
-  }
-
-  #description{
-    flex-grow: 2;
-    text-align: left;
-  }
-  #search{
-    > * {
-      display: inline-block;
-      margin: 0 5px;
-      color: #212121;
-    }
-  }
 }
