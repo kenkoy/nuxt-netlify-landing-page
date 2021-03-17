@@ -55,6 +55,15 @@
       min-width: inherit;
     }
   }
+
+  #pagination-wrapper{
+    .pagination-text{
+      &:before,
+      &:after{
+        display: none;
+      }
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -120,5 +129,12 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+  #pagination-wrapper{
+    .pagination-text{
+      &:before,
+      &:after{
+        display: block;
+      }
+    }
+  }
 }
