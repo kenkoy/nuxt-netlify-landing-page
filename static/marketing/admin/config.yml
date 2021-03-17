@@ -121,14 +121,10 @@ collections:
               widget: "string",
             }
           - { label: "Join Button", name: promo_join_button, widget: "string" }
-          - label: "Join Button Location"
-            name: "promo_join_button_location"
-            widget: "select"
-            default: "hidden"
-            options:
-              - { label: "Upper Left", value: "upper-left" }
-              - { label: "Lower Right", value: "lower-right" }
-              - { label: "Hidden", value: "hidden" }
+          - label: "Show Button"
+            name: "promo_join_button_option"
+            widget: "boolean"
+            default: true
           - {
               label: "Join Button Redirect URL",
               name: promo_join_button_redirect_url,
