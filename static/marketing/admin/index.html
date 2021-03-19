@@ -100,9 +100,10 @@
         color: #000 !important;
       }
 
+      /*Dropdown*/
       .css-tsu4ds-DropdownList-dropdownList-DropdownList,
       .css-pp9jk1-DropdownList-dropdownList-DropdownList{
-        background: rgba(0,0,0,.8) !important;
+        background: rgba(255,255,255,.8) !important;
       }
       .css-1u5l62d-button-dropdownItem-StyledMenuItem,
       .css-zcym63-button-dropdownItem-StyledMenuItem{
@@ -110,17 +111,28 @@
         padding: 15px 15px !important;
         border: none !important;
       }
-
       .css-tsu4ds-DropdownList-dropdownList-DropdownList span,
       .css-pp9jk1-DropdownList-dropdownList-DropdownList span{
-        color: #fff !important;
+        color: #2C3E50 !important;
         font-size: 12px !important;
       }
-
+      .css-1u5l62d-button-dropdownItem-StyledMenuItem:hover span{
+        color: #fff !important;
+      }
       .css-zcym63-button-dropdownItem-StyledMenuItem:not(:focus),
       .css-zcym63-button-dropdownItem-StyledMenuItem:not(:active),
       .css-1u5l62d-button-dropdownItem-StyledMenuItem:hover{
-        background: #464d52 !important;
+        background: #e43229 !important;
+      }
+
+      .css-7x6ig1-StyledDropdownButton-button-default-caret-caretDown-AppHeaderQuickNewButton-button-medium-gray{
+        background: #e12529 !important;
+        transition: all 0.5s ease;
+        border-radius: 0 !important;
+      }
+      .css-7x6ig1-StyledDropdownButton-button-default-caret-caretDown-AppHeaderQuickNewButton-button-medium-gray:focus,
+      .css-7x6ig1-StyledDropdownButton-button-default-caret-caretDown-AppHeaderQuickNewButton-button-medium-gray:hover{
+        background-color: #2C3E50 !important;
       }
 
       /*======HEADER======*/
@@ -268,23 +280,41 @@
       .css-epy1pj-BackStatus-BackStatusUnchanged-badge-textBadge-textBadgeSuccess{
         color: #5F8A65 !important;
       }
+      /*Save*/
       .css-1fi2uoj-ToolbarButton-button-default-buttonMargin-noOverflow-SaveButton-lightBlue{
         background: transparent !important;
         border: solid 1px #1a96c5 !important;
         color: #1a96c5 !important;
-        border-radius: 0 !important
+        border-radius: 0 !important;
+        transition: all 0.5s ease;
       }
+      .css-1fi2uoj-ToolbarButton-button-default-buttonMargin-noOverflow-SaveButton-lightBlue:hover{
+        background: #1a96c5 !important;
+        color: #fff !important;
+      }
+      /*Delete publish entry*/
       .css-1ixjrmh-ToolbarButton-button-default-buttonMargin-noOverflow-DeleteButton-lightRed{
         background: transparent !important;
         border: solid 1px #e43229 !important;
         color: #e43229 !important;
-        border-radius: 0 !important
+        border-radius: 0 !important;
+        transition: all 0.5s ease;
       }
+      .css-1ixjrmh-ToolbarButton-button-default-buttonMargin-noOverflow-DeleteButton-lightRed:hover{
+        background: #e43229 !important;
+        color: #fff !important;
+      }
+      /*Published*/
       .css-16pehfe-StyledDropdownButton-button-default-caret-caretDown-DropdownButton-noOverflow-PublishedToolbarButton-publishedButton{
         background: transparent !important;
         border: solid 1px #5F8A65 !important;
         color: #5F8A65 !important;
         border-radius: 0 !important
+      }
+      .css-16pehfe-StyledDropdownButton-button-default-caret-caretDown-DropdownButton-noOverflow-PublishedToolbarButton-publishedButton:hover{
+        background: #5F8A65 !important;
+        color: #fff !important;
+        transition: all 0.5s ease;
       }
 
 
