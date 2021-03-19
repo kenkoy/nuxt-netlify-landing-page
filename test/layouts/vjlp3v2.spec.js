@@ -37,8 +37,6 @@ describe('Testing VJLP3v2 layout vjlp3v2.vue', () => {
 
   test('VJLP3v2 has Footer Component', () => {
     const footer = wrapper.findComponent(Footer)
-    // eslint-disable-next-line no-console
-    console.log(footer.exists())
     expect(footer.exists()).toBe(true)
   })
 
