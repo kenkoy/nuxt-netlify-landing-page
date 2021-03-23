@@ -13,17 +13,18 @@ promo_banner:
   promo_title: 1764-bvj-lan-jp-pro-bikkini-v2-0221
   promo_images:
     promo_bg_desktop: /marketing/img/dsgn-1763-vj-jp-cms-desktop-1920x1080.png
-    promo_bg_mobile: /marketing/img/dsgn-1763-vj-jp-cms-mobile-767x800-2.png
+    promo_bg_mobile: /marketing/img/banner_vjlp5.jpg
     promo_bg_banner: /marketing/img/vjlp5-banner.jpg
   first_title: 最大$1000
+  mobile_full: false
   second_title: ビギナーズボーナス
   desktop_full: false
-  mobile_full: false
-  promo_login_button_redirect_url: 'https://verajohn.com/#join'
-  promo_join_button_redirect_url: 'https://verajohn.com/#join'
+  promo_login_button_redirect_url: https://verajohn.com/#join
+  promo_join_button_redirect_url: https://verajohn.com/#join
   promo_join_button: 入金ボーナス獲得する
   promo_login_button: 登録
   phrase: $1000
+  promo_join_button_option: true
   promo_join_button_location: hidden
 steps:
   step_title_1: ご登録
@@ -33,11 +34,11 @@ steps:
   step_title_3: プレイ!
   step_description_3: お楽しみください！
 game_images:
-  game_url_1: 'https://www.verajohn.com/ja/about/loyalty-program'
-  game_url_2: 'https://www.verajohn.com/ja/game/hawaiian-dream'
-  game_url_3: 'https://www.verajohn.com/ja/about/cardmaster'
-  game_url_4: 'https://www.verajohn.com/ja/livecasino'
-  game_url_5: 'https://www.verajohn.com/ja/about/paymentoption'
+  game_url_1: https://www.verajohn.com/ja/about/loyalty-program
+  game_url_2: https://www.verajohn.com/ja/game/hawaiian-dream
+  game_url_3: https://www.verajohn.com/ja/about/cardmaster
+  game_url_4: https://www.verajohn.com/ja/livecasino
+  game_url_5: https://www.verajohn.com/ja/about/paymentoption
   game_icon_1: /marketing/img/loyalty-program.png
   game_icon_2: /marketing/img/hawaiian-dream.png
   game_icon_3: /marketing/img/card-master.png
@@ -45,30 +46,34 @@ game_images:
   game_icon_5: /marketing/img/payment-option.png
 first_section:
   - first_section_title: ライブカジノで一攫千金ッ！
-    first_section_description: |-
-      いつでもどこでも、本場カジノの臨場感が楽しめるライブカジノ。ディーラーの動きがリアルタイムで見えるので、イカサマの心配もありません。しかも、還元率は他のギャンブルよりもはるかに高いともいわれています。パチスロの一般的な還元率は約80%と言われていますが、オンラインカジノでは、なんと最低でも「95％」はあるんです！さぁ、日本No.1オンラインカジノのベラジョンで、今をときめく最先端のライブカジノを堪能しましょう！
+    first_section_description: いつでもどこでも、本場カジノの臨場感が楽しめるライブカジノ。ディーラーの動きがリアルタイムで見えるので、イカサマの心配もありません。しかも、還元率は他のギャンブルよりもはるかに高いともいわれています。パチスロの一般的な還元率は約80%と言われていますが、オンラインカジノでは、なんと最低でも「95％」はあるんです！さぁ、日本No.1オンラインカジノのベラジョンで、今をときめく最先端のライブカジノを堪能しましょう！
 usp_left:
   - usp_title: 勝負金が2倍！最高$500初回入金ボーナスをもらってお得にプレイ！
-    usp_content: |-
+    usp_content: >-
       ベラジョンでの初回入金時には、軍資金が2倍になる★ビギナーズボーナス★がお待ちしています！最高$500までもらえる、100%入金ボーナスを受け取って、いろんなゲームにトライしてみましょう！
+
       さらに、キャンペーンメール限定ボーナスもご用意していますので、アカウント登録後、キャンペーンメールの配信設定をオンにすることをお忘れなく♪
   - usp_title: 安心・安全のオンラインカジノ環境
-    usp_content: |-
+    usp_content: >-
       私たちは、ベラジョンカジノが革新的で安心・安全なオンラインカジノであり、食パン以来の大発明★と自負しています！経験豊富なプロ集団が、世界一楽しいエンターテイメントを目標に掲げて、最高のカジノ体験をお届けします！
+
       さらに、各国の政府公認ライセンスを取得し、業界でトップクラスのゲーム配信会社を導入。カジノで遊べる製品は、ランダム・ナンバー・ジェネレーターと呼ばれる、ゲーム結果をランダムに生成するシステムを利用しており、ゲームの公平性も第三者機関によって保証されています。
+
       また、プレイヤーの皆様には、ご自身のゲームプレイ習慣を理解し、健全にカジノをお楽しみいただきたいと思っています。当サイトでご利用いただける「自己規制」機能で、サイトへのアクセス制限や入金に上限を設定することが可能です。安心・安全に、楽しくカジノライフを始めちゃおう！
   - usp_title: ご褒美プログラムとベラジョン・ショップ
-    usp_content: |-
-      ベラジョンでは、ログインや入金、アカウント認証など、サイト上で行うあらゆるアクションにより、ご褒美としてコインがもらえます。これらのコインは、ベラジョン・ショップでのお得なアイテムを購入時に使用できちゃいます！コインが増えるとレベルも更新され、入金ボーナス、フリースピン、特定のゲームで利用できるボーナスなど、様々なアイテムの購入が可能になります。期間限定アイテムやお得なアイテムも盛りだくさん！中には、キャッシュに変換できるコインもありますよ！ベラジョン・ショップでは様々な人気アイテムを多数取り揃えていますので、ぜひ合わせてご利用ください♪
+    usp_content: ベラジョンでは、ログインや入金、アカウント認証など、サイト上で行うあらゆるアクションにより、ご褒美としてコインがもらえます。これらのコインは、ベラジョン・ショップでのお得なアイテムを購入時に使用できちゃいます！コインが増えるとレベルも更新され、入金ボーナス、フリースピン、特定のゲームで利用できるボーナスなど、様々なアイテムの購入が可能になります。期間限定アイテムやお得なアイテムも盛りだくさん！中には、キャッシュに変換できるコインもありますよ！ベラジョン・ショップでは様々な人気アイテムを多数取り揃えていますので、ぜひ合わせてご利用ください♪
 usp_right:
   - usp_title: 完全生配信！ライブカジノゲーム
-    usp_content: |-
+    usp_content: >-
       テーブルゲームファンに特におすすめ！ブラックジャックやルーレット、バカラやビデオポーカーなど、バライティ豊かなゲームをと揃えています♪しかも、ライブカジノだから、リアルタイムでディーラーと対戦できるんです！
+
       実際にチャットを通じて会話までできちゃうので、まるで海外カジノのテーブルに座り、実際にディーラーと対戦してるかのような感覚を味わえます！
+
       なかには、本場の海外カジノから直接配信されているテーブルもあるんです！日本に居ながらにして本場カジノがお手軽に体験できちゃう、オンラインカジノならではのライブゲームはクセになること間違いなし★
   - usp_title: 素晴らしいスロットの数々
-    usp_content: |-
+    usp_content: >-
       リムジンに乗り込み、シャンパンの栓を抜くことを想像しながら、人気スロットゲームをプレイし始めませんか？パチスロ風スロットの元祖、Hawaiian
+
       Dream、クレイジーなゲーム体験を求めて宇宙に旅立つStarburst、さらに一攫千金ジャックポットゲームなど。今すぐプレイして、お気に入りゲームを見つけてみてください！もちろん、パソコン、モバイルなど、利用端末に関わらず、いつでもどこでも最高のゲームをお楽しみいただけます！
   - usp_title: ライブチャット＆Eメール日本語サポート
     usp_content: |-
