@@ -16,7 +16,7 @@ promo_banner:
     promo_bg_mobile: /marketing/img/banner_vjlp5.jpg
     promo_bg_banner: /marketing/img/vjlp5-banner.jpg
   first_title: 最大$1000
-  mobile_full: false
+  mobile_full: true
   second_title: ビギナーズボーナス
   desktop_full: false
   promo_login_button_redirect_url: https://verajohn.com/#join
