@@ -147,7 +147,7 @@ collections:
             widget: "select"
             required: false
             options:
-              - { label: "Primary - Blue Flat", value: "join-blue-primary-flat" }
+              - { label: "Primary - Blue Flat", value: "login-blue-primary-flat" }
               - { label: "Secondary - Pink Flat", value: "join-pink-secondary-flat" }
               - { label: "Tertiary - Yellow Flat", value: "join-yellow-tertiary-flat" }
               - { label: "Primary - Blue Animated", value: "join-blue-primary-animated" }
