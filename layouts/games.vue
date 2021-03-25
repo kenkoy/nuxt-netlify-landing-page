@@ -12,9 +12,10 @@
             <div id="filter-bar">
               <div>
                 <FilterSearch v-if="modal" @game-data-emit="getGameCaregoryEmit" />
-                <button class="btn-primary find" @click="modalFilterFn()">
+                <button class="btn-primary find desktop" @click="modalFilterFn()">
                   Find game you'll love
                 </button>
+                <button class="btn-primary find mobile" @click="modalFilterFn()" />
               </div>
 
               <div id="description">

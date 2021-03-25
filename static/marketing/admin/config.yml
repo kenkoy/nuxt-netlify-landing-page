@@ -8,305 +8,22 @@ publish_mode: editorial_workflow
 media_folder: static/marketing/img
 public_folder: /marketing/img
 
-# media_folder: assets/images/marketing/img
-# public_folder: /marketing/img
+# media_folder: assets/images/cms_media
+# public_folder: ''
 
 # media_folder: assets/images/cms_media
 # public_folder: /_nuxt/assets/images/cms_media/
 
 collections:
-  - name: 'VJLP1-NoForm'
-    label: 'Vera&John Template 1'
-    format: 'frontmatter'
-    folder: 'assets/content/landing-page/marketing/vjlp1'
-    create: true
-    identifier_field: "slug_name"
-    slug: '{{slug}}'
-    preview_path: marketing/vjlp1/{{slug}}
-    show_preview_links: true
-    editor:
-      preview: true
-    fields:
-      - label: Slug
-        widget: string
-        name: slug_name
-        required: true
-        hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
-      - label: "Locale"
-        name: "promo_locale"
-        widget: "object"
-        colapsed: true
-        fields:
-          - label: "Country Code"
-            name: "promo_country_code"
-            widget: "select"
-            default: ["jp"]
-            options:
-              - { label: "Japan", value: "jp" }
-              - { label: "Sweden", value: "se" }
-              - { label: "Germany", value: "de" }
-          - label: "Language Code"
-            name: "promo_language_code"
-            widget: "select"
-            default: ["ja"]
-            options:
-              - { label: "Japanese", value: "ja" }
-              - { label: "Swedish", value: "sv" }
-              - { label: "German", value: "de" }
-      - label: "Tag, Optimize and Analytics ID"
-        name: "field_ids"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false, default: "UA-142143961-1"}
-          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
-          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
-      - label: "Promotion Banner"
-        name: "promo_banner"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Display Title First", name: "promo_render_title_first", widget: "boolean", default: true, required: false}
-          - {label: "Title", name: "promo_title", widget: "text"}
-          - label: "Highlighted Title Phrases"
-            name: "promo_title_highlighted"
-            widget: "list"
-            summary: '{{field.phrase}}'
-            required: false
-            field: {label: Phrase, name: phrase, widget: string}
-          - {label: "Subtitle", name: "promo_subtitle", widget: "text", required: false}
-          - label: "Highlighted Subtitle Phrases"
-            name: "promo_subtitle_highlighted"
-            widget: "list"
-            summary: '{{field.phrase}}'
-            required: false
-            field: {label: Phrase, name: phrase, widget: string}
-          - {label: "Login Button", name: promo_login_button, widget: "string"}
-          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
-          - {label: "Join Button", name: promo_join_button, widget: "string"}
-          - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}
-          - {label: "Terms Text", name: promo_terms_text, widget: "string"}
-          - label: "Terms Underlined Link Texts"
-            name: "promo_terms_link_text"
-            widget: "list"
-            summary: '{{field.text}}'
-            required: false
-            field: {label: Text, name: text, widget: string}
-          - label: "Images"
-            name: "promo_images"
-            widget: "object"
-            colapsed: true
-            fields:
-              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
-              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
-              - {label: "Game Logo", name: promo_game_logo, widget: image, required: false}
-      - label: "Promotion Steps"
-        name: "promo_steps"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Step 1 Title", name: promo_step_1_title, widget: "string"}
-          - {label: "Step 1 Description", name: promo_step_1_desc, widget: "string"}
-          - {label: "Step 2 Title", name: promo_step_2_title, widget: "string"}
-          - {label: "Step 2 Description", name: promo_step_2_desc, widget: "string"}
-          - {label: "Step 3 Title", name: promo_step_3_title, widget: "string"}
-          - {label: "Step 3 Description", name: promo_step_3_desc, widget: "string"}
-      - {label: "Terms & Conditions", name: "body", widget: "markdown"}
-      - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}
-
-  - name: "VJLP3-NoForm"
-    label: "Vera&John Template 3"
-    format: 'frontmatter'
-    folder: "assets/content/landing-page/marketing/vjlp3"
-    create: true
-    identifier_field: "slug_name"
-    slug: '{{slug}}'
-    preview_path: marketing/vjlp3/{{slug}}
-    show_preview_links: true
-    editor:
-      preview: true
-    fields:
-      - label: Slug
-        widget: string
-        name: slug_name
-        required: true
-        hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
-      - label: "Locale"
-        name: "promo_locale"
-        widget: "object"
-        colapsed: true
-        fields:
-          - label: "Country Code"
-            name: "promo_country_code"
-            widget: "select"
-            default: ["jp"]
-            options:
-              - { label: "Japan", value: "jp" }
-              - { label: "Sweden", value: "se" }
-              - { label: "Germany", value: "de" }
-          - label: "Language Code"
-            name: "promo_language_code"
-            widget: "select"
-            default: ["ja"]
-            options:
-              - { label: "Japanese", value: "ja" }
-              - { label: "Swedish", value: "sv" }
-              - { label: "German", value: "de" }
-      - label: "Tag, Optimize and Analytics ID"
-        name: "field_ids"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false, default: "UA-142143961-1"}
-          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
-          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
-      - label: "Promotion Banner"
-        name: "promo_banner"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Title", name: "promo_title", widget: "string"}
-          - {label: "Display Title", name: "promo_title_display", widget: "boolean", default: true}
-          - {label: "Subtitle", name: "promo_subtitle", widget: "string", required: false}
-          - {label: "Login Button", name: promo_login_button, widget: "string"}
-          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
-          - {label: "Join Button", name: promo_join_button, widget: "string"}
-          - label: "Join Button Location"
-            name: "promo_join_button_location"
-            widget: "select"
-            default: ["hidden"]
-            options:
-              - { label: "Upper Left", value: "upper-left" }
-              - { label: "Lower Right", value: "lower-right" }
-              - { label: "Hidden", value: "hidden" }
-          - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}
-          - label: "Images"
-            name: "promo_images"
-            widget: "object"
-            colapsed: true
-            fields:
-              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
-              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
-              - {label: "Banner Background", name: promo_bg_banner, widget: image, required: false}
-          - label: "Game Slider"
-            name: "game_images"
-            widget: "object"
-            colapsed: true
-            fields:
-              - {label: "Game Icon 1", name: game_icon_1, widget: image, required: false, default: ""}
-              - {label: "Game URL", name: game_url_1, widget: string, required: false, default: ""}
-              - {label: "Game Icon 2", name: game_icon_2, widget: image, required: false, default: ""}
-              - {label: "Game URL", name: game_url_2, widget: string, required: false, default: ""}
-              - {label: "Game Icon 3", name: game_icon_3, widget: image, required: false, default: ""}
-              - {label: "Game URL", name: game_url_3, widget: string, required: false, default: ""}
-              - {label: "Game Icon 4", name: game_icon_4, widget: image, required: false, default: ""}
-              - {label: "Game URL", name: game_url_4, widget: string, required: false, default: ""}
-              - {label: "Game Icon 5", name: game_icon_5, widget: image, required: false, default: ""}
-              - {label: "Game URL", name: game_url_5, widget: string, required: false, default: ""}
-              - {label: "Game Icon 6", name: game_icon_6, widget: image, required: false, default: ""}
-              - {label: "Game URL", name: game_url_6, widget: string, required: false, default: ""}
-      - {label: Template, name: promo_template, widget: hidden, default: "VJLP3-NoForm"}
-      - {label: 'Terms & Conditions', name: 'body', widget: 'markdown' }
-
-  - name: "VJLP4-NoForm"
-    label: "Vera&John Template 4"
-    format: 'frontmatter'
-    folder: "assets/content/landing-page/marketing/vjlp4"
-    create: true
-    identifier_field: "slug_name"
-    slug: '{{slug}}'
-    preview_path: marketing/vjlp4/{{slug}}
-    show_preview_links: true
-    editor:
-      preview: false
-    fields:
-      - label: Slug
-        widget: string
-        name: slug_name
-        required: true
-        hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
-      - label: "Locale"
-        name: "promo_locale"
-        widget: "object"
-        colapsed: true
-        fields:
-          - label: "Country Code"
-            name: "promo_country_code"
-            widget: "select"
-            default: ["jp"]
-            options:
-              - { label: "Japan", value: "jp" }
-              - { label: "Sweden", value: "se" }
-              - { label: "Germany", value: "de" }
-          - label: "Language Code"
-            name: "promo_language_code"
-            widget: "select"
-            default: ["ja"]
-            options:
-              - { label: "Japanese", value: "ja" }
-              - { label: "Swedish", value: "sv" }
-              - { label: "German", value: "de" }
-      - label: "Tag, Optimize and Analytics ID"
-        name: "field_ids"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false, default: "UA-142143961-1"}
-          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
-          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
-      - label: "Promotion Banner"
-        name: "promo_banner"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Title", name: "promo_title", widget: "string"}
-          - {label: "Large Subtitle", name: "promo_large_subtitle", widget: "string"}
-          - {label: "Small Subtitle", name: "promo_small_subtitle", widget: "text"}
-          - label: "Small Subtitle Highlighted Phrases"
-            name: "promo_small_subtitle_highlighted"
-            widget: "list"
-            summary: '{{field.phrase}}'
-            required: false
-            field: {label: Phrase, name: phrase, widget: string}
-          - {label: "Login Button Text", name: "promo_login_button", widget: "string"}
-          - {label: "Login Button Redirect URL", name: "promo_login_button_redirect_url", widget: "string"}
-          - {label: "Join Button Text", name: "promo_join_button", widget: "string"}
-          - {label: "Join Button Redirect URL", name: "promo_join_button_redirect_url", widget: "string"}
-          - {label: "Terms Text", name: "promo_terms", widget: "string"}
-          - label: "Terms Link Texts"
-            name: "promo_link_terms"
-            widget: "list"
-            summary: '{{field.text}}'
-            required: false
-            field: {label: Text, name: text, widget: string}
-          - label: "Images"
-            name: "promo_images"
-            widget: "object"
-            colapsed: true
-            fields:
-              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
-              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
-              - {label: "Game Logo", name: promo_game_logo, widget: image}
-              - {label: "Game Title", name: promo_game_image, widget: image}
-      - label: "Section"
-        name: "section"
-        widget: "list"
-        collapsed: true
-        fields:
-          - {label: "Join Button Text", name: "join_button", widget: "string"}
-          - {label: "Join Button Redirect URL", name: "join_button_redirect_url", widget: "string"}
-          - {label: "Image", name: image, widget: image}
-      - {label: 'Terms & Conditions', name: 'body', widget: 'markdown', required: false}
-
   - name: "VJLP5-NoForm"
     label: "Vera&John Template 5"
-    format: 'frontmatter'
+    format: "frontmatter"
     folder: "assets/content/landing-page/marketing/vjlp5"
     create: true
     identifier_field: "slug_name"
-    slug: '{{slug}}'
-    preview_path: marketing/vjlp5/{{slug}}
-    show_preview_links: true
+    slug: "{{slug}}"
+    preview_path: vjlp5/{{slug}}
+    show_preview_links: false
     editor:
       preview: true
     fields:
@@ -341,9 +58,27 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false, default: "UA-142143961-1"}
-          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
-          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
+          - {
+              label: "Google Analytics Tracking ID",
+              name: ga_tracking_id,
+              widget: "string",
+              required: false,
+              default: "UA-142143961-1",
+            }
+          - {
+              label: "Google Optimize Container ID",
+              name: go_container_id,
+              widget: "string",
+              required: false,
+              default: "OPT-PHSNXP6",
+            }
+          - {
+              label: "Google Tag Manger Container ID",
+              name: gtm_container_id,
+              widget: "string",
+              required: false,
+              default: "GTM-MFD3NKM",
+            }
       - label: "Styles"
         name: "styles"
         widget: "select"
@@ -363,193 +98,275 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Title", name: "promo_title", widget: "string"}
-          - {label: "Banner first title", name: "first_title", widget: "string"}
-          - {label: "Banner text highlight", name: "phrase", widget: "string"}
-          - {label: "Banner second title", name: "second_title", widget: "string"}
-          - {label: "Login Button", name: promo_login_button, widget: "string"}
-          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
-          - {label: "Join Button", name: promo_join_button, widget: "string"}
+          - { label: "Title", name: "promo_title", widget: "string" }
+          - {
+              label: "Banner first title",
+              name: "first_title",
+              widget: "string",
+            }
+          - { label: "Banner text highlight", name: "phrase", widget: "string" }
+          - {
+              label: "Banner second title",
+              name: "second_title",
+              widget: "string",
+            }
+          - {
+              label: "Login Button",
+              name: promo_login_button,
+              widget: "string",
+            }
+          - {
+              label: "Login Button Redirect URL",
+              name: promo_login_button_redirect_url,
+              widget: "string",
+            }
+          - label: "Login Button Style"
+            name: "promo_login_button_style"
+            widget: "select"
+            required: false
+            options:
+              - { label: "Primary - Blue Flat", value: "login-blue-primary-flat" }
+              - { label: "Secondary - Pink Flat", value: "login-pink-secondary-flat" }
+              - { label: "Tertiary - Yellow Flat", value: "login-yellow-tertiary-flat" }
+              - { label: "Primary - Blue Animated", value: "login-blue-primary-animated" }
+              - { label: "Secondary - Pink Animated", value: "login-pink-secondary-animated" }
+              - { label: "Tertiary - Yellow Animated", value: "login-yellow-tertiary-animated" }
+          - { label: "Join Button", name: promo_join_button, widget: "string" }
           - label: "Show Button"
             name: "promo_join_button_option"
             widget: "boolean"
             default: true
-          - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}
+            required: false
+          - {
+              label: "Join Button Redirect URL",
+              name: promo_join_button_redirect_url,
+              widget: "string",
+            }
+          - label: "Join Button Style"
+            name: "promo_join_button_style"
+            widget: "select"
+            required: false
+            options:
+              - { label: "Primary - Blue Flat", value: "login-blue-primary-flat" }
+              - { label: "Secondary - Pink Flat", value: "join-pink-secondary-flat" }
+              - { label: "Tertiary - Yellow Flat", value: "join-yellow-tertiary-flat" }
+              - { label: "Primary - Blue Animated", value: "join-blue-primary-animated" }
+              - { label: "Secondary - Pink Animated", value: "join-pink-secondary-animated" }
+              - { label: "Tertiary - Yellow Animated", value: "join-yellow-tertiary-animated" }
           - label: "Desktop banner size cover"
             name: "desktop_full"
-            widget: "boolean"
             default: true
+            widget: "boolean"
           - label: "Mobile banner size cover"
             name: "mobile_full"
-            widget: "boolean"
             default: true
+            widget: "boolean"
           - label: "Images"
             name: "promo_images"
             widget: "object"
             colapsed: true
             fields:
-              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
-              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
-              - {label: "Banner Background", name: promo_bg_banner, widget: image}
+              - {
+                  label: "Desktop Background",
+                  name: promo_bg_desktop,
+                  widget: image,
+                }
+              - {
+                  label: "Mobile Background",
+                  name: promo_bg_mobile,
+                  widget: image,
+                }
+              - {
+                  label: "Banner Background",
+                  name: promo_bg_banner,
+                  widget: image,
+                }
       - label: "Steps"
         name: "steps"
         widget: "object"
         colapsed: true
         fields:
-          - {label: "Step 1 Title", name: step_title_1, widget: string, required: false, default: ""}
-          - {label: "Step 1 Description", name: step_description_1, widget: "string", required: false, default: ""}
+          - {
+              label: "Step 1 Title",
+              name: step_title_1,
+              widget: string,
+              required: false,
+              default: "",
+            }
+          - {
+              label: "Step 1 Description",
+              name: step_description_1,
+              widget: "string",
+              required: false,
+              default: "",
+            }
 
-          - {label: "Step 2 Title", name: step_title_2, widget: string, required: false, default: ""}
-          - {label: "Step 2 Description", name: step_description_2, widget: "string", required: false, default: ""}
+          - {
+              label: "Step 2 Title",
+              name: step_title_2,
+              widget: string,
+              required: false,
+              default: "",
+            }
+          - {
+              label: "Step 2 Description",
+              name: step_description_2,
+              widget: "string",
+              required: false,
+              default: "",
+            }
 
-          - {label: "Step 3 Title", name: step_title_3, widget: string, required: false, default: ""}
-          - {label: "Step 3 Description", name: step_description_3, widget: "string", required: false, default: ""}
+          - {
+              label: "Step 3 Title",
+              name: step_title_3,
+              widget: string,
+              required: false,
+              default: "",
+            }
+          - {
+              label: "Step 3 Description",
+              name: step_description_3,
+              widget: "string",
+              required: false,
+              default: "",
+            }
       - label: "Game Slider"
         name: "game_images"
         widget: "object"
         colapsed: true
         fields:
-          - {label: "Game Icon 1", name: game_icon_1, widget: image, required: false, default: "/marketing/img/loyalty-program.png"}
-          - {label: "Game URL", name: game_url_1, widget: string, required: false, default: "https://www.verajohn.com/ja/about/loyalty-program"}
-          - {label: "Game Icon 2", name: game_icon_2, widget: image, required: false, default: "/marketing/img/hawaiian-dream.png"}
-          - {label: "Game URL", name: game_url_2, widget: string, required: false, default: "https://www.verajohn.com/ja/game/hawaiian-dream"}
-          - {label: "Game Icon 3", name: game_icon_3, widget: image, required: false, default: "/marketing/img/card-master.png"}
-          - {label: "Game URL", name: game_url_3, widget: string, required: false, default: "https://www.verajohn.com/ja/about/cardmaster"}
-          - {label: "Game Icon 4", name: game_icon_4, widget: image, required: false, default: "/marketing/img/live-casino.png"}
-          - {label: "Game URL", name: game_url_4, widget: string, required: false, default: "https://www.verajohn.com/ja/livecasino"}
-          - {label: "Game Icon 5", name: game_icon_5, widget: image, required: false, default: "/marketing/img/payment-option.png"}
-          - {label: "Game URL", name: game_url_5, widget: string, required: false, default: "https://www.verajohn.com/ja/about/paymentoption"}
+          - {
+              label: "Game Icon 1",
+              name: game_icon_1,
+              widget: image,
+              required: false,
+              default: "/marketing/img/loyalty-program.png",
+            }
+          - {
+              label: "Game URL",
+              name: game_url_1,
+              widget: string,
+              required: false,
+              default: "https://www.verajohn.com/ja/about/loyalty-program",
+            }
+          - {
+              label: "Game Icon 2",
+              name: game_icon_2,
+              widget: image,
+              required: false,
+              default: "/marketing/img/hawaiian-dream.png",
+            }
+          - {
+              label: "Game URL",
+              name: game_url_2,
+              widget: string,
+              required: false,
+              default: "https://www.verajohn.com/ja/game/hawaiian-dream",
+            }
+          - {
+              label: "Game Icon 3",
+              name: game_icon_3,
+              widget: image,
+              required: false,
+              default: "/marketing/img/card-master.png",
+            }
+          - {
+              label: "Game URL",
+              name: game_url_3,
+              widget: string,
+              required: false,
+              default: "https://www.verajohn.com/ja/about/cardmaster",
+            }
+          - {
+              label: "Game Icon 4",
+              name: game_icon_4,
+              widget: image,
+              required: false,
+              default: "/marketing/img/live-casino.png",
+            }
+          - {
+              label: "Game URL",
+              name: game_url_4,
+              widget: string,
+              required: false,
+              default: "https://www.verajohn.com/ja/livecasino",
+            }
+          - {
+              label: "Game Icon 5",
+              name: game_icon_5,
+              widget: image,
+              required: false,
+              default: "/marketing/img/payment-option.png",
+            }
+          - {
+              label: "Game URL",
+              name: game_url_5,
+              widget: string,
+              required: false,
+              default: "https://www.verajohn.com/ja/about/paymentoption",
+            }
       - label: "First Section"
         name: "first_section"
         widget: "list"
         collapsed: true
         fields:
-          - {label: "Title", name: "first_section_title", widget: "string", default: "Title"}
-          - {label: "Description", name: "first_section_description", widget: "text", default: "Description"}
+          - {
+              label: "Title",
+              name: "first_section_title",
+              widget: "string",
+              default: "Title",
+            }
+          - {
+              label: "Description",
+              name: "first_section_description",
+              widget: "text",
+              default: "Description",
+            }
       - label: "USP Left"
         name: "usp_left"
         widget: "list"
         collapsed: true
         fields:
-          - {label: "USP Title", name: "usp_title", widget: "string", default: "USP Left Title"}
-          - {label: "USP Content", name: "usp_content", widget: "text", default: "USP Left Description"}
+          - {
+              label: "USP Title",
+              name: "usp_title",
+              widget: "string",
+              default: "USP Left Title",
+            }
+          - {
+              label: "USP Content",
+              name: "usp_content",
+              widget: "text",
+              default: "USP Left Description",
+            }
       - label: "USP Right"
         name: "usp_right"
         widget: "list"
         collapsed: true
         fields:
-          - {label: "USP Title", name: "usp_title", widget: "string", default: "USP Right Title"}
-          - {label: "USP Content", name: "usp_content", widget: "text", default: "USP Right Description"}
+          - {
+              label: "USP Title",
+              name: "usp_title",
+              widget: "string",
+              default: "USP Right Title",
+            }
+          - {
+              label: "USP Content",
+              name: "usp_content",
+              widget: "text",
+              default: "USP Right Description",
+            }
       - label: Terms & Conditions
         name: body
         widget: markdown
 
-  - name: 'VJLP6-NoForm'
-    label: 'Vera&John Template 6'
-    format: 'frontmatter'
-    folder: 'assets/content/landing-page/marketing/vjlp6'
+  - name: "VJLP7-NoForm"
+    label: "Vera&John Template 7"
+    format: "frontmatter"
+    folder: "assets/content/landing-page/marketing/vjlp7"
     create: true
     identifier_field: "slug_name"
-    slug: '{{slug}}'
-    preview_path: marketing/vjlp6/{{slug}}
-    show_preview_links: true
-    editor:
-      preview: false
-    fields:
-      - label: Slug
-        widget: string
-        name: slug_name
-        required: true
-        hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
-      - label: "Locale"
-        name: "promo_locale"
-        widget: "object"
-        colapsed: true
-        fields:
-          - label: "Country Code"
-            name: "promo_country_code"
-            widget: "select"
-            default: ["jp"]
-            options:
-              - { label: "Japan", value: "jp" }
-              - { label: "Sweden", value: "se" }
-              - { label: "Germany", value: "de" }
-          - label: "Language Code"
-            name: "promo_language_code"
-            widget: "select"
-            default: ["ja"]
-            options:
-              - { label: "Japanese", value: "ja" }
-              - { label: "Swedish", value: "sv" }
-              - { label: "German", value: "de" }
-      - label: "Tag, Optimize and Analytics ID"
-        name: "field_ids"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false, default: "UA-142143961-1"}
-          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
-          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
-      - label: "Promotion Banner"
-        name: "promo_banner"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Display Title First", name: "promo_render_title_first", widget: "boolean", default: true, required: false}
-          - {label: "Title", name: "promo_title", widget: "text"}
-          - label: "Highlighted Title Phrases"
-            name: "promo_title_highlighted"
-            widget: "list"
-            summary: '{{field.phrase}}'
-            required: false
-            field: {label: Phrase, name: phrase, widget: string}
-          - {label: "Subtitle", name: "promo_subtitle", widget: "text", required: false}
-          - label: "Highlighted Subtitle Phrases"
-            name: "promo_subtitle_highlighted"
-            widget: "list"
-            summary: '{{field.phrase}}'
-            required: false
-            field: {label: Phrase, name: phrase, widget: string}
-          - {label: "Login Button", name: promo_login_button, widget: "string"}
-          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
-          - {label: "Join Button", name: promo_join_button, widget: "string"}
-          - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}
-          - {label: "Terms Text", name: promo_terms_text, widget: "string"}
-          - label: "Terms Underlined Link Texts"
-            name: "promo_terms_link_text"
-            widget: "list"
-            summary: '{{field.text}}'
-            required: false
-            field: {label: Text, name: text, widget: string}
-          - label: "Images"
-            name: "promo_images"
-            widget: "object"
-            colapsed: true
-            fields:
-              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
-              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
-              - {label: "Game Logo", name: promo_game_logo, widget: image, required: false}
-      - label: "Promotion Steps"
-        name: "promo_steps"
-        widget: "object"
-        collapsed: true
-        fields:
-          - {label: "Step 1 Title", name: promo_step_1_title, widget: "string"}
-          - {label: "Step 1 Description", name: promo_step_1_desc, widget: "string"}
-          - {label: "Step 2 Title", name: promo_step_2_title, widget: "string"}
-          - {label: "Step 2 Description", name: promo_step_2_desc, widget: "string"}
-          - {label: "Step 3 Title", name: promo_step_3_title, widget: "string"}
-          - {label: "Step 3 Description", name: promo_step_3_desc, widget: "string"}
-      - {label: "Terms & Conditions", name: "body", widget: "markdown"}
-      - {label: Template, name: promo_template, widget: hidden, default: "VJLP6-NoForm"}
-
-  - name: 'VJLP7-NoForm'
-    label: 'Vera&John Template 7'
-    format: 'frontmatter'
-    folder: 'assets/content/landing-page/marketing/vjlp7'
-    create: true
-    identifier_field: "slug_name"
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     preview_path: marketing/vjlp7/{{slug}}
     show_preview_links: true
     editor:
@@ -586,9 +403,27 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false, default: "UA-142143961-1"}
-          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
-          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
+          - {
+              label: "Google Analytics Tracking ID",
+              name: ga_tracking_id,
+              widget: "string",
+              required: false,
+              default: "UA-142143961-1",
+            }
+          - {
+              label: "Google Optimize Container ID",
+              name: go_container_id,
+              widget: "string",
+              required: false,
+              default: "OPT-PHSNXP6",
+            }
+          - {
+              label: "Google Tag Manger Container ID",
+              name: gtm_container_id,
+              widget: "string",
+              required: false,
+              default: "GTM-MFD3NKM",
+            }
       - label: "Styles"
         name: "styles"
         widget: "select"
@@ -608,32 +443,77 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Display Title First", name: "promo_render_title_first", widget: "boolean", default: true, required: false}
-          - {label: "Title", name: "promo_title", widget: "text"}
+          - {
+              label: "Display Title First",
+              name: "promo_render_title_first",
+              widget: "boolean",
+              default: true,
+              required: false,
+            }
+          - { label: "Title", name: "promo_title", widget: "text" }
           - label: "Highlighted Title Phrases"
             name: "promo_title_highlighted"
             widget: "list"
-            summary: '{{field.phrase}}'
+            summary: "{{field.phrase}}"
             required: false
-            field: {label: Phrase, name: phrase, widget: string}
-          - {label: "Subtitle", name: "promo_subtitle", widget: "text", required: false}
+            field: { label: Phrase, name: phrase, widget: string }
+          - {
+              label: "Subtitle",
+              name: "promo_subtitle",
+              widget: "text",
+              required: false,
+            }
           - label: "Highlighted Subtitle Phrases"
             name: "promo_subtitle_highlighted"
             widget: "list"
-            summary: '{{field.phrase}}'
+            summary: "{{field.phrase}}"
             required: false
-            field: {label: Phrase, name: phrase, widget: string}
-          - {label: "Login Button", name: promo_login_button, widget: "string"}
-          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
-          - {label: "Join Button", name: promo_join_button, widget: "string"}
-          - {label: "Join Button Redirect URL", name: promo_join_button_redirect_url, widget: "string"}
-          - {label: "Terms Text", name: promo_terms_text, widget: "string"}
+            field: { label: Phrase, name: phrase, widget: string }
+          - {
+              label: "Login Button",
+              name: promo_login_button,
+              widget: "string",
+            }
+          - {
+              label: "Login Button Redirect URL",
+              name: promo_login_button_redirect_url,
+              widget: "string",
+            }
+          - label: "Login Button Style"
+            name: "promo_login_button_style"
+            widget: "select"
+            required: false
+            options:
+              - { label: "Primary - Blue Flat", value: "login-blue-primary-flat" }
+              - { label: "Secondary - Pink Flat", value: "login-pink-secondary-flat" }
+              - { label: "Tertiary - Yellow Flat", value: "login-yellow-tertiary-flat" }
+              - { label: "Primary - Blue Animated", value: "login-blue-primary-animated" }
+              - { label: "Secondary - Pink Animated", value: "login-pink-secondary-animated" }
+              - { label: "Tertiary - Yellow Animated", value: "login-yellow-tertiary-animated" }
+          - { label: "Join Button", name: promo_join_button, widget: "string" }
+          - {
+              label: "Join Button Redirect URL",
+              name: promo_join_button_redirect_url,
+              widget: "string",
+            }
+          - label: "Join Button Style"
+            name: "promo_join_button_style"
+            widget: "select"
+            required: false
+            options:
+              - { label: "Primary - Blue Flat", value: "join-blue-primary-flat" }
+              - { label: "Secondary - Pink Flat", value: "join-pink-secondary-flat" }
+              - { label: "Tertiary - Yellow Flat", value: "join-yellow-tertiary-flat" }
+              - { label: "Primary - Blue Animated", value: "join-blue-primary-animated" }
+              - { label: "Secondary - Pink Animated", value: "join-pink-secondary-animated" }
+              - { label: "Tertiary - Yellow Animated", value: "join-yellow-tertiary-animated" }
+          - { label: "Terms Text", name: promo_terms_text, widget: "string" }
           - label: "Terms Underlined Link Texts"
             name: "promo_terms_link_text"
             widget: "list"
-            summary: '{{field.text}}'
+            summary: "{{field.text}}"
             required: false
-            field: {label: Text, name: text, widget: string}
+            field: { label: Text, name: text, widget: string }
           - label: "Desktop banner size cover"
             name: "desktop_full"
             default: true
@@ -647,45 +527,135 @@ collections:
             widget: "object"
             colapsed: true
             fields:
-              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
-              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
-              - {label: "Game Logo", name: promo_game_logo, widget: image, required: false}
+              - {
+                  label: "Desktop Background",
+                  name: promo_bg_desktop,
+                  widget: image,
+                }
+              - {
+                  label: "Mobile Background",
+                  name: promo_bg_mobile,
+                  widget: image,
+                }
+              - {
+                  label: "Game Logo",
+                  name: promo_game_logo,
+                  widget: image,
+                  required: false,
+                }
       - label: "Steps"
         name: "steps"
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Step 1 Title", name: step_title_1, widget: "string"}
-          - {label: "Step 1 Description", name: step_description_1, widget: "string"}
-          - {label: "Step 2 Title", name: step_title_2, widget: "string"}
-          - {label: "Step 2 Description", name: step_description_2, widget: "string"}
-          - {label: "Step 3 Title", name: step_title_3, widget: "string"}
-          - {label: "Step 3 Description", name: step_description_3, widget: "string"}
+          - { label: "Step 1 Title", name: step_title_1, widget: "string" }
+          - {
+              label: "Step 1 Description",
+              name: step_description_1,
+              widget: "string",
+            }
+          - { label: "Step 2 Title", name: step_title_2, widget: "string" }
+          - {
+              label: "Step 2 Description",
+              name: step_description_2,
+              widget: "string",
+            }
+          - { label: "Step 3 Title", name: step_title_3, widget: "string" }
+          - {
+              label: "Step 3 Description",
+              name: step_description_3,
+              widget: "string",
+            }
       - label: "Game Slider"
         name: "game_images"
         widget: "object"
         colapsed: true
         fields:
-          - {label: "Game Icon 1", name: game_icon_1, widget: image, required: false, default: "/marketing/img/loyalty-program.png"}
-          - {label: "Game URL", name: game_url_1, widget: string, required: false, default: "https://www.verajohn.com/ja/about/loyalty-program"}
-          - {label: "Game Icon 2", name: game_icon_2, widget: image, required: false, default: "/marketing/img/hawaiian-dream.png"}
-          - {label: "Game URL", name: game_url_2, widget: string, required: false, default: "https://www.verajohn.com/ja/game/hawaiian-dream"}
-          - {label: "Game Icon 3", name: game_icon_3, widget: image, required: false, default: "/marketing/img/card-master.png"}
-          - {label: "Game URL", name: game_url_3, widget: string, required: false, default: "https://www.verajohn.com/ja/about/cardmaster"}
-          - {label: "Game Icon 4", name: game_icon_4, widget: image, required: false, default: "/marketing/img/live-casino.png"}
-          - {label: "Game URL", name: game_url_4, widget: string, required: false, default: "https://www.verajohn.com/ja/livecasino"}
-          - {label: "Game Icon 5", name: game_icon_5, widget: image, required: false, default: "/marketing/img/payment-option.png"}
-          - {label: "Game URL", name: game_url_5, widget: string, required: false, default: "https://www.verajohn.com/ja/about/paymentoption"}
-      - {label: "Terms & Conditions", name: "body", widget: "markdown"}
-      - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}
+          - {
+              label: "Game Icon 1",
+              name: game_icon_1,
+              widget: image,
+              required: false,
+              default: "/marketing/img/loyalty-program.png",
+            }
+          - {
+              label: "Game URL",
+              name: game_url_1,
+              widget: string,
+              required: false,
+              default: "https://www.verajohn.com/ja/about/loyalty-program",
+            }
+          - {
+              label: "Game Icon 2",
+              name: game_icon_2,
+              widget: image,
+              required: false,
+              default: "/marketing/img/hawaiian-dream.png",
+            }
+          - {
+              label: "Game URL",
+              name: game_url_2,
+              widget: string,
+              required: false,
+              default: "https://www.verajohn.com/ja/game/hawaiian-dream",
+            }
+          - {
+              label: "Game Icon 3",
+              name: game_icon_3,
+              widget: image,
+              required: false,
+              default: "/marketing/img/card-master.png",
+            }
+          - {
+              label: "Game URL",
+              name: game_url_3,
+              widget: string,
+              required: false,
+              default: "https://www.verajohn.com/ja/about/cardmaster",
+            }
+          - {
+              label: "Game Icon 4",
+              name: game_icon_4,
+              widget: image,
+              required: false,
+              default: "/marketing/img/live-casino.png",
+            }
+          - {
+              label: "Game URL",
+              name: game_url_4,
+              widget: string,
+              required: false,
+              default: "https://www.verajohn.com/ja/livecasino",
+            }
+          - {
+              label: "Game Icon 5",
+              name: game_icon_5,
+              widget: image,
+              required: false,
+              default: "/marketing/img/payment-option.png",
+            }
+          - {
+              label: "Game URL",
+              name: game_url_5,
+              widget: string,
+              required: false,
+              default: "https://www.verajohn.com/ja/about/paymentoption",
+            }
+      - { label: "Terms & Conditions", name: "body", widget: "markdown" }
+      - {
+          label: Template,
+          name: promo_template,
+          widget: hidden,
+          default: "VJLP7-NoForm",
+        }
 
   - name: "VJLP8-NoForm"
     label: "Vera&John Template 8"
-    format: 'frontmatter'
+    format: "frontmatter"
     folder: "assets/content/landing-page/marketing/vjlp8"
     create: true
     identifier_field: "slug_name"
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     preview_path: marketing/vjlp8/{{slug}}
     show_preview_links: true
     editor:
@@ -722,9 +692,27 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false, default: "UA-142143961-1"}
-          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
-          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
+          - {
+              label: "Google Analytics Tracking ID",
+              name: ga_tracking_id,
+              widget: "string",
+              required: false,
+              default: "UA-142143961-1",
+            }
+          - {
+              label: "Google Optimize Container ID",
+              name: go_container_id,
+              widget: "string",
+              required: false,
+              default: "OPT-PHSNXP6",
+            }
+          - {
+              label: "Google Tag Manger Container ID",
+              name: gtm_container_id,
+              widget: "string",
+              required: false,
+              default: "GTM-MFD3NKM",
+            }
       - label: "Styles"
         name: "styles"
         widget: "select"
@@ -737,55 +725,118 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Title", name: "promo_title", widget: "string"}
-          - {label: "Large Subtitle", name: "promo_large_subtitle", widget: "string"}
-          - {label: "Small Subtitle", name: "promo_small_subtitle", widget: "text"}
+          - { label: "Title", name: "promo_title", widget: "string" }
+          - {
+              label: "Large Subtitle",
+              name: "promo_large_subtitle",
+              widget: "string",
+            }
+          - {
+              label: "Small Subtitle",
+              name: "promo_small_subtitle",
+              widget: "text",
+            }
           - label: "Small Subtitle Highlighted Phrases"
             name: "promo_small_subtitle_highlighted"
             widget: "list"
-            summary: '{{field.phrase}}'
+            summary: "{{field.phrase}}"
             required: false
-            field: {label: Phrase, name: phrase, widget: string}
-          - {label: "Login Button Text", name: "promo_login_button", widget: "string"}
-          - {label: "Login Button Redirect URL", name: "promo_login_button_redirect_url", widget: "string"}
-          - {label: "Join Button Text", name: "promo_join_button", widget: "string"}
-          - {label: "Join Button Redirect URL", name: "promo_join_button_redirect_url", widget: "string"}
-          - {label: "Terms Text", name: "promo_terms", widget: "string"}
+            field: { label: Phrase, name: phrase, widget: string }
+          - {
+              label: "Login Button Text",
+              name: "promo_login_button",
+              widget: "string",
+            }
+          - {
+              label: "Login Button Redirect URL",
+              name: "promo_login_button_redirect_url",
+              widget: "string",
+            }
+          - label: "Login Button Style"
+            name: "promo_login_button_style"
+            widget: "select"
+            required: false
+            options:
+              - { label: "Primary - Blue Flat", value: "login-blue-primary-flat" }
+              - { label: "Secondary - Pink Flat", value: "login-pink-secondary-flat" }
+              - { label: "Tertiary - Yellow Flat", value: "login-yellow-tertiary-flat" }
+              - { label: "Primary - Blue Animated", value: "login-blue-primary-animated" }
+              - { label: "Secondary - Pink Animated", value: "login-pink-secondary-animated" }
+              - { label: "Tertiary - Yellow Animated", value: "login-yellow-tertiary-animated" }
+          - {
+              label: "Join Button Text",
+              name: "promo_join_button",
+              widget: "string",
+            }
+          - {
+              label: "Join Button Redirect URL",
+              name: "promo_join_button_redirect_url",
+              widget: "string",
+            }
+          - label: "Join Button Style"
+            name: "promo_join_button_style"
+            widget: "select"
+            required: false
+            options:
+              - { label: "Primary - Blue Flat", value: "join-blue-primary-flat" }
+              - { label: "Secondary - Pink Flat", value: "join-pink-secondary-flat" }
+              - { label: "Tertiary - Yellow Flat", value: "join-yellow-tertiary-flat" }
+              - { label: "Primary - Blue Animated", value: "join-blue-primary-animated" }
+              - { label: "Secondary - Pink Animated", value: "join-pink-secondary-animated" }
+              - { label: "Tertiary - Yellow Animated", value: "join-yellow-tertiary-animated" }
+          - { label: "Terms Text", name: "promo_terms", widget: "string" }
           - label: "Terms Link Texts"
             name: "promo_link_terms"
             widget: "list"
-            summary: '{{field.text}}'
+            summary: "{{field.text}}"
             required: false
-            field: {label: Text, name: text, widget: string}
+            field: { label: Text, name: text, widget: string }
           - label: "Images"
             name: "promo_images"
             widget: "object"
             colapsed: true
             fields:
-              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
-              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
-              - {label: "Game Logo", name: promo_game_logo, widget: image}
-              - {label: "Game Title", name: promo_game_image, widget: image}
+              - {
+                  label: "Desktop Background",
+                  name: promo_bg_desktop,
+                  widget: image,
+                }
+              - {
+                  label: "Mobile Background",
+                  name: promo_bg_mobile,
+                  widget: image,
+                }
+              - { label: "Game Logo", name: promo_game_logo, widget: image }
+              - { label: "Game Title", name: promo_game_image, widget: image }
       - label: "Section"
         name: "section"
         widget: "list"
         collapsed: true
         fields:
-          - {label: "Title", name: "title", widget: "string", required: false}
-          - {label: "Join Button Text", name: "join_button", widget: "string"}
-          - {label: "Join Button Redirect URL", name: "join_button_redirect_url", widget: "string"}
-          - {label: "Image", name: image, widget: image}
-      - {label: 'Terms & Conditions', name: 'body', widget: 'markdown', required: false}
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Join Button Text", name: "join_button", widget: "string" }
+          - {
+              label: "Join Button Redirect URL",
+              name: "join_button_redirect_url",
+              widget: "string",
+            }
+          - { label: "Image", name: image, widget: image }
+      - {
+          label: "Terms & Conditions",
+          name: "body",
+          widget: "markdown",
+          required: false,
+        }
 
-  - name: 'ICLP1-NoForm'
-    label: 'InterCasino Template 1'
-    format: 'frontmatter'
-    folder: 'assets/content/landing-page/marketing/iclp1'
+  - name: "ICLP1-NoForm"
+    label: "InterCasino Template 1"
+    format: "frontmatter"
+    folder: "assets/content/landing-page/marketing/iclp1"
     create: true
     identifier_field: "slug_name"
-    slug: '{{slug}}'
-    preview_path: marketing/iclp1/{{slug}}
-    show_preview_links: true
+    slug: "{{slug}}"
+    preview_path: iclp1/{{slug}}
+    show_preview_links: false
     editor:
       preview: true
     fields:
@@ -802,7 +853,7 @@ collections:
           - label: "Country Code"
             name: "promo_country_code"
             widget: "select"
-            default: ["jp"]
+            default: "jp"
             options:
               - { label: "Japan", value: "jp" }
               - { label: "Sweden", value: "se" }
@@ -810,7 +861,7 @@ collections:
           - label: "Language Code"
             name: "promo_language_code"
             widget: "select"
-            default: ["ja"]
+            default: "ja"
             options:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
@@ -820,57 +871,165 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false, default: "UA-142143961-1"}
-          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
-          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
+          - {
+              label: "Google Analytics Tracking ID",
+              name: ga_tracking_id,
+              widget: "string",
+              required: false,
+              default: "UA-142143961-1",
+            }
+          - {
+              label: "Google Optimize Container ID",
+              name: go_container_id,
+              widget: "string",
+              required: false,
+              default: "OPT-PHSNXP6",
+            }
+          - {
+              label: "Google Tag Manger Container ID",
+              name: gtm_container_id,
+              widget: "string",
+              required: false,
+              default: "GTM-MFD3NKM",
+            }
       - label: "Promotion Banner"
         name: "promo_banner"
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Title", name: "promo_title", widget: "string"}
-          - {label: "Login Button Text", name: promo_login_button_text, widget: "string"}
-          - {label: "Login Button Redirect URL", name: promo_login_button_redirect_url, widget: "string"}
-          - {label: "Subtitle 1", name: "promo_subtitle_1", widget: "string", required: false}
-          - {label: "Main Heading H1", name: "promo_main_heading", widget: "string", required: false}
-          - {label: "Animate Heading", name: "promo_title_animate", widget: "boolean", default: true}
-          - {label: "Subtitle 2", name: "promo_subtitle_2", widget: "string", required: false}
-          - {label: "Signup Button Text", name: promo_signup_button, widget: "string"}
-          - {label: "Signup Button Redirect URL", name: promo_signup_button_redirect_url, widget: "string"}
-          - {label: "Small Term Text Link", name: promo_smallterm_text_link, widget: "string"}
-          - {label: "Small Term Redirect URL", name: promo_smallterm_redirect_url, widget: "string"}
-          - {label: "Small Term Text", name: promo_smallterm_text, widget: "string"}
+          - { label: "Title", name: "promo_title", widget: "string" }
+          - {
+              label: "Login Button Text",
+              name: promo_login_button_text,
+              widget: "string",
+            }
+          - {
+              label: "Login Button Redirect URL",
+              name: promo_login_button_redirect_url,
+              widget: "string",
+            }
+          - {
+              label: "Subtitle 1",
+              name: "promo_subtitle_1",
+              widget: "string",
+              required: false,
+            }
+          - {
+              label: "Main Heading H1",
+              name: "promo_main_heading",
+              widget: "string",
+              required: false,
+            }
+          - {
+              label: "Animate Heading",
+              name: "promo_title_animate",
+              widget: "boolean",
+              default: true,
+            }
+          - {
+              label: "Subtitle 2",
+              name: "promo_subtitle_2",
+              widget: "string",
+              required: false,
+            }
+          - {
+              label: "Signup Button Text",
+              name: promo_signup_button,
+              widget: "string",
+            }
+          - {
+              label: "Signup Button Redirect URL",
+              name: promo_signup_button_redirect_url,
+              widget: "string",
+            }
+          - {
+              label: "Small Term Text Link",
+              name: promo_smallterm_text_link,
+              widget: "string",
+            }
+          - {
+              label: "Small Term Redirect URL",
+              name: promo_smallterm_redirect_url,
+              widget: "string",
+            }
+          - {
+              label: "Small Term Text",
+              name: promo_smallterm_text,
+              widget: "string",
+            }
           - label: "Images"
             name: "promo_images"
             widget: "object"
             colapsed: true
             fields:
-              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
-              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
-              - {label: "Game Logo", name: promo_game_logo, widget: image, required: false}
+              - {
+                  label: "Desktop Background",
+                  name: promo_bg_desktop,
+                  widget: image,
+                }
+              - {
+                  label: "Mobile Background",
+                  name: promo_bg_mobile,
+                  widget: image,
+                }
+              - {
+                  label: "Game Logo",
+                  name: promo_game_logo,
+                  widget: image,
+                  required: false,
+                }
       - label: "Promotion Steps"
         name: "promo_steps"
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Step 1 Title", name: promo_step_1_title, widget: "string"}
-          - {label: "Step 1 Description", name: promo_step_1_desc, widget: "string"}
-          - {label: "Step 2 Title", name: promo_step_2_title, widget: "string"}
-          - {label: "Step 2 Description", name: promo_step_2_desc, widget: "string"}
-          - {label: "Step 3 Title", name: promo_step_3_title, widget: "string"}
-          - {label: "Step 3 Description", name: promo_step_3_desc, widget: "string"}
-      - {label: "Terms & Conditions", name: "body", widget: "markdown"}
-      - {label: Template, name: promo_template, widget: hidden, default: "VJLP1-NoForm"}
+          - {
+              label: "Step 1 Title",
+              name: promo_step_1_title,
+              widget: "string",
+            }
+          - {
+              label: "Step 1 Description",
+              name: promo_step_1_desc,
+              widget: "string",
+            }
+          - {
+              label: "Step 2 Title",
+              name: promo_step_2_title,
+              widget: "string",
+            }
+          - {
+              label: "Step 2 Description",
+              name: promo_step_2_desc,
+              widget: "string",
+            }
+          - {
+              label: "Step 3 Title",
+              name: promo_step_3_title,
+              widget: "string",
+            }
+          - {
+              label: "Step 3 Description",
+              name: promo_step_3_desc,
+              widget: "string",
+            }
+      - { label: "Terms & Conditions", name: "body", widget: "markdown" }
+      - {
+          label: Template,
+          name: promo_template,
+          widget: hidden,
+          default: "ICLP1-NoForm",
+        }
 
-  - name: 'ICLP2-NoForm'
-    label: 'InterCasino Template 2'
-    format: 'frontmatter'
-    folder: 'assets/content/landing-page/marketing/iclp2'
+  - name: "ICLP2-NoForm"
+    label: "InterCasino Template 2"
+    format: "frontmatter"
+    folder: "assets/content/landing-page/marketing/iclp2"
     create: true
     identifier_field: "slug_name"
-    slug: '{{slug}}'
-    preview_path: marketing/iclp2/{{slug}}
-    show_preview_links: true
+    slug: "{{slug}}"
+    preview_path: iclp2/{{slug}}
+    show_preview_links: false
     editor:
       preview: false
     fields:
@@ -887,7 +1046,7 @@ collections:
           - label: "Country Code"
             name: "promo_country_code"
             widget: "select"
-            default: ["jp"]
+            default: "jp"
             options:
               - { label: "Japan", value: "jp" }
               - { label: "Sweden", value: "se" }
@@ -895,7 +1054,7 @@ collections:
           - label: "Language Code"
             name: "promo_language_code"
             widget: "select"
-            default: ["ja"]
+            default: "ja"
             options:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
@@ -905,77 +1064,200 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false, default: "UA-142143961-1"}
-          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
-          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
+          - {
+              label: "Google Analytics Tracking ID",
+              name: ga_tracking_id,
+              widget: "string",
+              required: false,
+              default: "UA-142143961-1",
+            }
+          - {
+              label: "Google Optimize Container ID",
+              name: go_container_id,
+              widget: "string",
+              required: false,
+              default: "OPT-PHSNXP6",
+            }
+          - {
+              label: "Google Tag Manger Container ID",
+              name: gtm_container_id,
+              widget: "string",
+              required: false,
+              default: "GTM-MFD3NKM",
+            }
       - label: "Promotion Banner"
         name: "promo_banner"
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Title", name: "promo_title", widget: "string"}
-          - {label: "Banner Statement", name: "promo_banner_statement", widget: "text"}
-          - {label: "Banner Highlighted Phrase", name: "promo_banner_highlighted_phrase", widget: "string", required: false}
-          - {label: "Register Button Text", name: promo_register_button_text, widget: "string"}
-          - {label: "Register Button URL", name: promo_register_button_redirect_url, widget: "string"}
-          - {label: "Home Button Text", name: promo_home_button, widget: "string"}
-          - {label: "Home Button URL", name: promo_home_button_redirect_url, widget: "string"}
-          - {label: "Small Term Text Link", name: promo_smallterm_text_link, widget: "string"}
-          - {label: "Small Term URL", name: promo_smallterm_redirect_url, widget: "string"}
-          - {label: "Small Term Text", name: promo_smallterm_text, widget: "string"}
+          - { label: "Title", name: "promo_title", widget: "string" }
+          - {
+              label: "Banner Statement",
+              name: "promo_banner_statement",
+              widget: "text",
+            }
+          - {
+              label: "Banner Highlighted Phrase",
+              name: "promo_banner_highlighted_phrase",
+              widget: "string",
+              required: false,
+            }
+          - {
+              label: "Register Button Text",
+              name: promo_register_button_text,
+              widget: "string",
+            }
+          - {
+              label: "Register Button URL",
+              name: promo_register_button_redirect_url,
+              widget: "string",
+            }
+          - {
+              label: "Home Button Text",
+              name: promo_home_button,
+              widget: "string",
+            }
+          - {
+              label: "Home Button URL",
+              name: promo_home_button_redirect_url,
+              widget: "string",
+            }
+          - {
+              label: "Small Term Text Link",
+              name: promo_smallterm_text_link,
+              widget: "string",
+            }
+          - {
+              label: "Small Term URL",
+              name: promo_smallterm_redirect_url,
+              widget: "string",
+            }
+          - {
+              label: "Small Term Text",
+              name: promo_smallterm_text,
+              widget: "string",
+            }
           - label: "Images"
             name: "promo_images"
             widget: "object"
             colapsed: true
             fields:
-              - {label: "Desktop Background", name: promo_bg_desktop, widget: image}
-              - {label: "Mobile Background", name: promo_bg_mobile, widget: image}
-              - {label: "Banner Image Title 1", name: promo_banner_image_title_1, widget: image}
-              - {label: "Banner Image Title 2", name: promo_banner_image_title_2, widget: image}
-              - {label: "Game Logo", name: promo_game_logo, widget: image, required: false}
+              - {
+                  label: "Desktop Background",
+                  name: promo_bg_desktop,
+                  widget: image,
+                }
+              - {
+                  label: "Mobile Background",
+                  name: promo_bg_mobile,
+                  widget: image,
+                }
+              - {
+                  label: "Banner Image Title 1",
+                  name: promo_banner_image_title_1,
+                  widget: image,
+                }
+              - {
+                  label: "Banner Image Title 2",
+                  name: promo_banner_image_title_2,
+                  widget: image,
+                }
+              - {
+                  label: "Game Logo",
+                  name: promo_game_logo,
+                  widget: image,
+                  required: false,
+                }
       - label: "Welcome Section"
         name: "welcome_section"
         widget: "object"
         collapsed: true
         fields:
-          - {label: "First Statement", name: "welcome_first_statement", widget: "text"}
-          - {label: "First Statement Highlighted Phrase", name: "welcome_first_statement_highlighted_phrase", widget: "string", required: false}
-          - {label: "Second Statement", name: "welcome_second_statement", widget: "text"}
-          - {label: "Rouge's Speech Bubble", name: "welcome_rouge_speech_bubble", widget: "text"}
-          - {label: "Chloe's Speech Bubble", name: "welcome_chloe_speech_bubble", widget: "text"}
+          - {
+              label: "First Statement",
+              name: "welcome_first_statement",
+              widget: "text",
+            }
+          - {
+              label: "First Statement Highlighted Phrase",
+              name: "welcome_first_statement_highlighted_phrase",
+              widget: "string",
+              required: false,
+            }
+          - {
+              label: "Second Statement",
+              name: "welcome_second_statement",
+              widget: "text",
+            }
+          - {
+              label: "Rouge's Speech Bubble",
+              name: "welcome_rouge_speech_bubble",
+              widget: "text",
+            }
+          - {
+              label: "Chloe's Speech Bubble",
+              name: "welcome_chloe_speech_bubble",
+              widget: "text",
+            }
       - label: "Top Game Section"
         name: "top_game_section"
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Game 1", name: top_game_game1, widget: image}
-          - {label: "Game 2", name: top_game_game2, widget: image}
-          - {label: "Game 3", name: top_game_game3, widget: image}
-          - {label: "Game 4", name: top_game_game4, widget: image}
-          - {label: "Games Info 1", name: top_game_gamesInfo1, widget: image}
-          - {label: "Games Info 2", name: top_game_gamesInfo2, widget: image}
+          - { label: "Game 1", name: top_game_game1, widget: image }
+          - { label: "Game 2", name: top_game_game2, widget: image }
+          - { label: "Game 3", name: top_game_game3, widget: image }
+          - { label: "Game 4", name: top_game_game4, widget: image }
+          - { label: "Games Info 1", name: top_game_gamesInfo1, widget: image }
+          - { label: "Games Info 2", name: top_game_gamesInfo2, widget: image }
       - label: "History Section"
         name: "history_section"
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Rouge's Statement", name: history_rouge_statement, widget: "text"}
-          - {label: "Rouge's Highlighted Phrase", name: history_rouge_highlighted_phrase, widget: "string", required: false}
-          - {label: "Chloe's Statement", name: history_chloe_statement, widget: "text"}
-          - {label: "Chloe's Highlighted Phrase", name: history_chloe_highlighted_phrase, widget: "string", required: false}
-          - {label: "Register Button Text", name: history_register_button_text, widget: "string"}
-          - {label: "Register Button Redirect URL", name: history_register_button_redirect_url, widget: "string"}
-      - {label: "Terms & Conditions", name: "body", widget: "markdown"}
+          - {
+              label: "Rouge's Statement",
+              name: history_rouge_statement,
+              widget: "text",
+            }
+          - {
+              label: "Rouge's Highlighted Phrase",
+              name: history_rouge_highlighted_phrase,
+              widget: "string",
+              required: false,
+            }
+          - {
+              label: "Chloe's Statement",
+              name: history_chloe_statement,
+              widget: "text",
+            }
+          - {
+              label: "Chloe's Highlighted Phrase",
+              name: history_chloe_highlighted_phrase,
+              widget: "string",
+              required: false,
+            }
+          - {
+              label: "Register Button Text",
+              name: history_register_button_text,
+              widget: "string",
+            }
+          - {
+              label: "Register Button Redirect URL",
+              name: history_register_button_redirect_url,
+              widget: "string",
+            }
+      - { label: "Terms & Conditions", name: "body", widget: "markdown" }
 
-  - name: 'ICLP3-NoForm'
-    label: 'InterCasino Template 3'
-    format: 'frontmatter'
-    folder: 'assets/content/landing-page/marketing/iclp3'
+  - name: "ICLP3-NoForm"
+    label: "InterCasino Template 3"
+    format: "frontmatter"
+    folder: "assets/content/landing-page/marketing/iclp3"
     create: true
     identifier_field: "slug_name"
-    slug: '{{slug}}'
-    preview_path: marketing/iclp3/{{slug}}
-    show_preview_links: true
+    slug: "{{slug}}"
+    preview_path: iclp3/{{slug}}
+    show_preview_links: false
     editor:
       preview: false
     fields:
@@ -992,7 +1274,7 @@ collections:
           - label: "Country Code"
             name: "promo_country_code"
             widget: "select"
-            default: ["jp"]
+            default: "jp"
             options:
               - { label: "Japan", value: "jp" }
               - { label: "Sweden", value: "se" }
@@ -1000,7 +1282,7 @@ collections:
           - label: "Language Code"
             name: "promo_language_code"
             widget: "select"
-            default: ["ja"]
+            default: "ja"
             options:
               - { label: "Japanese", value: "ja" }
               - { label: "Swedish", value: "sv" }
@@ -1010,47 +1292,86 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false, default: "UA-142143961-1"}
-          - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
-          - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
+          - {
+              label: "Google Analytics Tracking ID",
+              name: ga_tracking_id,
+              widget: "string",
+              required: false,
+              default: "UA-142143961-1",
+            }
+          - {
+              label: "Google Optimize Container ID",
+              name: go_container_id,
+              widget: "string",
+              required: false,
+              default: "OPT-PHSNXP6",
+            }
+          - {
+              label: "Google Tag Manger Container ID",
+              name: gtm_container_id,
+              widget: "string",
+              required: false,
+              default: "GTM-MFD3NKM",
+            }
       - label: "Promotion Banner"
         name: "promo_banner"
         widget: "object"
         collapsed: true
         fields:
-          - {label: "Title", name: "promo_title", widget: "string"}
-          - {label: "Register Message", name: "promo_register_message", widget: "text"}
-          - {label: "Join Text", name: "promo_join_text", widget: "string"}
-          - {label: "Join Text URL", name: "promo_join_url", widget: "string"}
-          - {label: "Terms Text", name: "promo_terms_text", widget: "string"}
-          - {label: "Underlined Terms Text", name: "promo_terms_underlined_text", widget: "string"}
+          - { label: "Title", name: "promo_title", widget: "string" }
+          - {
+              label: "Register Message",
+              name: "promo_register_message",
+              widget: "text",
+            }
+          - { label: "Join Text", name: "promo_join_text", widget: "string" }
+          - { label: "Join Text URL", name: "promo_join_url", widget: "string" }
+          - { label: "Terms Text", name: "promo_terms_text", widget: "string" }
+          - {
+              label: "Underlined Terms Text",
+              name: "promo_terms_underlined_text",
+              widget: "string",
+            }
       - label: "Bonus"
         name: "bonus"
         widget: "list"
         collapsed: true
         fields:
-          - {label: "Title Image", name: "box_title_image", widget: "image"}
-          - {label: "Button Image", name: "box_button_image", widget: "image"}
-          - {label: "Buttom Image URL", name: "box_button_image_url", widget: "string"}
-          - {label: "Summary", name: "summary", widget: "text"}
+          - { label: "Title Image", name: "box_title_image", widget: "image" }
+          - { label: "Button Image", name: "box_button_image", widget: "image" }
+          - {
+              label: "Buttom Image URL",
+              name: "box_button_image_url",
+              widget: "string",
+            }
+          - { label: "Summary", name: "summary", widget: "text" }
           - label: "Highlighted Phrases"
             name: "higlighted_phrases"
             widget: "list"
-            summary: '{{field.text}}'
-            field: {label: Text, name: text, widget: string, required: false}
+            summary: "{{field.text}}"
+            field: { label: Text, name: text, widget: string, required: false }
           - label: "Highlighted Link Phrases"
             name: "highlighted_link_phrases"
             widget: "list"
             fields:
-              - {label: "Text", name: "text", widget: "string", required: false}
-              - {label: "Link", name: "link", widget: "string", required: false}
-      - {label: "Terms & Conditions", name: "body", widget: "markdown"}
+              - {
+                  label: "Text",
+                  name: "text",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Link",
+                  name: "link",
+                  widget: "string",
+                  required: false,
+                }
+      - { label: "Terms & Conditions", name: "body", widget: "markdown" }
 
   - label: "Vera&John Homepage"
     name: "VJ-Homepage"
-    format: 'frontmatter'
-    preview_path: marketing/vjhp
-    show_preview_links: true
+    format: "frontmatter"
+    show_preview_links: false
     editor:
       preview: false
     files:
@@ -1063,49 +1384,187 @@ collections:
             widget: "object"
             collapsed: true
             fields:
-              - {label: "Title for this edit", name: "promo_title", widget: "string"}
+              - {
+                  label: "Title for this edit",
+                  name: "promo_title",
+                  widget: "string",
+                }
           - label: "Tag, Optimize and Analytics ID"
             name: "field_ids"
             widget: "object"
             collapsed: true
             fields:
-              - {label: "Google Analytics Tracking ID", name: ga_tracking_id, widget: "string", required: false, default: "UA-142143961-1"}
-              - {label: "Google Optimize Container ID", name: go_container_id, widget: "string", required: false, default: "OPT-PHSNXP6"}
-              - {label: "Google Tag Manger Container ID", name: gtm_container_id, widget: "string", required: false, default: "GTM-MFD3NKM"}
+              - {
+                  label: "Google Analytics Tracking ID",
+                  name: ga_tracking_id,
+                  widget: "string",
+                  required: false,
+                  default: "UA-142143961-1",
+                }
+              - {
+                  label: "Google Optimize Container ID",
+                  name: go_container_id,
+                  widget: "string",
+                  required: false,
+                  default: "OPT-PHSNXP6",
+                }
+              - {
+                  label: "Google Tag Manger Container ID",
+                  name: gtm_container_id,
+                  widget: "string",
+                  required: false,
+                  default: "GTM-MFD3NKM",
+                }
           - label: "Header Section"
             name: "header_section"
             widget: "object"
             collapsed: true
             fields:
-              - {label: "Top Text", name: header_section_top_text, widget: "string"}
-              - {label: "Top Login Text", name: header_section_top_login_text, widget: "string"}
-              - {label: "Top Login Text URL", name: header_section_top_login_text_url, widget: "string"}
-              - {label: "Welcome Message", name: header_section_welcome_message, widget: "string"}
-              - {label: "Main Heading", name: header_section_main_heading, widget: "string"}
-              - {label: "Heading Subtitle", name: header_section_heading_subtitle, widget: "string"}
-              - {label: "Game Slider 1", name: header_section_game_slider_1, widget: "image"}
-              - {label: "Game Slider URL 1", name: header_section_game_slider_url_1, widget: "string"}
-              - {label: "Game Slider 2", name: header_section_game_slider_2, widget: "image"}
-              - {label: "Game Slider URL 2", name: header_section_game_slider_url_2, widget: "string"}
-              - {label: "Game Slider 3", name: header_section_game_slider_3, widget: "image"}
-              - {label: "Game Slider URL 3", name: header_section_game_slider_url_3, widget: "string"}
-              - {label: "Game Slider 4", name: header_section_game_slider_4, widget: "image"}
-              - {label: "Game Slider URL 4", name: header_section_game_slider_url_4, widget: "string"}
-              - {label: "Game Slider 5", name: header_section_game_slider_5, widget: "image"}
-              - {label: "Game Slider URL 5", name: header_section_game_slider_url_5, widget: "string"}
-              - {label: "Game Slider 6", name: header_section_game_slider_6, widget: "image"}
-              - {label: "Game Slider URL 6", name: header_section_game_slider_url_6, widget: "string"}
-              - {label: "Best Deal Caption", name: header_section_best_deal_caption, widget: "string"}
-              - {label: "Best Deal Image", name: header_section_best_deal_image, widget: "image"}
-              - {label: "Best Deal Image URL", name: header_section_best_deal_image_url, widget: "string"}
-              - {label: "Best Deal Small Caption", name: header_section_best_deal_small_caption, widget: "string"}
-              - {label: "Register Button", name: header_section_register_button, widget: "string"}
-              - {label: "Register Button URL", name: header_section_register_button_url, widget: "string"}
-              - {label: "Account Text", name: header_section_account_text, widget: "string"}
-              - {label: "Account Login", name: header_section_account_login, widget: "string"}
-              - {label: "Account Login URL", name: header_section_account_login_url, widget: "string"}
-              - {label: "Desktop Background Image", name: header_section_desktop_background_image, widget: "image"}
-              - {label: "Mobile Background Image", name: header_section_mobile_background_image, widget: "image"}
+              - {
+                  label: "Top Text",
+                  name: header_section_top_text,
+                  widget: "string",
+                }
+              - {
+                  label: "Top Login Text",
+                  name: header_section_top_login_text,
+                  widget: "string",
+                }
+              - {
+                  label: "Top Login Text URL",
+                  name: header_section_top_login_text_url,
+                  widget: "string",
+                }
+              - {
+                  label: "Welcome Message",
+                  name: header_section_welcome_message,
+                  widget: "string",
+                }
+              - {
+                  label: "Main Heading",
+                  name: header_section_main_heading,
+                  widget: "string",
+                }
+              - {
+                  label: "Heading Subtitle",
+                  name: header_section_heading_subtitle,
+                  widget: "string",
+                }
+              - {
+                  label: "Game Slider 1",
+                  name: header_section_game_slider_1,
+                  widget: "image",
+                }
+              - {
+                  label: "Game Slider URL 1",
+                  name: header_section_game_slider_url_1,
+                  widget: "string",
+                }
+              - {
+                  label: "Game Slider 2",
+                  name: header_section_game_slider_2,
+                  widget: "image",
+                }
+              - {
+                  label: "Game Slider URL 2",
+                  name: header_section_game_slider_url_2,
+                  widget: "string",
+                }
+              - {
+                  label: "Game Slider 3",
+                  name: header_section_game_slider_3,
+                  widget: "image",
+                }
+              - {
+                  label: "Game Slider URL 3",
+                  name: header_section_game_slider_url_3,
+                  widget: "string",
+                }
+              - {
+                  label: "Game Slider 4",
+                  name: header_section_game_slider_4,
+                  widget: "image",
+                }
+              - {
+                  label: "Game Slider URL 4",
+                  name: header_section_game_slider_url_4,
+                  widget: "string",
+                }
+              - {
+                  label: "Game Slider 5",
+                  name: header_section_game_slider_5,
+                  widget: "image",
+                }
+              - {
+                  label: "Game Slider URL 5",
+                  name: header_section_game_slider_url_5,
+                  widget: "string",
+                }
+              - {
+                  label: "Game Slider 6",
+                  name: header_section_game_slider_6,
+                  widget: "image",
+                }
+              - {
+                  label: "Game Slider URL 6",
+                  name: header_section_game_slider_url_6,
+                  widget: "string",
+                }
+              - {
+                  label: "Best Deal Caption",
+                  name: header_section_best_deal_caption,
+                  widget: "string",
+                }
+              - {
+                  label: "Best Deal Image",
+                  name: header_section_best_deal_image,
+                  widget: "image",
+                }
+              - {
+                  label: "Best Deal Image URL",
+                  name: header_section_best_deal_image_url,
+                  widget: "string",
+                }
+              - {
+                  label: "Best Deal Small Caption",
+                  name: header_section_best_deal_small_caption,
+                  widget: "string",
+                }
+              - {
+                  label: "Register Button",
+                  name: header_section_register_button,
+                  widget: "string",
+                }
+              - {
+                  label: "Register Button URL",
+                  name: header_section_register_button_url,
+                  widget: "string",
+                }
+              - {
+                  label: "Account Text",
+                  name: header_section_account_text,
+                  widget: "string",
+                }
+              - {
+                  label: "Account Login",
+                  name: header_section_account_login,
+                  widget: "string",
+                }
+              - {
+                  label: "Account Login URL",
+                  name: header_section_account_login_url,
+                  widget: "string",
+                }
+              - {
+                  label: "Desktop Background Image",
+                  name: header_section_desktop_background_image,
+                  widget: "image",
+                }
+              - {
+                  label: "Mobile Background Image",
+                  name: header_section_mobile_background_image,
+                  widget: "image",
+                }
           - label: "Games Brick Section"
             name: "games_brick_section"
             widget: "object"
@@ -1116,32 +1575,72 @@ collections:
                 widget: "object"
                 colapsed: true
                 fields:
-                  - {label: "Button", name: games_brick_column_1_button, widget: "string"}
-                  - {label: "Button Redirect URL", name: games_brick_column_1_button_redirect_url, widget: "string"}
+                  - {
+                      label: "Button",
+                      name: games_brick_column_1_button,
+                      widget: "string",
+                    }
+                  - {
+                      label: "Button Redirect URL",
+                      name: games_brick_column_1_button_redirect_url,
+                      widget: "string",
+                    }
               - label: "Column 2"
                 name: "games_brick_column_2"
                 widget: "object"
                 colapsed: true
                 fields:
-                  - {label: "Button", name: games_brick_column_2_button, widget: "string"}
-                  - {label: "Button Redirect URL", name: games_brick_column_2_button_redirect_url, widget: "string"}
+                  - {
+                      label: "Button",
+                      name: games_brick_column_2_button,
+                      widget: "string",
+                    }
+                  - {
+                      label: "Button Redirect URL",
+                      name: games_brick_column_2_button_redirect_url,
+                      widget: "string",
+                    }
           - label: "Testimonials Section"
             name: "testimonials_section"
             widget: "object"
             collapsed: true
             fields:
-              - {label: "Button Text", name: testimonials_button_text, widget: "string"}
-              - {label: "Button Redirect URL", name: testimonials_button_redirect_url, widget: "string"}
+              - {
+                  label: "Button Text",
+                  name: testimonials_button_text,
+                  widget: "string",
+                }
+              - {
+                  label: "Button Redirect URL",
+                  name: testimonials_button_redirect_url,
+                  widget: "string",
+                }
           - label: "Footer Section"
             name: "footer_section"
             widget: "object"
             collapsed: true
             fields:
-              - {label: "Menu 1", name: footer_menu_1_text, widget: "string"}
-              - {label: "Menu 1 Redirect URL", name: footer_menu_1_redirect_url, widget: "string"}
-              - {label: "Menu 2", name: footer_menu_2_text, widget: "string"}
-              - {label: "Menu 2 Redirect URL", name: footer_menu_2_redirect_url, widget: "string"}
-              - {label: "Menu 3", name: footer_menu_3_text, widget: "string"}
-              - {label: "Menu 3 Redirect URL", name: footer_menu_3_redirect_url, widget: "string"}
-              - {label: "Menu 4", name: footer_menu_4_text, widget: "string"}
-              - {label: "Menu 4 Redirect URL", name: footer_menu_4_redirect_url, widget: "string"}
+              - { label: "Menu 1", name: footer_menu_1_text, widget: "string" }
+              - {
+                  label: "Menu 1 Redirect URL",
+                  name: footer_menu_1_redirect_url,
+                  widget: "string",
+                }
+              - { label: "Menu 2", name: footer_menu_2_text, widget: "string" }
+              - {
+                  label: "Menu 2 Redirect URL",
+                  name: footer_menu_2_redirect_url,
+                  widget: "string",
+                }
+              - { label: "Menu 3", name: footer_menu_3_text, widget: "string" }
+              - {
+                  label: "Menu 3 Redirect URL",
+                  name: footer_menu_3_redirect_url,
+                  widget: "string",
+                }
+              - { label: "Menu 4", name: footer_menu_4_text, widget: "string" }
+              - {
+                  label: "Menu 4 Redirect URL",
+                  name: footer_menu_4_redirect_url,
+                  widget: "string",
+                }

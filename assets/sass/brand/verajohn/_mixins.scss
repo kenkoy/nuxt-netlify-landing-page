@@ -42,12 +42,10 @@
 @mixin overlay{
   backdrop-filter: blur(15px);
   position: absolute;
-  top: 50px;
   left: 0;
   background: $OVERLAY_BG;
   border-radius: 10px;
   padding: 30px;
-  width: 100%;
   min-height: 60vh;
   height: 100%;
   text-align: left;

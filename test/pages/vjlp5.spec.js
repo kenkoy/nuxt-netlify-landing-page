@@ -7,18 +7,40 @@ import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.j
 const VJLP5_DIR = '/assets/content/landing-page/marketing/vjlp5/'
 
 describe('Testing VJLP5 index.vue', () => {
+<<<<<<< HEAD
   let wrapper, metaInfo, tagIds, locale, bannerTitle
+=======
+  let wrapper, metaInfo, tagIds, locale, datum
+>>>>>>> 4409368c72d5af948d6f853029e53151ea62a684
 
   beforeAll(async () => {
+    //  ==== For MD Files ====
+    const md = _
+      .chain(await retrieveFiles(VJLP5_DIR, '.md'))
+      .map(files => VJLP5_DIR + files)
+      .value()
+    const dataMDContent = []
+    const jsonData = []
+
+    md.forEach((item, i) => {
+      jsonData.push(retriveFrontMattertoJSON(item))
+      jsonData.forEach((attr, i) => {
+        dataMDContent.push(attr.attributes)
+      })
+    })
+    datum = dataMDContent
+
+    //  ==== For Vue Components ====
     const localVue = createLocalVue()
     localVue.use(VueMeta, { keyName: 'head' })
 
-    const md = _
+    const mdComponents = _
       .chain(await retrieveFiles(VJLP5_DIR, '.md'))
       .map(files => VJLP5_DIR + files)
       .sample()
       .value()
-    const dataMD = retriveFrontMattertoJSON(md)
+
+    const dataMD = retriveFrontMattertoJSON(mdComponents)
     wrapper = mount(index, {
       localVue,
       data () {
@@ -33,6 +55,67 @@ describe('Testing VJLP5 index.vue', () => {
     bannerTitle = dataMD.attributes.promo_banner
   })
 
+  //  ====  MD FILES TEST ====
+  //  HERO SECTION
+  test('Banner title should be first_title', () => {
+    const title = datum
+    let error = []
+
+    //  Loop for printing specific MD files with error
+    title.forEach((item, i) => {
+      if (item.promo_banner.first_title === undefined) {
+        error.push(item.slug_name)
+        const unique = []
+
+        error.forEach((element, i) => {
+          if (!unique.includes(element)) {
+            unique.push(element)
+          }
+        })
+        error = unique
+      }
+    })
+    if (error.length > 0) {
+      console.log('Error files: ', error.join('\r\n'))
+    }
+
+    //  Loop for testing the actual MD files
+    title.forEach((output, i) => {
+      const bannerTitle = output.promo_banner.first_title
+      expect(bannerTitle).toBe(`${output.promo_banner.first_title}`)
+    })
+  })
+
+  test('Banner title should be second_title', () => {
+    const subTitle = datum
+    let error = []
+
+    //  Loop for printing specific MD files with error
+    subTitle.forEach((item, i) => {
+      if (item.promo_banner.second_title === undefined) {
+        error.push(item.slug_name)
+        const unique = []
+
+        error.forEach((element, i) => {
+          if (!unique.includes(element)) {
+            unique.push(element)
+          }
+        })
+        error = unique
+      }
+    })
+    if (error.length > 0) {
+      console.log('Error files: ', error.join('\r\n'))
+    }
+
+    //  Loop for testing the actual MD files
+    subTitle.forEach((output, i) => {
+      const bannerTitle = output.promo_banner.second_title
+      expect(bannerTitle).toBe(`${output.promo_banner.second_title}`)
+    })
+  })
+
+  //  ==== COMPONENTS TEST ====
   test('Title should be Vera&John', () => {
     const pageTitle = metaInfo.title
     expect(pageTitle).toBe('Vera&John')

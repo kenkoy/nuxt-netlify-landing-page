@@ -1,0 +1,140 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .overlay{
+    top: 70px;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  #list-games{
+    #filter-bar{
+      display: block;
+
+      > div:first-child{
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      > #description{
+        width: 70%;
+        display: inline-block;
+        vertical-align: top;
+
+        p{
+          margin: 0;
+          text-align: left;
+        }
+      }
+
+      > #search{
+        display: block;
+        width: 100%;
+        margin: 25px 0;
+      }
+    }
+
+    .game > div{
+      margin: $GAME_LIST_MARGIN calc(#{$GAME_LIST_MARGIN} - 22px);
+
+      img{
+        max-width: 80px;
+      }
+    }
+
+    .find.mobile {
+      width: 35px;
+      height: 35px;
+      padding: 0;
+      min-width: inherit;
+    }
+  }
+
+  #pagination-wrapper{
+    .pagination-text{
+      &:before,
+      &:after{
+        display: none;
+      }
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .overlay{
+    top: 100%;
+    width: 100%;
+  }
+  #list-games{
+    #filter-bar{
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      p{
+        margin: 0;
+      }
+
+      > div:first-child,
+      #description,
+      #search{
+        padding: 0 10px;
+        width: auto;
+      }
+
+      #description{
+        flex-grow: 2;
+        text-align: left;
+      }
+      #search{
+        > * {
+          display: inline-block;
+          margin: 0 5px;
+          color: #212121;
+        }
+      }
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .desktop{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
+  #list-games{
+    .game > div{
+      margin: $GAME_LIST_MARGIN;
+      img{
+        max-width: inherit;
+      }
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  #pagination-wrapper{
+    .pagination-text{
+      &:before,
+      &:after{
+        display: block;
+      }
+    }
+  }
+}

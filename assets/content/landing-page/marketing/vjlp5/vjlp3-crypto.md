@@ -17,6 +17,7 @@ promo_banner:
     promo_bg_mobile: /marketing/img/dsgn-1306-vjlp2-mob.png
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
   first_title: test
+  promo_login_button_style: login-pink-secondary-animated
   promo_title_display: false
   mobile_full: false
   second_title: test
