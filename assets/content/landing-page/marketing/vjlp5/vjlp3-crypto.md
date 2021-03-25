@@ -17,13 +17,15 @@ promo_banner:
     promo_bg_mobile: /marketing/img/dsgn-1306-vjlp2-mob.png
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
   first_title: test
-  promo_button_style: blue-primary-animated
+  promo_join_button_style: join_pink-secondary-flat
+  promo_login_button_style: login_blue-primary-flat
   promo_title_display: false
   mobile_full: false
   second_title: test
   desktop_full: false
   promo_login_button_redirect_url: https://www.verajohn.com/#join
   promo_join_button_redirect_url: https://www.verajohn.com/#join
+  promo_button_style: blue-primary-animated
   promo_join_button: 今すぐプレイ
   promo_login_button: 登録
   phrase: test
