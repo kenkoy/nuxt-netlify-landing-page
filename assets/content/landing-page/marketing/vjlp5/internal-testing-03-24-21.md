@@ -16,8 +16,8 @@ promo_banner:
     promo_bg_mobile: /marketing/img/banner-mob.png
     promo_bg_banner: /marketing/img/vjlp5-banner.jpg
   first_title: This is a sample
-  promo_join_button_style: primary-flat
-  promo_login_button_style: primary-flat
+  promo_join_button_style: secondary-animated
+  promo_login_button_style: 
   mobile_full: true
   second_title: Another sample
   desktop_full: false

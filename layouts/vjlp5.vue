@@ -12,12 +12,12 @@
             </div>
 
             <div class="nav-links">
-              <button class="warning" :class="data_items.attributes.promo_banner.promo_join_button_style === 'join-blue-primary-flat' ? 'join-blue-primary-flat' : data_items.attributes.promo_banner.promo_join_button_style === 'join-pink-secondary-flat' ? 'join-pink-secondary-flat' : data_items.attributes.promo_banner.promo_join_button_style === 'join-yellow-tertiary-flat' ? 'join-yellow-tertiary-flat' : data_items.attributes.promo_banner.promo_join_button_style === 'join-blue-primary-animated' ? 'join-blue-primary-animated' : data_items.attributes.promo_banner.promo_join_button_style === 'join-pink-secondary-animated' ? 'join-pink-secondary-animated' : data_items.attributes.promo_banner.promo_join_button_style === 'join-yellow-tertiary-animated' ? 'join-yellow-tertiary-animated' : 'DAN' ">
+              <button :class="data_items.attributes.promo_banner.promo_login_button_style === 'primary-flat' ? 'primary-flat' : data_items.attributes.promo_banner.promo_login_button_style === 'secondary-flat' ? 'secondary-flat' : data_items.attributes.promo_banner.promo_login_button_style === 'tertiary-flat' ? 'tertiary-flat' : data_items.attributes.promo_banner.promo_login_button_style === 'primary-animated' ? 'primary-animated' : data_items.attributes.promo_banner.promo_login_button_style === 'secondary-animated' ? 'secondary-animated' : data_items.attributes.promo_banner.promo_login_button_style === 'tertiary-animated' ? 'tertiary-animated' : 'warning' ">
                 <a :href="data_items.attributes.promo_banner.promo_join_button_redirect_url">
                   {{ data_items.attributes.promo_banner.promo_login_button }}
                 </a>
               </button>
-              <button class="error animated pulse infinite">
+              <button class="animated pulse infinite" :class="data_items.attributes.promo_banner.promo_join_button_style === 'primary-flat' ? 'primary-flat' : data_items.attributes.promo_banner.promo_join_button_style === 'secondary-flat' ? 'secondary-flat' : data_items.attributes.promo_banner.promo_join_button_style === 'tertiary-flat' ? 'tertiary-flat' : data_items.attributes.promo_banner.promo_join_button_style === 'primary-animated' ? 'primary-animated' : data_items.attributes.promo_banner.promo_join_button_style === 'secondary-animated' ? 'secondary-animated' : data_items.attributes.promo_banner.promo_join_button_style === 'tertiary-animated' ? 'tertiary-animated' : 'error' ">
                 <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url"><strong>{{ data_items.attributes.promo_banner.promo_join_button }}</strong></a>
               </button>
             </div>
@@ -46,10 +46,6 @@
             </div>
           </div>
         </section>
-
-        <p :class="data_items.attributes.promo_banner.promo_join_button_style">
-          Testing
-        </p>
 
         <Steps
           v-if="data_items.attributes.template === 'steps'"

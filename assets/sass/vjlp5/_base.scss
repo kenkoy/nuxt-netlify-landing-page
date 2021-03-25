@@ -47,12 +47,12 @@
             color: $BTN_COLOR;
         }
         &.primary-animated {
-            background: $PRIMARY_FLAT;
+            background: $PRIMARY_ANIMATED;
             color: $BTN_COLOR;
         }
 
         &.secondary-animated {
-            background: $SECONDARY_FLAT;
+            background: $SECONDARY_ANIMATED;
             color: $BTN_COLOR;
             &:hover {
                 background: $SECONDARY_ANIMATED_HOVER;
@@ -63,7 +63,7 @@
         }
 
         &.tertiary-animated {
-            background: $TERTIARY_FLAT;
+            background: $TERTIARY_ANIMATED;
             color: $BTN_COLOR;
             &:hover {
                 background: $TERTIARY_ANIMATED_HOVER;
