@@ -47,9 +47,8 @@
           </div>
         </section>
 
-        <p>
+        <p :class="data_items.attributes.promo_banner.promo_login_button_style">
           Testing:
-          {{ data_items.attributes.promo_banner.promo_join_button_style }}
         </p>
 
         <Steps
