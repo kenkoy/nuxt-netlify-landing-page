@@ -17,14 +17,6 @@ promo_banner:
     promo_bg_mobile: /marketing/img/dsgn-1306-vjlp2-mob.png
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
   first_title: test
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  promo_join_button_style: join_blue-primary-animated
->>>>>>> f7cbe21 (VJLP5s:wq)
-=======
-  promo_join_button_style: join_blue-primary-animated
->>>>>>> f7cbe21 (VJLP5s:wq)
   promo_title_display: false
   mobile_full: false
   second_title: test
