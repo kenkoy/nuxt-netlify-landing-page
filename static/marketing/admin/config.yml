@@ -125,12 +125,12 @@ collections:
             widget: "select"
             required: false
             options:
-              - { label: "Primary - Blue Flat", value: "login-blue-primary-flat" }
-              - { label: "Secondary - Pink Flat", value: "login-pink-secondary-flat" }
-              - { label: "Tertiary - Yellow Flat", value: "login-yellow-tertiary-flat" }
-              - { label: "Primary - Blue Animated", value: "login-blue-primary-animated" }
-              - { label: "Secondary - Pink Animated", value: "login-pink-secondary-animated" }
-              - { label: "Tertiary - Yellow Animated", value: "login-yellow-tertiary-animated" }
+              - { label: "Primary - Blue Flat", value: "login_blue-primary-flat" }
+              - { label: "Secondary - Pink Flat", value: "login_pink-secondary-flat" }
+              - { label: "Tertiary - Yellow Flat", value: "login_yellow-tertiary-flat" }
+              - { label: "Primary - Blue Animated", value: "login_blue-primary-animated" }
+              - { label: "Secondary - Pink Animated", value: "login_pink-secondary-animated" }
+              - { label: "Tertiary - Yellow Animated", value: "login_yellow-tertiary-animated" }
           - { label: "Join Button", name: promo_join_button, widget: "string" }
           - label: "Show Button"
             name: "promo_join_button_option"
@@ -147,12 +147,12 @@ collections:
             widget: "select"
             required: false
             options:
-              - { label: "Primary - Blue Flat", value: "login-blue-primary-flat" }
-              - { label: "Secondary - Pink Flat", value: "join-pink-secondary-flat" }
-              - { label: "Tertiary - Yellow Flat", value: "join-yellow-tertiary-flat" }
-              - { label: "Primary - Blue Animated", value: "join-blue-primary-animated" }
-              - { label: "Secondary - Pink Animated", value: "join-pink-secondary-animated" }
-              - { label: "Tertiary - Yellow Animated", value: "join-yellow-tertiary-animated" }
+              - { label: "Primary - Blue Flat", value: "join_blue-primary-flat" }
+              - { label: "Secondary - Pink Flat", value: "join_pink-secondary-flat" }
+              - { label: "Tertiary - Yellow Flat", value: "join_yellow-tertiary-flat" }
+              - { label: "Primary - Blue Animated", value: "join_blue-primary-animated" }
+              - { label: "Secondary - Pink Animated", value: "join_pink-secondary-animated" }
+              - { label: "Tertiary - Yellow Animated", value: "join_yellow-tertiary-animated" }
           - label: "Desktop banner size cover"
             name: "desktop_full"
             default: true
