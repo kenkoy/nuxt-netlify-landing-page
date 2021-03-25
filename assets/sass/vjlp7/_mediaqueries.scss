@@ -1,59 +1,5 @@
-.version2{
-  @media (min-height: 750px) and (min-width: 320px) and (max-width: 568px) {
-    .logo {
-      max-width: 180px;
-      width: 100%;
-    }
-  }
-}
-
-
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-  .version1{
-    h1{
-      font-size: calc(#{$HERO_TITLE_SIZE3} - 16px);
-      line-height: 35px;
-    }
-    #hero-text-wrapper{
-      background: none;
-
-      button {
-        background: #fff;
-        font-size: 22px;
-        font-weight: 700;
-        width: 280px;
-        border-radius: 100px;
-        border: none;
-        padding: 10px 20px;
-        color: #704B1F;
-
-        a{
-          border: none;
-        }
-      }
-    }
-  }
-
-  .version2{
-    #hero{
-      &:before{
-        background-color: rgba(0,0,0,0.7);
-        display: block;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        content: '';
-      }
-    }
-    #hero{
-      overflow: hidden;
-      position: relative;
-    }
-  }
-
   .desktop{
     display: none;
   }
@@ -129,13 +75,6 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 576px) {
-  .version2{
-    #hero{
-      &:before{
-        display: none;
-      }
-    }
-  }
   #hero{
     background: var(--bg-image) no-repeat center;
     background-size: var(--mobile-width-banner);
@@ -158,42 +97,6 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-  .version1 {
-    #hero {
-      h1{
-        line-height: 58px;
-      }
-      .container{
-        min-height: 730px;
-        height: 100%;
-      }
-      #hero-text-wrapper{
-        background: -webkit-linear-gradient(top, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
-        background: linear-gradient(to bottom, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc009fe3', endColorstr='#ccec008b',GradientType=0);
-        padding: 20px;
-
-        button{
-          background: $BTN_BG;
-          font-size: $TEXT_SIZE;
-
-          a, a:hover{
-            color: $BTN_COLOR;
-          }
-
-          &:hover{
-            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.60);
-          }
-        }
-      }
-    }
-  }
-  .version2{
-    #hero .container{
-      min-height: 500px;
-      height: 100%;
-    }
-  }
   .desktop{
     display: block;
   }
@@ -222,11 +125,6 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-  .version1{
-    h1{
-      font-size: $HERO_TITLE_SIZE3;
-    }
-  }
   #hero{
     #hero-text-wrapper{
       -ms-flex: 0 0 41.666667%;
