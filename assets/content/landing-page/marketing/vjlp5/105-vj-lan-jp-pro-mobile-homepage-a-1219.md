@@ -16,14 +16,15 @@ promo_banner:
     promo_bg_mobile: /marketing/img/digital-welcomeoffer-mob-cta-767x493-b_nocta.png
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
   first_title: " "
+  mobile_full: false
   second_title: " "
   desktop_full: false
-  mobile_full: false
   promo_login_button_redirect_url: https://verajohn.com/#join
   promo_join_button_redirect_url: https://verajohn.com/#join
   promo_join_button: 今すぐプレイ
   promo_login_button: 登録
   phrase: " "
+  promo_join_button_option: true
   promo_join_button_location: upper-left
 steps:
   step_title_1: ご登録
