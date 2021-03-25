@@ -18,6 +18,8 @@ promo_banner:
     promo_game_logo: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-game-logo.png
     promo_bg_mobile: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bg_m.jpg
     promo_bg_desktop: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bg.jpg
+  promo_join_button_style: pink-secondary-flat
+  promo_login_button_style: pink-secondary-flat
   promo_large_subtitle: ■新規プレイヤー限定特典■
   promo_link_terms:
     - 利用規約

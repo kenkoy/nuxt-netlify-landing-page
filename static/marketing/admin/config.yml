@@ -125,12 +125,12 @@ collections:
             widget: "select"
             required: false
             options:
-              - { label: "Primary - Blue Flat", value: "login-blue-primary-flat" }
-              - { label: "Secondary - Pink Flat", value: "login-pink-secondary-flat" }
-              - { label: "Tertiary - Yellow Flat", value: "login-yellow-tertiary-flat" }
-              - { label: "Primary - Blue Animated", value: "login-blue-primary-animated" }
-              - { label: "Secondary - Pink Animated", value: "login-pink-secondary-animated" }
-              - { label: "Tertiary - Yellow Animated", value: "login-yellow-tertiary-animated" }
+              - { label: "Primary - Blue Flat", value: "primary-flat" }
+              - { label: "Secondary - Pink Flat", value: "secondary-flat" }
+              - { label: "Tertiary - Yellow Flat", value: "tertiary-flat" }
+              - { label: "Primary - Blue Animated", value: "primary-animated" }
+              - { label: "Secondary - Pink Animated", value: "secondary-animated" }
+              - { label: "Tertiary - Yellow Animated", value: "tertiary-animated" }
           - { label: "Join Button", name: promo_join_button, widget: "string" }
           - label: "Show Button"
             name: "promo_join_button_option"
@@ -147,12 +147,12 @@ collections:
             widget: "select"
             required: false
             options:
-              - { label: "Primary - Blue Flat", value: "login-blue-primary-flat" }
-              - { label: "Secondary - Pink Flat", value: "join-pink-secondary-flat" }
-              - { label: "Tertiary - Yellow Flat", value: "join-yellow-tertiary-flat" }
-              - { label: "Primary - Blue Animated", value: "join-blue-primary-animated" }
-              - { label: "Secondary - Pink Animated", value: "join-pink-secondary-animated" }
-              - { label: "Tertiary - Yellow Animated", value: "join-yellow-tertiary-animated" }
+              - { label: "Primary - Blue Flat", value: "primary-flat" }
+              - { label: "Secondary - Pink Flat", value: "secondary-flat" }
+              - { label: "Tertiary - Yellow Flat", value: "tertiary-flat" }
+              - { label: "Primary - Blue Animated", value: "primary-animated" }
+              - { label: "Secondary - Pink Animated", value: "secondary-animated" }
+              - { label: "Tertiary - Yellow Animated", value: "tertiary-animated" }
           - label: "Desktop banner size cover"
             name: "desktop_full"
             default: true
@@ -484,12 +484,12 @@ collections:
             widget: "select"
             required: false
             options:
-              - { label: "Primary - Blue Flat", value: "login-blue-primary-flat" }
-              - { label: "Secondary - Pink Flat", value: "login-pink-secondary-flat" }
-              - { label: "Tertiary - Yellow Flat", value: "login-yellow-tertiary-flat" }
-              - { label: "Primary - Blue Animated", value: "login-blue-primary-animated" }
-              - { label: "Secondary - Pink Animated", value: "login-pink-secondary-animated" }
-              - { label: "Tertiary - Yellow Animated", value: "login-yellow-tertiary-animated" }
+              - { label: "Primary - Blue Flat", value: "blue-primary-flat" }
+              - { label: "Secondary - Pink Flat", value: "pink-secondary-flat" }
+              - { label: "Tertiary - Yellow Flat", value: "yellow-tertiary-flat" }
+              - { label: "Primary - Blue Animated", value: "blue-primary-animated" }
+              - { label: "Secondary - Pink Animated", value: "pink-secondary-animated" }
+              - { label: "Tertiary - Yellow Animated", value: "yellow-tertiary-animated" }
           - { label: "Join Button", name: promo_join_button, widget: "string" }
           - {
               label: "Join Button Redirect URL",
@@ -501,12 +501,12 @@ collections:
             widget: "select"
             required: false
             options:
-              - { label: "Primary - Blue Flat", value: "join-blue-primary-flat" }
-              - { label: "Secondary - Pink Flat", value: "join-pink-secondary-flat" }
-              - { label: "Tertiary - Yellow Flat", value: "join-yellow-tertiary-flat" }
-              - { label: "Primary - Blue Animated", value: "join-blue-primary-animated" }
-              - { label: "Secondary - Pink Animated", value: "join-pink-secondary-animated" }
-              - { label: "Tertiary - Yellow Animated", value: "join-yellow-tertiary-animated" }
+              - { label: "Primary - Blue Flat", value: "blue-primary-flat" }
+              - { label: "Secondary - Pink Flat", value: "pink-secondary-flat" }
+              - { label: "Tertiary - Yellow Flat", value: "yellow-tertiary-flat" }
+              - { label: "Primary - Blue Animated", value: "blue-primary-animated" }
+              - { label: "Secondary - Pink Animated", value: "pink-secondary-animated" }
+              - { label: "Tertiary - Yellow Animated", value: "yellow-tertiary-animated" }
           - { label: "Terms Text", name: promo_terms_text, widget: "string" }
           - label: "Terms Underlined Link Texts"
             name: "promo_terms_link_text"
@@ -757,12 +757,12 @@ collections:
             widget: "select"
             required: false
             options:
-              - { label: "Primary - Blue Flat", value: "login-blue-primary-flat" }
-              - { label: "Secondary - Pink Flat", value: "login-pink-secondary-flat" }
-              - { label: "Tertiary - Yellow Flat", value: "login-yellow-tertiary-flat" }
-              - { label: "Primary - Blue Animated", value: "login-blue-primary-animated" }
-              - { label: "Secondary - Pink Animated", value: "login-pink-secondary-animated" }
-              - { label: "Tertiary - Yellow Animated", value: "login-yellow-tertiary-animated" }
+              - { label: "Primary - Blue Flat", value: "blue-primary-flat" }
+              - { label: "Secondary - Pink Flat", value: "pink-secondary-flat" }
+              - { label: "Tertiary - Yellow Flat", value: "yellow-tertiary-flat" }
+              - { label: "Primary - Blue Animated", value: "blue-primary-animated" }
+              - { label: "Secondary - Pink Animated", value: "pink-secondary-animated" }
+              - { label: "Tertiary - Yellow Animated", value: "yellow-tertiary-animated" }
           - {
               label: "Join Button Text",
               name: "promo_join_button",
@@ -778,12 +778,12 @@ collections:
             widget: "select"
             required: false
             options:
-              - { label: "Primary - Blue Flat", value: "join-blue-primary-flat" }
-              - { label: "Secondary - Pink Flat", value: "join-pink-secondary-flat" }
-              - { label: "Tertiary - Yellow Flat", value: "join-yellow-tertiary-flat" }
-              - { label: "Primary - Blue Animated", value: "join-blue-primary-animated" }
-              - { label: "Secondary - Pink Animated", value: "join-pink-secondary-animated" }
-              - { label: "Tertiary - Yellow Animated", value: "join-yellow-tertiary-animated" }
+              - { label: "Primary - Blue Flat", value: "blue-primary-flat" }
+              - { label: "Secondary - Pink Flat", value: "pink-secondary-flat" }
+              - { label: "Tertiary - Yellow Flat", value: "yellow-tertiary-flat" }
+              - { label: "Primary - Blue Animated", value: "blue-primary-animated" }
+              - { label: "Secondary - Pink Animated", value: "pink-secondary-animated" }
+              - { label: "Tertiary - Yellow Animated", value: "yellow-tertiary-animated" }
           - { label: "Terms Text", name: "promo_terms", widget: "string" }
           - label: "Terms Link Texts"
             name: "promo_link_terms"

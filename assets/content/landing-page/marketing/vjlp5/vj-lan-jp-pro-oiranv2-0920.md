@@ -26,6 +26,7 @@ promo_banner:
   promo_login_button: 登録
   phrase: ''
   promo_join_button_location: lower-right
+  promo_login_button_style: login-blue-primary-flat
 steps:
   step_title_1: ''
   step_description_1: ''
