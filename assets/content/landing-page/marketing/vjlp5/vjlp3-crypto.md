@@ -18,6 +18,10 @@ promo_banner:
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
   first_title: test
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  promo_join_button_style: join_blue-primary-animated
+>>>>>>> f7cbe21 (VJLP5s:wq)
 =======
   promo_join_button_style: join_blue-primary-animated
 >>>>>>> f7cbe21 (VJLP5s:wq)

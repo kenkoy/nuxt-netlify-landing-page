@@ -496,6 +496,7 @@ collections:
               name: promo_join_button_redirect_url,
               widget: "string",
             }
+<<<<<<< HEAD
           - label: "Join Button Style"
               name: "promo_join_button_style"
               widget: "select"
@@ -507,6 +508,19 @@ collections:
                 - { label: "Primary - Blue Animated", value: "join_blue-primary-animated" }
                 - { label: "Secondary - Pink Animated", value: "join_pink-secondary-animated" }
                 - { label: "Tertiary - Yellow Animated", value: "join_yellow-tertiary-animated" }
+=======
+           - label: "Join Button Style"
+            name: "promo_join_button_style"
+            widget: "select"
+            required: false
+            options:
+              - { label: "Primary - Blue Flat", value: "join_blue-primary-flat" }
+              - { label: "Secondary - Pink Flat", value: "join_pink-secondary-flat" }
+              - { label: "Tertiary - Yellow Flat", value: "join_yellow-tertiary-flat" }
+              - { label: "Primary - Blue Animated", value: "join_blue-primary-animated" }
+              - { label: "Secondary - Pink Animated", value: "join_pink-secondary-animated" }
+              - { label: "Tertiary - Yellow Animated", value: "join_yellow-tertiary-animated" }
+>>>>>>> f7cbe21 (VJLP5s:wq)
           - { label: "Terms Text", name: promo_terms_text, widget: "string" }
           - label: "Terms Underlined Link Texts"
             name: "promo_terms_link_text"
