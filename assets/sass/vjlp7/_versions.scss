@@ -13,9 +13,19 @@
 @media only screen and (min-width : 320px) {
   /*==========  Version 1  ==========*/
   .version1{
+    .logo{
+      max-width: 150px;
+      width: 100%;
+    }
     h1{
       font-size: calc(#{$HERO_TITLE_SIZE3} - 16px);
       line-height: 35px;
+      text-shadow: 0 0 0.6rem #ffffff, 0 0 1.5rem #ffffff, -0.2rem 0.1rem 1rem #ffffff, 0.2rem 0.1rem 1rem #ffffff, 0 -0.5rem 2rem #ffffff, 0 0.5rem 3rem #ffffff;
+      animation: shine 2s forwards, flicker 3s infinite;
+      font-weight: 700;
+    }
+    .highlight{
+      color: $TEXT_HIGHLIGHT;
     }
     #hero-text-wrapper{
       background: none;
@@ -40,6 +50,9 @@
   /*==========  Version 2  ==========*/
   .version2{
     #hero{
+      overflow: hidden;
+      position: relative;
+
       &:before{
         background-color: rgba(0,0,0,0.7);
         display: block;
@@ -51,9 +64,37 @@
         content: '';
       }
     }
-    #hero{
-      overflow: hidden;
-      position: relative;
+
+    .logo{
+      max-width: 100px;
+      width: 100%;
+    }
+    h1{
+      animation: vjlp7text-flicker-promo 5s linear forwards;
+      text-shadow: 0 0 20px rgb(236, 0, 139);
+      color: $HERO_TITLE_COLOR2;
+      font-weight: 700;
+      font-family: 'MainFont-DemiBold', sans-serif;
+    }
+    .highlight{
+      color: $TEXT_HIGHLIGHT2;
+    }
+
+    button{
+      background: none;
+      width: 280px;
+      border-radius: 100px;
+      font-size: $TEXT_SIZE;
+      border: none;
+      padding: 10px 20px;
+      border: 3px solid rgb(120, 0, 50);
+
+      a {
+        border: none;
+        color: $TEXT_COLOR;
+        animation: vjlp7text-flicker 3s linear forwards infinite;
+      }
+      animation: vjlp7border-flicker 3s linear forwards infinite;
     }
   }
 }
@@ -104,7 +145,7 @@
 
   /*==========  Version 2  ==========*/
   .version2 {
-    #hero .container{
+    #hero .container {
       min-height: 500px;
       height: 100%;
     }
