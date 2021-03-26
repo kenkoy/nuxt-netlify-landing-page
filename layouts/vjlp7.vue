@@ -28,7 +28,7 @@
                 <h1 v-if="mdData.promo_banner.promo_title" v-html="bannerTitle" />
               </div>
 
-              <button class="animated infinite pulse">
+              <button class="animated infinite pulse" :class="mdData.promo_banner.promo_join_button_style === 'primary-flat' ? 'primary-flat' : mdData.promo_banner.promo_join_button_style === 'secondary-flat' ? 'secondary-flat' : mdData.promo_banner.promo_join_button_style === 'tertiary-flat' ? 'tertiary-flat' : mdData.promo_banner.promo_join_button_style === 'primary-animated' ? 'primary-animated' : mdData.promo_banner.promo_join_button_style === 'secondary-animated' ? 'secondary-animated' : mdData.promo_banner.promo_join_button_style === 'tertiary-animated' ? 'tertiary-animated' : '' ">
                 <a :href="mdData.promo_banner.promo_join_button_redirect_url">{{ mdData.promo_banner.promo_join_button }}</a>
               </button>
               <div>
@@ -38,7 +38,6 @@
           </div>
         </div>
       </section>
-
       <Steps
         v-if="mdData.template === 'steps'"
         :title1="mdData.steps.step_title_1"
@@ -52,14 +51,12 @@
         v-if="mdData.template === 'game_slider'"
         :game-data="mdData.game_images"
       />
-
       <section id="payment" class="separator">
         <div class="container">
           <img class="desktop" src="@/assets/images/vjlp1v2/payment_large_jp.svg" alt="payment verajohn desktop">
           <img class="mobile" src="@/assets/images/vjlp1v2/payment_jp.svg" alt="payment verajohn mobile">
         </div>
       </section>
-
       <section id="terms" class="separator">
         <div class="container">
           <div>
