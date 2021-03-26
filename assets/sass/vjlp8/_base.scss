@@ -2,6 +2,52 @@
 .version1{
   button{
     max-width: 280px;
+
+    &.primary-flat {
+      background: $PRIMARY_FLAT;
+      color: $TEXT_COLOR;
+    }
+
+    &.secondary-flat {
+      background: $SECONDARY_FLAT;
+      color: $TEXT_COLOR;
+    }
+
+    &.tertiary-flat {
+      background: $TERTIARY_FLAT;
+      color: $TEXT_COLOR;
+    }
+
+    &.primary-animated {
+      background: $PRIMARY_ANIMATED;
+      color: $TEXT_COLOR;
+    }
+
+    &.secondary-animated {
+      background: $SECONDARY_ANIMATED;
+      color: $TEXT_COLOR;
+
+      &:hover {
+        background: $SECONDARY_ANIMATED_HOVER;
+      }
+
+      &:active {
+        background: $SECONDARY_ANIMATED_HOVER;
+      }
+    }
+
+    &.tertiary-animated {
+      background: $TERTIARY_ANIMATED;
+      color: $TEXT_COLOR;
+
+      &:hover {
+        background: $TERTIARY_ANIMATED_HOVER;
+      }
+
+      &:active {
+        background: $TERTIARY_ANIMATED_HOVER;
+      }
+    }
   }
 }
 
