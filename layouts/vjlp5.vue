@@ -46,7 +46,6 @@
             </div>
           </div>
         </section>
-
         <Steps
           v-if="data_items.attributes.template === 'steps'"
           :title1="data_items.attributes.steps.step_title_1"
