@@ -108,7 +108,7 @@ export const VJLP5_PREVIEW = createClass({
                 </div>
 
                 <div class="nav-links">
-                  <button class="warning">
+                  <button class="warning ${banner.getIn(['data', 'promo_join_button_style'])}">
                     <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
                       ${banner.getIn(['data', 'promo_login_button'])}
                     </a>
