@@ -17,13 +17,15 @@
                   {{ data_items.attributes.promo_banner.promo_login_button }}
                 </a>
               </button>
-              <button class="animated pulse infinite" 
-                :class="data_items.attributes.promo_banner.promo_join_button_style === 'primary-flat' ? 'primary-flat' : 
-                data_items.attributes.promo_banner.promo_join_button_style === 'secondary-flat' ? 'secondary-flat' : 
-                data_items.attributes.promo_banner.promo_join_button_style === 'tertiary-flat' ? 'tertiary-flat' : 
-                data_items.attributes.promo_banner.promo_join_button_style === 'primary-animated' ? 'primary-animated' : 
-                data_items.attributes.promo_banner.promo_join_button_style === 'secondary-animated' ? 'secondary-animated' : 
-                data_items.attributes.promo_banner.promo_join_button_style === 'tertiary-animated' ? 'tertiary-animated' : 'error' ">
+              <button
+                class="animated pulse infinite"
+                :class="data_items.attributes.promo_banner.promo_join_button_style === 'primary-flat' ? 'primary-flat'
+                  : data_items.attributes.promo_banner.promo_join_button_style === 'secondary-flat' ? 'secondary-flat' 
+                    : data_items.attributes.promo_banner.promo_join_button_style === 'tertiary-flat' ? 'tertiary-flat' 
+                      : data_items.attributes.promo_banner.promo_join_button_style === 'primary-animated' ? 'primary-animated' 
+                        : data_items.attributes.promo_banner.promo_join_button_style === 'secondary-animated' ? 'secondary-animated' 
+                          : data_items.attributes.promo_banner.promo_join_button_style === 'tertiary-animated' ? 'tertiary-animated' : 'error' "
+              >
                 <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url"><strong>{{ data_items.attributes.promo_banner.promo_join_button }}</strong></a>
               </button>
             </div>
