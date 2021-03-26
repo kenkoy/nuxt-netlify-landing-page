@@ -41,6 +41,54 @@ export const VJLP5_PREVIEW = createClass({
     return style.toString()
   },
 
+  joinStyle (style) {
+    if (style === 'primary-flat') {
+      return 'primary-flat'
+    }
+    else if (style === 'secondary-flat') {
+      return 'secondary-flat'
+    }
+    else if (style === 'tertiary-flat') {
+      return 'tertiary-flat'
+    }
+    else if (style === 'primary-animated') {
+      return 'primary-animated'
+    }
+    else if (style === 'secondary-animated') {
+      return 'secondary-animated'
+    }
+    else if (style === 'tertiary-animated') {
+      return 'tertiary-animated'
+    }
+    else {
+      return 'warning'
+    }
+  },
+
+  loginStyle (style) {
+    if (style === 'primary-flat') {
+      return 'primary-flat'
+    }
+    else if (style === 'secondary-flat') {
+      return 'secondary-flat'
+    }
+    else if (style === 'tertiary-flat') {
+      return 'tertiary-flat'
+    }
+    else if (style === 'primary-animated') {
+      return 'primary-animated'
+    }
+    else if (style === 'secondary-animated') {
+      return 'secondary-animated'
+    }
+    else if (style === 'tertiary-animated') {
+      return 'tertiary-animated'
+    }
+    else {
+      return 'error'
+    }
+  },
+
   render () {
     const { widgetsFor, widgetFor } = this.props
     const banner = widgetsFor('promo_banner')
@@ -50,6 +98,14 @@ export const VJLP5_PREVIEW = createClass({
     const firstData = widgetsFor('first_section')
     const uspLeftData = widgetsFor('usp_left')
     const uspRightData = widgetsFor('usp_right')
+
+    const joinBtn = this.joinStyle (
+      banner.getIn (['data', 'promo_join_button_style'])
+    )
+
+    const loginBtn = this.loginStyle (
+      banner.getIn (['data', 'promo_login_button_style'])
+    )
 
     const bannerTitle = this.formatTitle(
       banner.getIn(['data', 'first_title']),
@@ -108,12 +164,12 @@ export const VJLP5_PREVIEW = createClass({
                 </div>
 
                 <div class="nav-links">
-                  <button class="${banner.getIn(['data', 'promo_join_button_style'])}">
+                  <button class="${joinBtn}">
                     <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
                       ${banner.getIn(['data', 'promo_join_button'])}
                     </a>
                   </button>
-                  <button class="error animated pulse infinite">
+                  <button class="${loginBtn} animated pulse infinite">
                     <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}">
                       <strong>${banner.getIn(['data', 'promo_login_button'])}</strong>
                     </a>
@@ -137,7 +193,7 @@ export const VJLP5_PREVIEW = createClass({
                   ${!widgetsFor('promo_banner').getIn(['data', 'promo_join_button_option'])
                     ? ''
                     : html`
-                      <button id="banner-button" class="error">
+                      <button id="banner-button" class="${joinBtn}">
                         <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
                       </button>`}
                 </div>
