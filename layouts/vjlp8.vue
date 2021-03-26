@@ -52,7 +52,15 @@
           <div>
             <h2>{{ sections.title }}</h2>
             <img alt="alt img" :src="sections.image">
-            <button>
+            <button
+              :class="styles === 'version2' ? 'animated pulse infinite' : ''
+                && sections.section_join_button_style === 'primary-flat' ? 'primary-flat'
+                : sections.section_join_button_style === 'secondary-flat' ? 'secondary-flat'
+                  : sections.section_join_button_style === 'tertiary-flat' ? 'tertiary-flat'
+                    : sections.section_join_button_style === 'primary-animated' ? 'primary-animated'
+                      : sections.section_join_button_style === 'secondary-animated' ? 'secondary-animated'
+                        : sections.section_join_button_style === 'tertiary-animated' ? 'tertiary-animated' : '' "
+            >
               <a rel="noopener" :href="sections.join_button_redirect_url">
                 {{ sections.join_button }}
               </a>
