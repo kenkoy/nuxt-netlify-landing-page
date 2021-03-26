@@ -31,11 +31,11 @@
               <button
                 class="animated infinite pulse"
                 :class="mdData.promo_banner.promo_join_button_style === 'primary-flat' ? 'primary-flat'
-                : mdData.promo_banner.promo_join_button_style === 'secondary-flat' ? 'secondary-flat'
-                : mdData.promo_banner.promo_join_button_style === 'tertiary-flat' ? 'tertiary-flat'
-                : mdData.promo_banner.promo_join_button_style === 'primary-animated' ? 'primary-animated'
-                : mdData.promo_banner.promo_join_button_style === 'secondary-animated' ? 'secondary-animated'
-                : mdData.promo_banner.promo_join_button_style === 'tertiary-animated' ? 'tertiary-animated' : '' "
+                  : mdData.promo_banner.promo_join_button_style === 'secondary-flat' ? 'secondary-flat'
+                    : mdData.promo_banner.promo_join_button_style === 'tertiary-flat' ? 'tertiary-flat'
+                      : mdData.promo_banner.promo_join_button_style === 'primary-animated' ? 'primary-animated'
+                        : mdData.promo_banner.promo_join_button_style === 'secondary-animated' ? 'secondary-animated'
+                          : mdData.promo_banner.promo_join_button_style === 'tertiary-animated' ? 'tertiary-animated' : '' "
               >
                 <a :href="mdData.promo_banner.promo_join_button_redirect_url">{{ mdData.promo_banner.promo_join_button }}</a>
               </button>
