@@ -52,6 +52,44 @@ export const VJLP8_PREVIEW = createClass({
     return { __html: termsText }
   },
 
+  joinStyle (style) {
+    switch (style) {
+      case 'primary-flat':
+        return 'primary-flat'
+      case 'secondary-flat':
+        return 'secondary-flat'
+      case 'tertiary-flat':
+        return 'tertiary-flat'
+      case 'primary-animated':
+        return 'primary-animated'
+      case 'secondary-animated':
+        return 'secondary-animated'
+      case 'tertiary-animated':
+        return 'tertiary-animated'
+      default:
+        return ''
+    }
+  },
+
+  joinSectionStyle (style) {
+    switch (style) {
+      case 'primary-flat':
+        return 'primary-flat'
+      case 'secondary-flat':
+        return 'secondary-flat'
+      case 'tertiary-flat':
+        return 'tertiary-flat'
+      case 'primary-animated':
+        return 'primary-animated'
+      case 'secondary-animated':
+        return 'secondary-animated'
+      case 'tertiary-animated':
+        return 'tertiary-animated'
+      default:
+        return ''
+    }
+  },
+
   render () {
     const { widgetFor, widgetsFor } = this.props
     const locale = widgetsFor('promo_locale')
@@ -79,6 +117,14 @@ export const VJLP8_PREVIEW = createClass({
     const bannerDescription = this.setBannerDesc(
       banner.getIn(['data', 'promo_small_subtitle']) || ' ',
       banner.getIn(['data', 'promo_small_subtitle_highlighted'])
+    )
+
+    const joinBtn = this.joinStyle(
+      banner.getIn(['data', 'promo_join_button_style'])
+    )
+
+    const joinSectionBtn = this.joinSectionStyle(
+      banner.getIn(['data', 'section_join_button_style'])
     )
 
     const termsText = this.formatTerms(
@@ -114,7 +160,7 @@ export const VJLP8_PREVIEW = createClass({
               </div>
 
               <div id="banner-terms">
-                <button className="${version === 'version2' ? 'animated pulse infinite' : ''}">
+                <button className="${version === 'version2' ? 'animated pulse infinite' : ''}" class="${joinBtn}">
                   <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
                     ${banner.getIn(['data', 'promo_join_button'])}
                   </a>
@@ -132,7 +178,7 @@ export const VJLP8_PREVIEW = createClass({
               <div>
                 <h2>${sect.getIn(['data', 'title']) || ''}</h2>
                 <img alt="alt img" src="${(sect.getIn(['data', 'image']) || '')}"></img>
-                <button>
+                <button class="${joinSectionBtn}">
                   <a rel="noopener" href="${sect.getIn(['data', 'join_button_redirect_url']) || ''}">
                     ${sect.getIn(['data', 'join_button']) || ''}
                   </a>

@@ -42,50 +42,40 @@ export const VJLP5_PREVIEW = createClass({
   },
 
   joinStyle (style) {
-    if (style === 'primary-flat') {
-      return 'primary-flat'
-    }
-    else if (style === 'secondary-flat') {
-      return 'secondary-flat'
-    }
-    else if (style === 'tertiary-flat') {
-      return 'tertiary-flat'
-    }
-    else if (style === 'primary-animated') {
-      return 'primary-animated'
-    }
-    else if (style === 'secondary-animated') {
-      return 'secondary-animated'
-    }
-    else if (style === 'tertiary-animated') {
-      return 'tertiary-animated'
-    }
-    else {
-      return 'warning'
+    switch (style) {
+      case 'primary-flat':
+        return 'primary-flat'
+      case 'secondary-flat':
+        return 'secondary-flat'
+      case 'tertiary-flat':
+        return 'tertiary-flat'
+      case 'primary-animated':
+        return 'primary-animated'
+      case 'secondary-animated':
+        return 'secondary-animated'
+      case 'tertiary-animated':
+        return 'tertiary-animated'
+      default:
+        return 'warning'
     }
   },
 
   loginStyle (style) {
-    if (style === 'primary-flat') {
-      return 'primary-flat'
-    }
-    else if (style === 'secondary-flat') {
-      return 'secondary-flat'
-    }
-    else if (style === 'tertiary-flat') {
-      return 'tertiary-flat'
-    }
-    else if (style === 'primary-animated') {
-      return 'primary-animated'
-    }
-    else if (style === 'secondary-animated') {
-      return 'secondary-animated'
-    }
-    else if (style === 'tertiary-animated') {
-      return 'tertiary-animated'
-    }
-    else {
-      return 'error'
+    switch (style) {
+      case 'primary-flat':
+        return 'primary-flat'
+      case 'secondary-flat':
+        return 'secondary-flat'
+      case 'tertiary-flat':
+        return 'tertiary-flat'
+      case 'primary-animated':
+        return 'primary-animated'
+      case 'secondary-animated':
+        return 'secondary-animated'
+      case 'tertiary-animated':
+        return 'tertiary-animated'
+      default:
+        return 'error'
     }
   },
 
@@ -99,12 +89,12 @@ export const VJLP5_PREVIEW = createClass({
     const uspLeftData = widgetsFor('usp_left')
     const uspRightData = widgetsFor('usp_right')
 
-    const joinBtn = this.joinStyle (
-      banner.getIn (['data', 'promo_join_button_style'])
+    const joinBtn = this.joinStyle(
+      banner.getIn(['data', 'promo_join_button_style'])
     )
 
-    const loginBtn = this.loginStyle (
-      banner.getIn (['data', 'promo_login_button_style'])
+    const loginBtn = this.loginStyle(
+      banner.getIn(['data', 'promo_login_button_style'])
     )
 
     const bannerTitle = this.formatTitle(
@@ -193,7 +183,7 @@ export const VJLP5_PREVIEW = createClass({
                   ${!widgetsFor('promo_banner').getIn(['data', 'promo_join_button_option'])
                     ? ''
                     : html`
-                      <button id="banner-button" class="${joinBtn}">
+                      <button id="banner-button" class="error">
                         <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
                       </button>`}
                 </div>

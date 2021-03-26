@@ -41,6 +41,25 @@ export const VJLP7_PREVIEW = createClass({
     })
   },
 
+  joinStyle (style) {
+    switch(style) {
+      case 'primary-flat':
+        return 'primary-flat';
+      case 'secondary-flat':
+        return 'secondary-flat';
+      case 'tertiary-flat':
+        return 'tertiary-flat';
+      case 'primary-animated':
+        return 'primary-animated';
+      case 'secondary-animated':
+        return 'secondary-animated';
+      case 'tertiary-animated':
+        return 'tertiary-animated';
+      default:
+        return '';
+    }
+  },
+
   formatSubtitle (subtitle = ' ', higligtedPhrases = [' ']) {
     const bannerSubTitle = subtitle.split(/\r?\n/)
       .map(title => subtitle.slice(-1) === '\\'
@@ -97,6 +116,10 @@ export const VJLP7_PREVIEW = createClass({
       '--desktop-width-banner': banner.getIn(['data', 'desktop_full']) ? 'cover' : 'contain',
       '--mobile-width-banner': banner.getIn(['data', 'mobile_full']) ? 'cover' : 'contain',
     }
+
+    const joinBtn = this.joinStyle (
+      banner.getIn (['data', 'promo_join_button_style'])
+    )
 
     const termsText = this.formatTerms(
       banner.getIn(['data', 'promo_terms_text']) || ' ',
@@ -162,7 +185,7 @@ export const VJLP7_PREVIEW = createClass({
                     </div>
                     <img class="logo" src="/marketing/img/vjlp7/logo.png" alt="verajohn logo"></img>
                     <div dangerouslySetInnerHTML='${bannerTexts}'></div>
-                    <button class="animated infinite pulse">
+                    <button class="animated infinite pulse ${joinBtn}">
                       <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
                         ${banner.getIn(['data', 'promo_join_button'])}
                       </a>
