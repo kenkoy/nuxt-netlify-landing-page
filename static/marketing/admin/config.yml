@@ -803,12 +803,12 @@ collections:
             widget: "select"
             required: false
             options:
-              - { label: "Blue - Primary Flat", value: "primary-flat" }
-              - { label: "Pink - Secondary Flat", value: "secondary-flat" }
-              - { label: "Yellow - Tertiary Flat", value: "tertiary-flat" }
-              - { label: "Blue - Primary Animated", value: "primary-animated" }
-              - { label: "Pink - Secondary Animated", value: "secondary-animated" }
-              - { label: "Yellow - Tertiary Animated", value: "tertiary-animated" }
+              - { label: "Blue - Primary Flat", value: "primary-flat-section_join_button" }
+              - { label: "Pink - Secondary Flat", value: "secondary-flat-section_join_button" }
+              - { label: "Yellow - Tertiary Flat", value: "tertiary-flat-section_join_button" }
+              - { label: "Blue - Primary Animated", value: "primary-animated-section_join_button" }
+              - { label: "Pink - Secondary Animated", value: "secondary-animated-section_join_button" }
+              - { label: "Yellow - Tertiary Animated", value: "tertiary-animated-section_join_button" }
           - { label: "Image", name: image, widget: image }
       - {
           label: "Terms & Conditions",
