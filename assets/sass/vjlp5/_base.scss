@@ -27,58 +27,18 @@
       border-bottom: 2px dashed #FEE63D;
   }
 
-    button {
-        border: none;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
+  button {
+    border: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+  }
 
-        &.primary-flat {
-            background: $PRIMARY_FLAT;
-            color: $BTN_COLOR;
-        }
-
-        &.secondary-flat {
-            background: $SECONDARY_FLAT;
-            color: $BTN_COLOR;
-        }
-
-        &.tertiary-flat {
-            background: $TERTIARY_FLAT;
-            color: $BTN_COLOR;
-        }
-        &.primary-animated {
-            background: $PRIMARY_FLAT;
-            color: $BTN_COLOR;
-        }
-
-        &.secondary-animated {
-            background: $SECONDARY_FLAT;
-            color: $BTN_COLOR;
-            &:hover {
-                background: $SECONDARY_ANIMATED_HOVER;
-            }
-            &:active {
-                background: $SECONDARY_ANIMATED_HOVER;
-            }
-        }
-
-        &.tertiary-animated {
-            background: $TERTIARY_FLAT;
-            color: $BTN_COLOR;
-            &:hover {
-                background: $TERTIARY_ANIMATED_HOVER;
-            }
-            &:active {
-                background: $TERTIARY_ANIMATED_HOVER;
-            }
-        }
-    }
   button.warning{
-      background: $BTN_WARNING;
+    background: $BTN_WARNING;
 
-      &:hover{
-          background: linear-gradient(180deg,#ffe238,#ffa92d);
-      }
+    &:hover{
+        background: linear-gradient(180deg,#ffe238,#ffa92d);
+    }
   }
   button.error{
       background: $BTN_ERROR;
@@ -134,31 +94,29 @@
 
 
   #steps{
-      .container{
-
-          .num{
-              background: #fff;
-          }
+    .container{
+      .num{
+          background: #fff;
       }
+    }
   }
 
   .version1 {
-      button {
-          &.warning {
-              display: inline-block;
-          }
+    button {
+      &.warning {
+          display: inline-block;
       }
+    }
 
-      h2 {
-        font-size: 1.5em;
-        font-weight: 500;
+    h2 {
+      font-size: 1.5em;
+      font-weight: 500;
     }
     #section1 {
-        h2 {
-            font-size: 1.5em;
-        }
+      h2 {
+          font-size: 1.5em;
+      }
     }
-
   }
 
   .version2 {

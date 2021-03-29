@@ -12,7 +12,7 @@
             </div>
 
             <div class="nav-links">
-              <button class="warning" :class="data_items.attributes.promo_banner.promo_join_button_style === 'join-blue-primary-flat' ? 'join-blue-primary-flat' : data_items.attributes.promo_banner.promo_join_button_style === 'join-pink-secondary-flat' ? 'join-pink-secondary-flat' : data_items.attributes.promo_banner.promo_join_button_style === 'join-yellow-tertiary-flat' ? 'join-yellow-tertiary-flat' : data_items.attributes.promo_banner.promo_join_button_style === 'join-blue-primary-animated' ? 'join-blue-primary-animated' : data_items.attributes.promo_banner.promo_join_button_style === 'join-pink-secondary-animated' ? 'join-pink-secondary-animated' : data_items.attributes.promo_banner.promo_join_button_style === 'join-yellow-tertiary-animated' ? 'join-yellow-tertiary-animated' : 'DAN' ">
+              <button class="warning">
                 <a :href="data_items.attributes.promo_banner.promo_join_button_redirect_url">
                   {{ data_items.attributes.promo_banner.promo_login_button }}
                 </a>
@@ -46,11 +46,6 @@
             </div>
           </div>
         </section>
-
-        <p :class="data_items.attributes.promo_banner.promo_join_button_style">
-          Testing
-        </p>
-
         <Steps
           v-if="data_items.attributes.template === 'steps'"
           :title1="data_items.attributes.steps.step_title_1"
