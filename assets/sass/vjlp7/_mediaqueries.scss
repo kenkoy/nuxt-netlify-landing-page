@@ -210,11 +210,10 @@
 
 
   @at-root .vjlp7_wrapper #hero #hero-text-wrapper button{
-    border: none;
-    animation: none;
-
     &.primary-flat {
-      background: $PRIMARY_FLAT ;
+      background: $PRIMARY_FLAT;
+      border: none;
+      animation: none;
       a{
         color: $TEXT_COLOR ;
       }
@@ -222,6 +221,8 @@
 
     &.secondary-flat {
       background: $SECONDARY_FLAT ;
+      border: none;
+      animation: none;
       a{
         color: $TEXT_COLOR ;
       }
@@ -229,6 +230,8 @@
 
     &.tertiary-flat {
       background: $TERTIARY_FLAT ;
+      border: none;
+      animation: none;
       a{
         color: $TEXT_COLOR ;
       }
@@ -236,6 +239,8 @@
 
     &.primary-animated {
       background: $PRIMARY_ANIMATED ;
+      border: none;
+      animation: none;
       a{
         color: $TEXT_COLOR ;
       }
@@ -243,6 +248,8 @@
 
     &.secondary-animated {
       background: $SECONDARY_ANIMATED ;
+      border: none;
+      animation: none;
       a{
         color: $TEXT_COLOR ;
       }
@@ -258,6 +265,7 @@
 
     &.tertiary-animated {
       background: $TERTIARY_ANIMATED ;
+      border: none;
       a{
         color: $TEXT_COLOR ;
       }
