@@ -7,7 +7,7 @@ field_ids:
   go_container_id: OPT-PHSNXP6
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
-styles: version1
+styles: version2
 template: steps
 promo_banner:
   promo_title: |-
@@ -17,7 +17,7 @@ promo_banner:
   promo_images:
     promo_bg_desktop: /marketing/img/dsgn-1306-vjlp1-dt-v2.jpg
     promo_bg_mobile: /marketing/img/dsgn-1306-vjlp1-mob.jpg
-  promo_join_button_style: primary-animated
+  promo_join_button_style: primary-flat
   promo_terms_link_text:
     - 利用規約
   mobile_full: true
