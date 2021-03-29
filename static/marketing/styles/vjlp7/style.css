@@ -872,43 +872,67 @@ to {
 
 .vjlp7_wrapper .version1 #hero #hero-text-wrapper button.primary-flat {
     background: #009FE3;
-    color: #fff;
   }
-  .vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-flat {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-flat {
     background: #EC008B;
-    color: #fff;
   }
-  .vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-flat {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-flat {
     background: #FEE63D;
-    color: #fff;
   }
-  .vjlp7_wrapper .version1 #hero #hero-text-wrapper button.primary-animated {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.primary-animated {
     background: linear-gradient(
   0deg
   , #0093d4 0%, #009fe3 100%);
-    color: #fff;
   }
-  .vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-animated {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-animated {
     background: linear-gradient(to bottom, #fb57cc, #de1681);
+  }
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.primary-flat a {
     color: #fff;
   }
-  .vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-animated:hover {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-flat a {
+    color: #fff;
+  }
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-flat a {
+    color: #fff;
+  }
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.primary-animated a {
+    color: #fff;
+  }
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-animated a {
+    color: #fff;
+  }
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-animated a {
+    color: #fff;
+  }
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-animated:hover a{
+    color: #fff;
+  }
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-animated:active a{
+    color: #fff;
+  }
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-animated a:hover {
+    color: #fff;
+  }
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-animated a:active {
+    color: #fff;
+  }
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-animated:hover {
     background: linear-gradient(180deg, #ff65e5, #fa1e93);
   }
-  .vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-animated:active {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-animated:active {
     background: linear-gradient(180deg, #ff65e5, #fa1e93);
   }
-  .vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-animated {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-animated {
     background: linear-gradient(to bottom, #ffc933 0%, #f7901d 100%);
     color: #fff;
   }
-  .vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-animated:hover {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-animated:hover {
     background: linear-gradient(180deg, #ffe238, #ffa92d);
   }
-  .vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-animated:active {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-animated:active {
     background: linear-gradient(180deg, #ffe238, #ffa92d);
   }
-
 .vjlp7_wrapper .version1 #hero #hero-text-wrapper button a, .vjlp7_wrapper .version1 #hero #hero-text-wrapper button a:hover {
     color: #704B1F;
 }
