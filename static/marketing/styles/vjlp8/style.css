@@ -14,30 +14,30 @@
   background: #FEE63D;
   color: #fff;
 }
-.version1 button.primary-animated {
+.version1 button.primary-gradient {
   background: linear-gradient(
 0deg
 , #0093d4 0%, #009fe3 100%);
   color: #fff;
 }
-.version1 button.secondary-animated {
+.version1 button.secondary-gradient {
   background: linear-gradient(to bottom, #fb57cc, #de1681);
   color: #fff;
 }
-.version1 button.secondary-animated:hover {
+.version1 button.secondary-gradient:hover {
   background: linear-gradient(180deg, #ff65e5, #fa1e93);
 }
-.version1 button.secondary-animated:active {
+.version1 button.secondary-gradient:active {
   background: linear-gradient(180deg, #ff65e5, #fa1e93);
 }
-.version1 button.tertiary-animated {
+.version1 button.tertiary-gradient {
   background: linear-gradient(to bottom, #ffc933 0%, #f7901d 100%);
   color: #fff;
 }
-.version1 button.tertiary-animated:hover {
+.version1 button.tertiary-gradient:hover {
   background: linear-gradient(180deg, #ffe238, #ffa92d);
 }
-.version1 button.tertiary-animated:active {
+.version1 button.tertiary-gradient:active {
   background: linear-gradient(180deg, #ffe238, #ffa92d);
 }
 

@@ -237,8 +237,8 @@
       }
     }
 
-    &.primary-animated {
-      background: $PRIMARY_ANIMATED ;
+    &.primary-gradient {
+      background: $PRIMARY_GRADIENT ;
       border: none;
       animation: none;
       a{
@@ -246,8 +246,8 @@
       }
     }
 
-    &.secondary-animated {
-      background: $SECONDARY_ANIMATED ;
+    &.secondary-gradient {
+      background: $SECONDARY_GRADIENT ;
       border: none;
       animation: none;
       a{
@@ -255,27 +255,27 @@
       }
 
       &:hover {
-        background: $SECONDARY_ANIMATED_HOVER ;
+        background: $SECONDARY_GRADIENT_HOVER ;
       }
 
       &:active {
-        background: $SECONDARY_ANIMATED_HOVER ;
+        background: $SECONDARY_GRADIENT_HOVER ;
       }
     }
 
-    &.tertiary-animated {
-      background: $TERTIARY_ANIMATED ;
+    &.tertiary-gradient {
+      background: $TERTIARY_GRADIENT ;
       border: none;
       a{
         color: $TEXT_COLOR ;
       }
 
       &:hover {
-        background: $TERTIARY_ANIMATED_HOVER ;
+        background: $TERTIARY_GRADIENT_HOVER ;
       }
 
       &:active {
-        background: $TERTIARY_ANIMATED_HOVER ;
+        background: $TERTIARY_GRADIENT_HOVER ;
       }
     }
   }

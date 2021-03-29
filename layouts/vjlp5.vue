@@ -12,7 +12,7 @@
             </div>
 
             <div class="nav-links">
-              <button :class="data_items.attributes.promo_banner.promo_login_button_style === 'primary-flat' ? 'primary-flat' : data_items.attributes.promo_banner.promo_login_button_style === 'secondary-flat' ? 'secondary-flat' : data_items.attributes.promo_banner.promo_login_button_style === 'tertiary-flat' ? 'tertiary-flat' : data_items.attributes.promo_banner.promo_login_button_style === 'primary-animated' ? 'primary-animated' : data_items.attributes.promo_banner.promo_login_button_style === 'secondary-animated' ? 'secondary-animated' : data_items.attributes.promo_banner.promo_login_button_style === 'tertiary-animated' ? 'tertiary-animated' : 'warning' ">
+              <button :class="data_items.attributes.promo_banner.promo_login_button_style === 'primary-flat' ? 'primary-flat' : data_items.attributes.promo_banner.promo_login_button_style === 'secondary-flat' ? 'secondary-flat' : data_items.attributes.promo_banner.promo_login_button_style === 'tertiary-flat' ? 'tertiary-flat' : data_items.attributes.promo_banner.promo_login_button_style === 'primary-gradient' ? 'primary-gradient' : data_items.attributes.promo_banner.promo_login_button_style === 'secondary-gradient' ? 'secondary-gradient' : data_items.attributes.promo_banner.promo_login_button_style === 'tertiary-gradient' ? 'tertiary-gradient' : 'warning' ">
                 <a :href="data_items.attributes.promo_banner.promo_join_button_redirect_url">
                   {{ data_items.attributes.promo_banner.promo_login_button }}
                 </a>

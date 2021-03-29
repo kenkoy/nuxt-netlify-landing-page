@@ -33,9 +33,9 @@
                   && mdData.promo_banner.promo_join_button_style === 'primary-flat' ? 'primary-flat'
                   : mdData.promo_banner.promo_join_button_style === 'secondary-flat' ? 'secondary-flat'
                     : mdData.promo_banner.promo_join_button_style === 'tertiary-flat' ? 'tertiary-flat'
-                      : mdData.promo_banner.promo_join_button_style === 'primary-animated' ? 'primary-animated'
-                        : mdData.promo_banner.promo_join_button_style === 'secondary-animated' ? 'secondary-animated'
-                          : mdData.promo_banner.promo_join_button_style === 'tertiary-animated' ? 'tertiary-animated' : '' "
+                      : mdData.promo_banner.promo_join_button_style === 'primary-gradient' ? 'primary-gradient'
+                        : mdData.promo_banner.promo_join_button_style === 'secondary-gradient' ? 'secondary-gradient'
+                          : mdData.promo_banner.promo_join_button_style === 'tertiary-gradient' ? 'tertiary-gradient' : '' "
               >
                 <a :href="mdData.promo_banner.promo_join_button_redirect_url">
                   {{ mdData.promo_banner.promo_join_button }}
@@ -57,9 +57,9 @@
                 && sections.section_join_button_style === 'primary-flat' ? 'primary-flat'
                 : sections.section_join_button_style === 'secondary-flat' ? 'secondary-flat'
                   : sections.section_join_button_style === 'tertiary-flat' ? 'tertiary-flat'
-                    : sections.section_join_button_style === 'primary-animated' ? 'primary-animated'
-                      : sections.section_join_button_style === 'secondary-animated' ? 'secondary-animated'
-                        : sections.section_join_button_style === 'tertiary-animated' ? 'tertiary-animated' : '' "
+                    : sections.section_join_button_style === 'primary-gradient' ? 'primary-gradient'
+                      : sections.section_join_button_style === 'secondary-gradient' ? 'secondary-gradient'
+                        : sections.section_join_button_style === 'tertiary-gradient' ? 'tertiary-gradient' : '' "
             >
               <a rel="noopener" :href="sections.join_button_redirect_url">
                 {{ sections.join_button }}

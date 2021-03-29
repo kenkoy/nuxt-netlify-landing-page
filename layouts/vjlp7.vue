@@ -33,9 +33,9 @@
                 :class="mdData.promo_banner.promo_join_button_style === 'primary-flat' ? 'primary-flat'
                   : mdData.promo_banner.promo_join_button_style === 'secondary-flat' ? 'secondary-flat'
                     : mdData.promo_banner.promo_join_button_style === 'tertiary-flat' ? 'tertiary-flat'
-                      : mdData.promo_banner.promo_join_button_style === 'primary-animated' ? 'primary-animated'
-                        : mdData.promo_banner.promo_join_button_style === 'secondary-animated' ? 'secondary-animated'
-                          : mdData.promo_banner.promo_join_button_style === 'tertiary-animated' ? 'tertiary-animated' : '' "
+                      : mdData.promo_banner.promo_join_button_style === 'primary-gradient' ? 'primary-gradient'
+                        : mdData.promo_banner.promo_join_button_style === 'secondary-gradient' ? 'secondary-gradient'
+                          : mdData.promo_banner.promo_join_button_style === 'tertiary-gradient' ? 'tertiary-gradient' : '' "
               >
                 <a :href="mdData.promo_banner.promo_join_button_redirect_url">{{ mdData.promo_banner.promo_join_button }}</a>
               </button>

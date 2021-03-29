@@ -869,7 +869,6 @@ to {
     background: #FEE63D;
     font-size: 16px;
 }
-
 .vjlp7_wrapper .version1 #hero #hero-text-wrapper button.primary-flat {
     background: #009FE3;
   }
@@ -879,12 +878,12 @@ to {
 .vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-flat {
     background: #FEE63D;
   }
-.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.primary-animated {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.primary-gradient {
     background: linear-gradient(
   0deg
   , #0093d4 0%, #009fe3 100%);
   }
-.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-animated {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-gradient {
     background: linear-gradient(to bottom, #fb57cc, #de1681);
   }
 .vjlp7_wrapper .version1 #hero #hero-text-wrapper button.primary-flat a {
@@ -896,41 +895,41 @@ to {
 .vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-flat a {
     color: #fff;
   }
-.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.primary-animated a {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.primary-gradient a {
     color: #fff;
   }
-.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-animated a {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-gradient a {
     color: #fff;
   }
-.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-animated a {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-gradient a {
     color: #fff;
   }
-.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-animated:hover a{
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-gradient:hover a{
     color: #fff;
   }
-.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-animated:active a{
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-gradient:active a{
     color: #fff;
   }
-.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-animated a:hover {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-gradient a:hover {
     color: #fff;
   }
-.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-animated a:active {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-gradient a:active {
     color: #fff;
   }
-.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-animated:hover {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-gradient:hover {
     background: linear-gradient(180deg, #ff65e5, #fa1e93);
   }
-.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-animated:active {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.secondary-gradient:active {
     background: linear-gradient(180deg, #ff65e5, #fa1e93);
   }
-.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-animated {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-gradient {
     background: linear-gradient(to bottom, #ffc933 0%, #f7901d 100%);
     color: #fff;
   }
-.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-animated:hover {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-gradient:hover {
     background: linear-gradient(180deg, #ffe238, #ffa92d);
   }
-.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-animated:active {
+.vjlp7_wrapper .version1 #hero #hero-text-wrapper button.tertiary-gradient:active {
     background: linear-gradient(180deg, #ffe238, #ffa92d);
   }
 .vjlp7_wrapper .version1 #hero #hero-text-wrapper button a, .vjlp7_wrapper .version1 #hero #hero-text-wrapper button a:hover {
