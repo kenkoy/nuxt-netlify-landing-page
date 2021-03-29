@@ -380,10 +380,12 @@
 
     &:hover {
       background: $SECONDARY_GRADIENT_HOVER ;
+      color: $TEXT_COLOR ;
     }
 
     &:active {
       background: $SECONDARY_GRADIENT_HOVER ;
+      color: $TEXT_COLOR ;
     }
   }
 
