@@ -250,8 +250,11 @@
       background: $SECONDARY_GRADIENT ;
       border: none;
       animation: none;
-      a{
+      a {
         color: $TEXT_COLOR ;
+        &:hover {
+          color: $TEXT_COLOR;
+        }
       }
 
       &:hover {
