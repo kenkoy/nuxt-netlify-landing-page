@@ -91,30 +91,35 @@
       background: $PRIMARY_FLAT;
       color: $TEXT_COLOR;
       border:none;
+      animation: none;
     }
 
     &.secondary-flat {
       background: $SECONDARY_FLAT;
       color: $TEXT_COLOR;
       border:none;
+      animation: none;
     }
 
     &.tertiary-flat {
       background: $TERTIARY_FLAT;
       color: $TEXT_COLOR;
       border:none;
+      animation: none;
     }
 
     &.primary-animated {
       background: $PRIMARY_ANIMATED;
       color: $TEXT_COLOR;
       border:none;
+      animation: none;
     }
 
     &.secondary-animated {
       background: $SECONDARY_ANIMATED;
       color: $TEXT_COLOR;
       border:none;
+      animation: none;
 
       &:hover {
         background: $SECONDARY_ANIMATED_HOVER;
@@ -129,6 +134,7 @@
       background: $TERTIARY_ANIMATED;
       color: $TEXT_COLOR;
       border:none;
+      animation: none;
 
       &:hover {
         background: $TERTIARY_ANIMATED_HOVER;
