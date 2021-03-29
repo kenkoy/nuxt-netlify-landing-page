@@ -192,11 +192,11 @@ export default {
           ? 'secondary-flat'
           : this.buttonColor === 'tertiary-flat'
             ? 'tertiary-flat'
-            : this.buttonColor === 'primary-animated'
-              ? 'primary-animated'
-              : this.buttonColor === 'secondary-animated'
-                ? 'secondary-animated'
-                : this.buttonColor === 'tertiary-animated' ? 'tertiary-animated' : 'error'
+            : this.buttonColor === 'primary-gradient'
+              ? 'primary-gradient'
+              : this.buttonColor === 'secondary-gradient'
+                ? 'secondary-gradient'
+                : this.buttonColor === 'tertiary-gradient' ? 'tertiary-gradient' : 'error'
     }
   },
   methods: {
