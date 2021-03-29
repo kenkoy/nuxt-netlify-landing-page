@@ -90,26 +90,31 @@
     &.primary-flat {
       background: $PRIMARY_FLAT;
       color: $TEXT_COLOR;
+      border:none;
     }
 
     &.secondary-flat {
       background: $SECONDARY_FLAT;
       color: $TEXT_COLOR;
+      border:none;
     }
 
     &.tertiary-flat {
       background: $TERTIARY_FLAT;
       color: $TEXT_COLOR;
+      border:none;
     }
 
     &.primary-animated {
       background: $PRIMARY_ANIMATED;
       color: $TEXT_COLOR;
+      border:none;
     }
 
     &.secondary-animated {
       background: $SECONDARY_ANIMATED;
       color: $TEXT_COLOR;
+      border:none;
 
       &:hover {
         background: $SECONDARY_ANIMATED_HOVER;
@@ -123,6 +128,7 @@
     &.tertiary-animated {
       background: $TERTIARY_ANIMATED;
       color: $TEXT_COLOR;
+      border:none;
 
       &:hover {
         background: $TERTIARY_ANIMATED_HOVER;
