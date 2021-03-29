@@ -223,6 +223,52 @@
           background: $BTN_BG;
           font-size: $TEXT_SIZE;
 
+          &.primary-flat {
+            background: $PRIMARY_FLAT;
+            color: $BTN_COLOR;
+          }
+
+          &.secondary-flat {
+            background: $SECONDARY_FLAT;
+            color: $BTN_COLOR;
+          }
+  
+          &.tertiary-flat {
+            background: $TERTIARY_FLAT;
+            color: $BTN_COLOR;
+          }
+  
+          &.primary-animated {
+            background: $PRIMARY_ANIMATED;
+            color: $BTN_COLOR;
+          }
+  
+          &.secondary-animated {
+            background: $SECONDARY_ANIMATED;
+            color: $BTN_COLOR;
+  
+            &:hover {
+              background: $SECONDARY_ANIMATED_HOVER;
+            }
+  
+            &:active {
+              background: $SECONDARY_ANIMATED_HOVER;
+            }
+          }
+
+          &.tertiary-animated {
+            background: $TERTIARY_ANIMATED;
+            color: $BTN_COLOR;
+  
+            &:hover {
+              background: $TERTIARY_ANIMATED_HOVER;
+            }
+  
+            &:active {
+              background: $TERTIARY_ANIMATED_HOVER;
+            }
+          }
+
           a, a:hover{
             color: $BTN_COLOR;
           }
