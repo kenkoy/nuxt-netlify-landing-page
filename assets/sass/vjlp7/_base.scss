@@ -123,10 +123,12 @@
 
       &:hover {
         background: $SECONDARY_ANIMATED_HOVER;
+        color: $TEXT_COLOR;
       }
 
       &:active {
         background: $SECONDARY_ANIMATED_HOVER;
+        color: $TEXT_COLOR;
       }
     }
 
@@ -138,10 +140,12 @@
 
       &:hover {
         background: $TERTIARY_ANIMATED_HOVER;
+        color: $TEXT_COLOR;
       }
 
       &:active {
         background: $TERTIARY_ANIMATED_HOVER;
+        color: $TEXT_COLOR;
       }
     }
 

@@ -213,6 +213,10 @@
           &.tertiary-animated {
             background: $TERTIARY_ANIMATED;
             color: $TEXT_COLOR;
+
+            a {
+              color: $TEXT_COLOR;
+            }
       
             &:hover {
               background: $TERTIARY_ANIMATED_HOVER;
