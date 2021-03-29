@@ -12,67 +12,6 @@
   .highlight{
     color: $TEXT_HIGHLIGHT;
   }
-
-
-  @at-root .vjlp7_wrapper #hero #hero-text-wrapper button{
-    &.primary-flat {
-      background: $PRIMARY_FLAT ;
-      a{
-        color: $TEXT_COLOR ;
-      }
-    }
-
-    &.secondary-flat {
-      background: $SECONDARY_FLAT ;
-      a{
-        color: $TEXT_COLOR ;
-      }
-    }
-
-    &.tertiary-flat {
-      background: $TERTIARY_FLAT ;
-      a{
-        color: $TEXT_COLOR ;
-      }
-    }
-
-    &.primary-animated {
-      background: $PRIMARY_ANIMATED ;
-      a{
-        color: $TEXT_COLOR ;
-      }
-    }
-
-    &.secondary-animated {
-      background: $SECONDARY_ANIMATED ;
-      a{
-        color: $TEXT_COLOR ;
-      }
-
-      &:hover {
-        background: $SECONDARY_ANIMATED_HOVER ;
-      }
-
-      &:active {
-        background: $SECONDARY_ANIMATED_HOVER ;
-      }
-    }
-
-    &.tertiary-animated {
-      background: $TERTIARY_ANIMATED ;
-      a{
-        color: $TEXT_COLOR ;
-      }
-
-      &:hover {
-        background: $TERTIARY_ANIMATED_HOVER ;
-      }
-
-      &:active {
-        background: $TERTIARY_ANIMATED_HOVER ;
-      }
-    }
-  }
 }
 
 //===VERSION 2===//
@@ -401,6 +340,67 @@
 	to {
 		opacity: 1
 	}
+}
+
+
+@at-root .vjlp7_wrapper #hero #hero-text-wrapper button{
+  &.primary-flat {
+    background: $PRIMARY_FLAT ;
+    a{
+      color: $TEXT_COLOR ;
+    }
+  }
+
+  &.secondary-flat {
+    background: $SECONDARY_FLAT ;
+    a{
+      color: $TEXT_COLOR ;
+    }
+  }
+
+  &.tertiary-flat {
+    background: $TERTIARY_FLAT ;
+    a{
+      color: $TEXT_COLOR ;
+    }
+  }
+
+  &.primary-animated {
+    background: $PRIMARY_ANIMATED ;
+    a{
+      color: $TEXT_COLOR ;
+    }
+  }
+
+  &.secondary-animated {
+    background: $SECONDARY_ANIMATED ;
+    a{
+      color: $TEXT_COLOR ;
+    }
+
+    &:hover {
+      background: $SECONDARY_ANIMATED_HOVER ;
+    }
+
+    &:active {
+      background: $SECONDARY_ANIMATED_HOVER ;
+    }
+  }
+
+  &.tertiary-animated {
+    background: $TERTIARY_ANIMATED ;
+    a{
+      color: $TEXT_COLOR ;
+    }
+
+    &:hover {
+      background: $TERTIARY_ANIMATED_HOVER ;
+    }
+
+    &:active {
+      background: $TERTIARY_ANIMATED_HOVER ;
+    }
+  }
 }
 
 

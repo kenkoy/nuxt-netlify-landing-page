@@ -10,6 +10,7 @@ field_ids:
 styles: version2
 template: steps
 promo_banner:
+  promo_join_button_style: 'primary-flat'
   promo_title: |-
     最大$1000の
     ビギナーズボーナス
