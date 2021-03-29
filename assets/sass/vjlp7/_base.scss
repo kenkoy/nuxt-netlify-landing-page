@@ -12,6 +12,53 @@
   .highlight{
     color: $TEXT_HIGHLIGHT;
   }
+  button {
+    &.primary-flat {
+      background: $PRIMARY_FLAT;
+      color: $TEXT_COLOR;
+    }
+
+    &.secondary-flat {
+      background: $SECONDARY_FLAT;
+      color: $TEXT_COLOR;
+    }
+
+    &.tertiary-flat {
+      background: $TERTIARY_FLAT;
+      color: $TEXT_COLOR;
+    }
+
+    &.primary-animated {
+      background: $PRIMARY_ANIMATED;
+      color: $TEXT_COLOR;
+    }
+
+    &.secondary-animated {
+      background: $SECONDARY_ANIMATED;
+      color: $TEXT_COLOR;
+
+      &:hover {
+        background: $SECONDARY_ANIMATED_HOVER;
+      }
+
+      &:active {
+        background: $SECONDARY_ANIMATED_HOVER;
+      }
+    }
+
+    &.tertiary-animated {
+      background: $TERTIARY_ANIMATED;
+      color: $TEXT_COLOR;
+
+      &:hover {
+        background: $TERTIARY_ANIMATED_HOVER;
+      }
+
+      &:active {
+        background: $TERTIARY_ANIMATED_HOVER;
+      }
+    }
+  }
 }
 
 //===VERSION 2===//
@@ -39,6 +86,52 @@
     border: none;
     padding: 10px 20px;
     border: 3px solid rgb(120, 0, 50);
+
+    &.primary-flat {
+      background: $PRIMARY_FLAT;
+      color: $TEXT_COLOR;
+    }
+
+    &.secondary-flat {
+      background: $SECONDARY_FLAT;
+      color: $TEXT_COLOR;
+    }
+
+    &.tertiary-flat {
+      background: $TERTIARY_FLAT;
+      color: $TEXT_COLOR;
+    }
+
+    &.primary-animated {
+      background: $PRIMARY_ANIMATED;
+      color: $TEXT_COLOR;
+    }
+
+    &.secondary-animated {
+      background: $SECONDARY_ANIMATED;
+      color: $TEXT_COLOR;
+
+      &:hover {
+        background: $SECONDARY_ANIMATED_HOVER;
+      }
+
+      &:active {
+        background: $SECONDARY_ANIMATED_HOVER;
+      }
+    }
+
+    &.tertiary-animated {
+      background: $TERTIARY_ANIMATED;
+      color: $TEXT_COLOR;
+
+      &:hover {
+        background: $TERTIARY_ANIMATED_HOVER;
+      }
+
+      &:active {
+        background: $TERTIARY_ANIMATED_HOVER;
+      }
+    }
 
     a {
       border: none;
