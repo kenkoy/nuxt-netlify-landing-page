@@ -53,12 +53,12 @@
             <h2>{{ sections.title }}</h2>
             <img alt="alt img" :src="sections.image">
             <button
-              :class="mdData.section.section_join_button_style === 'primary-flat' ? 'primary-flat'
-                : mdData.section.section_join_button_style === 'secondary-flat' ? 'secondary-flat'
-                  : mdData.section.section_join_button_style === 'tertiary-flat' ? 'tertiary-flat'
-                    : mdData.section.section_join_button_style === 'primary-gradient' ? 'primary-gradient'
-                      : mdData.section.section_join_button_style === 'secondary-gradient' ? 'secondary-gradient'
-                        : mdData.section.section_join_button_style === 'tertiary-gradient' ? 'tertiary-gradient' : '' "
+              :class="sections.section_join_button_style === 'primary-flat' ? 'primary-flat'
+                : sections.section_join_button_style === 'secondary-flat' ? 'secondary-flat'
+                  : sections.section_join_button_style === 'tertiary-flat' ? 'tertiary-flat'
+                    : sections.section_join_button_style === 'primary-gradient' ? 'primary-gradient'
+                      : sections.section_join_button_style === 'secondary-gradient' ? 'secondary-gradient'
+                        : sections.section_join_button_style === 'tertiary-gradient' ? 'tertiary-gradient' : '' "
             >
               <a rel="noopener" :href="sections.join_button_redirect_url">
                 {{ sections.join_button }}
