@@ -803,12 +803,12 @@ collections:
             widget: "select"
             required: false
             options:
-              - { label: "Blue - Primary Flat", value: "primary-flat-section_join_button" }
-              - { label: "Pink - Secondary Flat", value: "secondary-flat-section_join_button" }
-              - { label: "Yellow - Tertiary Flat", value: "tertiary-flat-section_join_button" }
-              - { label: "Blue - Primary Gradient", value: "primary-gradient-section_join_button" }
-              - { label: "Pink - Secondary Gradient", value: "secondary-gradient-section_join_button" }
-              - { label: "Yellow - Tertiary Gradient", value: "tertiary-gradient-section_join_button" }
+              - { label: "Blue - Primary Flat", value: "primary-flat" }
+              - { label: "Pink - Secondary Flat", value: "secondary-flat" }
+              - { label: "Yellow - Tertiary Flat", value: "tertiary-flat" }
+              - { label: "Blue - Primary Gradient", value: "primary-gradient" }
+              - { label: "Pink - Secondary Gradient", value: "secondary-gradient" }
+              - { label: "Yellow - Tertiary Gradient", value: "tertiary-gradient" }
           - { label: "Image", name: image, widget: image }
       - {
           label: "Terms & Conditions",

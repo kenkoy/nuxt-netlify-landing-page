@@ -71,6 +71,25 @@ export const VJLP8_PREVIEW = createClass({
     }
   },
 
+  sectionJoinStyle (style) {
+    switch (style) {
+      case 'primary-flat':
+        return 'primary-flat'
+      case 'secondary-flat':
+        return 'secondary-flat'
+      case 'tertiary-flat':
+        return 'tertiary-flat'
+      case 'primary-gradient':
+        return 'primary-gradient'
+      case 'secondary-gradient':
+        return 'secondary-gradient'
+      case 'tertiary-gradient':
+        return 'tertiary-gradient'
+      default:
+        return ''
+    }
+  },
+
   render () {
     const { widgetFor, widgetsFor } = this.props
     const locale = widgetsFor('promo_locale')
@@ -155,7 +174,7 @@ export const VJLP8_PREVIEW = createClass({
               <div>
                 <h2>${sect.getIn(['data', 'title']) || ''}</h2>
                 <img alt="alt img" src="${(sect.getIn(['data', 'image']) || '')}"></img>
-                <button class="${joinBtn}">
+                <button class="${sect.getIn(['data', 'section_join_button_style']) || ''}">
                   <a rel="noopener" href="${sect.getIn(['data', 'join_button_redirect_url']) || ''}">
                     ${sect.getIn(['data', 'join_button']) || ''}
                   </a>

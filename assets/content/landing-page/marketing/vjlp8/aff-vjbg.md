@@ -35,15 +35,15 @@ section:
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bonus.png
-    section_join_button_style: tertiary-gradient-section_join_button
+    section_join_button_style: primary-gradient
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-CM.png
-    section_join_button_style: secondary-gradient-section_join_button
+    section_join_button_style: secondary-flat
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-details.png
-    section_join_button_style: primary-gradient-section_join_button
+    section_join_button_style: tertiary-gradient
 ---
 <h3 class="text-left">ビギナーズボーナス利用規約</h3>
 <ul class="terms-ul">
