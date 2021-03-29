@@ -49,12 +49,12 @@ export const VJLP5_PREVIEW = createClass({
         return 'secondary-flat'
       case 'tertiary-flat':
         return 'tertiary-flat'
-      case 'primary-animated':
-        return 'primary-animated'
-      case 'secondary-animated':
-        return 'secondary-animated'
-      case 'tertiary-animated':
-        return 'tertiary-animated'
+      case 'primary-gradient':
+        return 'primary-gradient'
+      case 'secondary-gradient':
+        return 'secondary-gradient'
+      case 'tertiary-gradient':
+        return 'tertiary-gradient'
       default:
         return 'warning'
     }
@@ -68,12 +68,12 @@ export const VJLP5_PREVIEW = createClass({
         return 'secondary-flat'
       case 'tertiary-flat':
         return 'tertiary-flat'
-      case 'primary-animated':
-        return 'primary-animated'
-      case 'secondary-animated':
-        return 'secondary-animated'
-      case 'tertiary-animated':
-        return 'tertiary-animated'
+      case 'primary-gradient':
+        return 'primary-gradient'
+      case 'secondary-gradient':
+        return 'secondary-gradient'
+      case 'tertiary-gradient':
+        return 'tertiary-gradient'
       default:
         return 'error'
     }
