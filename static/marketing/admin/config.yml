@@ -128,9 +128,9 @@ collections:
               - { label: "Blue - Primary Flat", value: "primary-flat" }
               - { label: "Pink - Secondary Flat", value: "secondary-flat" }
               - { label: "Yellow - Tertiary Flat", value: "tertiary-flat" }
-              - { label: "Blue - Primary Animated", value: "primary-animated" }
-              - { label: "Pink - Secondary Animated", value: "secondary-animated" }
-              - { label: "Yellow - Tertiary Animated", value: "tertiary-animated" }
+              - { label: "Blue - Primary Animated", value: "primary-gradient" }
+              - { label: "Pink - Secondary Animated", value: "secondary-gradient" }
+              - { label: "Yellow - Tertiary Animated", value: "tertiary-gradient" }
           - { label: "Join Button", name: promo_join_button, widget: "string" }
           - label: "Show Button"
             name: "promo_join_button_option"
@@ -150,9 +150,9 @@ collections:
               - { label: "Blue - Primary Flat", value: "primary-flat" }
               - { label: "Pink - Secondary Flat", value: "secondary-flat" }
               - { label: "Yellow - Tertiary Flat", value: "tertiary-flat" }
-              - { label: "Blue - Primary Animated", value: "primary-animated" }
-              - { label: "Pink - Secondary Animated", value: "secondary-animated" }
-              - { label: "Yellow - Tertiary Animated", value: "tertiary-animated" }
+              - { label: "Blue - Primary Animated", value: "primary-gradient" }
+              - { label: "Pink - Secondary Animated", value: "secondary-gradient" }
+              - { label: "Yellow - Tertiary Animated", value: "tertiary-gradient" }
           - label: "Desktop banner size cover"
             name: "desktop_full"
             default: true
