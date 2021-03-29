@@ -18,12 +18,12 @@
       color: $TEXT_COLOR;
     }
 
-    &.primary-animated {
+    &.primary-gradient {
       background: $PRIMARY_GRADIENT;
       color: $TEXT_COLOR;
     }
 
-    &.secondary-animated {
+    &.secondary-gradient {
       background: $SECONDARY_GRADIENT;
       color: $TEXT_COLOR;
 
@@ -36,7 +36,7 @@
       }
     }
 
-    &.tertiary-animated {
+    &.tertiary-gradient {
       background: $TERTIARY_GRADIENT;
       color: $TEXT_COLOR;
 
