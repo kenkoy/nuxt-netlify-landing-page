@@ -19,12 +19,7 @@
               </button>
               <button
                 class="animated pulse infinite"
-                :class="data_items.attributes.promo_banner.promo_join_button_style === 'primary-flat' ? 'primary-flat'
-                  : data_items.attributes.promo_banner.promo_join_button_style === 'secondary-flat' ? 'secondary-flat'
-                    : data_items.attributes.promo_banner.promo_join_button_style === 'tertiary-flat' ? 'tertiary-flat'
-                      : data_items.attributes.promo_banner.promo_join_button_style === 'primary-animated' ? 'primary-animated'
-                        : data_items.attributes.promo_banner.promo_join_button_style === 'secondary-animated' ? 'secondary-animated'
-                          : data_items.attributes.promo_banner.promo_join_button_style === 'tertiary-animated' ? 'tertiary-animated' : 'error' "
+                :class="buttonColorScheme"
               >
                 <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url"><strong>{{ data_items.attributes.promo_banner.promo_join_button }}</strong></a>
               </button>
@@ -156,7 +151,9 @@ export default {
 
       firstTitle: '',
       secondTitle: '',
-      phrase: ''
+      phrase: '',
+
+      buttonColor: ''
     }
   },
   head () {
@@ -187,6 +184,19 @@ export default {
         return output
       }
       return this.firstTitle
+    },
+    buttonColorScheme () {
+      return this.buttonColor === 'primary-flat'
+        ? 'primary-flat'
+        : this.buttonColor === 'secondary-flat'
+          ? 'secondary-flat'
+          : this.buttonColor === 'tertiary-flat'
+            ? 'tertiary-flat'
+            : this.buttonColor === 'primary-animated'
+              ? 'primary-animated'
+              : this.buttonColor === 'secondary-animated'
+                ? 'secondary-animated'
+                : this.buttonColor === 'tertiary-animated' ? 'tertiary-animated' : 'error'
     }
   },
   methods: {
@@ -208,6 +218,8 @@ export default {
         this.firstTitle = item.attributes.promo_banner.first_title
         this.secondTitle = item.attributes.promo_banner.second_title
         this.phrase = item.attributes.promo_banner.phrase
+
+        this.buttonColor = item.attributes.promo_banner.promo_join_button_style
       })
     },
     nextlineToBr (paragraphs = '') {
