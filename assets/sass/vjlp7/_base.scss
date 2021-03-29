@@ -376,6 +376,9 @@
     background: $SECONDARY_GRADIENT ;
     a{
       color: $TEXT_COLOR ;
+      :hover {
+        color: $TEXT_COLOR ;
+      }
     }
 
     &:hover {
