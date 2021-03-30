@@ -18,6 +18,7 @@ promo_banner:
     promo_game_logo: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-game-logo.png
     promo_bg_mobile: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bg_m.jpg
     promo_bg_desktop: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
+  promo_join_button_style: tertiary-gradient
   promo_large_subtitle: ■新規プレイヤー限定特典■
   promo_link_terms:
     - 利用規約
@@ -33,9 +34,11 @@ section:
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bonus.png
+    section_join_button_style: tertiary-gradient
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-CM.png
+    section_join_button_style: secondary-flat
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-details.png
