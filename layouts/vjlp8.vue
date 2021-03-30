@@ -28,15 +28,7 @@
             </div>
 
             <div id="banner-terms">
-              <button
-                :class="mdData.styles === 'version2' ? 'animated pulse infinite' : ''
-                  && mdData.promo_banner.promo_join_button_style === 'primary-flat' ? 'primary-flat'
-                  : mdData.promo_banner.promo_join_button_style === 'secondary-flat' ? 'secondary-flat'
-                    : mdData.promo_banner.promo_join_button_style === 'tertiary-flat' ? 'tertiary-flat'
-                      : mdData.promo_banner.promo_join_button_style === 'primary-gradient' ? 'primary-gradient'
-                        : mdData.promo_banner.promo_join_button_style === 'secondary-gradient' ? 'secondary-gradient'
-                          : mdData.promo_banner.promo_join_button_style === 'tertiary-gradient' ? 'tertiary-gradient' : '' "
-              >
+              <button :class="buttonColor">
                 <a :href="mdData.promo_banner.promo_join_button_redirect_url">
                   {{ mdData.promo_banner.promo_join_button }}
                 </a>
@@ -108,6 +100,35 @@ export default {
     }
   },
   computed: {
+    buttonColor () {
+      if (this.mdData.styles === 'version2') {
+        let color = ''
+        const version = ' animated pulse infinite'
+        color = this.mdData.promo_banner.promo_join_button_style === 'primary-flat'
+          ? 'primary-flat'
+          : this.mdData.promo_banner.promo_join_button_style === 'secondary-flat'
+            ? 'secondary-flat'
+            : this.mdData.promo_banner.promo_join_button_style === 'tertiary-flat'
+              ? 'tertiary-flat'
+              : this.mdData.promo_banner.promo_join_button_style === 'primary-gradient'
+                ? 'primary-gradient'
+                : this.mdData.promo_banner.promo_join_button_style === 'secondary-gradient'
+                  ? 'secondary-gradient'
+                  : this.mdData.promo_banner.promo_join_button_style === 'tertiary-gradient' ? 'tertiary-gradient' : ''
+        return color + version
+      }
+      return this.mdData.promo_banner.promo_join_button_style === 'primary-flat'
+        ? 'primary-flat'
+        : this.mdData.promo_banner.promo_join_button_style === 'secondary-flat'
+          ? 'secondary-flat'
+          : this.mdData.promo_banner.promo_join_button_style === 'tertiary-flat'
+            ? 'tertiary-flat'
+            : this.mdData.promo_banner.promo_join_button_style === 'primary-gradient'
+              ? 'primary-gradient'
+              : this.mdData.promo_banner.promo_join_button_style === 'secondary-gradient'
+                ? 'secondary-gradient'
+                : this.mdData.promo_banner.promo_join_button_style === 'tertiary-gradient' ? 'tertiary-gradient' : ''
+    },
     cssBackground () {
       const images = this.mdData.promo_banner.promo_images
       return {
