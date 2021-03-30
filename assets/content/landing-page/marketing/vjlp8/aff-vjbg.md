@@ -7,7 +7,7 @@ field_ids:
   go_container_id: OPT-PD9MB2F
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
-styles: version1
+styles: version2
 promo_banner:
   promo_small_subtitle: |-
     $1000のウェルカムボーナスをゲットできるのは新規プレイヤーのあなた様のみ！
@@ -39,7 +39,7 @@ section:
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-CM.png
-    section_join_button_style: secondary-flat
+    section_join_button_style: primary-gradient
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-details.png
