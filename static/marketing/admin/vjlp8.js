@@ -52,25 +52,6 @@ export const VJLP8_PREVIEW = createClass({
     return { __html: termsText }
   },
 
-  joinStyle (style) {
-    switch (style) {
-      case 'primary-flat':
-        return 'primary-flat'
-      case 'secondary-flat':
-        return 'secondary-flat'
-      case 'tertiary-flat':
-        return 'tertiary-flat'
-      case 'primary-gradient':
-        return 'primary-gradient'
-      case 'secondary-gradient':
-        return 'secondary-gradient'
-      case 'tertiary-gradient':
-        return 'tertiary-gradient'
-      default:
-        return ''
-    }
-  },
-
   sectionJoinStyle (style) {
     switch (style) {
       case 'primary-flat':
@@ -119,14 +100,13 @@ export const VJLP8_PREVIEW = createClass({
       banner.getIn(['data', 'promo_small_subtitle_highlighted'])
     )
 
-    const joinBtn = this.joinStyle(
-      banner.getIn(['data', 'promo_join_button_style'])
-    )
-
     const termsText = this.formatTerms(
       banner.getIn(['data', 'promo_terms']) || ' ',
       banner.getIn(['data', 'promo_link_terms'])
     )
+
+    const bannerButtonStyle = version === 'version2' ? 'animated pulse infinite' : ''
+    const bannerColorStyle = banner.getIn(['data', 'promo_join_button_style']) || ''
 
     return (
       html`
@@ -156,7 +136,7 @@ export const VJLP8_PREVIEW = createClass({
               </div>
 
               <div id="banner-terms">
-                <button className="${version === 'version2' ? 'animated pulse infinite' : ''}" class="${joinBtn}">
+                <button className="${bannerButtonStyle + ' ' + bannerColorStyle}">
                   <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
                     ${banner.getIn(['data', 'promo_join_button'])}
                   </a>
