@@ -16,7 +16,7 @@ promo_banner:
     promo_game_logo: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-game-logo.png
     promo_bg_mobile: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-bg_m.jpg
     promo_bg_desktop: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-bg.jpg
-  promo_join_button_style: null
+  promo_join_button_style: primary-flat
   promo_large_subtitle: TEST
   promo_link_terms:
     - 利用規約

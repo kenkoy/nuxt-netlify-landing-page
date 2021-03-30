@@ -28,7 +28,7 @@
             </div>
 
             <div id="banner-terms">
-              <button :class="buttonColor">
+              <button :class="bannerButtonStyle(mdData.styles, mdData.promo_banner.promo_join_button_style)">
                 <a :href="mdData.promo_banner.promo_join_button_redirect_url">
                   {{ mdData.promo_banner.promo_join_button }}
                 </a>
@@ -44,14 +44,7 @@
           <div>
             <h2>{{ sections.title }}</h2>
             <img alt="alt img" :src="sections.image">
-            <button
-              :class="sections.section_join_button_style === 'primary-flat' ? 'primary-flat'
-                : sections.section_join_button_style === 'secondary-flat' ? 'secondary-flat'
-                  : sections.section_join_button_style === 'tertiary-flat' ? 'tertiary-flat'
-                    : sections.section_join_button_style === 'primary-gradient' ? 'primary-gradient'
-                      : sections.section_join_button_style === 'secondary-gradient' ? 'secondary-gradient'
-                        : sections.section_join_button_style === 'tertiary-gradient' ? 'tertiary-gradient' : '' "
-            >
+            <button :class="`${sections.section_join_button_style}`">
               <a rel="noopener" :href="sections.join_button_redirect_url">
                 {{ sections.join_button }}
               </a>
@@ -100,35 +93,6 @@ export default {
     }
   },
   computed: {
-    buttonColor () {
-      if (this.mdData.styles === 'version2') {
-        let color = ''
-        const version = ' animated pulse infinite'
-        color = this.mdData.promo_banner.promo_join_button_style === 'primary-flat'
-          ? 'primary-flat'
-          : this.mdData.promo_banner.promo_join_button_style === 'secondary-flat'
-            ? 'secondary-flat'
-            : this.mdData.promo_banner.promo_join_button_style === 'tertiary-flat'
-              ? 'tertiary-flat'
-              : this.mdData.promo_banner.promo_join_button_style === 'primary-gradient'
-                ? 'primary-gradient'
-                : this.mdData.promo_banner.promo_join_button_style === 'secondary-gradient'
-                  ? 'secondary-gradient'
-                  : this.mdData.promo_banner.promo_join_button_style === 'tertiary-gradient' ? 'tertiary-gradient' : ''
-        return color + version
-      }
-      return this.mdData.promo_banner.promo_join_button_style === 'primary-flat'
-        ? 'primary-flat'
-        : this.mdData.promo_banner.promo_join_button_style === 'secondary-flat'
-          ? 'secondary-flat'
-          : this.mdData.promo_banner.promo_join_button_style === 'tertiary-flat'
-            ? 'tertiary-flat'
-            : this.mdData.promo_banner.promo_join_button_style === 'primary-gradient'
-              ? 'primary-gradient'
-              : this.mdData.promo_banner.promo_join_button_style === 'secondary-gradient'
-                ? 'secondary-gradient'
-                : this.mdData.promo_banner.promo_join_button_style === 'tertiary-gradient' ? 'tertiary-gradient' : ''
-    },
     cssBackground () {
       const images = this.mdData.promo_banner.promo_images
       return {
@@ -145,17 +109,19 @@ export default {
         )
 
       let idx = 0
-      this.mdData.promo_banner.promo_small_subtitle_highlighted.filter(phrase => phrase)
-        .forEach((phrase) => {
-          while (bannerTitle.length > idx) {
-            if (bannerTitle[idx].includes(phrase)) {
-              bannerTitle[idx] = bannerTitle[idx].replace(phrase, `<span class="highlight"><b>${phrase}</b></span>`)
-              break
-            } else {
-              idx++
+      if (this.mdData.promo_banner.promo_small_subtitle_highlighted) {
+        this.mdData.promo_banner.promo_small_subtitle_highlighted.filter(phrase => phrase)
+          .forEach((phrase) => {
+            while (bannerTitle.length > idx) {
+              if (bannerTitle[idx].includes(phrase)) {
+                bannerTitle[idx] = bannerTitle[idx].replace(phrase, `<span class="highlight"><b>${phrase}</b></span>`)
+                break
+              } else {
+                idx++
+              }
             }
-          }
-        })
+          })
+      }
 
       return bannerTitle.reduce((oldVal, newVal) => {
         return oldVal + '<br />' + newVal
@@ -163,12 +129,14 @@ export default {
     },
     bannerTerms () {
       let termsText = this.mdData.promo_banner.promo_terms
-      this.mdData.promo_banner.promo_link_terms.filter(linkText => linkText)
-        .forEach((linkText) => {
-          if (this.mdData.promo_banner.promo_terms.includes(linkText)) {
-            termsText = this.mdData.promo_banner.promo_terms.replace(linkText, `<a rel="noopener" href="#terms">${linkText}</a>`)
-          }
-        })
+      if (this.mdData.promo_banner.promo_link_terms) {
+        this.mdData.promo_banner.promo_link_terms.filter(linkText => linkText)
+          .forEach((linkText) => {
+            if (this.mdData.promo_banner.promo_terms.includes(linkText)) {
+              termsText = this.mdData.promo_banner.promo_terms.replace(linkText, `<a rel="noopener" href="#terms">${linkText}</a>`)
+            }
+          })
+      }
       return termsText
     }
   },
@@ -180,6 +148,14 @@ export default {
   },
   beforeDestroy () {
     this.$root.$off('vjlp8-data')
+  },
+  methods: {
+    bannerButtonStyle (styleVersion = '', colorStyle = '') {
+      if (styleVersion === 'version2') {
+        return `animated pulse infinite ${colorStyle}`
+      }
+      return colorStyle
+    }
   }
 }
 </script>
