@@ -108,8 +108,8 @@ export default {
           : title
         )
 
-      let idx = 0
       if (this.mdData.promo_banner.promo_small_subtitle_highlighted) {
+        let idx = 0
         this.mdData.promo_banner.promo_small_subtitle_highlighted.filter(phrase => phrase)
           .forEach((phrase) => {
             while (bannerTitle.length > idx) {
