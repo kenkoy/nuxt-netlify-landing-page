@@ -113,8 +113,3 @@ export default {
   }
 }
 </script>
-<style lang="scss">
-  .nav_wrapper {
-    @import '@/assets/sass/base/style.scss';
-  }
-</style>

@@ -143,9 +143,3 @@ export default {
   }
 }
 </style>
-
-<style lang="scss">
-  .home_wrapper {
-    @import '@/assets/sass/base/style.scss';
-  }
-</style>
