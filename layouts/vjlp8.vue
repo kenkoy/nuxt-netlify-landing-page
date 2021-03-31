@@ -28,7 +28,7 @@
             </div>
 
             <div id="banner-terms">
-              <button :class="bannerButtonStyle(mdData.styles, mdData.promo_banner.promo_join_button_style)">
+              <button :class="mdData.styles === 'version2' ? 'animated pulse infinite' : ''">
                 <a :href="mdData.promo_banner.promo_join_button_redirect_url">
                   {{ mdData.promo_banner.promo_join_button }}
                 </a>
@@ -44,7 +44,7 @@
           <div>
             <h2>{{ sections.title }}</h2>
             <img alt="alt img" :src="sections.image">
-            <button :class="`${sections.section_join_button_style}`">
+            <button>
               <a rel="noopener" :href="sections.join_button_redirect_url">
                 {{ sections.join_button }}
               </a>
@@ -108,20 +108,18 @@ export default {
           : title
         )
 
-      if (this.mdData.promo_banner.promo_small_subtitle_highlighted) {
-        let idx = 0
-        this.mdData.promo_banner.promo_small_subtitle_highlighted.filter(phrase => phrase)
-          .forEach((phrase) => {
-            while (bannerTitle.length > idx) {
-              if (bannerTitle[idx].includes(phrase)) {
-                bannerTitle[idx] = bannerTitle[idx].replace(phrase, `<span class="highlight"><b>${phrase}</b></span>`)
-                break
-              } else {
-                idx++
-              }
+      let idx = 0
+      this.mdData.promo_banner.promo_small_subtitle_highlighted.filter(phrase => phrase)
+        .forEach((phrase) => {
+          while (bannerTitle.length > idx) {
+            if (bannerTitle[idx].includes(phrase)) {
+              bannerTitle[idx] = bannerTitle[idx].replace(phrase, `<span class="highlight"><b>${phrase}</b></span>`)
+              break
+            } else {
+              idx++
             }
-          })
-      }
+          }
+        })
 
       return bannerTitle.reduce((oldVal, newVal) => {
         return oldVal + '<br />' + newVal
@@ -129,14 +127,12 @@ export default {
     },
     bannerTerms () {
       let termsText = this.mdData.promo_banner.promo_terms
-      if (this.mdData.promo_banner.promo_link_terms) {
-        this.mdData.promo_banner.promo_link_terms.filter(linkText => linkText)
-          .forEach((linkText) => {
-            if (this.mdData.promo_banner.promo_terms.includes(linkText)) {
-              termsText = this.mdData.promo_banner.promo_terms.replace(linkText, `<a rel="noopener" href="#terms">${linkText}</a>`)
-            }
-          })
-      }
+      this.mdData.promo_banner.promo_link_terms.filter(linkText => linkText)
+        .forEach((linkText) => {
+          if (this.mdData.promo_banner.promo_terms.includes(linkText)) {
+            termsText = this.mdData.promo_banner.promo_terms.replace(linkText, `<a rel="noopener" href="#terms">${linkText}</a>`)
+          }
+        })
       return termsText
     }
   },
@@ -148,14 +144,6 @@ export default {
   },
   beforeDestroy () {
     this.$root.$off('vjlp8-data')
-  },
-  methods: {
-    bannerButtonStyle (styleVersion = '', colorStyle = '') {
-      if (styleVersion === 'version2') {
-        return `animated pulse infinite ${colorStyle}`
-      }
-      return colorStyle
-    }
   }
 }
 </script>

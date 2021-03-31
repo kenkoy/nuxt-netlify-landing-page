@@ -12,15 +12,12 @@
             </div>
 
             <div class="nav-links">
-              <button :class="data_items.attributes.promo_banner.promo_login_button_style === 'primary-flat' ? 'primary-flat' : data_items.attributes.promo_banner.promo_login_button_style === 'secondary-flat' ? 'secondary-flat' : data_items.attributes.promo_banner.promo_login_button_style === 'tertiary-flat' ? 'tertiary-flat' : data_items.attributes.promo_banner.promo_login_button_style === 'primary-gradient' ? 'primary-gradient' : data_items.attributes.promo_banner.promo_login_button_style === 'secondary-gradient' ? 'secondary-gradient' : data_items.attributes.promo_banner.promo_login_button_style === 'tertiary-gradient' ? 'tertiary-gradient' : 'warning' ">
+              <button class="warning">
                 <a :href="data_items.attributes.promo_banner.promo_join_button_redirect_url">
                   {{ data_items.attributes.promo_banner.promo_login_button }}
                 </a>
               </button>
-              <button
-                class="animated pulse infinite"
-                :class="buttonColorScheme"
-              >
+              <button class="error animated pulse infinite">
                 <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url"><strong>{{ data_items.attributes.promo_banner.promo_join_button }}</strong></a>
               </button>
             </div>
@@ -151,9 +148,7 @@ export default {
 
       firstTitle: '',
       secondTitle: '',
-      phrase: '',
-
-      buttonColor: ''
+      phrase: ''
     }
   },
   head () {
@@ -184,19 +179,6 @@ export default {
         return output
       }
       return this.firstTitle
-    },
-    buttonColorScheme () {
-      return this.buttonColor === 'primary-flat'
-        ? 'primary-flat'
-        : this.buttonColor === 'secondary-flat'
-          ? 'secondary-flat'
-          : this.buttonColor === 'tertiary-flat'
-            ? 'tertiary-flat'
-            : this.buttonColor === 'primary-gradient'
-              ? 'primary-gradient'
-              : this.buttonColor === 'secondary-gradient'
-                ? 'secondary-gradient'
-                : this.buttonColor === 'tertiary-gradient' ? 'tertiary-gradient' : 'error'
     }
   },
   methods: {
@@ -218,8 +200,6 @@ export default {
         this.firstTitle = item.attributes.promo_banner.first_title
         this.secondTitle = item.attributes.promo_banner.second_title
         this.phrase = item.attributes.promo_banner.phrase
-
-        this.buttonColor = item.attributes.promo_banner.promo_join_button_style
       })
     },
     nextlineToBr (paragraphs = '') {

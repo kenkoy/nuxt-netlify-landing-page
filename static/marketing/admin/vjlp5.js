@@ -41,44 +41,6 @@ export const VJLP5_PREVIEW = createClass({
     return style.toString()
   },
 
-  joinStyle (style) {
-    switch (style) {
-      case 'primary-flat':
-        return 'primary-flat'
-      case 'secondary-flat':
-        return 'secondary-flat'
-      case 'tertiary-flat':
-        return 'tertiary-flat'
-      case 'primary-gradient':
-        return 'primary-gradient'
-      case 'secondary-gradient':
-        return 'secondary-gradient'
-      case 'tertiary-gradient':
-        return 'tertiary-gradient'
-      default:
-        return 'warning'
-    }
-  },
-
-  loginStyle (style) {
-    switch (style) {
-      case 'primary-flat':
-        return 'primary-flat'
-      case 'secondary-flat':
-        return 'secondary-flat'
-      case 'tertiary-flat':
-        return 'tertiary-flat'
-      case 'primary-gradient':
-        return 'primary-gradient'
-      case 'secondary-gradient':
-        return 'secondary-gradient'
-      case 'tertiary-gradient':
-        return 'tertiary-gradient'
-      default:
-        return 'error'
-    }
-  },
-
   render () {
     const { widgetsFor, widgetFor } = this.props
     const banner = widgetsFor('promo_banner')
@@ -88,14 +50,6 @@ export const VJLP5_PREVIEW = createClass({
     const firstData = widgetsFor('first_section')
     const uspLeftData = widgetsFor('usp_left')
     const uspRightData = widgetsFor('usp_right')
-
-    const joinBtn = this.joinStyle(
-      banner.getIn(['data', 'promo_join_button_style'])
-    )
-
-    const loginBtn = this.loginStyle(
-      banner.getIn(['data', 'promo_login_button_style'])
-    )
 
     const bannerTitle = this.formatTitle(
       banner.getIn(['data', 'first_title']),
@@ -154,14 +108,14 @@ export const VJLP5_PREVIEW = createClass({
                 </div>
 
                 <div class="nav-links">
-                  <button class="${joinBtn}">
+                  <button class="warning">
                     <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
-                      ${banner.getIn(['data', 'promo_join_button'])}
+                      ${banner.getIn(['data', 'promo_login_button'])}
                     </a>
                   </button>
-                  <button class="${loginBtn} animated pulse infinite">
+                  <button class="error animated pulse infinite">
                     <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}">
-                      <strong>${banner.getIn(['data', 'promo_login_button'])}</strong>
+                      <strong>${banner.getIn(['data', 'promo_join_button'])}</strong>
                     </a>
                   </button>
                 </div>

@@ -2,52 +2,6 @@
 .version1{
   button{
     max-width: 280px;
-
-    &.primary-flat {
-      background: $PRIMARY_FLAT;
-      color: $TEXT_COLOR;
-    }
-
-    &.secondary-flat {
-      background: $SECONDARY_FLAT;
-      color: $TEXT_COLOR;
-    }
-
-    &.tertiary-flat {
-      background: $TERTIARY_FLAT;
-      color: $TEXT_COLOR;
-    }
-
-    &.primary-gradient {
-      background: $PRIMARY_GRADIENT;
-      color: $TEXT_COLOR;
-    }
-
-    &.secondary-gradient {
-      background: $SECONDARY_GRADIENT;
-      color: $TEXT_COLOR;
-
-      &:hover {
-        background: $SECONDARY_GRADIENT_HOVER;
-      }
-
-      &:active {
-        background: $SECONDARY_GRADIENT_HOVER;
-      }
-    }
-
-    &.tertiary-gradient {
-      background: $TERTIARY_GRADIENT;
-      color: $TEXT_COLOR;
-
-      &:hover {
-        background: $TERTIARY_GRADIENT_HOVER;
-      }
-
-      &:active {
-        background: $TERTIARY_GRADIENT_HOVER;
-      }
-    }
   }
 }
 
@@ -55,52 +9,6 @@
 .version2{
   button{
     max-width: 555px;
-
-    &.primary-flat {
-      background: $PRIMARY_FLAT;
-      color: $TEXT_COLOR;
-    }
-
-    &.secondary-flat {
-      background: $SECONDARY_FLAT;
-      color: $TEXT_COLOR;
-    }
-
-    &.tertiary-flat {
-      background: $TERTIARY_FLAT;
-      color: $TEXT_COLOR;
-    }
-
-    &.primary-gradient {
-      background: $PRIMARY_GRADIENT;
-      color: $TEXT_COLOR;
-    }
-
-    &.secondary-gradient {
-      background: $SECONDARY_GRADIENT;
-      color: $TEXT_COLOR;
-
-      &:hover {
-        background: $SECONDARY_GRADIENT_HOVER;
-      }
-
-      &:active {
-        background: $SECONDARY_GRADIENT_HOVER;
-      }
-    }
-
-    &.tertiary-gradient {
-      background: $TERTIARY_GRADIENT;
-      color: $TEXT_COLOR;
-
-      &:hover {
-        background: $TERTIARY_GRADIENT_HOVER;
-      }
-
-      &:active {
-        background: $TERTIARY_GRADIENT_HOVER;
-      }
-    }
 
     a{
       font-family: 'MainFont-Bold', sans-serif;

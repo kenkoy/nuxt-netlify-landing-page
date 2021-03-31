@@ -2,86 +2,9 @@
 .version1 button {
   max-width: 280px;
 }
-.version1 button.primary-flat {
-  background: #009FE3;
-  color: #fff;
-}
-.version1 button.secondary-flat {
-  background: #EC008B;
-  color: #fff;
-}
-.version1 button.tertiary-flat {
-  background: #FEE63D;
-  color: #fff;
-}
-.version1 button.primary-gradient {
-  background: linear-gradient(
-0deg
-, #0093d4 0%, #009fe3 100%);
-  color: #fff;
-}
-.version1 button.secondary-gradient {
-  background: linear-gradient(to bottom, #fb57cc, #de1681);
-  color: #fff;
-}
-.version1 button.secondary-gradient:hover {
-  background: linear-gradient(180deg, #ff65e5, #fa1e93);
-}
-.version1 button.secondary-gradient:active {
-  background: linear-gradient(180deg, #ff65e5, #fa1e93);
-}
-.version1 button.tertiary-gradient {
-  background: linear-gradient(to bottom, #ffc933 0%, #f7901d 100%);
-  color: #fff;
-}
-.version1 button.tertiary-gradient:hover {
-  background: linear-gradient(180deg, #ffe238, #ffa92d);
-}
-.version1 button.tertiary-gradient:active {
-  background: linear-gradient(180deg, #ffe238, #ffa92d);
-}
 
 .version2 button {
   max-width: 555px;
-}
-
-.version2 button.primary-flat {
-  background: #009FE3;
-  color: #fff;
-}
-.version2 button.secondary-flat {
-  background: #EC008B;
-  color: #fff;
-}
-.version2 button.tertiary-flat {
-  background: #FEE63D;
-  color: #fff;
-}
-.version2 button.primary-gradient {
-  background: linear-gradient(
-0deg
-, #0093d4 0%, #009fe3 100%);
-  color: #fff;
-}
-.version2 button.secondary-gradient {
-  background: linear-gradient(to bottom, #fb57cc, #de1681);
-  color: #fff;
-}
-.version2 button.secondary-gradient:hover {
-  background: linear-gradient(180deg, #ff65e5, #fa1e93);
-}
-.version2 button.secondary-gradient:active {
-  background: linear-gradient(180deg, #ff65e5, #fa1e93);
-}
-.version2 button.tertiary-gradient {
-  background: linear-gradient(to bottom, #ffc933 0%, #f7901d 100%);
-  color: #fff;
-}
-.version2 button.tertiary-gradient:hover {
-  background: linear-gradient(180deg, #ffe238, #ffa92d);
-}
-.version2 button.tertiary-gradient:active {
-  background: linear-gradient(180deg, #ffe238, #ffa92d);
 }
 .version2 button a {
   font-family: "MainFont-Bold", sans-serif;

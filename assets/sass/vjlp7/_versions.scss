@@ -1,0 +1,168 @@
+@media (min-height: 750px) and (min-width: 320px) and (max-width: 568px) {
+  /*==========  Version 2  ==========*/
+  .version2 {
+    .logo {
+      max-width: 180px;
+      width: 100%;
+    }
+  }
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  /*==========  Version 1  ==========*/
+  .version1{
+    .logo{
+      max-width: 150px;
+      width: 100%;
+    }
+    h1{
+      font-size: calc(#{$HERO_TITLE_SIZE3} - 16px);
+      line-height: 35px;
+      text-shadow: 0 0 0.6rem #ffffff, 0 0 1.5rem #ffffff, -0.2rem 0.1rem 1rem #ffffff, 0.2rem 0.1rem 1rem #ffffff, 0 -0.5rem 2rem #ffffff, 0 0.5rem 3rem #ffffff;
+      animation: shine 2s forwards, flicker 3s infinite;
+      font-weight: 700;
+    }
+    .highlight{
+      color: $TEXT_HIGHLIGHT;
+    }
+    #hero-text-wrapper{
+      background: none;
+
+      button {
+        background: #fff;
+        font-size: 22px;
+        font-weight: 700;
+        width: 280px;
+        border-radius: 100px;
+        border: none;
+        padding: 10px 20px;
+        color: #704B1F;
+
+        a{
+          border: none;
+        }
+      }
+    }
+  }
+
+  /*==========  Version 2  ==========*/
+  .version2{
+    #hero{
+      overflow: hidden;
+      position: relative;
+
+      &:before{
+        background-color: rgba(0,0,0,0.7);
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+      }
+    }
+
+    .logo{
+      max-width: 100px;
+      width: 100%;
+    }
+    h1{
+      animation: vjlp7text-flicker-promo 5s linear forwards;
+      text-shadow: 0 0 20px rgb(236, 0, 139);
+      color: $HERO_TITLE_COLOR2;
+      font-weight: 700;
+      font-family: 'MainFont-DemiBold', sans-serif;
+    }
+    .highlight{
+      color: $TEXT_HIGHLIGHT2;
+    }
+
+    button{
+      background: none;
+      width: 280px;
+      border-radius: 100px;
+      font-size: $TEXT_SIZE;
+      border: none;
+      padding: 10px 20px;
+      border: 3px solid rgb(120, 0, 50);
+
+      a {
+        border: none;
+        color: $TEXT_COLOR;
+        animation: vjlp7text-flicker 3s linear forwards infinite;
+      }
+      animation: vjlp7border-flicker 3s linear forwards infinite;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 576px) {
+  /*==========  Version 2  ==========*/
+  .version2{
+    #hero:before{
+      display: none;
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  /*==========  Version 1  ==========*/
+  .version1 {
+    #hero {
+      h1{
+        line-height: 58px;
+      }
+      .container{
+        min-height: 730px;
+        height: 100%;
+      }
+      #hero-text-wrapper{
+        background: -webkit-linear-gradient(top, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
+        background: linear-gradient(to bottom, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc009fe3', endColorstr='#ccec008b',GradientType=0);
+        padding: 20px;
+
+        button{
+          background: $BTN_BG;
+          font-size: $TEXT_SIZE;
+
+          a, a:hover{
+            color: $BTN_COLOR;
+          }
+
+          &:hover{
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.60);
+          }
+        }
+      }
+    }
+  }
+
+  /*==========  Version 2  ==========*/
+  .version2 {
+    #hero .container {
+      min-height: 500px;
+      height: 100%;
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  /*==========  Version 1  ==========*/
+  .version1{
+    h1{
+      font-size: $HERO_TITLE_SIZE3;
+    }
+  }
+}
