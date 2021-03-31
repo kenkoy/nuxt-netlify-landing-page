@@ -120,17 +120,6 @@ collections:
               name: promo_login_button_redirect_url,
               widget: "string",
             }
-          - label: "Login Button Style"
-            name: "promo_login_button_style"
-            widget: "select"
-            required: false
-            options:
-              - { label: "Blue - Primary Flat", value: "primary-flat" }
-              - { label: "Pink - Secondary Flat", value: "secondary-flat" }
-              - { label: "Yellow - Tertiary Flat", value: "tertiary-flat" }
-              - { label: "Blue - Primary Gradient", value: "primary-gradient" }
-              - { label: "Pink - Secondary Gradient", value: "secondary-gradient" }
-              - { label: "Yellow - Tertiary Gradient", value: "tertiary-gradient" }
           - { label: "Join Button", name: promo_join_button, widget: "string" }
           - label: "Show Button"
             name: "promo_join_button_option"
@@ -142,17 +131,6 @@ collections:
               name: promo_join_button_redirect_url,
               widget: "string",
             }
-          - label: "Join Button Style"
-            name: "promo_join_button_style"
-            widget: "select"
-            required: false
-            options:
-              - { label: "Blue - Primary Flat", value: "primary-flat" }
-              - { label: "Pink - Secondary Flat", value: "secondary-flat" }
-              - { label: "Yellow - Tertiary Flat", value: "tertiary-flat" }
-              - { label: "Blue - Primary Gradient", value: "primary-gradient" }
-              - { label: "Pink - Secondary Gradient", value: "secondary-gradient" }
-              - { label: "Yellow - Tertiary Gradient", value: "tertiary-gradient" }
           - label: "Desktop banner size cover"
             name: "desktop_full"
             default: true
@@ -485,17 +463,6 @@ collections:
               name: promo_join_button_redirect_url,
               widget: "string",
             }
-          - label: "Join Button Style"
-            name: "promo_join_button_style"
-            widget: "select"
-            required: false
-            options:
-              - { label: "Blue - Primary Flat", value: "primary-flat" }
-              - { label: "Pink - Secondary Flat", value: "secondary-flat" }
-              - { label: "Yellow - Tertiary Flat", value: "tertiary-flat" }
-              - { label: "Blue - Primary Gradient", value: "primary-gradient" }
-              - { label: "Pink - Secondary Gradient", value: "secondary-gradient" }
-              - { label: "Yellow - Tertiary Gradient", value: "tertiary-gradient" }
           - { label: "Terms Text", name: promo_terms_text, widget: "string" }
           - label: "Terms Underlined Link Texts"
             name: "promo_terms_link_text"
@@ -751,17 +718,6 @@ collections:
               name: "promo_join_button_redirect_url",
               widget: "string",
             }
-          - label: "Join Button Style"
-            name: "promo_join_button_style"
-            widget: "select"
-            required: false
-            options:
-              - { label: "Blue - Primary Flat", value: "primary-flat" }
-              - { label: "Pink - Secondary Flat", value: "secondary-flat" }
-              - { label: "Yellow - Tertiary Flat", value: "tertiary-flat" }
-              - { label: "Blue - Primary Gradient", value: "primary-gradient" }
-              - { label: "Pink - Secondary Gradient", value: "secondary-gradient" }
-              - { label: "Yellow - Tertiary Gradient", value: "tertiary-gradient" }
           - { label: "Terms Text", name: "promo_terms", widget: "string" }
           - label: "Terms Link Texts"
             name: "promo_link_terms"
@@ -798,17 +754,6 @@ collections:
               name: "join_button_redirect_url",
               widget: "string",
             }
-          - label: "Section Button Style"
-            name: "section_join_button_style"
-            widget: "select"
-            required: false
-            options:
-              - { label: "Blue - Primary Flat", value: "primary-flat" }
-              - { label: "Pink - Secondary Flat", value: "secondary-flat" }
-              - { label: "Yellow - Tertiary Flat", value: "tertiary-flat" }
-              - { label: "Blue - Primary Gradient", value: "primary-gradient" }
-              - { label: "Pink - Secondary Gradient", value: "secondary-gradient" }
-              - { label: "Yellow - Tertiary Gradient", value: "tertiary-gradient" }
           - { label: "Image", name: image, widget: image }
       - {
           label: "Terms & Conditions",
