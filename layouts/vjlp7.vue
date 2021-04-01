@@ -193,7 +193,7 @@ export default {
     // Utilitites
     @import '@/assets/sass/global/utilities/brand_variables.scss';
 
-    // Base
+    // Template style
     @import '@/assets/sass/vjlp7/style.scss';
   }
 </style>
