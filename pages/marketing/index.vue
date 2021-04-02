@@ -17,11 +17,10 @@
       </section>
 
       <section id="about">
-        <div class="container column-3">
-          <div>
+        <div class="container column-2">
+          <!-- <div>
             <img src="@/assets/images/gamesys-logo.png">
-          </div>
-
+          </div> -->
           <div>
             <p><strong>Play Online Casino at Vera&John</strong></p>
             <p>Ladies and gentlemen, welcome to Vera&John casino, home to hundreds of amazing online slot games, table games, live casino games, and much more. Whether you want to play at home on your PC or tablet, or on the go with our amazing online mobile casino, you can be sure of a fun-filled casino experience with us.</p>
@@ -36,7 +35,7 @@
 
       <section id="light-bg">
         <div class="container">
-          <div>
+          <div class="banner">
             <!-- <h2 class="light-typography">Light <span>background</span></h2>
             <h2 class="light-typography">hero image</h2> -->
             <br/><br/>
@@ -46,12 +45,30 @@
         </div>
       </section>
 
-      <section id="dark-bg-inverted">
+      <section id="about">
         <div class="container">
           <div>
+            <h2>Delivering a portfolio of  successful gaming brands</h2>
+            <p>We are a leading operator of online casino and bingo-led brands. Our focus is on building a diverse portfolio of distinctive and recognisable brands that deliver best-in-class player experience and gaming content to a global audience.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="dark-bg-inverted">
+        <div class="container">
+          <div class="banner">
             <!-- <h2 class="dark-typography">Dark background <br/> hero image</h2> -->
-            <h2 class="light-typography">暗い<span>背景</span></h2>
-            <h2 class="light-typography">ヒーロー画像</h2>
+            <h2 class="dark-typography">暗い<span>背景</span></h2>
+            <h2 class="dark-typography">ヒーロー画像</h2>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div>
+            <h2>Focus on key markets  to deliver growth</h2>
+            <p>Our strategy is based on five strategic pillars, which include increasing market share and delivering further growth in key existing territories. The solid foundations we have established across the Group will not only support our current footprint but also provide a springboard for success as we seek to address new markets.</p>
           </div>
         </div>
       </section>
@@ -132,6 +149,10 @@ export default {
     .container{
       align-items: center;
     }
+
+    h2{
+      color: #ffd81c;
+    }
     img{
       opacity: .8;
       max-width: 250px;
@@ -189,6 +210,14 @@ export default {
   letter-spacing: -1px;
   line-height: 75px;
   filter: drop-shadow(3px 3px 4px #000);
+  margin: 0;
+
+  span{
+    background: linear-gradient(#ffdd2c, #ffd200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(3px 3px 4px #deb700);
+  }
 }
 
 .intro {
@@ -225,21 +254,31 @@ export default {
   padding: 30px;
   background: url('~assets/images/home-beach.jpeg') no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 
   .container{
     min-height: 500px;
     align-items: center;
   }
+
+  .banner{
+    max-width: 500px;
+  }
 }
 
 #dark-bg-inverted{
   padding: 30px;
-  background: url('~assets/images/home-dark-inverted.jpg') no-repeat center;
+  background: url('~assets/images/home-darker.jpg') no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 
   .container{
     min-height: 500px;
     align-items: center;
+    justify-content: flex-end;
+  }
+  .banner{
+    max-width: 500px;
   }
 }
 
