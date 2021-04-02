@@ -212,6 +212,10 @@ export default {
   filter: drop-shadow(3px 3px 4px #000);
   margin: 0;
 
+  max-width: 100px;
+  display: inline-block;
+  vertical-align: top;
+
   span{
     background: linear-gradient(#ffdd2c, #ffd200);
     -webkit-background-clip: text;
@@ -270,7 +274,6 @@ export default {
   padding: 30px;
   background: url('~assets/images/home-darker.jpg') no-repeat center;
   background-size: cover;
-  background-attachment: fixed;
 
   .container{
     min-height: 500px;
