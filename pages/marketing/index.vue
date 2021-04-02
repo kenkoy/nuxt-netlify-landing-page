@@ -17,7 +17,7 @@
       </section>
 
       <section id="section-1">
-        <div class="container">
+        <div class="container column-3">
           <div>
             <img src="@/assets/images/gamesys-logo.png">
           </div>
@@ -69,6 +69,7 @@ export default {
 <style lang="scss" scoped>
 .default .home_wrapper{
   background: url('~assets/images/home-bg2.jpg') no-repeat #c21a1a;
+    background-attachment: fixed;
 }
 .default .intro{
   background: url('~assets/images/home-bg.png') no-repeat;
@@ -77,6 +78,7 @@ export default {
 }
 .christmas .home_wrapper{
   background: url('~assets/images/home-bg2-xmas.jpg') no-repeat #c21a1a;
+  background-attachment: fixed;
 }
 .christmas .intro{
   background: url('~assets/images/home-bg-xmas.png') no-repeat;
@@ -84,10 +86,9 @@ export default {
   background-size: cover;
 }
 .home_wrapper{
-  background-attachment: fixed;
-
   .intro .container{
     height: calc(100vh - 143.4px);
+    min-height: 400px;
   }
   #gradient-wrapper{
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -97,9 +98,10 @@ export default {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: 0;
     mix-blend-mode: soft-light;
+    min-height: calc(400px + 146px);
   }
 
   #section-1{

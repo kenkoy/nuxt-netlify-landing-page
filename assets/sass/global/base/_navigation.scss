@@ -165,6 +165,7 @@ label[for="ham-menu"] {
 
 /*--Overlay--*/
 .ham-overlay {
+    visibility: hidden;
     position: fixed;
     top: 0;
     left: 0;
@@ -183,6 +184,7 @@ label[for="ham-menu"] {
 }
 #ham-menu:checked ~ div.ham-overlay {
     opacity: .8;
+    visibility: visible;
 }
 
 /*=======EXPANDED=======*/
