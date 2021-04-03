@@ -278,7 +278,7 @@ export default {
   padding: 30px;
   background: url('~assets/images/home-beach.jpeg') no-repeat center;
   background-size: cover;
-  // background-attachment: fixed;
+  background-attachment: fixed;
 
   .container{
     min-height: 500px;
