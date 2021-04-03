@@ -2,8 +2,9 @@
   <div :class="month === 10 ? 'holloween' : month === 11 ? 'christmas' : 'default'">
     <div class="core-wrapper" :class="{ home_wrapper: true }">
       <div id="gradient-wrapper" />
+      <div v-if="month === 10" class="smoke" /> <!-- HOLLOWEEN -->
       <section class="intro">
-        <div v-if="month === 11" class="snowflakes" aria-hidden="true">
+        <div v-if="month === 11" class="snowflakes" aria-hidden="true"> <!-- CHRISTMAS -->
           <div class="snowflake" v-for="i in 10" :key="i">❅</div>
         </div>
         <div class="container">
@@ -18,9 +19,6 @@
 
       <section id="about">
         <div class="container column-2">
-          <!-- <div>
-            <img src="@/assets/images/gamesys-logo.png">
-          </div> -->
           <div>
             <p><strong>Play Online Casino at Vera&John</strong></p>
             <p>Ladies and gentlemen, welcome to Vera&John casino, home to hundreds of amazing online slot games, table games, live casino games, and much more. Whether you want to play at home on your PC or tablet, or on the go with our amazing online mobile casino, you can be sure of a fun-filled casino experience with us.</p>
@@ -115,6 +113,28 @@ export default {
   background-position: center;
   background-size: cover;
 }
+
+.holloween .home_wrapper{
+  background: url('~assets/images/home-bg2-holloween.jpeg') no-repeat #c21a1a;
+  background-attachment: fixed;
+}
+.holloween .intro{
+  background: url('~assets/images/home-bg-holloween.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.holloween .smoke{
+  background: url('https://criminal-empire.co.uk/themes/CrimEmpTheme/assets/img/smoke.gif') no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .7;
+  z-index: 0;
+}
+
 .christmas .home_wrapper{
   background: url('~assets/images/home-bg2-xmas.jpg') no-repeat #c21a1a;
   background-attachment: fixed;
@@ -258,7 +278,7 @@ export default {
   padding: 30px;
   background: url('~assets/images/home-beach.jpeg') no-repeat center;
   background-size: cover;
-  background-attachment: fixed;
+  // background-attachment: fixed;
 
   .container{
     min-height: 500px;
