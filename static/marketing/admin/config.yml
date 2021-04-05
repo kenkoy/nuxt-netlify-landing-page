@@ -103,12 +103,14 @@ collections:
               label: "Banner first title",
               name: "first_title",
               widget: "string",
+              required: false,
             }
-          - { label: "Banner text highlight", name: "phrase", widget: "string" }
+          - { label: "Banner text highlight", name: "phrase", widget: "string", required: "false", }
           - {
               label: "Banner second title",
               name: "second_title",
               widget: "string",
+              required: false,
             }
           - {
               label: "Login Button",
