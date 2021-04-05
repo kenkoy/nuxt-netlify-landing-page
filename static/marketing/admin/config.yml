@@ -300,6 +300,29 @@ collections:
               widget: "text",
               default: "Description",
             }
+      - label: "Additional Links"
+        name: "additional_links"
+        widget: "list"
+        collapsed: true
+        fields:
+          - {
+              label: "Text",
+              name: "text",
+              widget: "string",
+              default: "This is a sample text",
+            }
+          - {
+              label: "Text Link",
+              name: "text_link",
+              widget: "string",
+              default: "text",
+            }
+          - {
+              label: "Link",
+              name: "link",
+              widget: "string",
+              default: "https://www.google.com/",
+            }
       - label: "USP Left"
         name: "usp_left"
         widget: "list"

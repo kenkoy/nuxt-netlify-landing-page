@@ -212,6 +212,7 @@ export default {
         this.firstTitle = item.attributes.promo_banner.first_title
         this.secondTitle = item.attributes.promo_banner.second_title
         this.phrase = item.attributes.promo_banner.phrase
+        this.additional_links = item.attributes.additional_links
       })
     },
     nextlineToBr (paragraphs = '') {

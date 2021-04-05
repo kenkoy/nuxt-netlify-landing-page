@@ -52,12 +52,20 @@ first_section:
       はい、もうやってみたくなりましたよね? なんと今なら無料で体験プレイが可能。しかもパチスロでもおなじみなゲーム概要がこの下からすべてチェックすることができちゃいます！
 
       ゲーム概要一覧
-
-      ハワイアンドリーム - コチラ
-      バトルドワーフ- コチラ
-      ゴールデンドリーム- コチラ
-      ハワイアンドリームX’mas- コチラ
-      さぁ、日本No.1オンラインカジノのベラジョンで今をときめく最先端のパチスロ型スロットを堪能しましょう‼
+additional_links:
+  - text: ハワイアンドリーム - コチラ
+    text_link: コチラ
+    link: https://files.vjpromo.com/docs/VJ_HawaiianDream_Guide.pdf
+  - text: バトルドワーフ- コチラ
+    text_link: コチラ
+    link: https://files.vjpromo.com/docs/VJ_BattleDwarf_Guide.pdf
+  - text: ゴールデンドリーム- コチラ
+    text_link: コチラ
+    link: https://files.vjpromo.com/docs/VJ_GOLDEN_DREAM_Guide.pdf
+  - text: ハワイアンドリームX’mas- コチラ
+    text_link: コチラ
+    link: https://files.vjpromo.com/docs/VJ_HawaiianDreamXmas_Guide.pdf
+  - text: さぁ、日本No.1オンラインカジノのベラジョンで今をときめく最先端のパチスロ型スロットを堪能しましょう‼
 usp_left:
   - usp_title: 勝負金が2倍! 最高$500初回入金ボーナスをもらってお得にプレイ！
     usp_content: |-
