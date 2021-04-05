@@ -4,8 +4,11 @@
       <div id="gradient-wrapper" />
       <div v-if="month === 10" class="smoke" /> <!-- HOLLOWEEN -->
       <section class="intro">
-        <div v-if="month === 11" class="snowflakes" aria-hidden="true"> <!-- CHRISTMAS -->
-          <div class="snowflake" v-for="i in 10" :key="i">❅</div>
+        <div v-if="month === 11" class="snowflakes" aria-hidden="true">
+          <!-- CHRISTMAS -->
+          <div v-for="i in 10" :key="i" class="snowflake">
+            ❅
+          </div>
         </div>
         <div class="container">
           <h1 class="animated fadeIn delay-1s typography">
@@ -36,9 +39,13 @@
           <div class="banner">
             <!-- <h2 class="light-typography">Light <span>background</span></h2>
             <h2 class="light-typography">hero image</h2> -->
-            <br/><br/>
-            <h2 class="light-typography">明るい <span>背景</span></h2>
-            <h2 class="light-typography">ヒーロー画像</h2>
+            <br><br>
+            <h2 class="light-typography">
+              明るい <span>背景</span>
+            </h2>
+            <h2 class="light-typography">
+              ヒーロー画像
+            </h2>
           </div>
         </div>
       </section>
@@ -46,8 +53,8 @@
       <section id="about">
         <div class="container">
           <div>
-            <h2>Delivering a portfolio of  successful gaming brands</h2>
-            <p>We are a leading operator of online casino and bingo-led brands. Our focus is on building a diverse portfolio of distinctive and recognisable brands that deliver best-in-class player experience and gaming content to a global audience.</p>
+            <h3>成功したゲームブランドのポートフォリオを提供する</h3>
+            <p>私たちはオンラインカジノとビンゴ主導のブランドの大手オペレーターです。私たちの焦点は、クラス最高のプレーヤー体験とゲームコンテンツを世界中の視聴者に提供する、特徴的で認識可能なブランドの多様なポートフォリオを構築することにあります。</p>
           </div>
         </div>
       </section>
@@ -56,8 +63,12 @@
         <div class="container">
           <div class="banner">
             <!-- <h2 class="dark-typography">Dark background <br/> hero image</h2> -->
-            <h2 class="dark-typography">暗い<span>背景</span></h2>
-            <h2 class="dark-typography">ヒーロー画像</h2>
+            <h2 class="dark-typography">
+              暗い<span>背景</span>
+            </h2>
+            <h2 class="dark-typography">
+              ヒーロー画像
+            </h2>
           </div>
         </div>
       </section>
@@ -65,8 +76,8 @@
       <section id="about">
         <div class="container">
           <div>
-            <h2>Focus on key markets  to deliver growth</h2>
-            <p>Our strategy is based on five strategic pillars, which include increasing market share and delivering further growth in key existing territories. The solid foundations we have established across the Group will not only support our current footprint but also provide a springboard for success as we seek to address new markets.</p>
+            <h3>成長を実現するために主要市場に<span>焦点を当てる</span></h3>
+            <p>成長を実現するために主要市場に焦点を当てる</p>
           </div>
         </div>
       </section>
@@ -235,6 +246,26 @@ export default {
   max-width: 100px;
   display: inline-block;
   vertical-align: top;
+
+  span{
+    background: linear-gradient(#ffdd2c, #ffd200);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(3px 3px 4px #deb700);
+  }
+}
+
+h3{
+  font-size: 25px;
+  background: linear-gradient(#fff, #c0eeff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-family: 'MainFont-DemiBold';
+  letter-spacing: -1px;
+  line-height: 75px;
+  filter: drop-shadow(3px 3px 4px #000);
+  margin: 0;
 
   span{
     background: linear-gradient(#ffdd2c, #ffd200);
