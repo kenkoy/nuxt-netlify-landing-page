@@ -26,16 +26,14 @@ export const VJLP5_PREVIEW = createClass({
     return { __html: title }
   },
 
-  textLink (text, text_link, link) {
-    // if (text) {
-    //   const position = text.indexOf(text_link)
-    //   const text = `<a href=${link}>${text_link}</a>`
-    //   const output = [text.slice(0, position), text, text.slice(position, 0)].join(' ')
-    //   return { __html: output }
-    // }
-    // return { __html: text }
-
-    return { __html: link }
+  textLink (dataLinks) {
+    if (text) {
+      const position = text.indexOf(text_link)
+      const text = `<a href=${link}>${text_link}</a>`
+      const output = [text.slice(0, position), text, text.slice(position, 0)].join(' ')
+      return { __html: output }
+    }
+    return { __html: text }
   },
 
   nextlineToBr (paragraphs = '') {
@@ -69,10 +67,14 @@ export const VJLP5_PREVIEW = createClass({
       banner.getIn(['data', 'phrase'])
     )
 
+    let dataLinks = []
+
+    additionalLinks.map((item) => {
+      dataLinks.push(item)
+    })
+
     const sectionLink = this.textLink(
-      additionalLinks.getIn(['data', 'text']),
-      additionalLinks.getIn(['data', 'text_link']),
-      additionalLinks.getIn(['data', 'link'])
+      dataLinks
     )
 
     const steps = widgetsFor('steps')
