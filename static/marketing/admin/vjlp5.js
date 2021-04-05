@@ -26,6 +26,18 @@ export const VJLP5_PREVIEW = createClass({
     return { __html: title }
   },
 
+  textLink (text, text_link, link) {
+    // if (text) {
+    //   const position = text.indexOf(text_link)
+    //   const text = `<a href=${link}>${text_link}</a>`
+    //   const output = [text.slice(0, position), text, text.slice(position, 0)].join(' ')
+    //   return { __html: output }
+    // }
+    // return { __html: text }
+
+    return { __html: link }
+  },
+
   nextlineToBr (paragraphs = '') {
     const text = paragraphs.split(/\r?\n/).map((sentence) => {
       return paragraphs.slice(-1) === '\\'
@@ -48,12 +60,19 @@ export const VJLP5_PREVIEW = createClass({
     const version = widgetsFor('styles').getIn(['data'])
 
     const firstData = widgetsFor('first_section')
+    const additionalLinks = widgetsFor('additional_links')
     const uspLeftData = widgetsFor('usp_left')
     const uspRightData = widgetsFor('usp_right')
 
     const bannerTitle = this.formatTitle(
       banner.getIn(['data', 'first_title']),
       banner.getIn(['data', 'phrase'])
+    )
+
+    const sectionLink = this.textLink(
+      additionalLinks.getIn(['data', 'text']),
+      additionalLinks.getIn(['data', 'text_link']),
+      additionalLinks.getIn(['data', 'link'])
     )
 
     const steps = widgetsFor('steps')
@@ -156,6 +175,9 @@ export const VJLP5_PREVIEW = createClass({
                       <div>
                         <h2>${sect.getIn(['data', 'first_section_title'])}</h2>
                         <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'first_section_description']))}'/>
+                        ${additionalLinks.getIn(['data', 'additional_links']) !== ''
+                        ? html`<p dangerouslySetInnerHTML='${sectionLink}'></p>`
+                        : ''}
                       </div>
                       `
                     )}
