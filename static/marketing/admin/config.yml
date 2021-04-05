@@ -103,14 +103,12 @@ collections:
               label: "Banner first title",
               name: "first_title",
               widget: "string",
-              required: false,
             }
-          - { label: "Banner text highlight", name: "phrase", widget: "string", required: "false", }
+          - { label: "Banner text highlight", name: "phrase", widget: "string" }
           - {
               label: "Banner second title",
               name: "second_title",
               widget: "string",
-              required: false,
             }
           - {
               label: "Login Button",
@@ -301,6 +299,29 @@ collections:
               name: "first_section_description",
               widget: "text",
               default: "Description",
+            }
+      - label: "Additional Links"
+        name: "additional_links"
+        widget: "list"
+        collapsed: true
+        fields:
+          - {
+              label: "Text",
+              name: "text",
+              widget: "string",
+              default: "This is a sample text",
+            }
+          - {
+              label: "Text Link",
+              name: "text_link",
+              widget: "string",
+              default: "text",
+            }
+          - {
+              label: "Link",
+              name: "link",
+              widget: "string",
+              default: "https://www.google.com/",
             }
       - label: "USP Left"
         name: "usp_left"
