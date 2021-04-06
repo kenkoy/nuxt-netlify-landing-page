@@ -58,7 +58,6 @@ export const VJLP5_PREVIEW = createClass({
     const version = widgetsFor('styles').getIn(['data'])
 
     const firstData = widgetsFor('first_section')
-    const additionalLinks = widgetsFor('additional_links')
     const uspLeftData = widgetsFor('usp_left')
     const uspRightData = widgetsFor('usp_right')
 
@@ -67,14 +66,31 @@ export const VJLP5_PREVIEW = createClass({
       banner.getIn(['data', 'phrase'])
     )
 
-    let dataLinks = []
 
-    additionalLinks.map((item) => {
-      dataLinks.push(item)
-    })
+    const additionalLinks = widgetsFor('additional_links').getIn(['data'])
+
+    const sampleArr = [
+      {
+        text: 'ハワイアンドリーム - コチラ',
+        text_link: 'コチラ',
+        link: 'https://files.vjpromo.com/docs/VJ_HawaiianDream_Guide.pdf'
+      },
+      {
+        text: 'ハワイアンドリーム - コチラ',
+        text_link: 'コチラ',
+        link: 'https://files.vjpromo.com/docs/VJ_HawaiianDream_Guide.pdf'
+      },
+      {
+        text: 'ハワイアンドリーム - コチラ',
+        text_link: 'コチラ',
+        link: 'https://files.vjpromo.com/docs/VJ_HawaiianDream_Guide.pdf'
+      }
+    ]
+
+    console.log("xxxxxx", additionalLinks)
 
     const sectionLink = this.textLink(
-      dataLinks
+      additionalLinks
     )
 
     const steps = widgetsFor('steps')
