@@ -26,11 +26,11 @@ export const VJLP5_PREVIEW = createClass({
     return { __html: title }
   },
 
-  textLink (dataLinks) {
-    if (text) {
+  textLink (text, text_link, link) {
+    if (text_link) {
       const position = text.indexOf(text_link)
-      const text = `<a href=${link}>${text_link}</a>`
-      const output = [text.slice(0, position), text, text.slice(position, 0)].join(' ')
+      const textsample = `<a href=${link}>${text_link}</a>`
+      const output = [text.slice(0, position), textsample, text.slice(position, 0)].join(' ')
       return { __html: output }
     }
     return { __html: text }
@@ -58,39 +58,13 @@ export const VJLP5_PREVIEW = createClass({
     const version = widgetsFor('styles').getIn(['data'])
 
     const firstData = widgetsFor('first_section')
+    const additionalLinks = widgetsFor('additional_links')
     const uspLeftData = widgetsFor('usp_left')
     const uspRightData = widgetsFor('usp_right')
 
     const bannerTitle = this.formatTitle(
       banner.getIn(['data', 'first_title']),
       banner.getIn(['data', 'phrase'])
-    )
-
-
-    const additionalLinks = widgetsFor('additional_links').getIn(['data'])
-
-    const sampleArr = [
-      {
-        text: 'ハワイアンドリーム - コチラ',
-        text_link: 'コチラ',
-        link: 'https://files.vjpromo.com/docs/VJ_HawaiianDream_Guide.pdf'
-      },
-      {
-        text: 'ハワイアンドリーム - コチラ',
-        text_link: 'コチラ',
-        link: 'https://files.vjpromo.com/docs/VJ_HawaiianDream_Guide.pdf'
-      },
-      {
-        text: 'ハワイアンドリーム - コチラ',
-        text_link: 'コチラ',
-        link: 'https://files.vjpromo.com/docs/VJ_HawaiianDream_Guide.pdf'
-      }
-    ]
-
-    console.log("xxxxxx", additionalLinks)
-
-    const sectionLink = this.textLink(
-      additionalLinks
     )
 
     const steps = widgetsFor('steps')
@@ -193,9 +167,13 @@ export const VJLP5_PREVIEW = createClass({
                       <div>
                         <h2>${sect.getIn(['data', 'first_section_title'])}</h2>
                         <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'first_section_description']))}'/>
-                        ${additionalLinks.getIn(['data', 'additional_links']) !== ''
-                        ? html`<p dangerouslySetInnerHTML='${sectionLink}'></p>`
-                        : ''}
+
+                        ${additionalLinks.filter(link => !!link).map(link =>
+                            html`
+                              <p dangerouslySetInnerHTML='${this.textLink(link.getIn(['data', 'text']), link.getIn(['data', 'text_link']), link.getIn(['data', 'link']))}'/>
+                            `
+                          )}
+
                       </div>
                       `
                     )}
