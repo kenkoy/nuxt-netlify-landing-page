@@ -66,7 +66,7 @@
               <div v-for="(first_section, first_index) in data_items.attributes.first_section" :key="first_index">
                 <h2>{{ first_section.first_section_title }}</h2>
                 <p v-html="nextlineToBr(first_section.first_section_description)" />
-                <p v-html="textLink.toString()" v-if="additional_links" />
+                <p v-if="additional_links" v-html="textLink.toString()" />
               </div>
 
               <div class="separator" />

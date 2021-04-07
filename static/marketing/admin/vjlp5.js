@@ -26,10 +26,10 @@ export const VJLP5_PREVIEW = createClass({
     return { __html: title }
   },
 
-  textLink (text, text_link, link) {
-    if (text_link) {
-      const position = text.indexOf(text_link)
-      const textsample = `<a href=${link}>${text_link}</a>`
+  textLink (text, textLinks, link) {
+    if (textLinks) {
+      const position = text.indexOf(textLinks)
+      const textsample = `<a href=${link}>${textLinks}</a>`
       const output = [text.slice(0, position), textsample, text.slice(position, 0)].join(' ')
       return { __html: output }
     }
