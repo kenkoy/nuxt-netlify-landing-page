@@ -1,4 +1,4 @@
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { mount, createLocalVue } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
 import index from '@/pages/marketing/iclp1/_slug/index.vue'
@@ -18,23 +18,23 @@ describe('Testing ICLP1 index.vue', () => {
       .map(files => ICLP1_DIR + files)
       .sample()
       .value()
-    const post = retriveFrontMattertoJSON(md)
-    wrapper = shallowMount(index, {
+    const markDownData = retriveFrontMattertoJSON(md)
+    wrapper = mount(index, {
       localVue,
       data () {
         return {
-          post
+          markDownData
         }
       }
     })
     metaInfo = wrapper.vm.$metaInfo
-    tagIds = post.attributes.field_ids
-    locale = post.attributes.promo_locale
+    tagIds = markDownData.attributes.field_ids
+    locale = markDownData.attributes.promo_locale
   })
 
-  test('Title should be InterCasino', () => {
+  test('Title should be インターカジノ', () => {
     const pageTitle = metaInfo.title
-    expect(pageTitle).toBe('InterCasino')
+    expect(pageTitle).toBe('インターカジノ')
   })
 
   test('HTML language attribute should not be null or undefined', () => {
