@@ -1,69 +1,62 @@
 <template>
-  <div>
-    <TheHeader
-      :registration-message="post.attributes.promo_banner.promo_register_message"
-      :join-message="post.attributes.promo_banner.promo_join_text"
-      :join-u-r-l="post.attributes.promo_banner.promo_join_url"
-      :terms-text="post.attributes.promo_banner.promo_terms_text"
-      :underlined-link-text="post.attributes.promo_banner.promo_terms_underlined_text"
-    />
-    <TheBonus
-      :bonus-data="post.attributes.bonus"
-    />
-    <ThePayment />
-    <TheBody :promo_content="post.html" />
-    <TheFooter />
-  </div>
+  <div />
 </template>
 
 <script>
-import TheHeader from '~/components/templates/iclp/iclp3/TheHeader.vue'
-import TheBonus from '~/components/templates/iclp/iclp3/TheBonus.vue'
-import ThePayment from '~/components/templates/iclp/iclp3/ThePayment.vue'
-import TheBody from '~/components/templates/iclp/iclp3/TheBody.vue'
-import TheFooter from '~/components/templates/iclp/iclp3/TheFooter.vue'
 
 export default {
-  components: {
-    TheHeader,
-    TheBonus,
-    ThePayment,
-    TheBody,
-    TheFooter
-  },
   layout: 'iclp3',
-  async asyncData ({ params }) {
+  async asyncData ({ params, error }) {
     try {
-      const post = await import('~/assets/content/landing-page/marketing/iclp3/' + params.slug + '.md')
-      return { post }
-    } catch (error) {
-      return false
+      /* get MD FILE per PAGE / SLUG */
+      const PAGE_MDFILE = await import(
+        '~/assets/content/landing-page/marketing/iclp3/' + params.slug + '.md'
+      )
+
+      /* store 'PAGE_MDFILE' data to 'dataMD' local variable' */
+      return { dataMD: PAGE_MDFILE }
+    } catch (e) {
+      error(e)
     }
   },
+  data () {
+    return {}
+  },
   head () {
-    const goId = (this.post.attributes.field_ids && this.post.attributes.field_ids.go_container_id)
-      ? this.post.attributes.field_ids.go_container_id
+    const goId = (this.dataMD.attributes.field_ids && this.dataMD.attributes.field_ids.go_container_id)
+      ? this.dataMD.attributes.field_ids.go_container_id
       : 'OPT-PHSNXP6'
 
-    const gaId = (this.post.attributes.field_ids && this.post.attributes.field_ids.ga_tracking_id)
-      ? this.post.attributes.field_ids.ga_tracking_id
+    const gaId = (this.dataMD.attributes.field_ids && this.dataMD.attributes.field_ids.ga_tracking_id)
+      ? this.dataMD.attributes.field_ids.ga_tracking_id
       : 'UA-142143961-1'
 
-    const gtmId = (this.post.attributes.field_ids && this.post.attributes.field_ids.gtm_container_id)
-      ? this.post.attributes.field_ids.gtm_container_id
+    const gtmId = (this.dataMD.attributes.field_ids && this.dataMD.attributes.field_ids.gtm_container_id)
+      ? this.dataMD.attributes.field_ids.gtm_container_id
       : 'GTM-MFD3NKM'
 
     return {
       title: 'インターカジノ',
       htmlAttrs: {
-        lang: this.post.attributes.promo_locale.promo_language_code
+        lang: this.dataMD.attributes.promo_locale.promo_language_code
       },
       bodyAttrs: {
-        id: this.post.attributes.promo_locale.promo_language_code + '-' +
-          this.post.attributes.promo_locale.promo_country_code
+        id: this.dataMD.attributes.promo_locale.promo_language_code +
+            '-' + this.dataMD.attributes.promo_locale.promo_country_code
       },
+      link: [
+        { rel: 'shortcut icon', href: '/marketing/ic-favicon.ico', type: 'image/x-icon' }
+        // { rel: 'stylesheet', href: '/marketing/styles/iclp3/spine-player.min.css' },
+        // { rel: 'stylesheet', href: 'https://esotericsoftware.com/files/spine-player/3.8/spine-player.css' },
+        // { rel: 'stylesheet', href: '/marketing/styles/iclp3/firstview.css' },
+        // { rel: 'stylesheet', body: true, href: '/marketing/styles/iclp3/style.css' }
+        // { preload: true, rel: 'stylesheet', body: true, href: '/marketing/styles/iclp3/fonts.css' }
+      ],
       style: [],
       script: [
+        { src: '/marketing/js/iclp3/spine.js' },
+        { defer: true, body: true, src: '/marketing/js/iclp3/velocity.min.js' },
+        { defer: true, async: true, body: true, src: '/marketing/js/iclp3/scripts.min.js' },
         {
           hid: 'goHead',
           innerHTML:
@@ -120,6 +113,15 @@ export default {
         goHead: ['innerHTML'],
         gaHead: ['innerHTML']
       }
+    }
+  },
+  mounted () {
+    this.emitData(this.dataMD)
+  },
+  methods: {
+    /* send the 'dataMD' data to 'LAYOUT' */
+    emitData (dataMD) {
+      this.$emit('emit-md-content', dataMD)
     }
   }
 }
