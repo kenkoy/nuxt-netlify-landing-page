@@ -98,6 +98,10 @@ button{
 }
 .btn-primary{
   @include button-primary;
+
+  &.active{
+    background: $BTN_PRIMARY_BG_ACTIVE;
+  }
 }
 .btn-warning{
   @include button-warning;
@@ -128,4 +132,20 @@ button{
 //FORM
 input{
   @include input;
+}
+
+hr {
+  border-bottom: solid 2px #054560;
+  border-top: 0;
+  margin: 20px 0;
+}
+
+.slideFadeDown{
+  animation-name: slideFadeDown;
+  animation-duration: .5s;
+}
+
+@keyframes slideFadeDown {
+  from {top: -30px; opacity: .1;}
+  to {top: 0; opacity: 1;}
 }

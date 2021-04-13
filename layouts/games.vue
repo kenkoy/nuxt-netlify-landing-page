@@ -12,10 +12,10 @@
             <div id="filter-bar">
               <div>
                 <FilterSearch class="overlay" v-if="modal && filterOverlay === true" @game-data-emit="getGameCaregoryEmit" />
-                <button class="btn-primary find desktop" @click="modalFilterFn()">
+                <button class="btn-primary find desktop" :class="modal ? 'active' : ''" @click="modalFilterFn()">
                   Find game you'll love
                 </button>
-                <button class="btn-primary find mobile" @click="modalFilterFn()" />
+                <button class="btn-primary find mobile" :class="modal ? 'active' : ''" @click="modalFilterFn()" />
               </div>
 
               <div id="description">
@@ -29,7 +29,7 @@
             </div>
 
             <div>
-              <div v-if="modal && filterOverlay !== true" id="game-filter">
+              <div v-if="modal && filterOverlay !== true" id="game-filter" class="slideFadeDown">
                 <FilterSearch @game-data-emit="getGameCaregoryEmit" />
               </div>
 
