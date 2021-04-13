@@ -68,6 +68,30 @@
   }
 }
 
+@mixin game-filter{
+  text-align: left;
+  position: relative;
+
+  h3{
+    margin-top: 0;
+  }
+
+  border-radius: 10px;
+  background: #005173;
+  padding: 20px;
+
+  &:before{
+    position: absolute;
+    left: 31px;
+    top: -10px;
+    content: "";
+    display: block;
+    border-width: 0 10px 10px;
+    border-style: solid;
+    border-color: #005173 transparent;
+  }
+}
+
 @mixin checkbox-switch{
     display: inline-block;
 
@@ -83,7 +107,7 @@
       transition: .1s;
       border: 2px solid $CHECBOXK_BORDER;
       border-radius: 20px;
-      padding: 10px 20px;
+      padding: 5px 12px;
       cursor: pointer;
       float: left;
       margin: 5px;

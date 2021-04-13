@@ -1,5 +1,5 @@
 <template>
-  <section id="filter" class="overlay">
+  <section id="filter">
     <div class="container">
       <form>
         <h3>Choose your favourite categories to find more games you'll love!</h3>

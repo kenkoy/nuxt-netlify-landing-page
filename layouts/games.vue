@@ -11,7 +11,7 @@
           <div>
             <div id="filter-bar">
               <div>
-                <FilterSearch v-if="modal" @game-data-emit="getGameCaregoryEmit" />
+                <FilterSearch class="overlay" v-if="modal && filterOverlay === true" @game-data-emit="getGameCaregoryEmit" />
                 <button class="btn-primary find desktop" @click="modalFilterFn()">
                   Find game you'll love
                 </button>
@@ -29,6 +29,9 @@
             </div>
 
             <div>
+              <div v-if="modal && filterOverlay !== true" id="game-filter">
+                <FilterSearch @game-data-emit="getGameCaregoryEmit" />
+              </div>
               <div v-for="(game, gameIndex) in filteredGames" :key="gameIndex" class="game">
                 <div>
                   <div v-if="gameIndex < limit">
@@ -69,13 +72,64 @@ export default {
   },
   data () {
     return {
+      filterOverlay: false,
       modal: false,
       mdData: {},
       htmlBody: '',
       search: '',
       limit: 18,
       showMoreAddItems: 6,
-      gameCat: 'all_games'
+      gameCat: 'all_games',
+      categories: [
+        {
+          name: 'Promoted',
+          tags: 'promoted'
+        },
+        {
+          name: 'All games',
+          tags: 'all_games'
+        },
+        {
+          name: 'Slots',
+          tags: 'slots'
+        },
+        {
+          name: 'Provider of the Month',
+          tags: 'provider_of_the_month'
+        },
+        {
+          name: 'Promoted',
+          tags: 'promoted'
+        },
+        {
+          name: 'All games',
+          tags: 'all_games'
+        },
+        {
+          name: 'Slots',
+          tags: 'slots'
+        },
+        {
+          name: 'Provider of the Month',
+          tags: 'provider_of_the_month'
+        },
+        {
+          name: 'Promoted',
+          tags: 'promoted'
+        },
+        {
+          name: 'All games',
+          tags: 'all_games'
+        },
+        {
+          name: 'Slots',
+          tags: 'slots'
+        },
+        {
+          name: 'Provider of the Month',
+          tags: 'provider_of_the_month'
+        }
+      ]
     }
   },
   computed: {
