@@ -9,9 +9,9 @@
       <section id="list-games">
         <div class="container main-content">
           <div>
-            <div id="filter-bar">
+            <div id="filter-bar"> <!-- Container for the filter menu -->
               <div>
-                <FilterSearch class="overlay" v-if="modal && filterOverlay === true" @game-data-emit="getGameCaregoryEmit" />
+                <FilterSearch class="overlay" v-if="modal && filterOverlay === true" @game-data-emit="getGameCaregoryEmit" /> <!-- Filter components that overlay -->
                 <button class="btn-primary find desktop" :class="modal ? 'active' : ''" @click="modalFilterFn()">
                   Find game you'll love
                 </button>
@@ -28,8 +28,8 @@
               </div>
             </div>
 
-            <div>
-              <div v-if="modal && filterOverlay !== true" id="game-filter" class="slideFadeDown">
+            <div> <!-- Container for the list of games -->
+              <div v-if="modal && filterOverlay !== true" id="game-filter" class="slideFadeDown"> <!-- Filter components that is NOT overlay -->
                 <FilterSearch @game-data-emit="getGameCaregoryEmit" />
               </div>
 
@@ -46,7 +46,7 @@
               </div>
             </div>
 
-            <div v-if="filteredGames.length >= limit" id="pagination-wrapper">
+            <div v-if="filteredGames.length >= limit" id="pagination-wrapper"> <!-- Pagination -->
               <p v-if="filteredGames.length !== 0" class="pagination-text">
                 Showing {{ (filteredGames.length + limit) - filteredGames.length }} of {{ mdData.games.length }} games
               </p>
