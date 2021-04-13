@@ -3,7 +3,7 @@
   box-shadow: 12px 0 15px -10px #9e9e9e, -12px 0 8px -10px #9e9e9e;
   padding: 20px;
   box-sizing: border-box;
-  min-height: calc(100vh - 250px);
+  min-height: 100vh;
 }
 
 @mixin game-list{
