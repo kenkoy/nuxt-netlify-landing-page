@@ -18,10 +18,11 @@
   @include game-list;
   .game{
     display: inline-block;
-    > div{
-      margin: $GAME_LIST_MARGIN;
-    }
   }
+}
+
+#game-filter{
+  @include game-filter;
 }
 
 .noselect {
@@ -95,6 +96,10 @@ button{
 }
 .btn-primary{
   @include button-primary;
+
+  &.active{
+    background: $BTN_PRIMARY_BG_ACTIVE;
+  }
 }
 .btn-warning{
   @include button-warning;
@@ -127,28 +132,18 @@ input{
   @include input;
 }
 
-#filter-bar{
-  display: flex;
-  align-items: center;
-  position: relative;
+hr {
+  border-bottom: solid 2px #d2ac48;
+  border-top: 0;
+  margin: 20px 0;
+}
 
-  p{
-    margin: 0;
-  }
+.slideFadeDown{
+  animation-name: slideFadeDown;
+  animation-duration: .5s;
+}
 
-  > div{
-    padding: 0 10px;
-  }
-
-  #description{
-    flex-grow: 2;
-    text-align: left;
-  }
-  #search{
-    > * {
-      display: inline-block;
-      margin: 0 5px;
-      color: #212121;
-    }
-  }
+@keyframes slideFadeDown {
+  from {top: -30px; opacity: .1;}
+  to {top: 0; opacity: 1;}
 }

@@ -9,12 +9,15 @@ field_ids:
   gtm_container_id: GTM-MFD3NKM
 styles: version2
 promo_banner:
+  promo_small_subtitle: test
   promo_title: 324 BVJ lan JP Pro Beginnersguide 0720
   promo_images:
     promo_game_image: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-title.png
     promo_game_logo: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-game-logo.png
     promo_bg_mobile: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-bg_m.jpg
     promo_bg_desktop: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-bg.jpg
+  promo_join_button_style: primary-flat
+  promo_large_subtitle: TEST
   promo_link_terms:
     - 利用規約
   promo_login_button_redirect_url: https://verajohn.com/#signin

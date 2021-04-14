@@ -13,6 +13,8 @@ promo_banner:
   promo_title: |-
     最大$1000
     ビギナーズボーナス
+  desktop_full: true
+  mobile_full: true
   promo_images:
     promo_bg_desktop: /marketing/img/bg_hdnight.jpg
     promo_bg_mobile: /marketing/img/bg_m_hdnight.jpg

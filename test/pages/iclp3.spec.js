@@ -1,4 +1,4 @@
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { mount, createLocalVue } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
 import index from '@/pages/marketing/iclp3/_slug/index.vue'
@@ -7,31 +7,32 @@ import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.j
 const ICLP3_DIR = '/assets/content/landing-page/marketing/iclp3/'
 
 describe('Testing ICLP3 index.vue', () => {
-  let wrapper, metaInfo, tagIds, locale
+  let wrapper, metaInfo, tagIds, locale, datum
 
   beforeAll(async () => {
+    //  ==== For Vue Components ====
     const localVue = createLocalVue()
     localVue.use(VueMeta, { keyName: 'head' })
 
-    const md = _
+    const mdComponents = _
       .chain(await retrieveFiles(ICLP3_DIR, '.md'))
       .map(files => ICLP3_DIR + files)
       .sample()
       .value()
-    const post = retriveFrontMattertoJSON(md)
-    wrapper = shallowMount(index, {
+
+    const dataMD = retriveFrontMattertoJSON(mdComponents)
+    wrapper = mount(index, {
       localVue,
       data () {
         return {
-          post
+          dataMD
         }
       }
     })
     metaInfo = wrapper.vm.$metaInfo
-    tagIds = post.attributes.field_ids
-    locale = post.attributes.promo_locale
+    tagIds = dataMD.attributes.field_ids
+    locale = dataMD.attributes.promo_locale
   })
-
   test('Title should be インターカジノ', () => {
     const pageTitle = metaInfo.title
     expect(pageTitle).toBe('インターカジノ')

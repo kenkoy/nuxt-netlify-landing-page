@@ -66,7 +66,12 @@ export default {
       navItems: [{
         name: '',
         path: ''
-      }]
+      }],
+      activeNavTemplates: [
+        'vjhp', 'vjhp2', 'vjlp5',
+        'vjlp7', 'vjlp8', 'iclp1v2',
+        'iclp2v2', 'iclp3v2'
+      ]
     }
   },
   destroyed () {
@@ -80,8 +85,10 @@ export default {
       name: route.name.replace('marketing-', ''),
       path: route.path
     })).filter((route) => {
-      const containingWords = /slug|vjlp1|vjlp1v2|vjlp3|vjlp3v2|vjlp4|vjlp6|about|admin|blank-template|home|marketing|index/.test(route.name)
+      const containingWords = /slug|about|admin|blank-template|home|marketing|index/.test(route.name)
       return !containingWords
+    }).filter((route) => {
+      return this.activeNavTemplates.includes(route.name)
     })
   },
   methods: {
@@ -106,8 +113,3 @@ export default {
   }
 }
 </script>
-<style lang="scss">
-  .nav_wrapper {
-    @import '@/assets/sass/base/style.scss';
-  }
-</style>

@@ -42,15 +42,12 @@
 @mixin overlay{
   backdrop-filter: blur(15px);
   position: absolute;
-  z-index: 2;
-  top: 50px;
   left: 0;
   background: $OVERLAY_BG;
   border-radius: 10px;
   padding: 30px;
-  width: 100%;
   min-height: 60vh;
-  height: 100%;
+  height: auto;
   text-align: left;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -72,6 +69,34 @@
   }
 }
 
+@mixin game-filter{
+  text-align: left;
+  position: relative;
+
+  h3{
+    margin-top: 0;
+    color: #D3AC48;
+  }
+
+  border-radius: 10px;
+  background: #212123;
+  padding: 20px;
+  width: 95%;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  &:before{
+    position: absolute;
+    left: 31px;
+    top: -10px;
+    content: "";
+    display: block;
+    border-width: 0 10px 10px;
+    border-style: solid;
+    border-color: #212123 transparent;
+  }
+}
+
 @mixin checkbox-switch{
     display: inline-block;
 
@@ -87,7 +112,7 @@
       transition: .1s;
       border: 2px solid $CHECKBOX_BORDER;
       border-radius: 20px;
-      padding: 10px 20px;
+      padding: 5px 12px;
       cursor: pointer;
       float: left;
       margin: 5px;

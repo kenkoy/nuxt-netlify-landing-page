@@ -28,18 +28,24 @@
           <div class="container">
             <div>
               <div class="banner">
-                <h1 v-if="first_title" v-html="bannerTitle" />
-                <h1 v-if="second_title">
+                <h1 v-if="firstTitle" v-html="bannerTitle" />
+                <h1 v-if="secondTitle">
                   {{ data_items.attributes.promo_banner.second_title }}
                 </h1>
               </div>
-              <button v-if="data_items.attributes.promo_banner.banner_promo_join_button" id="banner-button" class="error">
-                <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url"><strong>{{ data_items.attributes.promo_banner.banner_promo_join_button }}</strong></a>
-              </button>
+              <div
+                v-if="data_items.attributes.promo_banner.promo_join_button_option"
+                id="banner-button"
+              >
+                <button class="error">
+                  <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url">
+                    <strong>{{ data_items.attributes.promo_banner.promo_join_button }}</strong>
+                  </a>
+                </button>
+              </div>
             </div>
           </div>
         </section>
-
         <Steps
           v-if="data_items.attributes.template === 'steps'"
           :title1="data_items.attributes.steps.step_title_1"
@@ -59,7 +65,8 @@
             <div>
               <div v-for="(first_section, first_index) in data_items.attributes.first_section" :key="first_index">
                 <h2>{{ first_section.first_section_title }}</h2>
-                <p>{{ first_section.first_section_description }}</p>
+                <p v-html="nextlineToBr(first_section.first_section_description)" />
+                <p v-if="additionalLinks" v-html="textLink.toString()" />
               </div>
 
               <div class="separator" />
@@ -70,16 +77,16 @@
         <section id="section2">
           <div class="container column-2">
             <div>
-              <div v-for="(second_section_left, second_left_index) in data_items.attributes.second_section_left" :key="second_left_index">
-                <h2>{{ second_section_left.second_section_title }}</h2>
-                <p>{{ second_section_left.second_section_content }}</p>
+              <div v-for="(usp_left, second_left_index) in data_items.attributes.usp_left" :key="second_left_index">
+                <h2>{{ usp_left.usp_title }}</h2>
+                <p v-html="nextlineToBr(usp_left.usp_content)" />
               </div>
             </div>
 
             <div>
-              <div v-for="(second_section_right, second_right_index) in data_items.attributes.second_section_right" :key="second_right_index">
-                <h2>{{ second_section_right.second_section_title }}</h2>
-                <p>{{ second_section_right.second_section_content }}</p>
+              <div v-for="(usp_right, second_right_index) in data_items.attributes.usp_right" :key="second_right_index">
+                <h2>{{ usp_right.usp_title }}</h2>
+                <p v-html="nextlineToBr(usp_right.usp_content)" />
               </div>
             </div>
           </div>
@@ -95,31 +102,13 @@
           </div>
         </section>
 
-        <section id="section4">
-          <div class="container">
-            <div>
-              <h2>{{ data_items.attributes.third_section.third_section_title }}</h2>
-
-              <ol>
-                <li v-for="(third_section_list, third_index) in data_items.attributes.third_section.third_bullet_list" :key="third_index">
-                  {{ third_section_list.third_section_content }}
-                </li>
-              </ol>
-
-              <div class="separator" />
-            </div>
+        <div class="container">
+          <div id="terms">
+            <div v-html="html" />
+            <p>通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</p>
+            <div class="separator" />
           </div>
-        </section>
-
-        <section id="terms">
-          <div class="container">
-            <div>
-              <div v-html="html" />
-              <p>通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</p>
-              <div class="separator" />
-            </div>
-          </div>
-        </section>
+        </div>
 
         <Footer
           :promo-language-code="language"
@@ -132,17 +121,17 @@
 </template>
 
 <script>
-import Steps from '@/components/Views/Steps.vue'
-import GameSlider from '@/components/Views/GameSlider.vue'
 import Vjlp5Data from '~/pages/marketing/vjlp5/_slug/index.vue'
 import Footer from '~/components/Base/TheFooter.vue'
+import Steps from '~/components/Views/Steps.vue'
+import GameSlider from '~/components/Views/GameSlider.vue'
 
 export default {
   components: {
     Vjlp5Data,
+    Footer,
     Steps,
-    GameSlider,
-    Footer
+    GameSlider
   },
   data () {
     return {
@@ -155,9 +144,11 @@ export default {
       desktop: '',
       tablet: '',
       mobile: '',
+      desktopWidthBanner: '',
+      mobileWidthBanner: '',
 
-      first_title: '',
-      second_title: '',
+      firstTitle: '',
+      secondTitle: '',
       phrase: ''
     }
   },
@@ -176,17 +167,30 @@ export default {
       return {
         '--bg-image': `url('${this.desktop}')`,
         '--bg-image-m': `url('${this.mobile}')`,
-        '--bg-banner': `url('${this.tablet}')`
+        '--bg-banner': `url('${this.tablet}')`,
+        '--desktop-width-banner': this.desktopWidthBanner ? 'cover' : 'contain',
+        '--mobile-width-banner': this.mobileWidthBanner ? 'cover' : 'contain'
       }
     },
     bannerTitle () {
       if (this.phrase) {
-        const position = this.first_title.indexOf(this.phrase)
+        const position = this.firstTitle.indexOf(this.phrase)
         const text = `<span>${this.phrase}</span>`
-        const output = [this.first_title.slice(0, position), text, this.first_title.slice(position, 0)].join('')
+        const output = [this.firstTitle.slice(0, position), text, this.firstTitle.slice(position, 0)].join('')
         return output
       }
-      return this.first_title
+      return this.firstTitle
+    },
+    textLink () {
+      return this.additionalLinks.map((item) => {
+        if (item.text_link) {
+          const position = item.text.indexOf(item.text_link)
+          const text = `<a href=${item.link}>${item.text_link}</a>`
+          const output = [item.text.slice(0, position), text, item.text.slice(position, 0)].join(' ')
+          return `<p style="margin: 0">${output}</p>`
+        }
+        return item.text
+      }).join(' ')
     }
   },
   methods: {
@@ -202,10 +206,22 @@ export default {
         this.desktop = item.attributes.promo_banner.promo_images.promo_bg_desktop
         this.tablet = item.attributes.promo_banner.promo_images.promo_bg_banner
         this.mobile = item.attributes.promo_banner.promo_images.promo_bg_mobile
+        this.desktopWidthBanner = item.attributes.promo_banner.desktop_full
+        this.mobileWidthBanner = item.attributes.promo_banner.mobile_full
 
-        this.first_title = item.attributes.promo_banner.first_title
-        this.second_title = item.attributes.promo_banner.second_title
+        this.firstTitle = item.attributes.promo_banner.first_title
+        this.secondTitle = item.attributes.promo_banner.second_title
         this.phrase = item.attributes.promo_banner.phrase
+        this.additionalLinks = item.attributes.additional_links
+      })
+    },
+    nextlineToBr (paragraphs = '') {
+      return paragraphs.split(/\r?\n/).map((sentence) => {
+        return paragraphs.slice(-1) === '\\'
+          ? paragraphs.substring(0, paragraphs.length - 1)
+          : sentence
+      }).reduce((oldVal, newVal) => {
+        return oldVal + '<br />' + newVal
       })
     }
   }

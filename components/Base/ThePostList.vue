@@ -28,8 +28,6 @@ export default {
 
 <style lang="scss">
     .post_wrapper {
-        @import '@/assets/sass/base/style.scss';
-
         .vj-post-wrapper{
             background: #009FE3;
 

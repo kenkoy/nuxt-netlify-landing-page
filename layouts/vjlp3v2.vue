@@ -167,6 +167,5 @@ export default {
 <style lang="scss">
 .vjlp3v2_wrapper {
   @import '@/assets/sass/vjlp3v2/style.scss';
-  @import '@/assets/sass/base/style.scss';
 }
 </style>

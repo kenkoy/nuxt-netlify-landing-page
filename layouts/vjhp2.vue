@@ -190,6 +190,5 @@ export default {
 <style lang="scss">
   .vjhp2_wrapper {
     @import '@/assets/sass/vjhp2/style.scss';
-    @import '@/assets/sass/base/style.scss';
   }
 </style>

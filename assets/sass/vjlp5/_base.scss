@@ -28,16 +28,17 @@
   }
 
   button {
-      border: none;
-      border-radius: 5px;
-      -moz-border-radius: 5px;
+    border: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
   }
-  button.warning{
-      background: $BTN_WARNING;
 
-      &:hover{
-          background: linear-gradient(180deg,#ffe238,#ffa92d);
-      }
+  button.warning{
+    background: $BTN_WARNING;
+
+    &:hover{
+        background: linear-gradient(180deg,#ffe238,#ffa92d);
+    }
   }
   button.error{
       background: $BTN_ERROR;
@@ -93,10 +94,35 @@
 
 
   #steps{
-      .container{
+    .container{
+      .num{
+          background: #fff;
+      }
+    }
+  }
 
-          .num{
-              background: #fff;
+  .version1 {
+    button {
+      &.warning {
+          display: inline-block;
+      }
+    }
+
+    h2 {
+      font-size: 1.5em;
+      font-weight: 500;
+    }
+    #section1 {
+      h2 {
+          font-size: 1.5em;
+      }
+    }
+  }
+
+  .version2 {
+      button {
+          &.warning {
+              display: none;
           }
       }
   }

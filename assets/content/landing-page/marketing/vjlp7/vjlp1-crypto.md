@@ -17,9 +17,12 @@ promo_banner:
   promo_images:
     promo_bg_desktop: /marketing/img/dsgn-1306-vjlp1-dt-v2.jpg
     promo_bg_mobile: /marketing/img/dsgn-1306-vjlp1-mob.jpg
+  promo_join_button_style: primary-flat
   promo_terms_link_text:
     - 利用規約
+  mobile_full: true
   promo_render_title_first: true
+  desktop_full: true
   promo_login_button_redirect_url: https://verajohn.com#join
   promo_join_button_redirect_url: https://verajohn.com#join
   promo_terms_text: 利用規約に同意します。

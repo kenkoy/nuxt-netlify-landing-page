@@ -1,4 +1,4 @@
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { mount, createLocalVue } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
 import index from '@/pages/marketing/iclp2/_slug/index.vue'
@@ -18,18 +18,18 @@ describe('Testing ICLP2 index.vue', () => {
       .map(files => ICLP2_DIR + files)
       .sample()
       .value()
-    const post = retriveFrontMattertoJSON(md)
-    wrapper = shallowMount(index, {
+    const markDownData = retriveFrontMattertoJSON(md)
+    wrapper = mount(index, {
       localVue,
       data () {
         return {
-          post
+          markDownData
         }
       }
     })
     metaInfo = wrapper.vm.$metaInfo
-    tagIds = post.attributes.field_ids
-    locale = post.attributes.promo_locale
+    tagIds = markDownData.attributes.field_ids
+    locale = markDownData.attributes.promo_locale
   })
 
   test('Title should be インターカジノ', () => {
