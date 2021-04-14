@@ -70,8 +70,8 @@ additional_links:
   - text: さぁ、日本No.1オンラインカジノのベラジョンで今をときめく最先端のパチスロ型スロットを堪能しましょう‼
     text_link: VJ Text
     link: http://www.verajohn.com/
-  - text: Text
-    text_link: Test Link
+  - text: Testing Link
+    text_link: Link
     link: https://www.verajohn.com/ja
 usp_left:
   - usp_title: 勝負金が2倍! 最高$500初回入金ボーナスをもらってお得にプレイ！
