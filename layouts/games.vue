@@ -10,12 +10,11 @@
         <div class="container main-content">
           <div>
             <div id="filter-bar"> <!-- Container for the filter menu -->
-              <div>
-                <FilterSearch class="overlay" v-if="modal && filterOverlay === true" @game-data-emit="getGameCaregoryEmit" /> <!-- Filter components that overlay -->
+              <FilterSearch class="overlay" v-if="modal && filterOverlay === true" @game-data-emit="getGameCaregoryEmit" /> <!-- Filter components that overlay -->
+              <div id="find-button">
                 <button class="btn-primary find desktop" :class="modal ? 'active' : ''" @click="modalFilterFn()">
                   Find game you'll love
                 </button>
-                <button class="btn-primary find mobile" :class="modal ? 'active' : ''" @click="modalFilterFn()" />
               </div>
 
               <div id="description">
@@ -23,6 +22,7 @@
               </div>
 
               <div id="search">
+                <button class="btn-primary find mobile" :class="modal ? 'active' : ''" @click="modalFilterFn()" />
                 <p>Reset filters</p>
                 <input v-model="search" placeholder="Search" type="text">
               </div>
@@ -73,7 +73,7 @@ export default {
   },
   data () {
     return {
-      filterOverlay: false,
+      filterOverlay: true,
       modal: false,
       mdData: {},
       htmlBody: '',

@@ -18,6 +18,7 @@
   @include game-list;
   .game{
     display: inline-block;
+    min-width: 177px;
   }
 }
 

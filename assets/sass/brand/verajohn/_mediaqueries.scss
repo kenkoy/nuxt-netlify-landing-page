@@ -16,7 +16,7 @@
     #filter-bar{
       display: block;
 
-      > div:first-child{
+      #find-button{
         width: 20%;
         display: inline-block;
         vertical-align: top;
@@ -40,8 +40,13 @@
       }
     }
 
+    #filter-bar + div{
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+
     .game > div{
-      margin: $GAME_LIST_MARGIN calc(#{$GAME_LIST_MARGIN} - 22px);
+      margin: $GAME_LIST_MARGIN calc(#{$GAME_LIST_MARGIN} - 12px);
 
       img{
         max-width: 80px;
@@ -82,7 +87,6 @@
         margin: 0;
       }
 
-      > div:first-child,
       #description,
       #search{
         padding: 0 10px;
@@ -94,7 +98,7 @@
         text-align: left;
       }
       #search{
-        > * {
+        > p, input {
           display: inline-block;
           margin: 0 5px;
         }
@@ -124,7 +128,15 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+  .main-content{
+    max-width: 1060px;
+  }
+  #list-games{
+    #filter-bar + div{
+      margin-left: -40px;
+      margin-right: -40px;
+    }
+  }
 }
 
 /* Large Devices, Wide Screens */
