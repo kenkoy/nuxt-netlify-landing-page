@@ -47,6 +47,7 @@
 
     .game > div{
       margin: $GAME_LIST_MARGIN calc(#{$GAME_LIST_MARGIN} - 12px);
+      min-width: 125px;
 
       img{
         max-width: 80px;
@@ -118,7 +119,7 @@
   #list-games{
     .game > div{
       margin: $GAME_LIST_MARGIN;
-
+      min-width: 141px;
       img{
         max-width: inherit;
       }

@@ -34,8 +34,8 @@
               </div>
 
               <div v-for="(game, gameIndex) in filteredGames" :key="gameIndex" class="game">
-                <div>
-                  <div v-if="gameIndex < limit">
+                <div v-if="gameIndex < limit">
+                  <div>
                     <img :src="game.image">
                     <p>{{ game.title }}</p>
                   </div>
@@ -73,7 +73,7 @@ export default {
   },
   data () {
     return {
-      filterOverlay: true,
+      filterOverlay: false,
       modal: false,
       mdData: {},
       htmlBody: '',
