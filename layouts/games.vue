@@ -110,6 +110,6 @@ export default {
 
 <style lang="scss">
   .game_wrapper {
-    @import '@/assets/sass/brand/style.scss';
+    @import '@/assets/sass/gameFilter/style.scss';
   }
 </style>
