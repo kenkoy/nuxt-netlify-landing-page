@@ -76,25 +76,12 @@ describe('Testing VJLP5 index.vue', () => {
 
   test('Banner title should be second_title', () => {
     const subTitle = datum
-    let error = []
+    const error = []
 
     subTitle.forEach((item, i) => {
       if (item.promo_banner.second_title === undefined) {
         error.push(item.slug_name)
         const unique = []
-
-        subTitle.forEach((item, i) => {
-          if (item.promo_banner.second_title === undefined) {
-            error.push(item.slug_name)
-            const unique = []
-
-            if (!unique.includes(item.slug_name)) {
-              unique.push(element)
-            }
-
-            error = unique
-          }
-        })
       }
       const bannerTitle = item.promo_banner.second_title
       expect(bannerTitle).toBe(`${item.promo_banner.second_title}`)
