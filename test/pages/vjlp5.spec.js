@@ -7,35 +7,24 @@ import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.j
 const VJLP5_DIR = '/assets/content/landing-page/marketing/vjlp5/'
 
 describe('Testing VJLP5 index.vue', () => {
-  let wrapper, metaInfo, tagIds, locale, datum
+  let wrapper, metaInfo, tagIds, locale, mdData
 
   beforeAll(async () => {
-    //  ==== For MD Files ====
-    const md = _
+    const mdFiles = _
       .chain(await retrieveFiles(VJLP5_DIR, '.md'))
       .map(files => VJLP5_DIR + files)
       .value()
-    const dataMDContent = []
-    const jsonData = []
-
-    md.forEach((item, i) => {
-      jsonData.push(retriveFrontMattertoJSON(item))
-      jsonData.forEach((attr, i) => {
-        dataMDContent.push(attr.attributes)
-      })
-    })
-    datum = dataMDContent
+    mdData = mdFiles
 
     const localVue = createLocalVue()
     localVue.use(VueMeta, { keyName: 'head' })
 
-    const mdComponents = _
-      .chain(await retrieveFiles(VJLP5_DIR, '.md'))
-      .map(files => VJLP5_DIR + files)
+    const randomMarkdown = _
+      .chain(mdFiles)
       .sample()
       .value()
 
-    const dataMD = retriveFrontMattertoJSON(mdComponents)
+    const dataMD = retriveFrontMattertoJSON(randomMarkdown)
     wrapper = mount(index, {
       localVue,
       data () {
@@ -50,45 +39,29 @@ describe('Testing VJLP5 index.vue', () => {
   })
 
   test('Banner title should be first_title', () => {
-    const title = datum
-    let error = []
-
-    title.forEach((item, i) => {
-      if (item.promo_banner.first_title === undefined) {
-        error.push(item.slug_name)
-        const unique = []
-
-        subTitle.forEach((item, i) => {
-          if (item.promo_banner.second_title === undefined) {
-            error.push(item.slug_name)
-            const unique = []
-
-            if (!unique.includes(item.slug_name)) {
-              unique.push(element)
-            }
-
-            error = unique
-          }
-        })
-      }
-    })
+    const errorSlugs = []
+    mdData
+      .map(md => retriveFrontMattertoJSON(md).attributes)
+      .forEach((md) => {
+        if (md.promo_banner.first_title === undefined) {
+          errorSlugs.push(md.slug_name)
+        }
+      })
+    expect(errorSlugs).toStrictEqual([])
   })
 
   test('Banner title should be second_title', () => {
-    const subTitle = datum
-    const error = []
-
-    subTitle.forEach((item, i) => {
-      if (item.promo_banner.second_title === undefined) {
-        error.push(item.slug_name)
-        const unique = []
-      }
-      const bannerTitle = item.promo_banner.second_title
-      expect(bannerTitle).toBe(`${item.promo_banner.second_title}`)
-    })
+    const errorSlugs = []
+    mdData
+      .map(md => retriveFrontMattertoJSON(md).attributes)
+      .forEach((md) => {
+        if (md.promo_banner.second_title === undefined) {
+          errorSlugs.push(md.slug_name)
+        }
+      })
+    expect(errorSlugs).toStrictEqual([])
   })
 
-  //  ==== COMPONENTS TEST ====
   test('Title should be Vera&John', () => {
     const pageTitle = metaInfo.title
     expect(pageTitle).toBe('Vera&John')
