@@ -26,7 +26,6 @@ describe('Testing VJLP5 index.vue', () => {
     })
     datum = dataMDContent
 
-    //  ==== For Vue Components ====
     const localVue = createLocalVue()
     localVue.use(VueMeta, { keyName: 'head' })
 
@@ -50,34 +49,28 @@ describe('Testing VJLP5 index.vue', () => {
     locale = dataMD.attributes.promo_locale
   })
 
-  //  ====  MD FILES TEST ====
-  //  HERO SECTION
   test('Banner title should be first_title', () => {
     const title = datum
     let error = []
 
-    //  Loop for printing specific MD files with error
     title.forEach((item, i) => {
       if (item.promo_banner.first_title === undefined) {
         error.push(item.slug_name)
         const unique = []
 
-        error.forEach((element, i) => {
-          if (!unique.includes(element)) {
-            unique.push(element)
+        subTitle.forEach((item, i) => {
+          if (item.promo_banner.second_title === undefined) {
+            error.push(item.slug_name)
+            const unique = []
+
+            if (!unique.includes(item.slug_name)) {
+              unique.push(element)
+            }
+
+            error = unique
           }
         })
-        error = unique
       }
-    })
-    if (error.length > 0) {
-      console.log('Error files: ', error.join('\r\n'))
-    }
-
-    //  Loop for testing the actual MD files
-    title.forEach((output, i) => {
-      const bannerTitle = output.promo_banner.first_title
-      expect(bannerTitle).toBe(`${output.promo_banner.first_title}`)
     })
   })
 
@@ -85,28 +78,26 @@ describe('Testing VJLP5 index.vue', () => {
     const subTitle = datum
     let error = []
 
-    //  Loop for printing specific MD files with error
     subTitle.forEach((item, i) => {
       if (item.promo_banner.second_title === undefined) {
         error.push(item.slug_name)
         const unique = []
 
-        error.forEach((element, i) => {
-          if (!unique.includes(element)) {
-            unique.push(element)
+        subTitle.forEach((item, i) => {
+          if (item.promo_banner.second_title === undefined) {
+            error.push(item.slug_name)
+            const unique = []
+
+            if (!unique.includes(item.slug_name)) {
+              unique.push(element)
+            }
+
+            error = unique
           }
         })
-        error = unique
       }
-    })
-    if (error.length > 0) {
-      console.log('Error files: ', error.join('\r\n'))
-    }
-
-    //  Loop for testing the actual MD files
-    subTitle.forEach((output, i) => {
-      const bannerTitle = output.promo_banner.second_title
-      expect(bannerTitle).toBe(`${output.promo_banner.second_title}`)
+      const bannerTitle = item.promo_banner.second_title
+      expect(bannerTitle).toBe(`${item.promo_banner.second_title}`)
     })
   })
 
