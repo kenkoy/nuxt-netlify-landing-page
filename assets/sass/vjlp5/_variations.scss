@@ -3,7 +3,7 @@
   /*==========  Variation 1  ==========*/
   .variation1{
     h1{
-      color: #fff;
+      color: $LIGHT_TEXT_COLOR;
     }
   }
 
@@ -17,16 +17,34 @@
   /*==========  Variation 3  ==========*/
   .variation3{
     h1{
-      color: #fff;
-      text-shadow: 3px 3px 4px #000;
+      background: linear-gradient($DARK_TEXT_COLOR, lighten($DARK_TEXT_COLOR, 30%));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(2px 2px 3px darken($DARK_TEXT_COLOR, 1%));
+
+      span{
+        background: linear-gradient($HIGHLIGHT, lighten($HIGHLIGHT, 20%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(2px 2px 3px darken($HIGHLIGHT, 5%));
+      }
     }
   }
 
-  /*==========  Variation 4  ==========*/
+  /*==========  Variation 4 ==========*/
   .variation4{
     h1{
-      color: $SECONDARY_TEXT_COLOR;
-      text-shadow: 3px 3px 4px #000;
+      background: linear-gradient($SECONDARY_TEXT_COLOR, lighten($SECONDARY_TEXT_COLOR, 20%));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(2px 2px 3px darken($SECONDARY_TEXT_COLOR, 1%));
+
+      span{
+        background: linear-gradient($HIGHLIGHT, lighten($HIGHLIGHT, 20%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(2px 2px 3px darken($HIGHLIGHT, 5%));
+      }
     }
   }
 }

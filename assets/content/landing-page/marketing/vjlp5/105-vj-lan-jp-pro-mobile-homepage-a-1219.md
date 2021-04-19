@@ -8,7 +8,7 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   go_container_id: OPT-PHSNXP6
 variation: variation1
-template: game_slider
+steps_gameslider: game_slider
 promo_banner:
   promo_title: 105-vj-lan-jp-pro-mobile-homepage-a-1219
   promo_images:

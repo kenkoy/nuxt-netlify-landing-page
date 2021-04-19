@@ -8,7 +8,7 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
 variation: variation1
-template: game_slider
+steps_gameslider: game_slider
 promo_banner:
   banner_promo_join_button: ''
   promo_title: 224-bvj-lan-jp-pro-top5games-0120

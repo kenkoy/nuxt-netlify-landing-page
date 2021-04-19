@@ -156,7 +156,7 @@ export const VJLP5_PREVIEW = createClass({
               </div>
             </section>
 
-            ${widgetsFor('template').getIn(['data']) === 'steps'
+            ${widgetsFor('steps_gameslider').getIn(['data']) === 'steps'
               ? html`<${STEPS} steps="${stepData}" />`
               : html`<${GAME_SLIDER} games="${games}" />`}
 

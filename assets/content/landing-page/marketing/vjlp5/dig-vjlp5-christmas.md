@@ -8,7 +8,7 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   go_container_id: OPT-PHSNXP6
 variation: variation2
-template: steps
+steps_gameslider: steps
 promo_banner:
   promo_title: DIG-VJLP5-Christmas
   promo_images:

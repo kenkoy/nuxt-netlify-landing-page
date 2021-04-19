@@ -47,7 +47,7 @@
           </div>
         </section>
         <Steps
-          v-if="data_items.attributes.template === 'steps'"
+          v-if="data_items.attributes.steps_gameslider === 'steps'"
           :title1="data_items.attributes.steps.step_title_1"
           :description1="data_items.attributes.steps.step_description_1"
           :title2="data_items.attributes.steps.step_title_2"
@@ -56,7 +56,7 @@
           :description3="data_items.attributes.steps.step_description_3"
         />
         <GameSlider
-          v-if="data_items.attributes.template === 'game_slider'"
+          v-if="data_items.attributes.steps_gameslider === 'game_slider'"
           :game-data="data_items.attributes.game_images"
         />
 

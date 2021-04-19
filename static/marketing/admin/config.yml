@@ -82,14 +82,14 @@ collections:
       - label: "Variation"
         name: "variation"
         widget: "select"
-        default: "variation"
+        default: "variation4"
         options:
           - { label: "Variation 1", value: "variation1" }
           - { label: "Variation 2", value: "variation2" }
           - { label: "Variation 3", value: "variation3" }
           - { label: "Variation 4", value: "variation4" }
-      - label: "Template"
-        name: "template"
+      - label: "Steps/Game Slider"
+        name: "steps_gameslider"
         widget: "select"
         default: "steps"
         options:
