@@ -99,18 +99,38 @@
 
 
   #hero {
-      background-color: $HERO_BG;
-      #banner-button a{
+    background-color: $HERO_BG;
+
+    .banner {
+      position: relative;
+      display: flex;
+      left: 20px;
+      right: 20px;
+      top: 70px;
+      height: 100%;
+    }
+    .banner.left{
+      justify-content: flex-start;
+    }
+    .banner.center{
+      justify-content: center;
+    }
+    .banner.right{
+      justify-content: flex-end;
+    }
+
+    #banner-button {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+
+      a{
         border: none;
       }
+    }
   }
-  #hero .banner{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 100%;
-  }
-
 
   #steps{
     .container{

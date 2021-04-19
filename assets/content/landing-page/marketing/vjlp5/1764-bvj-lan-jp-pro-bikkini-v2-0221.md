@@ -16,6 +16,7 @@ promo_banner:
     promo_bg_mobile: /marketing/img/dsgn-1763-vj-jp-cms-mobile-767x800-2.png
     promo_bg_banner: /marketing/img/vjlp5-banner.jpg
   promo_banner_font_size: medium-text
+  promo_banner_position: left
   first_title: 最大$1000
   mobile_full: true
   second_title: ビギナーズボーナス

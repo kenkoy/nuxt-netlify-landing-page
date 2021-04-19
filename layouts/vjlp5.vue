@@ -27,11 +27,13 @@
         <section id="hero" :style="cssBackground">
           <div class="container">
             <div class="banner-wrapper">
-              <div class="banner">
-                <h1 v-if="firstTitle" :class="data_items.attributes.promo_banner.promo_banner_font_size" v-html="bannerTitle" />
-                <h1 v-if="secondTitle" :class="data_items.attributes.promo_banner.promo_banner_font_size">
-                  {{ data_items.attributes.promo_banner.second_title }}
-                </h1>
+              <div class="banner" :class="data_items.attributes.promo_banner.promo_banner_position">
+                <div>
+                  <h1 v-if="firstTitle" :class="data_items.attributes.promo_banner.promo_banner_font_size" v-html="bannerTitle" />
+                  <h1 v-if="secondTitle" :class="data_items.attributes.promo_banner.promo_banner_font_size">
+                    {{ data_items.attributes.promo_banner.second_title }}
+                  </h1>
+                </div>
               </div>
               <div
                 v-if="data_items.attributes.promo_banner.promo_join_button_option"

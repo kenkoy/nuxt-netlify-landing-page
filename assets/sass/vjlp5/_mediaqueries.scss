@@ -71,13 +71,6 @@
       margin-bottom: 30px;
     }
 
-    .banner{
-      position: absolute;
-      right: 0;
-      top: 100px;
-      max-width: 210px;
-    }
-
     // h1{
     //   font-size: 20px;
     //   text-shadow: rgb(255, 255, 255) 0px 0px 0.6rem,
@@ -95,10 +88,7 @@
     //   }
     // }
   }
-  #hero .container{
-      flex-wrap: wrap;
-      align-items: flex-end;
-  }
+
 
   #hero button{
       display: block;
@@ -194,10 +184,10 @@
     .container{
       min-height: 350px;
     }
-      .banner{
-        top: 50px;
-        max-width: 150px;
-      }
+      // .banner{
+      //   top: 50px;
+      //   max-width: 150px;
+      // }
   }
 }
 
@@ -215,15 +205,6 @@
       min-height: 650px;
       background-size: cover;
     }
-
-      .banner{
-        top: 200px;
-        max-width: 250px;
-
-        // h1{
-        //   font-size: 23px;
-        // }
-      }
   }
   #steps{
     .container{
@@ -268,16 +249,6 @@
       min-height: 320px;
       background-size: var(--desktop-width-banner);
     }
-
-    .banner{
-      top: 40px;
-      left: 0;
-      max-width: 300px;
-
-      // h1{
-      //   font-size: 26px;
-      // }
-    }
   }
 }
 
@@ -285,10 +256,6 @@
 @media only screen and (min-width : 992px) {
   #hero{
       background-size: cover;
-
-      .banner{
-        left: 20%;
-      }
   }
   #section3{
     .container{
