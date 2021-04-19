@@ -26,7 +26,7 @@
 
         <section id="hero" :style="cssBackground">
           <div class="container">
-            <div>
+            <div class="banner-wrapper">
               <div class="banner">
                 <h1 v-if="firstTitle" :class="data_items.attributes.promo_banner.promo_banner_font_size" v-html="bannerTitle" />
                 <h1 v-if="secondTitle" :class="data_items.attributes.promo_banner.promo_banner_font_size">
