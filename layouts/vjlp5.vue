@@ -28,8 +28,8 @@
           <div class="container">
             <div>
               <div class="banner">
-                <h1 class="small-text" v-if="firstTitle" v-html="bannerTitle" />
-                <h1 class="medium-text" v-if="secondTitle">
+                <h1 v-if="firstTitle" v-html="bannerTitle" />
+                <h1 v-if="secondTitle">
                   {{ data_items.attributes.promo_banner.second_title }}
                 </h1>
               </div>
@@ -230,9 +230,6 @@ export default {
 
 <style lang="scss">
   .vjlp5_wrapper {
-    // Brand
-    @import '@/assets/sass/brand/vj_brand_variables.scss';
-
     // Template style
     @import '@/assets/sass/vjlp5/style.scss';
   }
