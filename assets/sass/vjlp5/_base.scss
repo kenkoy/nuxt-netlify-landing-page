@@ -13,6 +13,20 @@
     }
   }
 
+  .small-text{
+    font-size: $SMALL_TEXT;
+  }
+  .medium-text{
+    font-size: $MEDIUM_TEXT;
+  }
+  .large-text{
+    font-size: $LARGE_TEXT;
+  }
+
+  h1{
+    font-weight: 700;
+  }
+
   h2{
     color: $SUB_TITLE_COLOR
   }
@@ -25,6 +39,9 @@
       color: inherit;
       text-decoration: none;
       border-bottom: 2px dashed #FEE63D;
+  }
+  .highlight{
+    color: $HIGHLIGHT;
   }
 
   button {
@@ -99,30 +116,4 @@
           background: #fff;
       }
     }
-  }
-
-  .version1 {
-    button {
-      &.warning {
-          display: inline-block;
-      }
-    }
-
-    h2 {
-      font-size: 1.5em;
-      font-weight: 500;
-    }
-    #section1 {
-      h2 {
-          font-size: 1.5em;
-      }
-    }
-  }
-
-  .version2 {
-      button {
-          &.warning {
-              display: none;
-          }
-      }
   }

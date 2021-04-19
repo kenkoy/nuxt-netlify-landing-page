@@ -30,6 +30,10 @@
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
+
+    button.warning{
+      display: none;
+    }
   }
   #header .container{
     justify-content: flex-end;
@@ -74,22 +78,22 @@
       max-width: 210px;
     }
 
-    h1{
-      font-size: 20px;
-      text-shadow: rgb(255, 255, 255) 0px 0px 0.6rem,
-      rgb(255, 255, 255) 0px 0px 1.5rem,
-      rgb(255, 255, 255) -0.2rem 0.1rem 1rem,
-      rgb(255, 255, 255) 0.2rem 0.1rem 1rem,
-      rgb(255, 255, 255) 0px -0.5rem 2rem,
-      rgb(255, 255, 255) 0px 0.5rem 3rem;
-      color: $TEXT_COLOR;
-      font-weight: 700;
-      font-family: 'MainFont-Medium', sans-serif;
-
-      span{
-        color: rgb(255, 217, 102);
-      }
-    }
+    // h1{
+    //   font-size: 20px;
+    //   text-shadow: rgb(255, 255, 255) 0px 0px 0.6rem,
+    //   rgb(255, 255, 255) 0px 0px 1.5rem,
+    //   rgb(255, 255, 255) -0.2rem 0.1rem 1rem,
+    //   rgb(255, 255, 255) 0.2rem 0.1rem 1rem,
+    //   rgb(255, 255, 255) 0px -0.5rem 2rem,
+    //   rgb(255, 255, 255) 0px 0.5rem 3rem;
+    //   color: $TEXT_COLOR;
+    //   font-weight: 700;
+    //   font-family: 'MainFont-Medium', sans-serif;
+    //
+    //   span{
+    //     color: rgb(255, 217, 102);
+    //   }
+    // }
   }
   #hero .container{
       flex-wrap: wrap;
@@ -146,7 +150,7 @@
 
   #section1 h2{
     font-size: 46px;
-    line-height: 55px;
+    line-height: 65px;
   }
 
   #section2 h2{
@@ -216,9 +220,9 @@
         top: 200px;
         max-width: 250px;
 
-        h1{
-          font-size: 23px;
-        }
+        // h1{
+        //   font-size: 23px;
+        // }
       }
   }
   #steps{
@@ -270,9 +274,9 @@
       left: 0;
       max-width: 300px;
 
-      h1{
-        font-size: 26px;
-      }
+      // h1{
+      //   font-size: 26px;
+      // }
     }
   }
 }

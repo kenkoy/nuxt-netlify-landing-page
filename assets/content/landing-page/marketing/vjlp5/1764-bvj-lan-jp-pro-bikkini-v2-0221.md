@@ -7,25 +7,25 @@ field_ids:
   gtm_container_id: GTM-MFD3NKM
   ga_tracking_id: UA-142143961-1
   go_container_id: OPT-PHSNXP6
-styles: version2
+variation: variation2
 template: steps
 promo_banner:
   promo_title: 1764-bvj-lan-jp-pro-bikkini-v2-0221
   promo_images:
     promo_bg_desktop: /marketing/img/dsgn-1763-vj-jp-cms-desktop-1920x1080.png
-    promo_bg_mobile: /marketing/img/banner-copy.jpg
+    promo_bg_mobile: /marketing/img/dsgn-1763-vj-jp-cms-mobile-767x800-2.png
     promo_bg_banner: /marketing/img/vjlp5-banner.jpg
+  promo_banner_font_size: medium-text
   first_title: 最大$1000
   mobile_full: true
   second_title: ビギナーズボーナス
-  desktop_full: false
+  desktop_full: true
   promo_login_button_redirect_url: https://verajohn.com/#join
   promo_join_button_redirect_url: https://verajohn.com/#join
   promo_join_button: 入金ボーナス獲得する
   promo_login_button: 登録
   phrase: $1000
-  promo_join_button_option: true
-  promo_join_button_location: hidden
+  promo_join_button_option: false
 steps:
   step_title_1: ご登録
   step_description_1: 安全 & 安心！

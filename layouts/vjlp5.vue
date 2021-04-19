@@ -4,7 +4,7 @@
       <!-- PAGE HANDLING DATA -->
       <Vjlp5Data @emit-md-content="getMDcontent" />
 
-      <div v-for="(data_items, data_index) in md_data" :key="data_index" :class="data_items.attributes.styles">
+      <div v-for="(data_items, data_index) in md_data" :key="data_index" :class="data_items.attributes.variation">
         <header id="header">
           <div class="container">
             <div class="logo">
@@ -28,8 +28,8 @@
           <div class="container">
             <div>
               <div class="banner">
-                <h1 v-if="firstTitle" v-html="bannerTitle" />
-                <h1 v-if="secondTitle">
+                <h1 v-if="firstTitle" :class="data_items.attributes.promo_banner.promo_banner_font_size" v-html="bannerTitle" />
+                <h1 v-if="secondTitle" :class="data_items.attributes.promo_banner.promo_banner_font_size">
                   {{ data_items.attributes.promo_banner.second_title }}
                 </h1>
               </div>
@@ -175,7 +175,7 @@ export default {
     bannerTitle () {
       if (this.phrase) {
         const position = this.firstTitle.indexOf(this.phrase)
-        const text = `<span>${this.phrase}</span>`
+        const text = `<span class='highlight'>${this.phrase}</span>`
         const output = [this.firstTitle.slice(0, position), text, this.firstTitle.slice(position, 0)].join('')
         return output
       }
@@ -230,6 +230,9 @@ export default {
 
 <style lang="scss">
   .vjlp5_wrapper {
+    // Brand
+    @import '@/assets/sass/brand/vj_brand_variables.scss';
+
     // Template style
     @import '@/assets/sass/vjlp5/style.scss';
   }

@@ -79,13 +79,15 @@ collections:
               required: false,
               default: "GTM-MFD3NKM",
             }
-      - label: "Styles"
-        name: "styles"
+      - label: "Variation"
+        name: "variation"
         widget: "select"
-        default: "version1"
+        default: "variation"
         options:
-          - { label: "Version 1", value: "version1" }
-          - { label: "Version 2", value: "version2" }
+          - { label: "Variation 1", value: "variation1" }
+          - { label: "Variation 2", value: "variation2" }
+          - { label: "Variation 3", value: "variation3" }
+          - { label: "Variation 3", value: "variation4" }
       - label: "Template"
         name: "template"
         widget: "select"
@@ -99,6 +101,7 @@ collections:
         collapsed: true
         fields:
           - { label: "Title", name: "promo_title", widget: "string" }
+          - { label: "Promo banner font size", name: "promo_banner_font_size", widget: "string" }
           - {
               label: "Banner first title",
               name: "first_title",

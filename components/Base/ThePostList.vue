@@ -34,6 +34,7 @@ export default {
             a{
                 color: #08648a;
                 background: #fff;
+                transition: all 0.25s ease;
 
                 &:hover{
                     background: #EC008B;

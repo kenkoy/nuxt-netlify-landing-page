@@ -1,0 +1,53 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  /*==========  Variation 1  ==========*/
+  .variation1{
+    h1{
+      color: #fff;
+    }
+  }
+
+  /*==========  Variation 2  ==========*/
+  .variation2{
+    h1{
+      color: $SECONDARY_TEXT_COLOR;
+    }
+  }
+
+  /*==========  Variation 3  ==========*/
+  .variation3{
+    h1{
+      color: #fff;
+      text-shadow: 3px 3px 4px #000;
+    }
+  }
+
+  /*==========  Variation 4  ==========*/
+  .variation4{
+    h1{
+      color: $SECONDARY_TEXT_COLOR;
+      text-shadow: 3px 3px 4px #000;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 576px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
