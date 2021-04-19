@@ -106,9 +106,9 @@ collections:
             widget: "select"
             default: "medium-text"
             options:
-              - { label: "Small text", value: "small-text" }
-              - { label: "Medium text", value: "medium-text" }
-              - { label: "Large text", value: "large-text" }
+              - { label: "Small - 20px", value: "small-text" }
+              - { label: "Medium - 32px", value: "medium-text" }
+              - { label: "Large - 48px", value: "large-text" }
           - {
               label: "Banner first title",
               name: "first_title",
