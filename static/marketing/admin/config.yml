@@ -87,7 +87,7 @@ collections:
           - { label: "Variation 1", value: "variation1" }
           - { label: "Variation 2", value: "variation2" }
           - { label: "Variation 3", value: "variation3" }
-          - { label: "Variation 3", value: "variation4" }
+          - { label: "Variation 4", value: "variation4" }
       - label: "Template"
         name: "template"
         widget: "select"
@@ -101,7 +101,14 @@ collections:
         collapsed: true
         fields:
           - { label: "Title", name: "promo_title", widget: "string" }
-          - { label: "Promo banner font size", name: "promo_banner_font_size", widget: "string" }
+          - label: "Promo banner font size"
+            name: "promo_banner_font_size"
+            widget: "select"
+            default: "medium-text"
+            options:
+              - { label: "Small text", value: "small-text" }
+              - { label: "Medium text", value: "medium-text" }
+              - { label: "Large text", value: "large-text" }
           - {
               label: "Banner first title",
               name: "first_title",
