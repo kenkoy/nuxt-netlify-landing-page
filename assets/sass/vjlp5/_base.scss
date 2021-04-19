@@ -106,8 +106,9 @@
       display: flex;
       left: 20px;
       right: 20px;
-      top: 70px;
       height: 100%;
+      padding: 70px 0;
+      box-sizing: border-box;
     }
     .banner.left{
       justify-content: flex-start;
