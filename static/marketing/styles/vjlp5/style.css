@@ -254,6 +254,9 @@
     border: none;
     margin: 0 8px;
 }
+.vjlp5_wrapper footer #footer-icon img {
+    width: 70px;
+}
 .vjlp5_wrapper footer .second-footer {
     padding: 25px 30px;
 }
