@@ -4,7 +4,6 @@ import * as glob from 'glob'
 const markdownPaths = [
   'marketing/vjlp1',
   'marketing/vjlp3',
-  'marketing/vjlp3v2',
   'marketing/vjlp4',
   'marketing/vjlp5',
   'marketing/vjlp6',
