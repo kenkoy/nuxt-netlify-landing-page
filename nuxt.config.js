@@ -67,6 +67,7 @@ export default {
   */
   css: [
     '~/assets/sass/global/animate.min.css',
+    '~/assets/sass/global/fonts.css',
     '~/assets/sass/global/style.scss'
   ],
   /*
