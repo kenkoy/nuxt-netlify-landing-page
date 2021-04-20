@@ -14,7 +14,7 @@
     border-top: solid 2px $BORDER_COLOR;
   }
   #hero {
-    background: linear-gradient(rgba(132,5,217,.2),rgba(0,0,0,.6)),var(--bg-image-m) no-repeat top;
+    background: var(--bg-image-m) no-repeat top;
     background-size: cover;
     padding: 20px;
     .loginbtn {
@@ -131,7 +131,7 @@
     display: none;
   }
   #hero {
-    background: linear-gradient(rgba(132,5,217,.2),rgba(0,0,0,.6)),var(--bg-image) no-repeat top;
+    background: var(--bg-image) no-repeat top;
     background-size: cover;
   }
 }
