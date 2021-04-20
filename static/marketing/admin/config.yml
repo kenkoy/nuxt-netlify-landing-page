@@ -109,6 +109,14 @@ collections:
               - { label: "Small - 20px", value: "small-text" }
               - { label: "Medium - 32px", value: "medium-text" }
               - { label: "Large - 48px", value: "large-text" }
+          - label: "Promo banner position"
+            name: "promo_banner_position"
+            widget: "select"
+            default: "left"
+            options:
+              - { label: "Left", value: "left" }
+              - { label: "Center", value: "center" }
+              - { label: "Right", value: "right" }
           - {
               label: "Banner first title",
               name: "first_title",

@@ -57,6 +57,7 @@ export const VJLP5_PREVIEW = createClass({
     const locale = widgetsFor('promo_locale')
     const version = widgetsFor('variation').getIn(['data'])
     const bannerFontSize = widgetsFor('promo_banner').getIn(['data', 'promo_banner_font_size'])
+    const bannerPosition = widgetsFor('promo_banner').getIn(['data', 'promo_banner_position'])
 
     const firstData = widgetsFor('first_section')
     const additionalLinks = widgetsFor('additional_links')
@@ -135,23 +136,27 @@ export const VJLP5_PREVIEW = createClass({
             </header>
             <section id="hero" style="${imageBG}">
               <div class="container">
-                <div>
-                  <div class="banner">
-                    ${widgetsFor('promo_banner').getIn(['data', 'first_title']) !== ''
-                    ? html`<h1 className="${bannerFontSize}" dangerouslySetInnerHTML='${bannerTitle}'></h1>`
-                    : ''}
+                <div class="banner-wrapper">
+                  <div className="${'banner' + ' ' + bannerPosition}">
+                    <div>
+                      ${widgetsFor('promo_banner').getIn(['data', 'first_title']) !== ''
+                      ? html`<h1 className="${bannerFontSize}" dangerouslySetInnerHTML='${bannerTitle}'></h1>`
+                      : ''}
 
-                    ${widgetsFor('promo_banner').getIn(['data', 'second_title']) !== ''
-                    ? html`<h1 className="${bannerFontSize}">${banner.getIn(['data', 'second_title'])}</h1>`
-                    : ''}
+                      ${widgetsFor('promo_banner').getIn(['data', 'second_title']) !== ''
+                      ? html`<h1 className="${bannerFontSize}">${banner.getIn(['data', 'second_title'])}</h1>`
+                      : ''}
+                    </div>
                   </div>
 
                   ${!widgetsFor('promo_banner').getIn(['data', 'promo_join_button_option'])
                     ? ''
                     : html`
-                      <button id="banner-button" class="error">
-                        <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
-                      </button>`}
+                      <div id="banner-button">
+                        <button class="error">
+                          <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
+                        </button>
+                      </div>`}
                 </div>
               </div>
             </section>
