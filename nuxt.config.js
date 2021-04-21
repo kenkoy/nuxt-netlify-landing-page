@@ -4,7 +4,6 @@ import * as glob from 'glob'
 const markdownPaths = [
   'marketing/vjlp1',
   'marketing/vjlp3',
-  'marketing/vjlp3v2',
   'marketing/vjlp4',
   'marketing/vjlp5',
   'marketing/vjlp6',
@@ -66,9 +65,9 @@ export default {
   ** Global CSS
   */
   css: [
-    '~/assets/sass/global/base/animate.min.css',
-    '~/assets/sass/global/base/fonts.css',
-    '~/assets/sass/global/base/style.scss'
+    '~/assets/sass/global/animate.min.css',
+    '~/assets/sass/global/fonts.css',
+    '~/assets/sass/global/style.scss'
   ],
   /*
   ** Plugins to load before mounting the App

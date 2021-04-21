@@ -190,8 +190,8 @@ export default {
 
 <style lang="scss">
   .vjlp7_wrapper {
-    // Utilitites
-    @import '@/assets/sass/global/utilities/brand_variables.scss';
+    // Brand
+    @import '@/assets/sass/brand/vj_brand_variables.scss';
 
     // Template style
     @import '@/assets/sass/vjlp7/style.scss';
