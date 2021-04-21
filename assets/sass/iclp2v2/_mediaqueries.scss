@@ -11,7 +11,7 @@
     padding: 20px 10px;
   }
   #hero {
-    background: linear-gradient(rgba(132,5,217,.2),rgba(0,0,0,.6)),var(--bg-image-m) no-repeat top;
+    background: var(--bg-image-m) no-repeat top;
     background-size: cover;
 
     .loginbtn {
@@ -187,7 +187,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
   #hero{
-    background: linear-gradient(rgba(132,5,217,.2),rgba(0,0,0,.6)),var(--bg-image) no-repeat top;
+    background: var(--bg-image) no-repeat top;
     background-size: cover;
   }
   #detail .container{

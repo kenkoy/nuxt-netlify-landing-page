@@ -7,36 +7,24 @@ import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.j
 const VJLP5_DIR = '/assets/content/landing-page/marketing/vjlp5/'
 
 describe('Testing VJLP5 index.vue', () => {
-  let wrapper, metaInfo, tagIds, locale, datum
+  let wrapper, metaInfo, tagIds, locale, mdData
 
   beforeAll(async () => {
-    //  ==== For MD Files ====
-    const md = _
+    const mdFiles = _
       .chain(await retrieveFiles(VJLP5_DIR, '.md'))
       .map(files => VJLP5_DIR + files)
       .value()
-    const dataMDContent = []
-    const jsonData = []
+    mdData = mdFiles
 
-    md.forEach((item, i) => {
-      jsonData.push(retriveFrontMattertoJSON(item))
-      jsonData.forEach((attr, i) => {
-        dataMDContent.push(attr.attributes)
-      })
-    })
-    datum = dataMDContent
-
-    //  ==== For Vue Components ====
     const localVue = createLocalVue()
     localVue.use(VueMeta, { keyName: 'head' })
 
-    const mdComponents = _
-      .chain(await retrieveFiles(VJLP5_DIR, '.md'))
-      .map(files => VJLP5_DIR + files)
+    const randomMarkdown = _
+      .chain(mdFiles)
       .sample()
       .value()
 
-    const dataMD = retriveFrontMattertoJSON(mdComponents)
+    const dataMD = retriveFrontMattertoJSON(randomMarkdown)
     wrapper = mount(index, {
       localVue,
       data () {
@@ -50,67 +38,30 @@ describe('Testing VJLP5 index.vue', () => {
     locale = dataMD.attributes.promo_locale
   })
 
-  //  ====  MD FILES TEST ====
-  //  HERO SECTION
   test('Banner title should be first_title', () => {
-    const title = datum
-    let error = []
-
-    //  Loop for printing specific MD files with error
-    title.forEach((item, i) => {
-      if (item.promo_banner.first_title === undefined) {
-        error.push(item.slug_name)
-        const unique = []
-
-        error.forEach((element, i) => {
-          if (!unique.includes(element)) {
-            unique.push(element)
-          }
-        })
-        error = unique
-      }
-    })
-    if (error.length > 0) {
-      console.log('Error files: ', error.join('\r\n'))
-    }
-
-    //  Loop for testing the actual MD files
-    title.forEach((output, i) => {
-      const bannerTitle = output.promo_banner.first_title
-      expect(bannerTitle).toBe(`${output.promo_banner.first_title}`)
-    })
+    const errorSlugs = []
+    mdData
+      .map(md => retriveFrontMattertoJSON(md).attributes)
+      .forEach((md) => {
+        if (md.promo_banner.first_title === undefined) {
+          errorSlugs.push(md.slug_name)
+        }
+      })
+    expect(errorSlugs).toStrictEqual([])
   })
 
   test('Banner title should be second_title', () => {
-    const subTitle = datum
-    let error = []
-
-    //  Loop for printing specific MD files with error
-    subTitle.forEach((item, i) => {
-      if (item.promo_banner.second_title === undefined) {
-        error.push(item.slug_name)
-        const unique = []
-
-        error.forEach((element, i) => {
-          if (!unique.includes(element)) {
-            unique.push(element)
-          }
-        })
-        error = unique
-      }
-    })
-    if (error.length > 0) {
-      console.log('Error files: ', error.join('\r\n'))
-    }
-
-    //  Loop for testing the actual MD files
-    subTitle.forEach((output, i) => {
-      const bannerTitle = output.promo_banner.second_title
-      expect(bannerTitle).toBe(`${output.promo_banner.second_title}`)
-    })
+    const errorSlugs = []
+    mdData
+      .map(md => retriveFrontMattertoJSON(md).attributes)
+      .forEach((md) => {
+        if (md.promo_banner.second_title === undefined) {
+          errorSlugs.push(md.slug_name)
+        }
+      })
+    expect(errorSlugs).toStrictEqual([])
   })
 
-  //  ==== COMPONENTS TEST ====
   test('Title should be Vera&John', () => {
     const pageTitle = metaInfo.title
     expect(pageTitle).toBe('Vera&John')

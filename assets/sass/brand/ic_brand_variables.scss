@@ -1,0 +1,30 @@
+//=== BUTTON COLORS ===//
+$PRIMARY_BTN_BG: #009FE3; // Blue
+$PRIMARY_BTN_COLOR: #fff;
+
+$SECOND_BTN_BG: #EC008B; // Pink
+$SECOND_BTN_COLOR: #fff;
+
+$THIRD_BTN_BG: #FEE63D; // Yellow
+$THIRD_BTN_COLOR: #fff;
+
+$PRIMARY_BTN_GRADIENT: linear-gradient(0deg, rgba(0,147,212,1) 0%, rgba(0,159,227,1) 100%); // Blue
+$PRIMARY_BTN_GRADIENT_HOVER: linear-gradient(180deg,#ff65e5,#fa1e93);
+$PRIMARY_BTN_GRADIENT_COLOR: #fff;
+
+$SECOND_BTN_GRADIENT: linear-gradient(to bottom,#fb57cc,#de1681); // Pink
+$SECOND_BTN_GRADIENT_COLOR: #fff;
+
+$THIRD_BTN_GRADIENT: linear-gradient(to bottom,#ffc933 0%,#f7901d 100%); // Yellow
+$THIRD_BTN_GRADIENT_HOVER: linear-gradient(to bottom,#ffc933 0%,#f7901d 100%);
+$THIRD_BTN_GRADIENT_COLOR: #fff;
+
+
+//=== FONTS ===//
+$SMALL_TEXT: 20px;
+$MEDIUM_TEXT: 30px;
+$LARGE_TEXT: 40px;
+
+$PRIMARY_TEXT_COLOR: #009FE3; // Blue
+$SECONDARY_TEXT_COLOR: #EC008B; // Pink
+$THIRD_TEXT_COLOR: #FEE63D; // Yellow
