@@ -104,12 +104,13 @@
     .banner {
       position: relative;
       display: flex;
-      left: 20px;
-      right: 20px;
+      margin: auto;
+      max-width: 80%;
       height: 100%;
       padding: 70px 0;
       box-sizing: border-box;
     }
+    
     .banner.left{
       justify-content: flex-start;
     }
