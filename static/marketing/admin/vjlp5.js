@@ -26,7 +26,7 @@ export const VJLP5_PREVIEW = createClass({
     return { __html: title }
   },
 
-  textLink (text, textLinks, link) {
+  textLink (text = '', textLinks = '', link = '') {
     if (textLinks) {
       const position = text.indexOf(textLinks)
       const textsample = `<a href=${link}>${textLinks}</a>`
@@ -45,10 +45,6 @@ export const VJLP5_PREVIEW = createClass({
       return oldVal + '<br />' + newVal
     })
     return { __html: text }
-  },
-
-  buttonLocation (style) {
-    return style.toString()
   },
 
   render () {
@@ -163,26 +159,26 @@ export const VJLP5_PREVIEW = createClass({
 
             ${widgetsFor('steps_gameslider').getIn(['data']) === 'steps'
               ? html`<${STEPS} steps="${stepData}" />`
-              : html`<${GAME_SLIDER} games="${games}" />`}
-
+              : html`<${GAME_SLIDER} games="${games}" />`
+            }
             <section id="section1">
               <div class="container">
                 <div>
                   ${firstData.filter(sect => !!sect).map(sect =>
+                    html`
+                    <div>
+                      <h2>${sect.getIn(['data', 'first_section_title'])}</h2>
+                      <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'first_section_description']))}'/>
+                    </div>
+                    `
+                  )}
+                  ${additionalLinks.filter(link => !!link)
+                    .filter(link => typeof link.getIn(['data']) !== 'undefined')
+                    .map(link =>
                       html`
-                      <div>
-                        <h2>${sect.getIn(['data', 'first_section_title'])}</h2>
-                        <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'first_section_description']))}'/>
-
-                        ${additionalLinks.filter(link => !!link).map(link =>
-                            html`
-                              <p dangerouslySetInnerHTML='${this.textLink(link.getIn(['data', 'text']), link.getIn(['data', 'text_link']), link.getIn(['data', 'link']))}'/>
-                            `
-                          )}
-
-                      </div>
+                      <p dangerouslySetInnerHTML='${this.textLink(link.getIn(['data', 'text']), link.getIn(['data', 'text_link']), link.getIn(['data', 'link']))}'/>
                       `
-                    )}
+                  )}
                   <div class="separator" />
                 </div>
               </div>
@@ -203,13 +199,13 @@ export const VJLP5_PREVIEW = createClass({
 
                 <div>
                   ${uspRightData.filter(sect => !!sect).map(sect =>
-                      html`
-                      <div>
-                        <h2>${sect.getIn(['data', 'usp_title'])}</h2>
-                          <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'usp_content']))}'/>
-                      </div>
-                      `
-                    )}
+                    html`
+                    <div>
+                      <h2>${sect.getIn(['data', 'usp_title'])}</h2>
+                      <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'usp_content']))}'/>
+                    </div>
+                    `
+                  )}
                 </div>
               </div>
             </section>
