@@ -8,7 +8,9 @@
     >
       <nav v-if="mobile === true" id="filter-bar-mobile">
         <div class="container">
-          <button class="btn-primary find mobile" :class="modal ? 'active' : ''" @click="modalFilterFn()">Find game you'll love</button>
+          <button class="btn-primary find" :class="modal ? 'active' : ''" @click="modalFilterFn()">
+            Find game you'll love
+          </button>
           <input v-model="search" placeholder="Search" type="text">
         </div>
       </nav>
@@ -87,7 +89,7 @@ export default {
     return {
       desktop: true,
       mobile: false,
-      filterOverlay: true,
+      filterOverlay: false,
       modal: false,
       mdData: {},
       htmlBody: '',
@@ -121,7 +123,7 @@ export default {
   methods: {
     myEventHandler () {
       // your code for handling resize...
-      if (window.innerWidth <= 992) {
+      if (window.innerWidth <= 768) {
         this.desktop = false
         this.mobile = true
       } else {
