@@ -6,13 +6,24 @@
       :class="mdData.slug_name"
       class="game-main"
     >
+      <nav v-if="mobile === true" id="nav-mobile">
+        <div class="container">
+          <div>
+            <input v-model="search" placeholder="Search" type="text">
+            <button class="btn-primary find" :class="modal ? 'active' : ''" @click="modalFilterFn()">
+              Find game you'll love
+            </button>
+          </div>
+        </div>
+      </nav>
       <section id="list-games">
         <div class="container main-content">
           <div>
-            <div id="filter-bar"> <!-- Container for the filter menu -->
-              <FilterSearch class="overlay" v-if="modal && filterOverlay === true" @game-data-emit="getGameCaregoryEmit" /> <!-- Filter components that overlay -->
+            <FilterSearch class="overlay" v-if="modal && filterOverlay === true" @game-data-emit="getGameCaregoryEmit" /> <!-- Filter components that overlay -->
+            <!-- Container for the filter menu -->
+            <div v-if="desktop === true" id="filter-bar">
               <div id="find-button">
-                <button class="btn-primary find desktop" :class="modal ? 'active' : ''" @click="modalFilterFn()">
+                <button class="btn-primary find" :class="modal ? 'active' : ''" @click="modalFilterFn()">
                   Find game you'll love
                 </button>
               </div>
@@ -36,8 +47,10 @@
               <div v-for="(game, gameIndex) in filteredGames" :key="gameIndex" class="game">
                 <div v-if="gameIndex < limit">
                   <div>
-                    <img :src="game.image">
-                    <p>{{ game.title }}</p>
+                    <a href="https://casino.verajohn.com/" target="_blank">
+                      <img :src="game.image" :alt="game.title">
+                      <p>{{ game.title }}</p>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -73,7 +86,9 @@ export default {
   },
   data () {
     return {
-      filterOverlay: false,
+      desktop: true,
+      mobile: false,
+      filterOverlay: true,
       modal: false,
       mdData: {},
       htmlBody: '',
@@ -98,8 +113,23 @@ export default {
   },
   beforeDestroy () {
     this.$root.$off('game-data')
+    window.removeEventListener('resize', this.myEventHandler)
+  },
+  mounted () {
+    this.myEventHandler()
+    window.addEventListener('resize', this.myEventHandler)
   },
   methods: {
+    myEventHandler () {
+      // your code for handling resize...
+      if (window.innerWidth <= 992) {
+        this.desktop = false
+        this.mobile = true
+      } else {
+        this.desktop = true
+        this.mobile = false
+      }
+    },
     showMore () {
       this.limit += this.showMoreAddItems
     },

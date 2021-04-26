@@ -7,10 +7,7 @@
     display: block;
   }
   .overlay{
-    top: 70px;
-    width: 90%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    top: 10px;
   }
   #list-games{
     #filter-bar{
@@ -75,8 +72,7 @@
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
   .overlay{
-    top: 100%;
-    width: 100%;
+    top: 80px;
   }
   #list-games{
     #filter-bar{
