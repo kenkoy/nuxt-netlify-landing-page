@@ -6,7 +6,7 @@
       :class="mdData.slug_name"
       class="game-main"
     >
-      <nav v-if="mobile === true" id="filter-mobile">
+      <nav v-if="mobile === true" id="filter-bar-mobile">
         <div class="container">
           <button class="btn-primary find mobile" :class="modal ? 'active' : ''" @click="modalFilterFn()">Find game you'll love</button>
           <input v-model="search" placeholder="Search" type="text">

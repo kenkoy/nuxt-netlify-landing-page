@@ -1,45 +1,79 @@
 <template>
-  <section id="filter">
-    <div class="container">
-      <form>
-        <h3>Choose your favourite categories to find more games you'll love!</h3>
+  <div>
+    <section v-if="desktop === true" id="filter">
+      <div class="container">
+        <form>
+          <h3>Choose your favourite categories to find more games you'll love!</h3>
 
-        <label v-for="(cats, cats_index) in categories" :key="cats_index" class="switch">
-          <input
-            type="radio"
-            name="cat"
-            :value="cats.tags"
-            @click="gameDataEmit(cats.tags)"
-          >
-          <a class="slider noselect">{{ cats.name }}</a>
-        </label>
-      </form>
-    </div>
+          <label v-for="(cats, cats_index) in categories" :key="cats_index" class="switch">
+            <input
+              type="radio"
+              name="cat"
+              :value="cats.tags"
+              @click="gameDataEmit(cats.tags)"
+            >
+            <a class="slider noselect">{{ cats.name }}</a>
+          </label>
+        </form>
+      </div>
 
-    <hr>
+      <hr>
 
-    <div class="container">
-      <form>
-        <h3>Game provider</h3>
+      <div class="container">
+        <form>
+          <h3>Game provider</h3>
 
-        <label v-for="(cats, cats_index) in categories" :key="cats_index" class="switch">
-          <input
-            type="radio"
-            name="cat"
-            :value="cats.tags"
-            @click="gameDataEmit(cats.tags)"
-          >
-          <a class="slider noselect">{{ cats.name }}</a>
-        </label>
-      </form>
-    </div>
-  </section>
+          <label v-for="(cats, cats_index) in categories" :key="cats_index" class="switch">
+            <input
+              type="radio"
+              name="cat"
+              :value="cats.tags"
+              @click="gameDataEmit(cats.tags)"
+            >
+            <a class="slider noselect">{{ cats.name }}</a>
+          </label>
+        </form>
+      </div>
+    </section>
+
+    <section v-if="mobile === true" id="filter">
+      <div class="container">
+        <form>
+          <aside>
+            <select>
+              <option v-for="(cats, cats_index) in categories" :key="cats_index">
+                {{ cats.name }}
+              </option>
+            </select>
+          </aside>
+
+          <aside>
+            <select>
+              <option v-for="(cats, cats_index) in categories" :key="cats_index">
+                {{ cats.name }}
+              </option>
+            </select>
+          </aside>
+
+          <aside>
+            <select>
+              <option v-for="(cats, cats_index) in categories" :key="cats_index">
+                {{ cats.name }}
+              </option>
+            </select>
+          </aside>
+        </form>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>
 export default {
   data () {
     return {
+      desktop: true,
+      mobile: false,
       categories: [
         {
           name: 'Promoted',
@@ -188,7 +222,24 @@ export default {
       ]
     }
   },
+  beforeDestroy () {
+    window.removeEventListener('resize', this.myEventHandler)
+  },
+  mounted () {
+    this.myEventHandler()
+    window.addEventListener('resize', this.myEventHandler)
+  },
   methods: {
+    myEventHandler () {
+      // your code for handling resize...
+      if (window.innerWidth <= 992) {
+        this.desktop = false
+        this.mobile = true
+      } else {
+        this.desktop = true
+        this.mobile = false
+      }
+    },
     gameDataEmit (gameCat) {
       this.$emit('game-data-emit', gameCat)
     }
