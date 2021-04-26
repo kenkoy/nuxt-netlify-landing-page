@@ -1,3 +1,60 @@
+#filter-bar-mobile{
+  background: darken($MAIN_CONTENT_BG, 5%);
+  padding: 10px 0;
+
+  > .container{
+    justify-content: center;
+
+    > *{
+      margin: 0 5px;
+      width: 50%;
+    }
+  }
+}
+#filter{
+  form{
+    width: 100%;
+  }
+  aside{
+    position: relative;
+    margin-bottom: 20px;
+
+    &:before{
+      background-position: -38px -74px;
+      width: 32px;
+      height: 32px;
+      content: "";
+      position: absolute;
+      z-index: 1;
+      right: 4px;
+      top: 50%;
+      transform: translate(0, -50%);
+      pointer-events: none;
+      background-image: url(https://cdn.plaingaming.net/files/repository/103/3/10010/all/all/image/global-spritesheet-2x.png?qrunsd&607e&607e);
+      background-size: 720px;
+      background-position: -38px -74px;
+      border-left: #d3d3d3 1px solid;
+    }
+  }
+  select{
+    padding: 10px 40px 10px 10px;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 0;
+    cursor: pointer;
+    outline: 0;
+    width: 100%;
+    border-radius: 20px;
+    padding: 12px 20px;
+  }
+}
+
+
+
+
 .overlay{
   @include overlay;
 }
@@ -18,6 +75,10 @@
   @include game-list;
   .game{
     display: inline-block;
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
   }
 }
 

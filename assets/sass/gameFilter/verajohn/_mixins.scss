@@ -1,6 +1,5 @@
 @mixin main-content{
   background: $MAIN_CONTENT_BG;
-  padding: 20px;
   box-sizing: border-box;
   min-height: 100vh;
 }
@@ -9,6 +8,13 @@
   color: $GAME_TITLE_COLOR;
   font-size: $GAME_FONT_SIZE;
   text-align: center;
+
+  img{
+    transition: transform 300ms;
+  }
+  a:hover img{
+    transform: scale(1.05);
+  }
 }
 
 @mixin sub-content{
@@ -40,7 +46,7 @@
 @mixin overlay{
   backdrop-filter: blur(15px);
   position: absolute;
-  left: 0;
+  left: 50%;
   background: $OVERLAY_BG;
   border-radius: 10px;
   padding: 30px;
@@ -49,6 +55,9 @@
   text-align: left;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
+  width: 95%;
+  transform: translate(-50%, 0);
+  z-index: 3;
 
   &:before{
     position: absolute;
