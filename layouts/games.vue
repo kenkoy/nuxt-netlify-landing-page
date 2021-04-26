@@ -6,20 +6,16 @@
       :class="mdData.slug_name"
       class="game-main"
     >
-      <nav v-if="mobile === true" id="nav-mobile">
+      <nav v-if="mobile === true" id="filter-mobile">
         <div class="container">
-          <div>
-            <input v-model="search" placeholder="Search" type="text">
-            <button class="btn-primary find" :class="modal ? 'active' : ''" @click="modalFilterFn()">
-              Find game you'll love
-            </button>
-          </div>
+          <button class="btn-primary find mobile" :class="modal ? 'active' : ''" @click="modalFilterFn()">Find game you'll love</button>
+          <input v-model="search" placeholder="Search" type="text">
         </div>
       </nav>
       <section id="list-games">
         <div class="container main-content">
           <div>
-            <FilterSearch class="overlay" v-if="modal && filterOverlay === true" @game-data-emit="getGameCaregoryEmit" /> <!-- Filter components that overlay -->
+            <FilterSearch v-if="modal && filterOverlay === true" class="overlay" @game-data-emit="getGameCaregoryEmit" /> <!-- Filter components that overlay -->
             <!-- Container for the filter menu -->
             <div v-if="desktop === true" id="filter-bar">
               <div id="find-button">
@@ -39,8 +35,10 @@
               </div>
             </div>
 
-            <div> <!-- Container for the list of games -->
-              <div v-if="modal && filterOverlay !== true" id="game-filter" class="slideFadeDown"> <!-- Filter components that is NOT overlay -->
+            <!-- Container for the list of games -->
+            <div>
+              <div v-if="modal && filterOverlay !== true" id="game-filter" class="slideFadeDown">
+                <!-- Filter components that is NOT overlay -->
                 <FilterSearch @game-data-emit="getGameCaregoryEmit" />
               </div>
 
@@ -59,7 +57,8 @@
               </div>
             </div>
 
-            <div v-if="filteredGames.length >= limit" id="pagination-wrapper"> <!-- Pagination -->
+            <div v-if="filteredGames.length >= limit" id="pagination-wrapper">
+              <!-- Pagination -->
               <p v-if="filteredGames.length !== 0" class="pagination-text">
                 Showing {{ (filteredGames.length + limit) - filteredGames.length }} of {{ mdData.games.length }} games
               </p>

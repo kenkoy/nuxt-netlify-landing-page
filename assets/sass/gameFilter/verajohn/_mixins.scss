@@ -1,6 +1,5 @@
 @mixin main-content{
   background: $MAIN_CONTENT_BG;
-  padding: 20px;
   box-sizing: border-box;
   min-height: 100vh;
 }
@@ -12,10 +11,6 @@
 
   img{
     transition: transform 300ms;
-  }
-  a{
-    text-decoration: none;
-    color: inherit;
   }
   a:hover img{
     transform: scale(1.05);

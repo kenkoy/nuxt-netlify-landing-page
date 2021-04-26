@@ -1,3 +1,19 @@
+#filter-mobile{
+  background: darken($MAIN_CONTENT_BG, 5%);
+  padding: 10px 0;
+
+  > .container{
+    justify-content: center;
+
+    > *{
+      margin: 0 5px;
+    }
+  }
+}
+
+
+
+
 .overlay{
   @include overlay;
 }
@@ -19,6 +35,10 @@
   @include game-list;
   .game{
     display: inline-block;
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
   }
 }
 
