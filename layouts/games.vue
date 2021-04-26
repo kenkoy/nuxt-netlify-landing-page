@@ -47,7 +47,7 @@
               <div v-for="(game, gameIndex) in filteredGames" :key="gameIndex" class="game">
                 <div v-if="game.tags.includes(gameCat)">
                   <div v-if="gameIndex < limit">
-                    <a href="https://casino.verajohn.com/" target="_blank">
+                    <a rel="noopener" href="https://casino.verajohn.com/" target="_blank">
                       <img :src="game.image" :alt="game.title">
                       <p>{{ game.title }}</p>
                     </a>
