@@ -1,7 +1,9 @@
 <template>
   <div>
     <section v-if="desktop === true" id="filter">
-      <button class="close" @click="close()">x</button>
+      <button class="close" @click="close()">
+        x
+      </button>
       <div class="container">
         <form>
           <h3>Choose your favourite categories to find more games you'll love!</h3>
@@ -243,7 +245,8 @@ export default {
     },
     gameDataEmit (gameCat) {
       this.$emit('game-data-emit', gameCat)
-    }
+    },
+    close () { }
   }
 }
 </script>

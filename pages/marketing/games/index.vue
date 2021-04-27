@@ -28,6 +28,8 @@ export default {
     // .filter((mdFiles) => mdFiles.attributes.promo_template == 'VJLP3-NoForm')
 
     // return { posts: mdFilesContent.reverse(), dataMD: mdFilesContent.reverse() }
+    // eslint-disable-next-line no-console
+    console.log(mdFilesContent)
     return { posts: mdFilesContent.reverse() }
   },
   head () {

@@ -2,11 +2,10 @@
   <div class="core-wrapper" :class="{ game_wrapper: true }">
     <nuxt />
     <div
-      v-if="Object.keys(mdData).length > 0"
-      :class="mdData.slug_name"
+      v-if="Object.keys(gameData).length > 0"
+      :class="`${gameData.skin}-theme`"
       class="game-main"
     >
-
       <nav v-if="mobile === true" id="filter-bar-mobile">
         <div class="container">
           <button class="btn-primary find" :class="modal ? 'active' : ''" @click="modalFilterFn()">
@@ -49,9 +48,9 @@
             <div id="game-wrapper" class="gutter">
               <div v-for="(game, gameIndex) in filteredGames" :key="gameIndex" class="game">
                 <div v-if="gameIndex < limit">
-                  <a rel="noopener" href="https://casino.verajohn.com/" target="_blank">
-                    <img :src="game.image" :alt="game.title">
-                    <p>{{ game.title }}</p>
+                  <a rel="noopener" :href="`https://casino.verajohn.com/game/${game.game_name_url}`" target="_blank">
+                    <img :src="game.game_image" :alt="game.game_title">
+                    <p>{{ game.game_title }}</p>
                   </a>
                 </div>
               </div>
@@ -63,12 +62,12 @@
             <aside v-if="filteredGames.length >= limit" id="pagination-wrapper">
               <!-- Pagination -->
               <p v-if="filteredGames.length !== 0" class="pagination-text">
-                Showing {{ (filteredGames.length + limit) - filteredGames.length }} of {{ mdData.games.length }} games
+                Showing {{ (filteredGames.length + limit) - filteredGames.length }} of {{ filteredGames.length }} games
               </p>
-              <a v-if="filteredGames.length !== 0 && (filteredGames.length + limit) - filteredGames.length < mdData.games.length" class="load-more" @click="showMore">
+              <a v-if="filteredGames.length !== 0 && (filteredGames.length + limit) - filteredGames.length < games.length" class="load-more" @click="showMore">
                 Load more
               </a>
-              <h3 v-if="(filteredGames.length + limit) - filteredGames.length === mdData.games.length">
+              <h3 v-if="(filteredGames.length + limit) - filteredGames.length === games.length">
                 All games shown
               </h3>
             </aside>
@@ -92,7 +91,8 @@ export default {
       mobile: false,
       filterOverlay: false,
       modal: false,
-      mdData: {},
+      gameData: {},
+      games: [],
       htmlBody: '',
       search: '',
       limit: 18,
@@ -102,15 +102,15 @@ export default {
   },
   computed: {
     filteredGames () {
-      return this.mdData.games.filter((game) => {
-        return game.title.toLowerCase().includes(this.search.toLowerCase())
+      return this.games.filter((game) => {
+        return game.game_title.toLowerCase().includes(this.search.toLowerCase())
       })
     }
   },
   created () {
     this.$root.$once('game-data', (data) => {
-      this.htmlBody = data.htmlData
-      this.mdData = data.yamlData
+      this.gameData = data
+      this.games = data.feed
     })
   },
   beforeDestroy () {
