@@ -6,18 +6,21 @@
       :class="mdData.slug_name"
       class="game-main"
     >
+
       <nav v-if="mobile === true" id="filter-bar-mobile">
         <div class="container">
           <button class="btn-primary find" :class="modal ? 'active' : ''" @click="modalFilterFn()">
-            Find game you'll love
+            Search games
           </button>
           <input v-model="search" placeholder="Search" type="text">
         </div>
       </nav>
+
       <section id="list-games">
         <div class="container main-content">
           <div>
             <FilterSearch v-if="modal && filterOverlay === true" class="overlay" @game-data-emit="getGameCaregoryEmit" /> <!-- Filter components that overlay -->
+
             <!-- Container for the filter menu -->
             <div v-if="desktop === true" id="filter-bar">
               <div id="find-button">
@@ -46,12 +49,10 @@
 
               <div v-for="(game, gameIndex) in filteredGames" :key="gameIndex" class="game">
                 <div v-if="gameIndex < limit">
-                  <div>
-                    <a rel="noopener" href="https://casino.verajohn.com/" target="_blank">
-                      <img :src="game.image" :alt="game.title">
-                      <p>{{ game.title }}</p>
-                    </a>
-                  </div>
+                  <a rel="noopener" href="https://casino.verajohn.com/" target="_blank">
+                    <img :src="game.image" :alt="game.title">
+                    <p>{{ game.title }}</p>
+                  </a>
                 </div>
               </div>
               <div v-if="filteredGames.length === 0" class="no-available-games">
@@ -59,7 +60,7 @@
               </div>
             </div>
 
-            <div v-if="filteredGames.length >= limit" id="pagination-wrapper">
+            <aside v-if="filteredGames.length >= limit" id="pagination-wrapper">
               <!-- Pagination -->
               <p v-if="filteredGames.length !== 0" class="pagination-text">
                 Showing {{ (filteredGames.length + limit) - filteredGames.length }} of {{ mdData.games.length }} games
@@ -70,7 +71,7 @@
               <h3 v-if="(filteredGames.length + limit) - filteredGames.length === mdData.games.length">
                 All games shown
               </h3>
-            </div>
+            </aside>
           </div>
         </div>
       </section>

@@ -1,6 +1,7 @@
 <template>
   <div>
     <section v-if="desktop === true" id="filter">
+      <button class="close" @click="close()">x</button>
       <div class="container">
         <form>
           <h3>Choose your favourite categories to find more games you'll love!</h3>
@@ -39,29 +40,29 @@
     <section v-if="mobile === true" id="filter">
       <div class="container">
         <form>
-          <aside>
+          <div class="select-wrapper">
             <select>
               <option v-for="(cats, cats_index) in categories" :key="cats_index">
                 {{ cats.name }}
               </option>
             </select>
-          </aside>
+          </div>
 
-          <aside>
+          <div class="select-wrapper">
             <select>
               <option v-for="(cats, cats_index) in categories" :key="cats_index">
                 {{ cats.name }}
               </option>
             </select>
-          </aside>
+          </div>
 
-          <aside>
+          <div class="select-wrapper">
             <select>
               <option v-for="(cats, cats_index) in categories" :key="cats_index">
                 {{ cats.name }}
               </option>
             </select>
-          </aside>
+          </div>
         </form>
       </div>
     </section>
