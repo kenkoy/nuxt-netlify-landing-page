@@ -2,13 +2,15 @@
   <div class="core-wrapper" :class="{ post_wrapper: true }">
     <section id="featured-posts" :class="$nuxt.$route.name.includes('vj') ? 'vj-post-wrapper' : 'ic-post-wrapper'">
       <div class="container">
-        <div v-for="(post, post_index) in posts" :key="post_index" class="posts">
-          <nuxt-link :to="'/marketing/' + post.path + '/' + post.slug" class="post-preview">
-            <article>
-              <h3>{{ post.attributes.slug_name }}</h3>
-              <p>{{ post.attributes.promo_banner.promo_title }}</p>
-            </article>
-          </nuxt-link>
+        <div class="row">
+          <div v-for="(post, post_index) in posts" :key="post_index" class="posts">
+            <nuxt-link :to="'/marketing/' + post.path + '/' + post.slug" class="post-preview">
+              <article>
+                <h3>{{ post.attributes.slug_name }}</h3>
+                <p>{{ post.attributes.promo_banner.promo_title }}</p>
+              </article>
+            </nuxt-link>
+          </div>
         </div>
       </div>
     </section>
@@ -97,7 +99,7 @@ export default {
                 margin: 0;
             }
 
-            .container{
+            .row{
                 flex-wrap: wrap;
             }
 
@@ -111,7 +113,7 @@ export default {
         /* Custom, iPhone Retina */
         @media only screen and (min-width : 320px) {
             #featured-posts{
-                .container{
+                .row{
                     flex-wrap: wrap;
                     flex-direction: row;
                 }

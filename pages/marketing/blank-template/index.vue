@@ -22,7 +22,7 @@ export default {
     const mdFilesContent = await mdFiles.keys().map(key => ({
       ...mdFiles(key),
       slug: `${key.replace('.md', '').replace('./', '')}`,
-      path: 'vjlp5'
+      path: 'blank-template'
     }))
     // filter to vjlp3 templates only
     // .filter((mdFiles) => mdFiles.attributes.promo_template == 'VJLP3-NoForm')

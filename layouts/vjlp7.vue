@@ -8,31 +8,33 @@
     >
       <section id="hero" :style="cssBackground">
         <div class="container">
-          <div id="hero-text-wrapper">
-            <div>
-              <div id="login" class="animated">
-                <div class="fadeIn animated">
-                  <a :href="mdData.promo_banner.promo_login_button_redirect_url">
-                    <i class="material-icons">exit_to_app</i>
-                    <span>{{ mdData.promo_banner.promo_login_button }}</span>
-                  </a>
-                </div>
-              </div>
-              <img class="logo" src="@/assets/images/vjlp1v2/logo.png" alt="verajohn logo">
-              <div v-if="mdData.promo_banner.promo_render_title_first">
-                <h1 v-if="mdData.promo_banner.promo_title" v-html="bannerTitle" />
-                <h2 v-if="mdData.promo_banner.promo_subtitle" v-html="bannerSubtitle" />
-              </div>
-              <div v-else>
-                <h2 v-if="mdData.promo_banner.promo_subtitle" v-html="bannerSubtitle" />
-                <h1 v-if="mdData.promo_banner.promo_title" v-html="bannerTitle" />
-              </div>
-
-              <button class="animated infinite pulse">
-                <a :href="mdData.promo_banner.promo_join_button_redirect_url">{{ mdData.promo_banner.promo_join_button }}</a>
-              </button>
+          <div class="row">
+            <div id="hero-text-wrapper">
               <div>
-                <small v-html="bannerTerms" />
+                <div id="login" class="animated">
+                  <div class="fadeIn animated">
+                    <a :href="mdData.promo_banner.promo_login_button_redirect_url">
+                      <i class="material-icons">exit_to_app</i>
+                      <span>{{ mdData.promo_banner.promo_login_button }}</span>
+                    </a>
+                  </div>
+                </div>
+                <img class="logo" src="@/assets/images/vjlp1v2/logo.png" alt="verajohn logo">
+                <div v-if="mdData.promo_banner.promo_render_title_first">
+                  <h1 v-if="mdData.promo_banner.promo_title" v-html="bannerTitle" />
+                  <h2 v-if="mdData.promo_banner.promo_subtitle" v-html="bannerSubtitle" />
+                </div>
+                <div v-else>
+                  <h2 v-if="mdData.promo_banner.promo_subtitle" v-html="bannerSubtitle" />
+                  <h1 v-if="mdData.promo_banner.promo_title" v-html="bannerTitle" />
+                </div>
+
+                <button class="animated infinite pulse">
+                  <a :href="mdData.promo_banner.promo_join_button_redirect_url">{{ mdData.promo_banner.promo_join_button }}</a>
+                </button>
+                <div>
+                  <small v-html="bannerTerms" />
+                </div>
               </div>
             </div>
           </div>
@@ -62,15 +64,17 @@
 
       <section id="terms" class="separator">
         <div class="container">
-          <div>
-            <div v-html="htmlBody" />
-            <ul>
-              <li>
-                通常の
-                <a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と
-                <a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。
-              </li>
-            </ul>
+          <div class="row">
+            <div>
+              <div v-html="htmlBody" />
+              <ul>
+                <li>
+                  通常の
+                  <a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と
+                  <a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

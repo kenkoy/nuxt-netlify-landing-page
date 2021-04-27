@@ -23,6 +23,7 @@
           </div>
         </section>
       -->
+      <p>{{ mdData.promo_locale }}</p>
 
       <section id="terms">
         <div class="container">

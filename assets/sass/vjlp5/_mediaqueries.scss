@@ -31,7 +31,7 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  #header .container{
+  #header .row{
     justify-content: flex-end;
   }
   #header .logo{
@@ -91,7 +91,7 @@
       }
     }
   }
-  #hero .container{
+  #hero .row{
       flex-wrap: wrap;
       align-items: flex-end;
   }

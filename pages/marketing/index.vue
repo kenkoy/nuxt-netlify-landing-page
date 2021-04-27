@@ -11,41 +11,47 @@
           </div>
         </div>
         <div class="container">
-          <h1 class="animated fadeIn delay-1s typography">
-            デジタル取得サービス
-          </h1>
-          <p class="animated fadeIn delay-2s">
-            私たちは世界をリードするオンラインゲームオペレーターであり、進化するグローバルセクターでの将来の成長に向けて戦略的に位置づけられています。
-          </p>
+          <div class="row">
+            <h1 class="animated fadeIn delay-1s typography">
+              デジタル取得サービス
+            </h1>
+            <p class="animated fadeIn delay-2s">
+              私たちは世界をリードするオンラインゲームオペレーターであり、進化するグローバルセクターでの将来の成長に向けて戦略的に位置づけられています。
+            </p>
+          </div>
         </div>
       </section>
 
       <section id="about">
-        <div class="container column-2">
-          <div>
-            <p><strong>Play Online Casino at Vera&John</strong></p>
-            <p>Ladies and gentlemen, welcome to Vera&John casino, home to hundreds of amazing online slot games, table games, live casino games, and much more. Whether you want to play at home on your PC or tablet, or on the go with our amazing online mobile casino, you can be sure of a fun-filled casino experience with us.</p>
-          </div>
+        <div class="container">
+          <div class="row column-2">
+            <div>
+              <p><strong>Play Online Casino at Vera&John</strong></p>
+              <p>Ladies and gentlemen, welcome to Vera&John casino, home to hundreds of amazing online slot games, table games, live casino games, and much more. Whether you want to play at home on your PC or tablet, or on the go with our amazing online mobile casino, you can be sure of a fun-filled casino experience with us.</p>
+            </div>
 
-          <div>
-            <p><strong>InterCasino</strong></p>
-            <p>At InterCasino, you’re the real deal. You’re what matters most. And you deserve the best. That’s why you’re reading about one of the longest-running, prestigious and most trusted online casinos in the world.</p>
+            <div>
+              <p><strong>InterCasino</strong></p>
+              <p>At InterCasino, you’re the real deal. You’re what matters most. And you deserve the best. That’s why you’re reading about one of the longest-running, prestigious and most trusted online casinos in the world.</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="light-bg">
         <div class="container">
-          <div class="banner">
-            <!-- <h2 class="light-typography">Light <span>background</span></h2>
-            <h2 class="light-typography">hero image</h2> -->
-            <br><br>
-            <h2 class="light-typography">
-              明るい <span>背景</span>
-            </h2>
-            <h2 class="light-typography">
-              ヒーロー画像
-            </h2>
+          <div class="row">
+            <div class="banner">
+              <!-- <h2 class="light-typography">Light <span>background</span></h2>
+              <h2 class="light-typography">hero image</h2> -->
+              <br><br>
+              <h2 class="light-typography">
+                明るい <span>背景</span>
+              </h2>
+              <h2 class="light-typography">
+                ヒーロー画像
+              </h2>
+            </div>
           </div>
         </div>
       </section>
@@ -61,14 +67,16 @@
 
       <section id="dark-bg-inverted">
         <div class="container">
-          <div class="banner">
-            <!-- <h2 class="dark-typography">Dark background <br/> hero image</h2> -->
-            <h2 class="dark-typography">
-              暗い<span>背景</span>
-            </h2>
-            <h2 class="dark-typography">
-              ヒーロー画像
-            </h2>
+          <div class="row">
+            <div class="banner">
+              <!-- <h2 class="dark-typography">Dark background <br/> hero image</h2> -->
+              <h2 class="dark-typography">
+                暗い<span>背景</span>
+              </h2>
+              <h2 class="dark-typography">
+                ヒーロー画像
+              </h2>
+            </div>
           </div>
         </div>
       </section>
@@ -156,7 +164,7 @@ export default {
   background-size: cover;
 }
 .home_wrapper{
-  .intro .container{
+  .intro .row{
     height: calc(100vh - 143.4px);
     min-height: 500px;
   }
@@ -177,7 +185,7 @@ export default {
   #about{
     background: #31312E;
     padding: 30px;
-    .container{
+    .row{
       align-items: center;
     }
 
@@ -311,7 +319,7 @@ h3{
   background-size: cover;
   background-attachment: fixed;
 
-  .container{
+  .row{
     min-height: 500px;
     align-items: center;
   }
@@ -326,7 +334,7 @@ h3{
   background: url('~assets/images/home-darker.jpg') no-repeat center;
   background-size: cover;
 
-  .container{
+  .row{
     min-height: 500px;
     align-items: center;
     justify-content: flex-end;
