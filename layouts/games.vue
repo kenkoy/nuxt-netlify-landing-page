@@ -40,13 +40,13 @@
               </div>
             </div>
 
-            <!-- Container for the list of games -->
-            <div>
-              <div v-if="modal && filterOverlay !== true" id="game-filter" class="slideFadeDown">
-                <!-- Filter components that is NOT overlay -->
-                <FilterSearch @game-data-emit="getGameCaregoryEmit" />
-              </div>
+            <div v-if="modal && filterOverlay !== true" id="game-filter" class="slideFadeDown">
+              <!-- Filter components that is NOT overlay -->
+              <FilterSearch @game-data-emit="getGameCaregoryEmit" />
+            </div>
 
+            <!-- Container for the list of games -->
+            <div id="game-wrapper" class="gutter">
               <div v-for="(game, gameIndex) in filteredGames" :key="gameIndex" class="game">
                 <div v-if="gameIndex < limit">
                   <a rel="noopener" href="https://casino.verajohn.com/" target="_blank">

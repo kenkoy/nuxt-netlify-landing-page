@@ -9,6 +9,10 @@
   .overlay{
     top: 0;
   }
+  .gutter{
+    margin-left: -10px;
+    margin-right: -10px;
+  }
   #list-games{
     #filter-bar{
       display: block;
@@ -35,11 +39,6 @@
         width: 100%;
         margin: 25px 0;
       }
-    }
-
-    #filter-bar + div{
-      margin-left: -10px;
-      margin-right: -10px;
     }
 
     .game > div{
@@ -129,11 +128,9 @@
   .main-content{
     max-width: 1060px;
   }
-  #list-games{
-    #filter-bar + div{
-      margin-left: -40px;
-      margin-right: -40px;
-    }
+  .gutter{
+    margin-left: -40px;
+    margin-right: -40px;
   }
 }
 
