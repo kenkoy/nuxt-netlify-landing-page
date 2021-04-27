@@ -8,14 +8,14 @@
         <form>
           <h3>Choose your favourite categories to find more games you'll love!</h3>
 
-          <label v-for="(cats, cats_index) in categories" :key="cats_index" class="switch">
+          <label v-for="(category, catIndex) in categories" :key="catIndex" class="switch">
             <input
               type="radio"
               name="cat"
-              :value="cats.tags"
-              @click="gameDataEmit(cats.tags)"
+              :value="category.tags"
+              @click="gameDataEmit(category.tags)"
             >
-            <a class="slider noselect">{{ cats.name }}</a>
+            <a class="slider noselect">{{ category.name }}</a>
           </label>
         </form>
       </div>
@@ -26,14 +26,14 @@
         <form>
           <h3>Game provider</h3>
 
-          <label v-for="(cats, cats_index) in categories" :key="cats_index" class="switch">
+          <label v-for="(provider, provIndex) in providers" :key="provIndex" class="switch">
             <input
               type="radio"
               name="cat"
-              :value="cats.tags"
-              @click="gameDataEmit(cats.tags)"
+              :value="provider.tags"
+              @click="gameDataEmit(provider.tags)"
             >
-            <a class="slider noselect">{{ cats.name }}</a>
+            <a class="slider noselect">{{ provider.name }}</a>
           </label>
         </form>
       </div>
@@ -73,156 +73,26 @@
 
 <script>
 export default {
+  props: {
+    categories: {
+      type: Array,
+      required: false,
+      default () {
+        return []
+      }
+    },
+    providers: {
+      type: Array,
+      required: false,
+      default () {
+        return []
+      }
+    }
+  },
   data () {
     return {
       desktop: true,
-      mobile: false,
-      categories: [
-        {
-          name: 'Promoted',
-          tags: 'promoted'
-        },
-        {
-          name: 'All games',
-          tags: 'all_games'
-        },
-        {
-          name: 'Slots',
-          tags: 'slots'
-        },
-        {
-          name: 'Provider of the Month',
-          tags: 'provider_of_the_month'
-        },
-        {
-          name: 'Promoted',
-          tags: 'promoted'
-        },
-        {
-          name: 'All games',
-          tags: 'all_games'
-        },
-        {
-          name: 'Slots',
-          tags: 'slots'
-        },
-        {
-          name: 'Provider of the Month',
-          tags: 'provider_of_the_month'
-        },
-        {
-          name: 'Promoted',
-          tags: 'promoted'
-        },
-        {
-          name: 'All games',
-          tags: 'all_games'
-        },
-        {
-          name: 'Slots',
-          tags: 'slots'
-        },
-        {
-          name: 'Provider of the Month',
-          tags: 'provider_of_the_month'
-        },
-        {
-          name: 'Promoted',
-          tags: 'promoted'
-        },
-        {
-          name: 'All games',
-          tags: 'all_games'
-        },
-        {
-          name: 'Slots',
-          tags: 'slots'
-        },
-        {
-          name: 'Provider of the Month',
-          tags: 'provider_of_the_month'
-        },
-        {
-          name: 'Promoted',
-          tags: 'promoted'
-        },
-        {
-          name: 'All games',
-          tags: 'all_games'
-        },
-        {
-          name: 'Slots',
-          tags: 'slots'
-        },
-        {
-          name: 'Provider of the Month',
-          tags: 'provider_of_the_month'
-        },
-        {
-          name: 'Promoted',
-          tags: 'promoted'
-        },
-        {
-          name: 'All games',
-          tags: 'all_games'
-        },
-        {
-          name: 'Slots',
-          tags: 'slots'
-        },
-        {
-          name: 'Provider of the Month',
-          tags: 'provider_of_the_month'
-        },
-        {
-          name: 'Promoted',
-          tags: 'promoted'
-        },
-        {
-          name: 'All games',
-          tags: 'all_games'
-        },
-        {
-          name: 'Slots',
-          tags: 'slots'
-        },
-        {
-          name: 'Provider of the Month',
-          tags: 'provider_of_the_month'
-        },
-        {
-          name: 'Promoted',
-          tags: 'promoted'
-        },
-        {
-          name: 'All games',
-          tags: 'all_games'
-        },
-        {
-          name: 'Slots',
-          tags: 'slots'
-        },
-        {
-          name: 'Provider of the Month',
-          tags: 'provider_of_the_month'
-        },
-        {
-          name: 'Promoted',
-          tags: 'promoted'
-        },
-        {
-          name: 'All games',
-          tags: 'all_games'
-        },
-        {
-          name: 'Slots',
-          tags: 'slots'
-        },
-        {
-          name: 'Provider of the Month',
-          tags: 'provider_of_the_month'
-        }
-      ]
+      mobile: false
     }
   },
   beforeDestroy () {

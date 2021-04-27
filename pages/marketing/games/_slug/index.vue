@@ -3,13 +3,28 @@
 </template>
 
 <script>
+import Game from '@/models/Game'
+
 export default {
-  layout: 'games', // Change to actual layout
+  layout: 'games',
   async asyncData ({ params, error }) {
     try {
       const game = await import('~/assets/content/games.json')
+      const gameData = game.data
       return {
-        gameData: game.data,
+        gameFilterData: {
+          filter: gameData.available_filters.GAME_FINDER.map(f => ({
+            id: f.filterid,
+            name: f.filtername,
+            code: f.filtercode,
+            description: f.description
+          })),
+          sort: gameData.available_sort,
+          provider: [],
+          games: gameData.feed.map((f) => {
+            return new Game(f.game_title, f.game_name_url, f.game_image)
+          })
+        },
         skin: params.slug
       }
     } catch (e) {
@@ -17,17 +32,11 @@ export default {
     }
   },
   mounted () {
-    this.emitData(this.gameData, this.skin)
+    this.emitData(this.gameFilterData, this.skin)
   },
   methods: {
     emitData (data, skin) {
-      this.$root.$emit('game-data', {
-        finder: data.available_filters.GAME_FINDER,
-        sort: data.available_sort,
-        provider: [],
-        feed: data.feed,
-        skin
-      })
+      this.$root.$emit('game-data', { ...data, skin })
     }
   }
 }
