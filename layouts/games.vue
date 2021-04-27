@@ -18,7 +18,13 @@
       <section id="list-games">
         <div class="container main-content">
           <div>
-            <FilterSearch v-if="modal && filterOverlay === true" class="overlay" @game-data-emit="getGameCaregoryEmit" /> <!-- Filter components that overlay -->
+            <!-- Filter components that overlay -->
+            <FilterSearch
+              v-if="modal && filterOverlay === true"
+              class="overlay"
+              :categories="gameCategories"
+              @game-data-emit="getGameCategoryEmit"
+            />
 
             <!-- Container for the filter menu -->
             <div v-if="desktop === true" id="filter-bar">
