@@ -64,8 +64,10 @@
 
     .container{
       background: var(--bg-image-m) no-repeat center;
-      min-height: 400px;
       background-size: var(--mobile-width-banner);
+    }
+    .banner-wrapper{
+      min-height: 400px;
     }
     #banner-button{
       margin-bottom: 30px;
@@ -158,7 +160,7 @@
 /* Iphone 5/SE */
 @media (max-height: 568px) and (max-width: 320px){
   #hero{
-    .container{
+    .banner-wrapper{
       min-height: 350px;
     }
       // .banner{
@@ -179,8 +181,10 @@
   background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)), var(--bg-banner) 50%;
     .container{
       background: var(--bg-image-m) no-repeat center;
-      min-height: 650px;
       background-size: cover;
+    }
+    .banner-wrapper{
+      min-height: 650px;
     }
   }
   #steps{
@@ -223,8 +227,10 @@
     background: linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)), var(--bg-banner) center;
     .container{
       background: var(--bg-image) no-repeat center;
-      min-height: 320px;
       background-size: var(--desktop-width-banner);
+    }
+    .banner-wrapper{
+      min-height: 320px;
     }
   }
 }

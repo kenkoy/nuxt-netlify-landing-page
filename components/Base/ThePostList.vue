@@ -77,62 +77,35 @@ export default {
       }
 
       #featured-posts{
-        background-size: cover;
-        padding: 50px 0;
-        min-height: calc(100vh - 180px);
+          background-size: cover;
+          padding: 50px 0;
+          min-height: calc(100vh - 180px);
 
-        a{
-          text-decoration: none;
-          font-size: 14px;
-          line-height: 24px;
-          display: block;
-          width: 100%;
-          height: 100%;
-          padding: 25px;
-          box-sizing: border-box;
-          -moz-box-sizing: border-box;
-          -webkit-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
-          -moz-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
-          box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
-        }
-        h3{
-          font-weight: 700;
-          font-size: 18px;
-          line-height: 25px;
-          text-transform: none;
-          margin: 0;
-        }
+          a{
+              text-decoration: none;
+              font-size: 14px;
+              line-height: 24px;
+              display: block;
+              width: 100%;
+              height: 100%;
+              padding: 25px;
+              box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              -webkit-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
+              -moz-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
+              box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
+          }
+          h3{
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 25px;
+              text-transform: none;
+              margin: 0;
+          }
 
-        #featured-posts{
-            background-size: cover;
-            padding: 50px 0;
-            min-height: calc(100vh - 180px);
-
-            a{
-                text-decoration: none;
-                font-size: 14px;
-                line-height: 24px;
-                display: block;
-                width: 100%;
-                height: 100%;
-                padding: 25px;
-                box-sizing: border-box;
-                -moz-box-sizing: border-box;
-                -webkit-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
-                -moz-box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
-                box-shadow: 0px -1px 10px 5px rgba(89, 89, 89, 0.1);
-            }
-            h3{
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 25px;
-                text-transform: none;
-                margin: 0;
-            }
-
-            .row{
-                flex-wrap: wrap;
-            }
+          .row{
+              flex-wrap: wrap;
+          }
 
         .posts{
           padding: 10px;
@@ -141,15 +114,14 @@ export default {
         }
       }
 
-        /* Custom, iPhone Retina */
-        @media only screen and (min-width : 320px) {
-            #featured-posts{
-                .row{
-                    flex-wrap: wrap;
-                    flex-direction: row;
-                }
-            }
+      /* Custom, iPhone Retina */
+      @media only screen and (min-width : 320px) {
+        #featured-posts{
+          .row{
+              flex-wrap: wrap;
+              flex-direction: row;
           }
+        }
       }
 
       /* Extra Small Devices, Phones */
