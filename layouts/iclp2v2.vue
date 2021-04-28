@@ -158,12 +158,14 @@
       </section>
       <section id="history">
         <div class="container">
-          <div>
-            <div class="desktop">
-              <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-History1.png">
-            </div>
-            <div class="mobile">
-              <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-History2.png">
+          <div class="row">
+            <div>
+              <div class="desktop">
+                <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-History1.png">
+              </div>
+              <div class="mobile">
+                <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-History2.png">
+              </div>
             </div>
           </div>
         </div>
@@ -171,13 +173,13 @@
           <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile-title.png">
         </div>
         <div class="container">
-          <div class="row">
+          <div class="row column-2">
             <div>
               <div class="title">
                 <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png" data-not-lazy>
               </div>
               <p class="separation-star" v-html="historyRougeParsedStatement" />
-              <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Rouge.png">
+              <img class="history-feat-img" alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Rouge.png">
             </div>
 
             <div>
@@ -185,7 +187,7 @@
                 <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png" data-not-lazy>
               </div>
               <p class="separation-star" v-html="historyChloeParsedStatement" />
-              <img alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Chole.png">
+              <img class="history-feat-img" alt="alt img" src="@/assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Chole.png">
             </div>
           </div>
         </div>

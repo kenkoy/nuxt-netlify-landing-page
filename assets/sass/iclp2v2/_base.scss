@@ -254,6 +254,13 @@ button {
   background: url('../assets/images/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-history-bg.jpg');
   position: relative;
 
+  .history-feat-img{
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+
   &:before{
     display: block;
     content: '';
@@ -276,12 +283,6 @@ button {
   }
 
   > .column-2 > div:first-child{
-    > img{
-      max-width: 500px;
-      width: 100%;
-      display: block;
-      margin: 20px auto;
-    }
     .title{
       overflow: hidden;
       width: 200px;
@@ -292,12 +293,6 @@ button {
     }
   }
   > .column-2 > div:first-child + div{
-    > img{
-      max-width: 500px;
-      width: 100%;
-      display: block;
-      margin: 20px auto;
-    }
     .title{
       overflow: hidden;
       width: 200px;

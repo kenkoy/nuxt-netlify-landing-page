@@ -137,7 +137,7 @@
     }
   }
   #pods{
-    .container{
+    .row{
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: row;
@@ -158,7 +158,7 @@
     display: none;
   }
   #pods{
-    .container > figure{
+    .row > figure{
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
         max-width: 33.333333%;
@@ -195,10 +195,10 @@
     padding-right: 20%;
   }
   #testimonials{
-    .container{
+    .row{
       flex-wrap: nowrap;
     }
-    .container:first-child{
+    .container:first-child .row{
       summary{
         &:after{
           content: '';
@@ -216,7 +216,7 @@
         }
       }
     }
-    .container:first-child + div{
+    .container:first-child + div .row{
       flex-direction: row;
 
       summary{
