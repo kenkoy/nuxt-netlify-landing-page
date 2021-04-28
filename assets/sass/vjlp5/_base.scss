@@ -13,6 +13,22 @@
     }
   }
 
+  .small-text{
+    font-size: $SMALL_TEXT;
+  }
+  .medium-text{
+    font-size: $MEDIUM_TEXT;
+  }
+  .large-text{
+    font-size: $LARGE_TEXT;
+  }
+
+  h1{
+    font-weight: 700;
+    margin: 10px 0;
+    font-family: 'MainFont-Medium', sans-serif;
+  }
+
   h2{
     color: $SUB_TITLE_COLOR
   }
@@ -25,6 +41,9 @@
       color: inherit;
       text-decoration: none;
       border-bottom: 2px dashed #FEE63D;
+  }
+  .highlight{
+    color: $HIGHLIGHT;
   }
 
   button {
@@ -80,18 +99,40 @@
 
 
   #hero {
-      background-color: $HERO_BG;
-      #banner-button a{
+    background-color: $HERO_BG;
+
+    .banner {
+      position: relative;
+      display: flex;
+      margin: auto;
+      max-width: 80%;
+      height: 100%;
+      padding: 70px 0;
+      box-sizing: border-box;
+    }
+    
+    .banner.left{
+      justify-content: flex-start;
+    }
+    .banner.center{
+      justify-content: center;
+    }
+    .banner.right{
+      justify-content: flex-end;
+    }
+
+    #banner-button {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+
+      a{
         border: none;
       }
+    }
   }
-  #hero .banner{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 100%;
-  }
-
 
   #steps{
     .container{
@@ -99,30 +140,4 @@
           background: #fff;
       }
     }
-  }
-
-  .version1 {
-    button {
-      &.warning {
-          display: inline-block;
-      }
-    }
-
-    h2 {
-      font-size: 1.5em;
-      font-weight: 500;
-    }
-    #section1 {
-      h2 {
-          font-size: 1.5em;
-      }
-    }
-  }
-
-  .version2 {
-      button {
-          &.warning {
-              display: none;
-          }
-      }
   }

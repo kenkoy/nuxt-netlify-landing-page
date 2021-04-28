@@ -12,6 +12,8 @@ body{
 .row{
     display: flex;
     position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .row > div{
     flex-grow: 1;
@@ -33,12 +35,12 @@ a{
     .row{
       margin: 0;
     }
-    .column-2,
-    .column-3,
-    .column-4{
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
+    // .column-2,
+    // .column-3,
+    // .column-4{
+    //     flex-wrap: wrap;
+    //     flex-direction: row;
+    // }
 }
 
 /* Extra Small Devices, Phones */

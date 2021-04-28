@@ -30,6 +30,10 @@
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
+
+    button.warning{
+      display: none;
+    }
   }
   #header .row{
     justify-content: flex-end;
@@ -67,34 +71,24 @@
       margin-bottom: 30px;
     }
 
-    .banner{
-      position: absolute;
-      right: 0;
-      top: 100px;
-      max-width: 210px;
-    }
-
-    h1{
-      font-size: 20px;
-      text-shadow: rgb(255, 255, 255) 0px 0px 0.6rem,
-      rgb(255, 255, 255) 0px 0px 1.5rem,
-      rgb(255, 255, 255) -0.2rem 0.1rem 1rem,
-      rgb(255, 255, 255) 0.2rem 0.1rem 1rem,
-      rgb(255, 255, 255) 0px -0.5rem 2rem,
-      rgb(255, 255, 255) 0px 0.5rem 3rem;
-      color: $TEXT_COLOR;
-      font-weight: 700;
-      font-family: 'MainFont-Medium', sans-serif;
-
-      span{
-        color: rgb(255, 217, 102);
-      }
-    }
+    // h1{
+    //   font-size: 20px;
+    //   text-shadow: rgb(255, 255, 255) 0px 0px 0.6rem,
+    //   rgb(255, 255, 255) 0px 0px 1.5rem,
+    //   rgb(255, 255, 255) -0.2rem 0.1rem 1rem,
+    //   rgb(255, 255, 255) 0.2rem 0.1rem 1rem,
+    //   rgb(255, 255, 255) 0px -0.5rem 2rem,
+    //   rgb(255, 255, 255) 0px 0.5rem 3rem;
+    //   color: $TEXT_COLOR;
+    //   font-weight: 700;
+    //   font-family: 'MainFont-Medium', sans-serif;
+    //
+    //   span{
+    //     color: rgb(255, 217, 102);
+    //   }
+    // }
   }
-  #hero .row{
-      flex-wrap: wrap;
-      align-items: flex-end;
-  }
+
 
   #hero button{
       display: block;
@@ -146,7 +140,7 @@
 
   #section1 h2{
     font-size: 46px;
-    line-height: 55px;
+    line-height: 65px;
   }
 
   #section2 h2{
@@ -159,29 +153,6 @@
       min-height: 100px;
     }
   }
-
-  footer{
-
-    #footer-icon{
-      text-align: center;
-
-      > a{
-        display: inline-block;
-        min-width: 70px;
-        vertical-align: middle;
-        border: none;
-        margin: 0 8px;
-      }
-    }
-
-    .second-footer{
-      padding: 25px 30px;
-    }
-
-    p{
-      text-align: center;
-    }
-  }
 }
 
 /* Iphone 5/SE */
@@ -190,10 +161,10 @@
     .container{
       min-height: 350px;
     }
-      .banner{
-        top: 50px;
-        max-width: 150px;
-      }
+      // .banner{
+      //   top: 50px;
+      //   max-width: 150px;
+      // }
   }
 }
 
@@ -211,15 +182,6 @@
       min-height: 650px;
       background-size: cover;
     }
-
-      .banner{
-        top: 200px;
-        max-width: 250px;
-
-        h1{
-          font-size: 23px;
-        }
-      }
   }
   #steps{
     .container{
@@ -264,16 +226,6 @@
       min-height: 320px;
       background-size: var(--desktop-width-banner);
     }
-
-    .banner{
-      top: 40px;
-      left: 0;
-      max-width: 300px;
-
-      h1{
-        font-size: 26px;
-      }
-    }
   }
 }
 
@@ -281,10 +233,6 @@
 @media only screen and (min-width : 992px) {
   #hero{
       background-size: cover;
-
-      .banner{
-        left: 20%;
-      }
   }
   #section3{
     .container{
@@ -317,6 +265,10 @@
     .container{
       background: var(--bg-image) no-repeat center;
       background-size: contain;
+    }
+    .banner{
+      max-width: 800px;
+      margin: auto;
     }
   }
 

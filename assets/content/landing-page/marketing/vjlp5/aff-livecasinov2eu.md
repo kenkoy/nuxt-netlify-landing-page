@@ -7,8 +7,8 @@ field_ids:
   go_container_id: OPT-PD9MB2F
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
-styles: version1
-template: game_slider
+variation: variation1
+steps_gameslider: game_slider
 promo_banner:
   banner_promo_join_button: ''
   promo_title: aff-livecasinov2eu
@@ -26,7 +26,7 @@ promo_banner:
   promo_join_button: 今すぐプレイ
   promo_login_button: 登録
   phrase: ''
-  promo_join_button_location: lower-right
+  promo_join_button_option: true
 steps:
   step_title_1: ''
   step_description_1: ''
