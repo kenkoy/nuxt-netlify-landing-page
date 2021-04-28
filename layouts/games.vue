@@ -89,6 +89,7 @@
 
 <script>
 import FilterSearch from '@/components/Views/FilterSearch.vue'
+import _ from 'lodash'
 
 export default {
   components: {
@@ -114,7 +115,10 @@ export default {
       })
     },
     gameCategories () {
-      return this.gameData.filter.map(f => ({ name: f.name, tags: f.code }))
+      return _.chain(this.gameData.filter)
+        .map(f => ({ name: f.name, tags: f.code }))
+        .uniqBy('tags')
+        .value()
     }
   },
   created () {
