@@ -1,5 +1,5 @@
-import fs from 'fs/promises'
-import axios from 'axios'
+const fs = require('fs/promises')
+const axios = require('axios')
 
 const gameDataPath = './assets/content/games.json'
 
