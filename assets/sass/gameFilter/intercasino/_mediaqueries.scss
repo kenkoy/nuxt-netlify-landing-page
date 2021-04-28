@@ -7,16 +7,17 @@
     display: block;
   }
   .overlay{
-    top: 70px;
-    width: 90%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    top: 0;
+  }
+  .gutter{
+    margin-left: -10px;
+    margin-right: -10px;
   }
   #list-games{
     #filter-bar{
       display: block;
 
-      > div:first-child{
+      #find-button{
         width: 20%;
         display: inline-block;
         vertical-align: top;
@@ -41,7 +42,8 @@
     }
 
     .game > div{
-      margin: $GAME_LIST_MARGIN calc(#{$GAME_LIST_MARGIN} - 22px);
+      margin: $GAME_LIST_MARGIN calc(#{$GAME_LIST_MARGIN} - 12px);
+      min-width: 84px;
 
       img{
         max-width: 80px;
@@ -68,10 +70,6 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-  .overlay{
-    top: 100%;
-    width: 100%;
-  }
   #list-games{
     #filter-bar{
       display: flex;
@@ -82,7 +80,6 @@
         margin: 0;
       }
 
-      > div:first-child,
       #description,
       #search{
         padding: 0 10px;
@@ -94,7 +91,7 @@
         text-align: left;
       }
       #search{
-        > * {
+        > p, input {
           display: inline-block;
           margin: 0 5px;
           color: #212121;
@@ -112,9 +109,13 @@
   .mobile{
     display: none;
   }
+  .overlay{
+    top: 80px;
+  }
   #list-games{
     .game > div{
       margin: $GAME_LIST_MARGIN;
+      min-width: 141px;
       img{
         max-width: inherit;
       }
@@ -124,7 +125,13 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+  .main-content{
+    max-width: 1060px;
+  }
+  .gutter{
+    margin-left: -40px;
+    margin-right: -40px;
+  }
 }
 
 /* Large Devices, Wide Screens */
