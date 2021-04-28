@@ -99,7 +99,7 @@ button {
     }
   }
 
-  > .column-2{
+  .column-2{
     img{
       max-width: 345px;
       width: 100%;
@@ -282,7 +282,7 @@ button {
     position: absolute;
   }
 
-  > .column-2 > div:first-child{
+  .column-2 > div:first-child{
     .title{
       overflow: hidden;
       width: 200px;
@@ -292,7 +292,7 @@ button {
       }
     }
   }
-  > .column-2 > div:first-child + div{
+  .column-2 > div:first-child + div{
     .title{
       overflow: hidden;
       width: 200px;
