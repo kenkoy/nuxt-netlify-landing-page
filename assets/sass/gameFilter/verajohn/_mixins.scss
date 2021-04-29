@@ -1,20 +1,24 @@
 @mixin main-content{
   background: $MAIN_CONTENT_BG;
-  padding: 20px;
   box-sizing: border-box;
-  min-height: calc(100vh - 250px);
+  min-height: 100vh;
 }
 
 @mixin game-list{
   color: $GAME_TITLE_COLOR;
   font-size: $GAME_FONT_SIZE;
   text-align: center;
+
+  img{
+    transition: transform 300ms;
+  }
+  a:hover img{
+    transform: scale(1.05);
+  }
 }
 
 @mixin sub-content{
   background: $ARTICLE_BG;
-  // border-top: $BORER;
-  // border-bottom: $BORER;
 
   h2{
     color: $ARTICLE_SUBTITLE_COLOR;
@@ -42,15 +46,18 @@
 @mixin overlay{
   backdrop-filter: blur(15px);
   position: absolute;
-  left: 0;
+  left: 50%;
   background: $OVERLAY_BG;
   border-radius: 10px;
   padding: 30px;
   min-height: 60vh;
-  height: 100%;
+  height: auto;
   text-align: left;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
+  width: 95%;
+  transform: translate(-50%, 0);
+  z-index: 3;
 
   &:before{
     position: absolute;
@@ -65,6 +72,50 @@
 
   h3{
     margin-top: 0;
+  }
+}
+
+@mixin game-filter{
+  text-align: left;
+  position: relative;
+
+  h3{
+    margin-top: 0;
+  }
+
+  border-radius: 10px;
+  background: #005173;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  &:before{
+    position: absolute;
+    left: 31px;
+    top: -10px;
+    content: "";
+    display: block;
+    border-width: 0 10px 10px;
+    border-style: solid;
+    border-color: #005173 transparent;
+  }
+
+  .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: $CHECKBOX_BG_CURRENT;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    min-width: inherit;
+    color: #fff;
+    z-index: 2;
   }
 }
 
@@ -83,7 +134,7 @@
       transition: .1s;
       border: 2px solid $CHECBOXK_BORDER;
       border-radius: 20px;
-      padding: 10px 20px;
+      padding: 5px 12px;
       cursor: pointer;
       float: left;
       margin: 5px;

@@ -5,10 +5,10 @@
   "author": "Digital Acquisition Services Team",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "node app.js && nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate && npm run copy:config",
+    "generate": "node app.js && nuxt generate && npm run copy:config",
     "copy:config": "cp -r static/marketing/admin/config.yml dist/marketing/",
     "test": "jest",
     "test:unit": "npm test -- --watch",

@@ -29,17 +29,6 @@ export default {
 
     // return { posts: mdFilesContent.reverse(), dataMD: mdFilesContent.reverse() }
     return { posts: mdFilesContent.reverse() }
-  },
-  head () {
-    return {
-      title: 'Vera&John - The fun online casino',
-      htmlAttrs: {
-        lang: 'ja'
-      },
-      bodyAttrs: {
-        id: 'ja-jp'
-      }
-    }
   }
 }
 </script>
