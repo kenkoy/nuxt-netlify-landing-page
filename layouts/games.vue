@@ -1,5 +1,5 @@
 <template>
-  <div class="core-wrapper" :class="{ game_wrapper: true }">
+  <div class="core-wrapper" :class="`${gameData.skin}-theme`">
     <nuxt />
     <div
       v-if="Object.keys(gameData).length > 0"
@@ -159,7 +159,10 @@ export default {
 </script>
 
 <style lang="scss">
-  .game_wrapper {
-    @import '@/assets/sass/gameFilter/style.scss';
+  .verajohn-theme {
+    @import '@/assets/sass/gameFilter/verajohn/style.scss';
+  }
+  .intercasino-theme {
+    @import '@/assets/sass/gameFilter/intercasino/style.scss';
   }
 </style>
