@@ -9,14 +9,9 @@
   .overlay{
     top: 0;
   }
-  // .gutter{
-  //   margin-left: -10px;
-  //   margin-right: -10px;
-  // }
-  #game-wrapper{
-    grid-template-columns: auto auto auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  .gutter{
+    margin-left: -10px;
+    margin-right: -10px;
   }
   #list-games{
     #filter-bar{
@@ -47,7 +42,7 @@
     }
 
     .game > div{
-      // margin: $GAME_LIST_MARGIN calc(#{$GAME_LIST_MARGIN} - 12px);
+      margin: $GAME_LIST_MARGIN calc(#{$GAME_LIST_MARGIN} - 12px);
       min-width: 84px;
 
       img{
@@ -75,9 +70,6 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-  #game-wrapper{
-    grid-template-columns: auto auto auto auto;
-  }
   #list-games{
     #filter-bar{
       display: flex;
@@ -122,6 +114,7 @@
   }
   #list-games{
     .game > div{
+      margin: $GAME_LIST_MARGIN;
       min-width: 141px;
       img{
         max-width: inherit;
@@ -135,17 +128,14 @@
   .main-content{
     max-width: 1060px;
   }
-  // .gutter{
-  //   margin-left: -40px;
-  //   margin-right: -40px;
-  // }
+  .gutter{
+    margin-left: -40px;
+    margin-right: -40px;
+  }
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-  #game-wrapper{
-    grid-template-columns: auto auto auto auto auto auto;
-  }
   #pagination-wrapper{
     .pagination-text{
       &:before,

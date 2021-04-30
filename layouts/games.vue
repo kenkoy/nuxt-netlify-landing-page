@@ -54,7 +54,7 @@
             </div>
 
             <!-- Container for the list of games -->
-            <div id="game-wrapper" class="container-grid">
+            <div id="game-wrapper" class="gutter">
               <div v-for="(game, gameIndex) in filteredGames" :key="gameIndex" class="game">
                 <div v-if="gameIndex < limit">
                   <a rel="noopener" :href="`https://casino.verajohn.com/game/${game.url}`" target="_blank">

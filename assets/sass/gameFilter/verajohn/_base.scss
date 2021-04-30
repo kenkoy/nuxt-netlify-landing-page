@@ -71,9 +71,11 @@
   @include main-content;
   border-top: 1px solid #75cbf0;
 }
+
 #list-games{
   @include game-list;
   .game{
+    display: inline-block;
     a{
       text-decoration: none;
       color: inherit;
