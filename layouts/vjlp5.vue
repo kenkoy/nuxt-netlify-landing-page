@@ -4,7 +4,7 @@
       <!-- PAGE HANDLING DATA -->
       <Vjlp5Data @emit-md-content="getMDcontent" />
 
-      <div v-for="(data_items, data_index) in md_data" :key="data_index" :class="data_items.attributes.styles">
+      <div v-for="(data_items, data_index) in md_data" :key="data_index" :class="data_items.attributes.variation">
         <header id="header">
           <div class="container">
             <div class="logo">
@@ -26,12 +26,14 @@
 
         <section id="hero" :style="cssBackground">
           <div class="container">
-            <div>
-              <div class="banner">
-                <h1 v-if="firstTitle" v-html="bannerTitle" />
-                <h1 v-if="secondTitle">
-                  {{ data_items.attributes.promo_banner.second_title }}
-                </h1>
+            <div class="banner-wrapper">
+              <div class="banner" :class="data_items.attributes.promo_banner.promo_banner_position">
+                <div>
+                  <h1 v-if="firstTitle" :class="data_items.attributes.promo_banner.promo_banner_font_size" v-html="bannerTitle" />
+                  <h1 v-if="secondTitle" :class="data_items.attributes.promo_banner.promo_banner_font_size">
+                    {{ data_items.attributes.promo_banner.second_title }}
+                  </h1>
+                </div>
               </div>
               <div
                 v-if="data_items.attributes.promo_banner.promo_join_button_option"
@@ -47,7 +49,7 @@
           </div>
         </section>
         <Steps
-          v-if="data_items.attributes.template === 'steps'"
+          v-if="data_items.attributes.steps_gameslider === 'steps'"
           :title1="data_items.attributes.steps.step_title_1"
           :description1="data_items.attributes.steps.step_description_1"
           :title2="data_items.attributes.steps.step_title_2"
@@ -56,7 +58,7 @@
           :description3="data_items.attributes.steps.step_description_3"
         />
         <GameSlider
-          v-if="data_items.attributes.template === 'game_slider'"
+          v-if="data_items.attributes.steps_gameslider === 'game_slider'"
           :game-data="data_items.attributes.game_images"
         />
 
@@ -175,7 +177,7 @@ export default {
     bannerTitle () {
       if (this.phrase) {
         const position = this.firstTitle.indexOf(this.phrase)
-        const text = `<span>${this.phrase}</span>`
+        const text = `<span class='highlight'>${this.phrase}</span>`
         const output = [this.firstTitle.slice(0, position), text, this.firstTitle.slice(position, 0)].join('')
         return output
       }
@@ -230,6 +232,9 @@ export default {
 
 <style lang="scss">
   .vjlp5_wrapper {
+    // Brand
+    @import '@/assets/sass/brand/vj_brand_variables.scss';
+
     // Template style
     @import '@/assets/sass/vjlp5/style.scss';
   }

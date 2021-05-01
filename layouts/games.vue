@@ -1,5 +1,5 @@
 <template>
-  <div class="core-wrapper" :class="{ game_wrapper: true }">
+  <div class="core-wrapper" :class="`${gameData.skin}-theme`">
     <nuxt />
     <div
       v-if="Object.keys(gameData).length > 0"
@@ -54,7 +54,7 @@
             </div>
 
             <!-- Container for the list of games -->
-            <div id="game-wrapper" class="container-grid">
+            <div id="game-wrapper" class="gutter">
               <div v-for="(game, gameIndex) in filteredGames" :key="gameIndex" class="game">
                 <div v-if="gameIndex < limit">
                   <a rel="noopener" :href="`https://casino.verajohn.com/game/${game.url}`" target="_blank">
@@ -159,7 +159,10 @@ export default {
 </script>
 
 <style lang="scss">
-  .game_wrapper {
-    @import '@/assets/sass/gameFilter/style.scss';
+  .verajohn-theme {
+    @import '@/assets/sass/gameFilter/verajohn/style.scss';
+  }
+  .intercasino-theme {
+    @import '@/assets/sass/gameFilter/intercasino/style.scss';
   }
 </style>

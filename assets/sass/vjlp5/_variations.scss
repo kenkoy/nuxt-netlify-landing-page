@@ -1,0 +1,75 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  /*==========  Variation 1  ==========*/
+  .variation1{
+    h1{
+      color: $LIGHT_TEXT_COLOR;
+      font-weight: 700;
+    }
+  }
+
+  /*==========  Variation 2  ==========*/
+  .variation2{
+    h1{
+      color: $SECONDARY_TEXT_COLOR;
+      font-weight: 700;
+    }
+  }
+
+  /*==========  Variation 3  ==========*/
+  .variation3{
+    h1{
+      background: linear-gradient($LIGHT_TEXT_COLOR, darken($LIGHT_TEXT_COLOR, 20%));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(2px 2px 3px darken($LIGHT_TEXT_COLOR, 100%));
+      font-weight: 700;
+
+      span{
+        background: linear-gradient($HIGHLIGHT_TEXT, lighten($HIGHLIGHT_TEXT, 3%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(2px 2px 3px darken($HIGHLIGHT, 5%));
+      }
+    }
+  }
+
+  /*==========  Variation 4 ==========*/
+  .variation4{
+    h1{
+      background: linear-gradient($SECONDARY_TEXT_COLOR, lighten($SECONDARY_TEXT_COLOR, 35%));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(2px 2px 3px darken($SECONDARY_TEXT_COLOR, 20%));
+      font-weight: 700;
+
+      span{
+        background: linear-gradient($HIGHLIGHT_TEXT, lighten($HIGHLIGHT_TEXT, 3%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(2px 2px 3px darken($HIGHLIGHT, 5%));
+      }
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 576px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

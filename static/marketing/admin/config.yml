@@ -79,15 +79,17 @@ collections:
               required: false,
               default: "GTM-MFD3NKM",
             }
-      - label: "Styles"
-        name: "styles"
+      - label: "Variation"
+        name: "variation"
         widget: "select"
-        default: "version1"
+        default: "variation4"
         options:
-          - { label: "Version 1", value: "version1" }
-          - { label: "Version 2", value: "version2" }
-      - label: "Template"
-        name: "template"
+          - { label: "Variation 1", value: "variation1" }
+          - { label: "Variation 2", value: "variation2" }
+          - { label: "Variation 3", value: "variation3" }
+          - { label: "Variation 4", value: "variation4" }
+      - label: "Steps/Game Slider"
+        name: "steps_gameslider"
         widget: "select"
         default: "steps"
         options:
@@ -99,6 +101,22 @@ collections:
         collapsed: true
         fields:
           - { label: "Title", name: "promo_title", widget: "string" }
+          - label: "Promo banner font size"
+            name: "promo_banner_font_size"
+            widget: "select"
+            default: "medium-text"
+            options:
+              - { label: "Small - 20px", value: "small-text" }
+              - { label: "Medium - 32px", value: "medium-text" }
+              - { label: "Large - 48px", value: "large-text" }
+          - label: "Promo banner position"
+            name: "promo_banner_position"
+            widget: "select"
+            default: "left"
+            options:
+              - { label: "Left", value: "left" }
+              - { label: "Center", value: "center" }
+              - { label: "Right", value: "right" }
           - {
               label: "Banner first title",
               name: "first_title",

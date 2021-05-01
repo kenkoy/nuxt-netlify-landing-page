@@ -74,6 +74,7 @@
 #list-games{
   @include game-list;
   .game{
+    display: inline-block;
     a{
       text-decoration: none;
       color: inherit;
