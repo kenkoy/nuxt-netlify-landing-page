@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  layout: 'seo', // Change to actual layout
+  layout: 'seo/slots', // Change to actual layout
   async asyncData ({ params, error }) {
     try {
       const markDownData = await import('~/assets/content/landing-page/marketing/vjlp5/' + params.slug + '.md') // Change to actual slug

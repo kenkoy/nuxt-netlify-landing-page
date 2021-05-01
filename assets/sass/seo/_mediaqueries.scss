@@ -1,0 +1,38 @@
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  #games{
+    .container-grid > .row{
+      grid-template-columns: auto auto auto;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  #games{
+    .container-grid > .row{
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  #games{
+    .container-grid > .row{
+      grid-template-columns: auto auto auto auto auto auto;
+    }
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

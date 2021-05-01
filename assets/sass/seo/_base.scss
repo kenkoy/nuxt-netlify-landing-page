@@ -1,82 +1,180 @@
-#menu-slide{
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #0082BA;
-  width: 320px;
-  max-width: 320px;
-  min-width: 320px;
-  height: 100%;
-  color: #fff;
+.seo-main{
+  overflow: hidden;
+}
+#overlay{
+  @include overlayMixins;
+}
+.separator{
+  border-bottom: solid 1px #0082BA;
+}
+.icon-wrapper{
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
 
+.negate-gutter{
+  margin-left: -$MARGINS;
+  margin-right: -$MARGINS
+}
+
+//==== SIDE MENU ===//
+#menu-slide{
+  @include menuSlideMixin;
+  p{
+    margin: 0;
+  }
   button{
-    background: transparent;
-    border: none;
-    outline: 0;
-    color: #fff;
-    font-size: 20px;
+    width: 100%;
+  }
+
+  #menu-slide-header{
+    display: flex;
+    background: $HEADER_BG;
+    > * {
+      flex-grow: 1;
+    }
   }
 }
-.page-slide{
-  transform: translate3d(320px,0,0);
-}
-main{
-  transition: transform .3s ease,-webkit-transform .3s ease;
-  height: 100vh;
-  background: #009ee7;
-  padding-top: 100px;
-}
-#header-menu{
-  background: linear-gradient(to bottom,#009ce4 0%,#0094d5 100%);
-  display: flex;
-  transition: transform .3s ease,-webkit-transform .3s ease;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-  padding: 10px 30px;
-  box-sizing: border-box;
 
+
+//==== NAVIGATION HEADER MENU ===//
+#header-menu.nav-slide-up{
+  top: -54px;
+}
+#header-menu.nav-slide-down{
+  top: 0;
+}
+#header-menu.nav-slide-up{
+  @at-root html body .seo-main .page-slide{
+    padding-top: 0;
+  }
+}
+#header-menu {
+  @include headerMenuMixin;
+
+  p {
+    font-size: 15px;
+  }
   > * {
     flex-grow: 1;
   }
 
-  .logo{
+  .logo {
     max-width: 80px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  #header-button > button {
+    margin: 8px 0;
   }
 }
 
-#menu{
-  background: transparent;
-  border: none;
-  outline: 0;
-
+.menu-gamburger{
+  min-height: $NAV_HEIGHT;
   > * {
     display: inline-block;
+    vertical-align: middle;
+  }
+  p{
+    margin: 0;
   }
   span{
     background: #fff;
-    width: 17px;
-    height: 2px;
-    margin: 2px 0;
-    display:block;
-    transition: all .4s ease;
+    border-radius: 5px;
+    width: 24px;
+    height: 4px;
+    margin: 4px 0;
+    display: block;
     transform-origin:0 0;
   }
 }
 
 
+//==== MAIN CONTENT ==//
+.page-slide{
+  transform: translate3d(320px,0,0);
+}
+main{
+  position: relative;
+  transition: all .3s ease;
+  min-height: 100vh;
+  height: 100%;
+  background: $MAIN_BG;
+  padding-top: $NAV_HEIGHT;
+  padding-bottom: 50px;
+}
 
+#games{
+  padding: $PADDING;
+  text-align: center;
 
+  .container-grid{
+    img{
+      display: block;
+      margin: auto;
+    }
+    p{
+      color: #fff;
+      font-size: 13px;
+    }
+  }
+}
 
+#game-tiles{
+  padding: $PADDING;
 
+  .loyalty{
+    margin-top: 20px;
+  }
+  .pods{
+    background: #0093D4;
+    padding: 8px;
+    border-radius: 9px;
+    max-width: 196px;
+    margin: $MARGINS;
+  }
+}
 
+#footer-login-register.footer-slide-down{
+  bottom: -54px;
+}
+#footer-login-register.footer-slide-up{
+  bottom: 0;
+}
+// #footer-login-register.footer-slide-down{
+//   @at-root html body .seo-main .page-slide{
+//     padding-bottom: 0;
+//   }
+// }
 
+#footer-login-register{
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  transition: all .3s ease;
 
+  > button{
+    flex-grow: 1;
+    border-radius: 0;
+    box-shadow: inset 0 1px 0 hsl(0deg 0% 100% / 50%), inset 0 -3px 3px rgb(0 0 0 / 20%);
+    padding: $PADDING;
+    height: 50px;
+    line-height: 20px;
+  }
+}
 
-.warning{
-  background-color: #F7901D;
-  background: linear-gradient(to bottom,#FFC933 0%,#F7901D 100%);
+.btn{
+  background: transparent;
+  border: none;
+  outline: 0;
+  color: #fff;
+  font-size: 20px;
+}
+.primary{
+  background: $BTN_PRIMARY_BG;
   height: 38px;
   line-height: 38px;
   border: none;
@@ -85,4 +183,14 @@ main{
   min-width: 150px;
   color: #fff;
   float: right;
+}
+.secondary{
+  background: $BTN_SECONDARY_BG;
+  height: 38px;
+  line-height: 38px;
+  border: none;
+  outline: 0;
+  border-radius: 10px;
+  min-width: 150px;
+  color: #fff;
 }
