@@ -1,6 +1,9 @@
 .seo-main{
   overflow: hidden;
 }
+@at-root body.noScroll{
+    overflow: hidden;
+}
 #overlay{
   @include overlayMixins;
 }
@@ -12,13 +15,43 @@
   height: 24px;
   overflow: hidden;
 }
-
 .negate-gutter{
   margin-left: -$MARGINS;
   margin-right: -$MARGINS
 }
 
-//==== SIDE MENU ===//
+
+
+//=== FONTS ===//
+h1{
+  font-size: $TITLE_SIZE;
+  color: $TITLE_TEXT_COLOR;
+  font-weight: 500;
+  font-family: 'Lucida Grande,sans-serif';
+  text-align: center;
+}
+h2{
+  font-size: $SUBTITLE_SIZE;
+  color: $SUBTITLE_COLOR;
+  font-weight: 500;
+  font-family: 'Lucida Grande,sans-serif';
+  text-align: center;
+}
+p{
+  font-size: $TEXT_SIZE;
+  color: $TEXT_COLOR;
+  font-weight: 500;
+  font-family: 'Lucida Grande,sans-serif';
+}
+a{
+  color: $LINK_COLOR;
+  text-decoration: none;
+  border-bottom: 2px dotted #85CEEF;
+}
+
+
+
+//=== SIDE MENU ===//
 #menu-slide{
   @include menuSlideMixin;
   p{
@@ -133,8 +166,38 @@ main{
     padding: 8px;
     border-radius: 9px;
     max-width: 196px;
+    min-height: 142px;
     margin: $MARGINS;
   }
+}
+
+#footer-links{
+  text-align: center;
+  background: #0093D4;
+  padding: $PADDING 0;
+
+  img{
+    display: block;
+    margin: 30px auto;
+    max-width: 180px;
+  }
+
+  .footer-item{
+    color: #fff;
+    background: #0082BA;
+    margin: $MARGINS 0;
+    padding: calc(#{$PADDING} / 2);
+
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+#seo-contents{
+  background: #0093D4;
+  padding: $PADDING;
 }
 
 #footer-login-register.footer-slide-down{
@@ -143,11 +206,11 @@ main{
 #footer-login-register.footer-slide-up{
   bottom: 0;
 }
-// #footer-login-register.footer-slide-down{
-//   @at-root html body .seo-main .page-slide{
-//     padding-bottom: 0;
-//   }
-// }
+#footer-login-register.footer-slide-down{
+  @at-root html body .seo-main .page-slide{
+    padding-bottom: 0;
+  }
+}
 
 #footer-login-register{
   display: flex;

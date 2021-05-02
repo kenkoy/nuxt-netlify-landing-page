@@ -4,14 +4,18 @@
 @media only screen and (min-width : 320px) {
   #games{
     .container-grid > .row{
-      grid-template-columns: auto auto auto;
+      grid-template-columns: auto auto;
     }
   }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
+  #games{
+    .container-grid > .row{
+      grid-template-columns: auto auto auto;
+    }
+  }
 }
 
 /* Small Devices, Tablets */
