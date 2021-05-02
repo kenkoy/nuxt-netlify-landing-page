@@ -9,7 +9,7 @@
         </div>
         <div class="row">
           <p>Please go to </p>
-          <span class="under-construction-links" v-for="(navLinks, navIndex) in navItems" :key="navIndex">
+          <span v-for="(navLinks, navIndex) in navItems" :key="navIndex" class="under-construction-links">
             <nuxt-link v-if="(navLinks.name.includes('seo-'))" :to="navLinks.path">
               {{ navLinks.name }}
             </nuxt-link>
@@ -19,19 +19,6 @@
     </section>
   </div>
 </template>
-
-<style scoped>
-#under-construction h1{
-  font-size: 70px;
-}
-#under-construction{
-  background: #009ee7;
-  height: 100vh;
-}
-#under-construction p{
-  margin: 0 10px;
-}
-</style>
 
 <script>
 export default {
@@ -52,3 +39,16 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+#under-construction h1{
+  font-size: 70px;
+}
+#under-construction{
+  background: #009ee7;
+  height: 100vh;
+}
+#under-construction p{
+  margin: 0 10px;
+}
+</style>

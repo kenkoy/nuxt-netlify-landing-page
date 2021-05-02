@@ -1,5 +1,5 @@
 <template>
-  <section id="game-slider">
+  <section id="banner-slider">
     <div class="container">
       <div class="slider">
         <VueSlickCarousel
@@ -8,18 +8,19 @@
           :infinite="true"
           :autoplay="true"
           :speed="300"
-          :slides-to-show="5"
+          :slides-to-show="1"
           :slides-to-scroll="1"
           v-bind="carouselSettings"
         >
-          <a
-            v-for="(data, index) in carouselData"
-            :key="index"
-            :href="data.link"
-            :aria-label="`link_${index + 1}`"
-          >
-            <img :alt="`image_${index + 1}`" :src="data.icon">
-          </a>
+          <div v-for="(data, index) in carouselData" :key="index">
+            <a
+              :href="data.link"
+              :aria-label="`link_${index + 1}`"
+            >
+              <img :alt="`image_${index + 1}`" :src="data.icon">
+            </a>
+            <button class="secondary">続きを読む</button>
+          </div>
         </VueSlickCarousel>
       </div>
     </div>
@@ -36,35 +37,18 @@ export default {
     VueSlickCarousel
   },
   props: {
-    gameData: {
+    bannerData: {
       type: Array,
       required: true
     }
   },
-  data () {
-    return {
-      carouselSettings: {
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              infinite: true,
-              autoplay: true
-            }
-          }
-        ]
-      }
-    }
-  },
   computed: {
     carouselData () {
-      const games = this.gameData
-      const links = Object.entries(games)
+      const banner = this.bannerData
+      const links = Object.entries(banner)
         .filter(data => data[0].includes('url'))
         .map(data => data[1])
-      const icons = Object.entries(games)
+      const icons = Object.entries(banner)
         .filter(data => data[0].includes('icon'))
         .map(data => data[1])
       return links.map((data, index) => ({
@@ -76,17 +60,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  #game-slider{
-    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);
-    padding: 10px 0;
-
+  #banner-slider{
+    padding: 30px 20px;
     .container{
       display: block;
+    }
+    button{
+      width: 100%;
+      height: 44px;
+      box-shadow: inset 0 1px 0 hsl(0deg 0% 100% / 50%), inset 0 -3px 3px rgb(0 0 0 / 20%);
     }
   }
   .slick-slide{
     img{
       margin: auto;
+      width: 100%;
     }
     a{
       border: none;

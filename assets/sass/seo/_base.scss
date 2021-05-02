@@ -52,6 +52,10 @@ a{
   text-decoration: none;
   border-bottom: 2px dotted #85CEEF;
 }
+.winning{
+  font-size: $WINNING_TEXT_SIZE;
+  color: $WINNING_TEXT_COLOR;
+}
 
 
 
@@ -166,12 +170,7 @@ main{
     margin-top: 20px;
   }
   .pods{
-    background: #0093D4;
-    padding: 8px;
-    border-radius: 9px;
-    max-width: 196px;
-    min-height: 142px;
-    margin: $MARGINS;
+    @include gamePods;
   }
 }
 

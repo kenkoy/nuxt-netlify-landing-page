@@ -2,13 +2,15 @@
   <nav v-if="menuToggle" id="menu-slide">
     <div id="menu-slide-header">
       <div>
-        <button class="btn" @click="pageSlideOff()">x</button>
+        <button class="btn" @click="pageSlideOff()">
+          x
+        </button>
       </div>
       <div>
         <p>メニュー</p>
       </div>
       <div class="icon-wrapper">
-        <i class="home-icon"></i>
+        <i class="home-icon" />
       </div>
     </div>
     <div>

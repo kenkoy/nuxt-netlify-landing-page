@@ -3,6 +3,8 @@ $SIDE_MENU_BG: #0082BA;
 $MAIN_BG: #009ee7;
 $OVERLAY_BG: #005F88;
 
+$GAME_PODS_BG: #0093D4;
+
 //=== BUTTONS ===//
 $BTN_PRIMARY_BG: linear-gradient(to bottom,#FFC933 0%,#F7901D 100%);
 $BTN_SECONDARY_BG: linear-gradient(180deg,#fa57cc .57%,#f444b8 27.16%,#ed30a3 51.89%,#e51e8d 88.16%,#bb116d);
@@ -15,7 +17,11 @@ $SUBTITLE_SIZE: 22px;
 $TEXT_COLOR: #fff;
 $TEXT_SIZE: 15px;
 $LINK_COLOR: #ffea00;
+$WINNING_TEXT_COLOR: #ffea00;
+$WINNING_TEXT_SIZE: 24px;
 
+$PODS_TEXT_COLOR: #ffea00;
+$PODS_TEXT_SIZE: 17px;
 
 
 //=== MARGINS / PADDINGS / HEIGHT ===//
