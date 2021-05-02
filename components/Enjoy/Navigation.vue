@@ -1,9 +1,18 @@
 <template>
-  <nav id="menu-slide" v-if="menuToggle">
-    <button @click="pageSlideOff()">x</button>
-
+  <nav v-if="menuToggle" id="menu-slide">
+    <div id="menu-slide-header">
+      <div>
+        <button class="btn" @click="pageSlideOff()">x</button>
+      </div>
+      <div>
+        <p>メニュー</p>
+      </div>
+      <div class="icon-wrapper">
+        <i class="home-icon"></i>
+      </div>
+    </div>
     <div>
-      <p>Enjoy a warm welcome with a 200% deposit bonus up to €100 on your first ever deposit! (T&C Apply)</p>
+      <h1>Menu Coming Soon</h1>
     </div>
   </nav>
 </template>
@@ -13,7 +22,7 @@ export default {
   data () {
     return {
       pageSlide: '',
-      menuToggle: false,
+      menuToggle: false
     }
   },
   methods: {

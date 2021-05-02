@@ -1,6 +1,10 @@
 .seo-main{
   overflow: hidden;
 }
+@at-root body{
+  padding: 0;
+  margin: 0;
+}
 @at-root body.noScroll{
     overflow: hidden;
 }
