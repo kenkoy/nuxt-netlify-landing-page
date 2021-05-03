@@ -127,13 +127,13 @@
               </div>
               <div class="row">
                 <div>
-                  <img src="@/assets/images/seo/visa-icon.png">
-                  <img src="@/assets/images/seo/master-icon.png">
-                  <img src="@/assets/images/seo/venus-point-icon.png">
-                  <img src="@/assets/images/seo/bitcoin-icon.png">
-                  <img src="@/assets/images/seo/playsafe-icon.png">
-                  <img src="@/assets/images/seo/eco-icon.png">
-                  <img src="@/assets/images/seo/i-wallet-icon.png">
+                  <img src="@/assets/images/seo/visa-icon.png" alt="alt img">
+                  <img src="@/assets/images/seo/master-icon.png" alt="alt img">
+                  <img src="@/assets/images/seo/venus-point-icon.png" alt="alt img">
+                  <img src="@/assets/images/seo/bitcoin-icon.png" alt="alt img">
+                  <img src="@/assets/images/seo/playsafe-icon.png" alt="alt img">
+                  <img src="@/assets/images/seo/eco-icon.png" alt="alt img">
+                  <img src="@/assets/images/seo/i-wallet-icon.png" alt="alt img">
                 </div>
               </div>
             </div>
@@ -144,7 +144,7 @@
               </div>
               <div class="row">
                 <div>
-                  <img src="@/assets/images/seo/e-icon.png">
+                  <img src="@/assets/images/seo/e-icon.png" alt="alt img">
                 </div>
               </div>
             </div>
@@ -152,8 +152,8 @@
             <div id="footer-logo">
               <div class="row">
                 <div>
-                  <img src="@/assets/images/seo/CEG_logo.png">
-                  <img src="@/assets/images/seo/20+.svg">
+                  <img src="@/assets/images/seo/CEG_logo.png" alt="alt img">
+                  <img src="@/assets/images/seo/20+.svg" alt="alt img">
                 </div>
                 <div>
                   <span>当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。<br>
