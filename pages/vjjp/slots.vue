@@ -89,7 +89,7 @@ export default {
   },
   methods: {
     emitData (data) {
-      this.$root.$emit('seo-data', { // Change to actual page name
+      this.$root.$emit('vjjp-data', { // Change to actual page name
         yamlData: data.attributes,
         htmlData: data.html
       })

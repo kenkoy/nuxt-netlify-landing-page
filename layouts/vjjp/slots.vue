@@ -1,9 +1,9 @@
 <template>
-  <div class="enjoy-wrapper" :class="{ seo_wrapper: true }">
+  <div class="enjoy-wrapper" :class="{ vjjp_wrapper: true }">
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
-      class="seo-main"
+      class="vjjp-main"
     >
       <nav v-if="menuToggle" id="menu-slide">
         <div id="menu-slide-header">
@@ -196,13 +196,13 @@ export default {
     }
   },
   created () {
-    this.$root.$once('seo-data', (data) => {
+    this.$root.$once('vjjp-data', (data) => {
       this.htmlBody = data.htmlData
       this.mdData = data.yamlData
     })
   },
   beforeDestroy () {
-    this.$root.$off('seo-data')
+    this.$root.$off('vjjp-data')
   },
   methods: {
     pageSlideOn () {
@@ -222,7 +222,7 @@ export default {
 </script>
 
 <style lang="scss">
-  .seo_wrapper {
-    @import '@/assets/sass/seo/style.scss';
+  .vjjp_wrapper {
+    @import '@/assets/sass/vjjp/style.scss';
   }
 </style>

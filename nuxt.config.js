@@ -67,6 +67,8 @@ export default {
   css: [
     '~/assets/sass/global/animate.min.css',
     '~/assets/sass/global/fonts.css',
+    '~/assets/sass/global/verajohn_jp_figma.min.css',
+    '~/assets/sass/global/verajohn_jp_main.min.css',
     '~/assets/sass/global/style.scss'
   ],
   /*
