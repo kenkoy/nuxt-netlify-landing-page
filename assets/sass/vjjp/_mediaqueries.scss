@@ -7,6 +7,12 @@
       grid-template-columns: auto auto;
     }
   }
+  #footer-logo{
+    .row{
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -23,6 +29,18 @@
   #games{
     .container-grid > .row{
       grid-template-columns: auto auto auto auto;
+    }
+  }
+  #footer-logo{
+    .row > div:first-child{
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+    .row > div:first-child + div{
+      -ms-flex: 0 0 80%;
+      flex: 0 0 80%;
+      max-width: 80%;
     }
   }
 }

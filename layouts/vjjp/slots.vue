@@ -182,7 +182,7 @@
 </template>
 
 <script>
-import BannerSlider from '~/components/Enjoy/BannerSlider.vue'
+import BannerSlider from '~/components/Vjjp/BannerSlider.vue'
 export default {
   components: {
     BannerSlider
