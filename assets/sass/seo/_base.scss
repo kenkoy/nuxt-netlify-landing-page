@@ -11,8 +11,29 @@
 #overlay{
   @include overlayMixins;
 }
-.separator{
-  border-bottom: solid 1px #0082BA;
+.separator-top{
+  :after{
+    background: #0082BA;
+    display: block;
+    content: '';
+    position: absolute;
+    top: -$PADDING;
+    left: 0;
+    width: 100%;
+    height: .5px;
+  }
+}
+.separator-bottom{
+  :before{
+    background: #0082BA;
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: -$PADDING;
+    left: 0;
+    width: 100%;
+    height: .5px;
+  }
 }
 .icon-wrapper{
   width: 24px;
@@ -162,6 +183,7 @@ main{
     p{
       color: #fff;
       font-size: 13px;
+      margin: 0;
     }
   }
 }
@@ -207,7 +229,18 @@ main{
 
     a{
       text-decoration: none;
+      border: none;
       color: inherit;
+
+      img{
+        max-width: 25px;
+      }
+
+      > * {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 5px;
+      }
     }
   }
 }

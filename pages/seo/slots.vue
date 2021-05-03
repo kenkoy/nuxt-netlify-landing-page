@@ -20,7 +20,7 @@ export default {
     const gtmId = tagIds.gtm_container_id || 'GTM-MFD3NKM'
 
     return {
-      title: 'Vera&John',
+      title: 'オンラインビデオスロット | Vera&John(ベラジョンカジノ)',
       htmlAttrs: {
         lang: this.markDownData.attributes.promo_locale.promo_language_code
       },

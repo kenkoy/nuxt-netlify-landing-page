@@ -52,7 +52,7 @@
         <BannerSlider :banner-data="mdData.banner_images" />
 
         <section id="games">
-          <div class="container-grid separator">
+          <div class="container-grid separator-top separator-bottom">
             <div class="row">
               <div v-for="(games, games_index) in mdData.game_list" :key="games_index">
                 <a :href="games.link">
@@ -99,12 +99,14 @@
           <img src="@/assets/images/seo/footer-verajohn.png" alt="alt img">
           <div class="footer-item">
             <a href="/ja/help">
-              ヘルプ・センター
+              <img src="@/assets/images/seo/help-icon.png"/>
+              <span>ヘルプ・センター</span>
             </a>
           </div>
           <div class="footer-item">
             <a href="/ja/about/beginnersguidemb">
-              ビギナーズガイド
+              <img src="@/assets/images/seo/beginner-guide-icon.png"/>
+              <span>ビギナーズガイド</span>
             </a>
           </div>
         </section>
@@ -147,8 +149,8 @@
             </div>
           </div>
           <div class="container">
-            <a href="https://www.play-wise.com/verajohn-jp/" data-page-hash="gaming-limits-subpage">
-              <span class="n-link">ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。</span>
+            <a href="https://www.play-wise.com/verajohn-jp/">
+              <span>ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。</span>
             </a>
           </div>
         </footer>
