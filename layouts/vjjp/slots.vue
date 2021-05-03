@@ -99,13 +99,13 @@
           <img src="@/assets/images/seo/footer-verajohn.png" alt="alt img">
           <div class="footer-item">
             <a href="/ja/help">
-              <img src="@/assets/images/seo/help-icon.png"/>
+              <img src="@/assets/images/seo/help-icon.png" alt="alt img"/>
               <span>ヘルプ・センター</span>
             </a>
           </div>
           <div class="footer-item">
             <a href="/ja/about/beginnersguidemb">
-              <img src="@/assets/images/seo/beginner-guide-icon.png"/>
+              <img src="@/assets/images/seo/beginner-guide-icon.png" alt="alt img"/>
               <span>ビギナーズガイド</span>
             </a>
           </div>
