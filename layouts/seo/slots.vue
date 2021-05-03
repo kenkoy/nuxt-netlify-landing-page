@@ -43,7 +43,7 @@
           </div>
 
           <div id="header-button">
-            <button class="primary login">
+            <button class="secondary login">
               今すぐ登録しよう!
             </button>
           </div>
