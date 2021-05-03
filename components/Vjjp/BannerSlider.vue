@@ -19,7 +19,7 @@
             >
               <img :alt="`image_${index + 1}`" :src="data.icon">
             </a>
-            <button class="secondary">続きを読む</button>
+            <button class="n-button n-button--secondary">続きを読む</button>
           </div>
         </VueSlickCarousel>
       </div>

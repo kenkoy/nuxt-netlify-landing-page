@@ -43,7 +43,7 @@
           </div>
 
           <div id="header-button">
-            <button class="secondary login">
+            <button class="n-button n-button--primary login">
               今すぐ登録しよう!
             </button>
           </div>
@@ -55,7 +55,7 @@
           <div class="container-grid separator-top separator-bottom">
             <div class="row">
               <div v-for="(games, games_index) in mdData.game_list" :key="games_index">
-                <a :href="games.link">
+                <a class="n-link" :href="games.link">
                   <img :src="games.img" :alt="games.text">
                   <p>{{ games.text }}</p>
                 </a>
@@ -68,15 +68,15 @@
           <div class="container">
             <div class="row column-4 game-menu negate-gutter">
               <div class="pods dice">
-                <h3>ライブカジノ</h3>
+                <h3 class="h2 emphasize">ライブカジノ</h3>
                 <img src="@/assets/images/seo/dice-icon.png" alt="alt img">
               </div>
               <div class="pods trophy">
-                <h3>ライブカジノ</h3>
+                <h3 class="h2 emphasize">ライブカジノ</h3>
                 <img src="@/assets/images/seo/trophy-icon.png" alt="alt img">
               </div>
               <div class="pods card">
-                <h3>ライブカジノ</h3>
+                <h3 class="h2 emphasize">ライブカジノ</h3>
                 <img src="@/assets/images/seo/card-icon.png" alt="alt img">
               </div>
             </div>
@@ -85,7 +85,7 @@
           <div class="container">
             <div class="row column-4 negate-gutter">
               <div class="pods loyalty">
-                <h3>ライブカジノ</h3>
+                <h3 class="h2 emphasize">ライブカジノ</h3>
                 <p>賞金プール</p>
                 <p class="winning">
                   $3,000.00
@@ -98,13 +98,13 @@
         <section id="footer-links">
           <img src="@/assets/images/seo/footer-verajohn.png" alt="alt img">
           <div class="footer-item">
-            <a href="/ja/help">
+            <a class="n-link" href="/ja/help">
               <img src="@/assets/images/seo/help-icon.png" alt="alt img"/>
               <span>ヘルプ・センター</span>
             </a>
           </div>
           <div class="footer-item">
-            <a href="/ja/about/beginnersguidemb">
+            <a class="n-link" href="/ja/about/beginnersguidemb">
               <img src="@/assets/images/seo/beginner-guide-icon.png" alt="alt img"/>
               <span>ビギナーズガイド</span>
             </a>
@@ -123,7 +123,7 @@
           <div class="container footer-icons-wrapper">
             <div id="footer-payment-provider">
               <div class="row">
-                <p>入出金方法</p>
+                <p class="title">入出金方法</p>
               </div>
               <div class="row">
                 <div>
@@ -140,7 +140,7 @@
 
             <div id="footer-providers">
               <div class="row">
-                <p>ゲーム配信会社</p>
+                <p class="title">ゲーム配信会社</p>
               </div>
               <div class="row">
                 <div>
@@ -163,17 +163,15 @@
             </div>
           </div>
           <div class="container">
-            <a href="https://www.play-wise.com/verajohn-jp/">
-              <span>ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。</span>
-            </a>
+            <a class="n-link" href="https://www.play-wise.com/verajohn-jp/">ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。</a>
           </div>
         </footer>
       </main>
       <aside id="footer-login-register" :class="menuToggle ? 'footer-slide-down' : 'footer-slide-up'">
-        <button class="secondary">
+        <button class="n-button n-button--secondary">
           ログイン
         </button>
-        <button class="primary">
+        <button class="n-button n-button--primary">
           今すぐ登録しよう!
         </button>
       </aside>
