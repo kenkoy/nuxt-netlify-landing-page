@@ -10,7 +10,7 @@
         <div class="row">
           <p>Please go to </p>
           <span v-for="(navLinks, navIndex) in navItems" :key="navIndex" class="under-construction-links">
-            <nuxt-link v-if="(navLinks.name.includes('seo-'))" :to="navLinks.path">
+            <nuxt-link v-if="(navLinks.name.includes('vjjp-'))" :to="navLinks.path">
               {{ navLinks.name }}
             </nuxt-link>
           </span>
