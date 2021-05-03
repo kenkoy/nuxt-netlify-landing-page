@@ -258,7 +258,7 @@ main{
   > button{
     flex-grow: 1;
     border-radius: 0;
-    box-shadow: inset 0 1px 0 hsl(0deg,0%,100%,.5), inset 0 -3px 3px rgba(0,0,0,.2);
+    box-shadow: inset 0 1px 0 hsla(0deg,0%,100%,.5), inset 0 -3px 3px rgba(0,0,0,.2);
     padding: $PADDING;
     height: 50px;
     line-height: 20px;
