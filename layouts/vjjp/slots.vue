@@ -43,7 +43,7 @@
           </div>
 
           <div id="header-button">
-            <button class="n-button n-button--primary login">
+            <button class="cta_button n-button n-button--primary login">
               今すぐ登録しよう!
             </button>
           </div>
