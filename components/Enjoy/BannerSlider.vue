@@ -71,7 +71,7 @@ export default {
       width: 100%;
       max-width: 352px;
       height: 44px;
-      box-shadow: inset 0 1px 0 hsl(0deg 0% 100% / 50%), inset 0 -3px 3px rgb(0 0 0 / 20%);
+      box-shadow: inset 0 1px 0 hsla(0deg,0%,100%,.5), inset 0 -3px 3px rgba(0,0,0,.2);
     }
   }
   .slick-slide{
