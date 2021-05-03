@@ -66,7 +66,10 @@ export default {
       display: block;
     }
     button{
+      display: block;
+      margin: auto;
       width: 100%;
+      max-width: 352px;
       height: 44px;
       box-shadow: inset 0 1px 0 hsl(0deg 0% 100% / 50%), inset 0 -3px 3px rgb(0 0 0 / 20%);
     }

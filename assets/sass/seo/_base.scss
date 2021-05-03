@@ -23,7 +23,10 @@
   margin-left: -$MARGINS;
   margin-right: -$MARGINS
 }
-
+.container,
+.container-grid{
+  max-width: 768px;
+}
 
 
 //=== FONTS ===//
@@ -166,11 +169,22 @@ main{
 #game-tiles{
   padding: $PADDING;
 
-  .loyalty{
-    margin-top: 20px;
+  .dice{
+    background-image: url('../../assets/images/seo/dice-bg.png');
   }
+  .trophy,
+  .loyalty{
+    background-image: url('../../assets/images/seo/trophy-bg.png');
+  }
+  .card{
+    background-image: url('../../assets/images/seo/card-bg.png');
+  }
+
   .pods{
     @include gamePods;
+    background-size: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -201,6 +215,25 @@ main{
 #seo-contents{
   background: #0093D4;
   padding: $PADDING;
+}
+
+#footer-icons{
+  background: #0093D4;
+  padding: $PADDING;
+  p{
+    margin: 0;
+  }
+  .footer-icons-wrapper{
+    border-radius: 8px 8px 0 0;
+    border: solid 2px #0082BA;
+  }
+  .container > div{
+    padding: $PADDING;
+  }
+  .container > div:first-child + div{
+    border-top: solid 2px #0082BA;
+    border-bottom: solid 2px #0082BA;
+  }
 }
 
 #footer-login-register.footer-slide-down{

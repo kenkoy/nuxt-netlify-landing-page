@@ -1,6 +1,5 @@
 <template>
   <div class="enjoy-wrapper" :class="{ seo_wrapper: true }">
-    <!-- Change class name to actual page name -->
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
@@ -40,7 +39,7 @@
           </div>
 
           <div id="header-logo">
-            <img class="logo" src="@/assets/images/seo/logo.png">
+            <img class="logo" src="@/assets/images/seo/logo.png" alt="alt img">
           </div>
 
           <div id="header-button">
@@ -67,25 +66,25 @@
 
         <section id="game-tiles">
           <div class="container">
-            <div class="row column-4 negate-gutter">
-              <div class="pods">
+            <div class="row column-4 game-menu negate-gutter">
+              <div class="pods dice">
                 <h3>ライブカジノ</h3>
-                <img src="@/assets/images/seo/dice-icon.png">
+                <img src="@/assets/images/seo/dice-icon.png" alt="alt img">
               </div>
-              <div class="pods">
+              <div class="pods trophy">
                 <h3>ライブカジノ</h3>
-                <img src="@/assets/images/seo/trophy-icon.png">
+                <img src="@/assets/images/seo/trophy-icon.png" alt="alt img">
               </div>
-              <div class="pods">
+              <div class="pods card">
                 <h3>ライブカジノ</h3>
-                <img src="@/assets/images/seo/card-icon.png">
+                <img src="@/assets/images/seo/card-icon.png" alt="alt img">
               </div>
             </div>
           </div>
 
           <div class="container">
-            <div class="row column-4 loyalty negate-gutter">
-              <div class="pods">
+            <div class="row column-4 negate-gutter">
+              <div class="pods loyalty">
                 <h3>ライブカジノ</h3>
                 <p>賞金プール</p>
                 <p class="winning">
@@ -97,7 +96,7 @@
         </section>
 
         <section id="footer-links">
-          <img src="@/assets/images/seo/footer-verajohn.png">
+          <img src="@/assets/images/seo/footer-verajohn.png" alt="alt img">
           <div class="footer-item">
             <a href="/ja/help">
               ヘルプ・センター
@@ -117,8 +116,43 @@
             </div>
           </div>
         </section>
-      </main>
 
+        <footer id="footer-icons">
+          <div class="container footer-icons-wrapper">
+            <div>
+              <div class="row">
+                <p>入出金方法</p>
+              </div>
+              <div class="row">
+                <p>入出金方法</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="row">
+                <p>入出金方法</p>
+              </div>
+              <div class="row">
+                <p>入出金方法</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="row">
+                <p>入出金方法</p>
+              </div>
+              <div class="row">
+                <p>入出金方法</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <a href="https://www.play-wise.com/verajohn-jp/" data-page-hash="gaming-limits-subpage">
+              <span class="n-link">ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。</span>
+            </a>
+          </div>
+        </footer>
+      </main>
       <aside id="footer-login-register" :class="menuToggle ? 'footer-slide-down' : 'footer-slide-up'">
         <button class="secondary">
           ログイン
@@ -145,25 +179,14 @@ export default {
       htmlBody: ''
     }
   },
-  computed: {
-    // USE THE CODE BELOW IF THE DESIGN / TEMPLATE HAVE BANNERS. ELSE, DELETE
-    // cssBackground () {
-    //   const images = this.mdData.promo_banner.promo_images
-    //   return {
-    //     '--bg-image': `url('${images.promo_bg_desktop}')`,
-    //     '--bg-image-m': `url('${images.promo_bg_mobile}')`,
-    //     '--bg-banner': `url('${images.promo_bg_banner}')`
-    //   }
-    // }
-  },
   created () {
-    this.$root.$once('seo-data', (data) => { // Change to actual page name
+    this.$root.$once('seo-data', (data) => {
       this.htmlBody = data.htmlData
       this.mdData = data.yamlData
     })
   },
   beforeDestroy () {
-    this.$root.$off('seo-data') // Change to actual page name
+    this.$root.$off('seo-data')
   },
   methods: {
     pageSlideOn () {
