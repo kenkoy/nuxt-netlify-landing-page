@@ -7,15 +7,17 @@
 
 # The Architecture
 landing-page-ssg is a project build on top of Nuxt.JS and Netlify CMS.
-Digital Acquisition [How did we use it with Digital Acquisition Architecture](https://wiki.jpj.com/display/ITDEV/DAS+-+Architectural+Platform)
-Nuxt JS [Nuxt.js docs](https://nuxtjs.org).
-Netlify CMS [Netlify CMS Architecture](https://www.netlifycms.org/docs/architecture/#:~:text=Netlify%20CMS%20is%20a%20React,collections%20%2C%20entries%20%2C%20and%20widgets%20.&text=The%20structure%20of%20an%20entry,a%20label%20%2C%20and%20a%20widget%20.).
+- Digital Acquisition [How did we use it with Digital Acquisition Architecture](https://wiki.jpj.com/display/ITDEV/DAS+-+Architectural+Platform)
+- Nuxt JS [Nuxt.js docs](https://nuxtjs.org).
+- Netlify CMS [Netlify CMS Architecture](https://www.netlifycms.org/docs/architecture/#:~:text=Netlify%20CMS%20is%20a%20React,collections%20%2C%20entries%20%2C%20and%20widgets%20.&text=The%20structure%20of%20an%20entry,a%20label%20%2C%20and%20a%20widget%20.).
 
 ## Folder Structure
 
 ### `assets`
 └─ content/landing-page/marketing
+
   └─ template code - ex. vjhp, vjlp1, iclp1 etc.
+
     └─ *.md - contains CMS data in yml format
 
 ### `layouts`
@@ -23,14 +25,20 @@ Netlify CMS [Netlify CMS Architecture](https://www.netlifycms.org/docs/architect
 
 ### `pages`
 └─ marketing
+
   └─ template code - ex. vjhp, vjlp1, iclp1 etc.
+
     └─ index.vue - implements the retrieval of all landing pages under the same parent template
+
     └─ _slug
+
       └─ index.vue - implements the retrieval of data from markdown files
 
 ### `static`
 └─ marketing
+
   └─ admin - contains CMS loader and configuration files
+  
   └─ img - contains static images uploaded from CMS
 
 ### `test`
@@ -65,3 +73,4 @@ $ npm run lint
 $ npm run lint:fix
 
 ```
+
