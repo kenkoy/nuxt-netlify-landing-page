@@ -250,9 +250,50 @@ main{
   padding: $PADDING;
 }
 
-#footer-icons{
+#footer-icon-wrapper{
   background: #0093D4;
   padding: $PADDING;
+
+  img{
+    width: 100%;
+    margin: 2px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #footer-payment-provider{
+    img{
+      width: auto;
+      max-height: 23px;
+    }
+  }
+  #footer-providers{
+    img{
+      max-width: 20px;
+    }
+  }
+
+  #footer-logo{
+    .row > div:first-child{
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+    .row > div:first-child + div{
+      -ms-flex: 0 0 80%;
+      flex: 0 0 80%;
+      max-width: 80%;
+    }
+    img{
+      max-width: 50px;
+    }
+    span{
+      color: #84d6f8;
+      font-size: 10px;
+    }
+  }
+
+
   p{
     margin: 0;
   }

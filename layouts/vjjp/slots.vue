@@ -119,32 +119,46 @@
           </div>
         </section>
 
-        <footer id="footer-icons">
+        <footer id="footer-icon-wrapper">
           <div class="container footer-icons-wrapper">
-            <div>
+            <div id="footer-payment-provider">
               <div class="row">
                 <p>入出金方法</p>
               </div>
               <div class="row">
-                <p>入出金方法</p>
+                <div>
+                  <img src="@/assets/images/seo/visa-icon.png">
+                  <img src="@/assets/images/seo/master-icon.png">
+                  <img src="@/assets/images/seo/venus-point-icon.png">
+                  <img src="@/assets/images/seo/bitcoin-icon.png">
+                  <img src="@/assets/images/seo/playsafe-icon.png">
+                  <img src="@/assets/images/seo/eco-icon.png">
+                  <img src="@/assets/images/seo/i-wallet-icon.png">
+                </div>
               </div>
             </div>
 
-            <div>
+            <div id="footer-providers">
               <div class="row">
-                <p>入出金方法</p>
+                <p>ゲーム配信会社</p>
               </div>
               <div class="row">
-                <p>入出金方法</p>
+                <div>
+                  <img src="@/assets/images/seo/e-icon.png">
+                </div>
               </div>
             </div>
 
-            <div>
+            <div id="footer-logo">
               <div class="row">
-                <p>入出金方法</p>
-              </div>
-              <div class="row">
-                <p>入出金方法</p>
+                <div>
+                  <img src="@/assets/images/seo/CEG_logo.png">
+                  <img src="@/assets/images/seo/20+.svg">
+                </div>
+                <div>
+                  <span>当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。<br>
+                    Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster Gaming License #1668/JAZに基づくCEG Curaçao Egaming により付与されたサブライセンスを通して、正式に認可されています。</span>
+                </div>
               </div>
             </div>
           </div>
