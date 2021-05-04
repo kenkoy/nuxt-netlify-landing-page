@@ -68,16 +68,22 @@
           <div class="container">
             <div class="row column-4 game-menu negate-gutter">
               <div class="pods dice">
-                <h3 class="f-paragraph-1 f-link--primary">ライブカジノ</h3>
-                <img src="@/assets/images/seo/dice-icon.png" alt="alt img">
+                <div>
+                  <h3 class="n-header-5">ライブカジノ</h3>
+                  <img src="@/assets/images/seo/dice-icon.png" alt="alt img">
+                </div>
               </div>
               <div class="pods trophy">
-                <h3 class="f-paragraph-1 f-link--primary">ライブカジノ</h3>
-                <img src="@/assets/images/seo/trophy-icon.png" alt="alt img">
+                <div>
+                  <h3 class="n-header-5">ライブカジノ</h3>
+                  <img src="@/assets/images/seo/trophy-icon.png" alt="alt img">
+                </div>
               </div>
               <div class="pods card">
-                <h3 class="f-paragraph-1 f-link--primary">ライブカジノ</h3>
-                <img src="@/assets/images/seo/card-icon.png" alt="alt img">
+                <div>
+                  <h3 class="n-header-5">ライブカジノ</h3>
+                  <img src="@/assets/images/seo/card-icon.png" alt="alt img">
+                </div>
               </div>
             </div>
           </div>
@@ -85,11 +91,13 @@
           <div class="container">
             <div class="row column-4 negate-gutter">
               <div class="pods loyalty">
-                <h3 class="f-paragraph-1 f-link--primary">ライブカジノ</h3>
-                <p class="f-paragraph-1">賞金プール</p>
-                <p class="f-header-2 f-link--primary">
-                  $3,000.00
-                </p>
+                <div>
+                  <h3 class="n-header-5">ライブカジノ</h3>
+                  <p class="f-paragraph-1">賞金プール</p>
+                  <p class="n-header-2">
+                    $3,000.00
+                  </p>
+                </div>
               </div>
             </div>
           </div>

@@ -53,12 +53,10 @@
   min-height: 142px;
   margin: $MARGINS;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  // h3{
-  //   color: $PODS_TEXT_COLOR;
-  //   font-size: $PODS_TEXT_SIZE;
-  //   font-weight: 400;
-  // }
   img{
     display: block;
     max-width: 40px;
