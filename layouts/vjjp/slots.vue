@@ -34,7 +34,7 @@
                 <span />
                 <span />
               </div>
-              <p>メニュー</p>
+              <p class="f-paragraph-1">メニュー</p>
             </button>
           </div>
 
@@ -57,7 +57,7 @@
               <div v-for="(games, games_index) in mdData.game_list" :key="games_index">
                 <a class="n-link" :href="games.link">
                   <img :src="games.img" :alt="games.text">
-                  <p class="n-paragraph">{{ games.text }}</p>
+                  <p class="f-paragraph-3">{{ games.text }}</p>
                 </a>
               </div>
             </div>
@@ -68,15 +68,15 @@
           <div class="container">
             <div class="row column-4 game-menu negate-gutter">
               <div class="pods dice">
-                <h3 class="h2 emphasize">ライブカジノ</h3>
+                <h3 class="f-paragraph-1 f-link--primary">ライブカジノ</h3>
                 <img src="@/assets/images/seo/dice-icon.png" alt="alt img">
               </div>
               <div class="pods trophy">
-                <h3 class="h2 emphasize">ライブカジノ</h3>
+                <h3 class="f-paragraph-1 f-link--primary">ライブカジノ</h3>
                 <img src="@/assets/images/seo/trophy-icon.png" alt="alt img">
               </div>
               <div class="pods card">
-                <h3 class="h2 emphasize">ライブカジノ</h3>
+                <h3 class="f-paragraph-1 f-link--primary">ライブカジノ</h3>
                 <img src="@/assets/images/seo/card-icon.png" alt="alt img">
               </div>
             </div>
@@ -85,9 +85,9 @@
           <div class="container">
             <div class="row column-4 negate-gutter">
               <div class="pods loyalty">
-                <h3 class="h2 emphasize">ライブカジノ</h3>
-                <p>賞金プール</p>
-                <p>
+                <h3 class="f-paragraph-1 f-link--primary">ライブカジノ</h3>
+                <p class="f-paragraph-1">賞金プール</p>
+                <p class="f-header-2 f-link--primary">
                   $3,000.00
                 </p>
               </div>
@@ -100,13 +100,13 @@
           <div class="footer-item">
             <a class="n-link" href="/ja/help">
               <img src="@/assets/images/seo/help-icon.png" alt="alt img"/>
-              <span>ヘルプ・センター</span>
+              <span class="n-paragraph">ヘルプ・センター</span>
             </a>
           </div>
           <div class="footer-item">
             <a class="n-link" href="/ja/about/beginnersguidemb">
               <img src="@/assets/images/seo/beginner-guide-icon.png" alt="alt img"/>
-              <span>ビギナーズガイド</span>
+              <span class="n-paragraph">ビギナーズガイド</span>
             </a>
           </div>
         </section>
