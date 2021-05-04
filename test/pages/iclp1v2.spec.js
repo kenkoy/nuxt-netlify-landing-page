@@ -3,6 +3,7 @@ import VueMeta from 'vue-meta'
 import _ from 'lodash'
 import index from '@/pages/marketing/iclp1v2/_slug/index.vue'
 import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.js'
+// import '@/test/utils/matchMedia.js'
 
 const ICLP1_DIR = '/assets/content/landing-page/marketing/iclp1/'
 
@@ -18,6 +19,8 @@ describe('Testing ICLP1 index.vue', () => {
       .map(files => ICLP1_DIR + files)
       .sample()
       .value()
+    // jsonData = jsonFiles
+    
     const markDownData = retriveFrontMattertoJSON(md)
     wrapper = mount(index, {
       localVue,
@@ -81,5 +84,13 @@ describe('Testing ICLP1 index.vue', () => {
 
     const googleTagManagerNoScript = metaInfo.noscript.find(s => s.hid === 'gtmBody').innerHTML
     expect(googleTagManagerNoScript.includes(googleTagMangerId)).toBeTruthy()
+  })
+
+  test('asyncData should behave correctly', async () => {
+    const data = await wrapper.vm.$options.asyncData ({
+      params: { slug: 'sample' },
+      error: jest.fn()
+    })
+    expect(data).toBe(undefined)
   })
 })
