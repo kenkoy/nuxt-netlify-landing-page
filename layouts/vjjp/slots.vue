@@ -43,7 +43,7 @@
           </div>
 
           <div id="header-button">
-            <button class="cta_button n-button n-button--primary login">
+            <button class="f-button--primary f-button--medium login">
               今すぐ登録しよう!
             </button>
           </div>
@@ -57,7 +57,7 @@
               <div v-for="(games, games_index) in mdData.game_list" :key="games_index">
                 <a class="n-link" :href="games.link">
                   <img :src="games.img" :alt="games.text">
-                  <p>{{ games.text }}</p>
+                  <p class="n-paragraph">{{ games.text }}</p>
                 </a>
               </div>
             </div>
@@ -123,7 +123,7 @@
           <div class="container footer-icons-wrapper">
             <div id="footer-payment-provider">
               <div class="row">
-                <p class="title">入出金方法</p>
+                <p class="n-paragraph">入出金方法</p>
               </div>
               <div class="row">
                 <div>
@@ -140,7 +140,7 @@
 
             <div id="footer-providers">
               <div class="row">
-                <p class="title">ゲーム配信会社</p>
+                <p class="n-paragraph">ゲーム配信会社</p>
               </div>
               <div class="row">
                 <div>

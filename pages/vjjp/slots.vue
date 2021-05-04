@@ -7,7 +7,7 @@ export default {
   layout: 'vjjp/slots', // Change to actual layout
   async asyncData ({ params, error }) {
     try {
-      const markDownData = await import('~/assets/content/landing-page/marketing/seo/slots.md') // Change to actual slug
+      const markDownData = await import('~/assets/content/landing-page/marketing/vjjp/slots.md') // Change to actual slug
       return { markDownData }
     } catch (e) {
       error(e)
