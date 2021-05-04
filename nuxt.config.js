@@ -66,7 +66,7 @@ export default {
   */
   css: [
     '~/assets/sass/global/verajohnjpmain.min.css',
-    '~/assets/sass/global/verajohnjpfigma.min.css',
+    // '~/assets/sass/global/intercasino_jp_main.min.css',
     '~/assets/sass/global/animate.min.css',
     '~/assets/sass/global/fonts.css',
     '~/assets/sass/global/style.scss'

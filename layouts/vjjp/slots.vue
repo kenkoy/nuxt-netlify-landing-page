@@ -8,7 +8,7 @@
       <nav v-if="menuToggle" id="menu-slide">
         <div id="menu-slide-header">
           <div>
-            <button class="f-paragraph-1 btn" @click="pageSlideOff()">
+            <button class="n-paragraph-1 btn" @click="pageSlideOff()">
               x
             </button>
           </div>
@@ -34,7 +34,7 @@
                 <span />
                 <span />
               </div>
-              <p class="f-paragraph-1">メニュー</p>
+              <p class="n-paragraph-1">メニュー</p>
             </button>
           </div>
 
@@ -43,7 +43,7 @@
           </div>
 
           <div id="header-button">
-            <button class="f-button--primary f-button--medium login">
+            <button class="n-button n-button--primary login">
               今すぐ登録しよう!
             </button>
           </div>
@@ -57,7 +57,7 @@
               <div v-for="(games, games_index) in mdData.game_list" :key="games_index">
                 <a class="n-link" :href="games.link">
                   <img :src="games.img" :alt="games.text">
-                  <p class="f-paragraph-3">{{ games.text }}</p>
+                  <p class="n-paragraph-3">{{ games.text }}</p>
                 </a>
               </div>
             </div>
@@ -93,7 +93,7 @@
               <div class="pods loyalty">
                 <div>
                   <h3 class="n-header-5">ライブカジノ</h3>
-                  <p class="f-paragraph-1">賞金プール</p>
+                  <p class="n-paragraph-1">賞金プール</p>
                   <p class="n-header-2">
                     $3,000.00
                   </p>

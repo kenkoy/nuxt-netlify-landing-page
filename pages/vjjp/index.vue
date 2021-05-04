@@ -1,5 +1,5 @@
 <template>
-  <div class="enjoy-wrapper">
+  <div class="vjjp-wrapper">
     <section id="under-construction">
       <div class="container">
         <div class="row">
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  layout: 'seo/slots',
+  layout: 'vjjp/slots',
   data () {
     return {
       navItems: [{
