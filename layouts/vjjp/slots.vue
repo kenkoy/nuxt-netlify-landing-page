@@ -87,7 +87,7 @@
               <div class="pods loyalty">
                 <h3 class="h2 emphasize">ライブカジノ</h3>
                 <p>賞金プール</p>
-                <p class="winning">
+                <p>
                   $3,000.00
                 </p>
               </div>
