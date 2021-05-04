@@ -8,7 +8,7 @@
       <nav v-if="menuToggle" id="menu-slide">
         <div id="menu-slide-header">
           <div>
-            <button class="btn" @click="pageSlideOff()">
+            <button class="f-paragraph-1 btn" @click="pageSlideOff()">
               x
             </button>
           </div>
