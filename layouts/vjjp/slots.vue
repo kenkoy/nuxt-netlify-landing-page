@@ -1,5 +1,5 @@
 <template>
-  <div class="enjoy-wrapper" :class="{ vjjp_wrapper: true }">
+  <div class="vjjp-wrapper" :class="{ vjjp_wrapper: true }">
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
