@@ -94,8 +94,11 @@
     display: block;
   }
 
-  #header-button > button {
+  #header-button > .login {
     margin: 8px 0;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 16px;
   }
 }
 
@@ -148,6 +151,11 @@ main{
 
 #game-tiles{
   padding: $PADDING;
+
+  h3,
+  .loyalty p {
+    margin: 0;
+  }
 
   .dice{
     background-image: url('../../assets/images/seo/dice-bg.png');

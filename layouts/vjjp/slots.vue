@@ -43,7 +43,7 @@
           </div>
 
           <div id="header-button">
-            <button class="n-button n-button--primary login">
+            <button class="cta_button cta_important login">
               今すぐ登録しよう!
             </button>
           </div>
@@ -69,19 +69,19 @@
             <div class="row column-4 game-menu negate-gutter">
               <div class="pods dice">
                 <div>
-                  <h3 class="n-header-5">ライブカジノ</h3>
+                  <h3 class="emphasize">ライブカジノ</h3>
                   <img src="@/assets/images/seo/dice-icon.png" alt="alt img">
                 </div>
               </div>
               <div class="pods trophy">
                 <div>
-                  <h3 class="n-header-5">ライブカジノ</h3>
+                  <h3 class="emphasize">ライブカジノ</h3>
                   <img src="@/assets/images/seo/trophy-icon.png" alt="alt img">
                 </div>
               </div>
               <div class="pods card">
                 <div>
-                  <h3 class="n-header-5">ライブカジノ</h3>
+                  <h3 class="emphasize">ライブカジノ</h3>
                   <img src="@/assets/images/seo/card-icon.png" alt="alt img">
                 </div>
               </div>
@@ -92,9 +92,9 @@
             <div class="row column-4 negate-gutter">
               <div class="pods loyalty">
                 <div>
-                  <h3 class="n-header-5">ライブカジノ</h3>
+                  <h3 class="emphasize">ライブカジノ</h3>
                   <p class="n-paragraph-1">賞金プール</p>
-                  <p class="n-header-2">
+                  <p class="emphasize winning">
                     $3,000.00
                   </p>
                 </div>
