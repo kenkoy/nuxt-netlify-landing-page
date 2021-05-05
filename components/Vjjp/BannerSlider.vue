@@ -13,13 +13,14 @@
           v-bind="carouselSettings"
         >
           <div v-for="(data, index) in carouselData" :key="index">
+            <button v-if="desktop" class="n-button n-button--secondary desktop">続きを読む</button>
             <a
               :href="data.link"
               :aria-label="`link_${index + 1}`"
             >
               <img :alt="`image_${index + 1}`" :src="data.icon">
             </a>
-            <button class="n-button n-button--secondary">続きを読む</button>
+            <button v-if="mobile" class="n-button n-button--secondary">続きを読む</button>
           </div>
         </VueSlickCarousel>
       </div>
@@ -42,6 +43,19 @@ export default {
       required: true
     }
   },
+  data () {
+    return {
+      desktop: true,
+      mobile: false
+    }
+  },
+  beforeDestroy () {
+    window.removeEventListener('resize', this.myEventHandler)
+  },
+  mounted () {
+    this.myEventHandler()
+    window.addEventListener('resize', this.myEventHandler)
+  },
   computed: {
     carouselData () {
       const banner = this.bannerData
@@ -54,6 +68,18 @@ export default {
       return links.map((data, index) => ({
         link: data, icon: icons[index]
       }))
+    }
+  },
+  methods: {
+    myEventHandler () {
+      // your code for handling resize...
+      if (window.innerWidth <= 768) {
+        this.desktop = false
+        this.mobile = true
+      } else {
+        this.desktop = true
+        this.mobile = false
+      }
     }
   }
 }
@@ -72,6 +98,10 @@ export default {
       max-width: 352px;
       height: 44px;
       box-shadow: inset 0 1px 0 hsla(0deg,0%,100%,.5), inset 0 -3px 3px rgba(0,0,0,.2);
+    }
+    button.desktop{
+      width: auto;
+      float: left;
     }
   }
   .slick-slide{

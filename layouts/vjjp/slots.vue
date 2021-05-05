@@ -164,7 +164,7 @@
                   <img src="@/assets/images/seo/20+.svg" alt="alt img">
                 </div>
                 <div>
-                  <span>当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。<br>
+                  <span class="footer-text">当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。<br>
                     Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster Gaming License #1668/JAZに基づくCEG Curaçao Egaming により付与されたサブライセンスを通して、正式に認可されています。</span>
                 </div>
               </div>
@@ -199,6 +199,7 @@ export default {
       menuToggle: false,
       mdData: {},
       htmlBody: ''
+      // scrollBottom: false
     }
   },
   created () {
@@ -209,6 +210,9 @@ export default {
   },
   beforeDestroy () {
     this.$root.$off('vjjp-data')
+  },
+  mounted () {
+    window.addEventListener('scroll', this.handleScroll)
   },
   methods: {
     pageSlideOn () {
@@ -223,6 +227,14 @@ export default {
         this.menuToggle = false
       }, 300)
     }
+    // THIS IS FOR SHOW / HIDE FOOTER WHEN IT REACHES BOTTOM PAGE
+    // handleScroll (event) {
+    //   if (document.documentElement.scrollTop + window.innerHeight === document.documentElement.scrollHeight) {
+    //     this.scrollBottom = true
+    //   } else {
+    //     this.scrollBottom = false
+    //   }
+    // }
   }
 }
 </script>
