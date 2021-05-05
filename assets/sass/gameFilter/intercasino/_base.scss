@@ -114,10 +114,13 @@
 }
 
 #pagination-wrapper{
+  padding: 20px 0;
+
   .pagination-text{
     color: #000;
     font-size: 20px;
     position: relative;
+    margin: 0;
 
     &:before{
       content: '';
@@ -145,6 +148,8 @@
   .load-more{
     font-size: 15px;
     color: #d2ac48;
+    margin: 20px 0;
+    display: inline-block;
   }
 }
 
