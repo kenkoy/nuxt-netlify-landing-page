@@ -1663,8 +1663,8 @@ collections:
               widget: "list"
               max: 4
               fields:
-                - { label: "URL", name: "url", widget: "text" }
-                - { label: "Text", name: "text", widget: "text" }
+                - { label: "URL", name: "url", widget: "string" }
+                - { label: "Text", name: "text", widget: "string" }
                 - { label: "Foreground Image", name: "foreground_image", widget: "image" }
                 - { label: "Background Image", name: "background_image", widget: "image" }
             - label: "Modals"
@@ -1672,7 +1672,7 @@ collections:
               widget: "list"
               max: 4
               fields:
-                - { label: "Text", name: "text", widget: "text" }
+                - { label: "Text", name: "text", widget: "string" }
                 - { label: "Foreground Image", name: "foreground_image", widget: "image" }
                 - { label: "Background Image", name: "background_image", widget: "image" }
         - {
