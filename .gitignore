@@ -91,3 +91,5 @@ sw.*
 
 #local history plugin
 .history/*
+
+/assets/content/games.json

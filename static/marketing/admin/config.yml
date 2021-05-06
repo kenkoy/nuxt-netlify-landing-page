@@ -1642,6 +1642,7 @@ collections:
       name: "banner"
       widget: "list"
       collapsed: true
+      summary: "{{fields.url}}"
       fields:
         - { label: "Banner Image", name: "image", widget: "image" }
         - { label: "Banner URL", name: "url", widget: "string" }
@@ -1651,7 +1652,7 @@ collections:
       required: true
       collapsed: true
       max: 6
-      summary: "{{field.title}}"
+      summary: "{{fields.title}}"
       fields:
         - { label: "Title", name: "title", widget: "string" }
         - { label: "Image", name: "image", widget: "image" }
@@ -1667,7 +1668,7 @@ collections:
           name: "modals"
           widget: "list"
           max: 4
-          summary: "{{field.text}}"
+          summary: "{{fields.text}}"
           fields:
             - { label: "Text", name: "text", widget: "string" }
             - { label: "Icon", name: "icon", widget: "image" }
@@ -1676,7 +1677,7 @@ collections:
           name: "links"
           widget: "list"
           max: 4
-          summary: "{{field.text}}"
+          summary: "{{fields.text}}"
           fields:
             - { label: "Text", name: "text", widget: "string" }
             - { label: "URL", name: "url", widget: "string" }
