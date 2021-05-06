@@ -1622,61 +1622,66 @@ collections:
                   widget: "string",
                 }
 
-  - label: "Lobby Pages"
-    name: "lobby_pages"
+  - label: "Lobby Page"
+    name: "lobby_page"
     format: "frontmatter"
     show_preview_links: false
+    create: true
+    identifier_field: "slug_name"
+    folder: "assets/content/lobby-page"
     editor:
       preview: false
-    files:
-      - label: "Slots"
-        name: "slots"
-        file: "assets/content/lobby-page/slots.md"
-        fields:
-        - label: "Banner"
-          name: "banner"
+    fields:
+    - label: "Slug"
+      widget: "string"
+      name: "slug_name"
+      required: true
+      hint: >
+        "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
+    - label: "Banner"
+      name: "banner"
+      widget: "list"
+      collapsed: true
+      fields:
+        - { label: "Banner Image", name: "image", widget: "image" }
+        - { label: "Banner URL", name: "url", widget: "string" }
+    - label: "Games"
+      name: "game"
+      widget: "list"
+      required: true
+      collapsed: true
+      max: 6
+      summary: "{{field.title}}"
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Image", name: "image", widget: "image" }
+        - { label: "URL", name: "url", widget: "string" }
+        - { label: "Hot?", name: "is_hot", widget: "boolean", default: false }
+    - label: "Game Tiles"
+      name: "game_tiles"
+      widget: "object"
+      required: true
+      collapsed: true
+      fields:
+        - label: "Modals"
+          name: "modals"
           widget: "list"
-          collapsed: true
+          max: 4
+          summary: "{{field.text}}"
           fields:
-            - { label: "Banner Image", name: "image", widget: "image" }
-            - { label: "Banner URL", name: "url", widget: "string" }
-        - label: "Games"
-          name: "game"
+            - { label: "Text", name: "text", widget: "string" }
+            - { label: "Foreground Image", name: "foreground_image", widget: "image" }
+            - { label: "Background Image", name: "background_image", widget: "image" }
+        - label: "Links"
+          name: "links"
           widget: "list"
-          required: true
-          collapsed: true
-          max: 6
-          summary: "{{field.title}}"
+          max: 4
+          summary: "{{field.text}}"
           fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Image", name: "image", widget: "image" }
+            - { label: "Text", name: "text", widget: "string" }
             - { label: "URL", name: "url", widget: "string" }
-            - { label: "Hot?", name: "is_hot", widget: "boolean", default: false }
-        - label: "Game Tiles"
-          name: "game_tiles"
-          widget: "object"
-          required: true
-          collapsed: true
-          fields:
-            - label: "Modals"
-              name: "modals"
-              widget: "list"
-              max: 4
-              summary: "{{field.text}}"
-              fields:
-                - { label: "Text", name: "text", widget: "string" }
-                - { label: "Foreground Image", name: "foreground_image", widget: "image" }
-                - { label: "Background Image", name: "background_image", widget: "image" }
-            - label: "Links"
-              name: "links"
-              widget: "list"
-              max: 4
-              summary: "{{field.text}}"
-              fields:
-                - { label: "Text", name: "text", widget: "string" }
-                - { label: "URL", name: "url", widget: "string" }
-                - { label: "Title", name: "title", widget: "string" }
-                - { label: "Winning", name: "winning", widget: "string" }
-                - { label: "Foreground Image", name: "foreground_image", widget: "image" }
-                - { label: "Background Image", name: "background_image", widget: "image" }
-        - { label: "Content", name: "body", widget: "markdown", required: true }
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Winning", name: "winning", widget: "string" }
+            - { label: "Foreground Image", name: "foreground_image", widget: "image" }
+            - { label: "Background Image", name: "background_image", widget: "image" }
+    - { label: "Content", name: "body", widget: "markdown", required: true }
