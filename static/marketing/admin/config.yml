@@ -1636,7 +1636,6 @@ collections:
         - label: "Banner"
           name: "banner"
           widget: "list"
-          required: true
           collapsed: true
           fields:
             - { label: "Banner Image", name: "image", widget: "image" }
