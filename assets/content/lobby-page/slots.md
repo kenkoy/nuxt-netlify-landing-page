@@ -25,7 +25,7 @@ game:
     image: https://cdn.ridgegaming.net/files/dynimage/88:88/files/upload/game/gameimage_vjicon5e254059a8b020.png?qskoak&6090&6090
     url: https://www.verajohn.com/play/piggy-riches-megaways-mobile
   - is_hot: true
-    title: Drago - Jewels of Fortune 
+    title: Drago - Jewels of Fortune
     image: https://cdn.ridgegaming.net/files/dynimage/88:88/files/upload/game/gameimage_vjicon5b9c0ae461f930.png?qskoak&6090&6090
     url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
 game_tiles:
@@ -130,6 +130,4 @@ game_tiles:
 
 <p class="n-paragraph">ビデオスロットは違法カジノで、不正な操作が行われているという噂もありますが、ベラジョンオンラインカジノのような世界的に有名であり、大手であるオンラインカジノでは、そういったことはございませんので安心してお楽しみください！</p>
 
-<p class="n-paragraph"><a href="//www.verajohn.com/ja/roulette" class="n-link"> ルーレット </a> | <a href="//www.verajohn.com/ja/slots" class="n-link"> カジノスロット </a> | <a href="//www.verajohn.com/ja/livecasino" class="n-link">ライブ カジノ</a> | <a href="//www.verajohn.com/ja" class="n-link">カジノ</a>
-
-</p>
+<p class="n-paragraph"><a href="//www.verajohn.com/ja/roulette" class="n-link"> ルーレット </a> | <a href="//www.verajohn.com/ja/slots" class="n-link"> カジノスロット </a> | <a href="//www.verajohn.com/ja/livecasino" class="n-link">ライブ カジノ</a> | <a href="//www.verajohn.com/ja" class="n-link">カジノ</a></p>
