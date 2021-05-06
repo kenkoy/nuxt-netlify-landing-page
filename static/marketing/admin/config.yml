@@ -1626,7 +1626,7 @@ collections:
     name: "slots"
     format: "frontmatter"
     show_preview_links: false
-    folder: "assets/content/lobby-page/slots.md"
+    file: "assets/content/lobby-page/slots.md"
     create: true
     editor:
       preview: false
