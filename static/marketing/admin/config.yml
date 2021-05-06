@@ -1646,12 +1646,12 @@ collections:
           required: true
           collapsed: true
           max: 6
-          summary: "{{field.text}}"
+          summary: "{{field.title}}"
           fields:
             - { label: "Title", name: "title", widget: "string" }
             - { label: "Image", name: "image", widget: "image" }
             - { label: "URL", name: "url", widget: "string" }
-            - { label: "Hot?", name: "is_hot", widget: "boolean" }
+            - { label: "Hot?", name: "is_hot", widget: "boolean", default: false }
         - label: "Game Tiles"
           name: "game_tiles"
           widget: "object"
@@ -1675,11 +1675,8 @@ collections:
               summary: "{{field.text}}"
               fields:
                 - { label: "Text", name: "text", widget: "string" }
+                - { label: "Title", name: "title", widget: "string" }
+                - { label: "Winning", name: "winning", widget: "string" }
                 - { label: "Foreground Image", name: "foreground_image", widget: "image" }
                 - { label: "Background Image", name: "background_image", widget: "image" }
-        - {
-            label: "Content",
-            name: "body",
-            widget: "markdown",
-            required: true,
-          }
+        - { label: "Content", name: "body", widget: "markdown", required: true }
