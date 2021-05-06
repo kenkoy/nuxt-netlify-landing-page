@@ -1,4 +1,9 @@
 // BELOW STYLE ARE NOT YET PART OF BRAND FRAGMENTS. DELETE IF NECCESSARY
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+}
 .cta_button {
   border-radius: 10px;
   padding: 8px 16px;
@@ -16,6 +21,10 @@
 .cta_important{
   background-color: #F7901D;
   background: linear-gradient(to bottom,#FFC933 0%,#F7901D 100%);
+}
+
+.text-center {
+  text-align: center;
 }
 
 .emphasize {

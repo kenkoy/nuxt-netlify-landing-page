@@ -5,52 +5,14 @@
       v-if="Object.keys(mdData).length > 0"
       class="vjjp-main"
     >
-      <nav v-if="menuToggle" id="menu-slide">
-        <div id="menu-slide-header">
-          <div>
-            <button class="n-paragraph-1 btn" @click="pageSlideOff()">
-              x
-            </button>
-          </div>
-          <div>
-            <p>メニュー</p>
-          </div>
-          <div class="icon-wrapper">
-            <i class="home-icon" />
-          </div>
-        </div>
-        <div>
-          <h1>Menu Coming Soon</h1>
-        </div>
-      </nav>
+      <SideMenu @page-slide-off="pageSlideOff" v-if="menuToggle" />
 
       <main :class="pageSlide">
-        <div v-if="menuToggle" id="overlay" />
-        <header id="header-menu" :class="menuToggle ? 'nav-slide-up' : 'nav-slide-down'">
-          <div>
-            <button class="btn menu-gamburger" @click="pageSlideOn()">
-              <div>
-                <span />
-                <span />
-                <span />
-              </div>
-              <p class="n-paragraph-1">メニュー</p>
-            </button>
-          </div>
+        <div v-if="menuToggle" id="overlay" /> <!-- Display when Sidemenu is visible -->
+        <Header @page-slide-on="pageSlideOn" :class="menuToggle ? 'nav-slide-up' : 'nav-slide-down'" />
 
-          <div id="header-logo">
-            <img class="logo" src="@/assets/images/seo/logo.png" alt="alt img">
-          </div>
-
-          <div id="header-button">
-            <button class="cta_button cta_important login">
-              今すぐ登録しよう!
-            </button>
-          </div>
-        </header>
-
+        <!-- Main content -->
         <BannerSlider :banner-data="mdData.banner_images" />
-
         <section id="games">
           <div class="container-grid separator-top separator-bottom">
             <div class="row">
@@ -103,7 +65,7 @@
           </div>
         </section>
 
-        <section id="footer-links">
+        <section id="cta">
           <img src="@/assets/images/seo/footer-verajohn.png" alt="alt img">
           <div class="footer-item">
             <a class="n-link" href="/ja/help">
@@ -175,23 +137,22 @@
           </div>
         </footer>
       </main>
-      <aside id="footer-login-register" :class="menuToggle ? 'footer-slide-down' : 'footer-slide-up'">
-        <button class="n-button n-button--secondary">
-          ログイン
-        </button>
-        <button class="n-button n-button--primary">
-          今すぐ登録しよう!
-        </button>
-      </aside>
+      <FooterFixButtons :class="menuToggle ? 'footer-slide-down' : 'footer-slide-up'"/>
     </div>
   </div>
 </template>
 
 <script>
+import SideMenu from '~/components/Vjjp/SideMenu.vue'
+import Header from '~/components/Vjjp/Header.vue'
 import BannerSlider from '~/components/Vjjp/BannerSlider.vue'
+import FooterFixButtons from '~/components/Vjjp/FooterFixButtons.vue'
 export default {
   components: {
-    BannerSlider
+    SideMenu,
+    Header,
+    BannerSlider,
+    FooterFixButtons
   },
   data () {
     return {
