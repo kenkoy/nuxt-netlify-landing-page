@@ -2,8 +2,9 @@ const fs = require('fs')
 const axios = require('axios')
 
 const gameDataPath = './assets/content/games.json'
+const gameUrl = 'https://www.verajohn.com/ajax/load/data/games/INTERNAL/ALL_GAMES/default/asc/all'
 
-axios.get('https://www.verajohn.com/ajax/load/data/games/INTERNAL/ALL_GAMES/default/asc/all')
+axios.get(gameUrl)
   .then((res) => {
     const jsonData = JSON.stringify(res.data)
     fs.promises.writeFile(gameDataPath, jsonData, 'utf-8')
