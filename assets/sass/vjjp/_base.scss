@@ -285,6 +285,10 @@ main{
     flex-grow: 1;
     border-radius: 0;
     height: 50px;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin: 0;
   }
 }
 
