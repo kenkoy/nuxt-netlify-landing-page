@@ -11,15 +11,14 @@ game:
 game_tiles:
   modals:
     - text: ライブカジノ
-      foreground_image: /marketing/img/dice-icon.png
-      background_image: /marketing/img/dice-bg.png
+      icon: /marketing/img/dice-icon.png
+      bg_image: /marketing/img/dice-bg.png
   links:
     - text: トーナメントに参加する
       title: 賞金プール
       winning: $15,000.00
       url: https://www.verajohn.com/ja/active-tournaments
-      foreground_image: /marketing/img/dice-icon.png
-      background_image: /marketing/img/trophy-bg.png
+      bg_image: /marketing/img/trophy-bg.png
 ---
 <h1 class="n-header-1">ベラジョンオンラインカジノのオンラインビデオスロット</h1>
 

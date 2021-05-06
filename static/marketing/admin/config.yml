@@ -1670,8 +1670,8 @@ collections:
           summary: "{{field.text}}"
           fields:
             - { label: "Text", name: "text", widget: "string" }
-            - { label: "Foreground Image", name: "foreground_image", widget: "image" }
-            - { label: "Background Image", name: "background_image", widget: "image" }
+            - { label: "Icon", name: "icon", widget: "image" }
+            - { label: "Background Image", name: "bg_image", widget: "image" }
         - label: "Links"
           name: "links"
           widget: "list"
@@ -1682,6 +1682,5 @@ collections:
             - { label: "URL", name: "url", widget: "string" }
             - { label: "Title", name: "title", widget: "string" }
             - { label: "Winning", name: "winning", widget: "string" }
-            - { label: "Foreground Image", name: "foreground_image", widget: "image" }
-            - { label: "Background Image", name: "background_image", widget: "image" }
+            - { label: "Background Image", name: "bg_image", widget: "image" }
     - { label: "Content", name: "body", widget: "markdown", required: true }
