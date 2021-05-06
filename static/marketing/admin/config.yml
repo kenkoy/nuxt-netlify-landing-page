@@ -1658,8 +1658,8 @@ collections:
           required: true
           collapsed: true
           fields:
-            - label: "Links"
-              name: "links"
+            - label: "Modals"
+              name: "modals"
               widget: "list"
               max: 4
               summary: "{{field.text}}"
@@ -1668,8 +1668,8 @@ collections:
                 - { label: "URL", name: "url", widget: "string" }
                 - { label: "Foreground Image", name: "foreground_image", widget: "image" }
                 - { label: "Background Image", name: "background_image", widget: "image" }
-            - label: "Modals"
-              name: "modals"
+            - label: "Links"
+              name: "links"
               widget: "list"
               max: 4
               summary: "{{field.text}}"
