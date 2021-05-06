@@ -1649,8 +1649,8 @@ collections:
           - { label: "Game Image", name: "image", widget: "image" }
           - { label: "Game URL", name: "url", widget: "string" }
           - { label: "Hot?", name: "is_hot", widget: "boolean" }
-      - label: "Game Details"
-        name: "details"
+      - label: "Game Tiles"
+        name: "game_tiles"
         widget: "object"
         required: true
         collapsed: true
