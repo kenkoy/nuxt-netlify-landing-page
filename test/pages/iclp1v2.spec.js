@@ -20,7 +20,6 @@ describe('Testing ICLP1 index.vue', () => {
       .sample()
       .value()
     // jsonData = jsonFiles
-    
     const markDownData = retriveFrontMattertoJSON(md)
     wrapper = mount(index, {
       localVue,
@@ -87,7 +86,7 @@ describe('Testing ICLP1 index.vue', () => {
   })
 
   test('asyncData should behave correctly', async () => {
-    const data = await wrapper.vm.$options.asyncData ({
+    const data = await wrapper.vm.$options.asyncData({
       params: { slug: 'sample' },
       error: jest.fn()
     })
