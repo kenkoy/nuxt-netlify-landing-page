@@ -1,67 +1,61 @@
 ---
-promo_locale:
-  promo_country_code: jp
-  promo_language_code: ja
-field_ids:
-  go_container_id: OPT-PHSNXP6
-  ga_tracking_id: UA-142143961-1
-  gtm_container_id: GTM-MFD3NKM
+slug_name: slots
 banner:
-  - image: /marketing/img/seo-banner.png
-    url: 'https://www.verajohn.com/ja/about/loyalty-program'
-  - image: /marketing/img/seo-banner.png
-    url: 'https://www.verajohn.com/ja/game/hawaiian-dream'
-  - image: /marketing/img/seo-banner.png
-    url: 'https://www.verajohn.com/ja/about/cardmaster'
-  - image: /marketing/img/seo-banner.png
-    url: 'https://www.verajohn.com/ja/livecasino'
-  - image: /marketing/img/seo-banner.png
-    url: 'https://www.verajohn.com/ja/about/paymentoption'
+  - image: https://cdn.ridgegaming.net/files/upload/promotion/mobile_file5f96e28305b7a5259.png?qskoak&6090&6090
+    url: https://www.verajohn.com/ja/about/beginnersguidemb
 game:
-  - image: /marketing/img/img1.png
+  - is_hot: true
     title: Dreams of Gold
+    image: https://cdn.ridgegaming.net/files/dynimage/88:88/files/upload/game/gameimage_vjicon5e6b251e5292e4956.png?qskoak&6090&6090
     url: https://www.verajohn.com/play/dreams-of-gold-mobile
-  - image: /marketing/img/img2.png
+  - is_hot: true
     title: Hawaiian Dream
-    url: https://verajohn.com/play/hawaiian-dream-mobile
-  - image: /marketing/img/img3.png
+    image: https://cdn.ridgegaming.net/files/dynimage/88:88/files/upload/game/gameimage_vjicon5be43f82cbe050.png?qskoak&6090&6090
+    url: https://www.verajohn.com/play/hawaiian-dream-mobile
+  - is_hot: true
     title: Battle Dwarf
-    url: https://verajohn.com/play/battle-dwarf-mobile
-  - image: /marketing/img/img4.png
+    image: https://cdn.ridgegaming.net/files/dynimage/88:88/files/upload/game/gameimage_vjicon5d1b0b9a4524e0.png?qskoak&6090&6090
+    url: https://www.verajohn.com/play/battle-dwarf-mobile
+  - is_hot: false
     title: Yokozuna Clash
-    url: https://verajohn.com/play/yokozuna-clash-mobile
-  - image: /marketing/img/img5.png
+    image: https://cdn.ridgegaming.net/files/dynimage/88:88/files/upload/game/gameimage_vjicon5d4a8e8a09d5e0.png?qskoak&6090&6090
+    url: https://www.verajohn.com/play/yokozuna-clash-mobile
+  - is_hot: true
     title: Piggy Riches Megaways
-    url: https://verajohn.com/play/piggy-riches-megaways-mobile
-  - image: /marketing/img/img6.png
-    title: Drago - Jewels of Fortune
-    link: https://casino.verajohn.com/play/drago-jewels-of-fortune-mobile
+    image: https://cdn.ridgegaming.net/files/dynimage/88:88/files/upload/game/gameimage_vjicon5e254059a8b020.png?qskoak&6090&6090
+    url: https://www.verajohn.com/play/piggy-riches-megaways-mobile
+  - is_hot: true
+    title: Drago - Jewels of Fortune 
+    image: https://cdn.ridgegaming.net/files/dynimage/88:88/files/upload/game/gameimage_vjicon5b9c0ae461f930.png?qskoak&6090&6090
+    url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
 game_tiles:
   modals:
-  - text: ライブカジノ
-    foreground_image: /marketing/img/img2.png
-    background_image: /marketing/img/img2.png
-  - text: トーナメント
-    foreground_image: /marketing/img/img2.png
-    background_image: /marketing/img/img2.png
-  - text: すべてのテーブルゲーム
-    foreground_image: /marketing/img/img2.png
-    background_image: /marketing/img/img2.png
+    - text: ライブカジノ
+      icon: /marketing/img/dice-icon.png
+      bg_image: /marketing/img/dice-bg.png
+    - text: トーナメント
+      icon: /marketing/img/img2.png
+      bg_image: /marketing/img/img2.png
+    - text: すべてのテーブルゲーム
+      icon: /marketing/img/img2.png
+      bg_image: /marketing/img/img2.png
   links:
-  - text: トーナメントに参加する
-    url: https://www.verajohn.com/ja/active-tournaments
-    title: 賞金プール
-    winning: $15,000.00
-    foreground_image: /marketing/img/img2.png
-    background_image: /marketing/img/img2.png
+    - text: トーナメントに参加する
+      title: 賞金プール
+      winning: $15,000.00
+      url: https://www.verajohn.com/ja/active-tournaments
+      bg_image: /marketing/img/trophy-bg.png
 ---
 <h1 class="n-header-1">ベラジョンオンラインカジノのオンラインビデオスロット</h1>
+
 <p class="n-paragraph">ベラジョンオンラインカジノでお気に入りのビデオスロットを探してみましょう。</p>
+
 <p class="n-paragraph">ベラジョンオンラインカジノでは、世界屈指のゲーム配信会社が手掛けた、幅広い種類のビデオスロットのプレイが可能です！いつでも公平なゲームをお楽しみいただけます。</p>
 
-<h2 class="n-header-2">  ベラジョンでお好みのビデオスロットを検索しましょう</h2>
+<h2 class="n-header-2"> ベラジョンでお好みのビデオスロットを検索しましょう</h2>
 
 <p class="n-paragraph">ベラジョンオンラインカジノではお好みのスロットを簡単に検索することができます。</p>
+
 <p class="n-paragraph">多種多様なスロットゲームの中からお気に入りに機種を見つけ、ベラジョン の様々な決済方法を利用し、安全かつ簡単に入金しましょう。</p>
 
 <p class="n-paragraph">まず、ご入金をする前にウェルカムオファーの内容をチェックしてからご入金後プレイを楽しみましょう！</p>
@@ -83,10 +77,13 @@ game_tiles:
 <h2 class="n-header-2">ボーナス機能搭載のビデオスロット機種 </h2>
 
 <p class="n-paragraph">最近のビデオスロットは、プレイヤーを楽しませてくれるボーナスラウンドが搭載されています。</p>
+
 <p class="n-paragraph">ボーナスラウンドを期待しながらプレイすることで、スピン毎のワクワクも倍増です！</p>
+
 <p class="n-paragraph">大多数のビデオスロットには、ランダムワイルド、フリースピンのような多種多様なボーナス機能が搭載されています。</p>
 
 <p class="n-paragraph">ビデオスロットのメリットは、戦略を立て、考えながらプレイする必要がないという点です。</p>
+
 <p class="n-paragraph">例えば、1スピン回しただけでジャックポットが当選することもあれば、1000スピン回しても当たらないこともあります。</p>
 
 <p class="n-paragraph">運が頼りになる場面が大半を占めるため、気楽に気長に楽しめます。</p>
@@ -101,13 +98,16 @@ game_tiles:
 <h2 class="n-header-2">ロウ・バリアンス（低変動）のビデオスロット</h2>
 
 <p class="n-paragraph">勝利金の額より、小当たりが多く、とにかく楽しめるスロットがお好みの方にはロウ・バリアンス（低変動、いわば流動性の良い）スロットがおすすめです。</p>
+
 <p class="n-paragraph">こういったスロットでは、ペイライン数が他のスロットと比較すると多く、勝利金が発生しやすいです。</p>
+
 <p class="n-paragraph">小さい当たりの頻度は高いですが、高額勝利金を獲得できる可能性は比較的低いと言えます。</p>
 
 <p class="n-paragraph">これらのスロットの特徴として、RTP（還元率）が高いことが挙げられ、当たりの頻度を重要視している方にはオススメのスロットです。</p>
 
-<p class="n-paragraph"> Birds On A Wire,  Gemix,  (ゲーミックス),    Book Of Dead  ,Bonza Megaways ,  Dragon Kingdom,   Dead Or Alive 2 ,   Divine Fortune </p>
-<p class="n-paragraph">Star Burst (スターバースト), Gonzo’s Quest (ゴンゾーズクエスト),   Prefect Gems,   Rise Of Merlin , Sweet Alchemy </p>
+<p class="n-paragraph"> Birds On A Wire, Gemix, (ゲーミックス), Book Of Dead ,Bonza Megaways , Dragon Kingdom, Dead Or Alive 2 , Divine Fortune </p>
+
+<p class="n-paragraph">Star Burst (スターバースト), Gonzo’s Quest (ゴンゾーズクエスト), Prefect Gems, Rise Of Merlin , Sweet Alchemy </p>
 
 <p class="n-paragraph">また、パチスロ風<a href="https://www.verajohn.com/ja/game/hawaiian-dream" class="n-link">Hawaiian Dream(ハワイアンドリーム)</a>や<a href="https://www.verajohn.com/ja/game/battle-dwarf" class="n-link">Battle(バトルドワーフ)</a>も日本人プレイヤーの間で大人気のビデオスロットなので、パチスロファンにはオススメの機種です。</p>
 
@@ -119,11 +119,15 @@ game_tiles:
 <p class="n-paragraph">スピン毎のべット額を選択することができ、最低0.10ドル からできるスロットもあれば、最高 200ドルまでベット額を上げることができる機種も取り揃えています。</p>
 
 <p class="n-paragraph">リールを回して、後は幸運を祈りましょう。</p>
+
 <p class="n-paragraph">スピンの結果はRNGという乱数を打ち出すシステムにより、ランダムな数字が生成され、決定します。</p>
+
 <p class="n-paragraph">このシステムには、ベラジョンオンラインカジノもゲームプロバイダー側も一切介入することができないので、安心で公平なゲームを保証しています。</p>
+
 <p class="n-paragraph">ペイラインを揃えることで勝利金を獲得することができ、ボーナスゲームへ突入すると高額勝利金を獲得することができる可能性も大です！</p>
 
 <p class="n-paragraph">ジャックポット機能が搭載されているほとんどのビデオスロットでは、ジャックポットが払い出されるタイミングを予測することができません。</p>
+
 <p class="n-paragraph">しかし、一部のビデオスロットでは、ジャックポットが特定の数字に達したタイミングで払い出されます。</p>
 
 <p class="n-paragraph">ビデオスロットは違法カジノで、不正な操作が行われているという噂もありますが、ベラジョンオンラインカジノのような世界的に有名であり、大手であるオンラインカジノでは、そういったことはございませんので安心してお楽しみください！</p>
