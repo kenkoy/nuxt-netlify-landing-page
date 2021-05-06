@@ -1621,3 +1621,60 @@ collections:
                   name: footer_menu_4_redirect_url,
                   widget: "string",
                 }
+
+  - label: "Lobby Page - Slots"
+    name: "slots"
+    format: "frontmatter"
+    show_preview_links: false
+    file: "assets/content/lobby-page/slots.md"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - label: "Banner"
+        name: "banner"
+        widget: "list"
+        required: true
+        collapsed: true
+        fields:
+          - { label: "Banner Image", name: "image", widget: "image" }
+          - { label: "Banner URL", name: "url", widget: "string" }
+      - label: "Games"
+        name: "game"
+        widget: "list"
+        required: true
+        collapsed: true
+        max: 6
+        fields:
+          - { label: "Game Image", name: "image", widget: "image" }
+          - { label: "Game URL", name: "url", widget: "string" }
+          - { label: "Hot?", name: "is_hot", widget: "boolean" }
+      - label: "Game Tiles"
+        name: "game_tiles"
+        widget: "object"
+        required: true
+        collapsed: true
+        fields:
+          - label: "Links"
+            name: "links"
+            widget: "list"
+            max: 4
+            fields:
+              - { label: "URL", name: "url", widget: "text" }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Foreground Image", name: "foreground_image", widget: "image" }
+              - { label: "Background Image", name: "background_image", widget: "image" }
+          - label: "Modals"
+            name: "modals"
+            widget: "list"
+            max: 4
+            fields:
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Foreground Image", name: "foreground_image", widget: "image" }
+              - { label: "Background Image", name: "background_image", widget: "image" }
+      - {
+          label: "Content",
+          name: "body",
+          widget: "markdown",
+          required: true,
+        }
