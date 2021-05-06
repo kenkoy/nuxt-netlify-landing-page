@@ -5,21 +5,22 @@
       v-if="Object.keys(mdData).length > 0"
       class="vjjp-main"
     >
-      <SideMenu @page-slide-off="pageSlideOff" v-if="menuToggle" />
+      <SideMenu v-if="menuToggle" @page-slide-off="pageSlideOff" />
 
       <main :class="pageSlide">
-        <div v-if="menuToggle" id="overlay" /> <!-- Display when Sidemenu is visible -->
-        <Header @page-slide-on="pageSlideOn" :class="menuToggle ? 'nav-slide-up' : 'nav-slide-down'" />
+        <!-- Display when Sidemenu is visible -->
+        <div v-if="menuToggle" id="overlay" />
+        <Header :class="menuToggle ? 'nav-slide-up' : 'nav-slide-down'" @page-slide-on="pageSlideOn" />
 
         <!-- Main content -->
         <BannerSlider :banner-data="mdData.banner" />
         <section id="games">
           <div class="container-grid separator-top separator-bottom">
             <div class="row">
-              <div v-for="(games, games_index) in mdData.game" :key="games_index">
-                <a class="n-link" :href="games.url">
-                  <img :src="games.image" :alt="games.title">
-                  <p class="n-paragraph-3">{{ games.text }}</p>
+              <div v-for="(game, gameIndex) in mdData.game" :key="gameIndex">
+                <a class="n-link" :href="game.url">
+                  <img :src="game.image" :alt="game.title">
+                  <p class="n-paragraph-3">{{ game.title }}</p>
                 </a>
               </div>
             </div>
@@ -29,20 +30,28 @@
         <section id="game-tiles">
           <div class="container">
             <div class="row column-4 game-menu negate-gutter">
-              <div class="pods dice" v-for="(game_modal, game_modal_index) in mdData.game_tiles.modals" :key="game_modal_index">
+              <div v-for="(modal, modalIndex) in mdData.gameTiles.modals" :key="modalIndex" class="pods dice">
                 <div>
-                  <h3 class="emphasize">{{ game_modal.text }}</h3>
+                  <h3 class="emphasize">
+                    {{ modal.text }}
+                  </h3>
                   <img src="@/assets/images/seo/dice-icon.png" alt="alt img">
                 </div>
               </div>
             </div>
 
             <div class="row column-4 negate-gutter">
-              <div class="pods loyalty" v-for="(game_link, game_link_index) in mdData.game_tiles.links" :key="game_link_index">
+              <div v-for="(link, linkIndex) in mdData.gameTiles.links" :key="linkIndex" class="pods loyalty">
                 <div>
-                  <h3 class="emphasize">{{ game_link.text }}</h3>
-                  <p class="n-paragraph-1">{{ game_link.title }}</p>
-                  <p class="emphasize winning">{{ game_link.winning }}</p>
+                  <h3 class="emphasize">
+                    {{ link.text }}
+                  </h3>
+                  <p class="n-paragraph-1">
+                    {{ link.title }}
+                  </p>
+                  <p class="emphasize winning">
+                    {{ link.winning }}
+                  </p>
                 </div>
               </div>
             </div>
@@ -53,13 +62,13 @@
           <img src="@/assets/images/seo/footer-verajohn.png" alt="alt img">
           <div class="footer-item">
             <a class="n-link" href="/ja/help">
-              <img src="@/assets/images/seo/help-icon.png" alt="alt img"/>
+              <img src="@/assets/images/seo/help-icon.png" alt="alt img">
               <span class="n-paragraph">ヘルプ・センター</span>
             </a>
           </div>
           <div class="footer-item">
             <a class="n-link" href="/ja/about/beginnersguidemb">
-              <img src="@/assets/images/seo/beginner-guide-icon.png" alt="alt img"/>
+              <img src="@/assets/images/seo/beginner-guide-icon.png" alt="alt img">
               <span class="n-paragraph">ビギナーズガイド</span>
             </a>
           </div>
@@ -68,7 +77,7 @@
         <section id="seo-contents">
           <div class="container">
             <div class="row negate-gutter">
-              <div v-html="htmlBody" />
+              <div v-html="mdData.content" />
             </div>
           </div>
         </section>
@@ -77,7 +86,9 @@
           <div class="container footer-icons-wrapper">
             <div id="footer-payment-provider">
               <div class="row">
-                <p class="n-paragraph">入出金方法</p>
+                <p class="n-paragraph">
+                  入出金方法
+                </p>
               </div>
               <div class="row">
                 <div>
@@ -94,7 +105,9 @@
 
             <div id="footer-providers">
               <div class="row">
-                <p class="n-paragraph">ゲーム配信会社</p>
+                <p class="n-paragraph">
+                  ゲーム配信会社
+                </p>
               </div>
               <div class="row">
                 <div>
@@ -121,7 +134,7 @@
           </div>
         </footer>
       </main>
-      <FooterFixButtons :class="menuToggle ? 'footer-slide-down' : 'footer-slide-up'"/>
+      <FooterFixButtons :class="menuToggle ? 'footer-slide-down' : 'footer-slide-up'" />
     </div>
   </div>
 </template>
@@ -131,6 +144,7 @@ import SideMenu from '~/components/Vjjp/SideMenu.vue'
 import Header from '~/components/Vjjp/Header.vue'
 import BannerSlider from '~/components/Vjjp/BannerSlider.vue'
 import FooterFixButtons from '~/components/Vjjp/FooterFixButtons.vue'
+
 export default {
   components: {
     SideMenu,
@@ -140,17 +154,15 @@ export default {
   },
   data () {
     return {
-      pageSlide: '',
-      menuToggle: false,
       mdData: {},
-      htmlBody: ''
+      pageSlide: '',
+      menuToggle: false
       // scrollBottom: false
     }
   },
   created () {
     this.$root.$once('vjjp-data', (data) => {
-      this.htmlBody = data.htmlData
-      this.mdData = data.yamlData
+      this.mdData = data
     })
   },
   beforeDestroy () {

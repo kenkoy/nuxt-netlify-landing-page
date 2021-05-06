@@ -7,7 +7,9 @@
           <span />
           <span />
         </div>
-        <p class="n-paragraph-1">メニュー</p>
+        <p class="n-paragraph-1">
+          メニュー
+        </p>
       </button>
     </div>
 

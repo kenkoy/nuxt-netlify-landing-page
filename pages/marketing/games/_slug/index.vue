@@ -7,14 +7,6 @@ import Game from '@/models/Game'
 
 export default {
   layout: 'games',
-  head () {
-    return {
-      title: 'Play Slot Machines Online at Vera&John Casino',
-      htmlAttrs: {
-        lang: 'en'
-      }
-    }
-  },
   async asyncData ({ params, error }) {
     try {
       const game = await import('~/assets/content/games.json')
@@ -37,6 +29,14 @@ export default {
       }
     } catch (e) {
       error(e)
+    }
+  },
+  head () {
+    return {
+      title: 'Play Slot Machines Online at Vera&John Casino',
+      htmlAttrs: {
+        lang: 'en'
+      }
     }
   },
   mounted () {
