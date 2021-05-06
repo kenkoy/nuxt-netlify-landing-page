@@ -100,7 +100,7 @@ export default {
     extend (config, { isDev, isClient, loaders: { vue } }) {
       config.module.rules.push({
         test: /\.md$/,
-        include: path.resolve(__dirname, 'assets/content/landing-page/marketing'),
+        include: path.resolve(__dirname, 'assets/content/'),
         loader: 'frontmatter-markdown-loader'
       })
 
