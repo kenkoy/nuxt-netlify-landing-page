@@ -1647,6 +1647,7 @@ collections:
           required: true
           collapsed: true
           max: 6
+          summary: "{{field.text}}"
           fields:
             - { label: "Title", name: "title", widget: "string" }
             - { label: "Image", name: "image", widget: "image" }
@@ -1664,8 +1665,8 @@ collections:
               max: 4
               summary: "{{field.text}}"
               fields:
-                - { label: "URL", name: "url", widget: "string" }
                 - { label: "Text", name: "text", widget: "string" }
+                - { label: "URL", name: "url", widget: "string" }
                 - { label: "Foreground Image", name: "foreground_image", widget: "image" }
                 - { label: "Background Image", name: "background_image", widget: "image" }
             - label: "Modals"
