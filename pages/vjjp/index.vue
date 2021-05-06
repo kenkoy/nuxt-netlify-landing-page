@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  layout: 'vjjp/slots',
+  layout: 'vjjp/lobby',
   data () {
     return {
       navItems: [{

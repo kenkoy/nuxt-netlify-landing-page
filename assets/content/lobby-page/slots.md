@@ -7,35 +7,53 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
 banner:
-  url: 'https://www.verajohn.com/ja/about/loyalty-program'
-  url: 'https://www.verajohn.com/ja/game/hawaiian-dream'
-  url: 'https://www.verajohn.com/ja/about/cardmaster'
-  url: 'https://www.verajohn.com/ja/livecasino'
-  url: 'https://www.verajohn.com/ja/about/paymentoption'
-  image: /marketing/img/seo-banner.png
-  image: /marketing/img/seo-banner.png
-  image: /marketing/img/seo-banner.png
-  image: /marketing/img/seo-banner.png
-  image: /marketing/img/seo-banner.png
+  - image: /marketing/img/seo-banner.png
+    url: 'https://www.verajohn.com/ja/about/loyalty-program'
+  - image: /marketing/img/seo-banner.png
+    url: 'https://www.verajohn.com/ja/game/hawaiian-dream'
+  - image: /marketing/img/seo-banner.png
+    url: 'https://www.verajohn.com/ja/about/cardmaster'
+  - image: /marketing/img/seo-banner.png
+    url: 'https://www.verajohn.com/ja/livecasino'
+  - image: /marketing/img/seo-banner.png
+    url: 'https://www.verajohn.com/ja/about/paymentoption'
 game:
   - image: /marketing/img/img1.png
-    text: Dreams of Gold
+    title: Dreams of Gold
     url: https://www.verajohn.com/play/dreams-of-gold-mobile
   - image: /marketing/img/img2.png
-    text: Hawaiian Dream
+    title: Hawaiian Dream
     url: https://verajohn.com/play/hawaiian-dream-mobile
   - image: /marketing/img/img3.png
-    text: Battle Dwarf
+    title: Battle Dwarf
     url: https://verajohn.com/play/battle-dwarf-mobile
   - image: /marketing/img/img4.png
-    text: Yokozuna Clash
+    title: Yokozuna Clash
     url: https://verajohn.com/play/yokozuna-clash-mobile
   - image: /marketing/img/img5.png
-    text: Piggy Riches Megaways
+    title: Piggy Riches Megaways
     url: https://verajohn.com/play/piggy-riches-megaways-mobile
   - image: /marketing/img/img6.png
-    text: Drago - Jewels of Fortune
+    title: Drago - Jewels of Fortune
     link: https://casino.verajohn.com/play/drago-jewels-of-fortune-mobile
+game_tiles:
+  modals:
+  - text: ライブカジノ
+    foreground_image: /marketing/img/img2.png
+    background_image: /marketing/img/img2.png
+  - text: トーナメント
+    foreground_image: /marketing/img/img2.png
+    background_image: /marketing/img/img2.png
+  - text: すべてのテーブルゲーム
+    foreground_image: /marketing/img/img2.png
+    background_image: /marketing/img/img2.png
+  links:
+  - text: トーナメントに参加する
+    url: https://www.verajohn.com/ja/active-tournaments
+    title: 賞金プール
+    winning: $15,000.00
+    foreground_image: /marketing/img/img2.png
+    background_image: /marketing/img/img2.png
 ---
 <h1 class="n-header-1">ベラジョンオンラインカジノのオンラインビデオスロット</h1>
 <p class="n-paragraph">ベラジョンオンラインカジノでお気に入りのビデオスロットを探してみましょう。</p>

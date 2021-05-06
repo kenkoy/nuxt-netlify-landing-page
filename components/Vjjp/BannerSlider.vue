@@ -12,13 +12,13 @@
           :slides-to-scroll="1"
           v-bind="carouselSettings"
         >
-          <div v-for="(data, index) in carouselData" :key="index">
+          <div v-for="(data, index) in bannerData" :key="index">
             <button v-if="desktop" class="n-button n-button--secondary desktop">続きを読む</button>
             <a
-              :href="data.link"
+              :href="data.url"
               :aria-label="`link_${index + 1}`"
             >
-              <img :alt="`image_${index + 1}`" :src="data.icon">
+              <img :alt="`image_${index + 1}`" :src="data.image">
             </a>
             <button v-if="mobile" class="n-button n-button--secondary">続きを読む</button>
           </div>
@@ -55,20 +55,6 @@ export default {
   mounted () {
     this.myEventHandler()
     window.addEventListener('resize', this.myEventHandler)
-  },
-  computed: {
-    carouselData () {
-      const banner = this.bannerData
-      const links = Object.entries(banner)
-        .filter(data => data[0].includes('url'))
-        .map(data => data[1])
-      const icons = Object.entries(banner)
-        .filter(data => data[0].includes('icon'))
-        .map(data => data[1])
-      return links.map((data, index) => ({
-        link: data, icon: icons[index]
-      }))
-    }
   },
   methods: {
     myEventHandler () {

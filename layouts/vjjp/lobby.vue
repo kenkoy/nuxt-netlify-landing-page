@@ -12,13 +12,13 @@
         <Header @page-slide-on="pageSlideOn" :class="menuToggle ? 'nav-slide-up' : 'nav-slide-down'" />
 
         <!-- Main content -->
-        <BannerSlider :banner-data="mdData.banner_images" />
+        <BannerSlider :banner-data="mdData.banner" />
         <section id="games">
           <div class="container-grid separator-top separator-bottom">
             <div class="row">
-              <div v-for="(games, games_index) in mdData.game_list" :key="games_index">
-                <a class="n-link" :href="games.link">
-                  <img :src="games.img" :alt="games.text">
+              <div v-for="(games, games_index) in mdData.game" :key="games_index">
+                <a class="n-link" :href="games.url">
+                  <img :src="games.image" :alt="games.title">
                   <p class="n-paragraph-3">{{ games.text }}</p>
                 </a>
               </div>
@@ -29,36 +29,20 @@
         <section id="game-tiles">
           <div class="container">
             <div class="row column-4 game-menu negate-gutter">
-              <div class="pods dice">
+              <div class="pods dice" v-for="(game_modal, game_modal_index) in mdData.game_tiles.modals" :key="game_modal_index">
                 <div>
-                  <h3 class="emphasize">ライブカジノ</h3>
+                  <h3 class="emphasize">{{ game_modal.text }}</h3>
                   <img src="@/assets/images/seo/dice-icon.png" alt="alt img">
                 </div>
               </div>
-              <div class="pods trophy">
-                <div>
-                  <h3 class="emphasize">ライブカジノ</h3>
-                  <img src="@/assets/images/seo/trophy-icon.png" alt="alt img">
-                </div>
-              </div>
-              <div class="pods card">
-                <div>
-                  <h3 class="emphasize">ライブカジノ</h3>
-                  <img src="@/assets/images/seo/card-icon.png" alt="alt img">
-                </div>
-              </div>
             </div>
-          </div>
 
-          <div class="container">
             <div class="row column-4 negate-gutter">
-              <div class="pods loyalty">
+              <div class="pods loyalty" v-for="(game_link, game_link_index) in mdData.game_tiles.links" :key="game_link_index">
                 <div>
-                  <h3 class="emphasize">ライブカジノ</h3>
-                  <p class="n-paragraph-1">賞金プール</p>
-                  <p class="emphasize winning">
-                    $3,000.00
-                  </p>
+                  <h3 class="emphasize">{{ game_link.text }}</h3>
+                  <p class="n-paragraph-1">{{ game_link.title }}</p>
+                  <p class="emphasize winning">{{ game_link.winning }}</p>
                 </div>
               </div>
             </div>
