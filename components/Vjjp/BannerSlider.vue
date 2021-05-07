@@ -10,17 +10,20 @@
           :speed="300"
           :slides-to-show="1"
           :slides-to-scroll="1"
-          v-bind="carouselSettings"
         >
           <div v-for="(data, index) in bannerData" :key="index">
-            <button v-if="desktop" class="n-button n-button--secondary desktop">続きを読む</button>
+            <button v-if="desktop" class="n-button n-button--secondary desktop">
+              続きを読む
+            </button>
             <a
               :href="data.url"
               :aria-label="`link_${index + 1}`"
             >
               <img :alt="`image_${index + 1}`" :src="data.image">
             </a>
-            <button v-if="mobile" class="n-button n-button--secondary">続きを読む</button>
+            <button v-if="mobile" class="n-button n-button--secondary">
+              続きを読む
+            </button>
           </div>
         </VueSlickCarousel>
       </div>
