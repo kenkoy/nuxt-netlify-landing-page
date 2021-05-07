@@ -7,8 +7,8 @@ field_ids:
   go_container_id: OPT-PHSNXP6
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
-variation: variation1
-steps_gameslider: steps
+variation: variation2
+steps_gameslider: game_slider
 promo_banner:
   banner_promo_join_button: ""
   promo_title: aff-livecasinov2
