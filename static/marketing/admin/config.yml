@@ -1671,8 +1671,7 @@ collections:
           summary: "{{fields.text}}"
           fields:
             - { label: "Text", name: "text", widget: "string" }
-            - { label: "Icon", name: "icon", widget: "image" }
-            - { label: "Background Image", name: "bg_image", widget: "image" }
+            - { label: "Icon", name: "image", widget: "image" }
         - label: "Links"
           name: "links"
           widget: "list"
