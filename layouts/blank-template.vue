@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ blank_wrapper: true }">
+  <div class="enjoy-wrapper" :class="{ blank_wrapper: true }">
     <!-- Change class name to actual page name -->
     <nuxt />
     <div

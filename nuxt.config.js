@@ -65,6 +65,8 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/sass/global/verajohn_jp_main.min.css',
+    // '~/assets/sass/global/intercasino_jp_main.min.css',
     '~/assets/sass/global/animate.min.css',
     '~/assets/sass/global/fonts.css',
     '~/assets/sass/global/style.scss'
@@ -72,7 +74,7 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  plugins: ['~/plugins/util.js'],
   /*
   ** Nuxt.js dev-modules
   */

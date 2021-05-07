@@ -2,7 +2,6 @@
   <section id="game-slider">
     <div class="container">
       <div class="slider">
-        {{ game_data }}
         <VueSlickCarousel
           :arrows="false"
           :dots="false"
