@@ -16,7 +16,7 @@ promo_banner:
     promo_bg_desktop: /marketing/img/bg-dt.jpg
     promo_bg_mobile: /marketing/img/bg-mob.jpg
     promo_bg_banner: /marketing/img/vjlp3-black-red-bg.jpg
-  first_title: ""
+  first_title: " "
   promo_title_display: false
   mobile_full: false
   promo_banner_position: left
