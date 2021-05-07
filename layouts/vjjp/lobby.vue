@@ -33,10 +33,15 @@
             <div class="row column-4 game-menu negate-gutter">
               <div v-for="(modal, modalIndex) in mdData.gameTiles.modals" :key="modalIndex" class="pods dice">
                 <div>
-                  <h3 class="emphasize">
-                    {{ modal.text }}
-                  </h3>
-                  <img src="@/assets/images/seo/dice-icon.png" alt="alt img">
+                  <div class="pod-bg">
+                    <img :src="modal.image" alt="alt img">
+                  </div>
+                  <div class="pod-content">
+                    <h3 class="emphasize">
+                      {{ modal.text }}
+                    </h3>
+                    <img class="pod-feat-img" :src="modal.image" alt="alt img">
+                  </div>
                 </div>
               </div>
             </div>
@@ -44,15 +49,21 @@
             <div class="row column-4 negate-gutter">
               <div v-for="(link, linkIndex) in mdData.gameTiles.links" :key="linkIndex" class="pods loyalty">
                 <a :href="link.url">
-                  <h3 class="emphasize">
-                    {{ link.text }}
-                  </h3>
-                  <p class="n-paragraph-1">
-                    {{ link.title }}
-                  </p>
-                  <span class="emphasize winning">
-                    {{ link.winning }}
-                  </span>
+                  <div class="pod-bg">
+                    <img :src="link.image" alt="alt img">
+                  </div>
+
+                  <div class="pod-content">
+                    <h3 class="emphasize">
+                      {{ link.text }}
+                    </h3>
+                    <p class="n-paragraph-1">
+                      {{ link.title }}
+                    </p>
+                    <span class="emphasize winning">
+                      {{ link.winning }}
+                    </span>
+                  </div>
                 </a>
               </div>
             </div>
