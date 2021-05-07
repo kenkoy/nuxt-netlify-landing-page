@@ -11,7 +11,6 @@
         <!-- Display when Sidemenu is visible -->
         <div v-if="menuToggle" id="overlay" />
         <Header :class="menuToggle ? 'nav-slide-up' : 'nav-slide-down'" @page-slide-on="pageSlideOn" />
-
         <!-- Main content -->
         <BannerSlider :banner-data="mdData.banner" />
         <section id="games">
@@ -196,11 +195,10 @@ export default {
         this.menuToggle = false
       }, 300)
     }
-    // THIS IS FOR SHOW / HIDE FOOTER WHEN IT REACHES BOTTOM PAGE
     // handleScroll (event) {
     //   if (document.documentElement.scrollTop + window.innerHeight === document.documentElement.scrollHeight) {
     //     this.scrollBottom = true
-    //   } else {
+    //   } else if (document.documentElement.scrollTop + window.innerHeight < document.documentElement.scrollHeight - 200) {
     //     this.scrollBottom = false
     //   }
     // }
