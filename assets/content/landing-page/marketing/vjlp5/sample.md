@@ -19,9 +19,9 @@ promo_banner:
   first_title: "FIRST TITLE "
   promo_title_display: false
   mobile_full: false
-  promo_banner_position: right
+  promo_banner_position: left
   second_title: SECOND TITLE
-  promo_banner_font_size: medium-text
+  promo_banner_font_size: large-text
   desktop_full: false
   promo_login_button_redirect_url: https://verajohn.com/?member=SRSW30v56&profile=DZpvIjV#join
   promo_join_button_redirect_url: https://verajohn.com/?member=SRSW30v56&profile=DZpvIjV#join
