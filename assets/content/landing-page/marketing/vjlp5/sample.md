@@ -19,7 +19,7 @@ promo_banner:
   first_title: "FIRST TITLE "
   promo_title_display: false
   mobile_full: false
-  promo_banner_position: left
+  promo_banner_position: right
   second_title: SECOND TITLE
   promo_banner_font_size: medium-text
   desktop_full: false
