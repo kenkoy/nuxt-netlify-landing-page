@@ -41,7 +41,7 @@ game_tiles:
       title: 賞金プール
       winning: $15,000.00
       url: https://www.verajohn.com/ja/active-tournaments
-      image: /marketing/img/trophy-icon-transparent.png
+      bg_image: /marketing/img/trophy-icon-transparent.png
 ---
 <h1 class="n-header-1">ベラジョンオンラインカジノのオンラインビデオスロット</h1>
 
