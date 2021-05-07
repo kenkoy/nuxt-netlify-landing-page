@@ -12,7 +12,7 @@
   @include overlayMixins;
 }
 .separator-top{
-  :after{
+  &:after{
     background: #0082BA;
     display: block;
     content: '';
@@ -24,7 +24,7 @@
   }
 }
 .separator-bottom{
-  :before{
+  &:before{
     background: #0082BA;
     display: block;
     content: '';
@@ -142,6 +142,22 @@ main{
   text-align: center;
 
   .container-grid{
+    position: relative;
+
+    .hot-icon{
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url('../../assets/images/seo/hot-icon.png') no-repeat;
+      background-size: contain;
+      width: 30px;
+      height: 30px;
+    }
+    a{
+      display: block;
+      position: relative;
+      border: none;
+    }
     img{
       display: block;
       margin: auto;
@@ -155,6 +171,9 @@ main{
   h3,
   .loyalty p {
     margin: 0;
+  }
+  a{
+    text-decoration: none;
   }
 
   .dice{

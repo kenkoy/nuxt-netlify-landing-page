@@ -132,5 +132,9 @@ game_tiles:
 
 <p class="n-paragraph">ビデオスロットは違法カジノで、不正な操作が行われているという噂もありますが、ベラジョンオンラインカジノのような世界的に有名であり、大手であるオンラインカジノでは、そういったことはございませんので安心してお楽しみください！</p>
 
+<<<<<<< HEAD
 <p class="n-paragraph"><a href="//www.verajohn.com/ja/roulette" class="n-link"> ルーレット </a> | <a href="//www.verajohn.com/ja/slots" class="n-link"> カジノスロット </a> | <a href="//www.verajohn.com/ja/livecasino" class="n-link">ライブ カジノ</a> | <a href="//www.verajohn.com/ja" class="n-link">カジノ</a>
 </p>
+=======
+<p class="n-paragraph"><a href="//www.verajohn.com/ja/roulette" class="n-link"> ルーレット </a> | <a href="//www.verajohn.com/ja/slots" class="n-link"> カジノスロット </a> | <a href="//www.verajohn.com/ja/livecasino" class="n-link">ライブ カジノ</a> | <a href="//www.verajohn.com/ja" class="n-link">カジノ</a></p>
+>>>>>>> dfe4390a18227e58a9f8d10e39f43f1354310a99

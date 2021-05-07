@@ -19,6 +19,7 @@
             <div class="row">
               <div v-for="(game, gameIndex) in mdData.game" :key="gameIndex">
                 <a class="n-link" :href="game.url">
+                  <i class="hot-icon" v-if="game.isHot"></i>
                   <img :src="game.image" :alt="game.title">
                   <p class="n-paragraph-3">{{ game.title }}</p>
                 </a>
@@ -42,17 +43,17 @@
 
             <div class="row column-4 negate-gutter">
               <div v-for="(link, linkIndex) in mdData.gameTiles.links" :key="linkIndex" class="pods loyalty">
-                <div>
+                <a :href="link.url">
                   <h3 class="emphasize">
                     {{ link.text }}
                   </h3>
                   <p class="n-paragraph-1">
                     {{ link.title }}
                   </p>
-                  <p class="emphasize winning">
+                  <span class="emphasize winning">
                     {{ link.winning }}
-                  </p>
-                </div>
+                  </span>
+                </a>
               </div>
             </div>
           </div>
