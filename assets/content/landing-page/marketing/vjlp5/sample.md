@@ -7,8 +7,8 @@ field_ids:
   go_container_id: OPT-PHSNXP6
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
-variation: variation4
-steps_gameslider: steps
+variation: variation1
+steps_gameslider: game_slider
 promo_banner:
   banner_promo_join_button: ""
   promo_title: aff-livecasinov2
@@ -16,12 +16,12 @@ promo_banner:
     promo_bg_desktop: /marketing/img/bg-dt.jpg
     promo_bg_mobile: /marketing/img/bg-mob.jpg
     promo_bg_banner: /marketing/img/vjlp3-black-red-bg.jpg
-  first_title: "FIRST TITLE "
+  first_title: " "
   promo_title_display: false
   mobile_full: false
   promo_banner_position: left
   second_title: SECOND TITLE
-  promo_banner_font_size: medium-text
+  promo_banner_font_size: large-text
   desktop_full: false
   promo_login_button_redirect_url: https://verajohn.com/?member=SRSW30v56&profile=DZpvIjV#join
   promo_join_button_redirect_url: https://verajohn.com/?member=SRSW30v56&profile=DZpvIjV#join
