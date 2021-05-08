@@ -30,7 +30,7 @@
         <section id="game-tiles">
           <div class="container">
             <div class="row column-4 game-menu negate-gutter">
-              <div v-for="(modal, modalIndex) in mdData.gameTiles.modals" :key="modalIndex" class="pods dice">
+              <div v-for="(modal, modalIndex) in mdData.gameTiles.modals" :key="modalIndex" class="pods">
                 <div>
                   <div class="pod-bg">
                     <img :src="modal.image" alt="alt img">
