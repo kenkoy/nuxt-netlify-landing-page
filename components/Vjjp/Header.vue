@@ -14,7 +14,7 @@
     </div>
 
     <div id="header-logo">
-      <img class="logo" src="@/assets/images/seo/logo.png" alt="alt img">
+      <img class="logo" src="@/assets/images/vjjp/logo.png" alt="alt img">
     </div>
 
     <div id="header-button">
