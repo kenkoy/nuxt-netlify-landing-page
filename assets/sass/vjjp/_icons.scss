@@ -1,8 +1,13 @@
-.home-icon{
-  background: url('../../assets/images/seo/icons.png');
-  background-position: -258px -42px;
+.icon {
+  background: url('../../assets/images/vjjp/icons.png');
   width: 24px;
   height: 24px;
   display: block;
   background-size: 720px;
+}
+.home-icon{
+  background-position: -258px -42px;
+}
+.close-icon{
+  background-position: -78px -42px;
 }

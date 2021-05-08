@@ -3,14 +3,14 @@
     <div id="menu-slide-header">
       <div>
         <button class="btn" @click="pageSlideOff(false)">
-          x
+          <i class="icon close-icon" />
         </button>
       </div>
       <div>
         <p>メニュー</p>
       </div>
       <div class="icon-wrapper">
-        <i class="home-icon" />
+        <i class="icon home-icon" />
       </div>
     </div>
     <div>

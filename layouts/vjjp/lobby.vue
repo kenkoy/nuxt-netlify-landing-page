@@ -18,7 +18,7 @@
             <div class="row">
               <div v-for="(game, gameIndex) in mdData.game" :key="gameIndex">
                 <a class="n-link" :href="game.url">
-                  <i class="hot-icon" v-if="game.isHot"></i>
+                  <i v-if="game.isHot" class="hot-icon" />
                   <img :src="game.image" :alt="game.title">
                   <p class="n-paragraph-3">{{ game.title }}</p>
                 </a>
@@ -70,16 +70,16 @@
         </section>
 
         <section id="cta">
-          <img src="@/assets/images/seo/footer-verajohn.png" alt="alt img">
+          <img src="@/assets/images/vjjp/footer-verajohn.png" alt="alt img">
           <div class="footer-item">
             <a class="n-link" href="/ja/help">
-              <img src="@/assets/images/seo/help-icon.png" alt="alt img">
+              <img src="@/assets/images/vjjp/help-icon.png" alt="alt img">
               <span class="n-paragraph">ヘルプ・センター</span>
             </a>
           </div>
           <div class="footer-item">
             <a class="n-link" href="/ja/about/beginnersguidemb">
-              <img src="@/assets/images/seo/beginner-guide-icon.png" alt="alt img">
+              <img src="@/assets/images/vjjp/beginner-guide-icon.png" alt="alt img">
               <span class="n-paragraph">ビギナーズガイド</span>
             </a>
           </div>
@@ -103,13 +103,13 @@
               </div>
               <div class="row">
                 <div>
-                  <img src="@/assets/images/seo/visa-icon.png" alt="alt img">
-                  <img src="@/assets/images/seo/master-icon.png" alt="alt img">
-                  <img src="@/assets/images/seo/venus-point-icon.png" alt="alt img">
-                  <img src="@/assets/images/seo/bitcoin-icon.png" alt="alt img">
-                  <img src="@/assets/images/seo/playsafe-icon.png" alt="alt img">
-                  <img src="@/assets/images/seo/eco-icon.png" alt="alt img">
-                  <img src="@/assets/images/seo/i-wallet-icon.png" alt="alt img">
+                  <img src="@/assets/images/vjjp/visa-icon.png" alt="alt img">
+                  <img src="@/assets/images/vjjp/master-icon.png" alt="alt img">
+                  <img src="@/assets/images/vjjp/venus-point-icon.png" alt="alt img">
+                  <img src="@/assets/images/vjjp/bitcoin-icon.png" alt="alt img">
+                  <img src="@/assets/images/vjjp/playsafe-icon.png" alt="alt img">
+                  <img src="@/assets/images/vjjp/eco-icon.png" alt="alt img">
+                  <img src="@/assets/images/vjjp/i-wallet-icon.png" alt="alt img">
                 </div>
               </div>
             </div>
@@ -122,7 +122,7 @@
               </div>
               <div class="row">
                 <div>
-                  <img src="@/assets/images/seo/e-icon.png" alt="alt img">
+                  <img src="@/assets/images/vjjp/e-icon.png" alt="alt img">
                 </div>
               </div>
             </div>
@@ -130,8 +130,8 @@
             <div id="footer-logo">
               <div class="row">
                 <div>
-                  <img src="@/assets/images/seo/CEG_logo.png" alt="alt img">
-                  <img src="@/assets/images/seo/20+.svg" alt="alt img">
+                  <img src="@/assets/images/vjjp/CEG_logo.png" alt="alt img">
+                  <img src="@/assets/images/vjjp/20+.svg" alt="alt img">
                 </div>
                 <div>
                   <span class="footer-text">当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。<br>
