@@ -266,6 +266,9 @@ main{
 #seo-contents{
   background: #0093D4;
   padding: $PADDING;
+  h1,h2{
+    text-align: center;
+  }
 }
 #footer-icon-wrapper .row > div{
   padding: 0;
