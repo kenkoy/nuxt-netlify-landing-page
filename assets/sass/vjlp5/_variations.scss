@@ -28,7 +28,7 @@
       span{
         background: linear-gradient($HIGHLIGHT_TEXT, lighten($HIGHLIGHT_TEXT, 3%));
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: $LIGHT_TEXT_COLOR;
         filter: drop-shadow(2px 2px 3px darken($HIGHLIGHT, 5%));
       }
     }

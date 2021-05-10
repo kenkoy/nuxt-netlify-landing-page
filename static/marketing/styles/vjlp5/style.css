@@ -368,14 +368,14 @@
 .vjlp5_wrapper .variation3 h1 {
     background: linear-gradient(#fff, #cccccc);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: #fff;
     filter: drop-shadow(2px 2px 3px black);
     font-weight: 700;
 }
 .vjlp5_wrapper .variation3 h1 span {
     background: linear-gradient(#ffdd2c, #ffdf3b);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: #fff;
     filter: drop-shadow(2px 2px 3px #ffd34d);
 }
 .vjlp5_wrapper .variation4 h1 {
