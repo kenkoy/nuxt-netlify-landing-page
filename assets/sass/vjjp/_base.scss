@@ -176,6 +176,10 @@ main{
     text-decoration: none;
   }
 
+  .loyalty{
+    min-height: 201px;
+  }
+
   .pod-bg{
     filter: hue-rotate(180deg) invert(100%);
     position: absolute;
