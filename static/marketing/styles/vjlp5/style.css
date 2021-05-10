@@ -375,7 +375,7 @@
 .vjlp5_wrapper .variation3 h1 span {
     background: linear-gradient(#ffdd2c, #ffdf3b);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: #fff;
+    -webkit-text-fill-color: transparent;
     filter: drop-shadow(2px 2px 3px #ffd34d);
 }
 .vjlp5_wrapper .variation4 h1 {
