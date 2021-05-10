@@ -14,7 +14,7 @@
         <!-- Main content -->
         <BannerSlider :banner-data="mdData.banner" />
         <section id="games">
-          <div class="container-grid separator-top separator-bottom">
+          <div class="container separator-top separator-bottom">
             <div class="row">
               <div v-for="(game, gameIndex) in mdData.game" :key="gameIndex">
                 <a class="n-link" :href="game.url">

@@ -140,8 +140,10 @@ main{
 #games{
   padding: $PADDING;
   text-align: center;
-
-  .container-grid{
+  .row {
+    overflow: auto;
+  }
+  .container{
     position: relative;
 
     .hot-icon{
@@ -176,12 +178,13 @@ main{
     text-decoration: none;
   }
 
-  .loyalty{
+  .pods.loyalty{
     min-height: 201px;
   }
 
   .pod-bg{
     filter: hue-rotate(180deg) invert(100%);
+    display: flex;
     position: absolute;
     top: 0;
     left: 0;
@@ -192,7 +195,9 @@ main{
 
     img{
       width: auto;
+      max-width: 145px;
       height: 100%;
+      max-height: 145px;
       display: block;
       margin: auto;
     }

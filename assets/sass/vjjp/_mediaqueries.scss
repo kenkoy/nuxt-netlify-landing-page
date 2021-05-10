@@ -2,11 +2,6 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-  #games{
-    .container-grid > .row{
-      grid-template-columns: auto auto;
-    }
-  }
   #footer-logo{
     .row{
       flex-wrap: wrap;
@@ -17,20 +12,10 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-  #games{
-    .container-grid > .row{
-      grid-template-columns: auto auto auto;
-    }
-  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-  #games{
-    .container-grid > .row{
-      grid-template-columns: auto auto auto auto;
-    }
-  }
   #footer-logo{
     .row > div:first-child{
       -ms-flex: 0 0 20%;
@@ -47,11 +32,6 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-  #games{
-    .container-grid > .row{
-      grid-template-columns: auto auto auto auto auto auto;
-    }
-  }
 }
 
 /* Large Devices, Wide Screens */
