@@ -21,7 +21,7 @@
     h1{
       background: linear-gradient($LIGHT_TEXT_COLOR, darken($LIGHT_TEXT_COLOR, 20%));
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      -webkit-text-fill-color: $LIGHT_TEXT_COLOR;
       filter: drop-shadow(2px 2px 3px darken($LIGHT_TEXT_COLOR, 100%));
       font-weight: 700;
 
