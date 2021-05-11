@@ -20,7 +20,7 @@
                 <a class="n-link" :href="game.url">
                   <i v-if="game.isHot" class="hot-icon" />
                   <img :src="game.image" :alt="game.title">
-                  <p class="n-paragraph-3">{{ game.title }}</p>
+                  <p class="game-name">{{ game.title }}</p>
                 </a>
               </div>
             </div>
