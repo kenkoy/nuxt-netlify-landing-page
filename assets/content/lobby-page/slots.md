@@ -1,32 +1,32 @@
 ---
 slug_name: slots
 banner:
-  - image: https://cdn.ridgegaming.net/files/upload/promotion/mobile_file5f96e28305b7a5259.png?qskoak&6090&6090
+  - image: /marketing/img/vjjp_banner.png
     url: https://www.verajohn.com/ja/about/beginnersguidemb
 game:
   - is_hot: true
     title: Dreams of Gold
-    image: https://cdn.ridgegaming.net/files/dynimage/88:88/files/upload/game/gameimage_vjicon5e6b251e5292e4956.png?qskoak&6090&6090
+    image: /marketing/img/img1.png
     url: https://www.verajohn.com/play/dreams-of-gold-mobile
   - is_hot: true
     title: Hawaiian Dream
-    image: https://cdn.ridgegaming.net/files/dynimage/88:88/files/upload/game/gameimage_vjicon5be43f82cbe050.png?qskoak&6090&6090
+    image: /marketing/img/img2.png
     url: https://www.verajohn.com/play/hawaiian-dream-mobile
   - is_hot: true
     title: Battle Dwarf
-    image: https://cdn.ridgegaming.net/files/dynimage/88:88/files/upload/game/gameimage_vjicon5d1b0b9a4524e0.png?qskoak&6090&6090
+    image: /marketing/img/img3.png
     url: https://www.verajohn.com/play/battle-dwarf-mobile
   - is_hot: false
     title: Yokozuna Clash
-    image: https://cdn.ridgegaming.net/files/dynimage/88:88/files/upload/game/gameimage_vjicon5d4a8e8a09d5e0.png?qskoak&6090&6090
+    image: /marketing/img/img4.png
     url: https://www.verajohn.com/play/yokozuna-clash-mobile
   - is_hot: true
     title: Piggy Riches Megaways
-    image: https://cdn.ridgegaming.net/files/dynimage/88:88/files/upload/game/gameimage_vjicon5e254059a8b020.png?qskoak&6090&6090
+    image: /marketing/img/img5.png
     url: https://www.verajohn.com/play/piggy-riches-megaways-mobile
   - is_hot: true
     title: Drago - Jewels of Fortune
-    image: https://cdn.ridgegaming.net/files/dynimage/88:88/files/upload/game/gameimage_vjicon5b9c0ae461f930.png?qskoak&6090&6090
+    image: /marketing/img/img6.png
     url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
 game_tiles:
   modals:
