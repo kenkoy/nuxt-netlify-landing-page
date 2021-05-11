@@ -97,7 +97,7 @@
           <div class="container footer-icons-wrapper">
             <div id="footer-payment-provider">
               <div class="row">
-                <p class="n-paragraph">
+                <p class="footer-title">
                   入出金方法
                 </p>
               </div>
@@ -116,7 +116,7 @@
 
             <div id="footer-providers">
               <div class="row">
-                <p class="n-paragraph">
+                <p class="footer-title">
                   ゲーム配信会社
                 </p>
               </div>
