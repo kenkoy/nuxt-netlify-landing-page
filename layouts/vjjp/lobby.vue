@@ -198,7 +198,7 @@ export default {
     // handleScroll (event) {
     //   if (document.documentElement.scrollTop + window.innerHeight === document.documentElement.scrollHeight) {
     //     this.scrollBottom = true
-    //   } else if (document.documentElement.scrollTop + window.innerHeight < document.documentElement.scrollHeight - 200) {
+    //   } else if (document.documentElement.scrollTop + window.innerHeight < document.documentElement.scrollHeight - document.getElementById('footer-icon-wrapper').offsetHeight) {
     //     this.scrollBottom = false
     //   }
     // }
