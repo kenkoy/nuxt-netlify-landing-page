@@ -5,7 +5,7 @@
 <script>
 
 export default {
-  layout: 'vjhp2',
+  layout: 'marketing/vjhp2',
 
   async asyncData () {
     try {

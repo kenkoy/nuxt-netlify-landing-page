@@ -1,9 +1,6 @@
 .core-wrapper {
-  @import 'base';
-  @import 'navigation';
-  @import 'footer';
+  @import 'layoutCss';
 }
-
-.vjjp-wrapper {
-  @import 'vjjpLayout';
+.layout-css {
+  @import 'layoutCssV2';
 }

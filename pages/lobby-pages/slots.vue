@@ -5,7 +5,7 @@
 <script>
 
 export default {
-  layout: 'vjjp/lobby-pages',
+  layout: 'lobby-pages/lobby',
   async asyncData ({ error, $toCamelCase }) {
     try {
       const data = await import('~/assets/content/lobby-page/slots.md')
@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     emitData (data) {
-      this.$root.$emit('vjjp-data', data)
+      this.$root.$emit('lobby-pages-data', data)
     }
   }
 }

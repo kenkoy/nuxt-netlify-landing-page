@@ -5,7 +5,7 @@
 <script>
 
 export default {
-  layout: 'vjlp6',
+  layout: 'marketing/vjlp6',
   async asyncData ({ params }) {
     try {
       /* get MD FILE per PAGE / SLUG */

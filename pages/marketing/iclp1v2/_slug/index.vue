@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  layout: 'iclp1v2', // Change to actual layout
+  layout: 'marketing/iclp1v2', // Change to actual layout
   async asyncData ({ params, error }) {
     try {
       const markDownData = await import('~/assets/content/landing-page/marketing/iclp1/' + params.slug + '.md') // Change to actual slug

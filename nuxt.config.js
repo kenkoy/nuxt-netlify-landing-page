@@ -65,10 +65,10 @@ export default {
   ** Global CSS
   */
   css: [
-    '~/assets/sass/global/verajohn_jp_main.min.css',
+    '~/assets/sass/global/externalCssBrand/verajohn_jp_main.min.css',
     // '~/assets/sass/global/intercasino_jp_main.min.css',
-    '~/assets/sass/global/animate.min.css',
-    '~/assets/sass/global/fonts.css',
+    '~/assets/sass/global/externalCssBrand/animate.min.css',
+    '~/assets/sass/global/externalCssBrand/fonts.css',
     '~/assets/sass/global/style.scss'
   ],
   /*

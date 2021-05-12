@@ -1,0 +1,331 @@
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+  section,
+  footer{
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+
+  header.mobile{
+    background: #000;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+
+    img{
+      max-width: 120px;
+      display: block;
+      margin: auto;
+    }
+
+    .join{
+      position: absolute;
+      top: 80px;
+      right: 3%;
+      z-index: 3;
+
+      img{
+        max-width: 45px;
+      }
+    }
+  }
+
+  #firstview{
+    min-height: 600px;
+    .container{
+      display: block;
+    }
+  }
+
+  #firstvie__inquiry > div{
+    padding: 4px;
+
+    .firstvie__inquiry__inner{
+      border: solid 2px #fff;
+      padding: 15px;
+    }
+
+    h3{
+      color: #ff0;
+      margin: 0;
+    }
+
+    a{
+      font-size: 18px;
+      color: #fff;
+      text-decoration: none;
+      border-bottom: solid 1px #fff;
+      font-weight: 700;
+    }
+
+    button{
+      background: transparent;
+      border: none;
+      color: #fff;
+      border-bottom: solid 1px #fff;
+      font-size: 18px;
+      font-weight: 700;
+      display: none;
+    }
+  }
+  .firstvie__inquiry__turm{
+    color: #000;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #fff;
+    font-weight: 700;
+    text-decoration: none;
+
+    span{
+      color: #f20574;
+      border-bottom: solid 1px #f20574;
+    }
+  }
+  @at-root .fin .firstvie__inquiry__inner{
+    a,
+    button{
+      display: inline-block !important;
+      vertical-align: bottom;
+      margin: 0 15px;
+    }
+    a{
+      color: #ff449c !important;
+      border-bottom: solid 1px #ff449c !important;
+    }
+  }
+  @at-root .fin .firstvie__inquiry br{
+    display: none;
+  }
+  .firstview__anime{
+    top: -150px;
+  }
+
+  .touch{
+    position: relative;
+    z-index: 1;
+
+    img{
+      width: 144px;
+    }
+  }
+  .dream-logo{
+    position: relative;
+    margin: auto;
+
+    img{
+      width: 200px;
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .firstvie__inquiry{
+    position: relative;
+    z-index: 1;
+  }
+
+  .firstview__counter{
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(.8);
+    transform: translateX(-50%) scale(.8);
+    width: 320px;
+    min-height: 65px;
+    margin-top: 150px;
+
+    &:before{
+      background: url('../../assets/images/marketing/iclp3v2/counter_touch.png');
+      width: 125px;
+      height: 40px;
+      display: block;
+      content: '';
+      background-size: cover;
+      position: absolute;
+      right: -10px;
+      top: 30px;
+      margin-top: -20px;
+    }
+  }
+
+  .number{
+    background: url("../../assets/images/marketing/iclp3v2/bg_counter.png") no-repeat;
+    background-size: 45px 60px;
+  }
+
+  #bonus{
+    .box{
+      margin: 50px auto 10px auto;
+      font-size: $TEXT_SIZE;
+
+      .image-title{
+        margin: -70px auto 0 auto;
+        max-width: none;
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  #terms{
+    ul{
+      padding-left: 19px;
+      margin-left: 0;
+    }
+    font-size: calc(#{$TEXT_SIZE} - 5px);
+    font-weight: 700;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 576px) {
+  #bonus{
+    .box{
+      .image-title{
+        margin: -80px auto 0 auto;
+      }
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .desktop{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
+  header.desktop{
+    .join{
+      position: absolute;
+      top: 15px;
+      right: 0;
+
+      img{
+        max-width: 50px;
+      }
+    }
+  }
+  .inter-casino-logo{
+    img{
+      max-width: 180px;
+    }
+  }
+  #firstview{
+    .touch,
+    .dream-logo{
+      top: 70px;
+    }
+  }
+  .touch{
+    img{
+      width: 250px;
+    }
+  }
+  .dream-logo{
+    position: absolute;
+    right: 0;
+
+    img{
+      width: 250px;
+    }
+  }
+  .firstview__counter{
+    width: 550px;
+    min-height: 100px;
+    margin-top: 300px;
+
+    &:before{
+      width: 200px;
+      height: 60px;
+    }
+  }
+
+  .number{
+    background-size: 75px 95px;
+  }
+
+  #firstvie__inquiry{
+    width: 300px;
+    position: absolute;
+    top: 53%;
+    right: 0;
+    transition: all 0.5s ease;
+
+    > div{
+      h3{
+        font-size: 26px;
+      }
+      a, button{
+        font-size: 24px;
+      }
+    }
+  }
+
+  @at-root .fin .firstvie__inquiry{
+    width: 65% !important;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .dream-logo{
+    img{
+      width: 300px;
+    }
+  }
+
+  .touch{
+    left: 100px;
+  }
+
+  #bonus{
+    .box{
+      margin: 100px auto 10px auto;
+      p{
+        font-size: calc(#{$TEXT_SIZE} + 7px);
+      }
+      .image-title{
+        margin: -130px auto 0 auto;
+      }
+    }
+  }
+  #terms{
+    font-size: calc(#{$TEXT_SIZE} - 3px);
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .inter-casino-logo{
+    img{
+      max-width: 230px;
+    }
+  }
+
+  .touch{
+    left: 200px;
+
+    img{
+      width: 200px;
+    }
+  }
+
+  .firstview__counter{
+    width: 600px;
+    -webkit-transform: translateX(-50%) scale(1);
+    transform: translateX(-50%) scale(1);
+
+    &:before{
+      width: 260px;
+      height: 80px;
+    }
+  }
+}

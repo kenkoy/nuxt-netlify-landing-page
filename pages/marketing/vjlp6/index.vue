@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ThePostList from '~/components/Base/ThePostList'
+import ThePostList from '~/components/Marketing/ThePostList'
 
 export default {
 

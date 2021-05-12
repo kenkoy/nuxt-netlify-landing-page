@@ -1,0 +1,326 @@
+* {
+  font-family: 'MainFont-Medium';
+}
+section,
+footer{
+  padding: 20px 10px;
+  background: $BG_MAIN;
+}
+
+a{
+  color: $LINK_COLOR;
+
+  // &:hover{
+  //   color: $LINK_COLOR_HOVER;
+  // }
+}
+
+p {
+  color: $TEXT_COLOR;
+}
+ul{
+  margin: 0;
+}
+.redmark{
+  background-color: $REDMARK;
+  color: white;
+  font-weight: bold;
+}
+.blackmark{
+  background-color: $BLACKMARK;
+  color: white;
+  font-weight: bold;
+}
+
+button {
+  background-color: $WARNING;
+  border-radius: 100px;
+  padding: 10px 40px;
+  border: 0;
+  color: $TEXT_COLOR;
+  font-size: 1.5em;
+  width: 280px;
+  margin: 20px 0;
+  display: block;
+  margin: 20px auto;
+
+  &:hover{
+    background: $BTN_HOVER;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.separation-star{
+  &:before {
+    background: url('../../assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png') no-repeat center right;
+    content: "";
+    display: block;
+    height: 30px;
+    width: 65px;
+    margin: auto;
+  }
+}
+
+#hero{
+  height: 100%;
+  position: relative;
+
+  &:after{
+    display: block;
+    content: '';
+    background: linear-gradient( 90deg, rgba(131, 58, 180, 1) 0%, rgba(255, 0, 90, 1) 50%, rgba(252, 176, 69, 1) 100% );
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  img{
+    display: block;
+    margin: auto;
+  }
+}
+
+#detail{
+  background: linear-gradient( 180deg, rgba(159, 15, 79, 1) 0%, rgba(79, 23, 117, 1) 28%, rgba(0, 0, 0, 1) 88% );
+  text-align: center;
+
+  summary{
+    text-align: left;
+    padding: 20px 50px;
+
+    h3{
+      margin: 0;
+    }
+  }
+
+  > .column-2{
+    img{
+      max-width: 345px;
+      width: 100%;
+      display: block;
+      margin: 20px auto;
+    }
+  }
+
+  > .container:first-child img:first-child{
+    max-width: 500px;
+    width: 100%;
+  }
+  > .container:first-child img:first-child + img{
+    max-width: 664px;
+    width: 100%;
+  }
+}
+#testimonials{
+  .container:first-child{
+    margin: 20px auto;
+
+    h3{
+      color: #e10057;
+    }
+    summary{
+      position: relative;
+      background: #fff;
+      border-radius: 30px;
+      color: black;
+      padding: 20px;
+      -webkit-box-shadow: 3px 3px 0px 0px rgba(255, 0, 72, 1);
+      -moz-box-shadow: 3px 3px 0px 0px rgba(255, 0, 72, 1);
+      box-shadow: 3px 3px 0px 0px rgba(255, 0, 72, 1);
+    }
+  }
+
+  .container:first-child + div{
+    margin: 20px auto;
+
+    h3{
+      color: #a184d6;
+    }
+    summary{
+      position: relative;
+      background: #fff;
+      border-radius: 30px;
+      color: black;
+      padding: 20px;
+      -webkit-box-shadow: 5px 5px 0px 0px rgba(168, 138, 225, 1);
+      -moz-box-shadow: 5px 5px 0px 0px rgba(168, 138, 225, 1);
+      box-shadow: 5px 5px 0px 0px rgba(168, 138, 225, 1);
+    }
+  }
+}
+
+#golden-separation {
+    background: radial-gradient( ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80% ), radial-gradient( ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100% );
+    padding: 25px 0;
+
+    img{
+      display: block;
+      margin: auto;
+      max-width: 609px;
+      width: 100%;
+    }
+}
+
+#games{
+  .game-first-section{
+    img{
+      max-width: 700px;
+      width: 100%;
+    }
+  }
+}
+
+#payment {
+  img {
+    width: 100%;
+  }
+}
+
+#terms{
+  background: $BG_MAIN;
+  border-top: solid 2px $BORDER_COLOR;
+  border-bottom: solid 2px $BORDER_COLOR;
+
+  h3{
+    color: $H3_COLOR;
+    text-transform: uppercase;
+  }
+
+  ul{
+    li{
+      color: #fff;
+    }
+  }
+}
+#loyalty-program{
+  position: relative;
+  text-align: center;
+
+  &:before{
+    display: block;
+    content: '';
+    background: radial-gradient( ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80% ), radial-gradient( ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100% );
+    width: 100%;
+    height: 4px;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  p{
+    line-height: 21px;
+    margin: 0;
+  }
+  span{
+    color: #ff0375;
+    font-weight: 700;
+  }
+  > .container:first-child img{
+    max-width: 900px;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+  > .container:nth-child(3) img{
+    max-width: 825px;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+  > .container:nth-child(4) img{
+    max-width: 854px;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+#gradient-separation{
+  background: linear-gradient( 90deg, rgba(131, 58, 180, 1) 0%, rgba(255, 0, 90, 1) 50%, rgba(252, 176, 69, 1) 100% );
+  img{
+    max-width: 364px;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+}
+
+#history{
+  background: url('../../assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-history-bg.jpg');
+  position: relative;
+
+  &:before{
+    display: block;
+    content: '';
+    background: radial-gradient( ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80% ), radial-gradient( ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100% );
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+  &:after{
+    display: block;
+    content: '';
+    background: linear-gradient( 90deg, rgba(131, 58, 180, 1) 0%, rgba(255, 0, 90, 1) 50%, rgba(252, 176, 69, 1) 100% );
+    width: 100%;
+    height: 4px;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  > .column-2 > div:first-child{
+    > img{
+      max-width: 500px;
+      width: 100%;
+      display: block;
+      margin: 20px auto;
+    }
+    .title{
+      overflow: hidden;
+      width: 200px;
+      margin: auto;
+      img{
+        margin-left: -200px;
+      }
+    }
+  }
+  > .column-2 > div:first-child + div{
+    > img{
+      max-width: 500px;
+      width: 100%;
+      display: block;
+      margin: 20px auto;
+    }
+    .title{
+      overflow: hidden;
+      width: 200px;
+      margin: auto;
+    }
+  }
+  > .container:first-child img{
+    max-width: 863px;
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  > .container:first-child + div img{
+    max-width: 428px;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  color: $TEXT_COLOR;
+  font-style: normal;
+  font-size: 30px;
+}

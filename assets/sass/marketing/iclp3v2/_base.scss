@@ -1,0 +1,104 @@
+header.desktop{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.iclp3-main{
+  background: url('../../assets/images/marketing/iclp3v2/oiran-bg.jpg') no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+#terms{
+  border-top: solid 3px $SEPARATION_BORDER_COLOR;
+  border-bottom: solid 3px $SEPARATION_BORDER_COLOR;
+}
+
+#firstvie__inquiry,
+#bonus,
+#payment,
+#terms,
+footer{
+  z-index: 3;
+}
+
+#terms,
+#payment,
+#firstvie__inquiry > div,
+footer{
+  background: $BODY_BG;
+  position: relative;
+}
+#firstvie__inquiry{
+  text-align: center;
+}
+
+#payment{
+  border-top: solid 3px $SEPARATION_BORDER_COLOR;
+  img{
+    width: 100%;
+  }
+}
+
+#bonus{
+  background: hsla(0, 0%, 100%, 0.4);
+  font-size: calc(8px + #{$TEXT_SIZE});
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+
+  .box{
+    background: url('../../assets/images/marketing/iclp3v2/bg_patern_border.jpg');
+    max-width: 800px;
+    border: 6px solid #faf299;
+    border-radius: 30px;
+    padding: 30px;
+    width: 100%;
+  }
+
+  p{
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff;
+  }
+  strong{
+    color: $BONUS_TEXTBOLD_COLOR;
+  }
+  a{
+    color: $BONUS_TEXTLINK_COLOR;
+
+    img{
+      width: 100%;
+      max-width: 377px;
+      transition: -webkit-transform 0.3s;
+      transition: transform 0.3s;
+      transition: transform 0.3s, -webkit-transform 0.3s;
+    }
+
+    &:hover{
+      img{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+dt{
+  color: $SUBTITLE_COLOR;
+  font-size: $TEXT_SIZE;
+}
+dd{
+  margin: 0;
+
+  li{
+    color: $TEXT_COLOR;
+  }
+}
+
+footer{
+  p{
+    color: $TEXT_COLOR;
+  }
+}

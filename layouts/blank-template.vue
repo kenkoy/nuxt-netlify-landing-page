@@ -1,5 +1,5 @@
 <template>
-  <div class="enjoy-wrapper" :class="{ blank_wrapper: true }">
+  <div class="layout-css" :class="{ blank_wrapper: true }">
     <!-- Change class name to actual page name -->
     <nuxt />
     <div
@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import Footer from '@/components/Base/TheFooter.vue'
+import Footer from '@/components/Marketing/TheFooter.vue'
 
 export default {
   components: {

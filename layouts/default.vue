@@ -10,7 +10,7 @@
 <script>
 // import TheHeader from '~/components/Navigation/TheHeader'
 // import TheSidenav from '~/components/Navigation/TheSidenav'
-import Navigation from '~/components/Base/Navigation'
+import Navigation from '~/components/Marketing/Navigation'
 
 export default {
   components: {
@@ -25,8 +25,8 @@ export default {
   }
 }
 </script>
-<style>
-  body {
-    margin: 0;
+<style lang="scss">
+  .core-wrapper{
+    @import '@/assets/sass/marketing/home/style.scss';
   }
 </style>

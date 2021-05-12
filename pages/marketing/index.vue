@@ -34,11 +34,9 @@
         </div>
       </section>
 
-      <section id="light-bg">
+      <!-- <section id="light-bg">
         <div class="container">
           <div class="banner">
-            <!-- <h2 class="light-typography">Light <span>background</span></h2>
-            <h2 class="light-typography">hero image</h2> -->
             <br><br>
             <h2 class="light-typography">
               明るい <span>背景</span>
@@ -62,7 +60,6 @@
       <section id="dark-bg-inverted">
         <div class="container">
           <div class="banner">
-            <!-- <h2 class="dark-typography">Dark background <br/> hero image</h2> -->
             <h2 class="dark-typography">
               暗い<span>背景</span>
             </h2>
@@ -80,7 +77,7 @@
             <p>成長を実現するために主要市場に焦点を当てる</p>
           </div>
         </div>
-      </section>
+      </section> -->
     </div>
   </div>
 </template>
@@ -114,23 +111,23 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .default .home_wrapper{
-  background: url('~assets/images/home-bg2.jpg') no-repeat #c21a1a;
+  background: url('~assets/images/marketing/home/home-bg2.jpg') no-repeat #c21a1a;
     background-attachment: fixed;
 }
 .default .intro{
-  background: url('~assets/images/home-bg.png') no-repeat;
+  background: url('~assets/images/marketing/home/home-bg.png') no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .holloween .home_wrapper{
-  background: url('~assets/images/home-bg2-holloween.jpeg') no-repeat #c21a1a;
+  background: url('~assets/images/marketing/home/home-bg2-holloween.jpeg') no-repeat #c21a1a;
   background-attachment: fixed;
 }
 .holloween .intro{
-  background: url('~assets/images/home-bg-holloween.png') no-repeat;
+  background: url('~assets/images/marketing/home/home-bg-holloween.png') no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -147,11 +144,11 @@ export default {
 }
 
 .christmas .home_wrapper{
-  background: url('~assets/images/home-bg2-xmas.jpg') no-repeat #c21a1a;
+  background: url('~assets/images/marketing/home/home-bg2-xmas.jpg') no-repeat #c21a1a;
   background-attachment: fixed;
 }
 .christmas .intro{
-  background: url('~assets/images/home-bg-xmas.png') no-repeat;
+  background: url('~assets/images/marketing/home/home-bg-xmas.png') no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -209,71 +206,71 @@ export default {
   line-height: 55px;
   filter: drop-shadow(3px 3px 4px #c03e40);
 }
-
-.light-typography{
-  font-size: 65px;
-  // background: linear-gradient(#ff2c9f, #ffd200);
-  background: linear-gradient(#ff2c9f, #fb9dd0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-  font-family: 'MainFont-DemiBold';
-  letter-spacing: -1px;
-  line-height: 75px;
-  filter: drop-shadow(3px 3px 4px #730240);
-  margin: 0;
-
-  span{
-    background: linear-gradient(#ffdd2c, #ffd200);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(3px 3px 4px #deb700);
-  }
-}
-
-.dark-typography{
-  font-size: 65px;
-  background: linear-gradient(#fff, #c0eeff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-  font-family: 'MainFont-DemiBold';
-  letter-spacing: -1px;
-  line-height: 75px;
-  filter: drop-shadow(3px 3px 4px #000);
-  margin: 0;
-
-  max-width: 100px;
-  display: inline-block;
-  vertical-align: top;
-
-  span{
-    background: linear-gradient(#ffdd2c, #ffd200);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(3px 3px 4px #deb700);
-  }
-}
-
-h3{
-  font-size: 25px;
-  background: linear-gradient(#fff, #c0eeff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
-  font-family: 'MainFont-DemiBold';
-  letter-spacing: -1px;
-  line-height: 75px;
-  filter: drop-shadow(3px 3px 4px #000);
-  margin: 0;
-
-  span{
-    background: linear-gradient(#ffdd2c, #ffd200);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(3px 3px 4px #deb700);
-  }
-}
+//
+// .light-typography{
+//   font-size: 65px;
+//   // background: linear-gradient(#ff2c9f, #ffd200);
+//   background: linear-gradient(#ff2c9f, #fb9dd0);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   font-weight: 700;
+//   font-family: 'MainFont-DemiBold';
+//   letter-spacing: -1px;
+//   line-height: 75px;
+//   filter: drop-shadow(3px 3px 4px #730240);
+//   margin: 0;
+//
+//   span{
+//     background: linear-gradient(#ffdd2c, #ffd200);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     filter: drop-shadow(3px 3px 4px #deb700);
+//   }
+// }
+//
+// .dark-typography{
+//   font-size: 65px;
+//   background: linear-gradient(#fff, #c0eeff);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   font-weight: 700;
+//   font-family: 'MainFont-DemiBold';
+//   letter-spacing: -1px;
+//   line-height: 75px;
+//   filter: drop-shadow(3px 3px 4px #000);
+//   margin: 0;
+//
+//   max-width: 100px;
+//   display: inline-block;
+//   vertical-align: top;
+//
+//   span{
+//     background: linear-gradient(#ffdd2c, #ffd200);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     filter: drop-shadow(3px 3px 4px #deb700);
+//   }
+// }
+//
+// h3{
+//   font-size: 25px;
+//   background: linear-gradient(#fff, #c0eeff);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   font-weight: 700;
+//   font-family: 'MainFont-DemiBold';
+//   letter-spacing: -1px;
+//   line-height: 75px;
+//   filter: drop-shadow(3px 3px 4px #000);
+//   margin: 0;
+//
+//   span{
+//     background: linear-gradient(#ffdd2c, #ffd200);
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     filter: drop-shadow(3px 3px 4px #deb700);
+//   }
+// }
 
 .intro {
   position: relative;
@@ -305,36 +302,36 @@ h3{
   font-weight: 700;
 }
 
-#light-bg{
-  padding: 30px;
-  background: url('~assets/images/home-beach.jpeg') no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-
-  .container{
-    min-height: 500px;
-    align-items: center;
-  }
-
-  .banner{
-    max-width: 500px;
-  }
-}
-
-#dark-bg-inverted{
-  padding: 30px;
-  background: url('~assets/images/home-darker.jpg') no-repeat center;
-  background-size: cover;
-
-  .container{
-    min-height: 500px;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  .banner{
-    max-width: 500px;
-  }
-}
+// #light-bg{
+//   padding: 30px;
+//   background: url('~assets/images/home-beach.jpeg') no-repeat center;
+//   background-size: cover;
+//   background-attachment: fixed;
+//
+//   .container{
+//     min-height: 500px;
+//     align-items: center;
+//   }
+//
+//   .banner{
+//     max-width: 500px;
+//   }
+// }
+//
+// #dark-bg-inverted{
+//   padding: 30px;
+//   background: url('~assets/images/home-darker.jpg') no-repeat center;
+//   background-size: cover;
+//
+//   .container{
+//     min-height: 500px;
+//     align-items: center;
+//     justify-content: flex-end;
+//   }
+//   .banner{
+//     max-width: 500px;
+//   }
+// }
 
 .featured-posts {
   display: flex;
