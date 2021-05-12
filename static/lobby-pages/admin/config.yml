@@ -1,0 +1,78 @@
+backend:
+  name: github
+  repo: kenkoy/nuxt-netlify-landing-page
+  branch: master
+
+publish_mode: editorial_workflow
+media_folder: static/lobby-pages/img
+public_folder: /lobby-pages/img
+
+# media_folder: assets/images/cms_media
+# public_folder: ''
+
+# media_folder: assets/images/cms_media
+# public_folder: /_nuxt/assets/images/cms_media/
+
+collections:
+  - label: "Lobby Page"
+    name: "lobby_page"
+    format: "frontmatter"
+    show_preview_links: false
+    create: true
+    identifier_field: "slug_name"
+    folder: "assets/content/lobby-page"
+    editor:
+      preview: false
+    fields:
+    - label: "Slug"
+      widget: "string"
+      name: "slug_name"
+      required: true
+      hint: >
+        "The last segment of lobby page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
+    - label: "Banner"
+      name: "banner"
+      widget: "list"
+      collapsed: true
+      summary: "{{fields.url}}"
+      fields:
+        - { label: "Banner Image", name: "image", widget: "image" }
+        - { label: "Banner URL", name: "url", widget: "string" }
+    - label: "Games"
+      name: "game"
+      widget: "list"
+      required: true
+      collapsed: true
+      max: 6
+      summary: "{{fields.title}}"
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Image", name: "image", widget: "image" }
+        - { label: "URL", name: "url", widget: "string" }
+        - { label: "Hot?", name: "is_hot", widget: "boolean", default: false }
+    - label: "Game Tiles"
+      name: "game_tiles"
+      widget: "object"
+      required: true
+      collapsed: true
+      fields:
+        - label: "Modals"
+          name: "modals"
+          widget: "list"
+          max: 4
+          summary: "{{fields.text}}"
+          fields:
+            - { label: "Text", name: "text", widget: "string" }
+            - { label: "Icon", name: "image", widget: "image" }
+        - label: "Links"
+          name: "links"
+          widget: "list"
+          max: 4
+          summary: "{{fields.text}}"
+          fields:
+            - { label: "Text", name: "text", widget: "string" }
+            - { label: "URL", name: "url", widget: "string" }
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Winning", name: "winning", widget: "string" }
+            - { label: "Background Image", name: "bg_image", widget: "image" }
+    - { label: "Content", name: "body", widget: "markdown", required: true }
