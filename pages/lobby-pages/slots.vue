@@ -21,7 +21,10 @@ export default {
   },
   head () {
     return {
-      title: 'オンラインビデオスロット | Vera&John(ベラジョンカジノ)'
+      title: 'オンラインビデオスロット | Vera&John(ベラジョンカジノ)',
+      link: [
+        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
+      ]
     }
   },
   mounted () {
