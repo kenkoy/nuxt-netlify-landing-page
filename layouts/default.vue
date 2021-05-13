@@ -25,8 +25,3 @@ export default {
   }
 }
 </script>
-<style lang="scss">
-  .core-wrapper{
-    @import '@/assets/sass/marketing/home/style.scss';
-  }
-</style>

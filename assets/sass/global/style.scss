@@ -1,5 +1,7 @@
 .core-wrapper {
   @import 'layoutCss';
+  @import 'marketing/footer';
+  @import 'marketing/navigation';
 }
 .layout-css {
   @import 'layoutCssV2';
