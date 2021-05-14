@@ -151,10 +151,10 @@
 </template>
 
 <script>
-import SideMenu from '~/components/LobbyPages/SideMenu.vue'
-import Header from '~/components/LobbyPages/Header.vue'
-import BannerSlider from '~/components/LobbyPages/BannerSlider.vue'
-import FooterFixButtons from '~/components/LobbyPages/FooterFixButtons.vue'
+import SideMenu from '~/components/Lobby-Pages/SideMenu.vue'
+import Header from '~/components/Lobby-Pages/Header.vue'
+import BannerSlider from '~/components/Lobby-Pages/BannerSlider.vue'
+import FooterFixButtons from '~/components/Lobby-Pages/FooterFixButtons.vue'
 
 export default {
   components: {
