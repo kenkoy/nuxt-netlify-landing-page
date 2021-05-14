@@ -44,7 +44,7 @@
     background-size: cover;
     padding: 0;
 
-    .container{
+    .row{
       min-height: 770px;
     }
 
@@ -60,7 +60,7 @@
 /* Iphone 5 / Small devices */
 @media (max-height: 667px) and (min-width: 320px) {
   #hero{
-    .container{
+    .row{
       min-height: 600px;
     }
   }
@@ -93,7 +93,7 @@
     background: var(--bg-image) no-repeat center;
     background-size: cover;
 
-    .container{
+    .row{
       min-height: 815px;
     }
   }

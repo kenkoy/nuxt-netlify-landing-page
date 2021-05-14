@@ -1,5 +1,5 @@
 <template>
-  <div class="core-wrapper" :class="{ iclp1_wrapper: true }">
+  <div class="layout-css" :class="{ iclp1_wrapper: true }">
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
@@ -7,30 +7,32 @@
     >
       <section id="hero" :style="cssBackground">
         <div class="container">
-          <div class="loginbtn">
-            <a rel="noopener" :href="mdData.promo_banner.ppromo_login_button_redirect_url">
-              <i class="material-icons" data-v-7c308f66="">exit_to_app</i>
-              <p class="login-text">{{ mdData.promo_banner.promo_login_button_text }}</p>
-            </a>
-          </div>
-          <div id="header-text-wrapper">
-            <img class="animated fadeIn" alt="alt img" src="@/assets/images/marketing/iclp2v2/logo.png">
-            <h2>{{ mdData.promo_banner.promo_subtitle_1 }}</h2>
-            <h1>{{ mdData.promo_banner.promo_main_heading }}</h1>
-            <h2>{{ mdData.promo_banner.promo_subtitle_2 }}</h2>
-            <button onclick="location.href='#'" type="button">
-              <a rel="noopener" :href="mdData.promo_banner.promo_register_button_redirect_url">{{ mdData.promo_banner.promo_signup_button }}</a>
-            </button>
-            <p>
-              <a rel="noopener" :href="mdData.promo_banner.promo_smallterm_redirect_url">{{ mdData.promo_banner.promo_smallterm_text_link }}</a>
-              {{ mdData.promo_banner.promo_smallterm_text }}
-            </p>
+          <div class="row">
+            <div class="loginbtn">
+              <a rel="noopener" :href="mdData.promo_banner.ppromo_login_button_redirect_url">
+                <i class="material-icons" data-v-7c308f66="">exit_to_app</i>
+                <p class="login-text">{{ mdData.promo_banner.promo_login_button_text }}</p>
+              </a>
+            </div>
+            <div id="header-text-wrapper">
+              <img class="animated fadeIn" alt="alt img" src="@/assets/images/marketing/iclp2v2/logo.png">
+              <h2>{{ mdData.promo_banner.promo_subtitle_1 }}</h2>
+              <h1>{{ mdData.promo_banner.promo_main_heading }}</h1>
+              <h2>{{ mdData.promo_banner.promo_subtitle_2 }}</h2>
+              <button onclick="location.href='#'" type="button">
+                <a rel="noopener" :href="mdData.promo_banner.promo_register_button_redirect_url">{{ mdData.promo_banner.promo_signup_button }}</a>
+              </button>
+              <p>
+                <a rel="noopener" :href="mdData.promo_banner.promo_smallterm_redirect_url">{{ mdData.promo_banner.promo_smallterm_text_link }}</a>
+                {{ mdData.promo_banner.promo_smallterm_text }}
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="steps">
-        <div class="container column-3">
+        <div class="container">
           <div class="animated fadeIn delay-halfs">
             <span>1</span>
             <div>
@@ -58,21 +60,25 @@
       </section>
       <section id="payment">
         <div class="container">
-          <img alt="alt img" class="desktop" src="@/assets/images/marketing/iclp2v2/payment_large_jp.svg">
-          <img alt="alt img" class="mobile" src="@/assets/images/marketing/iclp2v2/payment_jp.svg">
+          <div class="row">
+            <img alt="alt img" class="desktop" src="@/assets/images/marketing/iclp2v2/payment_large_jp.svg">
+            <img alt="alt img" class="mobile" src="@/assets/images/marketing/iclp2v2/payment_jp.svg">
+          </div>
         </div>
       </section>
       <section id="terms">
         <div class="container">
-          <div>
-            <div v-html="htmlBody" />
-            <ul>
-              <li>
-                通常の
-                <a href="https://intercasino.com/about/terms-and-conditions">利用規約</a>と
-                <a href="https://intercasino.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。
-              </li>
-            </ul>
+          <div class="row">
+            <div>
+              <div v-html="htmlBody" />
+              <ul>
+                <li>
+                  通常の
+                  <a href="https://intercasino.com/about/terms-and-conditions">利用規約</a>と
+                  <a href="https://intercasino.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

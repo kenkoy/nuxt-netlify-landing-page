@@ -1,5 +1,5 @@
 <template>
-  <div class="core-wrapper" :class="{ vjlp8_wrapper: true }">
+  <div class="layout-css" :class="{ vjlp8_wrapper: true }">
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
@@ -8,32 +8,34 @@
     >
       <section id="hero" :style="cssBackground">
         <div class="container">
-          <div>
-            <div id="login">
-              <div>
-                <a rel="noopener" :href="mdData.promo_banner.promo_login_button_redirect_url">
-                  <i class="material-icons">exit_to_app</i>
-                  <span>{{ mdData.promo_banner.promo_login_button }}</span>
-                </a>
+          <div class="row">
+            <div>
+              <div id="login">
+                <div>
+                  <a rel="noopener" :href="mdData.promo_banner.promo_login_button_redirect_url">
+                    <i class="material-icons">exit_to_app</i>
+                    <span>{{ mdData.promo_banner.promo_login_button }}</span>
+                  </a>
+                </div>
               </div>
-            </div>
 
-            <img alt="alt img" class="logo" src="@/assets/images/marketing/vjlp8/logo.png">
-            <div class="banner">
-              <img alt="alt img" class="bounce animated delay-1s" :src="mdData.promo_banner.promo_images.promo_game_logo">
-              <img alt="alt img" :src="mdData.promo_banner.promo_images.promo_game_image">
+              <img alt="alt img" class="logo" src="@/assets/images/marketing/vjlp8/logo.png">
+              <div class="banner">
+                <img alt="alt img" class="bounce animated delay-1s" :src="mdData.promo_banner.promo_images.promo_game_logo">
+                <img alt="alt img" :src="mdData.promo_banner.promo_images.promo_game_image">
 
-              <h1>{{ mdData.promo_banner.promo_large_subtitle }}</h1>
-              <p v-if="mdData.promo_banner.promo_small_subtitle" v-html="bannerDesc" />
-            </div>
+                <h1>{{ mdData.promo_banner.promo_large_subtitle }}</h1>
+                <p v-if="mdData.promo_banner.promo_small_subtitle" v-html="bannerDesc" />
+              </div>
 
-            <div id="banner-terms">
-              <button :class="mdData.styles === 'version2' ? 'animated pulse infinite' : ''">
-                <a :href="mdData.promo_banner.promo_join_button_redirect_url">
-                  {{ mdData.promo_banner.promo_join_button }}
-                </a>
-              </button>
-              <small v-html="bannerTerms" />
+              <div id="banner-terms">
+                <button :class="mdData.styles === 'version2' ? 'animated pulse infinite' : ''">
+                  <a :href="mdData.promo_banner.promo_join_button_redirect_url">
+                    {{ mdData.promo_banner.promo_join_button }}
+                  </a>
+                </button>
+                <small v-html="bannerTerms" />
+              </div>
             </div>
           </div>
         </div>
@@ -41,14 +43,16 @@
 
       <section v-for="(sections, sections_index) in mdData.section" id="details" :key="sections_index" class="separator">
         <div class="container">
-          <div>
-            <h2>{{ sections.title }}</h2>
-            <img alt="alt img" :src="sections.image">
-            <button>
-              <a rel="noopener" :href="sections.join_button_redirect_url">
-                {{ sections.join_button }}
-              </a>
-            </button>
+          <div class="row">
+            <div>
+              <h2>{{ sections.title }}</h2>
+              <img alt="alt img" :src="sections.image">
+              <button>
+                <a rel="noopener" :href="sections.join_button_redirect_url">
+                  {{ sections.join_button }}
+                </a>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -62,11 +66,13 @@
 
       <section id="terms" class="separator">
         <div class="container">
-          <div>
-            <div v-html="htmlBody" />
-            <ul>
-              <li>通常の<a rel="noopener" href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a rel="noopener" href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</li>
-            </ul>
+          <div class="row">
+            <div>
+              <div v-html="htmlBody" />
+              <ul>
+                <li>通常の<a rel="noopener" href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a rel="noopener" href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

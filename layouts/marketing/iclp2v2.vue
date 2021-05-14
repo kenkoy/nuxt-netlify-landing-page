@@ -8,27 +8,29 @@
     >
       <section id="hero" :style="cssBackground">
         <div class="container">
-          <div class="loginbtn">
-            <a rel="noopener" :href="mdData.promo_banner.promo_home_button_redirect_url">
-              <i class="material-icons" data-v-7c308f66="">home</i>
-              <p class="login-text">{{ mdData.promo_banner.promo_home_button }}</p>
-            </a>
-          </div>
-          <div>
-            <div id="header-text-wrapper">
-              <img class="animated fadeIn" alt="alt img" src="@/assets/images/marketing/iclp2v2/logo.png">
-              <img class="animated fadeIn" alt="alt img" :src="mdData.promo_banner.promo_images.promo_banner_image_title_1">
-              <img class="animated tada delay-1s" alt="alt img" :src="mdData.promo_banner.promo_images.promo_banner_image_title_2">
+          <div class="row">
+            <div class="loginbtn">
+              <a rel="noopener" :href="mdData.promo_banner.promo_home_button_redirect_url">
+                <i class="material-icons" data-v-7c308f66="">home</i>
+                <p class="login-text">{{ mdData.promo_banner.promo_home_button }}</p>
+              </a>
             </div>
-            <div class="separation-star">
-              <p v-html="bannerStatement" />
-              <button onclick="location.href='#'" type="button">
-                <a rel="noopener" :href="mdData.promo_banner.promo_register_button_redirect_url">{{ mdData.promo_banner.promo_register_button_text }}</a>
-              </button>
-              <p>
-                <a rel="noopener" :href="mdData.promo_banner.promo_smallterm_redirect_url">{{ mdData.promo_banner.promo_smallterm_text_link }}</a>
-                {{ mdData.promo_banner.promo_smallterm_text }}
-              </p>
+            <div>
+              <div id="header-text-wrapper">
+                <img class="animated fadeIn" alt="alt img" src="@/assets/images/marketing/iclp2v2/logo.png">
+                <img class="animated fadeIn" alt="alt img" :src="mdData.promo_banner.promo_images.promo_banner_image_title_1">
+                <img class="animated tada delay-1s" alt="alt img" :src="mdData.promo_banner.promo_images.promo_banner_image_title_2">
+              </div>
+              <div class="separation-star">
+                <p v-html="bannerStatement" />
+                <button onclick="location.href='#'" type="button">
+                  <a rel="noopener" :href="mdData.promo_banner.promo_register_button_redirect_url">{{ mdData.promo_banner.promo_register_button_text }}</a>
+                </button>
+                <p>
+                  <a rel="noopener" :href="mdData.promo_banner.promo_smallterm_redirect_url">{{ mdData.promo_banner.promo_smallterm_text_link }}</a>
+                  {{ mdData.promo_banner.promo_smallterm_text }}
+                </p>
+              </div>
             </div>
           </div>
         </div>

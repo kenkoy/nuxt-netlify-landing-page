@@ -1,5 +1,5 @@
 <template>
-  <div class="core-wrapper" :class="{ vjlp5_wrapper: true }">
+  <div class="layout-css" :class="{ vjlp5_wrapper: true }">
     <div class="vjlp5-main">
       <!-- PAGE HANDLING DATA -->
       <Vjlp5Data @emit-md-content="getMDcontent" />
@@ -7,43 +7,47 @@
       <div v-for="(data_items, data_index) in md_data" :key="data_index" :class="data_items.attributes.variation">
         <header id="header">
           <div class="container">
-            <div class="logo">
-              <img alt="alt logo" src="@/assets/images/marketing/vjlp5/vj-logo.png" data-not-lazy>
-            </div>
+            <div class="row">
+              <div class="logo">
+                <img alt="alt logo" src="@/assets/images/marketing/vjlp5/vj-logo.png" data-not-lazy>
+              </div>
 
-            <div class="nav-links">
-              <button class="warning">
-                <a :href="data_items.attributes.promo_banner.promo_join_button_redirect_url">
-                  {{ data_items.attributes.promo_banner.promo_login_button }}
-                </a>
-              </button>
-              <button class="error animated pulse infinite">
-                <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url"><strong>{{ data_items.attributes.promo_banner.promo_join_button }}</strong></a>
-              </button>
+              <div class="nav-links">
+                <button class="warning">
+                  <a :href="data_items.attributes.promo_banner.promo_join_button_redirect_url">
+                    {{ data_items.attributes.promo_banner.promo_login_button }}
+                  </a>
+                </button>
+                <button class="error animated pulse infinite">
+                  <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url"><strong>{{ data_items.attributes.promo_banner.promo_join_button }}</strong></a>
+                </button>
+              </div>
             </div>
           </div>
         </header>
 
         <section id="hero" :style="cssBackground">
           <div class="container">
-            <div class="banner-wrapper">
-              <div class="banner" :class="data_items.attributes.promo_banner.promo_banner_position">
-                <div>
-                  <h1 v-if="firstTitle" :class="data_items.attributes.promo_banner.promo_banner_font_size" v-html="bannerTitle" />
-                  <h1 v-if="secondTitle" :class="data_items.attributes.promo_banner.promo_banner_font_size">
-                    {{ data_items.attributes.promo_banner.second_title }}
-                  </h1>
+            <div class="row">
+              <div class="banner-wrapper">
+                <div class="banner" :class="data_items.attributes.promo_banner.promo_banner_position">
+                  <div>
+                    <h1 v-if="firstTitle" :class="data_items.attributes.promo_banner.promo_banner_font_size" v-html="bannerTitle" />
+                    <h1 v-if="secondTitle" :class="data_items.attributes.promo_banner.promo_banner_font_size">
+                      {{ data_items.attributes.promo_banner.second_title }}
+                    </h1>
+                  </div>
                 </div>
-              </div>
-              <div
-                v-if="data_items.attributes.promo_banner.promo_join_button_option"
-                id="banner-button"
-              >
-                <button class="error">
-                  <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url">
-                    <strong>{{ data_items.attributes.promo_banner.promo_join_button }}</strong>
-                  </a>
-                </button>
+                <div
+                  v-if="data_items.attributes.promo_banner.promo_join_button_option"
+                  id="banner-button"
+                >
+                  <button class="error">
+                    <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url">
+                      <strong>{{ data_items.attributes.promo_banner.promo_join_button }}</strong>
+                    </a>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -64,31 +68,35 @@
 
         <section id="section1">
           <div class="container">
-            <div>
-              <div v-for="(first_section, first_index) in data_items.attributes.first_section" :key="first_index">
-                <h2>{{ first_section.first_section_title }}</h2>
-                <p v-html="nextlineToBr(first_section.first_section_description)" />
-                <p v-if="additionalLinks" v-html="textLink.toString()" />
-              </div>
+            <div class="row">
+              <div>
+                <div v-for="(first_section, first_index) in data_items.attributes.first_section" :key="first_index">
+                  <h2>{{ first_section.first_section_title }}</h2>
+                  <p v-html="nextlineToBr(first_section.first_section_description)" />
+                  <p v-if="additionalLinks" v-html="textLink.toString()" />
+                </div>
 
-              <div class="separator" />
+                <div class="separator" />
+              </div>
             </div>
           </div>
         </section>
 
         <section id="section2">
-          <div class="container column-2">
-            <div>
-              <div v-for="(usp_left, second_left_index) in data_items.attributes.usp_left" :key="second_left_index">
-                <h2>{{ usp_left.usp_title }}</h2>
-                <p v-html="nextlineToBr(usp_left.usp_content)" />
+          <div class="container">
+            <div class="row column-2">
+              <div>
+                <div v-for="(usp_left, second_left_index) in data_items.attributes.usp_left" :key="second_left_index">
+                  <h2>{{ usp_left.usp_title }}</h2>
+                  <p v-html="nextlineToBr(usp_left.usp_content)" />
+                </div>
               </div>
-            </div>
 
-            <div>
-              <div v-for="(usp_right, second_right_index) in data_items.attributes.usp_right" :key="second_right_index">
-                <h2>{{ usp_right.usp_title }}</h2>
-                <p v-html="nextlineToBr(usp_right.usp_content)" />
+              <div>
+                <div v-for="(usp_right, second_right_index) in data_items.attributes.usp_right" :key="second_right_index">
+                  <h2>{{ usp_right.usp_title }}</h2>
+                  <p v-html="nextlineToBr(usp_right.usp_content)" />
+                </div>
               </div>
             </div>
           </div>
@@ -96,19 +104,23 @@
 
         <section id="payment">
           <div class="container">
-            <div>
-              <img class="desktop" src="@/assets/images/marketing/vjlp5/payment_large_jp.svg" alt="payment verajohn desktop">
-              <img class="mobile" src="@/assets/images/marketing/vjlp5/payment_jp.svg" alt="payment verajohn mobile">
-              <div class="separator" />
+            <div class="row">
+              <div>
+                <img class="desktop" src="@/assets/images/marketing/vjlp5/payment_large_jp.svg" alt="payment verajohn desktop">
+                <img class="mobile" src="@/assets/images/marketing/vjlp5/payment_jp.svg" alt="payment verajohn mobile">
+                <div class="separator" />
+              </div>
             </div>
           </div>
         </section>
 
         <div class="container">
-          <div id="terms">
-            <div v-html="html" />
-            <p>通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</p>
-            <div class="separator" />
+          <div class="row">
+            <div id="terms">
+              <div v-html="html" />
+              <p>通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</p>
+              <div class="separator" />
+            </div>
           </div>
         </div>
 
