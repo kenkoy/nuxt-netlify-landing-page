@@ -216,7 +216,7 @@
         }
       }
     }
-    .container:first-child + div{
+    .container:first-child + div .row{
       flex-direction: row;
 
       summary{
