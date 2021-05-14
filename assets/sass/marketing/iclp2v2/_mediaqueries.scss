@@ -27,7 +27,7 @@
         margin: 0;
       }
     }
-    .container {
+    .row {
       > div {
         text-align: center;
 
@@ -69,7 +69,7 @@
       font-size: 14px;
       color: #000;
     }
-    .container{
+    .row{
       flex-wrap: wrap;
       flex-direction: row;
 
@@ -80,7 +80,7 @@
         }
       }
     }
-    .container:first-child + div{
+    .container:first-child + div .row{
       flex-direction: column-reverse;
     }
     .container:first-child{
@@ -190,12 +190,12 @@
     background: var(--bg-image) no-repeat top;
     background-size: cover;
   }
-  #detail .container{
+  #detail .row{
     padding-left: 20%;
     padding-right: 20%;
   }
   #testimonials{
-    .container{
+    .row{
       flex-wrap: nowrap;
     }
     .container:first-child{

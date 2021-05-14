@@ -275,7 +275,7 @@ button {
     position: absolute;
   }
 
-  > .column-2 > div:first-child{
+  .column-2 > div:first-child{
     > img{
       max-width: 500px;
       width: 100%;
@@ -291,7 +291,7 @@ button {
       }
     }
   }
-  > .column-2 > div:first-child + div{
+  .column-2 > div:first-child + div{
     > img{
       max-width: 500px;
       width: 100%;

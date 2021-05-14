@@ -1,5 +1,5 @@
 <template>
-  <div class="core-wrapper" :class="{ iclp2_wrapper: true }">
+  <div class="layout-css" :class="{ iclp2_wrapper: true }">
     <!-- Change class name to actual page name -->
     <nuxt />
     <div
@@ -37,50 +37,62 @@
       </section>
       <section id="detail">
         <div class="container">
-          <div>
-            <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-title.png">
-            <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-500WC-stamp.png">
-            <p v-html="firstWelcomeStatement" />
-          </div>
-        </div>
-        <div class="container column-2">
-          <div>
-            <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph1.png">
-          </div>
-          <div>
-            <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph2.png">
+          <div class="row">
+            <div>
+              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-title.png">
+              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-500WC-stamp.png">
+              <p v-html="firstWelcomeStatement" />
+            </div>
           </div>
         </div>
         <div class="container">
-          <div class="separation-star">
-            <p class="text-center" v-html="secondWelcomeStatement" />
+          <div class="row column-2">
+            <div>
+              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph1.png">
+            </div>
+            <div>
+              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-welcome-graph2.png">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="separation-star">
+              <p class="text-center" v-html="secondWelcomeStatement" />
+            </div>
           </div>
         </div>
         <div id="testimonials">
           <div class="container">
-            <summary>
-              <h3>初めまして、ごきげんよう!</h3>
-              <p class="text-center" v-html="rougeSpeechStatement" />
-            </summary>
-            <div class="feature-img">
-              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-red-icon.png">
+            <div class="row">
+              <summary>
+                <h3>初めまして、ごきげんよう!</h3>
+                <p class="text-center" v-html="rougeSpeechStatement" />
+              </summary>
+              <div class="feature-img">
+                <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-red-icon.png">
+              </div>
             </div>
           </div>
           <div class="container">
-            <div class="feature-img">
-              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-black-icon.png">
+            <div class="row">
+              <div class="feature-img">
+                <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-black-icon.png">
+              </div>
+              <summary>
+                <h3>チャオ! クロエだよ★</h3>
+                <p class="text-center" v-html="chloeSpeechStatement" />
+              </summary>
             </div>
-            <summary>
-              <h3>チャオ! クロエだよ★</h3>
-              <p class="text-center" v-html="chloeSpeechStatement" />
-            </summary>
           </div>
         </div>
       </section>
       <section id="golden-separation">
         <div class="container">
-          <div>
-            <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame1.png">
+          <div class="row">
+            <div>
+              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame1.png">
+            </div>
           </div>
         </div>
       </section>
@@ -90,22 +102,26 @@
             <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-title-topgame2.png">
           </div>
         </div>
-        <div class="container game-second-section column-2">
-          <div>
-            <img alt="alt img" :src="mdData.top_game_section.top_game_game1">
-            <img alt="alt img" :src="mdData.top_game_section.top_game_game2">
-          </div>
-          <div>
-            <img alt="alt img" :src="mdData.top_game_section.top_game_game3">
-            <img alt="alt img" :src="mdData.top_game_section.top_game_game4">
+        <div class="container game-second-section">
+          <div class="row column-2">
+            <div>
+              <img alt="alt img" :src="mdData.top_game_section.top_game_game1">
+              <img alt="alt img" :src="mdData.top_game_section.top_game_game2">
+            </div>
+            <div>
+              <img alt="alt img" :src="mdData.top_game_section.top_game_game3">
+              <img alt="alt img" :src="mdData.top_game_section.top_game_game4">
+            </div>
           </div>
         </div>
-        <div class="container game-third-section column-2">
-          <div>
-            <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-CS.png">
-          </div>
-          <div>
-            <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-MOBILE.png">
+        <div class="container game-third-section">
+          <div class="row column-2">
+            <div>
+              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-CS.png">
+            </div>
+            <div>
+              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-topgame-MOBILE.png">
+            </div>
           </div>
         </div>
       </section>
@@ -114,9 +130,11 @@
           <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty1.png" data-not-lazy>
         </div>
         <div class="container">
-          <div>
-            <p>レベルが上がるとカジノ内での <span>地位向上</span> !</p>
-            <p><span>レベル7の最高ランク</span>、 <em class="redmark">インター大公</em>ではあの●●アイテムが出現 !?</p>
+          <div class="row">
+            <div>
+              <p>レベルが上がるとカジノ内での <span>地位向上</span> !</p>
+              <p><span>レベル7の最高ランク</span>、 <em class="redmark">インター大公</em>ではあの●●アイテムが出現 !?</p>
+            </div>
           </div>
         </div>
         <div class="container">
@@ -133,15 +151,17 @@
       </section>
       <section id="pods">
         <div class="container">
-          <figure>
-            <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-fair.png">
-          </figure>
-          <figure>
-            <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-visa.png">
-          </figure>
-          <figure>
-            <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-wa.png">
-          </figure>
+          <div class="row">
+            <figure>
+              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-fair.png">
+            </figure>
+            <figure>
+              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-visa.png">
+            </figure>
+            <figure>
+              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-wa.png">
+            </figure>
+          </div>
         </div>
       </section>
       <section id="history">
@@ -158,21 +178,23 @@
         <div class="container">
           <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile-title.png">
         </div>
-        <div class="container column-2">
-          <div>
-            <div class="title">
-              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png" data-not-lazy>
+        <div class="container">
+          <div class="row column-2">
+            <div>
+              <div class="title">
+                <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png" data-not-lazy>
+              </div>
+              <p class="separation-star" v-html="historyRougeParsedStatement" />
+              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Rouge.png">
             </div>
-            <p class="separation-star" v-html="historyRougeParsedStatement" />
-            <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Rouge.png">
-          </div>
 
-          <div>
-            <div class="title">
-              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png" data-not-lazy>
+            <div>
+              <div class="title">
+                <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png" data-not-lazy>
+              </div>
+              <p class="separation-star" v-html="historyChloeParsedStatement" />
+              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Chole.png">
             </div>
-            <p class="separation-star" v-html="historyChloeParsedStatement" />
-            <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-Chole.png">
           </div>
         </div>
         <div class="container">

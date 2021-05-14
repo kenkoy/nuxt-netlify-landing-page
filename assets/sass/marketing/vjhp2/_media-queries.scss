@@ -29,7 +29,7 @@
     }
 
 
-    nav .container{
+    nav .row{
         justify-content: flex-end;
 
         > div{
@@ -91,7 +91,7 @@
         padding: 0;
         text-align: center;
 
-        .container{
+        .row{
             > div{
                 padding: 30px;
             }
@@ -126,7 +126,7 @@
         background: #009fe3;
         text-align: center;
 
-        .container{
+        .row{
             align-items: center;
         }
 
@@ -149,7 +149,7 @@
         background: #005083;
         text-align: center;
 
-        .container{
+        .row{
             > div{
                 padding: 0 30px;
             }
@@ -191,7 +191,7 @@
     #section-6{
         text-align: center;
 
-        .container{
+        .row{
             > div:first-child + div{
                 margin-top: 60px;
             }
@@ -253,7 +253,7 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     #section-6{
-        .container{
+        .row{
             > div:first-child + div{
                 margin-top: 0;
             }
@@ -290,37 +290,39 @@
     #section-2 {
         overflow: hidden;
         .container{
-            position: relative;
             max-width: 1140px;
 
-            > div {
-                padding: 56px;
-                position: relative;
-            }
+            .row {
+              position: relative;
+              > div {
+                  padding: 56px;
+                  position: relative;
+              }
 
-            > div:first-child {
-                &:before{
-                    display: block;
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: -100%;
-                    width: 100%;
-                    height: 100%;
-                    background: #db2d96;
-                }
-            }
-            > div:first-child + div {
-                &:after{
-                    display: block;
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    right: -100%;
-                    width: 100%;
-                    height: 100%;
-                    background: #ffea00;
-                }
+              > div:first-child {
+                  &:before{
+                      display: block;
+                      content: '';
+                      position: absolute;
+                      top: 0;
+                      left: -100%;
+                      width: 100%;
+                      height: 100%;
+                      background: #db2d96;
+                  }
+              }
+              > div:first-child + div {
+                  &:after{
+                      display: block;
+                      content: '';
+                      position: absolute;
+                      top: 0;
+                      right: -100%;
+                      width: 100%;
+                      height: 100%;
+                      background: #ffea00;
+                  }
+              }
             }
         }
     }
