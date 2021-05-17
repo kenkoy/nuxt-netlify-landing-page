@@ -29,11 +29,16 @@ export default {
   },
   router: {
     extendRoutes (routes, resolve) {
-      routes.push({
-        name: 'home',
-        path: '/home/',
-        component: resolve(__dirname, 'pages/marketing/vjhp')
-      })
+      const newRoutes = [{
+          name: 'home',
+          path: '/home/',
+          component: resolve(__dirname, 'pages/marketing/vjhp')
+        }, {
+          name: 'lobby-page',
+          path: '/marketing/slots',
+          component: resolve(__dirname, 'pages/lobby-pages/slots')
+        }]
+      routes.push(...newRoutes)
     }
   },
   // mode: 'universal',
