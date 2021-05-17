@@ -1,5 +1,5 @@
 ---
-slug_name: 357-bvj-lan-jp-pro-newadult-v2-1220
+slug_name: 1895-bvj-lan-jp-pro-samurai-0421
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -9,12 +9,14 @@ field_ids:
   gtm_container_id: GTM-MFD3NKM
 styles: version2
 promo_banner:
-  promo_title: 324 BVJ lan JP Pro Beginnersguide 0720
+  promo_small_subtitle: " "
+  promo_title: 1895-bvj-lan-jp-pro-samurai-0421
   promo_images:
-    promo_game_image: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-title.png
+    promo_game_image: /marketing/img/dsgn-1895-cms-riseofsamuraimegaways-verticallogo.jpg
     promo_game_logo: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-game-logo.png
-    promo_bg_mobile: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-bg_m.jpg
-    promo_bg_desktop: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-bg.jpg
+    promo_bg_mobile: /marketing/img/dsgn-1895-cms-riseofsamuraimegaways-767x800-nologo.jpg
+    promo_bg_desktop: /marketing/img/dsgn-1895-cms-riseofsamuraimegaways-1440x810-v3.jpg
+  promo_large_subtitle: " "
   promo_link_terms:
     - 利用規約
   promo_login_button_redirect_url: https://verajohn.com/#signin
@@ -24,13 +26,13 @@ promo_banner:
   promo_login_button: ログイン
 section:
   - join_button: ボーナスを今すぐゲット！
-    title: 人気機種「花魁ドリーム」で大勝利するには？
+    title: ""
     join_button_redirect_url: https://verajohn.com/#join
-    image: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-bonus.png
+    image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bonus.png
   - join_button: ボーナスを今すぐゲット！
-    title: "人気機種「花魁ドリーム」で大勝利するには？ "
+    title: ""
     join_button_redirect_url: https://verajohn.com/#join
-    image: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-CM.png
+    image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-CM.png
   - join_button: ボーナスを今すぐゲット！
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-details.png

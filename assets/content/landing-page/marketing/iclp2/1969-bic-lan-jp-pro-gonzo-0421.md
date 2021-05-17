@@ -1,21 +1,21 @@
 ---
-slug_name: AFF-ICBG
+slug_name: 1969-bic-lan-jp-pro-gonzo-0421
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 field_ids:
-  go_container_id: OPT-PD9MB2F
+  go_container_id: OPT-PHSNXP6
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
 promo_banner:
   promo_home_button: ホーム
   promo_banner_highlighted_phrase: 総額$500のウェルカムキャッシュ
   promo_smallterm_redirect_url: "#terms"
-  promo_title: 319-bic-lan-jp-pro-beginnersguide-0620
+  promo_title: 1969-bic-lan-jp-pro-gonzo-0421
   promo_images:
-    promo_bg_desktop: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-bg.jpg
-    promo_bg_mobile: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-bg_m.jpg
-    promo_banner_image_title_1: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-title-01.png
+    promo_bg_desktop: /marketing/img/dsgn-1969-cms-desktop-gonzotreasurehunt-v3.png
+    promo_bg_mobile: /marketing/img/dsgn-1969-cms-mobile-gonzotreasurehunt-v2.png
+    promo_banner_image_title_1: /marketing/img/dsgn-1969-gonzos-treasure-hunt-logo.png
     promo_banner_image_title_2: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-title-02.png
   promo_home_button_redirect_url: https://intercasino.com/#signin
   promo_smallterm_text: に同意します。

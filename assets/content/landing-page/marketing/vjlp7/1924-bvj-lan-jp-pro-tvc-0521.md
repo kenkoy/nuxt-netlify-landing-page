@@ -1,5 +1,5 @@
 ---
-slug_name: 296-bvj-lan-jp-pro-hdnight-1220
+slug_name: 1924-bvj-lan-jp-pro-tvc-0521
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -13,14 +13,14 @@ promo_banner:
   promo_title: |-
     最大$1000
     ビギナーズボーナス
-  desktop_full: true
-  mobile_full: true
   promo_images:
-    promo_bg_desktop: /marketing/img/bg_hdnight.jpg
-    promo_bg_mobile: /marketing/img/bg_m_hdnight.jpg
+    promo_bg_desktop: /marketing/img/dsgn-1924-cms-vjlp1-tvc-1920x1080.jpg
+    promo_bg_mobile: /marketing/img/dsgn-1924-cms-mob-tvc-767x800-v2.jpg
   promo_terms_link_text:
     - 利用規約
+  mobile_full: true
   promo_render_title_first: true
+  desktop_full: true
   promo_login_button_redirect_url: https://www.verajohn.com/#join
   promo_join_button_redirect_url: https://www.verajohn.com/#join
   promo_terms_text: 利用規約に同意します。

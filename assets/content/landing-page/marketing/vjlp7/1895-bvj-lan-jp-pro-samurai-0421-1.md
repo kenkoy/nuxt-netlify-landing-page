@@ -1,5 +1,5 @@
 ---
-slug_name: 296-bvj-lan-jp-pro-hdnight-1220
+slug_name: 1895-bvj-lan-jp-pro-samurai-0421
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -13,14 +13,14 @@ promo_banner:
   promo_title: |-
     最大$1000
     ビギナーズボーナス
-  desktop_full: true
-  mobile_full: true
   promo_images:
-    promo_bg_desktop: /marketing/img/bg_hdnight.jpg
-    promo_bg_mobile: /marketing/img/bg_m_hdnight.jpg
+    promo_bg_desktop: /marketing/img/dsgn-1895-cms-riseofsamuraimegaways-1440x810.jpg
+    promo_bg_mobile: /marketing/img/dsgn-1895-cms-riseofsamuraimegaways-767x800-nologo.jpg
   promo_terms_link_text:
     - 利用規約
+  mobile_full: true
   promo_render_title_first: true
+  desktop_full: true
   promo_login_button_redirect_url: https://www.verajohn.com/#join
   promo_join_button_redirect_url: https://www.verajohn.com/#join
   promo_terms_text: 利用規約に同意します。

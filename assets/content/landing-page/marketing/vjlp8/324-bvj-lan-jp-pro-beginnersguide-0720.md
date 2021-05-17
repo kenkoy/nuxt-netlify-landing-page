@@ -17,8 +17,7 @@ promo_banner:
     promo_game_image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-title.png
     promo_game_logo: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-game-logo.png
     promo_bg_mobile: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bg_m.jpg
-    promo_bg_desktop: /marketing/img/306-bvj-lan-jp-pro-livecasinov2-0520_banner-2.jpeg
-  promo_join_button_style: tertiary-gradient
+    promo_bg_desktop: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bg.jpg
   promo_large_subtitle: ■新規プレイヤー限定特典■
   promo_link_terms:
     - 利用規約
@@ -34,18 +33,16 @@ section:
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bonus.png
-    section_join_button_style: tertiary-gradient
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-CM.png
-    section_join_button_style: secondary-flat
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-details.png
 ---
 <h3 class="text-left">ビギナーズボーナス利用規約</h3>
 <ul class="terms-ul">
-<li>aaaこのキャンペーンでは、100%の初回入金ボーナスを最高$500まで、50%のセカンド入金ボーナスを最高$250まで、100%のサード入金ボーナスを最高$200まで獲得することができます。</li><li>有効な入金額により、ボーナスが自動的に進呈され、ボーナスのお引き出しには、ボーナス額の20倍にあたる金額をゲームで賭ける必要があります。</li><li>ビギナーズボーナスを獲得するためには、入金時に、入金ページにある「ボーナス」のボックスにチェックが入力されている必要があります。&nbsp;</li><li>ボーナスの有効期限は30日間です。&nbsp;</li><li>このキャンペーンは各入金毎にお1人様1回のみ有効となります。&nbsp;</li><li>このキャンペーンは他のキャンペーンとの併用はできません。</li><li>このキャンペーンは日本のプレイヤー様のみ対象となります。</li><li>ボーナスを使ったゲームプレイでの1度の最大賭け額は、スロット/スクラッチカードで$6.25、またはテーブルゲーム/ライブカジノまで$25とします</li><li>この金額を上回った場合には、ボーナスとそのボーナスに関連するすべての勝利金は没収されます。</li><li>ベラジョンはいかなるときも通告なしでこのキャンペーンを変更、終了できる権利を有します。</li>
+<li>このキャンペーンでは、100%の初回入金ボーナスを最高$500まで、50%のセカンド入金ボーナスを最高$250まで、100%のサード入金ボーナスを最高$200まで獲得することができます。</li><li>有効な入金額により、ボーナスが自動的に進呈され、ボーナスのお引き出しには、ボーナス額の20倍にあたる金額をゲームで賭ける必要があります。</li><li>ビギナーズボーナスを獲得するためには、入金時に、入金ページにある「ボーナス」のボックスにチェックが入力されている必要があります。&nbsp;</li><li>ボーナスの有効期限は30日間です。&nbsp;</li><li>このキャンペーンは各入金毎にお1人様1回のみ有効となります。&nbsp;</li><li>このキャンペーンは他のキャンペーンとの併用はできません。</li><li>このキャンペーンは日本のプレイヤー様のみ対象となります。</li><li>ボーナスを使ったゲームプレイでの1度の最大賭け額は、スロット/スクラッチカードで$6.25、またはテーブルゲーム/ライブカジノまで$25とします</li><li>この金額を上回った場合には、ボーナスとそのボーナスに関連するすべての勝利金は没収されます。</li><li>ベラジョンはいかなるときも通告なしでこのキャンペーンを変更、終了できる権利を有します。</li>
 </ul>
 <br>
 <br>

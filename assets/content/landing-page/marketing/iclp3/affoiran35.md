@@ -1,5 +1,5 @@
 ---
-slug_name: InterCasino Digital
+slug_name: AffOiran35
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -11,7 +11,7 @@ promo_banner:
   promo_title: InterCasino Digital
   promo_register_message: |-
     今なら新規登録で
-    $10ボーナス獲得!?
+    $35ボーナス獲得!?
   promo_join_text: ▶花魁と今すぐ遊ぶ？
   promo_join_url: https://www.intercasino.com/#join
   promo_terms_text: 利用規約に同意します
@@ -43,10 +43,10 @@ bonus:
         link: https://twitter.com/Japan_VeraJohn
 ---
 <dl>
-  <dt>無料お試し$10ボーナス利用規約</dt>
+  <dt>無料お試し$35ボーナス利用規約</dt>
   <dd>
     <ul>
-      <li>このキャンペーンでは、本サイトより新規登録をすることで、$10の無料お試しボーナスを獲得することができます。</li>
+      <li>このキャンペーンでは、本サイトより新規登録をすることで、$35の無料お試しボーナスを獲得することができます。</li>
       <li>無料お試しボーナスは、すべてのゲームで有効です。</li>
       <li>このキャンペーンはお1人様1回のみ有効です。インターカジノは複数のアカウント開設を堅く禁じております。</li>
       <li>このキャンペーンは、他のキャンペーン、およびその他の登録ボーナスとの併用はできません(他サイト含む)。</li>

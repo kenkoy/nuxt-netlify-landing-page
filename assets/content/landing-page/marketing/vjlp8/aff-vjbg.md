@@ -7,7 +7,7 @@ field_ids:
   go_container_id: OPT-PD9MB2F
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
-styles: version2
+styles: version1
 promo_banner:
   promo_small_subtitle: |-
     $1000のウェルカムボーナスをゲットできるのは新規プレイヤーのあなた様のみ！
@@ -18,8 +18,6 @@ promo_banner:
     promo_game_logo: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-game-logo.png
     promo_bg_mobile: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bg_m.jpg
     promo_bg_desktop: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bg.jpg
-  promo_join_button_style: primary-gradient
-  promo_login_button_style: pink-secondary-flat
   promo_large_subtitle: ■新規プレイヤー限定特典■
   promo_link_terms:
     - 利用規約
@@ -35,15 +33,12 @@ section:
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bonus.png
-    section_join_button_style: secondary-gradient
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-CM.png
-    section_join_button_style: primary-gradient
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-details.png
-    section_join_button_style: tertiary-flat
 ---
 <h3 class="text-left">ビギナーズボーナス利用規約</h3>
 <ul class="terms-ul">

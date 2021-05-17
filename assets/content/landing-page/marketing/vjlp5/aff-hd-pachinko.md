@@ -18,6 +18,7 @@ promo_banner:
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
   first_title: ''
   second_title: ''
+  promo_banner_font_size: medium-text
   desktop_full: false
   mobile_full: false
   promo_title_display: false
@@ -49,7 +50,7 @@ first_section:
   - first_section_title: 今超話題のパチスロ型スロットを遊んでみよう‼
     first_section_description: |-
       パチスロとカジノスロットって実はとても似てるんです!しかも統計的にはなんと還元率はパチンコ、パチスロよりもはるかに高い！?パチスロの一般的な還元率は約80%と言われています。カジノスロットだとなんと最低でも「95％」はあるんです‼
-      はい、もうやってみたくなりましたよね? なんと今なら無料で体験プレイが可能。しかもパチスロでもおなじみなゲーム概要がこの下からすべてチェックすることができちゃいます！
+      はい、もうやってみたくなりましたよね? なんと今なら無料で体験プレイが可能。しかもパチスロでもおなじみなゲーム概要がこの下からすべてチェックすることができちゃいます！ 
 
       ゲーム概要一覧
 additional_links:

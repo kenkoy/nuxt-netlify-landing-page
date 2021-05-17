@@ -17,6 +17,7 @@ promo_banner:
     promo_bg_mobile: /marketing/img/329-bg-m.png
   first_title: ''
   second_title: ''
+  promo_banner_font_size: medium-text
   desktop_full: false
   mobile_full: false
   promo_title_display: false

@@ -17,14 +17,14 @@ promo_banner:
   mobile_full: true
   promo_images:
     promo_bg_desktop: /marketing/img/dsgn-1763-vj-jp-cms-desktop-1920x1080.png
-    promo_bg_mobile: /marketing/img/dsgn-1763-vj-jp-cms-mobile-767x800.png
+    promo_bg_mobile: /marketing/img/dsgn-1763-vj-jp-cms-mobile-767x800-3.png
   promo_terms_link_text:
     - 利用規約
   promo_render_title_first: true
   promo_login_button_redirect_url: https://verajohn.com#join
   promo_join_button_redirect_url: https://verajohn.com#join
   promo_terms_text: 利用規約に同意します。
-  promo_join_button: 入金ボーナスを獲得する
+  promo_join_button: ご登録はこちら
   promo_login_button: 登録
   promo_title_highlighted:
     - $1000

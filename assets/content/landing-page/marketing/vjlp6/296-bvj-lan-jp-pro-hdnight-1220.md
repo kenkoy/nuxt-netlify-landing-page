@@ -12,8 +12,8 @@ promo_banner:
     最大$1000
     ビギナーズボーナス
   promo_images:
-    promo_bg_desktop: /marketing/img/samle-banner.jpg
-    promo_bg_mobile: /marketing/img/live-casino-bg-m.jpg
+    promo_bg_desktop: /marketing/img/bg_hdnight.jpg
+    promo_bg_mobile: /marketing/img/bg_m_hdnight.jpg
   promo_terms_link_text:
     - 利用規約
   promo_render_title_first: true
@@ -26,11 +26,11 @@ promo_banner:
     - $1000
 promo_steps:
   promo_step_1_title: ご登録
-  promo_step_1_desc: " 日本１のカジノで安心"
-  promo_step_2_title: 入金
-  promo_step_2_desc: 最大＄５００のボーナス付き
-  promo_step_3_title: プレイ
-  promo_step_3_desc: 賞金獲得
+  promo_step_1_desc: 安全 & 安心!
+  promo_step_2_title: ご入金
+  promo_step_2_desc: ボーナス獲得!
+  promo_step_3_title: プレイ!
+  promo_step_3_desc: お楽しみください!
 promo_template: VJLP6-NoForm
 ---
 <section id="terms" class="section5">

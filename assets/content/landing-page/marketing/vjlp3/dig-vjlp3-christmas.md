@@ -1,5 +1,5 @@
 ---
-slug_name: 105 VJ lan JP Pro Mobile Homepage a 1219 Sample_QA
+slug_name: DIG-VJLP3-Christmas
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -19,18 +19,18 @@ promo_banner:
     game_icon_3: /marketing/img/card-master.png
     game_icon_4: /marketing/img/live-casino.png
     game_icon_5: /marketing/img/payment-option.png
-  promo_subtitle: Sample
-  promo_title: 無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！
+  promo_subtitle: " "
+  promo_title: "無料お試し$10ボーナス＆初回3回までの入金で最高$1000ボーナスをゲット！ "
   promo_images:
-    promo_bg_desktop: /marketing/img/digital-welcomeoffer-mob-cta-1000x300-a_nocta.png
-    promo_bg_mobile: /marketing/img/digital-welcomeoffer-mob-cta-767x493-b_nocta.png
-    promo_bg_banner: ""
-  promo_title_display: true
-  promo_login_button_redirect_url: https://verajohn.com/#join
-  promo_join_button_redirect_url: https://verajohn.com/#join
+    promo_bg_desktop: /marketing/img/dsgn-1567-bg-vjlp2-dt.png
+    promo_bg_mobile: /marketing/img/dsgn-1567-vjlp2-mob.png
+    promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
+  promo_title_display: false
+  promo_login_button_redirect_url: https://www.verajohn.com/#join
+  promo_join_button_redirect_url: "https://www.verajohn.com/#join "
   promo_join_button: 今すぐプレイ
   promo_login_button: 登録
-  promo_join_button_location: upper-left
+  promo_join_button_location: lower-right
 promo_template: VJLP3-NoForm
 ---
 <section id="bf-usps" class="container">
@@ -81,7 +81,7 @@ promo_template: VJLP3-NoForm
    <div class="bf-separator col-12"></div>
    <div class="col-12">
       <h3>最高$500初回入金ボーナス利用規約</h3>
-      <ul>1. このキャンペーンは、ベラジョン初めての入金を行うプレイヤー様が対象となります。<br>2. このキャンペーンでは、最初の1回の入金で、100％入金ボーナスを獲得することができます。<br>3. 初回入金ボーナスは、最大$500まで獲得することができます。<br>4. 入金ボーナスを獲得するには、入金時にボーナスの受け取り希望欄にチェックを入れる必要があります。<br><br>5. 入金ボーナスは、$10以上を入金した後、自動的に進呈されます。<br>6. 入金した分のキャッシュは、ボーナスの出金賭け条件の対象外となります。また、ボーナスは、入金した分のキャッシュの利用後、使用可能となります。<br>7. 進呈されたボーナスのお引き出しには、ボーナス額の20倍にあたる出金賭け条件をゲームで賭けて満たす必要があります。<br>8. 出金賭け条件を満たす前に、キャッシュまたはそれに関連するキャッシュ勝利金を出金する場合、残っているボーナスはすべて没収されます。<br>9. 出金賭け条件は、ボーナス付与から30日以内に達成できない場合、ボーナス及びそれにより獲得した勝利金が没収されます。<br>10. ベラジョンはプレイヤー様による不正行為が認められた場合、ボーナスおよびそれにより獲得した勝利金を無効とする権利を有します。不正行為についてはキャンペーンの一般規約をご確認ください。<br>11. 出金賭け条件への適用率は、ゲームによって異なります。詳細は<a href="https://www.verajohn.com/ja/about/our-casino-bonuses">カジノボーナス</a>のページをご確認ください。<br>12. 第三者のウェブサイト経由でベラジョンに登録したアカウントは、このボーナスの対象外となります。<br>13. このキャンペーンは日本のプレイヤー様のみ対象となります。<br>14. ボーナスを使ったゲームプレイでの1度の最大賭け額は、スロット/スクラッチカードで$6.25、またはテーブルゲーム/ライブカジノまで$25とします。この金額を上回った場合には、ボーナスとそのボーナスに関連するすべての勝利金は没収されます。<br>15. ベラジョンはいかなるときも通告なしでこのキャンペーンを変更、終了できる権利を有します。</ul>
+      <ul>1. このキャンペーンは、ベラジョン初めての入金を行うプレイヤー様が対象となります。<br>2. このキャンペーンでは、最初の1回の入金で、100％入金ボーナスを獲得することができます。<br>3. 初回入金ボーナスは、最大$500まで獲得することができます。<br>4. 入金ボーナスを獲得するには、入金時にボーナスの受け取り希望欄にチェックを入れる必要があります。<br><br>5. 入金ボーナスは、$10以上を入金した後、自動的に進呈されます。<br>6. 入金した分のキャッシュは、ボーナスの出金賭け条件の対象外となります。また、ボーナスは、入金した分のキャッシュの利用後、使用可能となります。<br>7. 進呈されたボーナスのお引き出しには、ボーナス額の20倍にあたる出金賭け条件をゲームで賭けて満たす必要があります。<br>8. 出金賭け条件を満たす前に、キャッシュまたはそれに関連するキャッシュ勝利金を出金する場合、残っているボーナスはすべて没収されます。<br>9. 出金賭け条件は、ボーナス付与から30日以内に達成できない場合、ボーナス及びそれにより獲得した勝利金が没収されます。<br>10. ベラジョンはプレイヤー様による不正行為が認められた場合、ボーナスおよびそれにより獲得した勝利金を無効とする権利を有します。不正行為についてはキャンペーンの一般規約をご確認ください。<br>11. 出金賭け条件への適用率は、ゲームによって異なります。詳細は<a href="https://www.verajohn.com/ja/about/our-casino-bonuses" onclick="event.preventDefault()">カジノボーナス</a>のページをご確認ください。<br>12. 第三者のウェブサイト経由でベラジョンに登録したアカウントは、このボーナスの対象外となります。<br>13. このキャンペーンは日本のプレイヤー様のみ対象となります。<br>14. ボーナスを使ったゲームプレイでの1度の最大賭け額は、スロット/スクラッチカードで$6.25、またはテーブルゲーム/ライブカジノまで$25とします。この金額を上回った場合には、ボーナスとそのボーナスに関連するすべての勝利金は没収されます。<br>15. ベラジョンはいかなるときも通告なしでこのキャンペーンを変更、終了できる権利を有します。</ul>
    </div>
    <ul>
       <li>通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</li>

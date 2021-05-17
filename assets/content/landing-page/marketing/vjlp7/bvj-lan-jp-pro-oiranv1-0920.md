@@ -11,26 +11,25 @@ styles: version1
 template: steps
 promo_banner:
   promo_title: |-
-
-    今だけ
-    最高$500のボーナス
-    をプレゼント！
-  desktop_full: true
-  mobile_full: true
+    10日間無料プレイ付
+    最高$1000
+    ビギナーズボーナス
   promo_images:
     promo_bg_desktop: /marketing/img/banner-dt.jpg
     promo_bg_mobile: /marketing/img/banner-mob.jpg
     promo_game_logo: ""
   promo_terms_link_text:
     - 利用規約
+  mobile_full: true
   promo_render_title_first: true
+  desktop_full: true
   promo_login_button_redirect_url: https://www.verajohn.com/#join
   promo_join_button_redirect_url: https://www.verajohn.com/#join
   promo_terms_text: 利用規約に同意します。
   promo_join_button: ご登録はこちら
   promo_login_button: 登録
   promo_title_highlighted:
-    - $500
+    - $1000
 steps:
   step_title_1: ご登録
   step_description_1: 日本１のカジノで安心

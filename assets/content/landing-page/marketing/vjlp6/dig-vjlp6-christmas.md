@@ -1,5 +1,5 @@
 ---
-slug_name: 296-bvj-lan-jp-pro-hdnight-1220
+slug_name: DIG-VJLP6-Christmas
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -7,17 +7,13 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   go_container_id: OPT-PHSNXP6
   gtm_container_id: GTM-MFD3NKM
-styles: version1
-template: steps
 promo_banner:
   promo_title: |-
     最大$1000
     ビギナーズボーナス
-  desktop_full: true
-  mobile_full: true
   promo_images:
-    promo_bg_desktop: /marketing/img/bg_hdnight.jpg
-    promo_bg_mobile: /marketing/img/bg_m_hdnight.jpg
+    promo_bg_desktop: /marketing/img/dsgn-1567-vjlp1-dt.jpg
+    promo_bg_mobile: /marketing/img/xmas-vj.jpg
   promo_terms_link_text:
     - 利用規約
   promo_render_title_first: true
@@ -28,24 +24,13 @@ promo_banner:
   promo_login_button: 登録
   promo_title_highlighted:
     - $1000
-steps:
-  step_title_1: ご登録
-  step_description_1: 安全 & 安心!
-  step_title_2: ご入金
-  step_description_2: ボーナス獲得!
-  step_title_3: プレイ!
-  step_description_3: お楽しみください!
-game_images:
-  game_url_1: https://www.verajohn.com/ja/about/loyalty-program
-  game_url_2: https://www.verajohn.com/ja/game/hawaiian-dream
-  game_url_3: https://www.verajohn.com/ja/about/cardmaster
-  game_url_4: https://www.verajohn.com/ja/livecasino
-  game_url_5: https://www.verajohn.com/ja/about/paymentoption
-  game_icon_1: /marketing/img/loyalty-program.png
-  game_icon_2: /marketing/img/hawaiian-dream.png
-  game_icon_3: /marketing/img/card-master.png
-  game_icon_4: /marketing/img/live-casino.png
-  game_icon_5: /marketing/img/payment-option.png
+promo_steps:
+  promo_step_1_title: ご登録
+  promo_step_1_desc: 安全 & 安心!
+  promo_step_2_title: ご入金
+  promo_step_2_desc: ボーナス獲得!
+  promo_step_3_title: プレイ!
+  promo_step_3_desc: お楽しみください!
 promo_template: VJLP6-NoForm
 ---
 <section id="terms" class="section5">
@@ -113,6 +98,10 @@ promo_template: VJLP6-NoForm
 <li>ベラジョンはいかなるときも通告なしでこのキャンペーンを変更、終了できる権利を有します。</li>
 
 </ol>
+
+<p>通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</p>
+
+<div class="separator"> </div>
 
 </div>
 

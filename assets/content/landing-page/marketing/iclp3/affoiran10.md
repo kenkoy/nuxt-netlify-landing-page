@@ -1,5 +1,5 @@
 ---
-slug_name: InterCasino Digital
+slug_name: AFFOiran10
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja

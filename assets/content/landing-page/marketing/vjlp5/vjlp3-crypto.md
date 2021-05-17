@@ -18,6 +18,7 @@ promo_banner:
     promo_bg_banner: /marketing/img/vjlp3-default-bg.jpg
   first_title: ''
   second_title: ''
+  promo_banner_font_size: medium-text
   desktop_full: false
   mobile_full: false
   promo_title_display: false

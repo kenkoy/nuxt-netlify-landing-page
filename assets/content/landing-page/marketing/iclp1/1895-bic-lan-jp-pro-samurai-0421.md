@@ -1,5 +1,5 @@
 ---
-slug_name: 270-bic-lan-jp-pro-wo10-0220
+slug_name: 1895-bic-lan-jp-pro-samurai-0421
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
@@ -10,13 +10,13 @@ field_ids:
 promo_banner:
   promo_signup_button_redirect_url: https://intercasino.com/#join
   promo_smallterm_redirect_url: "#terms"
-  promo_title: 270-bic-lan-jp-pro-wo10-0220
+  promo_title: 1895-bic-lan-jp-pro-samurai-0421
   promo_images:
-    promo_bg_desktop: /marketing/img/icbg.jpg
-    promo_bg_mobile: /marketing/img/bg_m.jpg
+    promo_bg_desktop: /marketing/img/dsgn-1895-cms-riseofsamuraimegaways-1440x810-v2-gradient.jpg
+    promo_bg_mobile: /marketing/img/dsgn-1895-cms-riseofsamuraimegaways-767x800-v2-gradient.jpg
   promo_signup_button: 今すぐ登録
   promo_smallterm_text: に同意します。
-  promo_title_animate: false
+  promo_title_animate: true
   promo_main_heading: 総額$500
   promo_smallterm_text_link: 利用規約
   promo_login_button_redirect_url: https://intercasino.com/#signin
@@ -25,7 +25,7 @@ promo_banner:
   promo_subtitle_2: ウェルカムキャッシュ
 promo_steps:
   promo_step_1_title: 登録
-  promo_step_1_desc: 簡単登録でお試しプレイ&amp;無料$10ボーナス獲得!
+  promo_step_1_desc: 簡単登録でお試しプレイ&無料$10ボーナス獲得!
   promo_step_2_title: 入金
   promo_step_2_desc: ビットコインで即入金! リアルマネープレイを始めよう!
   promo_step_3_title: ボーナス

@@ -1,31 +1,28 @@
 ---
-slug_name: AFF-VJBG
+slug_name: 1897-BVJ-lan-JP-Pro-Baccarat-0421
 promo_locale:
   promo_country_code: jp
   promo_language_code: ja
 field_ids:
-  go_container_id: OPT-PD9MB2F
+  go_container_id: OPT-PHSNXP6
   ga_tracking_id: UA-142143961-1
   gtm_container_id: GTM-MFD3NKM
+styles: version1
 promo_banner:
-  promo_small_subtitle: |-
-    $1000のウェルカムボーナスをゲットできるのは新規プレイヤーのあなた様のみ！
-    このビギナーズガイドを読んで、安心してベラジョンカジノを始めよう！
-  promo_title: 324 BVJ lan JP Pro Beginnersguide 0720
+  promo_small_subtitle: " "
+  promo_title: 1897-BVJ-lan-JP-Pro-Baccarat-0421
   promo_images:
     promo_game_image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-title.png
     promo_game_logo: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-game-logo.png
-    promo_bg_mobile: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bg_m.jpg
-    promo_bg_desktop: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-bg.jpg
-  promo_large_subtitle: ■新規プレイヤー限定特典■
+    promo_bg_mobile: /marketing/img/dsgn-1897-vj-jp-cms-mobile-767x800v2.jpg
+    promo_bg_desktop: /marketing/img/dsgn-1897-vj-jp-cms-desktop-1920x1080-v2.jpg
+  promo_large_subtitle: " "
   promo_link_terms:
     - 利用規約
   promo_login_button_redirect_url: https://verajohn.com/#signin
-  promo_small_subtitle_highlighted:
-    - $1000のウェルカムボーナス
-    - 新規プレイヤー
+  promo_small_subtitle_highlighted: []
   promo_join_button_redirect_url: https://verajohn.com/#join
-  promo_join_button: 今すぐ登録
+  promo_join_button: バカラをプレイしよう！
   promo_terms: 利用規約に同意します。
   promo_login_button: ログイン
 section:

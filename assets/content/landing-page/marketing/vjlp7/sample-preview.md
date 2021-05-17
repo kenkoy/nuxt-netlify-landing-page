@@ -10,17 +10,16 @@ field_ids:
 styles: version1
 template: steps
 promo_banner:
-  promo_title: 最大$1000 ビギナーズボーナス
+  promo_title: 最大$1000
+    ビギナーズボーナス
+  desktop_full: true
+  mobile_full: true
   promo_images:
     promo_bg_desktop: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-bg.jpg
     promo_bg_mobile: /marketing/img/vjlp7bg_m.jpg
-  promo_join_button_style: blue-primary-flat
-  promo_login_button_style: blue-primary-flat
   promo_terms_link_text:
     - 利用規約
-  mobile_full: true
   promo_render_title_first: true
-  desktop_full: true
   promo_login_button_redirect_url: https://www.verajohn.com/#join
   promo_join_button_redirect_url: https://www.verajohn.com/#join
   promo_terms_text: 利用規約に同意します。
