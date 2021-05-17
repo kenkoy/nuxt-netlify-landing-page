@@ -33,10 +33,6 @@ export default {
         name: 'home',
         path: '/home/',
         component: resolve(__dirname, 'pages/marketing/vjhp')
-      }, {
-        name: 'lobby-page',
-        path: '/marketing/:id',
-        component: resolve(__dirname, 'pages/lobby-pages/index')
       }]
       routes.push(...newRoutes)
     }
