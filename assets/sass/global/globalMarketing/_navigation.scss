@@ -72,6 +72,9 @@ $NAV_HAMBURGER_LINES_COLOR: #fff;
     a{
       padding: 0;
     }
+    a.nuxt-link-exact-active.nuxt-link-active{
+      border-bottom: none;
+    }
   }
 
   nav a {

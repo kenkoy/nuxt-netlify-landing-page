@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div id="logo">
-            <nuxt-link to="/">
+            <nuxt-link to="/marketing">
               <img src="~/assets/images/marketing/home/gamesys-logo.png">
             </nuxt-link>
           </div>
