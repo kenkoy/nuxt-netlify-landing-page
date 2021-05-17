@@ -36,7 +36,7 @@ export default {
       }, {
         name: 'lobby-page',
         path: '/marketing/slots',
-        component: resolve(__dirname, 'pages/lobby-pages')
+        component: resolve(__dirname, 'pages/lobby-pages/slots')
       }]
       routes.push(...newRoutes)
     }
