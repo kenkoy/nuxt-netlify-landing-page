@@ -19,7 +19,7 @@
                     </a>
                   </div>
                 </div>
-                <img class="logo" src="@/assets/images/marketing/vjlp1v2/logo.png" alt="verajohn logo">
+                <img class="logo" src="@/assets/images/marketing/vjlp7/logo.png" alt="verajohn logo">
                 <div v-if="mdData.promo_banner.promo_render_title_first">
                   <h1 v-if="mdData.promo_banner.promo_title" v-html="bannerTitle" />
                   <h2 v-if="mdData.promo_banner.promo_subtitle" v-html="bannerSubtitle" />
@@ -58,8 +58,8 @@
       <section id="payment" class="separator">
         <div class="container">
           <div class="row">
-            <img class="desktop" src="@/assets/images/marketing/vjlp1v2/payment_large_jp.svg" alt="payment verajohn desktop">
-            <img class="mobile" src="@/assets/images/marketing/vjlp1v2/payment_jp.svg" alt="payment verajohn mobile">
+            <img class="desktop" src="@/assets/images/marketing/vjlp7/payment_large_jp.svg" alt="payment verajohn desktop">
+            <img class="mobile" src="@/assets/images/marketing/vjlp7/payment_jp.svg" alt="payment verajohn mobile">
           </div>
         </div>
       </section>
