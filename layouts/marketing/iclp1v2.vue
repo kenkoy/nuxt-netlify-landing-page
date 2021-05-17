@@ -9,8 +9,8 @@
         <div class="container">
           <div class="row">
             <div class="loginbtn">
-              <a rel="noopener" :href="mdData.promo_banner.ppromo_login_button_redirect_url">
-                <i class="material-icons" data-v-7c308f66="">exit_to_app</i>
+              <a rel="noopener" :href="mdData.promo_banner.promo_login_button_redirect_url">
+                <i class="material-icons">exit_to_app</i>
                 <p class="login-text">{{ mdData.promo_banner.promo_login_button_text }}</p>
               </a>
             </div>
