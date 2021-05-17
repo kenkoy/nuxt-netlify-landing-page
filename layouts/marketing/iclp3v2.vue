@@ -201,8 +201,8 @@
 
         <section id="payment">
           <div class="container">
-            <img class="desktop" src="@/assets/images/marketing/iclp3v2/payment_large_jp.svg">
-            <img class="mobile" src="@/assets/images/marketing/iclp3v2/payment_jp.svg">
+            <img class="desktop" src="@/assets/images/marketing/ic-global-paymentprovider/payment_large_jp.svg">
+            <img class="mobile" src="@/assets/images/marketing/ic-global-paymentprovider/payment_jp.svg">
           </div>
         </section>
 

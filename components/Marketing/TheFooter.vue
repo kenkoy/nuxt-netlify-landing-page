@@ -10,7 +10,7 @@
               :href="responsibleGamingURL"
               rel="noopener"
             >
-              <img src="@/assets/images/marketing/footer/20+.svg" alt="alt img">
+              <img src="@/assets/images/marketing/global-footer/20+.svg" alt="alt img">
             </a>
 
             <a
@@ -19,7 +19,7 @@
               href="https://www.gamblingtherapy.org/en"
               rel="noopener"
             >
-              <img src="@/assets/images/marketing/footer/icon_gt.svg" alt="alt img">
+              <img src="@/assets/images/marketing/global-footer/icon_gt.svg" alt="alt img">
             </a>
 
             <a
@@ -28,7 +28,7 @@
               rel="noopener"
               :href="landingPageType === 'verajohn' ? 'https://validator.curacao-egaming.com/validate?domain=www.verajohn.com&seal_id=cc15cb374804a763a5f82ff0a72fd6b436659d0061b3201e86431fa8afff305e39a7bbbadf89ae9274d2e9ee4bd923c3&stamp=ae85a35fb4a6c5816b8b9f17e5b6be96' : 'https://validator.curacao-egaming.com/validate?domain=www.intercasino.com&seal_id=141a575e2e4b5593af3dc1b19e2517deaa0ed9a17b9f809f1ffd32fa97098f83e664f6df6801db35fd76f6bef7f63663&stamp=ae85a35fb4a6c5816b8b9f17e5b6be96'"
             >
-              <img class="ceg-logo" src="@/assets/images/marketing/footer/CEG_logo.png" alt="alt img">
+              <img class="ceg-logo" src="@/assets/images/marketing/global-footer/CEG_logo.png" alt="alt img">
             </a>
           </div>
 
@@ -52,8 +52,8 @@
     <footer v-else :class="landingPageType">
       <div class="container">
         <div id="footer-payment">
-          <img v-if="desktop" src="@/assets/images/marketing/footer/payment_large_en.svg" alt="vjpromo payment">
-          <img v-if="mobile" src="@/assets/images/marketing/footer/payment_en.svg" alt="vjpromo payment">
+          <img v-if="desktop" src="@/assets/images/marketing/global-footer/payment_large_en.svg" alt="vjpromo payment">
+          <img v-if="mobile" src="@/assets/images/marketing/global-footer/payment_en.svg" alt="vjpromo payment">
         </div>
       </div>
 
@@ -66,7 +66,7 @@
               :href="responsibleGamingURL"
               rel="noopener"
             >
-              <img src="@/assets/images/marketing/footer/20+.svg" alt="responsible gaming">
+              <img src="@/assets/images/marketing/global-footer/20+.svg" alt="responsible gaming">
             </a>
 
             <a
@@ -75,7 +75,7 @@
               href="https://www.gamblingtherapy.org/en"
               rel="noopener"
             >
-              <img src="@/assets/images/marketing/footer/icon_gt.svg" alt="gambling theraphy">
+              <img src="@/assets/images/marketing/global-footer/icon_gt.svg" alt="gambling theraphy">
             </a>
 
             <a
@@ -84,7 +84,7 @@
               href="https://www.authorisation.mga.org.mt/verification.aspx?lang=en&company=c0e82570-bf83-4ecc-bda3-89ecb92d5b0e"
               rel="noopener"
             >
-              <img src="@/assets/images/marketing/footer/icon_mga.svg" alt="malta gambling authority">
+              <img src="@/assets/images/marketing/global-footer/icon_mga.svg" alt="malta gambling authority">
             </a>
           </div>
         </div>

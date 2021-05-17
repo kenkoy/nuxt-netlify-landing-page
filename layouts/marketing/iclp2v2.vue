@@ -205,8 +205,8 @@
       </section>
       <section id="payment">
         <div class="container">
-          <img alt="alt img" class="desktop" src="@/assets/images/marketing/iclp2v2/payment_large_jp.svg">
-          <img alt="alt img" class="mobile" src="@/assets/images/marketing/iclp2v2/payment_jp.svg">
+          <img alt="alt img" class="desktop" src="@/assets/images/marketing/ic-global-paymentprovider/payment_large_jp.svg">
+          <img alt="alt img" class="mobile" src="@/assets/images/marketing/ic-global-paymentprovider/payment_jp.svg">
         </div>
       </section>
       <section id="terms">

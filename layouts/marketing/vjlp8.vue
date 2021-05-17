@@ -59,8 +59,8 @@
 
       <section id="payment" class="separator">
         <div class="container">
-          <img class="desktop" src="@/assets/images/marketing/vjlp8/payment_large_jp.svg" alt="payment verajohn desktop">
-          <img class="mobile" src="@/assets/images/marketing/vjlp8/payment_jp.svg" alt="payment verajohn mobile">
+          <img class="desktop" src="@/assets/images/marketing/vj-global-paymentprovider/payment_large_jp.svg" alt="payment verajohn desktop">
+          <img class="mobile" src="@/assets/images/marketing/vj-global-paymentprovider/payment_jp.svg" alt="payment verajohn mobile">
         </div>
       </section>
 
