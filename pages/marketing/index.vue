@@ -1,6 +1,6 @@
 <template>
   <div :class="month === 10 ? 'holloween' : month === 11 ? 'christmas' : 'default'">
-    <div class="core-wrapper" :class="{ home_wrapper: true }">
+    <div class="layout-css" :class="{ home_wrapper: true }">
       <div id="gradient-wrapper" />
       <div v-if="month === 10" class="smoke" /> <!-- HOLLOWEEN -->
       <section class="intro">
@@ -11,25 +11,29 @@
           </div>
         </div>
         <div class="container">
-          <h1 class="animated fadeIn delay-1s typography">
-            デジタル取得サービス
-          </h1>
-          <p class="animated fadeIn delay-2s">
-            私たちは世界をリードするオンラインゲームオペレーターであり、進化するグローバルセクターでの将来の成長に向けて戦略的に位置づけられています。
-          </p>
+          <div class="row">
+            <h1 class="animated fadeIn delay-1s typography">
+              デジタル取得サービス
+            </h1>
+            <p class="animated fadeIn delay-2s">
+              私たちは世界をリードするオンラインゲームオペレーターであり、進化するグローバルセクターでの将来の成長に向けて戦略的に位置づけられています。
+            </p>
+          </div>
         </div>
       </section>
 
       <section id="about">
-        <div class="container column-2">
-          <div>
-            <p><strong>Play Online Casino at Vera&John</strong></p>
-            <p>Ladies and gentlemen, welcome to Vera&John casino, home to hundreds of amazing online slot games, table games, live casino games, and much more. Whether you want to play at home on your PC or tablet, or on the go with our amazing online mobile casino, you can be sure of a fun-filled casino experience with us.</p>
-          </div>
+        <div class="container">
+          <div class="row column-2">
+            <div>
+              <p><strong>Play Online Casino at Vera&John</strong></p>
+              <p>Ladies and gentlemen, welcome to Vera&John casino, home to hundreds of amazing online slot games, table games, live casino games, and much more. Whether you want to play at home on your PC or tablet, or on the go with our amazing online mobile casino, you can be sure of a fun-filled casino experience with us.</p>
+            </div>
 
-          <div>
-            <p><strong>InterCasino</strong></p>
-            <p>At InterCasino, you’re the real deal. You’re what matters most. And you deserve the best. That’s why you’re reading about one of the longest-running, prestigious and most trusted online casinos in the world.</p>
+            <div>
+              <p><strong>InterCasino</strong></p>
+              <p>At InterCasino, you’re the real deal. You’re what matters most. And you deserve the best. That’s why you’re reading about one of the longest-running, prestigious and most trusted online casinos in the world.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -153,7 +157,7 @@ export default {
   background-size: cover;
 }
 .home_wrapper{
-  .intro .container{
+  .intro .row{
     height: calc(100vh - 143.4px);
     min-height: 500px;
   }
@@ -174,7 +178,7 @@ export default {
   #about{
     background: #31312E;
     padding: 30px;
-    .container{
+    .row{
       align-items: center;
     }
 

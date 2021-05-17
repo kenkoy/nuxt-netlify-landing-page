@@ -1,28 +1,30 @@
 <template>
-  <div class="core-wrapper" :class="{ nav_wrapper: true }">
+  <div class="layout-css" :class="{ nav_wrapper: true }">
     <nav v-if="desktop === true" id="nav-desktop">
       <div class="container">
-        <div id="logo">
-          <nuxt-link to="/">
-            <img src="~/assets/images/marketing/home/gamesys-logo.png">
-          </nuxt-link>
-        </div>
-        <div>
-          <span v-for="(navLinks, navIndex) in navItems" :key="navIndex">
-            <nuxt-link v-if="(navLinks.name.includes(switchTemplate))" :to="navLinks.path">
-              {{ navLinks.name }}
+        <div class="row">
+          <div id="logo">
+            <nuxt-link to="/">
+              <img src="~/assets/images/marketing/home/gamesys-logo.png">
             </nuxt-link>
-          </span>
-          <div id="switch">
-            <nuxt-link to="/marketing/admin#/" target="_blank">
-              Admin
-            </nuxt-link>
-            <nuxt-link id="vj" to="/marketing/vjlp5/" :class="switchTemplate === 'vj' ? 'active' : ''" @click.native="switchTemplate ='vj'">
-              <strong>VJ</strong>
-            </nuxt-link>
-            <nuxt-link id="ic" to="/marketing/iclp1v2/" :class="switchTemplate === 'ic' ? 'active' : ''" @click.native="switchTemplate = 'ic'">
-              <strong>IC</strong>
-            </nuxt-link>
+          </div>
+          <div>
+            <span v-for="(navLinks, navIndex) in navItems" :key="navIndex">
+              <nuxt-link v-if="(navLinks.name.includes(switchTemplate))" :to="navLinks.path">
+                {{ navLinks.name }}
+              </nuxt-link>
+            </span>
+            <div id="switch">
+              <nuxt-link to="/marketing/admin#/" target="_blank">
+                Admin
+              </nuxt-link>
+              <nuxt-link id="vj" to="/marketing/vjlp5/" :class="switchTemplate === 'vj' ? 'active' : ''" @click.native="switchTemplate ='vj'">
+                <strong>VJ</strong>
+              </nuxt-link>
+              <nuxt-link id="ic" to="/marketing/iclp1v2/" :class="switchTemplate === 'ic' ? 'active' : ''" @click.native="switchTemplate = 'ic'">
+                <strong>IC</strong>
+              </nuxt-link>
+            </div>
           </div>
         </div>
       </div>
