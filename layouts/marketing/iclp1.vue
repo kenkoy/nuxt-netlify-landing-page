@@ -9,7 +9,7 @@
         <div class="container">
           <div class="row">
             <div class="loginbtn">
-              <a rel="noopener" :href="mdData.promo_banner.promo_login_button_redirect_url">
+              <a rel="noopener" :href="mdData.promo_banner.promo_signup_button_redirect_url">
                 <i class="material-icons" data-v-7c308f66="">exit_to_app</i>
                 <p class="login-text">{{ mdData.promo_banner.promo_login_button_text }}</p>
               </a>
@@ -20,7 +20,7 @@
               <h1>{{ mdData.promo_banner.promo_main_heading }}</h1>
               <h2>{{ mdData.promo_banner.promo_subtitle_2 }}</h2>
               <button onclick="location.href='#'" type="button">
-                <a rel="noopener" :href="mdData.promo_banner.promo_register_button_redirect_url">{{ mdData.promo_banner.promo_signup_button }}</a>
+                <a rel="noopener" :href="mdData.promo_banner.promo_login_button_redirect_url">{{ mdData.promo_banner.promo_signup_button }}</a>
               </button>
               <p>
                 <a rel="noopener" :href="mdData.promo_banner.promo_smallterm_redirect_url">{{ mdData.promo_banner.promo_smallterm_text_link }}</a>
