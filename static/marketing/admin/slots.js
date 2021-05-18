@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import htm from './external-scripts/htm.module.js'
+import htm from 'https://unpkg.com/htm?module'
 
 const html = htm.bind(h)
 export const SLOTS_PREVIEW = createClass({
