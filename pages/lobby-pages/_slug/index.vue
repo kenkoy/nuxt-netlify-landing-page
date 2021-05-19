@@ -1,18 +1,15 @@
 <template>
-  <!-- <div /> -->
-  <div style="padding: 100px">
-    {{ this.$route.params }}
-  </div>
+  <div />
 </template>
 
 <script>
 
 export default {
-  // layout: 'lobby-pages/lobby',
-  layout ({ params }) {
-    return 'lobby-pages/' + params.slug
-  },
-  async asyncData ({ params, error, $toCamelCase }) {
+  layout: 'lobby-pages/index',
+  // layout ({ params }) {
+  //   return params.slug === 'slots' ? 'lobby-pages/lobby' : ''
+  // },
+  async asyncData ({ params, error, $toCamelCase, route }) {
     try {
       const data = await import('~/assets/content/lobby-page/' + params.slug + '.md')
       return {
@@ -27,7 +24,7 @@ export default {
   },
   data () {
     return {
-      template: 'lobby'
+      template: 'lobby-pages/lobby'
     }
   },
   head () {
@@ -38,9 +35,8 @@ export default {
       ]
     }
   },
-  mounted () {
+  mounted (params) {
     this.emitData(this.markDownData)
-    console.log('xxxxx', this.$root._route.fullPath)
   },
   methods: {
     emitData (data) {
