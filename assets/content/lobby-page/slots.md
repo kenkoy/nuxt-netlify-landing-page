@@ -1,5 +1,6 @@
 ---
 slug_name: slots
+template: 'lobby'
 banner:
   - image: /marketing/img/vjjp_banner.png
     url: https://www.verajohn.com/ja/about/beginnersguidemb
