@@ -1,10 +1,7 @@
 <template>
   <div>
     <nuxt />
-    <div
-      v-if="Object.keys(mdData).length > 0"
-      class="lobby-pages-main"
-    >
+    <div v-if="Object.keys(mdData).length > 0">
       <Lobbylayout v-if="mdData.template === 'lobby'" />
       <Tournamentlayout v-if="mdData.template === 'tournament'" />
     </div>
