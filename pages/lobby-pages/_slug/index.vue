@@ -1,4 +1,5 @@
 <template>
+  <!-- <div /> -->
   <div style="padding: 100px">
     {{ this.$route.params }}
   </div>
@@ -7,10 +8,10 @@
 <script>
 
 export default {
-  layout: `lobby-pages/${this.template}`,
-  // layout (context) {
-  //   return $nuxt.$route.params === 'slots' ? 'lobby-pages/lobby' : ''
-  // },
+  // layout: 'lobby-pages/lobby',
+  layout ({ params }) {
+    return 'lobby-pages/' + params.slug
+  },
   async asyncData ({ params, error, $toCamelCase }) {
     try {
       const data = await import('~/assets/content/lobby-page/' + params.slug + '.md')
