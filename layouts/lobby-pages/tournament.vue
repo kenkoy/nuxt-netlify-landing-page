@@ -25,15 +25,13 @@
             <div class="row">
               <div class="col">
                 <div class="tabs">
-
-                  <div class="tab" v-for="(accordionData, accordionData_index) in mdData.accordion" :key="accordionData_index">
-                    <input type="checkbox" :id="accordionData_index">
+                  <div v-for="(accordionData, accordionData_index) in mdData.accordion" :key="accordionData_index" class="tab">
+                    <input :id="accordionData_index" type="checkbox">
                     <label class="tab-label" :for="accordionData_index">{{ accordionData.title }}</label>
                     <div class="tab-content">
                       {{ accordionData.description }}
                     </div>
                   </div>
-
                 </div>
               </div>
               <!-- <div class="col">

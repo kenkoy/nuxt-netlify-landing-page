@@ -6,10 +6,7 @@
 
 export default {
   layout: 'lobby-pages/index',
-  // layout ({ params }) {
-  //   return params.slug === 'slots' ? 'lobby-pages/lobby' : ''
-  // },
-  async asyncData ({ params, error, $toCamelCase, route }) {
+  async asyncData ({ params, error, $toCamelCase }) {
     try {
       const data = await import('~/assets/content/lobby-page/' + params.slug + '.md')
       return {
@@ -20,11 +17,6 @@ export default {
       }
     } catch (e) {
       error(e)
-    }
-  },
-  data () {
-    return {
-      template: 'lobby-pages/lobby'
     }
   },
   head () {
