@@ -13,7 +13,54 @@
         <Header :class="menuToggle ? 'nav-slide-up' : 'nav-slide-down'" @page-slide-on="pageSlideOn" />
         <!-- Main content -->
         <section>
-          <h1>Tournament</h1>
+          <div class="container">
+            <div class="row">
+              <h1>Tournament</h1>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="tabs">
+
+                  <div class="tab" v-for="(accordionData, accordionData_index) in mdData.accordion" :key="accordionData_index">
+                    <input type="checkbox" :id="accordionData_index">
+                    <label class="tab-label" :for="accordionData_index">{{ accordionData.title }}</label>
+                    <div class="tab-content">
+                      {{ accordionData.description }}
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- <div class="col">
+                <h2>Open <b>one</b></h2>
+                <div class="tabs">
+                  <div class="tab">
+                    <input type="radio" id="rd1" name="rd">
+                    <label class="tab-label" for="rd1">Item 1</label>
+                    <div class="tab-content">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.
+                    </div>
+                  </div>
+                  <div class="tab">
+                    <input type="radio" id="rd2" name="rd">
+                    <label class="tab-label" for="rd2">Item 2</label>
+                    <div class="tab-content">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
+                    </div>
+                  </div>
+                  <div class="tab">
+                    <input type="radio" id="rd3" name="rd">
+                    <label for="rd3" class="tab-close">Close others &times;</label>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
         </section>
 
         <footer id="footer-icon-wrapper">
@@ -131,4 +178,85 @@ export default {
   .lobby_pages_wrapper {
     @import '@/assets/sass/lobby-pages/style.scss';
   }
+
+$midnight: #2c3e50;
+$clouds: #ecf0f1;
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+// Layout
+.row {
+  display:flex;
+  .col {
+    flex:1;
+    &:last-child {
+      margin-left: 1em;
+    }
+  }
+}
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0,0,0,0.5);
+}
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  &-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: $midnight;
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */
+    &:hover {
+      background: darken($midnight, 10%);
+    }
+    &::after {
+      content: "\276F";
+      width: 1em;
+      height: 1em;
+      text-align: center;
+      transition: all .35s;
+    }
+  }
+  &-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: $midnight;
+    background: white;
+    transition: all .35s;
+  }
+  &-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: $midnight;
+    cursor: pointer;
+    &:hover {
+      background: darken($midnight, 10%);
+    }
+  }
+}
+
+// :checked
+input:checked {
+  + .tab-label {
+    background: darken($midnight, 10%);
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+  ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+  }
+}
+
 </style>
