@@ -26,7 +26,7 @@
               <div class="col">
                 <div class="tabs">
                   <div v-for="(accordionData, accordionData_index) in mdData.accordion" :key="accordionData_index" class="tab">
-                    <input :id="accordionData_index" type="checkbox">
+                    <input :id="accordionData_index" :type="openMultiAccordion ? 'checkbox' : 'radio'" :name="openMultiAccordion ? '' : 'accordion'">
                     <label class="tab-label" :for="accordionData_index">{{ accordionData.title }}</label>
                     <div class="tab-content">
                       {{ accordionData.description }}
@@ -34,29 +34,6 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="col">
-                <h2>Open <b>one</b></h2>
-                <div class="tabs">
-                  <div class="tab">
-                    <input type="radio" id="rd1" name="rd">
-                    <label class="tab-label" for="rd1">Item 1</label>
-                    <div class="tab-content">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, facilis.
-                    </div>
-                  </div>
-                  <div class="tab">
-                    <input type="radio" id="rd2" name="rd">
-                    <label class="tab-label" for="rd2">Item 2</label>
-                    <div class="tab-content">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, aut.
-                    </div>
-                  </div>
-                  <div class="tab">
-                    <input type="radio" id="rd3" name="rd">
-                    <label for="rd3" class="tab-close">Close others &times;</label>
-                  </div>
-                </div>
-              </div> -->
             </div>
           </div>
         </section>
@@ -133,7 +110,8 @@ export default {
     return {
       mdData: {},
       pageSlide: '',
-      menuToggle: false
+      menuToggle: false,
+      openMultiAccordion: true
       // scrollBottom: false
     }
   },
@@ -178,21 +156,10 @@ export default {
   }
 
 $midnight: #2c3e50;
-$clouds: #ecf0f1;
 input {
   position: absolute;
   opacity: 0;
   z-index: -1;
-}
-// Layout
-.row {
-  display:flex;
-  .col {
-    flex:1;
-    &:last-child {
-      margin-left: 1em;
-    }
-  }
 }
 /* Accordion styles */
 .tabs {
