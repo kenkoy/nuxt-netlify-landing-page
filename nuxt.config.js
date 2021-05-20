@@ -10,8 +10,7 @@ const markdownPaths = [
   'marketing/iclp1',
   'marketing/iclp2',
   'marketing/iclp3',
-  'marketing/iclp3V2',
-  'lobby-pages/'
+  'marketing/iclp3V2'
 ]
 
 function dynamicMarkdownRoutes () {
