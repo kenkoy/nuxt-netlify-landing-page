@@ -729,11 +729,13 @@ collections:
               label: "Large Subtitle",
               name: "promo_large_subtitle",
               widget: "string",
+              required: false
             }
           - {
               label: "Small Subtitle",
               name: "promo_small_subtitle",
               widget: "text",
+              required: false
             }
           - label: "Small Subtitle Highlighted Phrases"
             name: "promo_small_subtitle_highlighted"
@@ -1638,10 +1640,59 @@ collections:
       required: true
       hint: >
         "The last segment of lobby page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
+    - label: "SEO"
+      name: "seo"
+      widget: "object"
+      collapsed: true
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - label: "Meta Tags"
+          name: "meta"
+          widget: "object"
+          fields:
+            - { label: "Description", name: "description", widget: "text", required: false }
+            - { label: "Author", name: "author", widget: "string", required: false }
+            - label: "Keywords"
+              name: "keywords"
+              widget: "list"
+              summary: "{{field.content}}"
+              required: false
+              field: { label: "Content", name: "content", widget: "string" }
+            - label: "Robots"
+              name: "robots"
+              widget: list
+              summary: "{{field.content}}"
+              required: false
+              field: { label: "Content", name: "content", widget: "string" }
+            - label: "Open Graph"
+              name: "og"
+              widget: "object"
+              required: false
+              fields:
+                - { label: "Title", name: "title", widget: "string", required: false }
+                - { label: "Description", name: "description", widget: "text", required: false }
+                - { label: "Type", name: "type", widget: "string", required: false }
+                - { label: "Image", name: "image", widget: "image", allow_multiple: false, required: false }
+                - { label: "URL", name: "url", widget: "string", required: false }
+        - label: "Link Tags"
+          name: "link"
+          widget: "object"
+          required: false
+          fields:
+            - { label: "Canonical", name: "canonical", widget: "string", required: false }
+            - label: "Alternatives"
+              name: "alternatives"
+              widget: list
+              required: false
+              summary: "{{fields.href}} - {{fields.hreflang}}"
+              fields:
+                - { label: href, name: href, widget: string }
+                - { label: hreflang, name: hreflang, widget: string }
     - label: "Banner"
       name: "banner"
       widget: "list"
       collapsed: true
+      required: false
       summary: "{{fields.url}}"
       fields:
         - { label: "Banner Image", name: "image", widget: "image" }
@@ -1649,8 +1700,8 @@ collections:
     - label: "Games"
       name: "game"
       widget: "list"
-      required: true
       collapsed: true
+      min: 6
       max: 6
       summary: "{{fields.title}}"
       fields:
@@ -1661,7 +1712,6 @@ collections:
     - label: "Game Tiles"
       name: "game_tiles"
       widget: "object"
-      required: true
       collapsed: true
       fields:
         - label: "Modals"
