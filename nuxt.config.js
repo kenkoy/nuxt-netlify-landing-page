@@ -6,7 +6,6 @@ const markdownPaths = [
   'marketing/vjlp3',
   'marketing/vjlp4',
   'marketing/vjlp5',
-  'marketing/vjlp6',
   'marketing/iclp1',
   'marketing/iclp2',
   'marketing/iclp3',
