@@ -79,7 +79,7 @@
 }
 #header-menu.nav-slide-up{
   @at-root html body .lobby-pages-main .page-slide{
-    padding-top: 0;
+    // padding-top: 0;
   }
 }
 #header-menu {
@@ -345,7 +345,7 @@ main{
   position: fixed;
   width: 100%;
   bottom: 0;
-  transition: all .3s ease;
+  // transition: all .3s ease;
   z-index: 2;
 
   > button{
