@@ -34,9 +34,9 @@ export default {
   data () {
     return {
       mdData: {},
-      htmlBody: '',
       menuToggle: false,
       pageSlide: ''
+      // scrollBottom: false
     }
   },
   created () {
