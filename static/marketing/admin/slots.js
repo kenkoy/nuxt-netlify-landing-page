@@ -12,9 +12,9 @@ export const SLOTS_PREVIEW = createClass({
     document.head.appendChild(link)
   },
   render () {
-    return (html`
-    <body>
-    <h1>Hello World!</h1>
+  return (html`
+  <body class="layout-css lobby_pages_wrapper">
+  TEST
   </body>
     `)
   }
