@@ -22,7 +22,7 @@ collections:
     identifier_field: "slug_name"
     folder: "assets/content/lobby-page"
     editor:
-      preview: false
+      preview: true
     fields:
     - label: "Slug"
       widget: "string"
