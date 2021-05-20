@@ -31,7 +31,8 @@ export default {
   background-color: #0093d4;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #009fe3), color-stop(100%, #0093d4));
   background-image: linear-gradient(-180deg, #009fe3 0%, #0093d4 100%);
-  box-shadow: 0 9pt 8px -4px rgb(0 0 0 / 10%);
+  // box-shadow: 0 9pt 8px -4px rgb(0 0 0 / 10%);
+  box-shadow: 0 9pt 8px -4px rgba(0, 0, 0, 10%);
 }
 input {
   position: absolute;

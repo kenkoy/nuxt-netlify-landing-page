@@ -114,18 +114,20 @@ export default {
           : title
         )
 
-      let idx = 0
-      this.mdData.promo_banner.promo_small_subtitle_highlighted.filter(phrase => phrase)
-        .forEach((phrase) => {
-          while (bannerTitle.length > idx) {
-            if (bannerTitle[idx].includes(phrase)) {
-              bannerTitle[idx] = bannerTitle[idx].replace(phrase, `<span class="highlight"><b>${phrase}</b></span>`)
-              break
-            } else {
-              idx++
+      if (this.mdData.promo_banner.promo_small_subtitle_highlighted) {
+        let idx = 0
+        this.mdData.promo_banner.promo_small_subtitle_highlighted.filter(phrase => phrase)
+          .forEach((phrase) => {
+            while (bannerTitle.length > idx) {
+              if (bannerTitle[idx].includes(phrase)) {
+                bannerTitle[idx] = bannerTitle[idx].replace(phrase, `<span class="highlight"><b>${phrase}</b></span>`)
+                break
+              } else {
+                idx++
+              }
             }
-          }
-        })
+          })
+      }
 
       return bannerTitle.reduce((oldVal, newVal) => {
         return oldVal + '<br />' + newVal
