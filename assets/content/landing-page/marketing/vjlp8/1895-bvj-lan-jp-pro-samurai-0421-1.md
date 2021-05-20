@@ -9,14 +9,14 @@ field_ids:
   gtm_container_id: GTM-MFD3NKM
 styles: version2
 promo_banner:
-  promo_small_subtitle: " "
+  promo_small_subtitle: " asdasdasdadad"
   promo_title: 1895-bvj-lan-jp-pro-samurai-0421
   promo_images:
     promo_game_image: /marketing/img/dsgn-1895-cms-riseofsamuraimegaways-verticallogo.jpg
     promo_game_logo: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-game-logo.png
     promo_bg_mobile: /marketing/img/dsgn-1895-cms-riseofsamuraimegaways-767x800-nologo.jpg
     promo_bg_desktop: /marketing/img/dsgn-1895-cms-riseofsamuraimegaways-1440x810-v3.jpg
-  promo_large_subtitle: " "
+  promo_large_subtitle: asdasdasd
   promo_link_terms:
     - 利用規約
   promo_login_button_redirect_url: https://verajohn.com/#signin
