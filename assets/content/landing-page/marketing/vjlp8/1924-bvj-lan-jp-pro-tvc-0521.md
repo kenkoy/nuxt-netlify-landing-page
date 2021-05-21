@@ -9,14 +9,14 @@ field_ids:
   gtm_container_id: GTM-MFD3NKM
 styles: version2
 promo_banner:
-  promo_small_subtitle: a
+  promo_small_subtitle: ""
   promo_title: 1924-bvj-lan-jp-pro-tvc-0521
   promo_images:
     promo_game_image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-title.png
     promo_game_logo: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-game-logo.png
     promo_bg_mobile: /marketing/img/dsgn-1924-cms-mobile-lp8-tvc-767x800-nolight.jpg
     promo_bg_desktop: /marketing/img/dsgn-1924-cms-vjlp8-tvc-1440x810-nolight.jpg
-  promo_large_subtitle: a
+  promo_large_subtitle: ""
   promo_link_terms:
     - 利用規約
   promo_login_button_redirect_url: https://verajohn.com/#signin
