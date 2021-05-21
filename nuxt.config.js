@@ -2,20 +2,21 @@ import * as path from 'path'
 import * as glob from 'glob'
 
 const markdownPaths = [
-  'marketing/vjlp1',
-  'marketing/vjlp3',
-  'marketing/vjlp4',
-  'marketing/vjlp5',
-  'marketing/iclp1',
-  'marketing/iclp2',
-  'marketing/iclp3',
-  'marketing/iclp3V2'
+  'landing-page/marketing/vjlp1',
+  'landing-page/marketing/vjlp3',
+  'landing-page/marketing/vjlp4',
+  'landing-page/marketing/vjlp5',
+  'landing-page/marketing/iclp1',
+  'landing-page/marketing/iclp2',
+  'landing-page/marketing/iclp3',
+  'landing-page/marketing/iclp3V2',
+  'lobby-page'
 ]
 
 function dynamicMarkdownRoutes () {
   return [].concat(
     ...markdownPaths.map((mdPath) => {
-      return glob.sync(`${mdPath}/*.md`, { cwd: 'assets/content/landing-page/' })
+      return glob.sync(`${mdPath}/*.md`, { cwd: 'assets/content/' })
         .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`)
     })
   )

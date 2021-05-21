@@ -1,10 +1,12 @@
 <template>
   <div>
     <div v-for="(accordionItem, accordionItem_index) in accordionData" :key="accordionItem_index" class="accordion">
-      <input :id="accordionItem_index" :type="openMultiAccordion ? 'checkbox' : 'radio'" :name="openMultiAccordion ? '' : 'accordion'">
-      <label class="accordion-title accordion-bg" :for="accordionItem_index">{{ accordionItem.title }}</label>
-      <div class="accordion-content">
-        {{ accordionItem.description }}
+      <div>
+        <input :id="accordionItem_index" :type="openMultiAccordion ? 'checkbox' : 'radio'" :name="openMultiAccordion ? '' : 'accordion'">
+        <label class="accordion-title accordion-bg" :for="accordionItem_index">{{ accordionItem.title }}</label>
+        <div class="accordion-content">
+          {{ accordionItem.description }}
+        </div>
       </div>
     </div>
   </div>
