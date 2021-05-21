@@ -1670,7 +1670,12 @@ collections:
           summary: "{{fields.href}} - {{fields.hreflang}}"
           fields:
             - { label: href, name: href, widget: string }
-            - { label: language, name: hreflang, widget: string }
+            # - { label: language, name: hreflang, widget: string }
+            - label: "languge"
+              name: "hreflang"
+              widget: "select"
+              default: ["x-default"]
+              options: ["x-default", "ja-jp", "fi-fi", "no-no", "de-de", "ex-cl", "es-pe", "pt-br"]
     - label: "Banner"
       name: "banner"
       widget: "list"

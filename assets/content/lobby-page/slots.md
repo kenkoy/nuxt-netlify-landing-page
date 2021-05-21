@@ -5,20 +5,7 @@ seo:
   title: オンラインビデオスロット | Vera&John(ベラジョンカジノ)
   meta:
     description: Vera&Johnの1000種を超えるビデオスロットの中からお気に入りビデオスロットを見つけましょう。リアルマネーのみならず、無料で遊べるデモモードもご用意しています。
-    # robots:
-    #   - index
-    #   - follow
     keywords: slot machine, roulette, baccarat, win, flash, games, online, pontoon, gold diggers
-    # keywords:
-    #   - slots machine
-    #   - roulette
-    #   - baccarat
-    #   - win
-    #   - flash
-    #   - games
-    #   - online
-    #   - pontoon
-    #   - gold diggers
   alternate_links:
     - href: https://www.verajohn.com/slots
       hreflang: x-default
