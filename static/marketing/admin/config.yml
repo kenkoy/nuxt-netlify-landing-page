@@ -1655,13 +1655,13 @@ collections:
             - label: "Keywords"
               name: "keywords"
               widget: "list"
-              summary: "{{field.content}}"
+              summary: "{{fields.content}}"
               required: false
               field: { label: "Content", name: "content", widget: "string" }
             - label: "Robots"
               name: "robots"
               widget: list
-              summary: "{{field.content}}"
+              summary: "{{fields.content}}"
               required: false
               field: { label: "Content", name: "content", widget: "string" }
             - label: "Open Graph"
