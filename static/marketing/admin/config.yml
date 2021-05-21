@@ -1652,18 +1652,7 @@ collections:
           fields:
             - { label: "Description", name: "description", widget: "text", required: false }
             - { label: "Author", name: "author", widget: "string", required: false }
-            - label: "Keywords"
-              name: "keywords"
-              widget: "list"
-              summary: "{{fields.content}}"
-              required: false
-              field: { label: "Content", name: "content", widget: "string" }
-            - label: "Robots"
-              name: "robots"
-              widget: list
-              summary: "{{fields.content}}"
-              required: false
-              field: { label: "Content", name: "content", widget: "string" }
+            - { label: "Keywords", name: "keywords", widget: "string", required: false }
             - label: "Open Graph"
               name: "og"
               widget: "object"
@@ -1678,16 +1667,15 @@ collections:
           name: "link"
           widget: "object"
           required: false
-          fields:
-            - { label: "Canonical", name: "canonical", widget: "string", required: false }
-            - label: "Alternatives"
-              name: "alternatives"
+          field:
+            - label: "Alternate"
+              name: "alternate"
               widget: list
               required: false
               summary: "{{fields.href}} - {{fields.hreflang}}"
               fields:
                 - { label: href, name: href, widget: string }
-                - { label: hreflang, name: hreflang, widget: string }
+                - { label: language, name: hreflang, widget: string }
     - label: "Banner"
       name: "banner"
       widget: "list"
