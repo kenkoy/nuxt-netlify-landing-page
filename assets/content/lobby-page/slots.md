@@ -19,13 +19,11 @@ seo:
     #   - online
     #   - pontoon
     #   - gold diggers
-  link:
-    alternate:
-      - href: https://www.verajohn.com/slots
-        hreflang: x-default
-      - href: https://www.verajohn.com/ja/slots
-        hreflang: ja-jp
-    # canonical: https://www.verajohn.com/ja/slots
+  alternate_links:
+    - href: https://www.verajohn.com/slots
+      hreflang: x-default
+    - href: https://www.verajohn.com/ja/slots
+      hreflang: ja-jp
 banner:
   - image: /marketing/img/vjjp_banner.png
     url: https://www.verajohn.com/ja/about/beginnersguidemb
