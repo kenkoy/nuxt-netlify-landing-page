@@ -1673,7 +1673,7 @@ collections:
             - label: "language"
               name: "hreflang"
               widget: "select"
-              default: ["x-default"]
+              default: "x-default"
               options: ["x-default", "ja-jp", "fi-fi", "no-no", "de-de", "ex-cl", "es-pe", "pt-br"]
     - label: "Banner"
       name: "banner"
