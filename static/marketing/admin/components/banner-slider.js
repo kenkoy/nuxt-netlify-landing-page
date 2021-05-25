@@ -4,7 +4,7 @@ import htm from 'https://unpkg.com/htm?module'
 const html = htm.bind(h)
 export const BANNER_SLIDER = createClass({
   render () {
-    const { banner } = this.props
+    const { banners } = this.props
 
     const styles = {
       gameSlider: {
@@ -28,9 +28,11 @@ export const BANNER_SLIDER = createClass({
         <div class="slider">
         <div>
           <button class="class="n-button n-button--secondary desktop"">続きを読む</button>
-          <a href="">
-            <img src="${banner}"></img>
-          </a>
+          ${banners.map(banner =>
+            html`<a style=${styles.link} href="${banner.url}">
+              <img style="${styles.image}" src="${banner.image}"></img>
+            </a>`
+          )}
           <button class="n-button n-button--secondary">続きを読む</button>
         </div>
       </div>
@@ -38,6 +40,3 @@ export const BANNER_SLIDER = createClass({
     `)
   }
 })
-
-
-

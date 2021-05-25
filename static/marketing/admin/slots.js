@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 import htm from 'https://unpkg.com/htm?module'
+import { BANNER_SLIDER } from './components/banner-slider.js'
 
 const html = htm.bind(h)
 export const SLOTS_PREVIEW = createClass({
@@ -15,6 +16,12 @@ export const SLOTS_PREVIEW = createClass({
     const { widgetsFor, widgetFor } = this.props
     const banner = widgetsFor('banner')
     const body = widgetFor('body')
+
+    const bannerData = {
+      image: banner.image.getIn(['data'], 'image'),
+      url: banner.url.getIn(['data'], 'url')
+    }
+
   return (html`
   <body class="layout-css lobby_pages_wrapper">
     <div class="lobby-pages-main">
@@ -61,6 +68,8 @@ export const SLOTS_PREVIEW = createClass({
             </button>
           </div>
         </header>
+
+        <${BANNER_SLIDER} banners=${bannerData} />
 
         <section id="games">
           <div class="container separator-top separator-bottom">
@@ -137,7 +146,7 @@ export const SLOTS_PREVIEW = createClass({
         <section id="seo-contents">
           <div class="container">
             <div class="row negate-gutter">
-              <div v-html="mdData.content" />${body}
+              ${body}
             </div>
           </div>
         </section>
