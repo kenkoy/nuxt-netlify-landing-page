@@ -1652,6 +1652,12 @@ collections:
           fields:
             - { label: "Description", name: "description", widget: "text", required: false }
             - { label: "Author", name: "author", widget: "string", required: false }
+            - {
+                label: "Robots",
+                name: "robots", widget: "string",
+                required: false,
+                hint: "This will override the current logic in determining the meta robots"
+              }
             - { label: "Keywords", name: "keywords", widget: "string", required: false }
             - label: "Open Graph"
               name: "og"
