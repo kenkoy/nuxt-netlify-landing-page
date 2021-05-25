@@ -29,8 +29,8 @@ export const BANNER_SLIDER = createClass({
         <div>
           <button class="class="n-button n-button--secondary desktop"">続きを読む</button>
           ${banners.map(banner =>
-            html`<a style=${styles.link} href="${banner.url}">
-              <img style="${styles.image}" src="${banner.image}"></img>
+            html`<a href="${banner.url}">
+              <img src="${banner.image}"></img>
             </a>`
           )}
           <button class="n-button n-button--secondary">続きを読む</button>

@@ -14,13 +14,14 @@ export const SLOTS_PREVIEW = createClass({
   },
   render () {
     const { widgetsFor, widgetFor } = this.props
-    const banner = widgetsFor('banner')
+    const banners = widgetsFor('banner')
+    const _banners = banners.map((b) => {
+      return {
+        image: b.getIn(['data', 'image']),
+        url: b.getIn(['data', 'url'])
+      }
+    }).toJS()
     const body = widgetFor('body')
-
-    const bannerData = {
-      image: banner.image.getIn(['data'], 'image'),
-      url: banner.url.getIn(['data'], 'url')
-    }
 
   return (html`
   <body class="layout-css lobby_pages_wrapper">
@@ -69,7 +70,6 @@ export const SLOTS_PREVIEW = createClass({
           </div>
         </header>
 
-        <${BANNER_SLIDER} banners=${bannerData} />
 
         <section id="games">
           <div class="container separator-top separator-bottom">
