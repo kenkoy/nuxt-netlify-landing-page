@@ -37,7 +37,7 @@ export const SLOTS_PREVIEW = createClass({
           <span>Menu Coming Soon</span>
         </div>
       </nav>
-      
+
       <main>
         <header id="header-menu">
           <div>
@@ -86,7 +86,7 @@ export const SLOTS_PREVIEW = createClass({
                   </div>
                   <div class="pod-content">
                     <h3 class="emphasize">
-                      
+
                     </h3>
                     <img class="pod-feat-img" :src="modal.image" alt="alt img"></img>
                   </div>
