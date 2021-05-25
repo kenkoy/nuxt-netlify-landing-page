@@ -1639,7 +1639,7 @@ collections:
       name: "slug_name"
       required: true
       hint: >
-        "The last segment of lobby page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
+        The last segment of lobby page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)
     - label: "SEO"
       name: "seo"
       widget: "object"
