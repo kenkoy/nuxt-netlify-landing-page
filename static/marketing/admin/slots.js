@@ -12,9 +12,32 @@ export const SLOTS_PREVIEW = createClass({
     document.head.appendChild(link)
   },
   render () {
+    const { widgetsFor, widgetFor } = this.props
+    const banner = widgetsFor('banner')
+    const body = widgetFor('body')
   return (html`
   <body class="layout-css lobby_pages_wrapper">
     <div class="lobby-pages-main">
+      <nav id="menu-slide">
+        <div id="menu-slide-header">
+          <div>
+            <button class="btn" @click="pageSlideOff(false)">
+              <i class="icon close-icon" />
+            </button>
+          </div>
+          <div>
+            <p class="n-paragraph-1">メニュー</p>
+          </div>
+          <div class="icon-wrapper">
+            <i class="icon home-icon" />
+          </div>
+        </div>
+
+        <div>
+          <span>Menu Coming Soon</span>
+        </div>
+      </nav>
+      
       <main>
         <header id="header-menu">
           <div>
@@ -39,7 +62,60 @@ export const SLOTS_PREVIEW = createClass({
           </div>
         </header>
 
+        <section id="games">
+          <div class="container separator-top separator-bottom">
+            <div class="row">
+              <div v-for="(game, gameIndex) in mdData.game" :key="gameIndex">
+                <a class="n-link" :href="game.url">
+                  <i v-if="game.isHot" class="hot-icon" />
+                  <img :src="game.image" :alt="game.title"></img>
+                  <p class="game-name">{{ game.title }}</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="game-tiles">
+          <div class="container">
+            <div class="row column-4 game-menu negate-gutter">
+              <div class="pods">
+                <div>
+                  <div class="pod-bg">
+                    <img src="/marketing/img/lobby-pages/logo.png" alt="alt img"></img>
+                  </div>
+                  <div class="pod-content">
+                    <h3 class="emphasize">
+                      
+                    </h3>
+                    <img class="pod-feat-img" :src="modal.image" alt="alt img"></img>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row column-4 negate-gutter">
+                <div class="pods loyalty">
+                  <a href="link.url">
+                    <div class="pod-bg">
+                      <img src="/marketing/img/lobby-pages/bgImage" alt="alt img"></img>
+                    </div>
+
+                    <div class="pod-content">
+                      <h3 class="emphasize">
+                        {{ link.text }}
+                      </h3>
+                      <p class="n-paragraph-1">
+                        {{ link.title }}
+                      </p>
+                      <span class="emphasize winning">
+                        {{ link.winning }}
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="cta">
@@ -61,7 +137,7 @@ export const SLOTS_PREVIEW = createClass({
         <section id="seo-contents">
           <div class="container">
             <div class="row negate-gutter">
-              <div v-html="mdData.content" />
+              <div v-html="mdData.content" />${body}
             </div>
           </div>
         </section>
@@ -118,6 +194,14 @@ export const SLOTS_PREVIEW = createClass({
           </div>
         </footer>
       </main>
+      <aside id="footer-login-register">
+        <button class="n-button n-button--secondary">
+          ログイン
+        </button>
+        <button class="n-button n-button--primary">
+          今すぐ登録しよう!
+        </button>
+      </aside>
     </div>
   </body>
     `)

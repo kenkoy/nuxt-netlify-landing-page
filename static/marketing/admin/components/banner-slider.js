@@ -4,7 +4,7 @@ import htm from 'https://unpkg.com/htm?module'
 const html = htm.bind(h)
 export const BANNER_SLIDER = createClass({
   render () {
-    const { games } = this.props
+    const { banner } = this.props
 
     const styles = {
       gameSlider: {
@@ -23,19 +23,21 @@ export const BANNER_SLIDER = createClass({
     }
 
     return (html`
-    <section id="games">
-      <div class="container separator-top separator-bottom">
-        <div class="row">
-          <div v-for="(game, gameIndex) in mdData.game" :key="gameIndex">
-            <a class="n-link" :href="game.url">
-              <i v-if="game.isHot" class="hot-icon" />
-              <img :src="game.image" :alt="game.title">
-              <p class="game-name">{{ game.title }}</p>
-            </a>
-          </div>
+    <section id="banner-slider">
+      <div class="container">
+        <div class="slider">
+        <div>
+          <button class="class="n-button n-button--secondary desktop"">続きを読む</button>
+          <a href="">
+            <img src="${banner}"></img>
+          </a>
+          <button class="n-button n-button--secondary">続きを読む</button>
         </div>
       </div>
     </section>
     `)
   }
 })
+
+
+
