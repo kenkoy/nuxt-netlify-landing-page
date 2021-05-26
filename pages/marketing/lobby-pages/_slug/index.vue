@@ -16,9 +16,6 @@ export default {
   head () {
     return {
       title: 'Vera&John',
-      link: [
-        { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
-      ],
       __dangerouslyDisableSanitizersByTagID: {
         gtmBody: ['innerHTML'],
         gtmHead: ['innerHTML'],
