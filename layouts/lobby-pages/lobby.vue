@@ -40,7 +40,7 @@
             <div v-for="(link, linkIndex) in mdData.game_tiles.links" :key="linkIndex" class="pods loyalty">
               <a :href="link.url">
                 <div class="pod-bg">
-                  <img :src="link.bgImage" alt="alt img">
+                  <img :src="link.bg_image" alt="alt img">
                 </div>
 
                 <div class="pod-content">
