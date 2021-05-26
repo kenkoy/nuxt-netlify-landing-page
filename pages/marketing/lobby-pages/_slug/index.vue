@@ -3,25 +3,30 @@
 </template>
 
 <script>
+
 export default {
-  layout: 'lobby-pages/index', // Change to actual layout
-  async asyncData ({ params, error }) {
+  layout: 'lobby-pages/index',
+  async asyncData ({ params, error, app }) {
     try {
-      const markDownData = await import('~/assets/content/landing-page/marketing/lobby-page/' + params.slug + '.md') // Change to actual slug
-      return { markDownData }
+      const markDownData = await import('~/assets/content/lobby-page/' + params.slug + '.md')
+      return {
+        markDownData
+      }
     } catch (e) {
       error(e)
     }
   },
   head () {
+    const seoJSON = JSON.parse(JSON.stringify(this.markDownData.attributes.seo))
+    const seo = this.$seoBuilder(this.$toCamelCase(seoJSON))
+
     return {
-      title: 'Vera&John',
-      __dangerouslyDisableSanitizersByTagID: {
-        gtmBody: ['innerHTML'],
-        gtmHead: ['innerHTML'],
-        goHead: ['innerHTML'],
-        gaHead: ['innerHTML']
-      }
+      title: seo.title || '',
+      meta: seo.meta,
+      link: [
+        { hid: 'shortcut icon', rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' },
+        ...seo.link
+      ]
     }
   },
   mounted () {
@@ -29,9 +34,9 @@ export default {
   },
   methods: {
     emitData (data) {
-      this.$root.$emit('lobby-pages-data', { // Change to actual page name
-        yamlData: data.attributes,
-        htmlData: data.html
+      this.$root.$emit('lobby-pages-data', {
+        ...data.attributes,
+        content: data.html
       })
     }
   }

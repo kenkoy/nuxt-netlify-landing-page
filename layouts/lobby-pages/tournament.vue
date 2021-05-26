@@ -92,8 +92,9 @@ export default {
   },
   created () {
     this.$root.$once('lobby-pages-data', (data) => {
-      this.mdData = data.yamlData
-      this.htmlBody = data.htmlData
+      if (Object.keys(data).length > 0) {
+        this.mdData = data
+      }
     })
   },
   beforeDestroy () {

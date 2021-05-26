@@ -9,9 +9,7 @@ const markdownPaths = [
   'landing-page/marketing/iclp1',
   'landing-page/marketing/iclp2',
   'landing-page/marketing/iclp3',
-  'landing-page/marketing/iclp3V2',
-  'landing-page/marketing/lobby-page',
-  'lobby-page'
+  'landing-page/marketing/iclp3V2'
 ]
 
 function dynamicMarkdownRoutes () {
@@ -21,6 +19,10 @@ function dynamicMarkdownRoutes () {
         .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`)
     })
   )
+  const lobbyRoutes = glob.sync('*.md', { cwd: 'assets/content/lobby-page/' })
+    .map(file => `marketing/lobby-pages/${path.basename(file, '.md')}`)
+
+  return [...landingRoutes, ...lobbyRoutes]
 }
 
 export default {
@@ -36,11 +38,6 @@ export default {
           path: '/home/',
           component: resolve(__dirname, 'pages/marketing/vjhp')
         }
-        // {
-        //   name: 'slots',
-        //   path: '/marketing/slots',
-        //   component: resolve(__dirname, 'pages/lobby-pages')
-        // }
       ]
       routes.push(...newRoutes)
     }
@@ -83,7 +80,10 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['~/plugins/util.js'],
+  plugins: [
+    '~/plugins/util.js',
+    '~/plugins/seo.js'
+  ],
   /*
   ** Nuxt.js dev-modules
   */
