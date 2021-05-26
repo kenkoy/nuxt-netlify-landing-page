@@ -21,6 +21,10 @@ export const SLOTS_PREVIEW = createClass({
         url: b.getIn(['data', 'url'])
       }
     }).toJS()
+
+    const gameList = widgetsFor('game')
+    const gameTilesModals = widgetsFor('game_tiles').getIn(['data', 'modals'])
+    const gameTilesLinks = widgetsFor('game_tiles').getIn(['data', 'links'])
     const body = widgetFor('body')
 
   return (html`
@@ -74,13 +78,16 @@ export const SLOTS_PREVIEW = createClass({
         <section id="games">
           <div class="container separator-top separator-bottom">
             <div class="row">
-              <div v-for="(game, gameIndex) in mdData.game" :key="gameIndex">
-                <a class="n-link" :href="game.url">
-                  <i v-if="game.isHot" class="hot-icon" />
-                  <img :src="game.image" :alt="game.title"></img>
-                  <p class="game-name">{{ game.title }}</p>
-                </a>
-              </div>
+              ${gameList.filter(sect => !!sect).map(sect =>
+                html`
+                <div>
+                  <a class="n-link" href='${sect.getIn(['data', 'url'])}'>
+                    <img src='${sect.getIn(['data', 'image'])}' />
+                    <p>${sect.getIn(['data', 'title'])}</p>
+                  </a>
+                </div>
+                `
+              )}
             </div>
           </div>
         </section>
@@ -88,41 +95,42 @@ export const SLOTS_PREVIEW = createClass({
         <section id="game-tiles">
           <div class="container">
             <div class="row column-4 game-menu negate-gutter">
-              <div class="pods">
-                <div>
-                  <div class="pod-bg">
-                    <img src="/marketing/img/lobby-pages/logo.png" alt="alt img"></img>
-                  </div>
-                  <div class="pod-content">
-                    <h3 class="emphasize">
-
-                    </h3>
-                    <img class="pod-feat-img" :src="modal.image" alt="alt img"></img>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row column-4 negate-gutter">
-                <div class="pods loyalty">
-                  <a href="link.url">
+              ${gameTilesModals.filter(sect => !!sect).map(sect =>
+                html`
+                <div class="pods">
+                  <div>
                     <div class="pod-bg">
-                      <img src="/marketing/img/lobby-pages/bgImage" alt="alt img"></img>
+                      <img src='${sect.getIn(['data', 'image'])}' />
                     </div>
-
                     <div class="pod-content">
                       <h3 class="emphasize">
-                        {{ link.text }}
+                        ${sect.getIn(['data', 'text'])}
                       </h3>
-                      <p class="n-paragraph-1">
-                        {{ link.title }}
-                      </p>
-                      <span class="emphasize winning">
-                        {{ link.winning }}
-                      </span>
+                      <img class="pod-feat-img" src='${sect.getIn(['data', 'image'])}' />
                     </div>
-                  </a>
+                  </div>
                 </div>
-              </div>
+                `
+              )}
+            </div>
+            <div class="row column-4 negate-gutter">
+              ${gameTilesLinks.filter(sect => !!sect).map(sect =>
+                html`
+                <div class="pods loyalty">
+                  <div>
+                    <div class="pod-bg">
+                      <img src='${sect.getIn(['data', 'image'])}' />
+                    </div>
+                    <div class="pod-content">
+                      <h3 class="emphasize">
+                        ${sect.getIn(['data', 'text'])}
+                      </h3>
+                      <img class="pod-feat-img" src='${sect.getIn(['data', 'image'])}' />
+                    </div>
+                  </div>
+                </div>
+                `
+              )}
             </div>
           </div>
         </section>
