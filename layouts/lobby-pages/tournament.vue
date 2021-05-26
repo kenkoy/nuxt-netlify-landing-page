@@ -91,7 +91,7 @@ export default {
   },
   created () {
     this.$root.$once('lobby-pages-data', (data) => {
-      this.mdData = data
+      this.mdData = data.yamlData
     })
   },
   beforeDestroy () {

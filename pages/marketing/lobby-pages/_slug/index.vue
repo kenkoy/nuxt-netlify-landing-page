@@ -3,33 +3,39 @@
 </template>
 
 <script>
-
 export default {
-  layout: 'lobby-pages/index',
-  async asyncData ({ params, error, $toCamelCase }) {
-    const data = await import('~/assets/content/landing-page/marketing/lobby-page/' + params.slug + '.md')
-    return {
-      markDownData: {
-        ...$toCamelCase(JSON.parse(JSON.stringify(data.attributes))),
-        content: data.html
-      }
+  layout: 'lobby-pages/index', // Change to actual layout
+  async asyncData ({ params, error }) {
+    try {
+      const markDownData = await import('~/assets/content/landing-page/marketing/lobby-page/' + params.slug + '.md') // Change to actual slug
+      return { markDownData }
+    } catch (e) {
+      error(e)
     }
   },
   head () {
     return {
-      title: 'オンラインビデオスロット | Vera&John(ベラジョンカジノ)',
+      title: 'Vera&John',
       link: [
         { rel: 'shortcut icon', href: '/marketing/vj-favicon.ico', type: 'image/x-icon' }
-      ]
+      ],
+      __dangerouslyDisableSanitizersByTagID: {
+        gtmBody: ['innerHTML'],
+        gtmHead: ['innerHTML'],
+        goHead: ['innerHTML'],
+        gaHead: ['innerHTML']
+      }
     }
   },
-  mounted (params) {
+  mounted () {
     this.emitData(this.markDownData)
-    console.log('xxxxxx', this.markDownData)
   },
   methods: {
     emitData (data) {
-      this.$root.$emit('lobby-pages-data', data)
+      this.$root.$emit('lobby-pages-data', { // Change to actual page name
+        yamlData: data.attributes,
+        htmlData: data.html
+      })
     }
   }
 }
