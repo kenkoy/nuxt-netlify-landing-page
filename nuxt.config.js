@@ -34,12 +34,12 @@ export default {
           name: 'home',
           path: '/home/',
           component: resolve(__dirname, 'pages/marketing/vjhp')
-        },
-        {
-          name: 'slots',
-          path: '/marketing/slots',
-          component: resolve(__dirname, 'pages/lobby-pages')
         }
+        // {
+        //   name: 'slots',
+        //   path: '/marketing/slots',
+        //   component: resolve(__dirname, 'pages/lobby-pages')
+        // }
       ]
       routes.push(...newRoutes)
     }
