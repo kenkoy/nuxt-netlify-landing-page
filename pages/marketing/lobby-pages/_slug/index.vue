@@ -7,16 +7,12 @@
 export default {
   layout: 'lobby-pages/index',
   async asyncData ({ params, error, $toCamelCase }) {
-    try {
-      const data = await import('~/assets/content/lobby-page/' + params.slug + '.md')
-      return {
-        markDownData: {
-          ...$toCamelCase(JSON.parse(JSON.stringify(data.attributes))),
-          content: data.html
-        }
+    const data = await import('~/assets/content/lobby-page/' + params.slug + '.md')
+    return {
+      markDownData: {
+        ...$toCamelCase(JSON.parse(JSON.stringify(data.attributes))),
+        content: data.html
       }
-    } catch (e) {
-      error(e)
     }
   },
   head () {
@@ -29,6 +25,7 @@ export default {
   },
   mounted (params) {
     this.emitData(this.markDownData)
+    console.log('xxxxxx', this.markDownData)
   },
   methods: {
     emitData (data) {
