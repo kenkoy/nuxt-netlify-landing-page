@@ -86,12 +86,14 @@ export default {
   },
   data () {
     return {
-      mdData: {}
+      mdData: {},
+      htmlBody: ''
     }
   },
   created () {
     this.$root.$once('lobby-pages-data', (data) => {
       this.mdData = data.yamlData
+      this.htmlBody = data.htmlData
     })
   },
   beforeDestroy () {

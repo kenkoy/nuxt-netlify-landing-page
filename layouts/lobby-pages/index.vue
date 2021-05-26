@@ -34,6 +34,7 @@ export default {
   data () {
     return {
       mdData: {},
+      htmlBody: '',
       menuToggle: false, // If true, SideMenu, FooterFixButtons and Main content will animate/slide
       headerScrollHeight: false, // If true (scroll more than 54px), the header-menu will disappear when SideMenu is open
       pageSlide: '',
@@ -43,6 +44,7 @@ export default {
   created () {
     this.$root.$once('lobby-pages-data', (data) => {
       this.mdData = data.yamlData
+      this.htmlBody = data.htmlData
     })
   },
   beforeDestroy () {
