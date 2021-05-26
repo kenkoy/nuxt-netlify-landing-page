@@ -6,7 +6,7 @@
 export default {
   middleware: [
     function ({ redirect }) {
-      return redirect('/lobby-pages/slots')
+      return redirect('/marketing/lobby-pages/slots')
     }
   ]
 }
