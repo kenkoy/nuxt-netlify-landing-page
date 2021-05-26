@@ -152,11 +152,9 @@ export default {
       htmlBody: ''
     }
   },
-  fetch () {
-    this.$root.$once('lobby-pages-data', (data) => {
-      if (Object.keys(data).length > 0) {
-        this.mdData = data
-      }
+  async fetch () {
+    await this.$root.$once('lobby-pages-data', (data) => {
+      this.mdData = data
     })
   },
   beforeDestroy () {
