@@ -7,13 +7,9 @@
 export default {
   layout: 'lobby-pages/index',
   async asyncData ({ params, error, app }) {
-    try {
-      const markDownData = await import('~/assets/content/lobby-page/' + params.slug + '.md')
-      return {
-        markDownData
-      }
-    } catch (e) {
-      error(e)
+    const markDownData = await import('~/assets/content/lobby-page/' + params.slug + '.md')
+    return {
+      markDownData
     }
   },
   head () {

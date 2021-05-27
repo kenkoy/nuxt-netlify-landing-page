@@ -2,32 +2,32 @@ import * as path from 'path'
 import * as glob from 'glob'
 
 const markdownPaths = [
-  'landing-page/marketing/vjlp1',
-  'landing-page/marketing/vjlp3',
-  'landing-page/marketing/vjlp4',
-  'landing-page/marketing/vjlp5',
-  'landing-page/marketing/iclp1',
-  'landing-page/marketing/iclp2',
-  'landing-page/marketing/iclp3',
-  'landing-page/marketing/iclp3V2'
+  // 'landing-page/marketing/vjlp1',
+  // 'landing-page/marketing/vjlp3',
+  // 'landing-page/marketing/vjlp4',
+  // 'landing-page/marketing/vjlp5',
+  // 'landing-page/marketing/iclp1',
+  // 'landing-page/marketing/iclp2',
+  // 'landing-page/marketing/iclp3',
+  // 'landing-page/marketing/iclp3V2'
 ]
 
 function dynamicMarkdownRoutes () {
-  return [].concat(
-    ...markdownPaths.map((mdPath) => {
-      return glob.sync(`${mdPath}/*.md`, { cwd: 'assets/content/' })
-        .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`)
-    })
-  )
-  const lobbyRoutes = glob.sync('*.md', { cwd: 'assets/content/lobby-page/' })
-    .map(file => `marketing/lobby-pages/${path.basename(file, '.md')}`)
+  // return [].concat(
+  //   ...markdownPaths.map((mdPath) => {
+  //     return glob.sync(`${mdPath}/*.md`, { cwd: 'assets/content/' })
+  //       .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`)
+  //   })
+  // )
+  // const lobbyRoutes = glob.sync('*.md', { cwd: 'assets/content/lobby-page/' })
+  //   .map(file => `marketing/lobby-pages/${path.basename(file, '.md')}`)
 
-  return [...landingRoutes, ...lobbyRoutes]
+  // return [...landingRoutes]
 }
 
 export default {
   generate: {
-    routes: dynamicMarkdownRoutes,
+    // routes: dynamicMarkdownRoutes,
     exclude: ['/marketing/admin']
   },
   router: {
