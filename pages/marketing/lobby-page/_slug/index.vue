@@ -1,11 +1,14 @@
 <template>
-  <div />
+  <div>
+    <Data />
+  </div>
 </template>
 
 <script>
-
+import Data from '../index'
 export default {
   layout: 'lobby-page/lobby',
+  components: { Data },
   async asyncData ({ params, error, app }) {
     try {
       const data = await import('~/assets/content/landing-page/marketing/lobby-page/' + params.slug + '.md')
