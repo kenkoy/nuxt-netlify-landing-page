@@ -1,6 +1,8 @@
 <template>
   <div>
-    {{ posts }}
+    <div v-for="(post, post_index) in posts" :key="post_index" class="posts">
+      <h3>{{ post.attributes.slug_name }}</h3>
+    </div>
   </div>
 </template>
 <script>
