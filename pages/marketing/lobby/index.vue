@@ -5,10 +5,6 @@
 <script>
 export default {
 
-  middleware ({ redirect }) {
-    return redirect('/marketing/lobby/slots')
-  }
-
 }
 </script>
 

@@ -5,12 +5,12 @@
 <script>
 
 export default {
-  layout: 'lobby-pages/index',
+  layout: 'lobby-pages/lobby',
   async asyncData ({ params, error, app }) {
     try {
-      const markDownData = await import('~/assets/content/lobby-page/' + params.slug + '.md')
+      const data = await import('~/assets/content/landing-page/marketing/lobby-page/' + params.slug + '.md')
       return {
-        markDownData
+        markDownData: app.$toCamelCase(JSON.parse(JSON.stringify(data)))
       }
     } catch (e) {
       error(e)
@@ -18,7 +18,7 @@ export default {
   },
   head () {
     const seoJSON = JSON.parse(JSON.stringify(this.markDownData.attributes.seo))
-    const seo = this.$seoBuilder(this.$toCamelCase(seoJSON))
+    const seo = this.$seoBuilder(seoJSON)
 
     return {
       title: seo.title || '',
