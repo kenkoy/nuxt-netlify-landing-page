@@ -7,11 +7,6 @@
 export default {
   layout: 'lobby-page/lobby',
   async asyncData ({ params, error, app }) {
-<<<<<<< HEAD:pages/marketing/lobby/_slug/index.vue
-    const markDownData = await import('~/assets/content/lobby-page/' + params.slug + '.md')
-    return {
-      markDownData
-=======
     try {
       const data = await import('~/assets/content/landing-page/marketing/lobby-page/' + params.slug + '.md')
       return {
@@ -19,7 +14,6 @@ export default {
       }
     } catch (e) {
       error(e)
->>>>>>> 7a282bf81edb8fb6746880b523ec58cdfbdc187d:pages/marketing/lobby-page/_slug/index.vue
     }
   },
   head () {
