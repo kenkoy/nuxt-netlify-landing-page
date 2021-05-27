@@ -5,7 +5,7 @@
 <script>
 
 export default {
-  layout: 'lobby-pages/index',
+  layout: 'lobby-page/lobby',
   async asyncData ({ params, error, $toCamelCase }) {
     try {
       const data = await import('~/assets/content/lobby-page/' + params.slug + '.md')
