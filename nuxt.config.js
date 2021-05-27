@@ -10,8 +10,8 @@ const markdownPaths = [
   'marketing/vjlp8',
   'marketing/iclp1',
   'marketing/iclp2',
-  'marketing/iclp3',
-  'marketing/lobby-page'
+  'marketing/iclp3'
+  // 'marketing/lobby-page'
 ]
 
 function dynamicMarkdownRoutes () {
@@ -21,11 +21,11 @@ function dynamicMarkdownRoutes () {
         .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`)
     })
   )
-  // const lobbyRoutes = glob.sync('*.md', { cwd: 'assets/content/lobby-page/' })
-  //   .map(file => `marketing/lobby-pages/${path.basename(file, '.md')}`)
+  const lobbyRoutes = glob.sync('*.md', { cwd: 'assets/content/lobby-page/' })
+    .map(file => `marketing/lobby-page/${path.basename(file, '.md')}`)
 
-  // return [...landingRoutes, ...lobbyRoutes]
-  return landingRoutes
+  return [...landingRoutes, ...lobbyRoutes]
+  // return landingRoutes
 }
 export default {
   generate: {
