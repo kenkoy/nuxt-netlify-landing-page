@@ -33,6 +33,7 @@ export default {
     exclude: ['/marketing/admin']
   },
   router: {
+    trailingSlashes: true,
     extendRoutes (routes, resolve) {
       const newRoutes = [
         {
