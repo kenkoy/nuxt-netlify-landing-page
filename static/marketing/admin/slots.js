@@ -15,12 +15,12 @@ export const SLOTS_PREVIEW = createClass({
   render () {
     const { widgetsFor, widgetFor } = this.props
     const banners = widgetsFor('banner')
-    const _banners = banners.map((b) => {
-      return {
-        image: b.getIn(['data', 'image']),
-        url: b.getIn(['data', 'url'])
-      }
-    }).toJS()
+    // const _banners = banners.map((b) => {
+    //   return {
+    //     image: b.getIn(['data', 'image']),
+    //     url: b.getIn(['data', 'url'])
+    //   }
+    // }).toJS()
 
     const gameList = widgetsFor('game')
     const gameTilesModals = widgetsFor('game_tiles').getIn(['data', 'modals'])
@@ -74,6 +74,20 @@ export const SLOTS_PREVIEW = createClass({
           </div>
         </header>
 
+        <section id="banner-slider">
+          <div class="container">
+            ${banners.filter(sect => !!sect).map(sect =>
+              html`
+              <div class="slider">
+                <a href='${sect.getIn(['data', 'url'])}'>
+                  <img src='${sect.getIn(['data', 'image'])}' />
+                  <p>${sect.getIn(['data', 'title'])}</p>
+                </a>
+              </div>
+              `
+            )}
+          </div>
+        </section>
 
         <section id="games">
           <div class="container separator-top separator-bottom">
