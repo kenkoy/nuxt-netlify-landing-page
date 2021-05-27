@@ -1,5 +1,5 @@
 ---
-slug_name: slots
+slug_name: sample
 template: lobby
 seo:
   title: オンラインビデオスロット | Vera&John(ベラジョンカジノ)
