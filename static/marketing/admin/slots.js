@@ -124,6 +124,12 @@ export const SLOTS_PREVIEW = createClass({
                     </div>
                   </div>
                 </div>
+                <div class="TEST DAN">
+                  <h1>TEST</h1>
+                  <li>${sect.getIn(['data', 'image'])}</li>
+                  <li>${sect.getIn(['data', 'text'])}</li>
+                  <li>${sect.getIn(['data', 'image'])}</li>
+                </div>
                 `
               )}
             </div>
