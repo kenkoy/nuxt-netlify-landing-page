@@ -6,7 +6,7 @@ seo:
   meta:
     description: Vera&Johnの1000種を超えるビデオスロットの中からお気に入りビデオスロットを見つけましょう。リアルマネーのみならず、無料で遊べるデモモードもご用意しています。
     keywords: slot machine, roulette, baccarat, win, flash, games, online, pontoon,
-      gold diggers
+      gold diggers, sample keyword
     author: John Smith
     og:
       title: OG Title Here
