@@ -33,13 +33,17 @@ export default {
     exclude: ['/marketing/admin']
   },
   router: {
-    trailingSlashes: true,
     extendRoutes (routes, resolve) {
       const newRoutes = [
         {
           name: 'home',
           path: '/home/',
           component: resolve(__dirname, 'pages/marketing/vjhp')
+        },
+        {
+          name: 'home',
+          path: '/marketing/lobby-page/slots',
+          component: resolve(__dirname, 'pages/lobby-page/slots')
         }
       ]
       routes.push(...newRoutes)
