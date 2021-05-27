@@ -5,16 +5,26 @@
 <script>
 
 export default {
-  layout: 'lobby-pages/index',
+  layout: 'lobby-page/lobby',
   async asyncData ({ params, error, app }) {
+<<<<<<< HEAD:pages/marketing/lobby/_slug/index.vue
     const markDownData = await import('~/assets/content/lobby-page/' + params.slug + '.md')
     return {
       markDownData
+=======
+    try {
+      const data = await import('~/assets/content/landing-page/marketing/lobby-page/' + params.slug + '.md')
+      return {
+        markDownData: app.$toCamelCase(JSON.parse(JSON.stringify(data)))
+      }
+    } catch (e) {
+      error(e)
+>>>>>>> 7a282bf81edb8fb6746880b523ec58cdfbdc187d:pages/marketing/lobby-page/_slug/index.vue
     }
   },
   head () {
     const seoJSON = JSON.parse(JSON.stringify(this.markDownData.attributes.seo))
-    const seo = this.$seoBuilder(this.$toCamelCase(seoJSON))
+    const seo = this.$seoBuilder(seoJSON)
 
     return {
       title: seo.title || '',
