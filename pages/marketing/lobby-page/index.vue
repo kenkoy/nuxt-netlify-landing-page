@@ -21,7 +21,7 @@ export default {
     // .filter((mdFiles) => mdFiles.attributes.promo_template == 'VJLP3-NoForm')
 
     // return { posts: mdFilesContent.reverse(), dataMD: mdFilesContent.reverse() }
-    return { posts: mdFilesContent.reverse() }
+    return mdFilesContent.reverse()
   },
   head () {
     return {
