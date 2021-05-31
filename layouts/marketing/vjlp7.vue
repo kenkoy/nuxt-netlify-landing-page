@@ -42,7 +42,7 @@
       </section>
 
       <Steps
-        v-if="mdData.template === 'steps'"
+        v-if="mdData.steps_gameslider === 'steps'"
         :title1="mdData.steps.step_title_1"
         :description1="mdData.steps.step_description_1"
         :title2="mdData.steps.step_title_2"
@@ -51,7 +51,7 @@
         :description3="mdData.steps.step_description_3"
       />
       <GameSlider
-        v-if="mdData.template === 'game_slider'"
+        v-if="mdData.steps_gameslider === 'game_slider'"
         :game-data="mdData.game_images"
       />
 
