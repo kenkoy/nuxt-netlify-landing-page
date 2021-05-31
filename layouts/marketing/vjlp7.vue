@@ -4,7 +4,7 @@
     <div
       v-if="Object.keys(mdData).length > 0"
       class="vjlp7-main"
-      :class="mdData.styles"
+      :class="mdData.variation"
     >
       <section id="hero" :style="cssBackground">
         <div class="container">
