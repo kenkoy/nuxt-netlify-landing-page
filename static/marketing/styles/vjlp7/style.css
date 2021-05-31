@@ -231,27 +231,27 @@
 }
 @media (min-height: 750px) and (min-width: 320px) and (max-width: 568px) {
 .vjlp7_wrapper {
-    /*==========  Variation 2  ==========*/
+    /*==========  Variation 6  ==========*/
 }
-.vjlp7_wrapper .variation2 .logo {
+.vjlp7_wrapper .variation6 .logo {
     max-width: 180px;
     width: 100%;
 }
 }
 @media only screen and (min-width: 320px) {
 .vjlp7_wrapper {
+    /*==========  Variation 5  ==========*/
+    /*==========  Variation 6  ==========*/
     /*==========  Variation 1  ==========*/
     /*==========  Variation 2  ==========*/
-    /*==========  Variation 3  ==========*/
-    /*==========  Variation 4  ==========*/
-    /*==========  Variation 5  ==========*/
-    /*==========  Variation 6 ==========*/
+    /*==========  Variation 3 ==========*/
+    /*==========  Variation 4 ==========*/
 }
-.vjlp7_wrapper .variation1 .logo {
+.vjlp7_wrapper .variation5 .logo {
     max-width: 150px;
     width: 100%;
 }
-.vjlp7_wrapper .variation1 h1 {
+.vjlp7_wrapper .variation5 h1 {
     font-size: calc(48px - 16px);
     line-height: 35px;
     text-shadow: 0 0 0.6rem #ffffff, 0 0 1.5rem #ffffff, -0.2rem 0.1rem 1rem #ffffff, 0.2rem 0.1rem 1rem #ffffff, 0 -0.5rem 2rem #ffffff, 0 0.5rem 3rem #ffffff;
@@ -259,8 +259,78 @@
             animation: shine 2s forwards, flicker 3s infinite;
     font-weight: 700;
 }
-.vjlp7_wrapper .variation1 .highlight {
+.vjlp7_wrapper .variation5 .highlight {
     color: #ffd966;
+}
+.vjlp7_wrapper .variation5 #hero-text-wrapper {
+    background: none;
+}
+.vjlp7_wrapper .variation5 #hero-text-wrapper button {
+    background: #FEE63D;
+    font-size: 22px;
+    font-weight: 700;
+    width: 280px;
+    border-radius: 100px;
+    border: none;
+    padding: 10px 20px;
+    color: #704B1F;
+}
+.vjlp7_wrapper .variation5 #hero-text-wrapper button a {
+    border: none;
+}
+.vjlp7_wrapper .variation6 #hero {
+    overflow: hidden;
+    position: relative;
+}
+.vjlp7_wrapper .variation6 #hero:before {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+}
+.vjlp7_wrapper .variation6 .logo {
+    max-width: 100px;
+    width: 100%;
+}
+.vjlp7_wrapper .variation6 h1 {
+    -webkit-animation: vjlp7text-flicker-promo 5s linear forwards;
+            animation: vjlp7text-flicker-promo 5s linear forwards;
+    text-shadow: 0 0 20px #ec008b;
+    color: #ec008a;
+    font-weight: 700;
+    font-family: "MainFont-DemiBold", sans-serif;
+}
+.vjlp7_wrapper .variation6 .highlight {
+    color: #fff;
+}
+.vjlp7_wrapper .variation6 button {
+    background: none;
+    width: 280px;
+    border-radius: 100px;
+    font-size: 16px;
+    border: none;
+    padding: 10px 20px;
+    border: 3px solid #780032;
+    -webkit-animation: vjlp7border-flicker 3s linear forwards infinite;
+            animation: vjlp7border-flicker 3s linear forwards infinite;
+}
+.vjlp7_wrapper .variation6 button a {
+    border: none;
+    color: #fff;
+    -webkit-animation: vjlp7text-flicker 3s linear forwards infinite;
+            animation: vjlp7text-flicker 3s linear forwards infinite;
+}
+.vjlp7_wrapper .variation1 h1 {
+    color: #fff;
+    font-weight: 700;
+}
+.vjlp7_wrapper .variation1 .logo {
+    max-width: 150px;
+    width: 100%;
 }
 .vjlp7_wrapper .variation1 #hero-text-wrapper {
     background: none;
@@ -278,55 +348,40 @@
 .vjlp7_wrapper .variation1 #hero-text-wrapper button a {
     border: none;
 }
-.vjlp7_wrapper .variation2 #hero {
-    overflow: hidden;
-    position: relative;
-}
-.vjlp7_wrapper .variation2 #hero:before {
-    background-color: rgba(0, 0, 0, 0.7);
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
+.vjlp7_wrapper .variation2 h1 {
+    color: #EC008B;
+    font-weight: 700;
 }
 .vjlp7_wrapper .variation2 .logo {
-    max-width: 100px;
+    max-width: 150px;
     width: 100%;
 }
-.vjlp7_wrapper .variation2 h1 {
-    -webkit-animation: vjlp7text-flicker-promo 5s linear forwards;
-            animation: vjlp7text-flicker-promo 5s linear forwards;
-    text-shadow: 0 0 20px #ec008b;
-    color: #ec008a;
-    font-weight: 700;
-    font-family: "MainFont-DemiBold", sans-serif;
-}
-.vjlp7_wrapper .variation2 .highlight {
-    color: #fff;
-}
-.vjlp7_wrapper .variation2 button {
+.vjlp7_wrapper .variation2 #hero-text-wrapper {
     background: none;
+}
+.vjlp7_wrapper .variation2 #hero-text-wrapper button {
+    background: #FEE63D;
+    font-size: 22px;
+    font-weight: 700;
     width: 280px;
     border-radius: 100px;
-    font-size: 16px;
     border: none;
     padding: 10px 20px;
-    border: 3px solid #780032;
-    -webkit-animation: vjlp7border-flicker 3s linear forwards infinite;
-            animation: vjlp7border-flicker 3s linear forwards infinite;
+    color: #704B1F;
 }
-.vjlp7_wrapper .variation2 button a {
+.vjlp7_wrapper .variation2 #hero-text-wrapper button a {
     border: none;
-    color: #fff;
-    -webkit-animation: vjlp7text-flicker 3s linear forwards infinite;
-            animation: vjlp7text-flicker 3s linear forwards infinite;
 }
 .vjlp7_wrapper .variation3 h1 {
     color: #fff;
+    filter: drop-shadow(2px 2px 3px black);
     font-weight: 700;
+}
+.vjlp7_wrapper .variation3 h1 span {
+    background: linear-gradient(#ffdd2c, #ffdf3b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 2px 3px #ffd34d);
 }
 .vjlp7_wrapper .variation3 .logo {
     max-width: 150px;
@@ -349,8 +404,17 @@
     border: none;
 }
 .vjlp7_wrapper .variation4 h1 {
-    color: #EC008B;
+    background: linear-gradient(#EC008B, #ff53b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 2px 3px #86004f);
     font-weight: 700;
+}
+.vjlp7_wrapper .variation4 h1 span {
+    background: linear-gradient(#ffdd2c, #ffdf3b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(2px 2px 3px #ffd34d);
 }
 .vjlp7_wrapper .variation4 .logo {
     max-width: 150px;
@@ -372,154 +436,90 @@
 .vjlp7_wrapper .variation4 #hero-text-wrapper button a {
     border: none;
 }
-.vjlp7_wrapper .variation5 h1 {
-    color: #fff;
-    filter: drop-shadow(2px 2px 3px black);
-    font-weight: 700;
-}
-.vjlp7_wrapper .variation5 h1 span {
-    background: linear-gradient(#ffdd2c, #ffdf3b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(2px 2px 3px #ffd34d);
-}
-.vjlp7_wrapper .variation5 .logo {
-    max-width: 150px;
-    width: 100%;
-}
-.vjlp7_wrapper .variation5 #hero-text-wrapper {
-    background: none;
-}
-.vjlp7_wrapper .variation5 #hero-text-wrapper button {
-    background: #FEE63D;
-    font-size: 22px;
-    font-weight: 700;
-    width: 280px;
-    border-radius: 100px;
-    border: none;
-    padding: 10px 20px;
-    color: #704B1F;
-}
-.vjlp7_wrapper .variation5 #hero-text-wrapper button a {
-    border: none;
-}
-.vjlp7_wrapper .variation6 h1 {
-    background: linear-gradient(#EC008B, #ffa0d8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(2px 2px 3px #86004f);
-    font-weight: 700;
-}
-.vjlp7_wrapper .variation6 h1 span {
-    background: linear-gradient(#ffdd2c, #ffdf3b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(2px 2px 3px #ffd34d);
-}
-.vjlp7_wrapper .variation6 .logo {
-    max-width: 150px;
-    width: 100%;
-}
-.vjlp7_wrapper .variation6 #hero-text-wrapper {
-    background: none;
-}
-.vjlp7_wrapper .variation6 #hero-text-wrapper button {
-    background: #FEE63D;
-    font-size: 22px;
-    font-weight: 700;
-    width: 280px;
-    border-radius: 100px;
-    border: none;
-    padding: 10px 20px;
-    color: #704B1F;
-}
-.vjlp7_wrapper .variation6 #hero-text-wrapper button a {
-    border: none;
-}
 }
 @media only screen and (min-width: 576px) {
 .vjlp7_wrapper {
-    /*==========  Variation 2  ==========*/
+    /*==========  Variation 6  ==========*/
 }
-.vjlp7_wrapper .variation2 #hero:before {
+.vjlp7_wrapper .variation6 #hero:before {
     display: none;
 }
 }
 @media only screen and (min-width: 768px) {
 .vjlp7_wrapper {
-    /*==========  Variation 1  ==========*/
-    /*==========  Variation 2  ==========*/
-    /*==========  Variation 3 - 6 Banner text background  ==========*/
+    /*==========  Variation 5  ==========*/
+    /*==========  Variation 6  ==========*/
+    /*==========  Variation 1 - 4 Banner text background  ==========*/
 }
-.vjlp7_wrapper .variation1 #hero h1 {
+.vjlp7_wrapper .variation5 #hero h1 {
     line-height: 58px;
 }
-.vjlp7_wrapper .variation1 #hero .row {
+.vjlp7_wrapper .variation5 #hero .row {
     min-height: 730px;
     height: 100%;
 }
-.vjlp7_wrapper .variation1 #hero #hero-text-wrapper {
+.vjlp7_wrapper .variation5 #hero #hero-text-wrapper {
     background: linear-gradient(to bottom, rgba(0, 159, 227, 0.8) 0%, rgba(236, 0, 139, 0.8) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cc009fe3", endColorstr="#ccec008b",GradientType=0);
     padding: 20px;
 }
-.vjlp7_wrapper .variation1 #hero #hero-text-wrapper button {
+.vjlp7_wrapper .variation5 #hero #hero-text-wrapper button {
     background: #FEE63D;
     font-size: 16px;
 }
-.vjlp7_wrapper .variation1 #hero #hero-text-wrapper button a, .vjlp7_wrapper .variation1 #hero #hero-text-wrapper button a:hover {
+.vjlp7_wrapper .variation5 #hero #hero-text-wrapper button a, .vjlp7_wrapper .variation5 #hero #hero-text-wrapper button a:hover {
     color: #704B1F;
 }
-.vjlp7_wrapper .variation1 #hero #hero-text-wrapper button:hover {
+.vjlp7_wrapper .variation5 #hero #hero-text-wrapper button:hover {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
 }
-.vjlp7_wrapper .variation2 #hero .container {
+.vjlp7_wrapper .variation6 #hero .container {
     min-height: 500px;
     height: 100%;
 }
+.vjlp7_wrapper .variation1 #hero .row,
+.vjlp7_wrapper .variation2 #hero .row,
 .vjlp7_wrapper .variation3 #hero .row,
-.vjlp7_wrapper .variation4 #hero .row,
-.vjlp7_wrapper .variation5 #hero .row,
-.vjlp7_wrapper .variation6 #hero .row {
+.vjlp7_wrapper .variation4 #hero .row {
     min-height: 730px;
     height: 100%;
 }
+.vjlp7_wrapper .variation1 #hero #hero-text-wrapper,
+.vjlp7_wrapper .variation2 #hero #hero-text-wrapper,
 .vjlp7_wrapper .variation3 #hero #hero-text-wrapper,
-.vjlp7_wrapper .variation4 #hero #hero-text-wrapper,
-.vjlp7_wrapper .variation5 #hero #hero-text-wrapper,
-.vjlp7_wrapper .variation6 #hero #hero-text-wrapper {
+.vjlp7_wrapper .variation4 #hero #hero-text-wrapper {
     background: linear-gradient(to bottom, rgba(0, 159, 227, 0.8) 0%, rgba(236, 0, 139, 0.8) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cc009fe3", endColorstr="#ccec008b",GradientType=0);
     padding: 20px;
 }
+.vjlp7_wrapper .variation1 #hero #hero-text-wrapper button,
+.vjlp7_wrapper .variation2 #hero #hero-text-wrapper button,
 .vjlp7_wrapper .variation3 #hero #hero-text-wrapper button,
-.vjlp7_wrapper .variation4 #hero #hero-text-wrapper button,
-.vjlp7_wrapper .variation5 #hero #hero-text-wrapper button,
-.vjlp7_wrapper .variation6 #hero #hero-text-wrapper button {
+.vjlp7_wrapper .variation4 #hero #hero-text-wrapper button {
     background: #FEE63D;
     font-size: 16px;
 }
-.vjlp7_wrapper .variation3 #hero #hero-text-wrapper button a, .vjlp7_wrapper .variation3 #hero #hero-text-wrapper button a:hover,
+.vjlp7_wrapper .variation1 #hero #hero-text-wrapper button a, .vjlp7_wrapper .variation1 #hero #hero-text-wrapper button a:hover,
+.vjlp7_wrapper .variation2 #hero #hero-text-wrapper button a,
+.vjlp7_wrapper .variation2 #hero #hero-text-wrapper button a:hover,
+.vjlp7_wrapper .variation3 #hero #hero-text-wrapper button a,
+.vjlp7_wrapper .variation3 #hero #hero-text-wrapper button a:hover,
 .vjlp7_wrapper .variation4 #hero #hero-text-wrapper button a,
-.vjlp7_wrapper .variation4 #hero #hero-text-wrapper button a:hover,
-.vjlp7_wrapper .variation5 #hero #hero-text-wrapper button a,
-.vjlp7_wrapper .variation5 #hero #hero-text-wrapper button a:hover,
-.vjlp7_wrapper .variation6 #hero #hero-text-wrapper button a,
-.vjlp7_wrapper .variation6 #hero #hero-text-wrapper button a:hover {
+.vjlp7_wrapper .variation4 #hero #hero-text-wrapper button a:hover {
     color: #704B1F;
 }
+.vjlp7_wrapper .variation1 #hero #hero-text-wrapper button:hover,
+.vjlp7_wrapper .variation2 #hero #hero-text-wrapper button:hover,
 .vjlp7_wrapper .variation3 #hero #hero-text-wrapper button:hover,
-.vjlp7_wrapper .variation4 #hero #hero-text-wrapper button:hover,
-.vjlp7_wrapper .variation5 #hero #hero-text-wrapper button:hover,
-.vjlp7_wrapper .variation6 #hero #hero-text-wrapper button:hover {
+.vjlp7_wrapper .variation4 #hero #hero-text-wrapper button:hover {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
 }
 }
 @media only screen and (min-width: 1200px) {
 .vjlp7_wrapper {
-    /*==========  Variation 1  ==========*/
+    /*==========  Variation 5  ==========*/
 }
-.vjlp7_wrapper .variation1 h1 {
+.vjlp7_wrapper .variation5 h1 {
     font-size: 48px;
 }
 }
