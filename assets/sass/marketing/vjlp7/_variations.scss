@@ -1,6 +1,6 @@
 @media (min-height: 750px) and (min-width: 320px) and (max-width: 568px) {
-  /*==========  Version 2  ==========*/
-  .version2 {
+  /*==========  Variation 2  ==========*/
+  .variation2 {
     .logo {
       max-width: 180px;
       width: 100%;
@@ -11,8 +11,8 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-  /*==========  Version 1  ==========*/
-  .version1{
+  /*==========  Variation 1  ==========*/
+  .variation1{
     .logo{
       max-width: 150px;
       width: 100%;
@@ -47,8 +47,8 @@
     }
   }
 
-  /*==========  Version 2  ==========*/
-  .version2{
+  /*==========  Variation 2  ==========*/
+  .variation2{
     #hero{
       overflow: hidden;
       position: relative;
@@ -97,12 +97,155 @@
       animation: vjlp7border-flicker 3s linear forwards infinite;
     }
   }
+
+
+
+
+
+
+  /*==========  Variation 3  ==========*/
+  .variation3{
+    h1{
+      color: $LIGHT_TEXT_COLOR;
+      font-weight: 700;
+    }
+    .logo{
+      max-width: 150px;
+      width: 100%;
+    }
+    #hero-text-wrapper{
+      background: none;
+
+      button {
+        background: $BTN_BG;
+        font-size: 22px;
+        font-weight: 700;
+        width: 280px;
+        border-radius: 100px;
+        border: none;
+        padding: 10px 20px;
+        color: #704B1F;
+
+        a{
+          border: none;
+        }
+      }
+    }
+  }
+
+  /*==========  Variation 4  ==========*/
+  .variation4{
+    h1{
+      color: $SECONDARY_TEXT_COLOR;
+      font-weight: 700;
+    }
+    .logo{
+      max-width: 150px;
+      width: 100%;
+    }
+    #hero-text-wrapper{
+      background: none;
+
+      button {
+        background: $BTN_BG;
+        font-size: 22px;
+        font-weight: 700;
+        width: 280px;
+        border-radius: 100px;
+        border: none;
+        padding: 10px 20px;
+        color: #704B1F;
+
+        a{
+          border: none;
+        }
+      }
+    }
+  }
+
+  /*==========  Variation 5  ==========*/
+  .variation5{
+    h1{
+      color: $LIGHT_TEXT_COLOR;
+      filter: drop-shadow(2px 2px 3px darken($LIGHT_TEXT_COLOR, 100%));
+      font-weight: 700;
+
+      span{
+        background: linear-gradient($HIGHLIGHT_TEXT, lighten($HIGHLIGHT_TEXT, 3%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(2px 2px 3px darken($HIGHLIGHT, 5%));
+      }
+    }
+    .logo{
+      max-width: 150px;
+      width: 100%;
+    }
+    #hero-text-wrapper{
+      background: none;
+
+      button {
+        background: $BTN_BG;
+        font-size: 22px;
+        font-weight: 700;
+        width: 280px;
+        border-radius: 100px;
+        border: none;
+        padding: 10px 20px;
+        color: #704B1F;
+
+        a{
+          border: none;
+        }
+      }
+    }
+  }
+
+  /*==========  Variation 6 ==========*/
+  .variation6{
+    h1{
+      background: linear-gradient($SECONDARY_TEXT_COLOR, lighten($SECONDARY_TEXT_COLOR, 35%));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(2px 2px 3px darken($SECONDARY_TEXT_COLOR, 20%));
+      font-weight: 700;
+
+      span{
+        background: linear-gradient($HIGHLIGHT_TEXT, lighten($HIGHLIGHT_TEXT, 3%));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(2px 2px 3px darken($HIGHLIGHT, 5%));
+      }
+    }
+    .logo{
+      max-width: 150px;
+      width: 100%;
+    }
+    #hero-text-wrapper{
+      background: none;
+
+      button {
+        background: $BTN_BG;
+        font-size: 22px;
+        font-weight: 700;
+        width: 280px;
+        border-radius: 100px;
+        border: none;
+        padding: 10px 20px;
+        color: #704B1F;
+
+        a{
+          border: none;
+        }
+      }
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 576px) {
-  /*==========  Version 2  ==========*/
-  .version2{
+  /*==========  Variation 2  ==========*/
+  .variation2{
     #hero:before{
       display: none;
     }
@@ -111,8 +254,8 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-  /*==========  Version 1  ==========*/
-  .version1 {
+  /*==========  Variation 1  ==========*/
+  .variation1 {
     #hero {
       h1{
         line-height: 58px;
@@ -143,11 +286,43 @@
     }
   }
 
-  /*==========  Version 2  ==========*/
-  .version2 {
+  /*==========  Variation 2  ==========*/
+  .variation2 {
     #hero .container {
       min-height: 500px;
       height: 100%;
+    }
+  }
+
+  /*==========  Variation 3 - 6 Banner text background  ==========*/
+  .variation3,
+  .variation4,
+  .variation5,
+  .variation6{
+    #hero{
+      .row{
+        min-height: 730px;
+        height: 100%;
+      }
+      #hero-text-wrapper{
+        background: -webkit-linear-gradient(top, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
+        background: linear-gradient(to bottom, rgba(0,159,227,0.8) 0%,rgba(236,0,139,0.8) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc009fe3', endColorstr='#ccec008b',GradientType=0);
+        padding: 20px;
+
+        button{
+          background: $BTN_BG;
+          font-size: $TEXT_SIZE;
+
+          a, a:hover{
+            color: $BTN_COLOR;
+          }
+
+          &:hover{
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.60);
+          }
+        }
+      }
     }
   }
 }
@@ -159,8 +334,8 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-  /*==========  Version 1  ==========*/
-  .version1{
+  /*==========  Variation 1  ==========*/
+  .variation1{
     h1{
       font-size: $HERO_TITLE_SIZE3;
     }
