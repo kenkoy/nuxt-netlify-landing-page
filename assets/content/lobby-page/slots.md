@@ -62,7 +62,7 @@ game_tiles:
       url: https://www.verajohn.com/ja/active-tournaments
       bg_image: /marketing/img/trophy-icon-transparent.png
 ---
-<h1 class="n-header-1">ベラジョンオンラインカジノのオンラインビデオスロット</h1>TESTING
+<h1 class="n-header-1">ベラジョンオンラインカジノのオンラインビデオスロット</h1>
 
 <p class="n-paragraph">ベラジョンオンラインカジノでお気に入りのビデオスロットを探してみましょう。</p>
 
