@@ -452,6 +452,10 @@ collections:
         options:
           - { label: "Variation 1", value: "variation1" }
           - { label: "Variation 2", value: "variation2" }
+          - { label: "Variation 3", value: "variation3" }
+          - { label: "Variation 4", value: "variation4" }
+          - { label: "Variation 5", value: "variation5" }
+          - { label: "Variation 6", value: "variation6" }
       - label: "Steps/Game Slider"
         name: "steps_gameslider"
         widget: "select"

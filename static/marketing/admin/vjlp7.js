@@ -83,7 +83,7 @@ export const VJLP7_PREVIEW = createClass({
     const { widgetsFor, widgetFor } = this.props
     const banner = widgetsFor('promo_banner')
     const locale = widgetsFor('promo_locale')
-    const version = widgetsFor('styles').getIn(['data'])
+    const variation = widgetsFor('variation').getIn(['data'])
     const steps = widgetsFor('steps')
     const body = widgetFor('body')
 
@@ -147,7 +147,7 @@ export const VJLP7_PREVIEW = createClass({
         class="vjlp7_wrapper core-wrapper"
       >
         <div class="vjlp7-main">
-          <div className="${version}" style="${imageBG}">
+          <div className="${variation}" style="${imageBG}">
             <section id="hero">
               <div class="container">
                 <div id="hero-text-wrapper">
@@ -175,7 +175,7 @@ export const VJLP7_PREVIEW = createClass({
               </div>
             </section>
 
-            ${widgetsFor('template').getIn(['data']) === 'steps'
+            ${widgetsFor('steps_gameslider').getIn(['data']) === 'steps'
               ? html`<${STEPS} steps="${stepData}" />`
               : html`<${GAME_SLIDER} games="${games}" />`}
 
