@@ -21,7 +21,7 @@
       <section id="game-tiles">
         <div class="container">
           <div class="row column-4 game-menu negate-gutter">
-            <div v-for="(modal, modalIndex) in mdData.game_tiles.modals" :key="modalIndex" class="pods">
+            <div v-for="(modal, modalIndex) in mdData.gameTiles.modals" :key="modalIndex" class="pods">
               <div>
                 <div class="pod-bg">
                   <img :src="modal.image" alt="alt img">
@@ -37,7 +37,7 @@
           </div>
 
           <div class="row column-4 negate-gutter">
-            <div v-for="(link, linkIndex) in mdData.game_tiles.links" :key="linkIndex" class="pods loyalty">
+            <div v-for="(link, linkIndex) in mdData.gameTiles.links" :key="linkIndex" class="pods loyalty">
               <a :href="link.url">
                 <div class="pod-bg">
                   <img :src="link.bg_image" alt="alt img">
