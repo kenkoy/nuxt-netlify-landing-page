@@ -18,13 +18,21 @@ $NAV_HAMBURGER_LINES_COLOR: #fff;
 
     #switch{
       float: right;
+      display: flex;
+      padding: 26px 0;
+
+      > a{
+        padding: 5px 10px;
+        margin: 0 5px;
+        display: flex;
+        align-items: center;
+      }
     }
 
     #vj, #ic, #yg{
       background: #e4e4e4;
       color: #a9a9a9;
       border-radius: 3px;
-      padding: 5px 10px;
       border: none;
       font-weight: 700;
     }
@@ -39,10 +47,15 @@ $NAV_HAMBURGER_LINES_COLOR: #fff;
       background: #FF6200;
       color: #fff;
     }
+    #yg{
+      border: solid 2px transparent;
+    }
     #yg.active,
     #yg:hover{
-      background: linear-gradient(91.59deg, #E38271 -5.41%, #DC391B 30.04%, #DF4022 74.38%, #E8664E 104.44%), linear-gradient(97.93deg, #EB7761 -10.86%, #D44A31 56.96%, #EEA598 117.98%);
-      color: #fff;
+      // background: linear-gradient(91.59deg, #E38271 -5.41%, #DC391B 30.04%, #DF4022 74.38%, #E8664E 104.44%), linear-gradient(97.93deg, #EB7761 -10.86%, #D44A31 56.96%, #EEA598 117.98%);
+      background: #fff3f1;
+      border: 2px solid #da3a1d;
+      color: #e35c43;
     }
 
     .row{
