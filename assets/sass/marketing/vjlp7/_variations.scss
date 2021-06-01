@@ -253,6 +253,9 @@
   .variation3,
   .variation4{
     #hero{
+      h1{
+        line-height: 58px;
+      }
       .row{
         min-height: 730px;
         height: 100%;
@@ -328,6 +331,10 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
   /*==========  Variation 5  ==========*/
+  .variation1,
+  .variation2,
+  .variation3,
+  .variation4,
   .variation5{
     h1{
       font-size: $HERO_TITLE_SIZE3;

@@ -7,7 +7,7 @@ field_ids:
   ga_tracking_id: UA-142143961-1
   go_container_id: OPT-PHSNXP6
   gtm_container_id: GTM-MFD3NKM
-variation: variation1
+variation: variation5
 steps_gameslider: steps
 promo_banner:
   promo_title: |-
