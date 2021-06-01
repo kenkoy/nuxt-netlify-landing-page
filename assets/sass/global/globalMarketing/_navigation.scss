@@ -20,7 +20,7 @@ $NAV_HAMBURGER_LINES_COLOR: #fff;
       float: right;
     }
 
-    #vj, #ic{
+    #vj, #ic, #yg{
       background: #e4e4e4;
       color: #a9a9a9;
       border-radius: 3px;
@@ -37,6 +37,11 @@ $NAV_HAMBURGER_LINES_COLOR: #fff;
     #ic.active,
     #ic:hover{
       background: #FF6200;
+      color: #fff;
+    }
+    #yg.active,
+    #yg:hover{
+      background: linear-gradient(91.59deg, #E38271 -5.41%, #DC391B 30.04%, #DF4022 74.38%, #E8664E 104.44%), linear-gradient(97.93deg, #EB7761 -10.86%, #D44A31 56.96%, #EEA598 117.98%);
       color: #fff;
     }
 
