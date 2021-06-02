@@ -5,7 +5,7 @@
   <div style="display: flex; justify-content: center; align-items: center; min-height: 500px;">
     <div>
       <img style="margin: 0 auto; display: block;" src="https://cdn.ridgegaming.net/files/repository/103/8/10028/all/all/image/logo-yuugado.svg?qtytfd&60b4&60b4">
-      <h2 style="font-size: 50px; font-family: 'Noto Sans', sans-serif;">
+      <h2 style="font-size: 45px; font-family: 'Noto Sans', sans-serif; color: #86725D; font-weight: 400; letter-spacing: 5px;">
         Coming Soon
       </h2>
     </div>
