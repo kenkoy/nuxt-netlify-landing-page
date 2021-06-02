@@ -41,9 +41,14 @@ export default {
           component: resolve(__dirname, 'pages/marketing/vjhp')
         },
         {
-          name: 'slots-lobby-page',
+          name: 'lobby-page',
           path: '/marketing/lobby-page/:slug',
           component: resolve(__dirname, 'pages/lobby-page/_slug/index.vue')
+        },
+        {
+          name: 'lobby-page-index',
+          path: '/marketing/lobby-page/',
+          component: resolve(__dirname, 'pages/lobby-page/')
         }
       ]
       routes.push(...newRoutes)
