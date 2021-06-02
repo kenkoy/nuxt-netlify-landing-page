@@ -19,6 +19,9 @@ seo:
       hreflang: x-default
     - href: https://www.verajohn.com/ja/slots
       hreflang: ja-jp
+banner:
+  - image: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-Loyalty1.png
+    url: "#"
 game:
   - is_hot: true
     title: Dreams of Gold
