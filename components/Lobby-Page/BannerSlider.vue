@@ -1,5 +1,5 @@
 <template>
-  <section id="banner-slider">
+  <section v-if="bannerData" id="banner-slider">
     <div class="container">
       <div class="slider">
         <VueSlickCarousel
