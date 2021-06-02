@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     emitData (data) {
-      this.$root.$emit('lobby-pages-data', {
+      this.$root.$emit('lobby-page-data', {
         ...data.attributes,
         content: data.html
       })

@@ -78,7 +78,7 @@
 </template>
 
 <script>
-import Accordion from '~/components/Lobby-Pages/Accordion.vue'
+import Accordion from '~/components/Lobby-Page/Accordion.vue'
 
 export default {
   components: {
@@ -91,14 +91,14 @@ export default {
     }
   },
   created () {
-    this.$root.$once('lobby-pages-data', (data) => {
+    this.$root.$once('lobby-page-data', (data) => {
       if (Object.keys(data).length > 0) {
         this.mdData = data
       }
     })
   },
   beforeDestroy () {
-    this.$root.$off('lobby-pages-data')
+    this.$root.$off('lobby-page-data')
   }
 }
 </script>

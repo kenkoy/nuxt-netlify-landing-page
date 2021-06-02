@@ -20,9 +20,9 @@
 <script>
 import Lobbylayout from './lobby.vue'
 import Tournamentlayout from './tournament.vue'
-import Header from '~/components/Lobby-Pages/Header.vue'
-import SideMenu from '~/components/Lobby-Pages/SideMenu.vue'
-import FooterFixButtons from '~/components/Lobby-Pages/FooterFixButtons.vue'
+import Header from '~/components/Lobby-Page/Header.vue'
+import SideMenu from '~/components/Lobby-Page/SideMenu.vue'
+import FooterFixButtons from '~/components/Lobby-Page/FooterFixButtons.vue'
 export default {
   components: {
     Header,
@@ -42,14 +42,14 @@ export default {
     }
   },
   created () {
-    this.$root.$once('lobby-pages-data', (data) => {
+    this.$root.$once('lobby-page-data', (data) => {
       if (Object.keys(data).length > 0) {
         this.mdData = data
       }
     })
   },
   beforeDestroy () {
-    this.$root.$off('lobby-pages-data')
+    this.$root.$off('lobby-page-data')
   },
   mounted () {
     window.addEventListener('scroll', this.handleScroll)
@@ -82,6 +82,6 @@ export default {
 </script>
 <style lang="scss">
   .lobby_pages_wrapper {
-    @import '@/assets/sass/lobby-pages/style.scss';
+    @import '@/assets/sass/lobby-page/style.scss';
   }
 </style>
