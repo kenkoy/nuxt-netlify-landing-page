@@ -3,7 +3,7 @@
     <nuxt />
     <div v-if="Object.keys(mdData).length > 0">
       <!-- Main content -->
-      <BannerSlider :banner-data="mdData.banner" />
+      <BannerSlider v-if="mdData.banner" :banner-data="mdData.banner" />
       <section id="games">
         <div class="container separator-top separator-bottom">
           <div class="row">
