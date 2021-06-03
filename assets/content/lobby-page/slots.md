@@ -19,9 +19,7 @@ seo:
       hreflang: x-default
     - href: https://www.verajohn.com/ja/slots
       hreflang: ja-jp
-banner:
-  - image: /marketing/img/dsgn-1763-vj-jp-cms-desktop-1920x1080.png
-    url: "#"
+banner: []
 game:
   - is_hot: true
     title: Dreams of Gold
