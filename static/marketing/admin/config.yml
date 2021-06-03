@@ -1693,8 +1693,8 @@ collections:
       required: false
       summary: "{{fields.url}}"
       fields:
-        - { label: "Banner Image", name: "image", widget: "image", required: false }
-        - { label: "Banner URL", name: "url", widget: "string", required: false }
+        - { label: "Banner Image", name: "image", widget: "image" }
+        - { label: "Banner URL", name: "url", widget: "string" }
     - label: "Games"
       name: "game"
       widget: "list"
