@@ -5,7 +5,7 @@
 <script>
 
 export default {
-  layout: '_lobby-page/index',
+  layout: 'lobby-page/lobby',
   async asyncData ({ params, error, app }) {
     try {
       const data = await import('~/assets/content/lobby-page/' + params.slug + '.md')
