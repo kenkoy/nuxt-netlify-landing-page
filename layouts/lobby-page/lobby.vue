@@ -12,7 +12,7 @@
         <div v-if="menuToggle" id="overlay" />
         <Header :class="menuToggle ? 'nav-slide-up' : 'nav-slide-down'" @page-slide-on="pageSlideOn" />
         <!-- Main content -->
-        <BannerSlider v-if="mdData.banner" :banner-data="mdData.banner" />
+        <BannerSlider v-if="mdData.banner && mdData.banner.length > 0" :banner-data="mdData.banner" />
         <section id="games">
           <div class="container separator-top separator-bottom">
             <div class="row">
