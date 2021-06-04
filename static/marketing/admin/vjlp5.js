@@ -213,8 +213,8 @@ export const VJLP5_PREVIEW = createClass({
             <section id="payment">
               <div class="container">
                 <div>
-                  <img class="desktop" src="/marketing/img/payment/payment_large_${country}.svg" alt="payment verajohn desktop"></img>
-                  <img class="mobile" src="/marketing/img/payment/payment_${country}.svg" alt="payment verajohn mobile"></img>
+                  <img class="desktop" src="/marketing/img/vj-payment/payment_large_${country}.svg" alt="payment verajohn desktop"></img>
+                  <img class="mobile" src="/marketing/img/vj-payment/payment_${country}.svg" alt="payment verajohn mobile"></img>
                   <div class="separator" />
                 </div>
               </div>

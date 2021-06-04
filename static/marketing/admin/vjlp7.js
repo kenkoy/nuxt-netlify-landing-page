@@ -95,7 +95,7 @@ export const VJLP7_PREVIEW = createClass({
       '--bg-image-m': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_mobile'])}')`,
       '--bg-banner': `url('${banner.getIn(['data', 'promo_images', 'promo_bg_banner'])}')`,
       '--desktop-width-banner': banner.getIn(['data', 'desktop_full']) ? 'cover' : 'contain',
-      '--mobile-width-banner': banner.getIn(['data', 'mobile_full']) ? 'cover' : 'contain',
+      '--mobile-width-banner': banner.getIn(['data', 'mobile_full']) ? 'cover' : 'contain'
     }
 
     const termsText = this.formatTerms(
@@ -181,8 +181,8 @@ export const VJLP7_PREVIEW = createClass({
 
             <section id="payment" class="separator">
               <div class="container">
-                <img class="desktop" src="/marketing/img/payment/payment_large_${country}.svg" alt="payment verajohn desktop"></img>
-                <img class="mobile" src="/marketing/img/payment/payment_${country}.svg" alt="payment verajohn mobile"></img>
+                <img class="desktop" src="/marketing/img/vj-payment/payment_large_${country}.svg" alt="payment verajohn desktop"></img>
+                <img class="mobile" src="/marketing/img/vj-payment/payment_${country}.svg" alt="payment verajohn mobile"></img>
               </div>
             </section>
 
