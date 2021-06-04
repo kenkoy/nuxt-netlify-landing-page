@@ -10,7 +10,7 @@
               <div>
                 <p>
                   {{ data_items.header_section.header_section_top_text }}
-                  <a aria-label="link" :href="data_items.header_section.header_section_best_deal_image_url"> {{ data_items.header_section.header_section_account_login }}</a>
+                  <a class="register-btn" aria-label="link" :href="data_items.header_section.header_section_best_deal_image_url"> {{ data_items.header_section.header_section_account_login }}</a>
                 </p>
               </div>
             </div>

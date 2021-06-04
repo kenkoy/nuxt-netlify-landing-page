@@ -10,7 +10,7 @@
               <div class="inter-casino-logo">
                 <img src="@/assets/images/marketing/iclp3v2/logo_inter_pc.png" alt="inter casino logo" data-not-lazy>
               </div>
-              <div class="join" aria-label="join">
+              <div class="join register-btn" aria-label="join">
                 <a :href="data_items.attributes.promo_banner.promo_join_url">
                   <img src="@/assets/images/marketing/iclp3v2/btn_signup.png" alt="inter casino logo">
                 </a>
@@ -23,7 +23,7 @@
           <div class="container">
             <img src="@/assets/images/marketing/iclp3v2/logo_inter_sp.png" alt="inter casino logo" data-not-lazy>
           </div>
-          <div class="join" aria-label="join">
+          <div class="join register-btn" aria-label="join">
             <a :href="data_items.attributes.promo_banner.promo_join_url">
               <img src="@/assets/images/marketing/iclp3v2/btn_signup.png" alt="inter casino logo">
             </a>
@@ -168,7 +168,7 @@
                   <div>
                     <div class="firstvie__inquiry__inner">
                       <h3 v-html="formattedRegMessage" />
-                      <a :href="data_items.attributes.promo_banner.promo_join_url">{{ data_items.attributes.promo_banner.promo_join_text }}</a>
+                      <a class="register-btn" :href="data_items.attributes.promo_banner.promo_join_url">{{ data_items.attributes.promo_banner.promo_join_text }}</a>
                       <button onclick="back()">
                         ▶まだまだ触る！
                       </button>

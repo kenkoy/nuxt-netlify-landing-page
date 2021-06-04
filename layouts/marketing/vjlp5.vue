@@ -13,13 +13,15 @@
               </div>
 
               <div class="nav-links">
-                <button class="warning">
+                <button class="warning login-btn">
                   <a :href="data_items.attributes.promo_banner.promo_join_button_redirect_url">
                     {{ data_items.attributes.promo_banner.promo_login_button }}
                   </a>
                 </button>
-                <button class="error animated pulse infinite">
-                  <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url"><strong>{{ data_items.attributes.promo_banner.promo_join_button }}</strong></a>
+                <button class="error animated pulse infinite register-btn">
+                  <a :href="data_items.attributes.promo_banner.promo_login_button_redirect_url">
+                    <strong>{{ data_items.attributes.promo_banner.promo_join_button }}</strong>
+                  </a>
                 </button>
               </div>
             </div>
