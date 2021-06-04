@@ -282,6 +282,13 @@ label[for=ham-menu] {
   filter: grayscale(100%);
 }
 
+footer #footer-icon img {
+    width: 70px;
+}
+.ceg-logo {
+    filter: grayscale(100%);
+}
+
 footer #footer-icon {
   text-align: center;
 }
