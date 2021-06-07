@@ -11,7 +11,7 @@
           <div class="row">
             <div>
               <div id="login">
-                <div>
+                <div class="btn-login">
                   <a rel="noopener" :href="mdData.promo_banner.promo_login_button_redirect_url">
                     <i class="material-icons">exit_to_app</i>
                     <span>{{ mdData.promo_banner.promo_login_button }}</span>
@@ -29,7 +29,7 @@
               </div>
 
               <div id="banner-terms">
-                <button :class="mdData.styles === 'version2' ? 'animated pulse infinite' : ''">
+                <button class="btn-register" :class="mdData.styles === 'version2' ? 'animated pulse infinite' : ''">
                   <a :href="mdData.promo_banner.promo_join_button_redirect_url">
                     {{ mdData.promo_banner.promo_join_button }}
                   </a>
@@ -47,7 +47,7 @@
             <div>
               <h2>{{ sections.title }}</h2>
               <img alt="alt img" :src="sections.image">
-              <button>
+              <button class="btn-register">
                 <a rel="noopener" :href="sections.join_button_redirect_url">
                   {{ sections.join_button }}
                 </a>

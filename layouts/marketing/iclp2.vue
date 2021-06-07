@@ -9,7 +9,7 @@
       <section id="hero" :style="cssBackground">
         <div class="container">
           <div class="row">
-            <div class="loginbtn">
+            <div class="loginbtn btn-login">
               <a rel="noopener" :href="mdData.promo_banner.promo_home_button_redirect_url">
                 <i class="material-icons" data-v-7c308f66="">home</i>
                 <p class="login-text">{{ mdData.promo_banner.promo_home_button }}</p>
@@ -23,7 +23,7 @@
               </div>
               <div class="separation-star">
                 <p v-html="bannerStatement" />
-                <button onclick="location.href='#'" type="button">
+                <button class="btn-register" onclick="location.href='#'" type="button">
                   <a rel="noopener" :href="mdData.promo_banner.promo_register_button_redirect_url">{{ mdData.promo_banner.promo_register_button_text }}</a>
                 </button>
                 <p>
@@ -198,7 +198,7 @@
           </div>
         </div>
         <div class="container">
-          <button class="warning">
+          <button class="warning btn-register">
             <a rel="noopener" :href="mdData.history_section.history_register_button_redirect_url">{{ mdData.history_section.history_register_button_text }}</a>
           </button>
         </div>

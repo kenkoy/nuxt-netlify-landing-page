@@ -66,7 +66,7 @@
           :game-data="data_items.attributes.game_images"
         />
 
-        <section id="section1">
+        <section id="introduction">
           <div class="container">
             <div class="row">
               <div>
@@ -82,7 +82,7 @@
           </div>
         </section>
 
-        <section id="section2">
+        <section id="usp">
           <div class="container">
             <div class="row column-2">
               <div>
@@ -114,15 +114,17 @@
           </div>
         </section>
 
-        <div class="container">
-          <div class="row">
-            <div id="terms">
-              <div v-html="html" />
-              <p>通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</p>
-              <div class="separator" />
+        <section id="terms">
+          <div class="container">
+            <div class="row">
+              <div>
+                <div v-html="html" />
+                <p>通常の<a href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</p>
+                <div class="separator" />
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
         <Footer
           :promo-language-code="language"
