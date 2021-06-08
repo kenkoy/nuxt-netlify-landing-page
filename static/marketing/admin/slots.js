@@ -2,21 +2,21 @@
 import htm from 'https://unpkg.com/htm?module'
 
 const html = htm.bind(h)
-export const SLOTS_PREVIEW = createClass({
+export const LOBBY_PREVIEW = createClass({
   componentDidMount () {
     const { document } = this.props
     const link = document.createElement('link')
     link.rel = 'stylesheet'
     link.type = 'text/css'
-    link.href = '/marketing/styles/slots/previewPane.css'
+    link.href = '/marketing/styles/lobby-page/previewPane.css'
     document.head.appendChild(link)
   },
   render () {
     const { widgetsFor, widgetFor } = this.props
     const banners = widgetsFor('banner')
     const gameList = widgetsFor('game')
-    const gameTilesModals = widgetsFor('game_tiles').getIn(['data', 'modals'])
-    const gameTilesLinks = widgetsFor('game_tiles').getIn(['data', 'links'])
+    const gameTilesModals = widgetsFor('game_tiles').getIn(['data', 'modals']) || []
+    const gameTilesLinks = widgetsFor('game_tiles').getIn(['data', 'links']) || []
     const body = widgetFor('body')
 
     return (html`
@@ -68,7 +68,9 @@ export const SLOTS_PREVIEW = createClass({
 
             <section id="banner-slider">
               <div class="container">
-                ${banners.filter(sect => !!sect).map(sect =>
+                ${banners.filter(sect => !!sect)
+                  .filter(sect => typeof sect.getIn(['data']) !== 'undefined')
+                  .map(sect =>
                   html`
                   <div class="slider">
                     <a href='${sect.getIn(['data', 'url'])}'>
