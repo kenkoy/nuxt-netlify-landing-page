@@ -56,9 +56,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-basis: 0;
   position: relative;
-
-  > div{
-    max-width: 160px;
-  }
 }
