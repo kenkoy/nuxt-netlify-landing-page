@@ -8,7 +8,7 @@ export const SLOTS_PREVIEW = createClass({
     const link = document.createElement('link')
     link.rel = 'stylesheet'
     link.type = 'text/css'
-    link.href = '/marketing/styles/slots/previewPane.css'
+    link.href = '/marketing/styles/lobby-page/previewPane.css'
     document.head.appendChild(link)
   },
   render () {
