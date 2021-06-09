@@ -19,9 +19,7 @@ seo:
       hreflang: x-default
     - href: https://www.verajohn.com/ja/slots
       hreflang: ja-jp
-banner:
-  - image: /marketing/img/hd-pachinko-v1-banner-2-d.png
-    url: "#"
+banner: []
 game:
   - is_hot: true
     title: Dreams of Gold
