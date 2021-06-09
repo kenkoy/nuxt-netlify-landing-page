@@ -105,54 +105,58 @@ export const VJLP5_PREVIEW = createClass({
     }
 
     return (html`
-      <body class="vjlp5_wrapper core-wrapper">
+      <body class="vjlp5_wrapper layout-css">
         <div
           class="vjlp5-main"
         >
           <div className="${version}">
             <header id="header">
               <div class="container">
-                <div class="logo">
-                  <img alt="alt logo" src="/marketing/img/vjlp5/vj-logo.png"></img>
-                </div>
+                <div class="row">
+                  <div class="logo">
+                    <img alt="alt logo" src="/marketing/img/vjlp5/vj-logo.png"></img>
+                  </div>
 
-                <div class="nav-links">
-                  <button class="warning">
-                    <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
-                      ${banner.getIn(['data', 'promo_login_button'])}
-                    </a>
-                  </button>
-                  <button class="error animated pulse infinite">
-                    <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}">
-                      <strong>${banner.getIn(['data', 'promo_join_button'])}</strong>
-                    </a>
-                  </button>
+                  <div class="nav-links">
+                    <button class="warning">
+                      <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
+                        ${banner.getIn(['data', 'promo_login_button'])}
+                      </a>
+                    </button>
+                    <button class="error animated pulse infinite">
+                      <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}">
+                        <strong>${banner.getIn(['data', 'promo_join_button'])}</strong>
+                      </a>
+                    </button>
+                  </div>
                 </div>
               </div>
             </header>
             <section id="hero" style="${imageBG}">
               <div class="container">
-                <div class="banner-wrapper">
-                  <div className="${'banner' + ' ' + bannerPosition}">
-                    <div>
-                      ${widgetsFor('promo_banner').getIn(['data', 'first_title']) !== ''
-                      ? html`<h1 className="${bannerFontSize}" dangerouslySetInnerHTML='${bannerTitle}'></h1>`
-                      : ''}
+                <div class="row">
+                  <div class="banner-wrapper">
+                    <div className="${'banner' + ' ' + bannerPosition}">
+                      <div>
+                        ${widgetsFor('promo_banner').getIn(['data', 'first_title']) !== ''
+                        ? html`<h1 className="${bannerFontSize}" dangerouslySetInnerHTML='${bannerTitle}'></h1>`
+                        : ''}
 
-                      ${widgetsFor('promo_banner').getIn(['data', 'second_title']) !== ''
-                      ? html`<h1 className="${bannerFontSize}">${banner.getIn(['data', 'second_title'])}</h1>`
-                      : ''}
+                        ${widgetsFor('promo_banner').getIn(['data', 'second_title']) !== ''
+                        ? html`<h1 className="${bannerFontSize}">${banner.getIn(['data', 'second_title'])}</h1>`
+                        : ''}
+                      </div>
                     </div>
-                  </div>
 
-                  ${!widgetsFor('promo_banner').getIn(['data', 'promo_join_button_option'])
-                    ? ''
-                    : html`
-                      <div id="banner-button">
-                        <button class="error">
-                          <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
-                        </button>
-                      </div>`}
+                    ${!widgetsFor('promo_banner').getIn(['data', 'promo_join_button_option'])
+                      ? ''
+                      : html`
+                        <div id="banner-button">
+                          <button class="error">
+                            <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}"><strong>${banner.getIn(['data', 'promo_join_button'])} </strong></a>
+                          </button>
+                        </div>`}
+                  </div>
                 </div>
               </div>
             </section>
@@ -163,49 +167,53 @@ export const VJLP5_PREVIEW = createClass({
             }
             <section id="section1">
               <div class="container">
-                <div>
-                  ${firstData.filter(sect => !!sect).map(sect =>
-                    html`
-                    <div>
-                      <h2>${sect.getIn(['data', 'first_section_title'])}</h2>
-                      <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'first_section_description']))}'/>
-                    </div>
-                    `
-                  )}
-                  ${additionalLinks.filter(link => !!link)
-                    .filter(link => typeof link.getIn(['data']) !== 'undefined')
-                    .map(link =>
+                <div class="row">
+                  <div>
+                    ${firstData.filter(sect => !!sect).map(sect =>
                       html`
-                      <p dangerouslySetInnerHTML='${this.textLink(link.getIn(['data', 'text']), link.getIn(['data', 'text_link']), link.getIn(['data', 'link']))}'/>
+                      <div>
+                        <h2>${sect.getIn(['data', 'first_section_title'])}</h2>
+                        <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'first_section_description']))}'/>
+                      </div>
                       `
-                  )}
-                  <div class="separator" />
+                    )}
+                    ${additionalLinks.filter(link => !!link)
+                      .filter(link => typeof link.getIn(['data']) !== 'undefined')
+                      .map(link =>
+                        html`
+                        <p dangerouslySetInnerHTML='${this.textLink(link.getIn(['data', 'text']), link.getIn(['data', 'text_link']), link.getIn(['data', 'link']))}'/>
+                        `
+                    )}
+                    <div class="separator" />
+                  </div>
                 </div>
               </div>
             </section>
 
             <section id="section2">
-              <div class="container column-2">
-                <div>
-                  ${uspLeftData.filter(sect => !!sect).map(sect =>
-                    html`
-                    <div>
-                      <h2>${sect.getIn(['data', 'usp_title'])}</h2>
-                      <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'usp_content']))}'/>
-                    </div>
-                    `
-                  )}
-                </div>
+              <div class="container">
+                <div class="row column-2">
+                  <div>
+                    ${uspLeftData.filter(sect => !!sect).map(sect =>
+                      html`
+                      <div>
+                        <h2>${sect.getIn(['data', 'usp_title'])}</h2>
+                        <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'usp_content']))}'/>
+                      </div>
+                      `
+                    )}
+                  </div>
 
-                <div>
-                  ${uspRightData.filter(sect => !!sect).map(sect =>
-                    html`
-                    <div>
-                      <h2>${sect.getIn(['data', 'usp_title'])}</h2>
-                      <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'usp_content']))}'/>
-                    </div>
-                    `
-                  )}
+                  <div>
+                    ${uspRightData.filter(sect => !!sect).map(sect =>
+                      html`
+                      <div>
+                        <h2>${sect.getIn(['data', 'usp_title'])}</h2>
+                        <p dangerouslySetInnerHTML='${this.nextlineToBr(sect.getIn(['data', 'usp_content']))}'/>
+                      </div>
+                      `
+                    )}
+                  </div>
                 </div>
               </div>
             </section>
