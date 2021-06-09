@@ -29,12 +29,12 @@
 
         <section id="game-tiles">
           <div class="container">
-            <div class="row column-4 game-menu negate-gutter">
+            <div class="row game-menu negate-gutter">
               <div v-for="(modal, modalIndex) in mdData.gameTiles.modals" :key="modalIndex" class="pods">
                 <div>
-                  <div class="pod-bg">
+                  <!-- <div class="pod-bg">
                     <img :src="modal.image" alt="alt img">
-                  </div>
+                  </div> -->
                   <div class="pod-content">
                     <h3 class="emphasize">
                       {{ modal.text }}
@@ -45,7 +45,7 @@
               </div>
             </div>
 
-            <div class="row column-4 negate-gutter">
+            <!-- <div class="row game-menu negate-gutter">
               <div v-for="(link, linkIndex) in mdData.gameTiles.links" :key="linkIndex" class="pods loyalty">
                 <a :href="link.url">
                   <div class="pod-bg">
@@ -65,7 +65,7 @@
                   </div>
                 </a>
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
 
