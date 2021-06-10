@@ -265,7 +265,7 @@ main{
   }
 
   .footer-item{
-    background: darken($SECONDARY_MAIN_BG, 12%);
+    background: $FOOTER_ITEM_BG;
     margin: $MARGINS 0;
     padding: calc(#{$PADDING} / 2);
 
