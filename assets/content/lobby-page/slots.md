@@ -22,6 +22,8 @@ seo:
 banner:
   - image: /marketing/img/vjjp_banner.png
     url: https://www.verajohn.com/ja/about/beginnersguidemb
+  - image: /marketing/img/vjjp_banner-1-.png
+    url: asdsadasdasd
 game:
   - is_hot: true
     title: Dreams of Gold
