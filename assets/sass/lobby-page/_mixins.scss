@@ -46,16 +46,16 @@
 
 //==== GAME PODS ====//
 @mixin gamePods{
-  // margin: $MARGINS;
   padding: 8px;
   min-width: 180px;
-  min-height: 142px;
+  min-height: 150px;
   text-align: center;
   display: flex;
   flex-basis: 0;
   position: relative;
 
   > div {
+    // PADDING WILL NOT WORK PROPERLY HERE DUE TO background-clip //
     border: solid 3px transparent;
     background-image: linear-gradient($GAME_PODS_BG, $GAME_PODS_BG), $GAME_PODS_BORDER;
     background-origin: border-box;
