@@ -49,13 +49,14 @@
   background-color: $GAME_PODS_BG;
   padding: 8px;
   border-radius: 9px;
-  min-width: 180px;
+  max-width: 180px;
+  // min-width: 180px;
   min-height: 142px;
   margin: $MARGINS;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: 0;
+  // flex-basis: 0;
   position: relative;
 }
