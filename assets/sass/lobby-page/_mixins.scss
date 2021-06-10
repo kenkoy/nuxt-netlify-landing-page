@@ -36,7 +36,7 @@
   z-index: 3;
   padding: 0 10px;
   box-sizing: border-box;
-  box-shadow: 0px 2px 4px 0px rgba(0,121,173,.5);
+  box-shadow: 0px 2px 4px 0px $HEADER_SHADOW;
   // transition: all .3s ease;
 
   #header-button button{

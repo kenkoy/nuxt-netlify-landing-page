@@ -18,7 +18,7 @@
     </div>
 
     <div id="header-button">
-      <button class="cta_button cta_important login">
+      <button class="cta_button login n-button--primary">
         今すぐ登録しよう!
       </button>
     </div>

@@ -13,7 +13,7 @@
 }
 .separator-top{
   &:after{
-    background: #0082BA;
+    background: $SEPARATOR_COLOR;
     display: block;
     content: '';
     position: absolute;
@@ -25,7 +25,7 @@
 }
 .separator-bottom{
   &:before{
-    background: #0082BA;
+    background: $SEPARATOR_COLOR;
     display: block;
     content: '';
     position: absolute;
@@ -255,7 +255,7 @@ main{
 
 #cta{
   text-align: center;
-  background: #0093D4;
+  background: $SECONDARY_MAIN_BG;
   padding: $PADDING 0;
 
   img{
@@ -265,7 +265,7 @@ main{
   }
 
   .footer-item{
-    background: #0082BA;
+    background: darken($SECONDARY_MAIN_BG, 12%);
     margin: $MARGINS 0;
     padding: calc(#{$PADDING} / 2);
 
@@ -287,7 +287,7 @@ main{
 }
 
 #seo-contents{
-  background: #0093D4;
+  background: $SECONDARY_MAIN_BG;
   padding: $PADDING;
   h1,h2{
     text-align: center;
@@ -297,7 +297,7 @@ main{
   padding: 0;
 }
 #footer-icon-wrapper{
-  background: #0093D4;
+  background: $SECONDARY_MAIN_BG;
   padding: $PADDING;
 
   img{
@@ -329,16 +329,21 @@ main{
   p{
     margin: 0;
   }
-  .footer-icons-wrapper{
+  .footer-icons{
     border-radius: 8px 8px 0 0;
-    border: solid 2px #0082BA;
+    border: solid 2px $FOOTER_CONTENT_BORDER;
+    overflow: hidden;
+
+    > div {
+      background: $FOOTER_CONTENT_BG;
+    }
   }
   .container > div{
     padding: $PADDING;
   }
   .container > div:first-child + div{
-    border-top: solid 2px #0082BA;
-    border-bottom: solid 2px #0082BA;
+    border-top: solid 2px $FOOTER_CONTENT_BORDER;
+    border-bottom: solid 2px $FOOTER_CONTENT_BORDER;
   }
 }
 

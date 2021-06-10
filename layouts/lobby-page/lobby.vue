@@ -3,7 +3,7 @@
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
-      class="lobby-page-main"
+      class="lobby-page-main vj-theme"
     >
       <SideMenu v-if="menuToggle" @page-slide-off="pageSlideOff" />
 
@@ -94,7 +94,7 @@
         </section>
 
         <footer id="footer-icon-wrapper">
-          <div class="container footer-icons-wrapper">
+          <div class="container footer-icons">
             <div id="footer-payment-provider">
               <div class="row">
                 <p class="footer-title">
