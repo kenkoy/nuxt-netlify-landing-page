@@ -246,7 +246,7 @@ main{
   // }
 
   .pods{
-    @include gamePods($GAME_PODS_BORDER);
+    @include gamePods;
     background-size: 120px;
     background-position: center;
     background-repeat: no-repeat;
