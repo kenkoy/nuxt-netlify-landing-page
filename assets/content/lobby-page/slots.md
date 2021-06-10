@@ -20,8 +20,6 @@ seo:
     - href: https://www.verajohn.com/ja/slots
       hreflang: ja-jp
 banner:
-  - image: /marketing/img/vjjp_banner.png
-    url: https://www.verajohn.com/ja/about/beginnersguidemb
   - image: /marketing/img/vjjp_banner-1-.png
     url: asdsadasdasd
 game:
