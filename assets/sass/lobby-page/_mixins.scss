@@ -45,18 +45,24 @@
 }
 
 //==== GAME PODS ====//
-@mixin gamePods{
+@mixin gamePods ($GAME_PODS_BORDER){
   background-color: $GAME_PODS_BG;
   padding: 8px;
   border-radius: 9px;
-  max-width: 180px;
-  // min-width: 180px;
+  min-width: 180px;
   min-height: 142px;
   margin: $MARGINS;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  // flex-basis: 0;
+  flex-basis: 0;
   position: relative;
+
+  @if $GAME_PODS_BORDER != none {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: $GAME_PODS_BORDER;
+  }
 }

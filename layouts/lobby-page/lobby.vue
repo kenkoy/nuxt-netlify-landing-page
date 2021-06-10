@@ -3,7 +3,7 @@
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
-      class="lobby-page-main vj-theme"
+      class="lobby-page-main ic-theme"
     >
       <SideMenu v-if="menuToggle" @page-slide-off="pageSlideOff" />
 
@@ -45,7 +45,7 @@
               </div>
             </div>
 
-            <div class="row game-menu negate-gutter">
+            <!-- <div class="row game-menu negate-gutter">
               <div v-for="(link, linkIndex) in mdData.gameTiles.links" :key="linkIndex" class="pods loyalty">
                 <a :href="link.url">
                   <div class="pod-bg">
@@ -65,7 +65,7 @@
                   </div>
                 </a>
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
 
