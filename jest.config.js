@@ -17,10 +17,9 @@ module.exports = {
   collectCoverageFrom: [
     // '<rootDir>/components/**/*.vue',
     // '<rootDir>/layouts/*.vue',
-    '<rootDir>/pages/**/*.vue'
+    '<rootDir>/pages/marketing/vjhp/*.vue',
+    '<rootDir>/pages/marketing/**/_slug/*.vue'
   ],
   snapshotSerializers: ['jest-serializer-vue'],
-  setupFiles: [
-    '<rootDir>/test/utils/matchMedia.js'
-  ]
+  setupFiles: ['<rootDir>/test/utils/matchMedia.js']
 }

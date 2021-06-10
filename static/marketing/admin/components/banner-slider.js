@@ -6,22 +6,6 @@ export const BANNER_SLIDER = createClass({
   render () {
     const { banners } = this.props
 
-    const styles = {
-      gameSlider: {
-        'box-shadow': '0px 5px 5px 0px rgba(0,0,0,0.2)',
-        padding: '10px 0'
-      },
-      container: {
-        display: 'block',
-        padding: '0 10%'
-      },
-      slider: {
-        display: 'flex',
-        'justify-content': 'space-evenly'
-      },
-      link: { 'border-bottom': 'none' }
-    }
-
     return (html`
     <section id="banner-slider">
       <div class="container">

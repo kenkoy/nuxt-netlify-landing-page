@@ -144,33 +144,31 @@ export const VJLP7_PREVIEW = createClass({
 
     return (html`
       <body
-        class="vjlp7_wrapper layout-css"
+        class="vjlp7_wrapper core-wrapper"
       >
         <div class="vjlp7-main">
           <div className="${variation}" style="${imageBG}">
             <section id="hero">
               <div class="container">
-                <div class="row">
-                  <div id="hero-text-wrapper">
-                    <div>
-                      <div id="login" class="animated">
-                        <div class="fadeIn animated">
-                          <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}">
-                            <i class="material-icons">exit_to_app</i>
-                            <span>${banner.getIn(['data', 'promo_login_button'])}</span>
-                          </a>
-                        </div>
-                      </div>
-                      <img class="logo" src="/marketing/img/vjlp7/logo.png" alt="verajohn logo"></img>
-                      <div dangerouslySetInnerHTML='${bannerTexts}'></div>
-                      <button class="animated infinite pulse">
-                        <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
-                          ${banner.getIn(['data', 'promo_join_button'])}
+                <div id="hero-text-wrapper">
+                  <div>
+                    <div id="login" class="animated">
+                      <div class="fadeIn animated">
+                        <a href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}">
+                          <i class="material-icons">exit_to_app</i>
+                          <span>${banner.getIn(['data', 'promo_login_button'])}</span>
                         </a>
-                      </button>
-                      <div>
-                        <small dangerouslySetInnerHTML='${termsText}'></small>
                       </div>
+                    </div>
+                    <img class="logo" src="/marketing/img/vjlp7/logo.png" alt="verajohn logo"></img>
+                    <div dangerouslySetInnerHTML='${bannerTexts}'></div>
+                    <button class="animated infinite pulse">
+                      <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
+                        ${banner.getIn(['data', 'promo_join_button'])}
+                      </a>
+                    </button>
+                    <div>
+                      <small dangerouslySetInnerHTML='${termsText}'></small>
                     </div>
                   </div>
                 </div>

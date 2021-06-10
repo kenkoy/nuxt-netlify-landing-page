@@ -44,6 +44,9 @@ export default {
       htmlAttrs: {
         // lang: this.dataMD.attributes.promo_locale.promo_language_code
       },
+      meta: [
+        { hid: 'robots', name: 'robots', content: 'noindex' }
+      ],
       // bodyAttrs: {
       //   id: this.dataMD.attributes.promo_locale.promo_language_code +
       //       '-' + this.dataMD.attributes.promo_locale.promo_country_code

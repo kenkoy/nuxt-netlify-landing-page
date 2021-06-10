@@ -38,7 +38,7 @@ section:
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-CM.png
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
-    image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-details.png
+    image: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-details.png
 ---
 <h3 class="text-left">ビギナーズボーナス利用規約</h3>
 <ul class="terms-ul">

@@ -28,6 +28,9 @@ export default {
         id: this.markDownData.attributes.promo_locale.promo_language_code +
           '-' + this.markDownData.attributes.promo_locale.promo_country_code
       },
+      meta: [
+        { hid: 'robots', name: 'robots', content: 'noindex' }
+      ],
       link: [
         { rel: 'shortcut icon', href: '/marketing/ic-favicon.ico', type: 'image/x-icon' }
       ],

@@ -31,6 +31,11 @@
             </nuxt-link>
           </li>
           <li class="nav-item">
+            <nuxt-link to="/marketing/vjlp6">
+              VJLP 6
+            </nuxt-link>
+          </li>
+          <li class="nav-item">
             <nuxt-link to="/marketing/iclp1">
               ICLP 1
             </nuxt-link>

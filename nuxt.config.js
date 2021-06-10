@@ -27,12 +27,14 @@ function dynamicMarkdownRoutes () {
   return [...landingRoutes, ...lobbyRoutes]
   // return landingRoutes
 }
+
 export default {
   generate: {
     routes: dynamicMarkdownRoutes,
     exclude: ['/marketing/admin']
   },
   router: {
+    trailingSlashes: true,
     extendRoutes (routes, resolve) {
       const newRoutes = [
         {
@@ -55,11 +57,11 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    // title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-      // { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      // { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
       // { hid: 'robots', name: 'robots', content: 'noindex' }
     ],
     link: [
@@ -123,7 +125,7 @@ export default {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
-          test: /\.(js|vue)$/,
+          test: /\.(js|vue|md)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })

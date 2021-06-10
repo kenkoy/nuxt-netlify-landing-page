@@ -341,7 +341,7 @@ collections:
               label: "Link",
               name: "link",
               widget: "string",
-              default: "https://www.google.com/",
+              default: "#",
             }
       - label: "USP Left"
         name: "usp_left"

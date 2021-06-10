@@ -24,6 +24,9 @@ export default {
       htmlAttrs: {
         lang: this.markDownData.attributes.promo_locale.promo_language_code
       },
+      meta: [
+        { hid: 'robots', name: 'robots', content: 'noindex' }
+      ],
       bodyAttrs: {
         id: this.markDownData.attributes.promo_locale.promo_language_code +
           '-' + this.markDownData.attributes.promo_locale.promo_country_code

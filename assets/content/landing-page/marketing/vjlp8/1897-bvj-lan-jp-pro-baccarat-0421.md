@@ -9,14 +9,14 @@ field_ids:
   gtm_container_id: GTM-MFD3NKM
 styles: version1
 promo_banner:
-  promo_small_subtitle: " "
+  promo_small_subtitle: ""
   promo_title: 1897-BVJ-lan-JP-Pro-Baccarat-0421
   promo_images:
     promo_game_image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-title.png
     promo_game_logo: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-game-logo.png
     promo_bg_mobile: /marketing/img/dsgn-1897-vj-jp-cms-mobile-767x800v2.jpg
     promo_bg_desktop: /marketing/img/dsgn-1897-vj-jp-cms-desktop-1920x1080-v2.jpg
-  promo_large_subtitle: " "
+  promo_large_subtitle: ""
   promo_link_terms:
     - 利用規約
   promo_login_button_redirect_url: https://verajohn.com/#signin
@@ -34,7 +34,7 @@ section:
     image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-CM.png
   - join_button: 今すぐ登録
     join_button_redirect_url: https://verajohn.com/#join
-    image: /marketing/img/324-bvj-lan-jp-pro-beginnersguide-0720-details.png
+    image: /marketing/img/357-bvj-lan-jp-pro-newadult-v2-1220-details.png
 ---
 <h3 class="text-left">ビギナーズボーナス利用規約</h3>
 <ul class="terms-ul">

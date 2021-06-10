@@ -11,7 +11,7 @@
           <div class="row">
             <div>
               <div id="login">
-                <div class="btn-login">
+                <div>
                   <a rel="noopener" :href="mdData.promo_banner.promo_login_button_redirect_url">
                     <i class="material-icons">exit_to_app</i>
                     <span>{{ mdData.promo_banner.promo_login_button }}</span>
@@ -29,7 +29,7 @@
               </div>
 
               <div id="banner-terms">
-                <button class="btn-register" :class="mdData.styles === 'version2' ? 'animated pulse infinite' : ''">
+                <button :class="mdData.styles === 'version2' ? 'animated pulse infinite' : ''">
                   <a :href="mdData.promo_banner.promo_join_button_redirect_url">
                     {{ mdData.promo_banner.promo_join_button }}
                   </a>
@@ -47,7 +47,7 @@
             <div>
               <h2>{{ sections.title }}</h2>
               <img alt="alt img" :src="sections.image">
-              <button class="btn-register">
+              <button>
                 <a rel="noopener" :href="sections.join_button_redirect_url">
                   {{ sections.join_button }}
                 </a>
@@ -116,7 +116,7 @@ export default {
 
       if (this.mdData.promo_banner.promo_small_subtitle_highlighted) {
         let idx = 0
-        this.mdData.promo_banner.promo_small_subtitle_highlighted.filter(phrase => phrase)
+        this.mdData.promo_banner.promo_small_subtitle_highlighted.filter(phrase => !!phrase)
           .forEach((phrase) => {
             while (bannerTitle.length > idx) {
               if (bannerTitle[idx].includes(phrase)) {

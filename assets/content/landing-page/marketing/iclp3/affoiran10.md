@@ -26,21 +26,6 @@ bonus:
       総額$500のキャッシュが貰えるチャンス!
     higlighted_phrases:
       - 総額$500
-  - box_title_image: /marketing/img/present_CP.png
-    box_button_image: /marketing/img/twitter_button.png
-    box_button_image_url: https://twitter.com/Japan_VeraJohn
-    summary: |-
-      姉妹カジノの ベラジョンカジノの公式Twitterで、\
-      限定オリジナルグッズの 抽選会を実施中！\
-      詳細はベラジョンカジノの\
-      公式Twitterアカウントをチェック！
-    higlighted_phrases:
-      - 限定オリジナルグッズの 抽選会を実施中！
-    highlighted_link_phrases:
-      - text: 公式Twitter
-        link: https://twitter.com/Japan_VeraJohn
-      - text: 公式Twitterアカウント
-        link: https://twitter.com/Japan_VeraJohn
 ---
 <dl>
   <dt>無料お試し$10ボーナス利用規約</dt>

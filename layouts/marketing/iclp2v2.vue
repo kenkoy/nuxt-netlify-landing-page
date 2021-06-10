@@ -9,7 +9,7 @@
       <section id="hero" :style="cssBackground">
         <div class="container">
           <div class="row">
-            <div class="loginbtn btn-login">
+            <div class="loginbtn">
               <a rel="noopener" :href="mdData.promo_banner.promo_home_button_redirect_url">
                 <i class="material-icons" data-v-7c308f66="">home</i>
                 <p class="login-text">{{ mdData.promo_banner.promo_home_button }}</p>
@@ -23,7 +23,7 @@
               </div>
               <div class="separation-star">
                 <p v-html="bannerStatement" />
-                <button class="btn-register" onclick="location.href='#'" type="button">
+                <button onclick="location.href='#'" type="button">
                   <a rel="noopener" :href="mdData.promo_banner.promo_register_button_redirect_url">{{ mdData.promo_banner.promo_register_button_text }}</a>
                 </button>
                 <p>
@@ -156,7 +156,7 @@
               <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-fair.png">
             </figure>
             <figure>
-              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-visa.png">
+              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-visa-noVisa.png">
             </figure>
             <figure>
               <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-wa.png">
@@ -198,7 +198,7 @@
           </div>
         </div>
         <div class="container">
-          <button class="warning btn-register">
+          <button class="warning">
             <a rel="noopener" :href="mdData.history_section.history_register_button_redirect_url">{{ mdData.history_section.history_register_button_text }}</a>
           </button>
         </div>

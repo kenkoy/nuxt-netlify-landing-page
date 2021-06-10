@@ -276,6 +276,13 @@ label[for=ham-menu] {
   transform: rotate(-45deg) translate(2px, 2px);
 }
 
+footer #footer-icon img {
+  width: 70px;
+}
+.ceg-logo {
+  filter: grayscale(100%);
+}
+
 .intercasino img {
   -webkit-filter: grayscale(100%);
   -webkit-filter: grayscale(1);
@@ -283,10 +290,10 @@ label[for=ham-menu] {
 }
 
 footer #footer-icon img {
-    width: 70px;
+  width: 70px;
 }
 .ceg-logo {
-    filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 footer #footer-icon {

@@ -21,7 +21,7 @@
                   <img v-lazy-load style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-safe-fair.png" alt="">
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 nopadding" style="margin: 10px 0px 0px;">
-                  <img v-lazy-load style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-safe-visa.png" alt="">
+                  <img v-lazy-load style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-safe-visa-noVisa.png" alt="">
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 nopadding" style="margin: 10px 0px 0px;">
                   <img v-lazy-load style="max-width: 100%;" src="/marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-safe-wa.png" alt="">

@@ -112,12 +112,4 @@ describe('Testing VJLP5 index.vue', () => {
     const googleTagManagerNoScript = metaInfo.noscript.find(s => s.hid === 'gtmBody').innerHTML
     expect(googleTagManagerNoScript.includes(googleTagMangerId)).toBeTruthy()
   })
-
-  test('asyncData should behave correctly', async () => {
-    const data = await wrapper.vm.$options.asyncData({
-      params: { slug: 'sample' },
-      error: jest.fn()
-    })
-    expect(data).toBe(undefined)
-  })
 })

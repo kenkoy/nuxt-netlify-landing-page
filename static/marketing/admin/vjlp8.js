@@ -81,86 +81,80 @@ export const VJLP8_PREVIEW = createClass({
     return (
       html`
       <body
-        class="vjlp8_wrapper layout-css"
+        class="vjlp8-main"
+        style='${imageBG}'
+        className="${version}"
       >
-        <div class="vjlp8-main">
-          <div style='${imageBG}' className="${version}">
-            <section id="hero">
-              <div class="container">
-                <div class="row">
-                  <div>
-                    <div id="login">
-                      <div>
-                        <a rel="noopener" href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}">
-                          <i class="material-icons">exit_to_app</i>
-                          <span>${banner.getIn(['data', 'promo_login_button'])}</span>
-                        </a>
-                      </div>
-                    </div>
-
-                    <img alt="alt img" class="logo" src="/marketing/img/vjlp8/logo.png"></img>
-                    <div class="banner">
-                      <img alt="alt img" class="bounce animated delay-1s" src="${banner.getIn(['data', 'promo_images', 'promo_game_logo']) || ''}"></img>
-                      <img alt="alt img" src="${banner.getIn(['data', 'promo_images', 'promo_game_image']) || ''}"></img>
-                      <h1>${banner.getIn(['data', 'promo_large_subtitle'])}</h1>
-                      <p dangerouslySetInnerHTML='${bannerDescription}'></p>
-                    </div>
-
-                    <div id="banner-terms">
-                      <button className="${version === 'version2' ? 'animated pulse infinite' : ''}">
-                        <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
-                          ${banner.getIn(['data', 'promo_join_button'])}
-                        </a>
-                      </button>
-                      <small dangerouslySetInnerHTML='${termsText}'></small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <section id="details">
-              ${sections.filter(sect => !!sect).map(sect =>
-                html`
-                <div class="container">
-                  <div class="row">
-                    <div>
-                      <h2>${sect.getIn(['data', 'title']) || ''}</h2>
-                      <img alt="alt img" src="${(sect.getIn(['data', 'image']) || '')}"></img>
-                      <button>
-                        <a rel="noopener" href="${sect.getIn(['data', 'join_button_redirect_url']) || ''}">
-                          ${sect.getIn(['data', 'join_button']) || ''}
-                        </a>
-                      </button>
-                    </div>
-                  </div>
-                </div>`
-              )}
-            </section>
-
-            <section id="payment" class="separator">
-              <div class="container">
-                <img class="desktop" src="/marketing/img/vj-payment/payment_large_${country}.svg" alt="payment verajohn desktop"></img>
-                <img class="mobile" src="/marketing/img/vj-payment/payment_${country}.svg" alt="payment verajohn mobile"></img>
-              </div>
-            </section>
-
-            <section id="terms" class="separator">
-              <div class="container">
+        <section id="hero">
+          <div class="container">
+            <div>
+              <div id="login">
                 <div>
-                  <div>${body}</div>
-                  <ul>
-                    <li>通常の<a rel="noopener" href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a rel="noopener" href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</li>
-                  </ul>
+                  <a rel="noopener" href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}">
+                    <i class="material-icons">exit_to_app</i>
+                    <span>${banner.getIn(['data', 'promo_login_button'])}</span>
+                  </a>
                 </div>
               </div>
-            </section>
 
-            <section class="separator">
-              <${FOOTER} landingPageType="verajohn" languageCode=${language} countryCode=${country} />
-            </section>
+              <img alt="alt img" class="logo" src="/marketing/img/vjlp8/logo.png"></img>
+              <div class="banner">
+                <img alt="alt img" class="bounce animated delay-1s" src="${banner.getIn(['data', 'promo_images', 'promo_game_logo']) || ''}"></img>
+                <img alt="alt img" src="${banner.getIn(['data', 'promo_images', 'promo_game_image']) || ''}"></img>
+                <h1>${banner.getIn(['data', 'promo_large_subtitle'])}</h1>
+                <p dangerouslySetInnerHTML='${bannerDescription}'></p>
+              </div>
+
+              <div id="banner-terms">
+                <button className="${version === 'version2' ? 'animated pulse infinite' : ''}">
+                  <a href="${banner.getIn(['data', 'promo_join_button_redirect_url'])}">
+                    ${banner.getIn(['data', 'promo_join_button'])}
+                  </a>
+                </button>
+                <small dangerouslySetInnerHTML='${termsText}'></small>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
+
+        <section id="details">
+          ${sections.filter(sect => !!sect).map(sect =>
+            html`
+            <div class="container">
+              <div>
+                <h2>${sect.getIn(['data', 'title']) || ''}</h2>
+                <img alt="alt img" src="${(sect.getIn(['data', 'image']) || '')}"></img>
+                <button>
+                  <a rel="noopener" href="${sect.getIn(['data', 'join_button_redirect_url']) || ''}">
+                    ${sect.getIn(['data', 'join_button']) || ''}
+                  </a>
+                </button>
+              </div>
+            </div>`
+          )}
+        </section>
+
+        <section id="payment" class="separator">
+          <div class="container">
+            <img class="desktop" src="/marketing/img/vj-payment/payment_large_${country}.svg" alt="payment verajohn desktop"></img>
+            <img class="mobile" src="/marketing/img/vj-payment/payment_${country}.svg" alt="payment verajohn mobile"></img>
+          </div>
+        </section>
+
+        <section id="terms" class="separator">
+          <div class="container">
+            <div>
+              <div>${body}</div>
+              <ul>
+                <li>通常の<a rel="noopener" href="https://verajohn.com/about/terms-and-conditions">利用規約</a>と<a rel="noopener" href="https://verajohn.com/about/promotions-terms-and-conditions">キャンペーン一般利用規約</a>が適用されます。</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="separator">
+          <${FOOTER} landingPageType="verajohn" languageCode=${language} countryCode=${country} />
+        </section>
       </body>`)
   }
 })

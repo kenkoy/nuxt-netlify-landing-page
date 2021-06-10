@@ -113,6 +113,9 @@ export default {
       htmlAttrs: {
         lang: 'ja'
       },
+      meta: [
+        { hid: 'robots', name: 'robots', content: 'noindex' }
+      ],
       bodyAttrs: {
         id: 'ja-jp'
       },
