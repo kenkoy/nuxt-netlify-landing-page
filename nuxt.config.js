@@ -80,8 +80,8 @@ export default {
   ** Global CSS
   */
   css: [
-    '~/assets/sass/global/externalBrandCss/verajohn_jp_main.min.css',
-    // '~/assets/sass/global/intercasino_jp_main.min.css',
+    // '~/assets/sass/global/externalBrandCss/verajohn_jp_main.min.css',
+    '~/assets/sass/global/intercasino_jp_main.min.css',
     '~/assets/sass/global/externalBrandCss/animate.min.css',
     '~/assets/sass/global/externalBrandCss/fonts.css',
     '~/assets/sass/global/style.scss'
