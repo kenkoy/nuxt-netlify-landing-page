@@ -3,7 +3,7 @@
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
-      class="lobby-page-main ic-theme"
+      class="lobby-page-main vj-theme"
     >
       <SideMenu v-if="menuToggle" @page-slide-off="pageSlideOff" />
 

@@ -39,6 +39,11 @@
   box-shadow: 0px 2px 4px 0px $HEADER_SHADOW;
   // transition: all .3s ease;
 
+  #header-home{
+    display: flex;
+    align-items: center;
+  }
+
   #header-button button{
     float: right;
   }
