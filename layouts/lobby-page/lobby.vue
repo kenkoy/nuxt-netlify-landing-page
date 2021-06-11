@@ -3,7 +3,7 @@
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
-      class="lobby-pages-main"
+      class="lobby-page-main vj-theme"
     >
       <SideMenu v-if="menuToggle" @page-slide-off="pageSlideOff" />
 
@@ -29,12 +29,12 @@
 
         <section id="game-tiles">
           <div class="container">
-            <div class="row column-4 game-menu negate-gutter">
+            <div class="row game-menu negate-gutter">
               <div v-for="(modal, modalIndex) in mdData.gameTiles.modals" :key="modalIndex" class="pods">
                 <div>
-                  <div class="pod-bg">
+                  <!-- <div class="pod-bg">
                     <img :src="modal.image" alt="alt img">
-                  </div>
+                  </div> -->
                   <div class="pod-content">
                     <h3 class="emphasize">
                       {{ modal.text }}
@@ -45,7 +45,7 @@
               </div>
             </div>
 
-            <div class="row column-4 negate-gutter">
+            <!-- <div class="row game-menu negate-gutter">
               <div v-for="(link, linkIndex) in mdData.gameTiles.links" :key="linkIndex" class="pods loyalty">
                 <a :href="link.url">
                   <div class="pod-bg">
@@ -65,7 +65,7 @@
                   </div>
                 </a>
               </div>
-            </div>
+            </div> -->
           </div>
         </section>
 
@@ -94,7 +94,7 @@
         </section>
 
         <footer id="footer-icon-wrapper">
-          <div class="container footer-icons-wrapper">
+          <div class="container footer-icons">
             <div id="footer-payment-provider">
               <div class="row">
                 <p class="footer-title">
@@ -151,10 +151,10 @@
 </template>
 
 <script>
-import SideMenu from '~/components/Lobby-Pages/SideMenu.vue'
-import Header from '~/components/Lobby-Pages/Header.vue'
-import BannerSlider from '~/components/Lobby-Pages/BannerSlider.vue'
-import FooterFixButtons from '~/components/Lobby-Pages/FooterFixButtons.vue'
+import SideMenu from '~/components/Lobby-Page/SideMenu.vue'
+import Header from '~/components/Lobby-Page/Header.vue'
+import BannerSlider from '~/components/Lobby-Page/BannerSlider.vue'
+import FooterFixButtons from '~/components/Lobby-Page/FooterFixButtons.vue'
 
 export default {
   components: {
@@ -172,14 +172,14 @@ export default {
     }
   },
   created () {
-    this.$root.$once('lobby-pages-data', (data) => {
+    this.$root.$once('lobby-page-data', (data) => {
       if (Object.keys(data).length > 0) {
         this.mdData = data
       }
     })
   },
   beforeDestroy () {
-    this.$root.$off('lobby-pages-data')
+    this.$root.$off('lobby-page-data')
   },
   mounted () {
     window.addEventListener('scroll', this.handleScroll)
@@ -210,6 +210,6 @@ export default {
 
 <style lang="scss">
   .lobby_pages_wrapper {
-    @import '@/assets/sass/lobby-pages/style.scss';
+    @import '@/assets/sass/lobby-page/style.scss';
   }
 </style>

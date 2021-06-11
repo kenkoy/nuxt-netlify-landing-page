@@ -1,7 +1,7 @@
 <template>
   <header id="header-menu">
-    <div>
-      <button class="btn menu-hamburger" @click="pageSlideOn(true)">
+    <div id="header-home">
+      <!-- <button class="btn menu-hamburger" @click="pageSlideOn(true)">
         <div>
           <span />
           <span />
@@ -10,7 +10,10 @@
         <p class="n-paragraph-1">
           メニュー
         </p>
-      </button>
+      </button> -->
+      <a href="#">
+        <img src="@/assets/images/lobby-pages/home-icon.png"/>
+      </a>
     </div>
 
     <div id="header-logo">
@@ -18,7 +21,7 @@
     </div>
 
     <div id="header-button">
-      <button class="cta_button cta_important login">
+      <button class="cta_button login n-button--primary">
         今すぐ登録しよう!
       </button>
     </div>
@@ -27,10 +30,10 @@
 
 <script>
 export default {
-  methods: {
-    pageSlideOn (data) {
-      this.$emit('page-slide-on', data)
-    }
-  }
+  // methods: {
+  //   pageSlideOn (data) {
+  //     this.$emit('page-slide-on', data)
+  //   }
+  // }
 }
 </script>

@@ -1,12 +1,12 @@
 ---
-slug_name: slots
+slug_name: sample
 template: lobby
 seo:
-  title: オンラインビデオスロット | Vera&John(ベラジョンカジノ)_Test
+  title: DAN オンラインビデオスロット | Vera&John(ベラジョンカジノ)
   meta:
     description: Vera&Johnの1000種を超えるビデオスロットの中からお気に入りビデオスロットを見つけましょう。リアルマネーのみならず、無料で遊べるデモモードもご用意しています。
     keywords: slot machine, roulette, baccarat, win, flash, games, online, pontoon,
-      gold diggers, sample keyword
+      gold diggers
     author: John Smith
     og:
       title: OG Title Here
@@ -19,9 +19,7 @@ seo:
       hreflang: x-default
     - href: https://www.verajohn.com/ja/slots
       hreflang: ja-jp
-banner:
-  - image: /marketing/img/hd-pachinko-v1-banner-2-d.png
-    url: "#"
+banner: []
 game:
   - is_hot: true
     title: Dreams of Gold
