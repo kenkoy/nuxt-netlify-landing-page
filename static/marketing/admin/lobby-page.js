@@ -14,11 +14,13 @@ export const LOBBY_PREVIEW = createClass({
   render () {
     const { widgetsFor, widgetFor } = this.props
     const banners = widgetsFor('banner')
+
     const gameList = widgetsFor('game').getIn(['data', 'game_list'])
     const gameListCategory = widgetsFor('game').getIn(['data', 'game_category'])
     const gameListViewAll = widgetsFor('game').getIn(['data', 'view_all'])
-    const lobbyTiles = widgetsFor('lobby_tiles')
-    // const gameTilesLinks = widgetsFor('game_tiles').getIn(['data', 'links']) || []
+
+    const lobbyTiles = widgetsFor('lobby_tiles').getIn(['data', 'lobby_list'])
+    const lobbyCategory = widgetsFor('lobby_tiles').getIn(['data', 'lobby_title'])
     const body = widgetFor('body')
 
     return (html`
@@ -98,9 +100,14 @@ export const LOBBY_PREVIEW = createClass({
 
                 <div class="row">
                   ${gameList.filter(sect => !!sect).map((sect) => {
-                    const categ = sect.toJS()
+                    const list = sect.toJS()
                     return html`
-                    ${categ}
+                    <div>
+                      <a class="n-link" href='${list.url}'>
+                        <img src='${list.image}' />
+                        <p>${list.title}</p>
+                      </a>
+                    </div>
                     `
                   })}
                 </div>
@@ -109,15 +116,21 @@ export const LOBBY_PREVIEW = createClass({
 
             <section id="lobby-tiles">
               <div class="container">
+                <div class="row negate-gutter">
+                  <div class="left-align">
+                    <p class="emphasize">${lobbyCategory}</p>
+                  </div>
+                </div>
                 <div class="row column-4 game-menu negate-gutter">
                   ${lobbyTiles.filter(sect => !!sect).map((sect) => {
+                    const list = sect.toJS()
                     return html`
                     <div class="pods">
-                      <a href='${sect.getIn(['data', 'link'])}'>
+                      <a href='${list.link}'>
                         <div>
                           <div class="pod-content">
-                            <h3 class="emphasize">${sect.getIn(['data', 'text'])}</h3>
-                            <img class="pod-feat-img" src='${sect.getIn(['data', 'image'])}' />
+                            <h3 class="emphasize">${list.text}</h3>
+                            <img class="pod-feat-img" src='${list.image}' />
                           </div>
                         </div>
                       </a>
