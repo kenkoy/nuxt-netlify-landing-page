@@ -23,40 +23,45 @@ banner:
   - image: /marketing/img/hd-pachinko-v1-banner-2-d.png
     url: "#"
 game:
-  - is_hot: true
-    title: Dreams of Gold
-    image: /marketing/img/img1.png
-    url: https://www.verajohn.com/play/dreams-of-gold-mobile
-  - is_hot: true
-    title: Hawaiian Dream
-    image: /marketing/img/img2.png
-    url: https://www.verajohn.com/play/hawaiian-dream-mobile
-  - is_hot: true
-    title: Battle Dwarf
-    image: /marketing/img/img3.png
-    url: https://www.verajohn.com/play/battle-dwarf-mobile
-  - is_hot: false
-    title: Yokozuna Clash
-    image: /marketing/img/img4.png
-    url: https://www.verajohn.com/play/yokozuna-clash-mobile
-  - is_hot: true
-    title: Piggy Riches Megaways
-    image: /marketing/img/img5.png
-    url: https://www.verajohn.com/play/piggy-riches-megaways-mobile
-  - is_hot: true
-    title: Drago - Jewels of Fortune
-    image: /marketing/img/img6.png
-    url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
+  game_category: Classic slots
+  view_all: See all games
+  game_list:
+    - is_hot: true
+      title: Dreams of Gold
+      image: /marketing/img/img1.png
+      url: https://www.verajohn.com/play/dreams-of-gold-mobile
+    - is_hot: true
+      title: Hawaiian Dream
+      image: /marketing/img/img2.png
+      url: https://www.verajohn.com/play/hawaiian-dream-mobile
+    - is_hot: true
+      title: Battle Dwarf
+      image: /marketing/img/img3.png
+      url: https://www.verajohn.com/play/battle-dwarf-mobile
+    - is_hot: false
+      title: Yokozuna Clash
+      image: /marketing/img/img4.png
+      url: https://www.verajohn.com/play/yokozuna-clash-mobile
+    - is_hot: true
+      title: Piggy Riches Megaways
+      image: /marketing/img/img5.png
+      url: https://www.verajohn.com/play/piggy-riches-megaways-mobile
+    - is_hot: true
+      title: Drago - Jewels of Fortune
+      image: /marketing/img/img6.png
+      url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
 lobby_tiles:
-  - text: ライブカジノ
-    image: /marketing/img/dice-icon-transparent.png
-    link: https://www.google.com/
-  - text: トーナメント
-    image: /marketing/img/trophy-icon-transparent.png
-    link: https://www.google.com/
-  - text: すべてのテーブルゲーム
-    image: /marketing/img/card-icon-transparent.png
-    link: https://www.google.com/
+  lobby_title: More games
+  lobby_list:
+    - text: ライブカジノ
+      image: /marketing/img/dice-icon-transparent.png
+      link: https://www.google.com/
+    - text: トーナメント
+      image: /marketing/img/trophy-icon-transparent.png
+      link: https://www.google.com/
+    - text: すべてのテーブルゲーム
+      image: /marketing/img/card-icon-transparent.png
+      link: https://www.google.com/
 ---
 <h1 class="n-header-1">ベラジョンオンラインカジノのオンラインビデオスロット</h1>
 

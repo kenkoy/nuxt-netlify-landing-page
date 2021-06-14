@@ -17,14 +17,14 @@
           <div class="container separator-top separator-bottom">
             <div class="row column-2 negate-gutter">
               <div class="left-align">
-                <p class="emphasize">Classic slots</p>
+                <p class="emphasize">{{ mdData.game.gameCategory }}</p>
               </div>
               <div class="right-align">
-                <p class="view-all">See all games</p>
+                <p class="view-all">{{ mdData.game.viewAll }}</p>
               </div>
             </div>
             <div class="row">
-              <div v-for="(game, gameIndex) in mdData.game" :key="gameIndex">
+              <div v-for="(game, gameIndex) in mdData.game.gameList" :key="gameIndex">
                 <a class="n-link" :href="game.url">
                   <i v-if="game.isHot" class="hot-icon" />
                   <img :src="game.image" :alt="game.title">
@@ -39,11 +39,11 @@
           <div class="container">
             <div class="row negate-gutter">
               <div class="left-align">
-                <p class="emphasize">More games</p>
+                <p class="emphasize">{{ mdData.lobbyTiles.lobbyTitle }}</p>
               </div>
             </div>
             <div class="row game-menu negate-gutter">
-              <div v-for="(tile, tileIndex) in mdData.lobbyTiles" :key="tileIndex" class="pods">
+              <div v-for="(tile, tileIndex) in mdData.lobbyTiles.lobbyList" :key="tileIndex" class="pods">
                 <a :href="tile.link">
                   <div>
                     <div class="pod-content">

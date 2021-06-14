@@ -15,6 +15,7 @@ export const LOBBY_PREVIEW = createClass({
     const { widgetsFor, widgetFor } = this.props
     const banners = widgetsFor('banner')
     const gameList = widgetsFor('game')
+    const gameListCategory = widgetsFor('game')
     const lobbyTiles = widgetsFor('lobby_tiles')
     // const gameTilesLinks = widgetsFor('game_tiles').getIn(['data', 'links']) || []
     const body = widgetFor('body')
