@@ -3,7 +3,6 @@ body * {
   font-display: swap;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -52,6 +51,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: #FFEA00;
     font-weight: 500;
     font-size: 17px;
+    font-family: "Lucida Grande","Arial";
+  }
+}
+
+@at-root .vj-theme{
+  .view-all {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
     font-family: "Lucida Grande","Arial";
   }
 }

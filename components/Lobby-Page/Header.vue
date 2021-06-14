@@ -21,8 +21,8 @@
     </div>
 
     <div id="header-button">
-      <button class="cta_button login n-button--primary">
-        今すぐ登録しよう!
+      <button class="cta_button login n-button--secondary">
+        JOIN NOW
       </button>
     </div>
   </header>

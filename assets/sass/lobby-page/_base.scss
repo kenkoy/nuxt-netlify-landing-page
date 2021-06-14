@@ -11,6 +11,10 @@
 #overlay{
   @include overlayMixins;
 }
+
+
+//HELPERS
+//add border top separator
 .separator-top{
   &:after{
     background: $SEPARATOR_COLOR;
@@ -23,6 +27,7 @@
     height: 1px;
   }
 }
+//add border bottom separator
 .separator-bottom{
   &:before{
     background: $SEPARATOR_COLOR;
@@ -35,11 +40,20 @@
     height: 1px;
   }
 }
+.left-align{
+  display: flex;
+  justify-content: flex-start;
+}
+.right-align{
+  display: flex;
+  justify-content: flex-end;
+}
 .icon-wrapper{
   width: 24px;
   height: 24px;
   overflow: hidden;
 }
+//remove outer margins in the row
 .negate-gutter{
   margin-left: -$MARGINS;
   margin-right: -$MARGINS
@@ -48,6 +62,8 @@
 .container-grid{
   max-width: 768px;
 }
+
+
 
 
 //=== SIDE MENU ===//
@@ -173,7 +189,7 @@ main{
   }
 }
 
-#game-tiles{
+#lobby-tiles{
   padding: $PADDING;
 
   h3,
@@ -192,27 +208,6 @@ main{
   .pods.loyalty{
     min-height: 201px;
   }
-
-  // .pod-bg{
-  //   filter: hue-rotate(180deg) invert(100%);
-  //   display: flex;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   opacity: .15;
-  //   z-index: 1;
-  //
-  //   img{
-  //     width: auto;
-  //     max-width: 145px;
-  //     height: 100%;
-  //     max-height: 145px;
-  //     display: block;
-  //     margin: auto;
-  //   }
-  // }
   .pod-content{
     position: relative;
     z-index: 2;
@@ -236,19 +231,8 @@ main{
     background-image: linear-gradient(#6dbde5, #086b97);
   }
 
-  // .dice{
-  //   background-image: url('../../assets/images/seo/dice-bg.png');
-  // }
-  // .trophy,
-  // .loyalty{
-  //   background-image: url('../../assets/images/seo/trophy-bg.png');
-  // }
-  // .card{
-  //   background-image: url('../../assets/images/seo/card-bg.png');
-  // }
-
   .pods{
-    @include gamePods;
+    @include gameTiles;
     background-size: 120px;
     background-position: center;
     background-repeat: no-repeat;

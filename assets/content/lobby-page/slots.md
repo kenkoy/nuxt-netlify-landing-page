@@ -47,20 +47,16 @@ game:
     title: Drago - Jewels of Fortune
     image: /marketing/img/img6.png
     url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
-game_tiles:
-  modals:
-    - text: ライブカジノ
-      image: /marketing/img/dice-icon-transparent.png
-    - text: トーナメント
-      image: /marketing/img/trophy-icon-transparent.png
-    - text: すべてのテーブルゲーム
-      image: /marketing/img/card-icon-transparent.png
-  links:
-    - text: トーナメントに参加する
-      title: 賞金プール
-      winning: $15,000.00
-      url: https://www.verajohn.com/ja/active-tournaments
-      bg_image: /marketing/img/trophy-icon-transparent.png
+lobby_tiles:
+  - text: ライブカジノ
+    image: /marketing/img/dice-icon-transparent.png
+    link: https://www.google.com/
+  - text: トーナメント
+    image: /marketing/img/trophy-icon-transparent.png
+    link: https://www.google.com/
+  - text: すべてのテーブルゲーム
+    image: /marketing/img/card-icon-transparent.png
+    link: https://www.google.com/
 ---
 <h1 class="n-header-1">ベラジョンオンラインカジノのオンラインビデオスロット</h1>
 

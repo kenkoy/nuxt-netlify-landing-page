@@ -15,8 +15,8 @@ export const LOBBY_PREVIEW = createClass({
     const { widgetsFor, widgetFor } = this.props
     const banners = widgetsFor('banner')
     const gameList = widgetsFor('game')
-    const gameTilesModals = widgetsFor('game_tiles').getIn(['data', 'modals']) || []
-    const gameTilesLinks = widgetsFor('game_tiles').getIn(['data', 'links']) || []
+    const lobbyTiles = widgetsFor('lobby_tiles')
+    // const gameTilesLinks = widgetsFor('game_tiles').getIn(['data', 'links']) || []
     const body = widgetFor('body')
 
     return (html`
@@ -103,35 +103,16 @@ export const LOBBY_PREVIEW = createClass({
             <section id="game-tiles">
               <div class="container">
                 <div class="row column-4 game-menu negate-gutter">
-                  ${gameTilesModals.filter(sect => !!sect).map((sect) => {
-                    const modal = sect.toJS()
+                  ${lobbyTiles.filter(sect => !!sect).map((sect) => {
                     return html`
                     <div class="pods">
                       <div>
                         <div class="pod-bg">
-                          <img src='${modal.image}' />
+                          <img src='${sect.image}' />
                         </div>
                         <div class="pod-content">
-                          <h3 class="emphasize">${modal.text}</h3>
-                          <img class="pod-feat-img" src='${modal.image}' />
-                        </div>
-                      </div>
-                    </div>
-                    `
-                  })}
-                </div>
-                <div class="row column-4 negate-gutter">
-                  ${gameTilesLinks.filter(sect => !!sect).map((sect) => {
-                    const link = sect.toJS()
-                    return html`
-                    <div class="pods loyalty">
-                      <div>
-                        <div class="pod-bg">
-                          <img src='${link.bg_image}' />
-                        </div>
-                        <div class="pod-content">
-                          <h3 class="emphasize">${link.text}</h3>
-                          <img class="pod-feat-img" src='${link.bg_image}' />
+                          <h3 class="emphasize">${sect.text}</h3>
+                          <img class="pod-feat-img" src='${sect.image}' />
                         </div>
                       </div>
                     </div>

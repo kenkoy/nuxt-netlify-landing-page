@@ -3,7 +3,7 @@
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
-      class="lobby-page-main ic-theme"
+      class="lobby-page-main vj-theme"
     >
       <SideMenu v-if="menuToggle" @page-slide-off="pageSlideOff" />
 
@@ -15,6 +15,14 @@
         <BannerSlider v-if="mdData.banner && mdData.banner.length > 0" :banner-data="mdData.banner" />
         <section id="games">
           <div class="container separator-top separator-bottom">
+            <div class="row column-2 negate-gutter">
+              <div class="left-align">
+                <p class="emphasize">Classic slots</p>
+              </div>
+              <div class="right-align">
+                <p class="view-all">See all games</p>
+              </div>
+            </div>
             <div class="row">
               <div v-for="(game, gameIndex) in mdData.game" :key="gameIndex">
                 <a class="n-link" :href="game.url">
@@ -27,45 +35,27 @@
           </div>
         </section>
 
-        <section id="game-tiles">
+        <section id="lobby-tiles">
           <div class="container">
-            <div class="row game-menu negate-gutter">
-              <div v-for="(modal, modalIndex) in mdData.gameTiles.modals" :key="modalIndex" class="pods">
-                <div>
-                  <!-- <div class="pod-bg">
-                    <img :src="modal.image" alt="alt img">
-                  </div> -->
-                  <div class="pod-content">
-                    <h3 class="emphasize">
-                      {{ modal.text }}
-                    </h3>
-                    <img class="pod-feat-img" :src="modal.image" alt="alt img">
-                  </div>
-                </div>
+            <div class="row negate-gutter">
+              <div class="left-align">
+                <p class="emphasize">More games</p>
               </div>
             </div>
-
-            <!-- <div class="row game-menu negate-gutter">
-              <div v-for="(link, linkIndex) in mdData.gameTiles.links" :key="linkIndex" class="pods loyalty">
-                <a :href="link.url">
-                  <div class="pod-bg">
-                    <img :src="link.bgImage" alt="alt img">
-                  </div>
-
-                  <div class="pod-content">
-                    <h3 class="emphasize">
-                      {{ link.text }}
-                    </h3>
-                    <p class="n-paragraph-1">
-                      {{ link.title }}
-                    </p>
-                    <span class="emphasize winning">
-                      {{ link.winning }}
-                    </span>
+            <div class="row game-menu negate-gutter">
+              <div v-for="(tile, tileIndex) in mdData.lobbyTiles" :key="tileIndex" class="pods">
+                <a :href="tile.link">
+                  <div>
+                    <div class="pod-content">
+                      <h3 class="emphasize">
+                        {{ tile.text }}
+                      </h3>
+                      <img class="pod-feat-img" :src="tile.image" alt="alt img">
+                    </div>
                   </div>
                 </a>
               </div>
-            </div> -->
+            </div>
           </div>
         </section>
 

@@ -1628,7 +1628,7 @@ collections:
                   widget: "string",
                 }
 
-  - label: "Lobby Page"
+  - label: "VeraJohn SEO Lobby Template"
     name: "lobby_page"
     format: "frontmatter"
     show_preview_links: false
@@ -1707,28 +1707,18 @@ collections:
         - { label: "Image", name: "image", widget: "image" }
         - { label: "URL", name: "url", widget: "string" }
         - { label: "Hot?", name: "is_hot", widget: "boolean", default: false }
-    - label: "Game Tiles"
-      name: "game_tiles"
-      widget: "object"
+    - label: "Lobby Tiles"
+      name: "lobby_tiles"
+      widget: "list"
       collapsed: true
       fields:
-        - label: "Modals"
-          name: "modals"
-          widget: "list"
-          max: 4
-          summary: "{{fields.text}}"
-          fields:
-            - { label: "Text", name: "text", widget: "string" }
-            - { label: "Icon", name: "image", widget: "image" }
-        - label: "Links"
-          name: "links"
-          widget: "list"
-          max: 4
-          summary: "{{fields.text}}"
-          fields:
-            - { label: "Text", name: "text", widget: "string" }
-            - { label: "URL", name: "url", widget: "string" }
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Winning", name: "winning", widget: "string" }
-            - { label: "Background Image", name: "bg_image", widget: "image" }
+        - label: "Text"
+          name: "text"
+          widget: "string"
+        - label: "Icon"
+          name: "image"
+          widget: "image"
+        - label: "Link"
+          name: "link"
+          widget: "string"
     - { label: "Content", name: "body", widget: "markdown", required: true }

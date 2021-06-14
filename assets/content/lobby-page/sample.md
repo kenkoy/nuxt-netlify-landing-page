@@ -45,7 +45,7 @@ game:
     title: Drago - Jewels of Fortune
     image: /marketing/img/img6.png
     url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
-game_tiles:
+lobby_tiles:
   modals:
     - text: ライブカジノ
       image: /marketing/img/dice-icon-transparent.png
