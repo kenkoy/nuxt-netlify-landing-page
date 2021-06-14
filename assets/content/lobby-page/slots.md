@@ -50,6 +50,18 @@ game:
       title: Drago - Jewels of Fortune
       image: /marketing/img/img6.png
       url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
+lobby_tiles:
+  lobby_title: More games
+  lobby_list:
+    - text: ライブカジノ
+      image: /marketing/img/dice-icon-transparent.png
+      link: https://www.google.com/
+    - text: トーナメント
+      image: /marketing/img/trophy-icon-transparent.png
+      link: https://www.google.com/
+    - text: すべてのテーブルゲーム
+      image: /marketing/img/card-icon-transparent.png
+      link: https://www.google.com/
 ---
 <h1 class="n-header-1">ベラジョンオンラインカジノのオンラインビデオスロット</h1>
 

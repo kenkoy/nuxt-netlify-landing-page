@@ -1719,16 +1719,23 @@ collections:
             - { label: "Hot?", name: "is_hot", widget: "boolean", default: false }
     - label: "Lobby Tiles"
       name: "lobby_tiles"
-      widget: "list"
+      widget: "object"
       collapsed: true
       fields:
-        - label: "Text"
-          name: "text"
+        - label: "Lobby Title"
+          name: "lobby_title"
           widget: "string"
-        - label: "Icon"
-          name: "image"
-          widget: "image"
-        - label: "Link"
-          name: "link"
-          widget: "string"
+        - label: "Lobby List"
+          name: "lobby_list"
+          widget: "list"
+          fields:
+            - label: "Text"
+              name: "text"
+              widget: "string"
+            - label: "Icon"
+              name: "image"
+              widget: "image"
+            - label: "Link"
+              name: "link"
+              widget: "string"
     - { label: "Content", name: "body", widget: "markdown", required: true }
