@@ -15,7 +15,7 @@ export const LOBBY_PREVIEW = createClass({
     const { widgetsFor, widgetFor } = this.props
     const banners = widgetsFor('banner')
     const gameList = widgetsFor('game')
-    const gameListCategory = widgetsFor('game')
+    const gameListCategory = widgetsFor('game').getIn(['data', 'game_category'])
     const lobbyTiles = widgetsFor('lobby_tiles')
     // const gameTilesLinks = widgetsFor('game_tiles').getIn(['data', 'links']) || []
     const body = widgetFor('body')
@@ -86,6 +86,7 @@ export const LOBBY_PREVIEW = createClass({
 
             <section id="games">
               <div class="container separator-top separator-bottom">
+                <p>${gameListCategory}</p>
                 <div class="row">
                   ${gameList.filter(sect => !!sect).map(sect =>
                     html`
