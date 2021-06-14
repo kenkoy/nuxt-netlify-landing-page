@@ -1,16 +1,6 @@
 <template>
   <header id="header-menu">
     <div id="header-home">
-      <!-- <button class="btn menu-hamburger" @click="pageSlideOn(true)">
-        <div>
-          <span />
-          <span />
-          <span />
-        </div>
-        <p class="n-paragraph-1">
-          メニュー
-        </p>
-      </button> -->
       <a href="#">
         <img src="@/assets/images/lobby-pages/home-icon.png">
       </a>
@@ -30,10 +20,6 @@
 
 <script>
 export default {
-  // methods: {
-  //   pageSlideOn (data) {
-  //     this.$emit('page-slide-on', data)
-  //   }
-  // }
+
 }
 </script>

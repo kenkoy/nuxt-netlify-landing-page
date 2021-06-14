@@ -8,9 +8,6 @@
 @at-root body.noScroll{
     overflow: hidden;
 }
-#overlay{
-  @include overlayMixins;
-}
 
 
 //HELPERS
@@ -64,40 +61,7 @@
 }
 
 
-
-
-//=== SIDE MENU ===//
-#menu-slide{
-  @include menuSlideMixin;
-  p{
-    margin: 0;
-  }
-  button{
-    width: 100%;
-  }
-
-  #menu-slide-header{
-    display: flex;
-    background: $HEADER_BG;
-    > * {
-      flex-grow: 1;
-    }
-  }
-}
-
-
 //==== NAVIGATION HEADER MENU ===//
-#header-menu.nav-slide-up{
-  top: -54px;
-}
-#header-menu.nav-slide-down{
-  top: 0;
-}
-#header-menu.nav-slide-up{
-  @at-root html body .lobby-pages-main .page-slide{
-    // padding-top: 0;
-  }
-}
 #header-menu {
   @include headerMenuMixin;
   > * {
@@ -118,31 +82,8 @@
   }
 }
 
-.menu-hamburger{
-  min-height: $NAV_HEIGHT;
-  > * {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  p{
-    margin: 0;
-  }
-  span{
-    background: #fff;
-    border-radius: 5px;
-    width: 24px;
-    height: 4px;
-    margin: 4px 0;
-    display: block;
-    transform-origin:0 0;
-  }
-}
-
 
 //==== MAIN CONTENT ==//
-.page-slide{
-  transform: translate3d(320px,0,0);
-}
 main{
   position: relative;
   transition: all .3s ease;
@@ -330,18 +271,6 @@ main{
   .container > div:first-child + div{
     border-top: solid 2px $FOOTER_CONTENT_BORDER;
     border-bottom: solid 2px $FOOTER_CONTENT_BORDER;
-  }
-}
-
-#footer-login-register.footer-slide-down{
-  bottom: -54px;
-}
-#footer-login-register.footer-slide-up{
-  bottom: 0;
-}
-#footer-login-register.footer-slide-down{
-  @at-root html body .lobby-pages-main .page-slide{
-    padding-bottom: 0;
   }
 }
 

@@ -8,9 +8,7 @@
       <SideMenu v-if="menuToggle" @page-slide-off="pageSlideOff" />
 
       <main :class="pageSlide">
-        <!-- Display when Sidemenu is visible -->
-        <div v-if="menuToggle" id="overlay" />
-        <Header :class="menuToggle ? 'nav-slide-up' : 'nav-slide-down'" @page-slide-on="pageSlideOn" />
+        <Header />
         <!-- Main content -->
         <BannerSlider v-if="mdData.banner && mdData.banner.length > 0" :banner-data="mdData.banner" />
         <section id="games">
@@ -135,30 +133,25 @@
           </div>
         </footer>
       </main>
-      <FooterFixButtons :class="menuToggle ? 'footer-slide-down' : 'footer-slide-up'" />
+      <FooterFixButtons />
     </div>
   </div>
 </template>
 
 <script>
-import SideMenu from '~/components/Lobby-Page/SideMenu.vue'
 import Header from '~/components/Lobby-Page/Header.vue'
 import BannerSlider from '~/components/Lobby-Page/BannerSlider.vue'
 import FooterFixButtons from '~/components/Lobby-Page/FooterFixButtons.vue'
 
 export default {
   components: {
-    SideMenu,
     Header,
     BannerSlider,
     FooterFixButtons
   },
   data () {
     return {
-      mdData: {},
-      pageSlide: '',
-      menuToggle: false
-      // scrollBottom: false
+      mdData: {}
     }
   },
   created () {
@@ -170,30 +163,6 @@ export default {
   },
   beforeDestroy () {
     this.$root.$off('lobby-page-data')
-  },
-  mounted () {
-    window.addEventListener('scroll', this.handleScroll)
-  },
-  methods: {
-    pageSlideOn () {
-      this.pageSlide = 'page-slide'
-      this.menuToggle = true
-      document.body.classList.add('noScroll')
-    },
-    pageSlideOff () {
-      this.pageSlide = ''
-      document.body.classList.remove('noScroll')
-      setTimeout(() => {
-        this.menuToggle = false
-      }, 300)
-    }
-    // handleScroll (event) {
-    //   if (document.documentElement.scrollTop + window.innerHeight === document.documentElement.scrollHeight) {
-    //     this.scrollBottom = true
-    //   } else if (document.documentElement.scrollTop + window.innerHeight < document.documentElement.scrollHeight - document.getElementById('footer-icon-wrapper').offsetHeight) {
-    //     this.scrollBottom = false
-    //   }
-    // }
   }
 }
 </script>
