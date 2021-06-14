@@ -1,7 +1,20 @@
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
+@media only screen and (max-width : 480px) {
+  #header-menu > div {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  #games .column-2{
+    flex-wrap: nowrap;
+      > div{
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
   #footer-logo{
     .row{
       flex-wrap: wrap;

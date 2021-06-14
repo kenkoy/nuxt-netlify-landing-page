@@ -16,10 +16,10 @@
         <section id="games">
           <div class="container separator-top separator-bottom">
             <div class="row column-2 negate-gutter">
-              <div class="left-align">
+              <div v-if="mdData.game.gameCategory" class="left-align">
                 <p class="emphasize">{{ mdData.game.gameCategory }}</p>
               </div>
-              <div class="right-align">
+              <div v-if="mdData.game.viewAll" class="right-align">
                 <p class="view-all">{{ mdData.game.viewAll }}</p>
               </div>
             </div>
@@ -38,7 +38,7 @@
         <section id="lobby-tiles">
           <div class="container">
             <div class="row negate-gutter">
-              <div class="left-align">
+              <div v-if="mdData.lobbyTiles.lobbyTitle" class="left-align">
                 <p class="emphasize">{{ mdData.lobbyTiles.lobbyTitle }}</p>
               </div>
             </div>
