@@ -12,7 +12,7 @@
         </p>
       </button> -->
       <a href="#">
-        <img src="@/assets/images/lobby-pages/home-icon.png"/>
+        <img src="@/assets/images/lobby-pages/home-icon.png">
       </a>
     </div>
 
