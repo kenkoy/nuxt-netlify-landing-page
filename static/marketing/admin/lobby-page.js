@@ -21,7 +21,7 @@ export const LOBBY_PREVIEW = createClass({
 
     return (html`
       <body class="layout-css lobby_pages_wrapper">
-        <div class="lobby-pages-main">
+        <div class="lobby-pages-main vj-theme">
           <nav id="menu-slide">
             <div id="menu-slide-header">
               <div>
@@ -100,21 +100,20 @@ export const LOBBY_PREVIEW = createClass({
               </div>
             </section>
 
-            <section id="game-tiles">
+            <section id="lobby-tiles">
               <div class="container">
                 <div class="row column-4 game-menu negate-gutter">
                   ${lobbyTiles.filter(sect => !!sect).map((sect) => {
                     return html`
                     <div class="pods">
-                      <div>
-                        <div class="pod-bg">
-                          <img src='${sect.image}' />
+                      <a href='${sect.getIn(['data', 'link'])}'>
+                        <div>
+                          <div class="pod-content">
+                            <h3 class="emphasize">${sect.getIn(['data', 'text'])}</h3>
+                            <img class="pod-feat-img" src='${sect.getIn(['data', 'image'])}' />
+                          </div>
                         </div>
-                        <div class="pod-content">
-                          <h3 class="emphasize">${sect.text}</h3>
-                          <img class="pod-feat-img" src='${sect.image}' />
-                        </div>
-                      </div>
+                      </a>
                     </div>
                     `
                   })}
