@@ -14,7 +14,9 @@ export const LOBBY_PREVIEW = createClass({
   render () {
     const { widgetsFor, widgetFor } = this.props
     const banners = widgetsFor('banner')
-    const gameList = widgetsFor('game')
+    const gameList = widgetsFor('game').getIn(['data', 'game_list'])
+    const gameListCategory = widgetsFor('game').getIn(['data', 'game_category'])
+    const gameListViewAll = widgetsFor('game').getIn(['data', 'view_all'])
     const lobbyTiles = widgetsFor('lobby_tiles')
     // const gameTilesLinks = widgetsFor('game_tiles').getIn(['data', 'links']) || []
     const body = widgetFor('body')
@@ -83,7 +85,48 @@ export const LOBBY_PREVIEW = createClass({
               </div>
             </section>
 
-  
+            <section id="games">
+              <div class="container separator-top separator-bottom">
+                <div class="row column-2 negate-gutter">
+                  <div class="left-align">
+                    <p class="emphasize">${gameListCategory}</p>
+                  </div>
+                  <div class="right-align">
+                    <p class="view-all">${gameListViewAll}</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  ${gameList.filter(sect => !!sect).map((sect) => {
+                    const categ = sect.toJS()
+                    return html`
+                    ${categ}
+                    `
+                  })}
+                </div>
+              </div>
+            </section>
+
+            <section id="lobby-tiles">
+              <div class="container">
+                <div class="row column-4 game-menu negate-gutter">
+                  ${lobbyTiles.filter(sect => !!sect).map((sect) => {
+                    return html`
+                    <div class="pods">
+                      <a href='${sect.getIn(['data', 'link'])}'>
+                        <div>
+                          <div class="pod-content">
+                            <h3 class="emphasize">${sect.getIn(['data', 'text'])}</h3>
+                            <img class="pod-feat-img" src='${sect.getIn(['data', 'image'])}' />
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    `
+                  })}
+                </div>
+              </div>
+            </section>
 
             <section id="cta">
               <img src="/marketing/img/lobby-pages/footer-verajohn.png" alt="alt img"></img>
