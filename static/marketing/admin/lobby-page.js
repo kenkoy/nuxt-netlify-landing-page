@@ -15,7 +15,6 @@ export const LOBBY_PREVIEW = createClass({
     const { widgetsFor, widgetFor } = this.props
     const banners = widgetsFor('banner')
     const gameList = widgetsFor('game')
-    const gameListCategory = widgetsFor('game').getIn(['data', 'game_category'])
     const lobbyTiles = widgetsFor('lobby_tiles')
     // const gameTilesLinks = widgetsFor('game_tiles').getIn(['data', 'links']) || []
     const body = widgetFor('body')
@@ -84,44 +83,7 @@ export const LOBBY_PREVIEW = createClass({
               </div>
             </section>
 
-            <section id="games">
-              <div class="container separator-top separator-bottom">
-                <p>${gameListCategory}</p>
-                <div class="row">
-                  ${gameList.filter(sect => !!sect).map(sect =>
-                    html`
-                    <div>
-                      <a class="n-link" href='${sect.getIn(['data', 'url'])}'>
-                        <img src='${sect.getIn(['data', 'image'])}' />
-                        <p>${sect.getIn(['data', 'title'])}</p>
-                      </a>
-                    </div>
-                    `
-                  )}
-                </div>
-              </div>
-            </section>
-
-            <section id="lobby-tiles">
-              <div class="container">
-                <div class="row column-4 game-menu negate-gutter">
-                  ${lobbyTiles.filter(sect => !!sect).map((sect) => {
-                    return html`
-                    <div class="pods">
-                      <a href='${sect.getIn(['data', 'link'])}'>
-                        <div>
-                          <div class="pod-content">
-                            <h3 class="emphasize">${sect.getIn(['data', 'text'])}</h3>
-                            <img class="pod-feat-img" src='${sect.getIn(['data', 'image'])}' />
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                    `
-                  })}
-                </div>
-              </div>
-            </section>
+  
 
             <section id="cta">
               <img src="/marketing/img/lobby-pages/footer-verajohn.png" alt="alt img"></img>
