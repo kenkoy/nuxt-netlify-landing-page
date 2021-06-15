@@ -144,7 +144,7 @@ export const LOBBY_PREVIEW = createClass({
             </section>
 
             <footer id="footer-icon-wrapper">
-              <div class="container footer-icons-wrapper">
+              <div class="container footer-icons">
                 <div id="footer-payment-provider">
                 <div class="row">
                   <p class="footer-title">
