@@ -29,45 +29,18 @@ export const LOBBY_PREVIEW = createClass({
     return (html`
       <body class="layout-css lobby_pages_wrapper">
         <div class="lobby-pages-main vj-theme">
-          <nav id="menu-slide">
-            <div id="menu-slide-header">
-              <div>
-                <button class="btn" @click="pageSlideOff(false)">
-                  <i class="icon close-icon" />
-                </button>
-              </div>
-              <div>
-                <p class="n-paragraph-1">メニュー</p>
-              </div>
-              <div class="icon-wrapper">
-                <i class="icon home-icon" />
-              </div>
-            </div>
-
-            <div>
-              <span>Menu Coming Soon</span>
-            </div>
-          </nav>
-
           <main>
             <header id="header-menu">
-              <div>
-                <button class="btn menu-hamburger">
-                  <div>
-                    <span />
-                    <span />
-                    <span />
-                  </div>
-                  <p class="n-paragraph-1">
-                    メニュー
-                  </p>
-                </button>
+              <div id="header-home">
+                <a href="#">
+                  <img class="logo" src="/marketing/img/lobby-pages/home-icon.png" alt="alt img"/>
+                </a>
               </div>
               <div id="header-logo">
-                <img class="logo" src="/marketing/img/lobby-pages/logo.png" alt="alt img"></img>
+                <img class="logo" src="/marketing/img/lobby-pages/logo.png" alt="alt img"/>
               </div>
               <div id="header-button">
-                <button class="cta_button cta_important login">
+                <button class="cta_button login n-button--secondary">
                   <a href='${joinButtonUrl}'>
                     ${joinButton}
                   </a>
@@ -147,16 +120,16 @@ export const LOBBY_PREVIEW = createClass({
             </section>
 
             <section id="cta">
-              <img src="/marketing/img/lobby-pages/footer-verajohn.png" alt="alt img"></img>
+              <img src="/marketing/img/lobby-pages/footer-verajohn.png" alt="alt img" />
               <div class="footer-item">
                 <a class="n-link" href="/ja/help">
-                  <img src="/marketing/img/lobby-pages/help-icon.png" alt="alt img"></img>
+                  <img src="/marketing/img/lobby-pages/help-icon.png" alt="alt img" />
                   <span class="n-paragraph">ヘルプ・センター</span>
                 </a>
               </div>
               <div class="footer-item">
                 <a class="n-link" href="/ja/about/beginnersguidemb">
-                  <img src="/marketing/img/lobby-pages/beginner-guide-icon.png" alt="alt img"></img>
+                  <img src="/marketing/img/lobby-pages/beginner-guide-icon.png" alt="alt img" />
                   <span class="n-paragraph">ビギナーズガイド</span>
                 </a>
               </div>
@@ -180,13 +153,13 @@ export const LOBBY_PREVIEW = createClass({
                 </div>
                 <div class="row">
                   <div>
-                    <img src="/marketing/img/lobby-pages/visa-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/master-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/venus-point-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/bitcoin-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/playsafe-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/eco-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/i-wallet-icon.png" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/visa-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/master-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/venus-point-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/bitcoin-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/playsafe-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/eco-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/i-wallet-icon.png" alt="alt img" />
                   </div>
                 </div>
                 </div>
@@ -198,15 +171,15 @@ export const LOBBY_PREVIEW = createClass({
                   </div>
                   <div class="row">
                     <div>
-                      <img src="/marketing/img/lobby-pages/e-icon.png" alt="alt img"></img>
+                      <img src="/marketing/img/lobby-pages/e-icon.png" alt="alt img" />
                     </div>
                   </div>
                 </div>
                 <div id="footer-logo">
                   <div class="row">
                   <div>
-                    <img src="/marketing/img/lobby-pages/CEG_logo.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/20+.svg" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/CEG_logo.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/20+.svg" alt="alt img" />
                   </div>
                   <div>
                     <span class="footer-text">
