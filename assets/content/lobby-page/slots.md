@@ -24,6 +24,8 @@ join_button_redirect_url: "#"
 banner:
   - image: /marketing/img/hd-pachinko-v1-banner-2-d.png
     url: "#"
+  - image: /marketing/img/vjjp_banner.png
+    url: "#"
 game:
   game_icons_title: Classic slots
   all_games_title: See all games
