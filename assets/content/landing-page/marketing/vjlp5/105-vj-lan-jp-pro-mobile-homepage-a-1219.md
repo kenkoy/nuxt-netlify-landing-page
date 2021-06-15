@@ -21,7 +21,7 @@ promo_banner:
   promo_banner_position: center
   second_title: " "
   promo_banner_font_size: medium-text
-  desktop_full: true
+  desktop_full: false
   promo_login_button_redirect_url: https://verajohn.com/#join
   promo_join_button_redirect_url: https://verajohn.com/#join
   promo_join_button: 今すぐプレイ
