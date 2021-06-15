@@ -15,7 +15,9 @@
           <div class="container separator-top separator-bottom">
             <div class="row column-2 negate-gutter">
               <div v-if="mdData.game.gameIconsTitle" class="left-align">
-                <p class="emphasize">{{ mdData.game.gameIconsTitle }}</p>
+                <p class="emphasize">
+                  {{ mdData.game.gameIconsTitle }}
+                </p>
               </div>
               <div v-if="mdData.game.allGamesTitle && mdData.game.allGamesRedirectUrl" class="right-align">
                 <a class="n-link" :href="mdData.game.allGamesRedirectUrl">
@@ -39,7 +41,9 @@
           <div class="container">
             <div class="row negate-gutter">
               <div v-if="mdData.lobbyTiles.lobbyTilesTitle" class="left-align">
-                <p class="emphasize">{{ mdData.lobbyTiles.lobbyTilesTitle }}</p>
+                <p class="emphasize">
+                  {{ mdData.lobbyTiles.lobbyTilesTitle }}
+                </p>
               </div>
             </div>
             <div class="row game-menu negate-gutter">
