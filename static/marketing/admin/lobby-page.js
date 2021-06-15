@@ -16,11 +16,11 @@ export const LOBBY_PREVIEW = createClass({
     const banners = widgetsFor('banner')
 
     const gameList = widgetsFor('game').getIn(['data', 'game_list'])
-    const gameListCategory = widgetsFor('game').getIn(['data', 'game_category'])
-    const gameListViewAll = widgetsFor('game').getIn(['data', 'view_all'])
+    const gameListCategory = widgetsFor('game').getIn(['data', 'game_icons_title'])
+    const gameListViewAll = widgetsFor('game').getIn(['data', 'all_games_title'])
 
     const lobbyTiles = widgetsFor('lobby_tiles').getIn(['data', 'lobby_list'])
-    const lobbyCategory = widgetsFor('lobby_tiles').getIn(['data', 'lobby_title'])
+    const lobbyCategory = widgetsFor('lobby_tiles').getIn(['data', 'lobby_tiles_title'])
     const body = widgetFor('body')
 
     return (html`
@@ -129,7 +129,7 @@ export const LOBBY_PREVIEW = createClass({
                       <a href='${list.link}'>
                         <div>
                           <div class="pod-content">
-                            <h3 class="emphasize">${list.text}</h3>
+                            <h3 class="emphasize">${list.title}</h3>
                             <img class="pod-feat-img" src='${list.image}' />
                           </div>
                         </div>

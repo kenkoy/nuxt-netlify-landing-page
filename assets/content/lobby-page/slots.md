@@ -23,8 +23,9 @@ banner:
   - image: /marketing/img/hd-pachinko-v1-banner-2-d.png
     url: "#"
 game:
-  game_category: Classic slots
-  view_all: See all games
+  game_icons_title: Classic slots
+  all_games_title: See all games
+  all_games_redirect_url: https://www.google.com/
   game_list:
     - is_hot: true
       title: Dreams of Gold
@@ -51,15 +52,15 @@ game:
       image: /marketing/img/img6.png
       url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
 lobby_tiles:
-  lobby_title: More games
+  lobby_tiles_title: More games
   lobby_list:
-    - text: ライブカジノ
+    - title: ライブカジノ
       image: /marketing/img/dice-icon-transparent.png
       link: https://www.google.com/
-    - text: トーナメント
+    - title: トーナメント
       image: /marketing/img/trophy-icon-transparent.png
       link: https://www.google.com/
-    - text: すべてのテーブルゲーム
+    - title: すべてのテーブルゲーム
       image: /marketing/img/card-icon-transparent.png
       link: https://www.google.com/
 ---

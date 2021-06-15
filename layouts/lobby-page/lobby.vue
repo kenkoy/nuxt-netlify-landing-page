@@ -14,11 +14,13 @@
         <section id="games">
           <div class="container separator-top separator-bottom">
             <div class="row column-2 negate-gutter">
-              <div v-if="mdData.game.gameCategory" class="left-align">
-                <p class="emphasize">{{ mdData.game.gameCategory }}</p>
+              <div v-if="mdData.game.gameIconsTitle" class="left-align">
+                <p class="emphasize">{{ mdData.game.gameIconsTitle }}</p>
               </div>
-              <div v-if="mdData.game.viewAll" class="right-align">
-                <p class="view-all">{{ mdData.game.viewAll }}</p>
+              <div v-if="mdData.game.allGamesTitle && mdData.game.allGamesRedirectUrl" class="right-align">
+                <a class="n-link" :href="mdData.game.allGamesRedirectUrl">
+                  <p class="view-all">{{ mdData.game.allGamesTitle }}</p>
+                </a>
               </div>
             </div>
             <div class="row">
@@ -36,8 +38,8 @@
         <section id="lobby-tiles">
           <div class="container">
             <div class="row negate-gutter">
-              <div v-if="mdData.lobbyTiles.lobbyTitle" class="left-align">
-                <p class="emphasize">{{ mdData.lobbyTiles.lobbyTitle }}</p>
+              <div v-if="mdData.lobbyTiles.lobbyTilesTitle" class="left-align">
+                <p class="emphasize">{{ mdData.lobbyTiles.lobbyTilesTitle }}</p>
               </div>
             </div>
             <div class="row game-menu negate-gutter">
@@ -46,7 +48,7 @@
                   <div>
                     <div class="pod-content">
                       <h3 class="emphasize">
-                        {{ tile.text }}
+                        {{ tile.title }}
                       </h3>
                       <img class="pod-feat-img" :src="tile.image" alt="alt img">
                     </div>
