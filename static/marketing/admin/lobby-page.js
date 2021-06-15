@@ -19,11 +19,11 @@ export const LOBBY_PREVIEW = createClass({
     const banners = widgetsFor('banner')
 
     const gameList = widgetsFor('game').getIn(['data', 'game_list'])
-    const gameListCategory = widgetsFor('game').getIn(['data', 'game_icons_title'])
-    const gameListViewAll = widgetsFor('game').getIn(['data', 'all_games_title'])
+    const gameListCategory = widgetsFor('game').getIn(['data', 'game_icons_title']) || []
+    const gameListViewAll = widgetsFor('game').getIn(['data', 'all_games_title']) || []
 
-    const lobbyTiles = widgetsFor('lobby_tiles').getIn(['data', 'lobby_list'])
-    const lobbyCategory = widgetsFor('lobby_tiles').getIn(['data', 'lobby_tiles_title'])
+    const lobbyTiles = widgetsFor('lobby_tiles').getIn(['data', 'lobby_list']) || []
+    const lobbyCategory = widgetsFor('lobby_tiles').getIn(['data', 'lobby_tiles_title']) || []
     const body = widgetFor('body')
 
     return (html`
