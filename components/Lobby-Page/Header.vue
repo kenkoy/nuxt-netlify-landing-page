@@ -12,7 +12,9 @@
 
     <div id="header-button">
       <button class="cta_button login n-button--secondary">
-        JOIN NOW
+        <a class="btn-register" :href="headerData.joinButtonRedirectUrl">
+          {{ headerData.joinButton }}
+        </a>
       </button>
     </div>
   </header>
@@ -20,6 +22,11 @@
 
 <script>
 export default {
-
+  props: {
+    headerData: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>

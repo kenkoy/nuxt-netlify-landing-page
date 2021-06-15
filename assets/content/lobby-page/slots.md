@@ -19,13 +19,15 @@ seo:
       hreflang: x-default
     - href: https://www.verajohn.com/ja/slots
       hreflang: ja-jp
+join_button: Join Now
+join_button_redirect_url: "#"
 banner:
   - image: /marketing/img/hd-pachinko-v1-banner-2-d.png
     url: "#"
 game:
   game_icons_title: Classic slots
   all_games_title: See all games
-  all_games_redirect_url: https://www.google.com/
+  all_games_redirect_url: "#"
   game_list:
     - is_hot: true
       title: Dreams of Gold
@@ -56,13 +58,13 @@ lobby_tiles:
   lobby_list:
     - title: ライブカジノ
       image: /marketing/img/dice-icon-transparent.png
-      link: https://www.google.com/
+      link: "#"
     - title: トーナメント
       image: /marketing/img/trophy-icon-transparent.png
-      link: https://www.google.com/
+      link: "#"
     - title: すべてのテーブルゲーム
       image: /marketing/img/card-icon-transparent.png
-      link: https://www.google.com/
+      link: "#"
 ---
 <h1 class="n-header-1">ベラジョンオンラインカジノのオンラインビデオスロット</h1>
 

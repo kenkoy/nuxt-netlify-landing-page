@@ -8,7 +8,7 @@
       <SideMenu v-if="menuToggle" @page-slide-off="pageSlideOff" />
 
       <main :class="pageSlide">
-        <Header />
+        <Header :header-data="mdData" />
         <!-- Main content -->
         <BannerSlider v-if="mdData.banner && mdData.banner.length > 0" :banner-data="mdData.banner" />
         <section id="games">

@@ -13,6 +13,9 @@ export const LOBBY_PREVIEW = createClass({
   },
   render () {
     const { widgetsFor, widgetFor } = this.props
+    const joinButton = widgetsFor('join_button').getIn(['data'])
+    const joinButtonUrl = widgetsFor('join_button_redirect_url').getIn(['data'])
+
     const banners = widgetsFor('banner')
 
     const gameList = widgetsFor('game').getIn(['data', 'game_list'])
@@ -65,7 +68,9 @@ export const LOBBY_PREVIEW = createClass({
               </div>
               <div id="header-button">
                 <button class="cta_button cta_important login">
-                  今すぐ登録しよう!
+                  <a href='${joinButtonUrl}'>
+                    ${joinButton}
+                  </a>
                 </button>
               </div>
             </header>
