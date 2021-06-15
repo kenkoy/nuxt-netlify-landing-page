@@ -20,7 +20,7 @@ promo_banner:
   mobile_full: false
   promo_main_heading: 総額$500
   promo_smallterm_text_link: 利用規約
-  desktop_full: false
+  desktop_full: true
   promo_login_button_redirect_url: https://intercasino.com/#signin
   promo_login_button_text: ログイン
   promo_subtitle_1: 新規プレイヤー特典!
