@@ -961,6 +961,16 @@ collections:
                   widget: image,
                   required: false,
                 }
+          - label: "Desktop banner size cover"
+            name: "desktop_full"
+            default: false
+            required: false
+            widget: "boolean"
+          - label: "Mobile banner size cover"
+            name: "mobile_full"
+            default: false
+            required: false
+            widget: "boolean"
       - label: "Promotion Steps"
         name: "promo_steps"
         widget: "object"
