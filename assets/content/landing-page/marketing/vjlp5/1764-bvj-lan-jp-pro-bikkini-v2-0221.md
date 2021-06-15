@@ -7,7 +7,7 @@ field_ids:
   gtm_container_id: GTM-MFD3NKM
   ga_tracking_id: UA-142143961-1
   go_container_id: OPT-PHSNXP6
-variation: variation2
+variation: variation1
 steps_gameslider: steps
 promo_banner:
   promo_title: 1764-bvj-lan-jp-pro-bikkini-v2-0221
@@ -17,6 +17,7 @@ promo_banner:
     promo_bg_banner: /marketing/img/vjlp5-banner.jpg
   first_title: 最大$1000
   mobile_full: true
+  promo_banner_position: left
   second_title: ビギナーズボーナス
   promo_banner_font_size: medium-text
   desktop_full: true
