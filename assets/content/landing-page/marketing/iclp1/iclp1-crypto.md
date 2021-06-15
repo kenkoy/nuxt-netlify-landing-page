@@ -17,7 +17,7 @@ promo_banner:
   promo_signup_button: 今すぐ登録
   promo_smallterm_text: に同意します。
   promo_title_animate: false
-  mobile_full: true
+  mobile_full: false
   promo_main_heading: 総額$500
   promo_smallterm_text_link: 利用規約
   desktop_full: false
