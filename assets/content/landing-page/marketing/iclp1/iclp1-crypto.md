@@ -17,6 +17,7 @@ promo_banner:
   promo_signup_button: 今すぐ登録
   promo_smallterm_text: に同意します。
   promo_title_animate: false
+  desktop_full: true
   promo_main_heading: 総額$500
   promo_smallterm_text_link: 利用規約
   promo_login_button_redirect_url: https://intercasino.com/#signin
