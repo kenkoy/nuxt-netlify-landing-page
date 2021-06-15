@@ -50,18 +50,23 @@ export const LOBBY_PREVIEW = createClass({
 
             <section id="banner-slider">
               <div class="container">
-                ${banners.filter(sect => !!sect)
-                  .filter(sect => typeof sect.getIn(['data']) !== 'undefined')
-                  .map(sect =>
-                  html`
-                  <div class="slider">
-                    <a href='${sect.getIn(['data', 'url'])}'>
-                      <img src='${sect.getIn(['data', 'image'])}' />
-                      <p>${sect.getIn(['data', 'title'])}</p>
-                    </a>
-                  </div>
-                  `
-                )}
+                <div class="carousel" aria-label="Gallery">
+                  <ol class="carousel__viewport">
+                    ${banners.filter(sect => !!sect)
+                      .filter(sect => typeof sect.getIn(['data']) !== 'undefined')
+                      .map(sect =>
+                      html`
+                      <li tabindex="0" class="carousel__slide">
+                        <a href='${sect.getIn(['data', 'url'])}'>
+                          <img src='${sect.getIn(['data', 'image'])}' />
+                          <p>${sect.getIn(['data', 'title'])}</p>
+                        </a>
+                        <div class="carousel__snapper"></div>
+                      </li>
+                      `
+                    )}
+                  </ol>
+                </div>
               </div>
             </section>
 
