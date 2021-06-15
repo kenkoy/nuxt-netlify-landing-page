@@ -8,7 +8,7 @@
       <section id="hero" :style="cssBackground">
         <div class="container">
           <div class="row">
-            <div class="loginbtn">
+            <div class="loginbtn btn-login">
               <a rel="noopener" :href="mdData.promo_banner.promo_signup_button_redirect_url">
                 <i class="material-icons">exit_to_app</i>
                 <p class="login-text">{{ mdData.promo_banner.promo_login_button_text }}</p>
@@ -19,7 +19,7 @@
               <h2>{{ mdData.promo_banner.promo_subtitle_1 }}</h2>
               <h1>{{ mdData.promo_banner.promo_main_heading }}</h1>
               <h2>{{ mdData.promo_banner.promo_subtitle_2 }}</h2>
-              <button onclick="location.href='#'" type="button">
+              <button class="btn-login" onclick="location.href='#'" type="button">
                 <a rel="noopener" :href="mdData.promo_banner.promo_login_button_redirect_url">{{ mdData.promo_banner.promo_signup_button }}</a>
               </button>
               <p>
@@ -101,7 +101,9 @@ export default {
   data () {
     return {
       mdData: {},
-      htmlBody: ''
+      htmlBody: '',
+      desktopWidthBanner: false,
+      mobileWidthBanner: false
     }
   },
   computed: {
@@ -110,18 +112,30 @@ export default {
       return {
         '--bg-image': `url('${images.promo_bg_desktop}')`,
         '--bg-image-m': `url('${images.promo_bg_mobile}')`,
-        '--bg-banner': `url('${images.promo_bg_banner}')`
+        '--bg-banner': `url('${images.promo_bg_banner}')`,
+        '--desktop-width-banner': this.desktopWidthBanner ? 'cover' : 'contain',
+        '--mobile-width-banner': this.mobileWidthBanner ? 'cover' : 'contain'
       }
     }
   },
   created () {
     this.$root.$once('iclp1-data', (data) => {
       this.htmlBody = data.htmlData
-      this.mdData = data.yamlData
+      this.mdData = this.getMDContent(data.yamlData)
     })
   },
   beforeDestroy () {
     this.$root.$off('iclp1-data')
+  },
+  methods: {
+    getMDContent (emitData) {
+      const mdData = emitData
+
+      this.desktopWidthBanner = mdData.promo_banner.desktop_full
+      this.mobileWidthBanner = mdData.promo_banner.mobile_full
+
+      return mdData
+    }
   }
 }
 </script>
