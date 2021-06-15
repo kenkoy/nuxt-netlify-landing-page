@@ -104,7 +104,7 @@ export const LOBBY_PREVIEW = createClass({
                     <p class="emphasize">${lobbyCategory}</p>
                   </div>
                 </div>
-                <div class="row column-4 game-menu negate-gutter">
+                <div class="row game-menu negate-gutter">
                   ${lobbyTiles.filter(sect => !!sect).map((sect) => {
                     const list = sect.toJS()
                     return html`
