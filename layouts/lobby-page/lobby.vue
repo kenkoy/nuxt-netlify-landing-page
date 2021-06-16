@@ -1,5 +1,5 @@
 <template>
-  <div class="layout-css" :class="{ 'lobby-pages-wrapper' : true }">
+  <div class="layout-css" :class="{ 'lobby-page-wrapper' : true }">
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
@@ -9,7 +9,7 @@
       <SideMenu v-if="menuToggle" @page-slide-off="pageSlideOff" />
 
       <main :class="pageSlide">
-        <Header :header-data="mdData" />
+        <Header :brand="mdData.brand" />
         <!-- Main content -->
         <BannerSlider v-if="mdData.banner && mdData.banner.length > 0" :banner-data="mdData.banner" />
         <section id="games">
@@ -65,16 +65,16 @@
         </section>
 
         <section id="cta">
-          <!-- <img src="@/assets/images/lobby-pages/footer-verajohn.png" alt="alt img"> -->
+          <img v-if="mdData.brand === 'verajohn'" src="@/assets/images/lobby-page/verajohn/footer-verajohn.png" alt="alt img">
           <div class="footer-item">
             <a class="n-link" href="/ja/help">
-              <img src="@/assets/images/lobby-pages/help-icon.png" alt="alt img">
+              <img src="@/assets/images/lobby-page/verajohn/help-icon.png" alt="alt img">
               <span class="n-paragraph">ヘルプ・センター</span>
             </a>
           </div>
           <div class="footer-item">
             <a class="n-link" href="/ja/about/beginnersguidemb">
-              <img src="@/assets/images/lobby-pages/beginner-guide-icon.png" alt="alt img">
+              <img src="@/assets/images/lobby-page/verajohn/beginner-guide-icon.png" alt="alt img">
               <span class="n-paragraph">ビギナーズガイド</span>
             </a>
           </div>
@@ -98,13 +98,12 @@
               </div>
               <div class="row">
                 <div>
-                  <img src="@/assets/images/lobby-pages/visa-icon.png" alt="alt img">
-                  <img src="@/assets/images/lobby-pages/master-icon.png" alt="alt img">
-                  <img src="@/assets/images/lobby-pages/venus-point-icon.png" alt="alt img">
-                  <img src="@/assets/images/lobby-pages/bitcoin-icon.png" alt="alt img">
-                  <img src="@/assets/images/lobby-pages/playsafe-icon.png" alt="alt img">
-                  <img src="@/assets/images/lobby-pages/eco-icon.png" alt="alt img">
-                  <img src="@/assets/images/lobby-pages/i-wallet-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-page/verajohn/master-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-page/verajohn/venus-point-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-page/verajohn/bitcoin-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-page/verajohn/playsafe-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-page/verajohn/eco-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-page/verajohn/i-wallet-icon.png" alt="alt img">
                 </div>
               </div>
             </div>
@@ -117,7 +116,7 @@
               </div>
               <div class="row">
                 <div>
-                  <img src="@/assets/images/lobby-pages/e-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-page/verajohn/e-icon.png" alt="alt img">
                 </div>
               </div>
             </div>
@@ -125,8 +124,8 @@
             <div id="footer-logo">
               <div class="row">
                 <div>
-                  <img src="@/assets/images/lobby-pages/CEG_logo.png" alt="alt img">
-                  <img src="@/assets/images/lobby-pages/20+.svg" alt="alt img">
+                  <img src="@/assets/images/lobby-page/CEG_logo.png" alt="alt img">
+                  <img src="@/assets/images/lobby-page/20+.svg" alt="alt img">
                 </div>
                 <div>
                   <span class="footer-text">当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。<br>
@@ -136,7 +135,7 @@
             </div>
           </div>
           <div class="container">
-            <a class="n-link" href="https://www.play-wise.com/verajohn-jp/">ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。</a>
+            <a class="n-link" :href="'https://www.play-wise.com/'+ mdData.brand +'-jp/'">ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。</a>
           </div>
         </footer>
       </main>
@@ -173,7 +172,7 @@ export default {
     this.$root.$once('lobby-page-data', (data) => {
       if (Object.keys(data).length > 0) {
         this.mdData = data
-        switch (data.brand) {
+        switch (this.mdData.brand) {
           case 'verajohn': this.theme = 'vj-theme'; break
           case 'intercasino': this.theme = 'ic-theme'; break
         }
@@ -187,7 +186,7 @@ export default {
 </script>
 
 <style lang="scss">
-  .lobby-pages-wrapper {
+  .lobby-page-wrapper {
     @import '@/assets/sass/lobby-page/style.scss';
   }
 </style>

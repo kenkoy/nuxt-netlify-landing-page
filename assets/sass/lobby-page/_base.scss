@@ -107,7 +107,7 @@ main{
       position: absolute;
       top: 0;
       left: 0;
-      background: url('../../assets/images/lobby-pages/hot-icon.png') no-repeat;
+      background: $HOT_ICON no-repeat;
       background-size: contain;
       width: 30px;
       height: 30px;

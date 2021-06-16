@@ -2,12 +2,12 @@
   <header id="header-menu">
     <div id="header-home">
       <a href="#">
-        <img src="@/assets/images/lobby-pages/home-icon.png">
+        <img :src="require(`@/assets/images/lobby-page/${brand}/home-icon.png`)" alt="alt img">
       </a>
     </div>
 
     <div id="header-logo">
-      <img class="logo" src="@/assets/images/lobby-pages/logo.png" alt="alt img">
+      <img class="logo" :src="require(`@/assets/images/lobby-page/${brand}/logo.png`)" alt="alt img">
     </div>
 
     <div id="header-button">
@@ -23,7 +23,7 @@
 <script>
 export default {
   props: {
-    headerData: {
+    brand: {
       type: String,
       required: true
     }
