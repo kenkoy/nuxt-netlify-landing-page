@@ -12,8 +12,8 @@
 
     <div id="header-button">
       <button class="cta_button login n-button--secondary">
-        <a class="btn-register" :href="headerData.joinButtonRedirectUrl">
-          {{ headerData.joinButton }}
+        <a class="btn-register" href="#">
+          Join Now
         </a>
       </button>
     </div>

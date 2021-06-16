@@ -19,8 +19,6 @@ seo:
       hreflang: x-default
     - href: https://www.verajohn.com/ja/slots
       hreflang: ja-jp
-join_button: Join Now
-join_button_redirect_url: "#"
 banner:
   - image: /marketing/img/hd-pachinko-v1-banner-2-d.png
     url: "#"

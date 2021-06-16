@@ -41,8 +41,8 @@ export const LOBBY_PREVIEW = createClass({
               </div>
               <div id="header-button">
                 <button class="cta_button login n-button--secondary">
-                  <a href='${joinButtonUrl}'>
-                    ${joinButton}
+                  <a href='#'>
+                    Join Now
                   </a>
                 </button>
               </div>
