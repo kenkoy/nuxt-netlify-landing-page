@@ -6,9 +6,9 @@
 
 export default {
   layout: 'lobby-page/lobby',
-  async asyncData ({ params, error, app }) {
+  async asyncData ({ params: { brand, game }, error, app }) {
     try {
-      const data = await import('~/assets/content/lobby-page/' + params.slug + '.md')
+      const data = await import('~/assets/content/lobby-page/' + brand + '/' + game + '.md')
       return {
         markDownData: app.$toCamelCase(JSON.parse(JSON.stringify(data)))
       }
