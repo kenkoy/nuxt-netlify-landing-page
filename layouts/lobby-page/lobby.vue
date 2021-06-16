@@ -1,5 +1,5 @@
 <template>
-  <div class="layout-css" :class="{ lobby_pages_wrapper: true }">
+  <div class="layout-css" :class="{ 'lobby-pages-wrapper' : true }">
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
@@ -160,6 +160,11 @@ export default {
       mdData: {}
     }
   },
+  // head () {
+  //   return {
+  //     link: [{ rel: 'stylesheet', href: '/styles/externalBrandCss/verajohn_jp_main.min.css' }]
+  //   }
+  // },
   created () {
     this.$root.$once('lobby-page-data', (data) => {
       if (Object.keys(data).length > 0) {
@@ -174,7 +179,7 @@ export default {
 </script>
 
 <style lang="scss">
-  .lobby_pages_wrapper {
+  .lobby-pages-wrapper {
     @import '@/assets/sass/lobby-page/style.scss';
   }
 </style>
