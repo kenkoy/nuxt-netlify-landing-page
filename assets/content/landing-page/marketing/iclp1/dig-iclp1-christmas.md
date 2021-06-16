@@ -20,11 +20,12 @@ promo_banner:
   promo_title_animate: true
   promo_main_heading: 総額$500
   promo_smallterm_text_link: 利用規約
-  desktop_full: false
   promo_login_button_redirect_url: https://intercasino.com/#signin
   promo_login_button_text: ログイン
   promo_subtitle_1: 新規プレイヤー特典!
   promo_subtitle_2: ウェルカムキャッシュ
+  desktop_full: true
+  mobile_full: true
 promo_steps:
   promo_step_1_title: 登録
   promo_step_1_desc: 簡単登録でお試しプレイ&amp;無料$10ボーナス獲得!
