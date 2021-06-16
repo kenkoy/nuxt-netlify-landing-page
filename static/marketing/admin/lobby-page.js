@@ -13,8 +13,6 @@ export const LOBBY_PREVIEW = createClass({
   },
   render () {
     const { widgetsFor, widgetFor } = this.props
-    const joinButton = widgetsFor('join_button').getIn(['data'])
-    const joinButtonUrl = widgetsFor('join_button_redirect_url').getIn(['data'])
 
     const banners = widgetsFor('banner')
 
