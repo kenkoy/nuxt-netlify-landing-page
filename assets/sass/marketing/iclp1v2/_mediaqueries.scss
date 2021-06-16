@@ -15,7 +15,7 @@
   }
   #hero {
     background: var(--bg-image-m) no-repeat top;
-    background-size: cover;
+    background-size: var(--mobile-width-banner);
     padding: 20px;
     .loginbtn {
       position: absolute;
@@ -132,7 +132,7 @@
   }
   #hero {
     background: var(--bg-image) no-repeat top;
-    background-size: cover;
+    background-size: var(--desktop-width-banner);
   }
 }
 

@@ -35,7 +35,7 @@
 
 #strip-container {
   background: var(--bg-image) no-repeat top center;
-  background-size: cover;
+  background-size: var(--desktop-width-banner);
 }
 
 @media only screen and (max-width: 991px) {
@@ -45,7 +45,7 @@
 @media only screen and (max-width: 575px) {
   #strip-container {
     background: var(--bg-image-m) no-repeat top center;
-    background-size: cover;
+    background-size: var(--mobile-width-banner);
   }
 }
 
