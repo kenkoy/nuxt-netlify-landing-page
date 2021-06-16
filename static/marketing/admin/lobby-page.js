@@ -70,7 +70,7 @@ export const LOBBY_PREVIEW = createClass({
 
             <section id="games">
               <div class="container separator-top separator-bottom">
-                <div class="row column-2 negate-gutter">
+                <div class="row negate-gutter">
                   <div class="left-align">
                     <p class="emphasize">${gameListCategory}</p>
                   </div>

@@ -13,7 +13,7 @@
         <BannerSlider v-if="mdData.banner && mdData.banner.length > 0" :banner-data="mdData.banner" />
         <section id="games">
           <div class="container separator-top separator-bottom">
-            <div class="row column-2 negate-gutter">
+            <div class="row negate-gutter">
               <div v-if="mdData.game.gameIconsTitle" class="left-align">
                 <p class="emphasize">
                   {{ mdData.game.gameIconsTitle }}
