@@ -3,7 +3,8 @@
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
-      class="lobby-page-main vj-theme"
+      class="lobby-page-main"
+      :class="theme"
     >
       <SideMenu v-if="menuToggle" @page-slide-off="pageSlideOff" />
 
@@ -64,7 +65,7 @@
         </section>
 
         <section id="cta">
-          <img src="@/assets/images/lobby-pages/footer-verajohn.png" alt="alt img">
+          <!-- <img src="@/assets/images/lobby-pages/footer-verajohn.png" alt="alt img"> -->
           <div class="footer-item">
             <a class="n-link" href="/ja/help">
               <img src="@/assets/images/lobby-pages/help-icon.png" alt="alt img">
@@ -157,18 +158,25 @@ export default {
   },
   data () {
     return {
-      mdData: {}
+      mdData: {},
+      theme: ''
     }
   },
-  // head () {
-  //   return {
-  //     link: [{ rel: 'stylesheet', href: '/styles/externalBrandCss/verajohn_jp_main.min.css' }]
-  //   }
-  // },
+  head () {
+    return {
+      link: [
+        { hid: 'style', rel: 'stylesheet', href: '/styles/externalBrandCss/' + this.mdData.brand + '_jp_main.min.css' }
+      ]
+    }
+  },
   created () {
     this.$root.$once('lobby-page-data', (data) => {
       if (Object.keys(data).length > 0) {
         this.mdData = data
+        switch (data.brand) {
+          case 'verajohn': this.theme = 'vj-theme'; break
+          case 'intercasino': this.theme = 'ic-theme'; break
+        }
       }
     })
   },

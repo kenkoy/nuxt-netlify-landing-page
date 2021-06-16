@@ -10,7 +10,8 @@ export default {
     try {
       const data = await import('~/assets/content/lobby-page/' + brand + '/' + game + '.md')
       return {
-        markDownData: app.$toCamelCase(JSON.parse(JSON.stringify(data)))
+        markDownData: app.$toCamelCase(JSON.parse(JSON.stringify(data))),
+        brand
       }
     } catch (e) {
       error(e)
@@ -30,13 +31,14 @@ export default {
     }
   },
   mounted () {
-    this.emitData(this.markDownData)
+    this.emitData(this.markDownData, this.brand)
   },
   methods: {
-    emitData (data) {
+    emitData ({ attributes, html }, brand) {
       this.$root.$emit('lobby-page-data', {
-        ...data.attributes,
-        content: data.html
+        ...attributes,
+        content: html,
+        brand
       })
     }
   }
