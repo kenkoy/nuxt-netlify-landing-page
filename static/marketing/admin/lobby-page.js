@@ -85,7 +85,11 @@ export const LOBBY_PREVIEW = createClass({
                     return html`
                     <div>
                       <a class="n-link" href='${list.url}'>
-                        ${list.is_hot === true ?  html `<i class="hot-icon" />` : ''}
+                        ${list.is_hot === true ?  html `
+                          <i class="hot-icon">
+                            <img width='100%' src="/marketing/img/lobby-pages/hot-icon.png"/>
+                          </i>
+                        ` : ''}
                         <img src='${list.image}' />
                         <p>${list.title}</p>
                       </a>
