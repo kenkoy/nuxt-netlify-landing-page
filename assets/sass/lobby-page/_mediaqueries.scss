@@ -7,7 +7,7 @@
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
   }
-  #games .column-2{
+  #games .row:first-child{
     flex-wrap: nowrap;
       > div{
       -ms-flex: 0 0 50%;

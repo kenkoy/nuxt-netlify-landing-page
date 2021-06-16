@@ -400,15 +400,15 @@ body.noScroll {
 .lobby_pages_wrapper .vj-theme .close-icon {
   background-position: -78px -42px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 280px) {
 .lobby_pages_wrapper .vj-theme #header-menu > div {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
 }
-.lobby_pages_wrapper .vj-theme #games .column-2 {
+.lobby_pages_wrapper .vj-theme #games .row:first-child {
     flex-wrap: nowrap;
 }
-.lobby_pages_wrapper .vj-theme #games .column-2 > div {
+.lobby_pages_wrapper .vj-theme #games .row:first-child > div {
     flex: 0 0 50%;
     max-width: 50%;
 }
@@ -826,15 +826,15 @@ body.noScroll {
 .lobby_pages_wrapper .ic-theme .close-icon {
   background-position: -78px -42px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 280px) {
 .lobby_pages_wrapper .ic-theme #header-menu > div {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
 }
-.lobby_pages_wrapper .ic-theme #games .column-2 {
+.lobby_pages_wrapper .ic-theme #games .row:first-child {
     flex-wrap: nowrap;
 }
-.lobby_pages_wrapper .ic-theme #games .column-2 > div {
+.lobby_pages_wrapper .ic-theme #games .row:first-child > div {
     flex: 0 0 50%;
     max-width: 50%;
 }
