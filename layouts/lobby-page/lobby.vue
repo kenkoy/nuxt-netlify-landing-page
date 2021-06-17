@@ -97,13 +97,11 @@
               </div>
               <div class="row">
                 <div>
+                  <img src="@/assets/images/lobby-pages/s-icon.png" alt="alt img">
                   <img src="@/assets/images/lobby-pages/visa-icon.png" alt="alt img">
-                  <img src="@/assets/images/lobby-pages/master-icon.png" alt="alt img">
-                  <img src="@/assets/images/lobby-pages/venus-point-icon.png" alt="alt img">
-                  <img src="@/assets/images/lobby-pages/bitcoin-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/ecopayz-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/neteller-icon.png" alt="alt img">
                   <img src="@/assets/images/lobby-pages/playsafe-icon.png" alt="alt img">
-                  <img src="@/assets/images/lobby-pages/eco-icon.png" alt="alt img">
-                  <img src="@/assets/images/lobby-pages/i-wallet-icon.png" alt="alt img">
                 </div>
               </div>
             </div>
@@ -116,7 +114,18 @@
               </div>
               <div class="row">
                 <div>
-                  <img src="@/assets/images/lobby-pages/e-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/plaingaming-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/netent-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/igt-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/microgaming-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/playgo-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/betsoft-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/ggdrasil-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/t-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/gs-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/leander-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/evolutiongaming-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/quickspin-icon.png" alt="alt img">
                 </div>
               </div>
             </div>
@@ -124,8 +133,11 @@
             <div id="footer-logo">
               <div class="row">
                 <div>
-                  <img src="@/assets/images/lobby-pages/CEG_logo.png" alt="alt img">
-                  <img src="@/assets/images/lobby-pages/20+.svg" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/mga-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/lock-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/18-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/gamcare-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/hands-icon.png" alt="alt img">
                 </div>
                 <div>
                   <span class="footer-text">当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。<br>

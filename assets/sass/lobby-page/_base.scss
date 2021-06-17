@@ -234,24 +234,14 @@ main{
     vertical-align: middle;
   }
 
-  #footer-payment-provider{
+  #footer-payment-provider,
+  #footer-providers,
+  #footer-logo{
     img{
       width: auto;
       max-height: 23px;
     }
   }
-  #footer-providers{
-    img{
-      max-width: 20px;
-    }
-  }
-
-  #footer-logo{
-    img{
-      max-width: 50px;
-    }
-  }
-
 
   p{
     margin: 0;
