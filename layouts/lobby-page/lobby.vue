@@ -98,7 +98,6 @@
               <div class="row">
                 <div>
                   <img src="@/assets/images/lobby-pages/s-icon.png" alt="alt img">
-                  <img src="@/assets/images/lobby-pages/visa-icon.png" alt="alt img">
                   <img src="@/assets/images/lobby-pages/ecopayz-icon.png" alt="alt img">
                   <img src="@/assets/images/lobby-pages/neteller-icon.png" alt="alt img">
                   <img src="@/assets/images/lobby-pages/playsafe-icon.png" alt="alt img">
@@ -135,7 +134,7 @@
                 <div>
                   <img src="@/assets/images/lobby-pages/mga-icon.png" alt="alt img">
                   <img src="@/assets/images/lobby-pages/lock-icon.png" alt="alt img">
-                  <img src="@/assets/images/lobby-pages/18-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/20+.svg" alt="alt img">
                   <img src="@/assets/images/lobby-pages/gamcare-icon.png" alt="alt img">
                   <img src="@/assets/images/lobby-pages/hands-icon.png" alt="alt img">
                 </div>

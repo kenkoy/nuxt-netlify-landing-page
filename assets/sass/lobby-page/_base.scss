@@ -239,7 +239,8 @@ main{
   #footer-logo{
     img{
       width: auto;
-      max-height: 23px;
+      min-width: 30px;
+      max-height: 30px;
     }
   }
 
