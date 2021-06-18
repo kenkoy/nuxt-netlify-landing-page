@@ -54,7 +54,7 @@ game:
       image: /marketing/img/img6.png
       url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
 lobby_tiles:
-  lobby_tiles_title: More games
+  lobby_tiles_title: ""
   lobby_list: []
 ---
 <h1 class="n-header-1">ベラジョンオンラインカジノのオンラインビデオスロット</h1>
