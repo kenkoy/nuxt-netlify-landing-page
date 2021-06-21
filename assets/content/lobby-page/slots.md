@@ -55,7 +55,19 @@ game:
       url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
 lobby_tiles:
   lobby_tiles_title: ""
-  lobby_list: []
+  lobby_list:
+    - image: /marketing/img/10thbday_game-logo.png
+      title: Blackjack
+      link: https://classic.verajohn.com/blackjack
+    - title: Tablegames
+      image: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-500WC-stamp.png
+      link: https://classic.verajohn.com/tablegames
+    - image: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-red-icon.png
+      link: https://classic.verajohn.com/jackpots
+      title: Jackpots
+    - image: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-black-icon.png
+      title: Slingo
+      link: https://classic.verajohn.com/slingo
 ---
 <h1 class="n-header-1">ベラジョンオンラインカジノのオンラインビデオスロット</h1>
 
