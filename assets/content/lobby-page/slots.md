@@ -25,8 +25,8 @@ banner:
   - image: /marketing/img/vjjp_banner.png
     url: "#"
 game:
-  game_icons_title: Classic slots
-  all_games_title: See all games
+  game_icons_title: ""
+  all_games_title: ""
   all_games_redirect_url: "#"
   game_list:
     - is_hot: true
@@ -54,23 +54,26 @@ game:
       image: /marketing/img/img6.png
       url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
 lobby_tiles:
-  lobby_tiles_title: More games
+  lobby_tiles_title: Lobby Pages
   lobby_list:
-    - title: ライブカジノ
-      image: /marketing/img/dice-icon-transparent.png
-      link: "#"
-    - title: トーナメント
-      image: /marketing/img/trophy-icon-transparent.png
-      link: "#"
-    - title: すべてのテーブルゲーム
-      image: /marketing/img/card-icon-transparent.png
-      link: "#"
+    - image: /marketing/img/10thbday_game-logo.png
+      title: Blackjack
+      link: https://classic.verajohn.com/blackjack
+    - title: Tablegames
+      image: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-500WC-stamp.png
+      link: https://classic.verajohn.com/tablegames
+    - image: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-red-icon.png
+      link: https://classic.verajohn.com/jackpots
+      title: Jackpots
+    - image: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-black-icon.png
+      title: Slingo
+      link: https://classic.verajohn.com/slingo
 ---
 <h1 class="n-header-1">ベラジョンオンラインカジノのオンラインビデオスロット</h1>
 
 <p class="n-paragraph">ベラジョンオンラインカジノでお気に入りのビデオスロットを探してみましょう。</p>
 
-<p class="n-paragraph">ベラジョンオンラインカジノでは、世界屈指のゲーム配信会社が手掛けた、幅広い種類のビデオスロットのプレイが可能です！いつでも公平なゲームをお楽しみいただけます。</p>
+<p class="n-paragraph"s>ベラジョンオンラインカジノでは、世界屈指のゲーム配信会社が手掛けた、幅広い種類のビデオスロットのプレイが可能です！いつでも公平なゲームをお楽しみいただけます。</p>
 
 <h2 class="n-header-2"> ベラジョンでお好みのビデオスロットを検索しましょう</h2>
 
