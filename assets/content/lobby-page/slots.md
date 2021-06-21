@@ -25,8 +25,8 @@ banner:
   - image: /marketing/img/vjjp_banner.png
     url: "#"
 game:
-  game_icons_title: Classic slots
-  all_games_title: See all games
+  game_icons_title: ""
+  all_games_title: ""
   all_games_redirect_url: "#"
   game_list:
     - is_hot: true
@@ -54,7 +54,7 @@ game:
       image: /marketing/img/img6.png
       url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
 lobby_tiles:
-  lobby_tiles_title: ""
+  lobby_tiles_title: Lobby Pages
   lobby_list:
     - image: /marketing/img/10thbday_game-logo.png
       title: Blackjack
