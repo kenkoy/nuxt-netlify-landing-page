@@ -97,6 +97,51 @@
               </div>
               <div class="row">
                 <div>
+                  <img src="@/assets/images/lobby-pages/master-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/venus-point-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/bitcoin-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/playsafe-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/eco-icon.png" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/i-wallet-icon.png" alt="alt img">
+                </div>
+              </div>
+            </div>
+
+            <div id="footer-providers">
+              <div class="row">
+                <p class="footer-title">
+                  ゲーム配信会社
+                </p>
+              </div>
+              <div class="row">
+                <div>
+                  <img src="@/assets/images/lobby-pages/e-icon.png" alt="alt img">
+                </div>
+              </div>
+            </div>
+
+            <div id="footer-logo">
+              <div class="row">
+                <div>
+                  <img src="https://verification.curacao-egaming.com/validate.ashx?domain=verajohn.com" alt="alt img">
+                  <img src="@/assets/images/lobby-pages/20+.svg" alt="alt img">
+                </div>
+                <div>
+                  <span class="footer-text">当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。<br>
+                    Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster Gaming License #1668/JAZに基づくCEG Curaçao Egaming により付与されたサブライセンスを通して、正式に認可されています。</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="container footer-icons">
+            <div id="footer-payment-provider">
+              <div class="row">
+                <p class="footer-title">
+                  入出金方法
+                </p>
+              </div>
+              <div class="row">
+                <div>
                   <img src="@/assets/images/lobby-pages/s-icon.png" alt="alt img">
                   <img src="@/assets/images/lobby-pages/ecopayz-icon.png" alt="alt img">
                   <img src="@/assets/images/lobby-pages/neteller-icon.png" alt="alt img">
@@ -144,7 +189,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="container">
             <a class="n-link" href="https://www.play-wise.com/verajohn-jp/">ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。</a>
           </div>

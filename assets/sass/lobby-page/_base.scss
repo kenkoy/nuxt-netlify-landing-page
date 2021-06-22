@@ -246,12 +246,17 @@ main{
   }
 
   #footer-payment-provider,
-  #footer-providers,
-  #footer-logo{
+  #footer-providers{
     img{
       width: auto;
-      min-width: 30px;
       max-height: 30px;
+    }
+  }
+  #footer-logo{
+    img{
+      width: 100%;
+      max-width: 50px;
+      max-height: 100px;
     }
   }
 
