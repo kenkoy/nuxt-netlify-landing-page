@@ -97,9 +97,18 @@ main{
 #games{
   padding: $PADDING;
   text-align: center;
-  .row {
+
+  .game-list {
     overflow: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+
+    > div{
+      padding: 0;
+    }
   }
+
   .container{
     position: relative;
 
@@ -126,6 +135,7 @@ main{
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      margin: 0 auto;
     }
   }
 }

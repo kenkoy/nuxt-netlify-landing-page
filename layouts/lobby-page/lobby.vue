@@ -25,7 +25,7 @@
                 </a>
               </div>
             </div>
-            <div class="row">
+            <div class="row game-list">
               <div v-for="(game, gameIndex) in mdData.game.gameList" :key="gameIndex">
                 <a class="n-link" :href="game.url">
                   <i v-if="game.isHot" class="hot-icon" />
