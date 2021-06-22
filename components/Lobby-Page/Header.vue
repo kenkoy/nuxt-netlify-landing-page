@@ -2,7 +2,7 @@
   <header id="header-menu">
     <div id="header-home">
       <a href="#">
-        <img src="@/assets/images/lobby-pages/home-icon.png">
+        <img src="@/assets/images/lobby-pages/home-icon.png" alt="alt img">
       </a>
     </div>
 
