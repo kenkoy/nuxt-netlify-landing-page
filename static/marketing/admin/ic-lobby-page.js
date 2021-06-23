@@ -26,7 +26,7 @@ export const IC_LOBBY_PREVIEW = createClass({
 
     return (html`
       <body class="layout-css lobby_pages_wrapper">
-        <div class="lobby-pages-main vj-theme">
+        <div class="lobby-pages-main ic-theme">
           <main>
             <header id="header-menu">
               <div id="header-home">
