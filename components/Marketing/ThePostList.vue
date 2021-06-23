@@ -10,6 +10,7 @@
                 <p>{{ post.attributes.promo_banner.promo_title }}</p>
               </article>
             </nuxt-link>
+            <img class="article-bg" :src="post.attributes.promo_banner.promo_images.promo_bg_desktop"/>
           </div>
         </div>
       </div>
@@ -29,6 +30,17 @@ export default {
 </script>
 
 <style lang="scss">
+  .posts{
+    position: relative;
+    overflow: hidden;
+  }
+  .article-bg{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    // transform: translate(0, -50%);
+  }
   .post_wrapper {
       .vj-post-wrapper{
           background: #009FE3;
