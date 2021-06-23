@@ -1650,7 +1650,7 @@ collections:
     show_preview_links: false
     create: true
     identifier_field: "slug_name"
-    folder: "assets/content/lobby-page"
+    folder: "assets/content/lobby-page/verajohn"
     editor:
       preview: true
     fields:
@@ -1715,8 +1715,6 @@ collections:
       name: "game"
       widget: "object"
       collapsed: true
-      min: 6
-      max: 6
       fields:
         - label: "Game Icons title"
           name: "game_icons_title"
@@ -1728,10 +1726,14 @@ collections:
           required: false
         - label: "All Games Redirect URL"
           name: "all_games_redirect_url"
+          required: false
           widget: "string"
         - label: "Game List"
           name: "game_list"
           widget: "list"
+          min: 6
+          max: 7
+          summary: "{{fields.title}}"
           collapsed: true
           fields:
             - { label: "Title", name: "title", widget: "string" }
@@ -1768,7 +1770,7 @@ collections:
     show_preview_links: false
     create: true
     identifier_field: "slug_name"
-    folder: "assets/content/lobby-page"
+    folder: "assets/content/lobby-page/intercasino"
     editor:
       preview: true
     fields:
@@ -1833,8 +1835,6 @@ collections:
       name: "game"
       widget: "object"
       collapsed: true
-      min: 6
-      max: 6
       fields:
         - label: "Game Icons title"
           name: "game_icons_title"
@@ -1846,10 +1846,14 @@ collections:
           required: false
         - label: "All Games Redirect URL"
           name: "all_games_redirect_url"
+          required: false
           widget: "string"
         - label: "Game List"
           name: "game_list"
           widget: "list"
+          min: 6
+          max: 7
+          summary: "{{fields.title}}"
           collapsed: true
           fields:
             - { label: "Title", name: "title", widget: "string" }
