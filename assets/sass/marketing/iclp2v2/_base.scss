@@ -108,11 +108,11 @@ button {
     }
   }
 
-  .container:first-child img:first-child{
+  > .container:first-child img:first-child{
     max-width: 500px;
     width: 100%;
   }
-  .container:first-child img:first-child + img{
+  > .container:first-child img:first-child + img{
     max-width: 664px;
     width: 100%;
   }

@@ -114,12 +114,12 @@
   margin: 20px auto;
 }
 
-.iclp2_wrapper #detail .container:first-child img:first-child {
+.iclp2_wrapper #detail>.container:first-child img:first-child {
   max-width: 500px;
   width: 100%;
 }
 
-.iclp2_wrapper #detail .container:first-child img:first-child+img {
+.iclp2_wrapper #detail>.container:first-child img:first-child+img {
   max-width: 664px;
   width: 100%;
 }
