@@ -1,0 +1,292 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.layout-css .container,
+.layout-css .container-grid {
+  margin: auto;
+}
+.layout-css .container-grid > .row {
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+.layout-css .row {
+  display: flex;
+  position: relative;
+}
+.layout-css .row > div {
+  flex-grow: 1;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.layout-css button,
+.layout-css a {
+  cursor: pointer;
+  outline: 0;
+}
+@media only screen and (min-width: 320px) {
+  .layout-css .column-2,
+.layout-css .column-3,
+.layout-css .column-4,
+.layout-css .column-5,
+.layout-css .column-6,
+.layout-css .column-7,
+.layout-css .column-8 {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .layout-css .container,
+.layout-css .container-grid {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .layout-css .container,
+.layout-css .container-grid {
+    max-width: 720px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .layout-css .container,
+.layout-css .container-grid {
+    max-width: 960px;
+  }
+  .layout-css .column-2 > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .layout-css .column-5 > div {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .layout-css .column-6 > div {
+    flex: 0 0 16.6666666667%;
+    max-width: 0 0 16.6666666667%;
+  }
+  .layout-css .column-7 > div {
+    flex: 0 0 14.2857142857%;
+    max-width: 0 0 14.2857142857%;
+  }
+  .layout-css .column-8 > div {
+    flex: 0 0 12.5%;
+    max-width: 0 0 12.5%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .layout-css .column-3 > div {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .layout-css .column-4 > div {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .layout-css .container,
+.layout-css .container-grid {
+    max-width: 1140px;
+  }
+}
+.layout-css .intercasino img {
+  filter: grayscale(100%);
+}
+.layout-css .ceg-logo {
+  filter: grayscale(100%);
+}
+.layout-css footer #footer-icon {
+  text-align: center;
+}
+.layout-css footer #footer-icon img {
+  width: 70px;
+}
+.layout-css footer #footer-icon > a {
+  display: inline-block;
+  min-width: 70px;
+  vertical-align: middle;
+  border: none;
+  margin: 0 8px;
+}
+.layout-css footer .second-footer {
+  padding: 25px 30px;
+}
+.layout-css footer p {
+  text-align: center;
+}
+body.noScroll {
+  overflow: hidden;
+}
+.layout-css #nav-desktop {
+  background: #fff;
+}
+.layout-css #nav-desktop #switch {
+  float: right;
+}
+.layout-css #nav-desktop #vj, .layout-css #nav-desktop #ic {
+  background: #e4e4e4;
+  color: #a9a9a9;
+  border-radius: 3px;
+  padding: 5px 10px;
+  border: none;
+  font-weight: 700;
+}
+.layout-css #nav-desktop #vj.active,
+.layout-css #nav-desktop #vj:hover {
+  background: linear-gradient(to bottom, #fb57cc, #de1681);
+  color: #fff;
+}
+.layout-css #nav-desktop #ic.active,
+.layout-css #nav-desktop #ic:hover {
+  background: #FF6200;
+  color: #fff;
+}
+.layout-css #nav-desktop .row {
+  align-items: center;
+}
+.layout-css #nav-desktop .row img {
+  max-width: 150px;
+}
+.layout-css #nav-desktop .row > div:first-child {
+  flex: 0 0 15%;
+  max-width: 15%;
+}
+.layout-css #nav-desktop .row > div:first-child + div {
+  flex: 0 0 85%;
+  max-width: 85%;
+}
+.layout-css #nav-desktop .row .nuxt-link-exact-active {
+  color: #EC0090;
+  border-bottom: solid 5px #EC0090;
+}
+.nav_wrapper {
+  z-index: 1;
+  position: relative;
+}
+.nav_wrapper #logo a {
+  padding: 0;
+}
+.nav_wrapper #logo a.nuxt-link-exact-active.nuxt-link-active {
+  border-bottom: none;
+}
+.nav_wrapper nav a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  margin: 0 5px;
+  color: #243238;
+  font-size: 11px;
+  padding: 30px 10px;
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: solid 5px transparent;
+}
+.layout-css #nav-mobile {
+  background: #fff;
+  padding: 15px 15px 15px 0;
+}
+.layout-css #ham-menu {
+  display: none;
+}
+.layout-css label[for=ham-menu] {
+  display: block;
+  position: relative;
+  margin-left: 15px;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid #e33227;
+  background: #d5261c;
+}
+.layout-css .hide-des {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.layout-css .hide-des span {
+  background: #fff;
+  width: 17px;
+  height: 2px;
+  margin: 2px 0;
+  display: block;
+  transition: all 0.4s ease;
+  transform-origin: 0 0;
+}
+.layout-css .ham-menu {
+  width: 60vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  transform: translate(-110%);
+  z-index: 998;
+  background: #fff;
+  transition: 0.5s;
+  padding-top: 80px;
+}
+.layout-css .ham-menu.vertical {
+  width: 100%;
+  height: auto;
+  transform: translateY(-110%);
+}
+.layout-css .ham-menu ul {
+  list-style: none;
+  padding: 0;
+  background: #e6e6e6;
+  padding: 20px;
+  margin: 0;
+}
+.layout-css .ham-menu ul li {
+  line-height: 45px;
+}
+.layout-css .ham-overlay {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 997;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.layout-css #ham-menu:checked ~ div.ham-overlay {
+  opacity: 0.8;
+  visibility: visible;
+}
+.layout-css #ham-menu:checked ~ div.ham-menu {
+  transform: translate(0);
+  visibility: visible;
+  overflow: scroll;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.layout-css #ham-menu:checked ~ div.ham-menu a {
+  padding: 5px;
+}
+.layout-css #ham-menu:checked + label span {
+  background: #fff;
+}
+.layout-css #ham-menu:checked + label span:nth-child(2) {
+  Transform: scaleX(0);
+}
+.layout-css #ham-menu:checked + label span:nth-child(1) {
+  transform: rotate(45deg) translate(3px, -2px);
+}
+.layout-css #ham-menu:checked + label span:nth-child(3) {
+  transform: rotate(-45deg) translate(2px, 2px);
+}
