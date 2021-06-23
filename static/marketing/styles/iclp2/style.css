@@ -64,7 +64,7 @@
 }
 
 .iclp2_wrapper .separation-star:before {
-  background: url(/_nuxt/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png) no-repeat center right;
+  background: url(../../img/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png) no-repeat center right;
   content: "";
   display: block;
   height: 30px;
@@ -253,7 +253,7 @@
 }
 
 .iclp2_wrapper #history {
-  background: url(/_nuxt/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-history-bg.jpg);
+  background: url(../../img/319-bic-lan-jp-pro-beginnersguide-0620-history-bg.jpg);
   position: relative;
 }
 
