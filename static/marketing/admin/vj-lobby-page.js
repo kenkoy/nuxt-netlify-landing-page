@@ -164,12 +164,12 @@ export const VJ_LOBBY_PREVIEW = createClass({
                 </div>
                 <div class="row">
                   <div>
-                    <img src="/marketing/img/lobby-pages/master-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/venus-point-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/bitcoin-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/playsafe-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/eco-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/i-wallet-icon.png" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/verajohn/master-icon.png" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/verajohn/venus-point-icon.png" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/verajohn/bitcoin-icon.png" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/verajohn/playsafe-icon.png" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/verajohn/eco-icon.png" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/verajohn/i-wallet-icon.png" alt="alt img"></img>
                   </div>
                 </div>
                 </div>
@@ -181,7 +181,7 @@ export const VJ_LOBBY_PREVIEW = createClass({
                   </div>
                   <div class="row">
                     <div>
-                      <img src="/marketing/img/lobby-pages/e-icon.png" alt="alt img"></img>
+                      <img src="/marketing/img/lobby-pages/verajohn/e-icon.png" alt="alt img"></img>
                     </div>
                   </div>
                 </div>
@@ -189,7 +189,7 @@ export const VJ_LOBBY_PREVIEW = createClass({
                   <div class="row">
                   <div>
                     <img src="https://verification.curacao-egaming.com/validate.ashx?domain=verajohn.com" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/20+.svg" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/verajohn/20+.svg" alt="alt img"></img>
                   </div>
                   <div>
                     <span class="footer-text">
