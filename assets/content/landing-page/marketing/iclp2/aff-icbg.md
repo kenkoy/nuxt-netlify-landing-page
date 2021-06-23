@@ -26,6 +26,8 @@ promo_banner:
   promo_register_button_redirect_url: https://intercasino.com/#join
   promo_register_button_text: 今すぐ登録
   promo_smallterm_text_link: 利用規約
+  desktop_full: true
+  mobile_full: true
 welcome_section:
   welcome_first_statement: |-
     リアルマネープレイが追加キャッシュに変わる!

@@ -9,7 +9,7 @@
       <section id="hero" :style="cssBackground">
         <div class="container">
           <div class="row">
-            <div class="loginbtn">
+            <div class="loginbtn btn-login">
               <a rel="noopener" :href="mdData.promo_banner.promo_home_button_redirect_url">
                 <i class="material-icons" data-v-7c308f66="">home</i>
                 <p class="login-text">{{ mdData.promo_banner.promo_home_button }}</p>
@@ -23,7 +23,7 @@
               </div>
               <div class="separation-star">
                 <p v-html="bannerStatement" />
-                <button onclick="location.href='#'" type="button">
+                <button class="btn-register" onclick="location.href='#'" type="button">
                   <a rel="noopener" :href="mdData.promo_banner.promo_register_button_redirect_url">{{ mdData.promo_banner.promo_register_button_text }}</a>
                 </button>
                 <p>
@@ -156,7 +156,7 @@
               <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-fair.png">
             </figure>
             <figure>
-              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-visa-noVisa.png">
+              <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-visa.png">
             </figure>
             <figure>
               <img alt="alt img" src="@/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-safe-wa.png">
@@ -198,7 +198,7 @@
           </div>
         </div>
         <div class="container">
-          <button class="warning">
+          <button class="warning btn-register">
             <a rel="noopener" :href="mdData.history_section.history_register_button_redirect_url">{{ mdData.history_section.history_register_button_text }}</a>
           </button>
         </div>
@@ -242,7 +242,9 @@ export default {
   data () {
     return {
       mdData: {},
-      htmlBody: ''
+      htmlBody: '',
+      desktopWidthBanner: false,
+      mobileWidthBanner: false
     }
   },
   computed: {
@@ -289,20 +291,29 @@ export default {
       return {
         '--bg-image': `url('${images.promo_bg_desktop}')`,
         '--bg-image-m': `url('${images.promo_bg_mobile}')`,
-        '--bg-banner': `url('${images.promo_bg_banner}')`
+        '--desktop-width-banner': this.desktopWidthBanner ? 'cover' : 'contain',
+        '--mobile-width-banner': this.mobileWidthBanner ? 'cover' : 'contain'
       }
     }
   },
   created () {
     this.$root.$once('iclp2-data', (data) => { // Change to actual page name
       this.htmlBody = data.htmlData
-      this.mdData = data.yamlData
+      this.mdData = this.getMDContent(data.yamlData)
     })
   },
   beforeDestroy () {
     this.$root.$off('iclp2-data') // Change to actual page name
   },
   methods: {
+    getMDContent (emitData) {
+      const mdData = emitData
+
+      this.desktopWidthBanner = mdData.promo_banner.desktop_full
+      this.mobileWidthBanner = mdData.promo_banner.mobile_full
+
+      return mdData
+    },
     statementsParser (statements, highLigtedPhrase, classStyle) {
       let sentences = statements.split(/\r?\n/)
         .filter(statement => statement)

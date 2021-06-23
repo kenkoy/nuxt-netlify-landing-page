@@ -1022,7 +1022,7 @@ collections:
     preview_path: iclp2/{{slug}}
     show_preview_links: false
     editor:
-      preview: false
+      preview: true
     fields:
       - label: Slug
         widget: string
@@ -1159,6 +1159,14 @@ collections:
                   widget: image,
                   required: false,
                 }
+          - label: "Desktop banner size cover"
+            name: "desktop_full"
+            default: true
+            widget: "boolean"
+          - label: "Mobile banner size cover"
+            name: "mobile_full"
+            default: true
+            widget: "boolean"
       - label: "Welcome Section"
         name: "welcome_section"
         widget: "object"

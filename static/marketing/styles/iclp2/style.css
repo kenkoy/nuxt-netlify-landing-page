@@ -1,0 +1,580 @@
+.iclp2_wrapper {
+  /* STYLE FOR VJLP3 */
+  /* Custom, iPhone Retina */
+  /* Extra Small Devices, Phones */
+  /* Small Devices, Tablets */
+  /* Medium Devices, Desktops */
+  /* Large Devices, Wide Screens */
+}
+
+.iclp2_wrapper * {
+  font-family: 'MainFont-Medium';
+}
+
+.iclp2_wrapper section,
+.iclp2_wrapper footer {
+  padding: 20px 10px;
+  background: #000;
+}
+
+.iclp2_wrapper a {
+  color: #F20574;
+}
+
+.iclp2_wrapper p {
+  color: #fff;
+}
+
+.iclp2_wrapper ul {
+  margin: 0;
+}
+
+.iclp2_wrapper .redmark {
+  background-color: #ff0375;
+  color: white;
+  font-weight: bold;
+}
+
+.iclp2_wrapper .blackmark {
+  background-color: #9f97e5;
+  color: white;
+  font-weight: bold;
+}
+
+.iclp2_wrapper button {
+  background-color: #FF6200;
+  border-radius: 100px;
+  padding: 10px 40px;
+  border: 0;
+  color: #fff;
+  font-size: 1.5em;
+  width: 280px;
+  margin: 20px 0;
+  display: block;
+  margin: 20px auto;
+}
+
+.iclp2_wrapper button:hover {
+  background: #FF7C2B;
+}
+
+.iclp2_wrapper button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.iclp2_wrapper .separation-star:before {
+  background: url(/_nuxt/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-queenprofile.png) no-repeat center right;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 65px;
+  margin: auto;
+}
+
+.iclp2_wrapper #hero {
+  height: 100%;
+  position: relative;
+}
+
+.iclp2_wrapper #hero:after {
+  display: block;
+  content: '';
+  background: linear-gradient(90deg, #833ab4 0%, #ff005a 50%, #fcb045 100%);
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.iclp2_wrapper #hero img {
+  display: block;
+  margin: auto;
+}
+
+.iclp2_wrapper #detail {
+  background: linear-gradient(180deg, #9f0f4f 0%, #4f1775 28%, black 88%);
+  text-align: center;
+}
+
+.iclp2_wrapper #detail summary {
+  text-align: left;
+  padding: 20px 50px;
+}
+
+.iclp2_wrapper #detail summary h3 {
+  margin: 0;
+}
+
+.iclp2_wrapper #detail .column-2 img {
+  max-width: 345px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+}
+
+.iclp2_wrapper #detail>.container:first-child img:first-child {
+  max-width: 500px;
+  width: 100%;
+}
+
+.iclp2_wrapper #detail>.container:first-child img:first-child+img {
+  max-width: 664px;
+  width: 100%;
+}
+
+.iclp2_wrapper #testimonials .container:first-child {
+  margin: 20px auto;
+}
+
+.iclp2_wrapper #testimonials .container:first-child h3 {
+  color: #e10057;
+}
+
+.iclp2_wrapper #testimonials .container:first-child summary {
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+  color: black;
+  padding: 20px;
+  box-shadow: 3px 3px 0px 0px #ff0048;
+}
+
+.iclp2_wrapper #testimonials .container:first-child+div {
+  margin: 20px auto;
+}
+
+.iclp2_wrapper #testimonials .container:first-child+div h3 {
+  color: #a184d6;
+}
+
+.iclp2_wrapper #testimonials .container:first-child+div summary {
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+  color: black;
+  padding: 20px;
+  box-shadow: 5px 5px 0px 0px #a88ae1;
+}
+
+.iclp2_wrapper #golden-separation {
+  background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  padding: 25px 0;
+}
+
+.iclp2_wrapper #golden-separation img {
+  display: block;
+  margin: auto;
+  max-width: 609px;
+  width: 100%;
+}
+
+.iclp2_wrapper #games .game-first-section img {
+  max-width: 700px;
+  width: 100%;
+}
+
+.iclp2_wrapper #payment img {
+  width: 100%;
+}
+
+.iclp2_wrapper #terms {
+  background: #000;
+  border-top: solid 2px #8405D9;
+  border-bottom: solid 2px #8405D9;
+}
+
+.iclp2_wrapper #terms h3 {
+  color: #F20574;
+  text-transform: uppercase;
+}
+
+.iclp2_wrapper #terms ul li {
+  color: #fff;
+}
+
+.iclp2_wrapper #loyalty-program {
+  position: relative;
+  text-align: center;
+}
+
+.iclp2_wrapper #loyalty-program:before {
+  display: block;
+  content: '';
+  background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  width: 100%;
+  height: 4px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.iclp2_wrapper #loyalty-program p {
+  line-height: 21px;
+  margin: 0;
+}
+
+.iclp2_wrapper #loyalty-program span {
+  color: #ff0375;
+  font-weight: 700;
+}
+
+.iclp2_wrapper #loyalty-program>.container:first-child img {
+  max-width: 900px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+}
+
+.iclp2_wrapper #loyalty-program>.container:nth-child(3) img {
+  max-width: 825px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+}
+
+.iclp2_wrapper #loyalty-program>.container:nth-child(4) img {
+  max-width: 854px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+}
+
+.iclp2_wrapper #gradient-separation {
+  background: linear-gradient(90deg, #833ab4 0%, #ff005a 50%, #fcb045 100%);
+}
+
+.iclp2_wrapper #gradient-separation img {
+  max-width: 364px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.iclp2_wrapper #history {
+  background: url(/_nuxt/assets/images/marketing/iclp2v2/319-bic-lan-jp-pro-beginnersguide-0620-history-bg.jpg);
+  position: relative;
+}
+
+.iclp2_wrapper #history:before {
+  display: block;
+  content: '';
+  background: radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #fdb931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.iclp2_wrapper #history:after {
+  display: block;
+  content: '';
+  background: linear-gradient(90deg, #833ab4 0%, #ff005a 50%, #fcb045 100%);
+  width: 100%;
+  height: 4px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.iclp2_wrapper #history .column-2>div:first-child>img {
+  max-width: 500px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+}
+
+.iclp2_wrapper #history .column-2>div:first-child .title {
+  overflow: hidden;
+  width: 200px;
+  margin: auto;
+}
+
+.iclp2_wrapper #history .column-2>div:first-child .title img {
+  margin-left: -200px;
+}
+
+.iclp2_wrapper #history .column-2>div:first-child+div>img {
+  max-width: 500px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+}
+
+.iclp2_wrapper #history .column-2>div:first-child+div .title {
+  overflow: hidden;
+  width: 200px;
+  margin: auto;
+}
+
+.iclp2_wrapper #history>.container:first-child img {
+  max-width: 863px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.iclp2_wrapper #history>.container:first-child+div img {
+  max-width: 428px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+}
+
+.iclp2_wrapper .material-icons {
+  font-family: 'Material Icons';
+  color: #fff;
+  font-style: normal;
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 320px) {
+  .iclp2_wrapper .desktop {
+    display: none;
+  }
+
+  .iclp2_wrapper .mobile {
+    display: block;
+  }
+
+  .iclp2_wrapper section,
+  .iclp2_wrapper footer {
+    padding: 20px 10px;
+  }
+
+  .iclp2_wrapper #hero {
+    background: var(--bg-image-m) no-repeat top;
+    background-size: var(--mobile-width-banner);
+  }
+
+  .iclp2_wrapper #hero .loginbtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .iclp2_wrapper #hero .loginbtn a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .iclp2_wrapper #hero .loginbtn p {
+    margin: 0;
+  }
+
+  .iclp2_wrapper #hero .row>div {
+    text-align: center;
+  }
+
+  .iclp2_wrapper #hero .row>div #header-text-wrapper {
+    margin-top: 200px;
+    width: 100%;
+  }
+
+  .iclp2_wrapper #hero .row>div img:first-child {
+    max-width: 200px;
+    width: 100%;
+  }
+
+  .iclp2_wrapper #hero .row>div img:first-child+img {
+    max-width: 550px;
+    width: 100%;
+  }
+
+  .iclp2_wrapper #hero .row>div img:first-child+img+img {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .iclp2_wrapper #hero .row>div div:last-child p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .iclp2_wrapper #hero .row>div div:last-child p span {
+    background-color: #ff0375;
+  }
+
+  .iclp2_wrapper #hero .row>div div:last-child button+p {
+    font-size: 11px;
+  }
+
+  .iclp2_wrapper #testimonials p {
+    font-size: 14px;
+    color: #000;
+  }
+
+  .iclp2_wrapper #testimonials .row {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .iclp2_wrapper #testimonials .row .feature-img {
+    margin-top: 20px;
+  }
+
+  .iclp2_wrapper #testimonials .row .feature-img img {
+    width: auto;
+  }
+
+  .iclp2_wrapper #testimonials .container:first-child+div .row {
+    flex-direction: column-reverse;
+  }
+
+  .iclp2_wrapper #testimonials .container:first-child summary:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 0;
+    border: 1.031em solid transparent;
+    border-top-color: #ffffff;
+    border-bottom: 0;
+    margin-left: -1.031em;
+    margin-bottom: -1.031em;
+  }
+
+  .iclp2_wrapper #testimonials .container:first-child+div summary:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 1.031em solid transparent;
+    border-top-color: #ffffff;
+    border-bottom: 0;
+    margin-left: -1.031em;
+    margin-bottom: -1.031em;
+  }
+
+  .iclp2_wrapper #games {
+    text-align: center;
+  }
+
+  .iclp2_wrapper #games .game-third-section img {
+    max-width: 420px;
+    width: 100%;
+  }
+
+  .iclp2_wrapper #loyalty-program img {
+    max-width: 900px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .iclp2_wrapper #pods .container {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .iclp2_wrapper #pods .container img {
+    max-width: 295px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .iclp2_wrapper #testimonials {
+    display: none;
+  }
+
+  .iclp2_wrapper #pods .container>figure {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    margin: 0;
+  }
+
+  .iclp2_wrapper #pods .container>figure img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .iclp2_wrapper .desktop {
+    display: block;
+  }
+
+  .iclp2_wrapper .mobile {
+    display: none;
+  }
+
+  .iclp2_wrapper #testimonials {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .iclp2_wrapper #hero {
+    background: var(--bg-image) no-repeat top;
+    background-size: var(--desktop-width-banner);
+  }
+
+  .iclp2_wrapper #detail .row {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .iclp2_wrapper #testimonials .row {
+    flex-wrap: nowrap;
+  }
+
+  .iclp2_wrapper #testimonials .container:first-child summary:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 1.031em solid transparent;
+    border-left-color: #ffffff;
+    border-right: 0;
+    border-bottom: 0;
+    margin-top: -0.516em;
+    margin-right: -1.031em;
+  }
+
+  .iclp2_wrapper #testimonials .container:first-child+div .row {
+    flex-direction: row;
+  }
+
+  .iclp2_wrapper #testimonials .container:first-child+div .row summary:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 1.031em solid transparent;
+    border-right-color: #ffffff;
+    border-left: 0;
+    border-bottom: 0;
+    margin-top: -0.516em;
+    margin-left: -1.031em;
+  }
+
+  .iclp2_wrapper summary {
+    flex: 0 0 70%;
+    max-width: 0 0 70%;
+    max-height: 160px;
+  }
+
+  .iclp2_wrapper .feature-img {
+    flex: 0 0 30%;
+    max-width: 0 0 30%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .iclp2_wrapper section,
+  .iclp2_wrapper footer {
+    padding: 50px 0;
+  }
+}
