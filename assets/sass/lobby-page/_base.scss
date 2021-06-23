@@ -97,9 +97,19 @@ main{
 #games{
   padding: $PADDING;
   text-align: center;
-  .row {
+
+  .game-list {
     overflow: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 10px;
+
+    > div{
+      padding: 10px 0;
+      min-width: 119px;
+    }
   }
+
   .container{
     position: relative;
 
@@ -126,6 +136,7 @@ main{
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      margin: 0 auto;
     }
   }
 }
@@ -235,12 +246,17 @@ main{
   }
 
   #footer-payment-provider,
-  #footer-providers,
-  #footer-logo{
+  #footer-providers{
     img{
       width: auto;
-      min-width: 30px;
-      max-height: 30px;
+      max-height: 25px;
+    }
+  }
+  #footer-logo{
+    img{
+      width: 100%;
+      max-width: 50px;
+      max-height: 100px;
     }
   }
 
