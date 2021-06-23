@@ -2,7 +2,7 @@
 import htm from 'https://unpkg.com/htm?module'
 
 const html = htm.bind(h)
-export const LOBBY_PREVIEW = createClass({
+export const VJ_LOBBY_PREVIEW = createClass({
   componentDidMount () {
     const { document } = this.props
     const link = document.createElement('link')
