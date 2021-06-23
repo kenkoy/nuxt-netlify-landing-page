@@ -164,10 +164,12 @@ export const LOBBY_PREVIEW = createClass({
                 </div>
                 <div class="row">
                   <div>
-                    <img src="/marketing/img/lobby-pages/s-icon.png" alt="alt img" />
-                    <img src="/marketing/img/lobby-pages/ecopayz-icon.png" alt="alt img" />
-                    <img src="/marketing/img/lobby-pages/neteller-icon.png" alt="alt img" />
-                    <img src="/marketing/img/lobby-pages/playsafe-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/master-icon.png" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/venus-point-icon.png" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/bitcoin-icon.png" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/playsafe-icon.png" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/eco-icon.png" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/i-wallet-icon.png" alt="alt img"></img>
                   </div>
                 </div>
                 </div>
@@ -179,29 +181,15 @@ export const LOBBY_PREVIEW = createClass({
                   </div>
                   <div class="row">
                     <div>
-                      <img src="/marketing/img/lobby-pages/plaingaming-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/netent-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/igt-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/microgaming-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/playgo-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/betsoft-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/ggdrasil-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/t-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/gs-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/leander-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/evolutiongaming-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/quickspin-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/e-icon.png" alt="alt img"></img>
                     </div>
                   </div>
                 </div>
                 <div id="footer-logo">
                   <div class="row">
                   <div>
-                    <img src="/marketing/img/lobby-pages/mga-icon.png" alt="alt img" />
-                    <img src="/marketing/img/lobby-pages/lock-icon.png" alt="alt img" />
-                    <img src="/marketing/img/lobby-pages/20+.svg" alt="alt img" />
-                    <img src="/marketing/img/lobby-pages/gamcare-icon.png" alt="alt img" />
-                    <img src="/marketing/img/lobby-pages/hands-icon.png" alt="alt img" />
+                    <img src="https://verification.curacao-egaming.com/validate.ashx?domain=verajohn.com" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/20+.svg" alt="alt img"></img>
                   </div>
                   <div>
                     <span class="footer-text">

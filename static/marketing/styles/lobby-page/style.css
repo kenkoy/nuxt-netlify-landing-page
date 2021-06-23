@@ -110,8 +110,15 @@ body.noScroll {
   padding: 16px;
   text-align: center;
 }
-.lobby_pages_wrapper .vj-theme #games .row {
+.lobby_pages_wrapper .vj-theme #games .game-list {
   overflow: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+}
+.lobby_pages_wrapper .vj-theme #games .game-list > div {
+  padding: 10px 0;
+  min-width: 119px;
 }
 .lobby_pages_wrapper .vj-theme #games .container {
   position: relative;
@@ -139,6 +146,7 @@ body.noScroll {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 0 auto;
 }
 .lobby_pages_wrapper .vj-theme #lobby-tiles {
   padding: 16px;
@@ -252,11 +260,14 @@ body.noScroll {
   vertical-align: middle;
 }
 .lobby_pages_wrapper .vj-theme #footer-icon-wrapper #footer-payment-provider img,
-.lobby_pages_wrapper .vj-theme #footer-icon-wrapper #footer-providers img,
-.lobby_pages_wrapper .vj-theme #footer-icon-wrapper #footer-logo img {
+.lobby_pages_wrapper .vj-theme #footer-icon-wrapper #footer-providers img {
   width: auto;
-  min-width: 30px;
-  max-height: 30px;
+  max-height: 25px;
+}
+.lobby_pages_wrapper .vj-theme #footer-icon-wrapper #footer-logo img {
+  width: 100%;
+  max-width: 50px;
+  max-height: 100px;
 }
 .lobby_pages_wrapper .vj-theme #footer-icon-wrapper p {
   margin: 0;
@@ -383,6 +394,16 @@ body.noScroll {
 .ic-theme .footer-text {
   color: #AEAEAE;
   font-size: 10px;
+}
+.ic-theme #games .row::-webkit-scrollbar {
+  background-color: #141414;
+}
+.ic-theme #games .row::-webkit-scrollbar-thumb {
+  background-color: #141414;
+  border: 1px solid #777777;
+}
+.ic-theme #games .row::-webkit-scrollbar-track {
+  background-color: #212121;
 }
 .lobby_pages_wrapper .vj-theme .icon {
   background: url(/_nuxt/assets/images/lobby-pages/icons.png);
@@ -533,8 +554,15 @@ body.noScroll {
   padding: 16px;
   text-align: center;
 }
-.lobby_pages_wrapper .ic-theme #games .row {
+.lobby_pages_wrapper .ic-theme #games .game-list {
   overflow: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+}
+.lobby_pages_wrapper .ic-theme #games .game-list > div {
+  padding: 10px 0;
+  min-width: 119px;
 }
 .lobby_pages_wrapper .ic-theme #games .container {
   position: relative;
@@ -562,6 +590,7 @@ body.noScroll {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 0 auto;
 }
 .lobby_pages_wrapper .ic-theme #lobby-tiles {
   padding: 16px;
@@ -675,11 +704,14 @@ body.noScroll {
   vertical-align: middle;
 }
 .lobby_pages_wrapper .ic-theme #footer-icon-wrapper #footer-payment-provider img,
-.lobby_pages_wrapper .ic-theme #footer-icon-wrapper #footer-providers img,
-.lobby_pages_wrapper .ic-theme #footer-icon-wrapper #footer-logo img {
+.lobby_pages_wrapper .ic-theme #footer-icon-wrapper #footer-providers img {
   width: auto;
-  min-width: 30px;
-  max-height: 30px;
+  max-height: 25px;
+}
+.lobby_pages_wrapper .ic-theme #footer-icon-wrapper #footer-logo img {
+  width: 100%;
+  max-width: 50px;
+  max-height: 100px;
 }
 .lobby_pages_wrapper .ic-theme #footer-icon-wrapper p {
   margin: 0;
@@ -806,6 +838,16 @@ body.noScroll {
 .ic-theme .footer-text {
   color: #AEAEAE;
   font-size: 10px;
+}
+.ic-theme #games .row::-webkit-scrollbar {
+  background-color: #141414;
+}
+.ic-theme #games .row::-webkit-scrollbar-thumb {
+  background-color: #141414;
+  border: 1px solid #777777;
+}
+.ic-theme #games .row::-webkit-scrollbar-track {
+  background-color: #212121;
 }
 .lobby_pages_wrapper .ic-theme .icon {
   background: url(/_nuxt/assets/images/lobby-pages/icons.png);
