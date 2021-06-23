@@ -19,6 +19,7 @@ promo_banner:
     promo_banner_image_title_2: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-title-02.png
   promo_home_button_redirect_url: https://intercasino.com/#signin
   promo_smallterm_text: に同意します。
+  mobile_full: true
   promo_banner_statement: |-
     ✦新規プレイヤー限定特典✦
     プレイし続けるほどお得な総額$500のウェルカムキャッシュをゲットしよう！
@@ -26,8 +27,7 @@ promo_banner:
   promo_register_button_redirect_url: https://intercasino.com/#join
   promo_register_button_text: 今すぐ登録
   promo_smallterm_text_link: 利用規約
-  desktop_full: true
-  mobile_full: true
+  desktop_full: false
 welcome_section:
   welcome_first_statement: |-
     リアルマネープレイが追加キャッシュに変わる!
