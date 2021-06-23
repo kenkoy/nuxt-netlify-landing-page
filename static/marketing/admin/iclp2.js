@@ -125,7 +125,7 @@ export const ICLP2_PREVIEW = createClass({
           <div class="row">
             <div class="loginbtn btn-login">
               <a rel="noopener" href="${banner.getIn(['data', 'promo_login_button_redirect_url'])}">
-                <i class="material-icons" data-v-7c308f66="">home</i>
+                <i class="material-icons">home</i>
                 <p class="login-text">${banner.getIn(['data', 'promo_login_button_text'])}</p>
               </a>
             </div>
