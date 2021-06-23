@@ -8,7 +8,7 @@ export const IC_LOBBY_PREVIEW = createClass({
     const link = document.createElement('link')
     link.rel = 'stylesheet'
     link.type = 'text/css'
-    link.href = '/marketing/styles/lobby-page/previewPane.css'
+    link.href = '/marketing/styles/lobby-page/intercasino/previewPane.css'
     document.head.appendChild(link)
   },
   render () {
@@ -131,7 +131,6 @@ export const IC_LOBBY_PREVIEW = createClass({
             </section>
 
             <section id="cta">
-              <img src="/marketing/img/lobby-pages/intercasino/footer-verajohn.png" alt="alt img" />
               <div class="footer-item">
                 <a class="n-link" href="/ja/help">
                   <img src="/marketing/img/lobby-pages/intercasino/help-icon.png" alt="alt img" />

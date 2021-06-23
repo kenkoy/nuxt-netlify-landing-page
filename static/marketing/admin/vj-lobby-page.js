@@ -8,7 +8,7 @@ export const LOBBY_PREVIEW = createClass({
     const link = document.createElement('link')
     link.rel = 'stylesheet'
     link.type = 'text/css'
-    link.href = '/marketing/styles/lobby-page/previewPane.css'
+    link.href = '/marketing/styles/lobby-page/verajohn/previewPane.css'
     document.head.appendChild(link)
   },
   render () {
@@ -31,11 +31,11 @@ export const LOBBY_PREVIEW = createClass({
             <header id="header-menu">
               <div id="header-home">
                 <a href="#">
-                  <img class="logo" src="/marketing/img/lobby-pages/home-icon.png" alt="alt img"/>
+                  <img class="logo" src="/marketing/img/lobby-pages/verajohn/home-icon.png" alt="alt img"/>
                 </a>
               </div>
               <div id="header-logo">
-                <img class="logo" src="/marketing/img/lobby-pages/logo.png" alt="alt img"/>
+                <img class="logo" src="/marketing/img/lobby-pages/verajohn/logo.png" alt="alt img"/>
               </div>
               <div id="header-button">
                 <button class="cta_button login n-button--secondary">
@@ -88,7 +88,7 @@ export const LOBBY_PREVIEW = createClass({
                         ${list.is_hot === true
                           ? html`
                             <i class="hot-icon">
-                              <img width='100%' src="/marketing/img/lobby-pages/hot-icon.png"/>
+                              <img width='100%' src="/marketing/img/lobby-pages/verajohn/hot-icon.png"/>
                             </i>
                           `
                           : ''
@@ -131,16 +131,16 @@ export const LOBBY_PREVIEW = createClass({
             </section>
 
             <section id="cta">
-              <img src="/marketing/img/lobby-pages/footer-verajohn.png" alt="alt img" />
+              <img src="/marketing/img/lobby-pages/verajohn/footer-verajohn.png" alt="alt img" />
               <div class="footer-item">
                 <a class="n-link" href="/ja/help">
-                  <img src="/marketing/img/lobby-pages/help-icon.png" alt="alt img" />
+                  <img src="/marketing/img/lobby-pages/verajohn/help-icon.png" alt="alt img" />
                   <span class="n-paragraph">ヘルプ・センター</span>
                 </a>
               </div>
               <div class="footer-item">
                 <a class="n-link" href="/ja/about/beginnersguidemb">
-                  <img src="/marketing/img/lobby-pages/beginner-guide-icon.png" alt="alt img" />
+                  <img src="/marketing/img/lobby-pages/verajohn/beginner-guide-icon.png" alt="alt img" />
                   <span class="n-paragraph">ビギナーズガイド</span>
                 </a>
               </div>
@@ -164,10 +164,10 @@ export const LOBBY_PREVIEW = createClass({
                 </div>
                 <div class="row">
                   <div>
-                    <img src="/marketing/img/lobby-pages/s-icon.png" alt="alt img" />
-                    <img src="/marketing/img/lobby-pages/ecopayz-icon.png" alt="alt img" />
-                    <img src="/marketing/img/lobby-pages/neteller-icon.png" alt="alt img" />
-                    <img src="/marketing/img/lobby-pages/playsafe-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/verajohn/s-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/verajohn/ecopayz-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/verajohn/neteller-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/verajohn/playsafe-icon.png" alt="alt img" />
                   </div>
                 </div>
                 </div>
@@ -179,29 +179,29 @@ export const LOBBY_PREVIEW = createClass({
                   </div>
                   <div class="row">
                     <div>
-                      <img src="/marketing/img/lobby-pages/plaingaming-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/netent-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/igt-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/microgaming-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/playgo-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/betsoft-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/ggdrasil-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/t-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/gs-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/leander-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/evolutiongaming-icon.png" alt="alt img" />
-                      <img src="/marketing/img/lobby-pages/quickspin-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/verajohn/plaingaming-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/verajohn/netent-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/verajohn/igt-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/verajohn/microgaming-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/verajohn/playgo-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/verajohn/betsoft-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/verajohn/ggdrasil-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/verajohn/t-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/verajohn/gs-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/verajohn/leander-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/verajohn/evolutiongaming-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/verajohn/quickspin-icon.png" alt="alt img" />
                     </div>
                   </div>
                 </div>
                 <div id="footer-logo">
                   <div class="row">
                   <div>
-                    <img src="/marketing/img/lobby-pages/mga-icon.png" alt="alt img" />
-                    <img src="/marketing/img/lobby-pages/lock-icon.png" alt="alt img" />
-                    <img src="/marketing/img/lobby-pages/20+.svg" alt="alt img" />
-                    <img src="/marketing/img/lobby-pages/gamcare-icon.png" alt="alt img" />
-                    <img src="/marketing/img/lobby-pages/hands-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/verajohn/mga-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/verajohn/lock-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/verajohn/20+.svg" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/verajohn/gamcare-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/verajohn/hands-icon.png" alt="alt img" />
                   </div>
                   <div>
                     <span class="footer-text">

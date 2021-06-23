@@ -1637,7 +1637,7 @@ collections:
                 }
 
   - label: "VeraJohn SEO Lobby Template"
-    name: "lobby_page"
+    name: "vj_lobby_page"
     format: "frontmatter"
     show_preview_links: false
     create: true
