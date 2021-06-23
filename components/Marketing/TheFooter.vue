@@ -27,7 +27,7 @@
                 aria-label="CEG"
                 target="_blank"
                 rel="noopener"
-                :href='`https://verification.curacao-egaming.com/validateview.aspx?domain=${landingPageType}.com`'
+                :href="`https://verification.curacao-egaming.com/validateview.aspx?domain=${landingPageType}.com`"
               >
                 <img :src="`https://verification.curacao-egaming.com/validate.ashx?domain=${landingPageType}.com`" alt="alt img">
               </a>

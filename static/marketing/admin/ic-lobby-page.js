@@ -2,13 +2,13 @@
 import htm from 'https://unpkg.com/htm?module'
 
 const html = htm.bind(h)
-export const LOBBY_PREVIEW = createClass({
+export const IC_LOBBY_PREVIEW = createClass({
   componentDidMount () {
     const { document } = this.props
     const link = document.createElement('link')
     link.rel = 'stylesheet'
     link.type = 'text/css'
-    link.href = '/marketing/styles/lobby-page/previewPane.css'
+    link.href = '/marketing/styles/lobby-page/intercasino/previewPane.css'
     document.head.appendChild(link)
   },
   render () {
@@ -26,16 +26,16 @@ export const LOBBY_PREVIEW = createClass({
 
     return (html`
       <body class="layout-css lobby_pages_wrapper">
-        <div class="lobby-pages-main vj-theme">
+        <div class="lobby-pages-main ic-theme">
           <main>
             <header id="header-menu">
               <div id="header-home">
                 <a href="#">
-                  <img class="logo" src="/marketing/img/lobby-pages/home-icon.png" alt="alt img"/>
+                  <img class="logo" src="/marketing/img/lobby-pages/intercasino/home-icon.png" alt="alt img"/>
                 </a>
               </div>
               <div id="header-logo">
-                <img class="logo" src="/marketing/img/lobby-pages/logo.png" alt="alt img"/>
+                <img class="logo" src="/marketing/img/lobby-pages/intercasino/logo.png" alt="alt img"/>
               </div>
               <div id="header-button">
                 <button class="cta_button login n-button--secondary">
@@ -88,7 +88,7 @@ export const LOBBY_PREVIEW = createClass({
                         ${list.is_hot === true
                           ? html`
                             <i class="hot-icon">
-                              <img width='100%' src="/marketing/img/lobby-pages/hot-icon.png"/>
+                              <img width='100%' src="/marketing/img/lobby-pages/intercasino/hot-icon.png"/>
                             </i>
                           `
                           : ''
@@ -131,16 +131,15 @@ export const LOBBY_PREVIEW = createClass({
             </section>
 
             <section id="cta">
-              <img src="/marketing/img/lobby-pages/footer-verajohn.png" alt="alt img" />
               <div class="footer-item">
                 <a class="n-link" href="/ja/help">
-                  <img src="/marketing/img/lobby-pages/help-icon.png" alt="alt img" />
+                  <img src="/marketing/img/lobby-pages/intercasino/help-icon.png" alt="alt img" />
                   <span class="n-paragraph">ヘルプ・センター</span>
                 </a>
               </div>
               <div class="footer-item">
                 <a class="n-link" href="/ja/about/beginnersguidemb">
-                  <img src="/marketing/img/lobby-pages/beginner-guide-icon.png" alt="alt img" />
+                  <img src="/marketing/img/lobby-pages/intercasino/beginner-guide-icon.png" alt="alt img" />
                   <span class="n-paragraph">ビギナーズガイド</span>
                 </a>
               </div>
@@ -164,12 +163,10 @@ export const LOBBY_PREVIEW = createClass({
                 </div>
                 <div class="row">
                   <div>
-                    <img src="/marketing/img/lobby-pages/master-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/venus-point-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/bitcoin-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/playsafe-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/eco-icon.png" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/i-wallet-icon.png" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/intercasino/s-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/intercasino/ecopayz-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/intercasino/neteller-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/intercasino/playsafe-icon.png" alt="alt img" />
                   </div>
                 </div>
                 </div>
@@ -181,15 +178,29 @@ export const LOBBY_PREVIEW = createClass({
                   </div>
                   <div class="row">
                     <div>
-                      <img src="/marketing/img/lobby-pages/e-icon.png" alt="alt img"></img>
+                      <img src="/marketing/img/lobby-pages/intercasino/plaingaming-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/intercasino/netent-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/intercasino/igt-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/intercasino/microgaming-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/intercasino/playgo-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/intercasino/betsoft-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/intercasino/ggdrasil-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/intercasino/t-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/intercasino/gs-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/intercasino/leander-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/intercasino/evolutiongaming-icon.png" alt="alt img" />
+                      <img src="/marketing/img/lobby-pages/intercasino/quickspin-icon.png" alt="alt img" />
                     </div>
                   </div>
                 </div>
                 <div id="footer-logo">
                   <div class="row">
                   <div>
-                    <img src="https://verification.curacao-egaming.com/validate.ashx?domain=verajohn.com" alt="alt img"></img>
-                    <img src="/marketing/img/lobby-pages/20+.svg" alt="alt img"></img>
+                    <img src="/marketing/img/lobby-pages/intercasino/mga-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/intercasino/lock-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/intercasino/20+.svg" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/intercasino/gamcare-icon.png" alt="alt img" />
+                    <img src="/marketing/img/lobby-pages/intercasino/hands-icon.png" alt="alt img" />
                   </div>
                   <div>
                     <span class="footer-text">

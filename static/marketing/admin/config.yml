@@ -1645,7 +1645,125 @@ collections:
                 }
 
   - label: "VeraJohn SEO Lobby Template"
-    name: "lobby_page"
+    name: "vj_lobby_page"
+    format: "frontmatter"
+    show_preview_links: false
+    create: true
+    identifier_field: "slug_name"
+    folder: "assets/content/lobby-page"
+    editor:
+      preview: true
+    fields:
+    - label: "Slug"
+      widget: "string"
+      name: "slug_name"
+      required: true
+      hint: >
+        The last segment of lobby page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)
+    - label: "SEO"
+      name: "seo"
+      widget: "object"
+      collapsed: true
+      fields:
+        - { label: "Title", name: "title", widget: "string" }
+        - label: "Meta Tags"
+          name: "meta"
+          widget: "object"
+          fields:
+            - { label: "Description", name: "description", widget: "text", required: false }
+            - { label: "Author", name: "author", widget: "string", required: false }
+            - {
+                label: "Robots",
+                name: "robots",
+                widget: "string",
+                required: false,
+                hint: "This will override the current logic in determining the meta robots"
+              }
+            - { label: "Keywords", name: "keywords", widget: "string", required: false }
+            - label: "Open Graph"
+              name: "og"
+              widget: "object"
+              required: false
+              fields:
+                - { label: "Title", name: "title", widget: "string", required: false }
+                - { label: "Description", name: "description", widget: "text", required: false }
+                - { label: "Type", name: "type", widget: "string", required: false }
+                - { label: "Image", name: "image", widget: "image", allow_multiple: false, required: false }
+                - { label: "URL", name: "url", widget: "string", required: false }
+        - label: "Alternate Link Tags"
+          name: "alternate_links"
+          widget: "list"
+          required: false
+          summary: "{{fields.href}} - {{fields.hreflang}}"
+          fields:
+            - { label: href, name: href, widget: string }
+            - label: "language"
+              name: "hreflang"
+              widget: "select"
+              default: "x-default"
+              options: ["x-default", "ja-jp", "fi-fi", "no-no", "de-de", "ex-cl", "es-pe", "pt-br"]
+    - label: "Banner"
+      name: "banner"
+      widget: "list"
+      collapsed: true
+      required: false
+      summary: "{{fields.url}}"
+      fields:
+        - { label: "Banner Image", name: "image", widget: "image" }
+        - { label: "Banner URL", name: "url", widget: "string" }
+    - label: "Games"
+      name: "game"
+      widget: "object"
+      collapsed: true
+      min: 6
+      max: 6
+      fields:
+        - label: "Game Icons title"
+          name: "game_icons_title"
+          widget: "string"
+          required: false
+        - label: "All Games Title"
+          name: "all_games_title"
+          widget: "string"
+          required: false
+        - label: "All Games Redirect URL"
+          name: "all_games_redirect_url"
+          widget: "string"
+        - label: "Game List"
+          name: "game_list"
+          widget: "list"
+          collapsed: true
+          fields:
+            - { label: "Title", name: "title", widget: "string" }
+            - { label: "Image", name: "image", widget: "image" }
+            - { label: "URL", name: "url", widget: "string" }
+            - { label: "Hot?", name: "is_hot", widget: "boolean", default: false }
+    - label: "Lobby Tiles"
+      name: "lobby_tiles"
+      widget: "object"
+      collapsed: true
+      fields:
+        - label: "Lobby Tiles Title"
+          name: "lobby_tiles_title"
+          widget: "string"
+          required: false
+        - label: "Lobby List"
+          name: "lobby_list"
+          widget: "list"
+          fields:
+            - label: "Title"
+              name: "title"
+              widget: "string"
+            - label: "Icon"
+              name: "image"
+              widget: "image"
+            - label: "Link"
+              name: "link"
+              widget: "string"
+    - { label: "Content", name: "body", widget: "markdown", required: true }
+
+  - label: "Intercasino SEO Lobby Template"
+    name: "ic_lobby_page"
     format: "frontmatter"
     show_preview_links: false
     create: true
