@@ -192,7 +192,7 @@ export default {
     if (this.mdData.brand) {
       headData.link = [
         { rel: 'stylesheet', href: '/marketing/styles/lobby-page/' + this.mdData.brand + '/' + this.mdData.brand + '_jp_main.min.css' },
-        { rel: 'stylesheet', href: require('~/assets/sass/lobby-page/' + this.mdData.brand + '_style.scss') },
+        { href: require('~/assets/sass/lobby-page/' + this.mdData.brand + '_style.scss') },
         { hid: 'shortcut icon', rel: 'shortcut icon', href: '/marketing/' + this.shortBrand + '-favicon.ico', type: 'image/x-icon' }
       ]
     }
