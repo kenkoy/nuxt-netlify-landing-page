@@ -1,12 +1,11 @@
 ---
-slug_name: sample
-template: lobby
+slug_name: slots
 seo:
-  title: DAN オンラインビデオスロット | Vera&John(ベラジョンカジノ)
+  title: オンラインビデオスロット | Vera&John(ベラジョンカジノ)
   meta:
     description: Vera&Johnの1000種を超えるビデオスロットの中からお気に入りビデオスロットを見つけましょう。リアルマネーのみならず、無料で遊べるデモモードもご用意しています。
     keywords: slot machine, roulette, baccarat, win, flash, games, online, pontoon,
-      gold diggers
+      gold diggers, sample keyword
     author: John Smith
     og:
       title: OG Title Here
@@ -19,46 +18,52 @@ seo:
       hreflang: x-default
     - href: https://www.verajohn.com/ja/slots
       hreflang: ja-jp
-banner: []
+banner:
+  - image: /marketing/img/hd-pachinko-v1-banner-2-d.png
+    url: "#"
+  - image: /marketing/img/vjjp_banner.png
+    url: "#"
 game:
-  - is_hot: true
-    title: Dreams of Gold
-    image: /marketing/img/img1.png
-    url: https://www.verajohn.com/play/dreams-of-gold-mobile
-  - is_hot: true
-    title: Hawaiian Dream
-    image: /marketing/img/img2.png
-    url: https://www.verajohn.com/play/hawaiian-dream-mobile
-  - is_hot: true
-    title: Battle Dwarf
-    image: /marketing/img/img3.png
-    url: https://www.verajohn.com/play/battle-dwarf-mobile
-  - is_hot: false
-    title: Yokozuna Clash
-    image: /marketing/img/img4.png
-    url: https://www.verajohn.com/play/yokozuna-clash-mobile
-  - is_hot: true
-    title: Piggy Riches Megaways
-    image: /marketing/img/img5.png
-    url: https://www.verajohn.com/play/piggy-riches-megaways-mobile
-  - is_hot: true
-    title: Drago - Jewels of Fortune
-    image: /marketing/img/img6.png
-    url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
+  game_icons_title: Classic slots
+  all_games_title: See all games
+  all_games_redirect_url: "#"
+  game_list:
+    - is_hot: true
+      title: Dreams of Gold
+      image: /marketing/img/img1.png
+      url: https://www.verajohn.com/play/dreams-of-gold-mobile
+    - is_hot: true
+      title: Hawaiian Dream
+      image: /marketing/img/img2.png
+      url: https://www.verajohn.com/play/hawaiian-dream-mobile
+    - is_hot: true
+      title: Battle Dwarf
+      image: /marketing/img/img3.png
+      url: https://www.verajohn.com/play/battle-dwarf-mobile
+    - is_hot: false
+      title: Yokozuna Clash
+      image: /marketing/img/img4.png
+      url: https://www.verajohn.com/play/yokozuna-clash-mobile
+    - is_hot: true
+      title: Piggy Riches Megaways
+      image: /marketing/img/img5.png
+      url: https://www.verajohn.com/play/piggy-riches-megaways-mobile
+    - is_hot: true
+      title: Drago - Jewels of Fortune
+      image: /marketing/img/img6.png
+      url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
 lobby_tiles:
-  modals:
-    - text: ライブカジノ
+  lobby_tiles_title: More games
+  lobby_list:
+    - title: ライブカジノ
       image: /marketing/img/dice-icon-transparent.png
-    - text: トーナメント
+      link: "#"
+    - title: トーナメント
       image: /marketing/img/trophy-icon-transparent.png
-    - text: すべてのテーブルゲーム
+      link: "#"
+    - title: すべてのテーブルゲーム
       image: /marketing/img/card-icon-transparent.png
-  links:
-    - text: トーナメントに参加する
-      title: 賞金プール
-      winning: $15,000.00
-      url: https://www.verajohn.com/ja/active-tournaments
-      bg_image: /marketing/img/trophy-icon-transparent.png
+      link: "#"
 ---
 <h1 class="n-header-1">ベラジョンオンラインカジノのオンラインビデオスロット</h1>
 

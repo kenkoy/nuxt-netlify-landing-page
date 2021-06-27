@@ -21,8 +21,12 @@ function dynamicMarkdownRoutes () {
         .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`)
     })
   )
-  const lobbyRoutes = glob.sync('*.md', { cwd: 'assets/content/lobby-page/' })
-    .map(file => `marketing/lobby-page/${path.basename(file, '.md')}`)
+  const lobbyRoutes = [].concat(
+    ...['verajohn', 'intercasino'].map((brand) => {
+      return glob.sync('*.md', { cwd: 'assets/content/lobby-page/' + brand + '/' })
+        .map(file => `marketing/lobby-page/${brand}/${path.basename(file, '.md')}`)
+    })
+  )
 
   return [...landingRoutes, ...lobbyRoutes]
   // return landingRoutes
@@ -43,9 +47,9 @@ export default {
           component: resolve(__dirname, 'pages/marketing/vjhp')
         },
         {
-          name: 'slots-lobby-page',
-          path: '/marketing/lobby-page/:slug',
-          component: resolve(__dirname, 'pages/lobby-page/_slug/index.vue')
+          name: 'lobby-page-game',
+          path: '/marketing/lobby-page/:brand/:game',
+          component: resolve(__dirname, 'pages/lobby-page/_brand/_game/index.vue')
         }
       ]
       routes.push(...newRoutes)
@@ -80,8 +84,6 @@ export default {
   ** Global CSS
   */
   css: [
-    '~/assets/sass/global/externalBrandCss/verajohn_jp_main.min.css',
-    // '~/assets/sass/global/externalBrandCss/intercasino_jp_main.min.css',
     '~/assets/sass/global/externalBrandCss/animate.min.css',
     '~/assets/sass/global/externalBrandCss/fonts.css',
     '~/assets/sass/global/style.scss'

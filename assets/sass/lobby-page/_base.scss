@@ -10,7 +10,7 @@
 }
 
 
-//HELPERS
+//==== HELPERS ====//
 //add border top separator
 .separator-top{
   &:after{
@@ -59,22 +59,35 @@
 .container-grid{
   max-width: 768px;
 }
+.btn{
+  background: transparent;
+  border: none;
+  outline: 0;
+}
 
 
 //==== NAVIGATION HEADER MENU ===//
-#header-menu {
-  @include headerMenuMixin;
+#g-nav-bar-main {
+  @include navBarMain;
   > * {
     flex-grow: 1;
   }
 
-  .logo {
-    max-width: 80px;
-    margin: 0 auto;
-    display: block;
+  #g-nav-home {
+    img {
+      max-width: 30px;
+    }
   }
 
-  #header-button > .login {
+  #g-nav-logo{
+    .logo {
+      max-width: 120px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  #g-nav-button > .login {
     margin: 8px 0;
     height: 38px;
     line-height: 38px;
@@ -83,7 +96,7 @@
 }
 
 
-//==== MAIN CONTENT ==//
+//==== MAIN CONTENT ====//
 main{
   position: relative;
   transition: all .3s ease;
@@ -91,12 +104,17 @@ main{
   height: 100%;
   background: $MAIN_BG;
   padding-top: $NAV_HEIGHT;
-  padding-bottom: 50px;
 }
 
 #games{
   padding: $PADDING;
   text-align: center;
+  
+  .container .row:first-child{
+    > div{
+      word-break: break-all;
+    }
+  }
 
   .game-list {
     overflow: auto;
@@ -117,7 +135,7 @@ main{
       position: absolute;
       top: 0;
       left: 0;
-      background: url('../../assets/images/lobby-pages/hot-icon.png') no-repeat;
+      background: $HOT_ICON no-repeat;
       background-size: contain;
       width: 30px;
       height: 30px;
@@ -136,7 +154,7 @@ main{
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      margin: 0 auto;
+      margin: $MARGINS auto;
     }
   }
 }
@@ -150,6 +168,12 @@ main{
   }
   a{
     text-decoration: none;
+  }
+
+  .container .row:first-child{
+    > div{
+      word-break: break-all;
+    }
   }
 
   .game-menu{
@@ -177,14 +201,14 @@ main{
     display: block;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: $LOBBY_TILES_BORDER_RADIUS;
     padding: 3px;
     margin: auto;
-    background-image: linear-gradient(#6dbde5, #086b97);
+    background-image: $LOBBY_TILES_ICON_BG;
   }
 
   .pods{
-    @include gameTiles;
+    @include lobbyTiles;
     background-size: 120px;
     background-position: center;
     background-repeat: no-repeat;
@@ -231,12 +255,14 @@ main{
     text-align: center;
   }
 }
-#footer-icon-wrapper .row > div{
+
+//==== FOOTER ====//
+#g-footer-icon-wrapper .row > div{
   padding: 0;
 }
-#footer-icon-wrapper{
+#g-footer-icon-wrapper{
   background: $SECONDARY_MAIN_BG;
-  padding: $PADDING;
+  padding: $PADDING $PADDING 55px $PADDING;
 
   img{
     width: 100%;
@@ -245,21 +271,20 @@ main{
     vertical-align: middle;
   }
 
-  #footer-payment-provider,
-  #footer-providers{
+  #g-footer-payment-provider,
+  #g-footer-providers{
     img{
       width: auto;
       max-height: 25px;
     }
   }
-  #footer-logo{
+  #g-footer-logo{
     img{
       width: 100%;
       max-width: 50px;
       max-height: 100px;
     }
   }
-
   p{
     margin: 0;
   }
@@ -281,12 +306,11 @@ main{
   }
 }
 
-#footer-login-register{
+#g-footer-sticky{
   display: flex;
   position: fixed;
   width: 100%;
   bottom: 0;
-  // transition: all .3s ease;
   z-index: 2;
 
   > button{
@@ -298,10 +322,4 @@ main{
     max-width: 50%;
     margin: 0;
   }
-}
-
-.btn{
-  background: transparent;
-  border: none;
-  outline: 0;
 }

@@ -1,0 +1,25 @@
+$NAV_BAR_MAIN_BG: linear-gradient(to bottom,#009ce4 0%,#0094d5 100%);
+$NAV_BAR_MAIN_SHADOW: rgba(0,121,173,.5);
+$SIDE_MENU_BG: #0082BA;
+$MAIN_BG: #009ee7;
+$SECONDARY_MAIN_BG: #0093D4;
+$OVERLAY_BG: #005F88;
+
+$LOBBY_TILES_BG: #0093D4;
+$LOBBY_TILES_BORDER: none;
+$LOBBY_TILES_BORDER_RADIUS: 50%;
+$LOBBY_TILES_ICON_BG: linear-gradient(#6dbde5, #086b97);
+
+$FOOTER_CONTENT_BG: #0093D4;
+$FOOTER_ITEM_BG: #0082BA;
+$FOOTER_CONTENT_BORDER: #0082BA;
+
+$SEPARATOR_COLOR: #0082BA;
+
+//=== MARGINS / PADDINGS / HEIGHT ===//
+$NAV_HEIGHT: 54px;
+$PADDING: 16px;
+$MARGINS: 8px;
+
+$HOT_ICON: require(url('~/assets/images/lobby-page/verajohn/hot-icon.png'));
+$ICON: require(url('~/assets/images/lobby-page/verajohn/icons.png'));

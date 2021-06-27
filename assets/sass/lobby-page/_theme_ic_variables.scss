@@ -1,0 +1,26 @@
+$NAV_BAR_MAIN_BG: #212121;
+$NAV_BAR_MAIN_SHADOW: transparent;
+$SIDE_MENU_BG: #fff;
+$MAIN_BG: #141414;
+$SECONDARY_MAIN_BG: #141414;
+$OVERLAY_BG: #000;
+
+$LOBBY_TILES_BG: #141414;
+$LOBBY_TILES_BORDER: radial-gradient(circle at top left, #743ad5, #d53a9d);
+$LOBBY_TILES_BORDER_RADIUS: 0;
+$LOBBY_TILES_ICON_BG: transparent;
+
+$FOOTER_CONTENT_BG: #212121;
+$FOOTER_ITEM_BG: #212121;
+$FOOTER_CONTENT_BORDER: #353535;
+
+$SEPARATOR_COLOR: linear-gradient(90deg, #9800FF 0%, #FF005A 100%);
+
+//=== MARGINS / PADDINGS / HEIGHT ===//
+$NAV_HEIGHT: 54px;
+$PADDING: 16px;
+$MARGINS: 8px;
+
+$HOT_ICON: require(url('~/assets/images/lobby-page/intercasino/hot-icon.png'));
+$ICON: require(url('~/assets/images/lobby-page/intercasino/icons.png'));
+

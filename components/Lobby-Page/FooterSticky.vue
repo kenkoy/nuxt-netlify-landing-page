@@ -1,5 +1,5 @@
 <template>
-  <aside id="footer-login-register">
+  <aside id="g-footer-sticky">
     <button class="n-button n-button--secondary">
       ログイン
     </button>
