@@ -1,0 +1,21 @@
+#sticky-footer footer {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+}
+#sticky-footer .container .row{
+  // grid-template-columns: auto auto auto;
+  // grid-column-gap: 0;
+  // grid-row-gap: 0;
+  background: #000;
+  color: #fff;
+}
+#sticky-footer .container-grid .row .item {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+iframe {
+  height: 100vh;
+  width: 100%;
+}

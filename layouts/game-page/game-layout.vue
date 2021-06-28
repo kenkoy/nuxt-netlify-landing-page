@@ -6,7 +6,29 @@
       v-if="Object.keys(mdData).length > 0"
       class="blank-main"
     >
-    {{ mdData }}
+      <section id="games">
+        <div class="container">
+          <div class="row">
+            <iframe src="https://instage.solidgaming.net/api/launch/VERAJOHN-QA/GHG_HAWAIIAN_DREAM" />
+          </div>
+        </div>
+      </section>
+
+      <section id="sticky-footer">
+        <div class="container">
+          <footer class="row column-3">
+            <div class="item">
+              Home
+            </div>
+            <div class="item">
+              Info
+            </div>
+            <div class="item">
+              Fullscreen
+            </div>
+          </footer>
+        </div>
+      </section>
     </div>
   </div>
 </template>
@@ -17,6 +39,13 @@ export default {
     return {
       mdData: {},
       htmlBody: ''
+    }
+  },
+  head () {
+    return {
+      link: [
+        { href: require('~/assets/sass/game-page/style.scss') }
+      ]
     }
   },
   computed: {
