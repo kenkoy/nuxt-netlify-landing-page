@@ -1,13 +1,14 @@
-import { mount, createLocalVue } from '@vue/test-utils'
+import { mount, createLocalVue, shallowMount } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
 import index from '@/pages/game-page/_slug/index.vue'
+import layout from '@/layouts/game-page/game-layout.vue'
 import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.js'
 
 const GAME_DIR = '/assets/content/game-page/'
 
 describe('Testing Game index.vue', () => {
-  let wrapper, metaInfo, tagIds, locale, mdData
+  let wrapper, layoutWrapper, metaInfo, layoutInfo, tagIds, locale, mdData
 
   beforeAll(async () => {
     const mdFiles = _
@@ -33,8 +34,15 @@ describe('Testing Game index.vue', () => {
         }
       }
     })
+    layoutWrapper = shallowMount(layout)
+
     metaInfo = wrapper.vm.$metaInfo
+    // layoutInfo = layoutWrapper.vm.$el
   })
+  test('HTML', () => {
+    const img = layoutWrapper.findAll('img');
+    expect(img.length).toBe(1);
+  }),
   test('HTML Meta Title should not be null or undefined', () => {
     const metaTitle = metaInfo.title
     expect(metaTitle).not.toBeNull()

@@ -2,10 +2,8 @@
   <div class="layout-css" :class="{ blank_wrapper: true }">
     <!-- Change class name to actual page name -->
     <nuxt />
-    <div
-      v-if="Object.keys(mdData).length > 0"
-      class="blank-main"
-    >
+    <img class="image1" src="" alt="asdasdas"/>
+    <div class="blank-main">
       <section id="games">
         <div class="container">
           <div class="row">
@@ -18,7 +16,7 @@
         <div class="container">
           <footer class="row column-3">
             <div class="item">
-              Home
+              {{ mdData.slug_name }}
             </div>
             <div class="item">
               Info
