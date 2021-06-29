@@ -51,17 +51,6 @@ export default {
       ]
     }
   },
-  computed: {
-    // USE THE CODE BELOW IF THE DESIGN / TEMPLATE HAVE BANNERS. ELSE, DELETE
-    // cssBackground () {
-    //   const images = this.mdData.promo_banner.promo_images
-    //   return {
-    //     '--bg-image': `url('${images.promo_bg_desktop}')`,
-    //     '--bg-image-m': `url('${images.promo_bg_mobile}')`,
-    //     '--bg-banner': `url('${images.promo_bg_banner}')`
-    //   }
-    // }
-  },
   created () {
     this.$root.$once('game-data', (data) => { // Change to actual page name
       this.htmlBody = data.htmlData
