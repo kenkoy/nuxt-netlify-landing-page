@@ -1,16 +1,9 @@
 <template>
-  <div class="post-page">
-    <ThePostList :posts="posts" />
-  </div>
+  <div />
 </template>
 
 <script>
-import ThePostList from '~/components/Marketing/ThePostList'
-
 export default {
-  components: {
-    ThePostList
-  },
   layout: 'default',
   async asyncData () {
     const mdFiles = await require.context(

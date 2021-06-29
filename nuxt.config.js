@@ -27,8 +27,14 @@ function dynamicMarkdownRoutes () {
         .map(file => `marketing/lobby-page/${brand}/${path.basename(file, '.md')}`)
     })
   )
+  const gameRoutes = [].concat(
+    ...markdownPaths.map((mdPath) => {
+      return glob.sync(`${mdPath}/*.md`, { cwd: 'assets/content/game-page/' })
+        .map(filepath => `${mdPath}/${path.basename(filepath, '.md')}`)
+    })
+  )
 
-  return [...landingRoutes, ...lobbyRoutes]
+  return [...landingRoutes, ...lobbyRoutes, ...gameRoutes]
   // return landingRoutes
 }
 
