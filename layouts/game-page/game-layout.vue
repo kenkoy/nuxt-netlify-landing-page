@@ -16,15 +16,18 @@
 
       <section id="sticky-footer">
         <div class="container">
-          <footer class="row column-3">
+          <footer class="row">
             <div class="item">
-              Home
+              <button class="icon home-icon" />
+              <button>Home</button>
             </div>
             <div class="item">
-              Info
+              <button class="icon info-icon" />
+              <button>Info</button>
             </div>
             <div class="item">
-              Fullscreen
+              <button class="icon fullscreen-icon" />
+              <button>Fullscreen</button>
             </div>
           </footer>
         </div>
