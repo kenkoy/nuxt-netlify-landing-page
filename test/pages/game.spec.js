@@ -34,12 +34,48 @@ describe('Testing Game index.vue', () => {
       }
     })
     metaInfo = wrapper.vm.$metaInfo
-    tagIds = markDownData.attributes.field_ids
-    locale = markDownData.attributes.promo_locale
   })
-  test('HTML language attribute should not be null or undefined', () => {
-    const languageAttribute = metaInfo.htmlAttrs.lang
-    expect(languageAttribute).not.toBeNull()
-    expect(languageAttribute).not.toHaveLength(0)
+  test('HTML Meta Title should not be null or undefined', () => {
+    const metaTitle = metaInfo.title
+    expect(metaTitle).not.toBeNull()
+    expect(metaTitle).not.toHaveLength(0)
+  }),
+  test('HTML Meta Keywords should not be null or undefined', () => {
+    const metaKeywords = metaInfo.keyworkds
+    expect(metaKeywords).not.toBeNull()
+    expect(metaKeywords).not.toHaveLength(0)
+  }),
+  test('MD FILE: SEO Meta should be "meta"', () => {
+    const errorSlugs = []
+    mdData
+      .map(md => retriveFrontMattertoJSON(md).attributes)
+      .forEach((md) => {
+        if (md.seo.meta === undefined) {
+          errorSlugs.push(md.slug_name)
+        }
+      })
+    expect(errorSlugs).toStrictEqual([])
+  })
+  test('MD FILE: SEO Meta Title should be "title"', () => {
+    const errorSlugs = []
+    mdData
+      .map(md => retriveFrontMattertoJSON(md).attributes)
+      .forEach((md) => {
+        if (md.seo.title === undefined) {
+          errorSlugs.push(md.slug_name)
+        }
+      })
+    expect(errorSlugs).toStrictEqual([])
+  }),
+  test('MD FILE: SEO Meta Keywords should be "keywords"', () => {
+    const errorSlugs = []
+    mdData
+      .map(md => retriveFrontMattertoJSON(md).attributes)
+      .forEach((md) => {
+        if (md.seo.meta.keywords === undefined) {
+          errorSlugs.push(md.slug_name)
+        }
+      })
+    expect(errorSlugs).toStrictEqual([])
   })
 })
