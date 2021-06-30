@@ -40,7 +40,7 @@ describe('Testing Game index.vue', () => {
   })
   test('Check mock', () => {
     const myMock = jest.fn(metaData)
-    console.log("xxxxxxxx", myMock)
+    console.log('xxxxxxxx', myMock)
   })
   // test('HTML Meta Title should not be null or undefined', () => {
   //   const metaTitle = metaInfo.title
