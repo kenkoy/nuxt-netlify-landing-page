@@ -8,7 +8,7 @@ import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.j
 const GAME_DIR = '/assets/content/game-page/'
 
 describe('Testing Game index.vue', () => {
-  let wrapper, layoutWrapper, metaInfo, layoutInfo, tagIds, locale, mdData
+  let wrapper, metaInfo, tagIds, locale, mdData, metaData
 
   beforeAll(async () => {
     const mdFiles = _
@@ -28,26 +28,19 @@ describe('Testing Game index.vue', () => {
     const markDownData = retriveFrontMattertoJSON(randomMarkdown)
     wrapper = mount(index, {
       localVue,
-      mocks: {
-        $route
-      },
       data () {
         return {
           markDownData
         }
       }
     })
-    layoutWrapper = shallowMount(layout)
 
     metaInfo = wrapper.vm.$metaInfo
-    // layoutInfo = layoutWrapper.vm.$el
+    metaData = wrapper.vm.$seoBuilder
   })
   test('Check mock', () => {
-    expect(wrapper.vm.$route.path).toBe($route.path)
-  }),
-  test('Images should have an alt tags', () => {
-    expect(layoutWrapper.find("img").attributes('alt')).not.toBeNull()
-    expect(layoutWrapper.find("img").attributes('alt')).not.toHaveLength(0)
+    const myMock = jest.fn(metaData)
+    console.log("xxxxxxxx", myMock)
   })
   // test('HTML Meta Title should not be null or undefined', () => {
   //   const metaTitle = metaInfo.title

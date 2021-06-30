@@ -12,8 +12,6 @@
         </div>
       </section>
 
-      <img src="asdasdas" alt="asdas"/>
-
       <section id="sticky-footer">
         <div class="container">
           <footer class="row">
