@@ -39,9 +39,9 @@ describe('Testing Game index.vue', () => {
     metaInfo = wrapper.vm.$metaInfo
     // layoutInfo = layoutWrapper.vm.$el
   })
-  test('HTML', () => {
-    const img = layoutWrapper.findAll('img');
-    expect(img.length).toBe(1);
+  test('Images should have an alt tags', () => {
+    expect(layoutWrapper.find("img").attributes('alt')).not.toBeNull()
+    expect(layoutWrapper.find("img").attributes('alt')).not.toHaveLength(0)
   }),
   test('HTML Meta Title should not be null or undefined', () => {
     const metaTitle = metaInfo.title
