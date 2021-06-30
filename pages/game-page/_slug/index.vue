@@ -14,11 +14,18 @@ export default {
     }
   },
   head () {
+    const seoJSON = JSON.parse(JSON.stringify(this.markDownData.attributes.seo))
+    const seo = this.$seoBuilder({ ...seoJSON }, 'verajohn')
     return {
-      title: this.markDownData.attributes.seo.title || '',
-      keyworkds: this.markDownData.attributes.seo.meta.keywords,
-      alternate: this.markDownData.attributes.seo.meta.alternate_links
+      title: seo.title || '',
+      meta: seo.meta,
+      link: seo.link
     }
+    // return {
+    //   title: this.markDownData.attributes.seo.title || '',
+    //   keyworkds: this.markDownData.attributes.seo.meta.keywords,
+    //   alternate: this.markDownData.attributes.seo.meta.alternate_links
+    // }
   },
   mounted () {
     this.emitData(this.markDownData)
