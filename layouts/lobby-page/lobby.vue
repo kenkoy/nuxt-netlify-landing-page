@@ -202,10 +202,10 @@ export default {
     this.$root.$once('lobby-page-data', (data) => {
       if (Object.keys(data).length > 0) {
         this.mdData = data
-        // switch (this.mdData.brand) {
-        //   case 'verajohn': this.shortBrand = 'verajohn'; break
-        //   case 'intercasino': this.shortBrand = 'intercasino'; break
-        // }
+        switch (this.mdData.brand) {
+          case 'verajohn': this.shortBrand = 'verajohn'; break
+          case 'intercasino': this.shortBrand = 'intercasino'; break
+        }
       }
     })
   },
