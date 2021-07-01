@@ -46,12 +46,34 @@ describe('Testing Game index.vue', () => {
       })
     expect(errorSlugs).toStrictEqual([])
   }),
+  test('MD FILE: SEO Title should NOT be null', () => {
+    const errorSlugs = []
+    mdData
+      .map(md => retriveFrontMattertoJSON(md).attributes)
+      .forEach((md) => {
+        if (md.seo.title.length === 0) {
+          errorSlugs.push(md.slug_name)
+        }
+      })
+    expect(errorSlugs).toStrictEqual([])
+  }),
   test('MD FILE: SEO Meta should be "meta"', () => {
     const errorSlugs = []
     mdData
       .map(md => retriveFrontMattertoJSON(md).attributes)
       .forEach((md) => {
         if (md.seo.meta === undefined) {
+          errorSlugs.push(md.slug_name)
+        }
+      })
+    expect(errorSlugs).toStrictEqual([])
+  }),
+  test('MD FILE: SEO Meta should NOT be null', () => {
+    const errorSlugs = []
+    mdData
+      .map(md => retriveFrontMattertoJSON(md).attributes)
+      .forEach((md) => {
+        if (md.seo.meta.length === 0) {
           errorSlugs.push(md.slug_name)
         }
       })
@@ -67,15 +89,16 @@ describe('Testing Game index.vue', () => {
         }
       })
     expect(errorSlugs).toStrictEqual([])
+  }),
+  test('MD FILE: SEO Meta Keywords should NOT be null', () => {
+    const errorSlugs = []
+    mdData
+      .map(md => retriveFrontMattertoJSON(md).attributes)
+      .forEach((md) => {
+        if (md.seo.meta.keywords.length === 0) {
+          errorSlugs.push(md.slug_name)
+        }
+      })
+    expect(errorSlugs).toStrictEqual([])
   })
-  // test('HTML Meta Title should not be null or undefined', () => {
-  //   const metaTitle = metaInfo.title
-  //   expect(metaTitle).not.toBeNull()
-  //   expect(metaTitle).not.toHaveLength(0)
-  // }),
-  // test('HTML Meta Keywords should not be null or undefined', () => {
-  //   const metaKeywords = metaInfo.keyworkds
-  //   expect(metaKeywords).not.toBeNull()
-  //   expect(metaKeywords).not.toHaveLength(0)
-  // }),
 })
