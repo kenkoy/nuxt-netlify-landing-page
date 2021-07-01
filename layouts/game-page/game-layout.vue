@@ -11,7 +11,7 @@
           </div>
         </div>
       </section>
-
+      <img src="adsasdas" alt="asdasd"/>
       <section id="sticky-footer">
         <div class="container">
           <footer class="row">

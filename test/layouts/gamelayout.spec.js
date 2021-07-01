@@ -10,11 +10,20 @@ describe('Testing Game index.vue', () => {
   beforeAll(async () => {
     wrapper = shallowMount(layout)
   })
-  test('Images should have an alt tags', () => {
-    const img = wrapper.find('img')
-    if (img.exists()) {
-      expect(img.attributes('alt')).not.toBeNull()
-      expect(img.attributes('alt')).not.toHaveLength(0)
-    }
+  test('Layout CLASS should exist', () => {
+    expect(wrapper.classes()).toContain('layout-css')
+  }),
+  test('Iframe should exist', () => {
+    const iframe = wrapper.findAll('iframe')
+    expect(iframe.length).toBe(1)
+  }),
+  test('Sticky footer ID name should be sticky-footer', () => {
+    const byId = wrapper.find('#sticky-footer')
+    expect(byId.element.id).toBe('sticky-footer')
+  }),
+  test('Iframe', () => {
+    const iframe = wrapper.findAll('iframe')
+    const src = wrapper.findAll(iframe.attributes('src'))
+    expect(src.length).toBe(1)
   })
 })
