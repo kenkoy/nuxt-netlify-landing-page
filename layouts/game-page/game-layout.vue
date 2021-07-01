@@ -7,11 +7,9 @@
         <div class="container">
           <div class="row">
             <iframe src="https://instage.solidgaming.net/api/launch/VERAJOHN-QA/GHG_HAWAIIAN_DREAM" />
-            <!-- <p class="now-loading">Now Loading... Please wait</p> -->
           </div>
         </div>
       </section>
-      <img src="adsasdas" alt="asdasd"/>
       <section id="sticky-footer">
         <div class="container">
           <footer class="row">
