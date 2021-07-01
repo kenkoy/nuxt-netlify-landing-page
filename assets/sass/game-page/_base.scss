@@ -1,7 +1,7 @@
 #sticky-footer {
   footer {
     width: 100%;
-    height: 50px;
+    height: 55px;
   }
   .container {
     .row {
@@ -21,14 +21,16 @@
           background-color: #000;
           color: #fff;
           font-size: 8px;
-        }
-        .icon {
-          width: 18px;
-          height: 18px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+          line-height: 16px;
+          &.home:before, &.info:before, &.fullscreen:before {
+            content: "";
+            width: 38px;
+            height: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
         }
       }
     }
@@ -41,12 +43,12 @@ iframe {
   border: 0;
 }
 
-.home-icon {
-  background: url("@/assets/images/game-page/home_icon.svg") 0 0 no-repeat;
+#sticky-footer .container .row > div button.home:before {
+  background: url("@/assets/images/game-page/home_icon.svg") center center no-repeat;
 }
-.info-icon {
-  background: url("@/assets/images/game-page/info_icon.svg") 0 0 no-repeat;
+#sticky-footer .container .row > div button.info:before {
+  background: url("@/assets/images/game-page/info_icon.svg") center center no-repeat;
 }
-.fullscreen-icon {
-  background: url("@/assets/images/game-page/fullscreen_icon.svg") 0 0 no-repeat;
+#sticky-footer .container .row > div button.fullscreen:before {
+  background: url("@/assets/images/game-page/fullscreen_icon.svg") center center no-repeat;
 }

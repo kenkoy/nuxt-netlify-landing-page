@@ -16,16 +16,19 @@
         <div class="container">
           <footer class="row">
             <div class="item">
-              <button class="icon home-icon" />
-              <button>Home</button>
+              <button class="home">
+                Home
+              </button>
             </div>
             <div class="item">
-              <button class="icon info-icon" />
-              <button>Info</button>
+              <button class="info">
+                Info
+              </button>
             </div>
             <div class="item">
-              <button class="icon fullscreen-icon" />
-              <button @click="openFullscreen()">Fullscreen</button>
+              <button class="fullscreen" @click="openFullscreen()">
+                Fullscreen
+              </button>
             </div>
           </footer>
         </div>
@@ -59,6 +62,9 @@ export default {
   mounted () {
     this.fullscreen = document.documentElement
   },
+  beforeDestroy () {
+    this.$root.$off('game-data') // Change to actual page name
+  },
   methods: {
     openFullscreen () {
       if (this.fullscreen.requestFullscreen) {
@@ -69,32 +75,6 @@ export default {
         this.fullscreen.msRequestFullscreen()
       }
     }
-  },
-  beforeDestroy () {
-    this.$root.$off('game-data') // Change to actual page name
   }
 }
 </script>
-<!--
-<style scoped lang="scss">
-  #games .row{
-    position: relative;
-    height: calc(100vh - 50px);
-    width: 100%;
-    border: 0;
-    background: #000;
-    align-items: center;
-    justify-content: center;
-
-    .now-loading{
-      color: #fff;
-      font-size: 150%;
-    }
-
-    iframe{
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  }
-</style> -->
