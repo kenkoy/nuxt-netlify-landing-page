@@ -1,14 +1,14 @@
 import { mount, createLocalVue, shallowMount } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
-import index from '@/pages/game-page/_slug/index.vue'
-import layout from '@/layouts/game-page/game-layout.vue'
+import index from '@/pages/game-page/index.vue'
+import seoBuilder from '@/plugins/seo.js'
 import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.js'
 
 const GAME_DIR = '/assets/content/game-page/'
 
 describe('Testing Game index.vue', () => {
-  let wrapper, metaInfo, tagIds, locale, mdData, metaData
+  let wrapper, metaInfo, tagIds, locale, mdData, metaData, seoBuilder
 
   beforeAll(async () => {
     const mdFiles = _
@@ -34,13 +34,39 @@ describe('Testing Game index.vue', () => {
         }
       }
     })
-
-    metaInfo = wrapper.vm.$metaInfo
-    metaData = wrapper.vm.$seoBuilder
   })
-  test('Check mock', () => {
-    const myMock = jest.fn(metaData)
-    console.log('xxxxxxxx', myMock)
+  test('MD FILE: SEO Title should be title', () => {
+    const errorSlugs = []
+    mdData
+      .map(md => retriveFrontMattertoJSON(md).attributes)
+      .forEach((md) => {
+        if (md.seo.title === undefined) {
+          errorSlugs.push(md.slug_name)
+        }
+      })
+    expect(errorSlugs).toStrictEqual([])
+  }),
+  test('MD FILE: SEO Meta should be "meta"', () => {
+    const errorSlugs = []
+    mdData
+      .map(md => retriveFrontMattertoJSON(md).attributes)
+      .forEach((md) => {
+        if (md.seo.meta === undefined) {
+          errorSlugs.push(md.slug_name)
+        }
+      })
+    expect(errorSlugs).toStrictEqual([])
+  }),
+  test('MD FILE: SEO Meta Keywords should be "keywords"', () => {
+    const errorSlugs = []
+    mdData
+      .map(md => retriveFrontMattertoJSON(md).attributes)
+      .forEach((md) => {
+        if (md.seo.meta.keywords === undefined) {
+          errorSlugs.push(md.slug_name)
+        }
+      })
+    expect(errorSlugs).toStrictEqual([])
   })
   // test('HTML Meta Title should not be null or undefined', () => {
   //   const metaTitle = metaInfo.title
@@ -52,37 +78,4 @@ describe('Testing Game index.vue', () => {
   //   expect(metaKeywords).not.toBeNull()
   //   expect(metaKeywords).not.toHaveLength(0)
   // }),
-  // test('MD FILE: SEO Meta should be "meta"', () => {
-  //   const errorSlugs = []
-  //   mdData
-  //     .map(md => retriveFrontMattertoJSON(md).attributes)
-  //     .forEach((md) => {
-  //       if (md.seo.meta === undefined) {
-  //         errorSlugs.push(md.slug_name)
-  //       }
-  //     })
-  //   expect(errorSlugs).toStrictEqual([])
-  // })
-  // test('MD FILE: SEO Meta Title should be "title"', () => {
-  //   const errorSlugs = []
-  //   mdData
-  //     .map(md => retriveFrontMattertoJSON(md).attributes)
-  //     .forEach((md) => {
-  //       if (md.seo.title === undefined) {
-  //         errorSlugs.push(md.slug_name)
-  //       }
-  //     })
-  //   expect(errorSlugs).toStrictEqual([])
-  // }),
-  // test('MD FILE: SEO Meta Keywords should be "keywords"', () => {
-  //   const errorSlugs = []
-  //   mdData
-  //     .map(md => retriveFrontMattertoJSON(md).attributes)
-  //     .forEach((md) => {
-  //       if (md.seo.meta.keywords === undefined) {
-  //         errorSlugs.push(md.slug_name)
-  //       }
-  //     })
-  //   expect(errorSlugs).toStrictEqual([])
-  // })
 })
