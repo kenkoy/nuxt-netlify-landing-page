@@ -35,7 +35,21 @@ describe('Testing Game index.vue', () => {
       }
     })
   })
-  test('MD FILE: SEO Title should be title', () => {
+  test('HTML', () => {
+    const img = layoutWrapper.findAll('img')
+    expect(img.length).toBe(1)
+  }),
+  test('HTML Meta Title should not be null or undefined', () => {
+    const metaTitle = metaInfo.title
+    expect(metaTitle).not.toBeNull()
+    expect(metaTitle).not.toHaveLength(0)
+  }),
+  test('HTML Meta Keywords should not be null or undefined', () => {
+    const metaKeywords = metaInfo.keyworkds
+    expect(metaKeywords).not.toBeNull()
+    expect(metaKeywords).not.toHaveLength(0)
+  }),
+  test('MD FILE: SEO Meta should be "meta"', () => {
     const errorSlugs = []
     mdData
       .map(md => retriveFrontMattertoJSON(md).attributes)
