@@ -20,5 +20,11 @@ describe('Testing Game index.vue', () => {
   test('Sticky footer ID name should be sticky-footer', () => {
     const byId = wrapper.find('#sticky-footer')
     expect(byId.element.id).toBe('sticky-footer')
+  }),
+  test('Image alt tags should exist', () => {
+    const imgArray = wrapper.findAll('img')
+    if(imgArray.length > 0){
+      expect(imgArray.contains('[alt]')).toBe(true)
+    }
   })
 })
