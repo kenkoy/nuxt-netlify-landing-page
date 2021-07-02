@@ -51,21 +51,24 @@
   }
 
   #description .info-layer{
-  visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transform: translate(0, 0);
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translate(0, 0);
   }
-  #description .info-layer.active{
-  visibility: visible;
-  transform: translate(0, -100%);
-  background: #fff;
-  overflow: scroll;
-  height: 200px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  #description .info-layer.active {
+    visibility: visible;
+    transform: translate(0, -100%);
+    background: #fff;
+    overflow: scroll;
+    max-width: 95%;
+    height: 200px;
+    margin: auto;
+    left: 3%;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, .2);
   }
 
 iframe {
