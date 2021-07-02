@@ -1,7 +1,7 @@
 ---
-slug_name: Sample Game Page
+slug_name: Popup Info
 seo:
-  title: オンライン ビデオスロット | InterCasino(インターカジノ)
+  title: Popup Info Sample
   meta:
     keywords: slot machine, roulette, baccarat, win, flash, games, online, pontoon,
       gold diggers, sample keyword
