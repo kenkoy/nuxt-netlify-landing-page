@@ -11,8 +11,12 @@
         </div>
       </section>
       <section>
-        <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque ante et pellentesque porta. Pellentesque lacinia neque non augue cursus, at egestas velit pellentesque. Quisque tempor, nibh id aliquam luctus, erat ante tincidunt erat, eu sollicitudin leo purus at erat. Pellentesque elementum diam ut semper rutrum. Sed at pulvinar velit. Proin libero nunc, ultricies vel suscipit a, mollis sed orci. Aliquam eget gravida mi. In pellentesque auctor ex id lobortis. Praesent non augue vehicula, auctor nibh eu, malesuada lectus. Pellentesque porttitor orci vel nunc convallis, quis posuere massa semper. Quisque tempor leo nec nunc euismod, id pretium eros ullamcorper.
+        <div class="container">
+          <div class="row">
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque ante et pellentesque porta. Pellentesque lacinia neque non augue cursus, at egestas velit pellentesque. Quisque tempor, nibh id aliquam luctus, erat ante tincidunt erat, eu sollicitudin leo purus at erat. Pellentesque elementum diam ut semper rutrum. Sed at pulvinar velit. Proin libero nunc, ultricies vel suscipit a, mollis sed orci. Aliquam eget gravida mi. In pellentesque auctor ex id lobortis. Praesent non augue vehicula, auctor nibh eu, malesuada lectus. Pellentesque porttitor orci vel nunc convallis, quis posuere massa semper. Quisque tempor leo nec nunc euismod, id pretium eros ullamcorper.
+            </div>
+          </div>
         </div>
       </section>
       <section id="sticky-footer">
