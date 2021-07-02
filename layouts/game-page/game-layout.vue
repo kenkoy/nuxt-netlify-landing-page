@@ -25,18 +25,19 @@
         <div class="container">
           <footer class="row">
             <div class="item">
-              <button class="home">
-                Home
+              <button class="home" @click="exitFullscreen()">
+                <span>Home</span>
               </button>
             </div>
             <div class="item">
               <button class="info" @click="popUp()">
-                Info
+                <span>Info</span>
               </button>
             </div>
             <div class="item">
-              <button class="fullscreen" @click="openFullscreen()">
-                Fullscreen
+              <button class="fullscreen" @click="!fullscreenState ? openFullscreen() : exitFullscreen()">
+                <span v-if="!fullscreenState">Fullscreen</span>
+                <span v-if="fullscreenState">Exit Fullscreen</span>
               </button>
             </div>
           </footer>
@@ -53,6 +54,7 @@ export default {
       mdData: {},
       htmlBody: '',
       fullscreen: '',
+      fullscreenState: false,
       isActive: false
     }
   },
@@ -77,12 +79,23 @@ export default {
   },
   methods: {
     openFullscreen () {
+      this.fullscreenState = true
       if (this.fullscreen.requestFullscreen) {
         this.fullscreen.requestFullscreen()
       } else if (this.fullscreen.webkitRequestFullscreen) { /* Safari */
         this.fullscreen.webkitRequestFullscreen()
       } else if (this.fullscreen.msRequestFullscreen) { /* IE11 */
         this.fullscreen.msRequestFullscreen()
+      }
+    },
+    exitFullscreen () {
+      this.fullscreenState = false
+      if (document.exitFullscreen) {
+        document.exitFullscreen()
+      } else if (document.webkitExitFullscreen) { /* Safari */
+        document.webkitExitFullscreen()
+      } else if (document.msExitFullscreen) { /* IE11 */
+        document.msExitFullscreen()
       }
     },
     popUp () {
