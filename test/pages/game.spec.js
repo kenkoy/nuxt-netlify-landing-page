@@ -37,28 +37,6 @@ describe('Testing Game index.vue', () => {
       })
     expect(errorSlugs).toStrictEqual([])
   }),
-  test('MD FILE: SEO Meta should be "meta"', () => {
-    const errorSlugs = []
-    mdData
-      .map(md => retriveFrontMattertoJSON(md).attributes)
-      .forEach((md) => {
-        if (md.seo.meta === undefined) {
-          errorSlugs.push(md.slug_name)
-        }
-      })
-    expect(errorSlugs).toStrictEqual([])
-  }),
-  test('MD FILE: SEO Meta should NOT be null', () => {
-    const errorSlugs = []
-    mdData
-      .map(md => retriveFrontMattertoJSON(md).attributes)
-      .forEach((md) => {
-        if (md.seo.meta.length === 0) {
-          errorSlugs.push(md.slug_name)
-        }
-      })
-    expect(errorSlugs).toStrictEqual([])
-  }),
   test('MD FILE: SEO Meta Keywords should be "keywords"', () => {
     const errorSlugs = []
     mdData
