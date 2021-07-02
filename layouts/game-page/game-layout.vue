@@ -1,12 +1,18 @@
 <template>
-  <div class="layout-css" :class="{ blank_wrapper: true }">
+  <div class="layout-css" :class="{ game_wrapper: true }">
     <!-- Change class name to actual page name -->
     <nuxt />
     <div class="game">
       <section id="game-frame">
         <div class="container">
           <div class="row">
-            <iframe src="https://instage.solidgaming.net/api/launch/VERAJOHN-QA/GHG_HAWAIIAN_DREAM" />
+            <div class="testDan">
+              <p>Dan</p>
+              <div class="iframe_url">
+                {{ mdData.page_section.iframe_url }}
+              </div>
+            </div>
+            <!-- <iframe src="https://instage.solidgaming.net/api/launch/VERAJOHN-QA/GHG_HAWAIIAN_DREAM" /> -->
           </div>
         </div>
       </section>
@@ -14,9 +20,7 @@
         <div class="container">
           <div class="row">
             <div class="info-layer" :class="{active: isActive}">
-              <h2>Lorem Ipsum Dolor</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque ante et pellentesque porta. Pellentesque lacinia neque non augue cursus, at egestas velit pellentesque. Quisque tempor, nibh id aliquam luctus, erat ante tincidunt erat, eu sollicitudin leo purus at erat. Pellentesque elementum diam ut semper rutrum. Sed at pulvinar velit. Proin libero nunc, ultricies vel suscipit a, mollis sed orci. Aliquam eget gravida mi. In pellentesque auctor ex id lobortis. Praesent non augue vehicula, auctor nibh eu, malesuada lectus. Pellentesque porttitor orci vel nunc convallis, quis posuere massa semper. Quisque tempor leo nec nunc euismod, id pretium eros ullamcorper.</p>
-              <p>Aliquam aliquet iaculis justo quis scelerisque. Phasellus quis porta nunc. Duis mollis consectetur risus, ac imperdiet nulla egestas eu. Aliquam quis nisi maximus, interdum risus non, tincidunt dui. Morbi sed dapibus urna. Fusce at nisi feugiat, aliquet nibh a, rutrum mi. Nulla nibh tortor, hendrerit ac feugiat vel, ullamcorper nec massa. Phasellus sed elit ultricies justo bibendum aliquam. Sed nunc risus, accumsan a odio eu, laoreet ullamcorper lectus. Proin efficitur porttitor neque, ut condimentum ante blandit a. Etiam sed eros ut eros vehicula pellentesque. Duis vel est ut libero maximus ullamcorper et et sapien. Quisque euismod odio at magna euismod porta. Nullam eu lectus quis turpis interdum tempus nec et lorem. Praesent sagittis, ipsum sit amet rhoncus congue, nunc odio aliquet urna, vitae sagittis eros massa nec odio.</p>
+              <div v-html="htmlBody" />
             </div>
           </div>
         </div>
