@@ -203,8 +203,8 @@ export default {
       if (Object.keys(data).length > 0) {
         this.mdData = data
         switch (this.mdData.brand) {
-          case 'verajohn': this.shortBrand = 'verajohn'; break
-          case 'intercasino': this.shortBrand = 'intercasino'; break
+          case 'verajohn': this.shortBrand = 'vj'; break
+          case 'intercasino': this.shortBrand = 'ic'; break
         }
       }
     })
