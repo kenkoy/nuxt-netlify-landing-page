@@ -1,14 +1,12 @@
-import { mount, createLocalVue, shallowMount } from '@vue/test-utils'
+import { mount } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
-import index from '@/pages/game-page/index.vue'
-import seoBuilder from '@/plugins/seo.js'
 import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.js'
 
 const GAME_DIR = '/assets/content/game-page/'
 
 describe('Testing Game index.vue', () => {
-  let wrapper, metaInfo, tagIds, locale, mdData, metaData, seoBuilder
+  let mdData
 
   beforeAll(async () => {
     const mdFiles = _
@@ -16,24 +14,6 @@ describe('Testing Game index.vue', () => {
       .map(files => GAME_DIR + files)
       .value()
     mdData = mdFiles
-
-    const localVue = createLocalVue()
-    localVue.use(VueMeta, { keyName: 'head' })
-
-    const randomMarkdown = _
-      .chain(mdFiles)
-      .sample()
-      .value()
-
-    const markDownData = retriveFrontMattertoJSON(randomMarkdown)
-    wrapper = mount(index, {
-      localVue,
-      data () {
-        return {
-          markDownData
-        }
-      }
-    })
   })
   test('MD FILE: SEO Title should be title', () => {
     const errorSlugs = []

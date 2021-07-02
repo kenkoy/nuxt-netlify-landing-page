@@ -1,4 +1,4 @@
-import { mount, createLocalVue, shallowMount } from '@vue/test-utils'
+import { shallowMount } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
 import layout from '@/layouts/game-page/game-layout.vue'
@@ -10,7 +10,7 @@ describe('Testing Game index.vue', () => {
   beforeAll(async () => {
     wrapper = shallowMount(layout)
   })
-  test('Layout CLASS should exist', () => {
+  test('layout-css CLASS should exist', () => {
     expect(wrapper.classes()).toContain('layout-css')
   }),
   test('Iframe should exist', () => {
@@ -20,11 +20,5 @@ describe('Testing Game index.vue', () => {
   test('Sticky footer ID name should be sticky-footer', () => {
     const byId = wrapper.find('#sticky-footer')
     expect(byId.element.id).toBe('sticky-footer')
-  }),
-  test('Image alt tags should exist', () => {
-    const imgArray = wrapper.findAll('img')
-    if(imgArray.length > 0){
-      expect(imgArray.contains('[alt]')).toBe(true)
-    }
   })
 })
