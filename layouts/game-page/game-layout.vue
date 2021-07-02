@@ -6,21 +6,18 @@
       <section id="game-frame">
         <div class="container">
           <div class="row">
-            <div class="testDan">
-              <p>Dan</p>
-              <div class="iframe_url">
-                {{ mdData.page_section.iframe_url }}
-              </div>
-            </div>
-            <!-- <iframe src="https://instage.solidgaming.net/api/launch/VERAJOHN-QA/GHG_HAWAIIAN_DREAM" /> -->
+            <iframe :src="mdData.page_section.iframe_url"></iframe>
           </div>
         </div>
       </section>
       <section id="description">
         <div class="container">
           <div class="row">
-            <div class="info-layer" :class="{active: isActive}">
-              <div v-html="htmlBody" />
+            <div v-if="mdData.page_section.popup_toggle" class="info-layer" :class="{active: isActive}">
+              {{ mdData.page_section.game_description }}
+            </div>
+            <div v-else class="info-layer">
+              {{ mdData.page_section.game_description }}
             </div>
           </div>
         </div>
