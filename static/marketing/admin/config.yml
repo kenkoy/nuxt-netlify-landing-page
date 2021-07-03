@@ -1948,20 +1948,6 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - {
-              label: "iFrame",
-              name: iframe_url,
-              widget: "string",
-            }
-          - {
-              label: "Enable Popup",
-              name: popup_toggle,
-              widget: "boolean",
-              default: false,
-              required: false,
-            }
-          - {
-              label: "Description",
-              name: game_description,
-              widget: "markdown",
-            }
+          - { label: "iFrame", name: iframe_url, widget: "string"}
+          - { label: "Enable Popup", name: popup_toggle, widget: "boolean", default: false, required: false }
+          - { label: "Description", name: game_description, widget: "markdown" }

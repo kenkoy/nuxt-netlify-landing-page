@@ -6,19 +6,19 @@
       <section id="game-frame">
         <div class="container">
           <div class="row">
-            <iframe :src="mdData.page_section.iframe_url"></iframe>
+            <!-- <iframe :src="mdData.seo.title"></iframe> -->
           </div>
         </div>
       </section>
       <section id="description">
         <div class="container">
           <div class="row">
-            <div v-if="mdData.page_section.popup_toggle" class="info-layer" :class="{active: isActive}">
+            <!-- <div v-if="mdData.page_section.popup_toggle" class="info-layer" :class="{active: isActive}">
               {{ mdData.page_section.game_description }}
             </div>
             <div v-else class="info-layer">
               {{ mdData.page_section.game_description }}
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
