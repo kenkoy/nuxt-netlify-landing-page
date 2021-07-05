@@ -6,7 +6,7 @@
       <section id="game-frame">
         <div class="container">
           <div class="row">
-            <iframe :src="mdData.page_section.iframe_url" />>
+            <iframe :src="mdData.page_section.iframe_url" />
           </div>
         </div>
       </section>
