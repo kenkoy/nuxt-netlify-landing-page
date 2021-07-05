@@ -13,12 +13,12 @@
       <section id="description">
         <div class="container">
           <div class="row">
-            <!-- <div v-if="mdData.page_section.popup_toggle" class="info-layer" :class="{active: isActive}">
-              {{ mdData.page_section.game_description }}
+            <div v-if="mdData.page_section.popup_toggle" class="info-layer" :class="{active: isActive}">
+              <div v-html="htmlBody" />
             </div>
             <div v-else class="info-layer">
-              {{ mdData.page_section.game_description }}
-            </div> -->
+              <div v-html="htmlBody" />
+            </div>
           </div>
         </div>
       </section>
