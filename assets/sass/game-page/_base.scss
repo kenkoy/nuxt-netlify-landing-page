@@ -22,7 +22,7 @@
           max-width: 33.333333%;
           button {
             border: 0;
-            background-color: #000;
+            background-color: transparent;
             color: #fff;
             font-size: 8px;
             line-height: 16px;
@@ -50,6 +50,24 @@
     }
   }
 
+  #description .description-data{
+    padding: 20px;
+      h5{
+        font-size: 15px;
+        line-height: 20px;
+        color: #000;
+        margin-bottom: 20px;
+      }
+
+      p{
+        margin: 0;
+        font-size: 11px;
+        line-height: 16px;
+        color: #000;
+        font-weight: normal;
+      }
+  }
+
   #description .info-layer{
     visibility: hidden;
     position: absolute;
@@ -75,4 +93,8 @@ iframe {
   height: calc(100vh - 50px);
   width: 100%;
   border: 0;
+}
+
+.item.active{
+  background: #009fe3;
 }

@@ -10,15 +10,17 @@
           </div>
         </div>
       </section>
-      <section id="description">
+      <section v-if="mdData.page_section.popup_toggle" id="description">
         <div class="container">
           <div class="row">
-            <!-- <div v-if="mdData.page_section.popup_toggle" class="info-layer" :class="{active: isActive}">
-              {{ mdData.page_section.game_description }}
-            </div>
-            <div v-else class="info-layer">
-              {{ mdData.page_section.game_description }}
-            </div> -->
+            <div class="info-layer description-data" :class="{active: isActive}" v-html="htmlBody"/>
+          </div>
+        </div>
+      </section>
+      <section v-if="!mdData.page_section.popup_toggle" id="description">
+        <div class="container">
+          <div class="row">
+            <div class="description-data" v-html="htmlBody"/>
           </div>
         </div>
       </section>
@@ -30,7 +32,7 @@
                 <span>Home</span>
               </button>
             </div>
-            <div class="item">
+            <div class="item" :class="{active: isActive}">
               <button class="info" @click="popUp()">
                 <span>Info</span>
               </button>
@@ -62,7 +64,8 @@ export default {
   head () {
     return {
       link: [
-        { href: require('~/assets/sass/game-page/style.scss') }
+        { href: require('~/assets/sass/game-page/style.scss') },
+        { href: require('~/assets/sass/global/externalBrandCss/verajohn_jp_main.min.css') }
       ]
     }
   },
