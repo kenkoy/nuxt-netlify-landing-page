@@ -56,6 +56,11 @@ export default {
           name: 'lobby-page-game',
           path: '/marketing/lobby-page/:brand/:game',
           component: resolve(__dirname, 'pages/lobby-page/_brand/_game/index.vue')
+        },
+        {
+          name: 'game-page',
+          path: '/marketing/game-page/',
+          component: resolve(__dirname, 'pages/game-page/_slug/index.vue')
         }
       ]
       routes.push(...newRoutes)
