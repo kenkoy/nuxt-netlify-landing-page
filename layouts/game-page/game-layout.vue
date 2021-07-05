@@ -1,5 +1,5 @@
 <template>
-  <div class="layout-css" :class="{ game_wrapper: true }">
+  <div class="layout-css">
     <!-- Change class name to actual page name -->
     <nuxt />
     <div v-if="Object.keys(mdData).length > 0" class="game">
