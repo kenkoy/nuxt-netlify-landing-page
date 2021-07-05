@@ -1,7 +1,7 @@
 <template>
   <div class="layout-css">
     <!-- Change class name to actual page name -->
-    <nuxt />
+    <Nuxt />
     <div v-if="Object.keys(mdData).length > 0" class="game">
       <section id="game-frame">
         <div class="container">

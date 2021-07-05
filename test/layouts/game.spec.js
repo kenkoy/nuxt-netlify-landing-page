@@ -1,4 +1,4 @@
-import { createLocalVue, mount, nuxt } from '@vue/test-utils'
+import { createLocalVue, mount } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
 import layout from '@/layouts/game-page/game-layout.vue'
@@ -27,7 +27,11 @@ describe('Testing Game index.vue', () => {
 
     dataMD = retriveFrontMattertoJSON(randomMarkdown)
 
-    wrapper = mount (layout)
+    wrapper = mount (layout, {
+      stubs: {
+        Nuxt: true,
+      },
+    })
   })
   test('layout-css CLASS should exist', () => {
     if (dataMD.length > 0){
