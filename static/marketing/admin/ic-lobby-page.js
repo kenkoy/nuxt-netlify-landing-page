@@ -13,7 +13,7 @@ export const IC_LOBBY_PREVIEW = createClass({
     document.head.appendChild(link)
   },
   render () {
-    const { widgetsFor, widgetFor } = this.props
+    const { widgetsFor } = this.props
 
     const banners = widgetsFor('banner')
 
@@ -23,7 +23,7 @@ export const IC_LOBBY_PREVIEW = createClass({
 
     const lobbyTiles = widgetsFor('lobby_tiles').getIn(['data', 'lobby_list']) || []
     const lobbyCategory = widgetsFor('lobby_tiles').getIn(['data', 'lobby_tiles_title']) || []
-    const body = widgetFor('body')
+    const body = widgetsFor('body').getIn(['data']) || ''
 
     return (html`
       <body class="layout-css lobby_pages_wrapper">
@@ -146,7 +146,7 @@ export const IC_LOBBY_PREVIEW = createClass({
               </div>
             </section>
 
-            <${SEO_CONTENT} seoContent=${body.props.value} />
+            <${SEO_CONTENT} seoContent=${body} />
 
             <footer id="footer-icon-wrapper">
               <div class="container footer-icons">
