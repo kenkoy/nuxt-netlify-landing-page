@@ -1,12 +1,14 @@
-import { mount } from '@vue/test-utils'
+import { mount, createLocalVue, createWrapper } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
+import index from '@/pages/game-page/_slug/index.vue'
 import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.js'
+import { expect } from '@jest/globals'
 
 const GAME_DIR = '/assets/content/game-page/'
 
 describe('Testing Game index.vue', () => {
-  let mdData
+  let mdData, markDownData, wrapper, rootWrapper, error, localVue
 
   beforeAll(async () => {
     const mdFiles = _
@@ -14,6 +16,76 @@ describe('Testing Game index.vue', () => {
       .map(files => GAME_DIR + files)
       .value()
     mdData = mdFiles
+
+
+    localVue = createLocalVue()
+    localVue.use(VueMeta, { keyName: 'head' })
+    markDownData = {
+     attributes: {
+       banner: {
+         image: '/test/image',
+         url: '/test'
+       },
+       game: {
+         game_list: {
+           title: 'Test Game'
+         }
+       },
+       seo: {
+         title: 'Test SEO',
+         meta: {
+           description: 'Test Meta Desc'
+         }
+       },
+       html: '<h1>Test</h1>'
+     }
+   }
+
+
+   wrapper = mount(index, {
+      localVue,
+      data () {
+        return {
+          markDownData,
+          brand: 'vj'
+        }
+      },
+      mocks: {
+        $toCamelCase: jest.fn((obj) => {
+          return obj
+        }),
+        $seoBuilder: jest.fn(() => {
+          const metaTags = {
+            title: 'Title',
+            meta: [{
+              hid: 'description',
+              content: 'Test description'
+            }],
+            link: [{
+              hid: 'canonical',
+              rel: 'canonical',
+              href: 'https://verajohn.com'
+            }]
+          }
+          return metaTags
+        }),
+        $seoContent: jest.fn(() => {
+          return ''
+        })
+      }
+    })
+
+    rootWrapper = createWrapper(wrapper.vm.$root)
+    error = jest.fn()
+
+    afterEach(() => {
+      jest.clearAllMocks()
+      jest.resetAllMocks()
+      jest.resetModules()
+      if (wrapper) {
+        wrapper.destroy()
+      }
+    })
   })
   test('MD FILE: SEO Title should be title', () => {
     const errorSlugs = []
