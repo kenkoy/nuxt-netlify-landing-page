@@ -16,7 +16,7 @@ export const VJ_LOBBY_PREVIEW = createClass({
 
     const banners = widgetsFor('banner')
 
-    const gameList = widgetsFor('game').getIn(['data', 'game_list'])
+    const gameList = widgetsFor('game').getIn(['data', 'game_list']) || []
     const gameListCategory = widgetsFor('game').getIn(['data', 'game_icons_title']) || []
     const gameListViewAll = widgetsFor('game').getIn(['data', 'all_games_title']) || []
 

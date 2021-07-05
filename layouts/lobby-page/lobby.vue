@@ -1,34 +1,33 @@
 <template>
-  <div class="layout-css" :class="{ lobby_pages_wrapper: true }">
+  <div class="layout-css">
     <nuxt />
     <div
       v-if="Object.keys(mdData).length > 0"
       class="lobby-page-main"
-      :class="`${mdData.brand}-theme`"
+      :class="`${shortBrand}-theme`"
     >
-      <header>
-        <NavBarMain :brand="mdData.brand" />
-      </header>
       <main>
+        <Header :brand="mdData.brand" />
+        <!-- Main content -->
         <BannerSlider v-if="mdData.banner && mdData.banner.length > 0" :banner-data="mdData.banner" />
         <section id="games">
           <div class="container separator-top separator-bottom">
             <div class="row negate-gutter">
-              <div v-if="mdData.game.gameIconsTitle" class="left-align">
+              <div v-if="gameData && gameData.gameIconsTitle" class="left-align">
                 <p class="emphasize">
-                  {{ mdData.game.gameIconsTitle }}
+                  {{ gameData.gameIconsTitle }}
                 </p>
               </div>
-              <div v-if="mdData.game.allGamesTitle && mdData.game.allGamesRedirectUrl" class="right-align">
-                <a class="n-link" :href="mdData.game.allGamesRedirectUrl">
-                  <p class="view-all">{{ mdData.game.allGamesTitle }}</p>
+              <div v-if="gameData && gameData.allGamesTitle && gameData.allGamesRedirectUrl" class="right-align">
+                <a class="n-link" :href="gameData.allGamesRedirectUrl">
+                  <p class="view-all">{{ gameData.allGamesTitle }}</p>
                 </a>
               </div>
             </div>
-            <div class="row game-list">
-              <div v-for="(game, gameIndex) in mdData.game.gameList" :key="gameIndex">
+            <div v-if="gameData && gameData.gameList" class="row game-list">
+              <div v-for="(game, gameIndex) in gameData.gameList" :key="gameIndex">
                 <a class="n-link" :href="game.url">
-                  <i v-if="game.isHot" class="hot-icon" />
+                  <i v-if="game.isHot || false" class="hot-icon" />
                   <img :src="game.image" :alt="game.title">
                   <p class="game-name">{{ game.title }}</p>
                 </a>
@@ -40,14 +39,14 @@
         <section id="lobby-tiles">
           <div class="container">
             <div class="row negate-gutter">
-              <div v-if="mdData.lobbyTiles.lobbyTilesTitle" class="left-align">
+              <div v-if="lobbyTilesData && lobbyTilesData.lobbyTilesTitle" class="left-align">
                 <p class="emphasize">
-                  {{ mdData.lobbyTiles.lobbyTilesTitle }}
+                  {{ lobbyTilesData.lobbyTilesTitle }}
                 </p>
               </div>
             </div>
-            <div class="row game-menu negate-gutter">
-              <div v-for="(tile, tileIndex) in mdData.lobbyTiles.lobbyList" :key="tileIndex" class="pods">
+            <div v-if="lobbyTilesData && lobbyTilesData.lobbyList" class="row game-menu negate-gutter">
+              <div v-for="(tile, tileIndex) in lobbyTilesData.lobbyList" :key="tileIndex" class="pods">
                 <a :href="tile.link">
                   <div>
                     <div class="pod-content">
@@ -86,87 +85,86 @@
             </div>
           </div>
         </section>
+
+        <footer id="footer-icon-wrapper">
+          <div class="container footer-icons">
+            <div id="footer-payment-provider">
+              <div class="row">
+                <p class="footer-title">
+                  入出金方法
+                </p>
+              </div>
+              <div class="row">
+                <div>
+                  <img
+                    v-for="(provider, index) in paymentProvidersJP"
+                    :key="index"
+                    :src="require(`@/assets/images/lobby-page/${mdData.brand}/${provider}`)"
+                    alt="alt img"
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div id="footer-providers">
+              <div class="row">
+                <p class="footer-title">
+                  ゲーム配信会社
+                </p>
+              </div>
+              <div class="row">
+                <div>
+                  <img
+                    v-for="(provider, index) in gameProvidersJP"
+                    :key="index"
+                    :src="require(`@/assets/images/lobby-page/${mdData.brand}/${provider}`)"
+                    alt="alt img"
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div id="footer-logo">
+              <div class="row">
+                <div>
+                  <img src="https://verification.curacao-egaming.com/validate.ashx?domain=verajohn.com" alt="alt img">
+                  <img
+                    v-for="(regulatory, index) in regulatoryLogosJP"
+                    :key="index"
+                    :src="require(`@/assets/images/lobby-page/${mdData.brand}/${regulatory}`)"
+                    alt="alt img"
+                  >
+                </div>
+                <div>
+                  <span class="footer-text">当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。<br>
+                    Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster Gaming License #1668/JAZに基づくCEG Curaçao Egaming により付与されたサブライセンスを通して、正式に認可されています。</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <a class="n-link" :href="'https://www.play-wise.com/'+ mdData.brand +'-jp/'">ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。</a>
+          </div>
+        </footer>
       </main>
-      <footer id="g-footer-icon-wrapper">
-        <div class="container footer-icons">
-          <div id="g-footer-payment-provider">
-            <div class="row">
-              <p class="footer-title">
-                入出金方法
-              </p>
-            </div>
-            <div class="row">
-              <div>
-                <img
-                  v-for="(provider, index) in paymentProvidersJP"
-                  :key="index"
-                  :src="require(`@/assets/images/lobby-page/${mdData.brand}/${provider}`)"
-                  alt="alt img"
-                >
-              </div>
-            </div>
-          </div>
-
-          <div id="g-footer-providers">
-            <div class="row">
-              <p class="footer-title">
-                ゲーム配信会社
-              </p>
-            </div>
-            <div class="row">
-              <div>
-                <img
-                  v-for="(provider, index) in gameProvidersJP"
-                  :key="index"
-                  :src="require(`@/assets/images/lobby-page/${mdData.brand}/${provider}`)"
-                  alt="alt img"
-                >
-              </div>
-            </div>
-          </div>
-
-          <div id="g-footer-logo">
-            <div class="row">
-              <div>
-                <img src="https://verification.curacao-egaming.com/validate.ashx?domain=verajohn.com" alt="alt img">
-                <img
-                  v-for="(regulatory, index) in regulatoryLogosJP"
-                  :key="index"
-                  :src="require(`@/assets/images/lobby-page/${mdData.brand}/${regulatory}`)"
-                  alt="alt img"
-                >
-              </div>
-              <div>
-                <span class="footer-text">当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。<br>
-                  Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster Gaming License #1668/JAZに基づくCEG Curaçao Egaming により付与されたサブライセンスを通して、正式に認可されています。</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <a class="n-link" :href="'https://www.play-wise.com/'+ mdData.brand +'-jp/'">ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。</a>
-        </div>
-      </footer>
-      <FooterSticky />
+      <FooterFixButtons />
     </div>
   </div>
 </template>
 
 <script>
-import NavBarMain from '~/components/Lobby-Page/NavBarMain.vue'
+import Header from '~/components/Lobby-Page/Header.vue'
 import BannerSlider from '~/components/Lobby-Page/BannerSlider.vue'
-import FooterSticky from '~/components/Lobby-Page/FooterSticky.vue'
+import FooterFixButtons from '~/components/Lobby-Page/FooterFixButtons.vue'
 
 export default {
   components: {
-    NavBarMain,
+    Header,
     BannerSlider,
-    FooterSticky
+    FooterFixButtons
   },
   data () {
     return {
-      mdData: {},
-      shortBrand: '',
       paymentProvidersEU: ['s-icon.png', 'ecopayz-icon.png', 'neteller-icon.png', 'playsafe-icon.png'],
       regulatoryLogosEU: ['mga-icon.png', 'lock-icon.png', '20+.svg', 'gamcare-icon.png', 'hands-icon.png'],
       gameProvidersEU: [
@@ -176,25 +174,25 @@ export default {
       ],
       paymentProvidersJP: ['master-icon.png', 'venus-point.png', 'bitcoin-icon.png', 'playsafe-icon.png', 'eco-icon.png', 'i-wallet-icon.png'],
       regulatoryLogosJP: ['20+.svg'],
-      gameProvidersJP: ['e-icon.png']
+      gameProvidersJP: ['e-icon.png'],
+      mdData: {},
+      shortBrand: '',
+      gameData: {},
+      lobbyTilesData: {}
     }
   },
   head () {
     const headData = {
-      htmlAttrs: {
-        lang: 'ja'
-      },
-      bodyAttrs: {
-        id: 'ja-jp'
-      }
+      htmlAttrs: { lang: 'ja' },
+      bodyAttrs: { id: 'ja-jp' },
+      link: [{ href: require('~/assets/sass/lobby-page/style.scss') }]
     }
 
     if (this.mdData.brand) {
-      headData.link = [
-        { rel: 'stylesheet', href: '/marketing/styles/lobby-page/' + this.mdData.brand + '/' + this.mdData.brand + '_jp_main.min.css' },
-        { href: require('~/assets/sass/lobby-page/' + this.mdData.brand + '_style.scss') },
+      headData.link.push(...[
+        { href: require('~/assets/sass/lobby-page/' + this.mdData.brand + '_jp_main.min.css') },
         { hid: 'shortcut icon', rel: 'shortcut icon', href: '/marketing/' + this.shortBrand + '-favicon.ico', type: 'image/x-icon' }
-      ]
+      ])
     }
     return headData
   },
@@ -202,10 +200,12 @@ export default {
     this.$root.$once('lobby-page-data', (data) => {
       if (Object.keys(data).length > 0) {
         this.mdData = data
-        // switch (this.mdData.brand) {
-        //   case 'verajohn': this.shortBrand = 'verajohn'; break
-        //   case 'intercasino': this.shortBrand = 'intercasino'; break
-        // }
+        this.gameData = data.game
+        this.lobbyTilesData = data.lobbyTiles
+        switch (this.mdData.brand) {
+          case 'verajohn': this.shortBrand = 'vj'; break
+          case 'intercasino': this.shortBrand = 'ic'; break
+        }
       }
     })
   },
