@@ -1,5 +1,6 @@
 ---
 slug_name: Sample Game Page
+popup: true
 seo:
   title: オンライン ビデオスロット | InterCasino(インターカジノ)
   meta:

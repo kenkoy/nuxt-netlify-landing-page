@@ -50,7 +50,7 @@
     }
   }
 
-  #description .info-layer{
+  #description .pop-up{
     visibility: hidden;
     position: absolute;
     top: 0;
@@ -58,7 +58,7 @@
     width: 100%;
     transform: translate(0, 0);
   }
-  #description .info-layer.active {
+  #description .pop-up.active {
     visibility: visible;
     transform: translate(0, -100%);
     background: #fff;

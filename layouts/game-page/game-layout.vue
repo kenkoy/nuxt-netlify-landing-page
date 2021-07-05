@@ -10,10 +10,10 @@
           </div>
         </div>
       </section>
-      <section id="description">
+      <section id="description" v-if="mdData.popup">
         <div class="container">
           <div class="row">
-            <div class="info-layer" :class="{active: isActive}">
+            <div class="info-layer pop-up" :class="{active: isActive}">
               <h2>Lorem Ipsum Dolor</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque ante et pellentesque porta. Pellentesque lacinia neque non augue cursus, at egestas velit pellentesque. Quisque tempor, nibh id aliquam luctus, erat ante tincidunt erat, eu sollicitudin leo purus at erat. Pellentesque elementum diam ut semper rutrum. Sed at pulvinar velit. Proin libero nunc, ultricies vel suscipit a, mollis sed orci. Aliquam eget gravida mi. In pellentesque auctor ex id lobortis. Praesent non augue vehicula, auctor nibh eu, malesuada lectus. Pellentesque porttitor orci vel nunc convallis, quis posuere massa semper. Quisque tempor leo nec nunc euismod, id pretium eros ullamcorper.</p>
               <p>Aliquam aliquet iaculis justo quis scelerisque. Phasellus quis porta nunc. Duis mollis consectetur risus, ac imperdiet nulla egestas eu. Aliquam quis nisi maximus, interdum risus non, tincidunt dui. Morbi sed dapibus urna. Fusce at nisi feugiat, aliquet nibh a, rutrum mi. Nulla nibh tortor, hendrerit ac feugiat vel, ullamcorper nec massa. Phasellus sed elit ultricies justo bibendum aliquam. Sed nunc risus, accumsan a odio eu, laoreet ullamcorper lectus. Proin efficitur porttitor neque, ut condimentum ante blandit a. Etiam sed eros ut eros vehicula pellentesque. Duis vel est ut libero maximus ullamcorper et et sapien. Quisque euismod odio at magna euismod porta. Nullam eu lectus quis turpis interdum tempus nec et lorem. Praesent sagittis, ipsum sit amet rhoncus congue, nunc odio aliquet urna, vitae sagittis eros massa nec odio.</p>
@@ -21,6 +21,19 @@
           </div>
         </div>
       </section>
+
+      <section id="description" v-if="!mdData.popup">
+        <div class="container">
+          <div class="row">
+            <div class="info-layer scroll">
+              <h2>Lorem Ipsum Dolor</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pellentesque ante et pellentesque porta. Pellentesque lacinia neque non augue cursus, at egestas velit pellentesque. Quisque tempor, nibh id aliquam luctus, erat ante tincidunt erat, eu sollicitudin leo purus at erat. Pellentesque elementum diam ut semper rutrum. Sed at pulvinar velit. Proin libero nunc, ultricies vel suscipit a, mollis sed orci. Aliquam eget gravida mi. In pellentesque auctor ex id lobortis. Praesent non augue vehicula, auctor nibh eu, malesuada lectus. Pellentesque porttitor orci vel nunc convallis, quis posuere massa semper. Quisque tempor leo nec nunc euismod, id pretium eros ullamcorper.</p>
+              <p>Aliquam aliquet iaculis justo quis scelerisque. Phasellus quis porta nunc. Duis mollis consectetur risus, ac imperdiet nulla egestas eu. Aliquam quis nisi maximus, interdum risus non, tincidunt dui. Morbi sed dapibus urna. Fusce at nisi feugiat, aliquet nibh a, rutrum mi. Nulla nibh tortor, hendrerit ac feugiat vel, ullamcorper nec massa. Phasellus sed elit ultricies justo bibendum aliquam. Sed nunc risus, accumsan a odio eu, laoreet ullamcorper lectus. Proin efficitur porttitor neque, ut condimentum ante blandit a. Etiam sed eros ut eros vehicula pellentesque. Duis vel est ut libero maximus ullamcorper et et sapien. Quisque euismod odio at magna euismod porta. Nullam eu lectus quis turpis interdum tempus nec et lorem. Praesent sagittis, ipsum sit amet rhoncus congue, nunc odio aliquet urna, vitae sagittis eros massa nec odio.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="sticky-footer">
         <div class="container">
           <footer class="row">
