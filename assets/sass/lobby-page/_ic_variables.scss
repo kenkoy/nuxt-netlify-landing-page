@@ -1,14 +1,13 @@
-$NAV_BAR_MAIN_BG: #212121;
-$NAV_BAR_MAIN_SHADOW: transparent;
+$HEADER_BG: #212121;
+$HEADER_SHADOW: transparent;
 $SIDE_MENU_BG: #fff;
 $MAIN_BG: #141414;
 $SECONDARY_MAIN_BG: #141414;
 $OVERLAY_BG: #000;
 
-$LOBBY_TILES_BG: #141414;
-$LOBBY_TILES_BORDER: radial-gradient(circle at top left, #743ad5, #d53a9d);
-$LOBBY_TILES_BORDER_RADIUS: 0;
-$LOBBY_TILES_ICON_BG: transparent;
+$GAME_PODS_BG: #141414;
+$GAME_PODS_BORDER: radial-gradient(circle at top left, #743ad5, #d53a9d);
+$GAME_PODS_ICON_BG: transparent;
 
 $FOOTER_CONTENT_BG: #212121;
 $FOOTER_ITEM_BG: #212121;
@@ -23,4 +22,5 @@ $MARGINS: 8px;
 
 $HOT_ICON: require(url('~/assets/images/lobby-page/intercasino/hot-icon.png'));
 $ICON: require(url('~/assets/images/lobby-page/intercasino/icons.png'));
+
 

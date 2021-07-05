@@ -1,6 +1,6 @@
 //==== NAVIGATION HEADER MENU ===//
-@mixin navBarMain{
-  background: $NAV_BAR_MAIN_BG;
+@mixin headerMenuMixin{
+  background: $HEADER_BG;
   display: flex;
   position: fixed;
   top: 0;
@@ -8,26 +8,26 @@
   z-index: 3;
   padding: 0 10px;
   box-sizing: border-box;
-  box-shadow: 0px 2px 4px 0px $NAV_BAR_MAIN_SHADOW;
+  box-shadow: 0px 2px 4px 0px $HEADER_SHADOW;
+  // transition: all .3s ease;
   a{
     text-decoration: none;
     color: inherit;
     text-transform: uppercase;
   }
 
-  #g-nav-home{
+  #header-home{
     display: flex;
     align-items: center;
   }
 
-  #g-nav-button{
-    display: flex;
-    justify-content: flex-end;
+  #header-button button{
+    float: right;
   }
 }
 
-//==== LOBBY TILES ====//
-@mixin lobbyTiles{
+//==== GAME TILES ====//
+@mixin gameTiles{
   padding: 8px;
   min-width: 180px;
   min-height: 150px;
@@ -42,7 +42,7 @@
     > div {
       // PADDING WILL NOT WORK PROPERLY HERE DUE TO background-clip //
       border: solid 3px transparent;
-      background-image: linear-gradient($LOBBY_TILES_BG, $LOBBY_TILES_BG), $LOBBY_TILES_BORDER;
+      background-image: linear-gradient($GAME_PODS_BG, $GAME_PODS_BG), $GAME_PODS_BORDER;
       background-origin: border-box;
       background-clip: content-box, border-box;
       width: 100%;

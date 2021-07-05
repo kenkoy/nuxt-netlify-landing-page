@@ -10,7 +10,7 @@
 }
 
 
-//==== HELPERS ====//
+//HELPERS
 //add border top separator
 .separator-top{
   &:after{
@@ -59,35 +59,28 @@
 .container-grid{
   max-width: 768px;
 }
-.btn{
-  background: transparent;
-  border: none;
-  outline: 0;
-}
 
 
 //==== NAVIGATION HEADER MENU ===//
-#g-nav-bar-main {
-  @include navBarMain;
+#header-menu {
+  @include headerMenuMixin;
   > * {
     flex-grow: 1;
   }
 
-  #g-nav-home {
+  #header-home {
     img {
       max-width: 30px;
     }
   }
 
-  #g-nav-logo{
-    .logo {
-      max-width: 120px;
-      margin: 0 auto;
-      display: block;
-    }
+  .logo {
+    max-width: 120px;
+    margin: 0 auto;
+    display: block;
   }
 
-  #g-nav-button > .login {
+  #header-button > .login {
     margin: 8px 0;
     height: 38px;
     line-height: 38px;
@@ -96,7 +89,7 @@
 }
 
 
-//==== MAIN CONTENT ====//
+//==== MAIN CONTENT ==//
 main{
   position: relative;
   transition: all .3s ease;
@@ -104,17 +97,12 @@ main{
   height: 100%;
   background: $MAIN_BG;
   padding-top: $NAV_HEIGHT;
+  padding-bottom: 50px;
 }
 
 #games{
   padding: $PADDING;
   text-align: center;
-  
-  .container .row:first-child{
-    > div{
-      word-break: break-all;
-    }
-  }
 
   .game-list {
     overflow: auto;
@@ -154,7 +142,7 @@ main{
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      margin: $MARGINS auto;
+      margin: 0 auto;
     }
   }
 }
@@ -168,12 +156,6 @@ main{
   }
   a{
     text-decoration: none;
-  }
-
-  .container .row:first-child{
-    > div{
-      word-break: break-all;
-    }
   }
 
   .game-menu{
@@ -201,14 +183,14 @@ main{
     display: block;
     width: 40px;
     height: 40px;
-    border-radius: $LOBBY_TILES_BORDER_RADIUS;
+    border-radius: 50%;
     padding: 3px;
     margin: auto;
-    background-image: $LOBBY_TILES_ICON_BG;
+    background-image: $GAME_PODS_ICON_BG;
   }
 
   .pods{
-    @include lobbyTiles;
+    @include gameTiles;
     background-size: 120px;
     background-position: center;
     background-repeat: no-repeat;
@@ -255,14 +237,12 @@ main{
     text-align: center;
   }
 }
-
-//==== FOOTER ====//
-#g-footer-icon-wrapper .row > div{
+#footer-icon-wrapper .row > div{
   padding: 0;
 }
-#g-footer-icon-wrapper{
+#footer-icon-wrapper{
   background: $SECONDARY_MAIN_BG;
-  padding: $PADDING $PADDING 55px $PADDING;
+  padding: $PADDING;
 
   img{
     width: 100%;
@@ -271,20 +251,21 @@ main{
     vertical-align: middle;
   }
 
-  #g-footer-payment-provider,
-  #g-footer-providers{
+  #footer-payment-provider,
+  #footer-providers{
     img{
       width: auto;
       max-height: 25px;
     }
   }
-  #g-footer-logo{
+  #footer-logo{
     img{
       width: 100%;
       max-width: 50px;
       max-height: 100px;
     }
   }
+
   p{
     margin: 0;
   }
@@ -306,11 +287,12 @@ main{
   }
 }
 
-#g-footer-sticky{
+#footer-login-register{
   display: flex;
   position: fixed;
   width: 100%;
   bottom: 0;
+  // transition: all .3s ease;
   z-index: 2;
 
   > button{
@@ -322,4 +304,10 @@ main{
     max-width: 50%;
     margin: 0;
   }
+}
+
+.btn{
+  background: transparent;
+  border: none;
+  outline: 0;
 }
