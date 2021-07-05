@@ -104,7 +104,8 @@ export default {
   */
   plugins: [
     '~/plugins/util.js',
-    '~/plugins/seo.js'
+    '~/plugins/seo.js',
+    '~/plugins/seoContent.js'
   ],
   /*
   ** Nuxt.js dev-modules
