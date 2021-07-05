@@ -59,7 +59,7 @@ export default {
         },
         {
           name: 'game-page',
-          path: '/marketing/game-page/',
+          path: '/marketing/game-page/:slug',
           component: resolve(__dirname, 'pages/game-page/_slug/index.vue')
         }
       ]
