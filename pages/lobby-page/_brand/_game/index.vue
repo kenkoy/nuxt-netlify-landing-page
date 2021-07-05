@@ -34,7 +34,7 @@ export default {
     emitData ({ attributes, html }, brand) {
       this.$root.$emit('lobby-page-data', {
         ...attributes,
-        content: html,
+        content: this.$seoContent(html),
         brand
       })
     }

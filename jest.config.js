@@ -19,7 +19,8 @@ module.exports = {
     // '<rootDir>/components/**/*.vue',
     // '<rootDir>/layouts/*.vue',
     '<rootDir>/pages/marketing/vjhp/*.vue',
-    '<rootDir>/pages/marketing/**/_slug/*.vue'
+    '<rootDir>/pages/marketing/**/_slug/*.vue',
+    '<rootDir>/pages/lobby-page/_brand/_game/*.vue'
   ],
   snapshotSerializers: ['jest-serializer-vue'],
   setupFiles: ['<rootDir>/test/utils/matchMedia.js']

@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 import htm from 'https://unpkg.com/htm?module'
+import { SEO_CONTENT } from './components/seo-content.js'
 
 const html = htm.bind(h)
 export const IC_LOBBY_PREVIEW = createClass({
@@ -145,13 +146,7 @@ export const IC_LOBBY_PREVIEW = createClass({
               </div>
             </section>
 
-            <section id="seo-contents">
-              <div class="container">
-                <div class="row negate-gutter">
-                  ${body}
-                </div>
-              </div>
-            </section>
+            <${SEO_CONTENT} seoContent=${body.props.value} />
 
             <footer id="footer-icon-wrapper">
               <div class="container footer-icons">
