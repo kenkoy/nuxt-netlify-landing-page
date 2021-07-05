@@ -2,11 +2,11 @@
   <div class="layout-css" :class="{ game_wrapper: true }">
     <!-- Change class name to actual page name -->
     <nuxt />
-    <div class="game">
+    <div v-for="(arrData, arrData_index) in mdData" :key="arrData_index" class="game">
       <section id="game-frame">
         <div class="container">
           <div class="row">
-            <!-- <iframe :src="mdData.seo.title"></iframe> -->
+            <iframe :src="arrData.page_section.iframe_url"></iframe>
           </div>
         </div>
       </section>
@@ -52,7 +52,8 @@
 export default {
   data () {
     return {
-      mdData: {},
+      mdData: [],
+      arrData: [],
       htmlBody: '',
       fullscreen: '',
       fullscreenState: false,
@@ -69,7 +70,7 @@ export default {
   created () {
     this.$root.$once('game-data', (data) => { // Change to actual page name
       this.htmlBody = data.htmlData
-      this.mdData = data.yamlData
+      this.mdData.push(data.yamlData)
     })
   },
   mounted () {
