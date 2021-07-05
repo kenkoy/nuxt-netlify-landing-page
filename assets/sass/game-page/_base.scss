@@ -26,14 +26,14 @@
             color: #fff;
             font-size: 8px;
             line-height: 16px;
+            width: 100%;
+            height: 100%;
             &.home:before, &.info:before, &.fullscreen:before {
               content: "";
               width: 38px;
               height: 18px;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
+              display: block;
+              margin: auto;
             }
             &.home:before {
               background: url("@/assets/images/game-page/home_icon.svg") center center no-repeat;
