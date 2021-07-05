@@ -1,5 +1,15 @@
 <template>
-  <div />
+  <div class="container">
+    <div class="row">
+      <div v-for="(post, postIndex) in posts" :key="postIndex" class="posts">
+        <nuxt-link :to="'/marketing/' + post.path + '/' + post.slug" class="post-preview">
+          <article>
+            <h3>{{ post.attributes.slug_name }}</h3>
+          </article>
+        </nuxt-link>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
