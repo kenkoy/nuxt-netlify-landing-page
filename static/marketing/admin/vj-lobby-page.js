@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 import htm from 'https://unpkg.com/htm?module'
+import { SEO_CONTENT } from './components/seo-content.js'
 
 const html = htm.bind(h)
 export const VJ_LOBBY_PREVIEW = createClass({
@@ -12,17 +13,17 @@ export const VJ_LOBBY_PREVIEW = createClass({
     document.head.appendChild(link)
   },
   render () {
-    const { widgetsFor, widgetFor } = this.props
+    const { widgetsFor } = this.props
 
     const banners = widgetsFor('banner')
 
-    const gameList = widgetsFor('game').getIn(['data', 'game_list'])
+    const gameList = widgetsFor('game').getIn(['data', 'game_list']) || []
     const gameListCategory = widgetsFor('game').getIn(['data', 'game_icons_title']) || []
     const gameListViewAll = widgetsFor('game').getIn(['data', 'all_games_title']) || []
 
     const lobbyTiles = widgetsFor('lobby_tiles').getIn(['data', 'lobby_list']) || []
     const lobbyCategory = widgetsFor('lobby_tiles').getIn(['data', 'lobby_tiles_title']) || []
-    const body = widgetFor('body')
+    const body = widgetsFor('body').getIn(['data']) || ''
 
     return (html`
       <body class="layout-css lobby_pages_wrapper">
@@ -146,13 +147,7 @@ export const VJ_LOBBY_PREVIEW = createClass({
               </div>
             </section>
 
-            <section id="seo-contents">
-              <div class="container">
-                <div class="row negate-gutter">
-                  ${body}
-                </div>
-              </div>
-            </section>
+            <${SEO_CONTENT} seoContent=${body} />
 
             <footer id="footer-icon-wrapper">
               <div class="container footer-icons">

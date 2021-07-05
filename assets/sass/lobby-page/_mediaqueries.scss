@@ -2,7 +2,7 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 280px) {
-  #g-nav-bar-main > div {
+  #header-menu > div {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
@@ -15,7 +15,7 @@
       max-width: 50%;
     }
   }
-  #g-footer-logo{
+  #footer-logo{
     .row{
       flex-wrap: wrap;
       flex-direction: row;
@@ -29,7 +29,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-  #g-footer-logo{
+  #footer-logo{
     .row > div:first-child{
       -ms-flex: 0 0 20%;
       flex: 0 0 20%;
