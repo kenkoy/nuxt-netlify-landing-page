@@ -25,7 +25,7 @@ describe('Testing Game index.vue', () => {
         }
       })
     expect(errorSlugs).toStrictEqual([])
-  }),
+  })
   test('MD FILE: SEO Title should NOT be null', () => {
     const errorSlugs = []
     mdData
@@ -36,7 +36,7 @@ describe('Testing Game index.vue', () => {
         }
       })
     expect(errorSlugs).toStrictEqual([])
-  }),
+  })
   test('MD FILE: SEO Meta Keywords should be "keywords"', () => {
     const errorSlugs = []
     mdData
