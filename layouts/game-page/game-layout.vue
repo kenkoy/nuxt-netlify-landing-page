@@ -6,21 +6,21 @@
       <section id="game-frame">
         <div class="container">
           <div class="row">
-            <iframe :src="mdData.page_section.iframe_url"></iframe>
+            <iframe :src="mdData.page_section.iframe_url" />>
           </div>
         </div>
       </section>
       <section v-if="mdData.page_section.popup_toggle" id="description">
         <div class="container">
           <div class="row">
-            <div class="info-layer description-data" :class="{active: isActive}" v-html="htmlBody"/>
+            <div class="info-layer description-data" :class="{active: isActive}" v-html="htmlBody" />
           </div>
         </div>
       </section>
       <section v-if="!mdData.page_section.popup_toggle" id="description">
         <div class="container">
           <div class="row">
-            <div class="description-data" v-html="htmlBody"/>
+            <div class="description-data" v-html="htmlBody" />
           </div>
         </div>
       </section>
