@@ -17,6 +17,9 @@ export default {
     const seoJSON = JSON.parse(JSON.stringify(this.markDownData.attributes.seo))
     const seo = this.$seoBuilder({ ...seoJSON }, 'verajohn')
     return {
+      htmlAttrs: {
+        lang: 'ja'
+      },
       title: seo.title || '',
       meta: seo.meta,
       link: seo.link
