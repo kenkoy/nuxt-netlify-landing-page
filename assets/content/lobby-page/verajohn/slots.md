@@ -13,6 +13,7 @@ seo:
       type: website
       image: www.og-url-here.com/image-name.jpg
       url: www.og-url-here.com
+    robots: noindex
   alternate_links:
     - href: https://www.verajohn.com/slots
       hreflang: x-default
