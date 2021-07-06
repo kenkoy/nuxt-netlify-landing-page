@@ -39,7 +39,7 @@ game:
       title: Jammin Jars
       image: /marketing/img/img6.png
       url: https://www.intercasino/game/jammin-jars
-  game_icons_title: Classic Slots
+  game_icons_title: ""
   all_games_title: ""
 lobby_tiles:
   lobby_list:
