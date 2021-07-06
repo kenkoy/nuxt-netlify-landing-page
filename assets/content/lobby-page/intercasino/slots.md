@@ -39,7 +39,11 @@ game:
       title: Jammin Jars
       image: /marketing/img/img6.png
       url: https://www.intercasino/game/jammin-jars
-  game_icons_title: ""
+    - title: Wolf Gold
+      url: https://www.verajohn.com/game/wolf-gold
+      is_hot: true
+      image: /marketing/img/gameimage_pgicon609140ddb87e01996.png
+  game_icons_title: Classis Slots
   all_games_title: ""
 lobby_tiles:
   lobby_list:
