@@ -1,4 +1,4 @@
-import { mount, createLocalVue, createWrapper } from '@vue/test-utils'
+import { mount, createLocalVue } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
 import index from '@/pages/game-page/_slug/index.vue'
@@ -8,7 +8,7 @@ import { expect } from '@jest/globals'
 const GAME_DIR = '/assets/content/game-page/'
 
 describe('Testing Game index.vue', () => {
-  let mdData, markDownData, wrapper, localVue, metaInfo, error, rootWrapper
+  let mdData, markDownData, wrapper, localVue, error
 
   beforeAll(async () => {
     const mdFiles = _
@@ -75,9 +75,6 @@ describe('Testing Game index.vue', () => {
         })
       }
     })
-
-    rootWrapper = createWrapper(wrapper.vm.$root)
-
     error = jest.fn()
   })
 
@@ -91,22 +88,18 @@ describe('Testing Game index.vue', () => {
   })
 
   test('Test async data (success)', async () => {
-    const app = wrapper.vm.$root
     const mockData = markDownData
 
     jest.mock('~/assets/content/game-page/info-page.md', () => {
       return mockData
     })
-
     const mockAsyncData = await wrapper.vm.$options.asyncData({
       params: {
-        seo: {
-          title: 'dasdasdas'
-        }
+        slug: 'info-page'
       },
       error
     })
-    expect(mockAsyncData.markDownData).toMatchObject(mockData)
+    await expect(mockAsyncData.markDownData).toMatchObject(mockData)
   })
   test('MD FILE: SEO Title should be title', () => {
     const errorSlugs = []
@@ -118,6 +111,19 @@ describe('Testing Game index.vue', () => {
         }
       })
     expect(errorSlugs).toStrictEqual([])
+  })
+  test('Test async data (failure)', async () => {
+    jest.mock('~/assets/content/game-page/info-page.md', () => {
+      throw new Error('Error')
+    })
+
+    await wrapper.vm.$options.asyncData({
+      params: {
+        slug: 'info-page'
+      },
+      error
+    })
+    expect(error).toBeCalled()
   })
   test('MD FILE: SEO Title should NOT be null', () => {
     const errorSlugs = []
