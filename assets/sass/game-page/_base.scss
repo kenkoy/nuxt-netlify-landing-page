@@ -2,9 +2,6 @@
   overflow: hidden;
   padding-bottom: 50px;
   }
-  h2, h3{
-    color: #000 !important;
-  }
 
   #sticky-footer {
     position: fixed;
@@ -62,6 +59,9 @@
 
   #description .description-data{
     padding: 20px;
+      h2, h3{
+        color: #000;
+      }
       h5{
         font-size: 15px;
         line-height: 20px;
