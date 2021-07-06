@@ -25,7 +25,7 @@ banner:
   - image: /marketing/img/vjjp_banner.png
     url: "#"
 game:
-  game_icons_title: ""
+  game_icons_title: Classic slots
   all_games_title: See all games
   all_games_redirect_url: "#"
   game_list:
