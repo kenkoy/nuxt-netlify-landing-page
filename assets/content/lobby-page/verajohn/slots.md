@@ -52,6 +52,9 @@ game:
       title: Drago - Jewels of Fortune
       image: /marketing/img/img6.png
       url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
+    - title: Moon Princess
+      image: /marketing/img/moon-princess.png
+      url: https://www.verajohn.com/game/moon-princess
 lobby_tiles:
   lobby_tiles_title: More games
   lobby_list:
