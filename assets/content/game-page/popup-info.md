@@ -29,7 +29,7 @@ game_section:
   iframe_url: https://instage.solidgaming.net/api/launch/VERAJOHN-QA/GHG_HAWAIIAN_DREAM
 ---
 <div class="gameDrawer">
-<h5 class="n-header-5 gameDrawerTitle">ビデオスロット「Hawaiian Dream」</h5>
+<h5 class="n-header-5 gameDrawerTitle">ビデオスロット「Hawaiian Dream TEST」</h5>
 <p class="n-paragraph-3 gameDrawerContent">
                 「アロハ！」が合言葉のシンプルなスロット「Hawaiian Dream」はスリル満点の機種です。
 
@@ -67,4 +67,5 @@ Hawaiian Dreamはたくさんの特徴があります。
 
 さらに、この間に3つのシンボルが一致すると、アルティメットラッシュへ突入し、3人のネオンに輝く美女が出現し、勝利金を獲得できちゃいます。
             </p>
+
 </div>
