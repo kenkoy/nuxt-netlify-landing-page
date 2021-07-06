@@ -51,17 +51,13 @@ lobby_tiles:
       image: /marketing/img/10thbday_game-logo.png
       link: https://verajohn.com/loyalty-programs
 ---
-<h1 class="n-header-1">インターカジノで遊べるビデオスロットの基本情報と遊び方 </h1>
-
-
+<h1>インターカジノで遊べるビデオスロットの基本情報と遊び方 </h1>
 
 <p class="n-paragraph">ビデオスロットはインターカジノの人気コンテンツの１つです。</p>
 
 <p class="n-paragraph">今までにプレイしたことがないという方に向けて、基本的な情報や遊び方を解説しちゃいます。</p>
 
 <p class="n-paragraph">インターカジノでビデオスロットをプレイ予定の方はぜひ参考にしてみてください！</p>
-
-
 
 <h2 class="n-header-2">ビデオスロットってなに？</h2>
 
@@ -77,33 +73,23 @@ lobby_tiles:
 
 <p class="n-paragraph">しかもビデオスロットはオンラインで完結するので、24時間365日いつでもどこでもプレイ可能です。</p>
 
-
-
 <h2 class="n-header-2">ビデオスロットの基本用語</h2>
 
 <p class="n-paragraph">ビデオスロット特有の用語がいくつかあるので、大事な用語をここで押さえておきましょう。</p>
-
-
 
 <h2 class="n-header-2">リール</h2>
 
 <p class="n-paragraph">シンボルが描かれている縦ラインのことを指します。</p>
 
-
-
 <h2 class="n-header-2">シンボル</h2>
 
 <p class="n-paragraph">リール上に描かれている絵柄のことを指します。</p>
-
-
 
 <h2 class="n-header-2">ワイルドシンボル</h2>
 
 <p class="n-paragraph">すべてのシンボルの代わりとなってくれるシンボルのことを指します。</p>
 
 <p class="n-paragraph">ペイラインを揃えるためには重要なシンボルです。</p>
-
-
 
 <h2 class="n-header-2">スキャターシンボル</h2>
 
@@ -113,8 +99,6 @@ lobby_tiles:
 
 <p class="n-paragraph">また、ワイルドシンボルとスキャター１つ2役になっている機種もあります。</p>
 
-
-
 <h2 class="n-header-2">フリースピン</h2>
 
 <p class="n-paragraph">ビデオスロットの主役といっても過言ではない要素がフリースピンです。</p>
@@ -123,23 +107,17 @@ lobby_tiles:
 
 <p class="n-paragraph">フリースピンラウンドは、無料で指定された回数のスピンを回すことができます。</p>
 
-
-
 <h2 class="n-header-2">マルチプライヤー</h2>
 
 <p class="n-paragraph">ペイアウト額の倍率のことを指します。</p>
 
 <p class="n-paragraph">この数字が大きければ大きいほどペイアウト額も高額になります。</p>
 
-
-
 <h2 class="n-header-2">ビデオスロットの基本情報</h2>
 
 <p class="n-paragraph">ビデオスロットにもたくさんの種類が存在します。</p>
 
 <p class="n-paragraph">代表的な種類を学んでおきましょう。</p>
-
-
 
 <h2 class="n-header-2">リール式ビデオスロット</h2>
 
@@ -151,8 +129,6 @@ lobby_tiles:
 
 <p class="n-paragraph">ファンが多いことで知られる<a href="https://www.intercasino.com/game/hawaiian-dream" class="n-link" >Hawaiian Dream</a>や<a href="https://www.intercasino.com/game/starburst"  class="n-link">Star burst </a>はこの種類に分類されます。</p>
 
-
-
 <h2 class="n-header-2">落下式ビデオスロット</h2>
 
 <p class="n-paragraph">落下式機種とは、ペイラインが揃った場合、ペイライン上のシンボルが消え、新たなシンボルがリール上部から落ちてくるタイプのビデオスロットです。</p>
@@ -162,8 +138,6 @@ lobby_tiles:
 <p class="n-paragraph">種類によっては連鎖する度にマルチプライヤーが上昇していくものもあります。</p>
 
 <p class="n-paragraph"><a href="https://www.intercasino.com/game/gonzos-quest" class="n-link"> Gonzo's Quest</a>や<a href="https://www.intercasino.com/game/bonanza-megaways" class="n-link"> Bonanza Megaways</a>などが落下式に当たります。</p>
-
-
 
 <h2 class="n-header-2">グリッド式ビデオスロット</h2>
 
@@ -177,15 +151,11 @@ lobby_tiles:
 
 <p class="n-paragraph"><a href="https://www.intercasino.com/game/moon-princess" class="n-link"> Moon Princess</a>、<a href="https://www.intercasino.com/game/reactoonz" class="n-link"> Reactoonz</a>はグリッド式です。</p>
 
-
-
 <h2 class="n-header-2">ビデオスロットの遊び方</h2>
 
 <p class="n-paragraph">遊び方は冒頭で説明した通り、とてもシンプルで簡単です。</p>
 
 <p class="n-paragraph">たったの2ステップなので、覚えちゃいましょう！</p>
-
-
 
 <h2 class="n-header-2">STEP①ベット額を選択しよう</h2>
 
@@ -197,15 +167,11 @@ lobby_tiles:
 
 <p class="n-paragraph">設定ボタンを用い、1スピン毎のベット額を設定しましょう。</p>
 
-
-
 <h2 class="n-header-2">STEP②スピンを回そう</h2>
 
 <p class="n-paragraph">お好みのベット額を設定したら、あとはスピンボタンを回し、プレイするだけです。</p>
 
 <p class="n-paragraph">ビッグウィンを獲得できることを祈りながら、スピンをどんどん回しましょう。</p>
-
-
 
 <h2 class="n-header-2">番外編: ビデオスロットのオートプレイモードを活用しよう</h2>
 
@@ -219,8 +185,6 @@ lobby_tiles:
 
 <p class="n-paragraph">もちろん、オートプレイ中であっても、停止したい時はすぐにオートプレイをキャンセルすることができるのでご心配なく。</p>
 
-
-
 <h2 class ="n-header-2">お気に入りビデオスロットの見つけ方</h2>
 
 <p class="n-paragraph">インターカジノは1000種類を超えるビデオスロットをご用意しています。</p>
@@ -229,15 +193,11 @@ lobby_tiles:
 
 <p class="n-paragraph">しかし、下記の方法を使えば簡単に見つけることができます。</p>
 
-
-
 <h2 class="n-header-2">検索フィルターを活用しよう</h2>
 
 <p class="n-paragraph">インターカジノではゲームを検索する際のフィルターの詳細設定を変更することができます。</p>
 
 <p class="n-paragraph">【新登場】や【今熱いゲーム】【パチスロ風】など、様々な条件を指定することができるので、お気に入りのゲームを簡単に見つけることができます。</p>
-
-
 
 <h2 class="n-header-2">無料デモモードを活用しよう</h2>
 
@@ -248,8 +208,6 @@ lobby_tiles:
 <p class="n-paragraph">気になるタイトルのゲームが見つかったらまずは無料のデモモードを活用し、試してみましょう。</p>
 
 <p class="n-paragraph">気に入ったらインターカジノへログインし、リアルマネーを用いたプレイに移行しましょう。</p>
-
-
 
 <h2 class="n-header-2">スロット以外のゲームもインターカジノで!</h2>
 

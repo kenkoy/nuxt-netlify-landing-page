@@ -29,7 +29,7 @@ game_section:
   iframe_url: https://instage.solidgaming.net/api/launch/VERAJOHN-QA/GHG_HAWAIIAN_DREAM
 ---
 <div class="gameDrawer">
-<h2 class="n-header-2 gameDrawerTitle">ビデオスロット「Hawaiian Dreamz</h2>
+<h2 class="n-header-2 gameDrawerTitle">ビデオスロット「Hawaiian Dream」</h2>
 <p class="n-paragraph-3 gameDrawerContent">
                 「アロハ！」が合言葉のシンプルなスロット「Hawaiian Dream」はスリル満点の機種です。
 
