@@ -38,13 +38,13 @@
               </button>
             </div>
             <div v-if="!mdData.page_section.popup_toggle" class="item">
-              <a v-if="!isScrollDown" href="#description" @click="isScroll()">
-                <button :class="isScrollDown ? 'scroll-down' : 'scroll-up'">
+              <a v-if="!isScrollDown" href="#description">
+                <button :class="isScrollDown ? 'scroll-down' : 'scroll-up'" @click="isScroll()">
                   <span>Scroll up</span>
                 </button>
               </a>
-              <a v-if="isScrollDown" href="#game-frame" @click="isScroll()">
-                <button :class="isScrollDown ? 'scroll-down' : 'scroll-up'">
+              <a v-if="isScrollDown" href="#game-frame">
+                <button :class="isScrollDown ? 'scroll-down' : 'scroll-up'" @click="isScroll()">
                   <span>Scroll down</span>
                 </button>
               </a>
@@ -97,9 +97,9 @@ export default {
   },
   methods: {
     handleScroll (event) {
-      if (document.documentElement.scrollTop > (document.getElementById('game-frame').offsetHeight / 2)) {
+      if ((window.innerHeight + window.scrollY) === document.body.offsetHeight) {
         this.isScrollDown = false
-      } else {
+      } else if ((window.innerHeight + window.scrollY) === window.innerHeight) {
         this.isScrollDown = true
       }
     },
