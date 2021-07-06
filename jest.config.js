@@ -20,6 +20,8 @@ module.exports = {
     // '<rootDir>/layouts/*.vue',
     '<rootDir>/pages/marketing/vjhp/*.vue',
     '<rootDir>/pages/marketing/**/_slug/*.vue',
+    '<rootDir>/pages/game-page/**/_slug/*.vue',
+    '<rootDir>/pages/layouts/game-page/*.vue',
     '<rootDir>/pages/lobby-page/_brand/_game/*.vue'
   ],
   snapshotSerializers: ['jest-serializer-vue'],

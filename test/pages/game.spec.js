@@ -1,13 +1,14 @@
-import { mount, createLocalVue } from '@vue/test-utils'
+import { mount, createLocalVue, createWrapper } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
 import index from '@/pages/game-page/_slug/index.vue'
 import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.js'
+import { expect } from '@jest/globals'
 
 const GAME_DIR = '/assets/content/game-page/'
 
 describe('Testing Game index.vue', () => {
-  let mdData, markDownData, wrapper, localVue
+  let mdData, markDownData, wrapper, localVue, metaInfo, error, rootWrapper
 
   beforeAll(async () => {
     const mdFiles = _
@@ -18,16 +19,31 @@ describe('Testing Game index.vue', () => {
 
     localVue = createLocalVue()
     localVue.use(VueMeta, { keyName: 'head' })
+
     markDownData = {
       attributes: {
+        slug_name: 'Info page',
         seo: {
           title: 'Test SEO',
           meta: {
-            description: 'Test Meta Desc'
+            keywords: 'Test Meta Desc',
+            author: 'John Smith',
+            og: {
+              title: 'OG Title Here',
+              description: 'Description to OG link here.',
+              type: 'website',
+              image: 'www.og-url-here.com/image-name.jpg',
+              url: 'www.og-url-here.com'
+            }
           }
+        },
+        page_section: {
+          popup_toggle: false,
+          iframe_url: 'https://instage.solidgaming.net/api/launch/VERAJOHN-QA/GHG_HAWAIIAN_DREAM'
         }
       }
     }
+
     wrapper = mount(index, {
       localVue,
       data () {
@@ -60,14 +76,37 @@ describe('Testing Game index.vue', () => {
       }
     })
 
-    afterEach(() => {
-      jest.clearAllMocks()
-      jest.resetAllMocks()
-      jest.resetModules()
-      if (wrapper) {
-        wrapper.destroy()
-      }
+    rootWrapper = createWrapper(wrapper.vm.$root)
+
+    error = jest.fn()
+  })
+
+  afterEach(() => {
+    jest.clearAllMocks()
+    jest.resetAllMocks()
+    jest.resetModules()
+    if (wrapper) {
+      wrapper.destroy()
+    }
+  })
+
+  test('Test async data (success)', async () => {
+    const app = wrapper.vm.$root
+    const mockData = markDownData
+
+    jest.mock('~/assets/content/game-page/info-page.md', () => {
+      return mockData
     })
+
+    const mockAsyncData = await wrapper.vm.$options.asyncData({
+      params: {
+        seo: {
+          title: 'dasdasdas'
+        }
+      },
+      error
+    })
+    expect(mockAsyncData.markDownData).toMatchObject(mockData)
   })
   test('MD FILE: SEO Title should be title', () => {
     const errorSlugs = []
