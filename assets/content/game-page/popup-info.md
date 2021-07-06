@@ -20,6 +20,13 @@ seo:
 page_section:
   popup_toggle: true
   iframe_url: https://instage.solidgaming.net/api/launch/VERAJOHN-QA/GHG_HAWAIIAN_DREAM
+game_section:
+  game_description: |-
+    <h1>Test</h1>
+
+    <p>Test paragraph</p>
+  popup_toggle: true
+  iframe_url: https://instage.solidgaming.net/api/launch/VERAJOHN-QA/GHG_HAWAIIAN_DREAM
 ---
 <div class="gameDrawer">
 <h5 class="n-header-5 gameDrawerTitle">ビデオスロット「Hawaiian Dream」</h5>
