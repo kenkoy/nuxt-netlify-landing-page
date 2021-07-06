@@ -32,10 +32,17 @@
                 <span>Home</span>
               </button>
             </div>
-            <div class="item" :class="{active: isActive}">
+            <div v-if="mdData.page_section.popup_toggle" class="item" :class="{active: isActive}">
               <button class="info" @click="popUp()">
                 <span>Info</span>
               </button>
+            </div>
+            <div v-if="!mdData.page_section.popup_toggle" class="item" :class="{active: isActive}">
+              <a href="#description">
+                <button class="scroll">
+                  <span>Scroll down</span>
+                </button>
+              </a>
             </div>
             <div class="item">
               <button class="fullscreen" @click="!fullscreenState ? openFullscreen() : exitFullscreen()">

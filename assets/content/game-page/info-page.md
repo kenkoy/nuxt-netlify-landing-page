@@ -1,5 +1,5 @@
 ---
-slug_name: Info Page xxxx
+slug_name: Info Page
 seo:
   title: Info Page Sample
   meta:
@@ -22,9 +22,9 @@ page_section:
   iframe_url: https://instage.solidgaming.net/api/launch/VERAJOHN-QA/GHG_HAWAIIAN_DREAM
 ---
 <div class="gameDrawer">
-<h5 class="n-header-5 gameDrawerTitle">ビデオスロット「Hawaiian Dream」yyyyy</h5>
+<h2 class="n-header-2 gameDrawerTitle">ビデオスロット「Hawaiian Dream」</h2>
 <p class="n-paragraph-3 gameDrawerContent">
-                zzzzzz「アロハ！」が合言葉のシンプルなスロット「Hawaiian Dream」はスリル満点の機種です。
+                「アロハ！」が合言葉のシンプルなスロット「Hawaiian Dream」はスリル満点の機種です。
 
 トロピカルな雰囲気が特徴であり、3リール5ペイラインで構成されています。
 
@@ -34,7 +34,7 @@ page_section:
 
 還元率は97%であり、100ドル分プレイした場合97ドルのリターンがあるという理論値となるため、とても良い数字と言えます！
 
-&lt;h2&gt;Hawaiian Dreamルール&lt;/h2&gt;
+<h3 class="n-header-3">Hawaiian Dreamルール</h3>
 
 Hawaiian Dreamの注目点はその「シンプルさ」です。
 
@@ -47,7 +47,7 @@ Hawaiian Dreamの注目点はその「シンプルさ」です。
 また、スピード調整設定機能があり3段階のスピードから選択できます。
 当たり演出が始まるまでスキップしたい方にはフルスピードモードがおすすめです。
 
-&lt;h2&gt;Hawaiian Dream ラッシュフリースピンの特徴&lt;/h2&gt;
+<h3 class="n-header-3">Hawaiian Dream ラッシュフリースピンの特徴</h3>
 
 Hawaiian Dreamはたくさんの特徴があります。
 もっとも、ワクワクする特徴は間違いなく「ラッシュ」です。

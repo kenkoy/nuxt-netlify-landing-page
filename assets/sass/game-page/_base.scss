@@ -2,6 +2,9 @@
   overflow: hidden;
   padding-bottom: 50px;
   }
+  h2, h3{
+    color: #000 !important;
+  }
 
   #sticky-footer {
     position: fixed;
@@ -32,7 +35,7 @@
             line-height: 16px;
             width: 100%;
             height: 100%;
-            &.home:before, &.info:before, &.fullscreen:before {
+            &.home:before, &.info:before, &.fullscreen:before, &.scroll:before {
               content: "";
               width: 38px;
               height: 18px;
@@ -44,6 +47,9 @@
             }
             &.info:before {
               background: url("@/assets/images/game-page/info_icon.svg") center center no-repeat;
+            }
+            &.scroll:before {
+              background: url("@/assets/images/game-page/arrow-down.png") center center no-repeat;
             }
             &.fullscreen:before {
               background: url("@/assets/images/game-page/fullscreen_icon.svg") center center no-repeat;
