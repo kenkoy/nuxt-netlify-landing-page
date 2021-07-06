@@ -106,8 +106,7 @@ main{
 
   .game-list {
     overflow: auto;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    display: flex;
     grid-gap: 10px;
 
     > div{
