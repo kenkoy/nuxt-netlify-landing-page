@@ -1879,10 +1879,9 @@ collections:
     create: true
     identifier_field: "slug_name"
     slug: "{{slug}}"
-    preview_path: game/{{slug}}
     show_preview_links: false
     editor:
-      preview: true
+      preview: false
     fields:
       - label: Slug
         widget: string
