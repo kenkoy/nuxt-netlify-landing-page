@@ -1872,14 +1872,14 @@ collections:
             - { label: "Icon", name: "image", widget: "image" }
             - { label: "Link", name: "link", widget: "string" }
     - { label: "Content", name: "body", widget: "markdown", required: true }
-  - name: "GAME-NoForm"
-    label: "Game Page"
+
+  - label: "Game Page"
+    name: "game_page"
     format: "frontmatter"
-    folder: "assets/content/game-page"
+    show_preview_links: false
     create: true
     identifier_field: "slug_name"
-    slug: "{{slug}}"
-    show_preview_links: false
+    folder: "assets/content/game-page"
     editor:
       preview: false
     fields:
