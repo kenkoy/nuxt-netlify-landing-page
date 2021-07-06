@@ -3,6 +3,7 @@ slug_name: sample
 seo:
   title: Sample
 game:
-  game_icons_title: Hawaiian Dream
+  game_icons_title: ""
+  all_games_title: See all games
 ---
 <h1>Sample H1</h1>
