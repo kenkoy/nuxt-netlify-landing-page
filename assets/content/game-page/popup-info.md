@@ -1,5 +1,5 @@
 ---
-slug_name: Popup Info
+slug_name: Popup Info 1234
 seo:
   title: Popup Info Sample
   meta:
