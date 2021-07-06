@@ -1930,8 +1930,8 @@ collections:
                 widget: "select"
                 default: "x-default"
                 options: ["x-default", "ja-jp", "fi-fi", "no-no", "de-de", "ex-cl", "es-pe", "pt-br"]
-      - label: "Game Section"
-        name: "game_section"
+      - label: "Page Section"
+        name: "page_section"
         widget: "object"
         collapsed: true
         fields:
