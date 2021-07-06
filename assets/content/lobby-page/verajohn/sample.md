@@ -1,7 +1,7 @@
 ---
 slug_name: sample
 seo:
-  title: Sample
+  title: Sample Page
 game:
   game_icons_title: ""
   all_games_title: ""
