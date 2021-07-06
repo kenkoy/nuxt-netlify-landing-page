@@ -1,14 +1,13 @@
-import { mount, createLocalVue, createWrapper } from '@vue/test-utils'
+import { mount, createLocalVue } from '@vue/test-utils'
 import VueMeta from 'vue-meta'
 import _ from 'lodash'
 import index from '@/pages/game-page/_slug/index.vue'
 import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.js'
-import { expect } from '@jest/globals'
 
 const GAME_DIR = '/assets/content/game-page/'
 
 describe('Testing Game index.vue', () => {
-  let mdData, markDownData, wrapper, rootWrapper, error, localVue
+  let mdData, markDownData, wrapper, localVue
 
   beforeAll(async () => {
     const mdFiles = _
@@ -17,37 +16,23 @@ describe('Testing Game index.vue', () => {
       .value()
     mdData = mdFiles
 
-
     localVue = createLocalVue()
     localVue.use(VueMeta, { keyName: 'head' })
     markDownData = {
-     attributes: {
-       banner: {
-         image: '/test/image',
-         url: '/test'
-       },
-       game: {
-         game_list: {
-           title: 'Test Game'
-         }
-       },
-       seo: {
-         title: 'Test SEO',
-         meta: {
-           description: 'Test Meta Desc'
-         }
-       },
-       html: '<h1>Test</h1>'
-     }
-   }
-
-
-   wrapper = mount(index, {
+      attributes: {
+        seo: {
+          title: 'Test SEO',
+          meta: {
+            description: 'Test Meta Desc'
+          }
+        }
+      }
+    }
+    wrapper = mount(index, {
       localVue,
       data () {
         return {
-          markDownData,
-          brand: 'vj'
+          markDownData
         }
       },
       mocks: {
@@ -74,9 +59,6 @@ describe('Testing Game index.vue', () => {
         })
       }
     })
-
-    rootWrapper = createWrapper(wrapper.vm.$root)
-    error = jest.fn()
 
     afterEach(() => {
       jest.clearAllMocks()
@@ -119,7 +101,7 @@ describe('Testing Game index.vue', () => {
         }
       })
     expect(errorSlugs).toStrictEqual([])
-  }),
+  })
   test('MD FILE: SEO Meta Keywords should NOT be null', () => {
     const errorSlugs = []
     mdData
