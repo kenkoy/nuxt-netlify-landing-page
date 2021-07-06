@@ -4,6 +4,7 @@ seo:
   title: Sample
 game:
   game_icons_title: ""
-  all_games_title: See all games
+  all_games_title: ""
+  all_games_redirect_url: https://www.verajohn.com/game/hawaiian-dream
 ---
 <h1>Sample H1</h1>
