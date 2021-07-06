@@ -37,9 +37,14 @@
                 <span>Info</span>
               </button>
             </div>
-            <div v-if="!mdData.page_section.popup_toggle" class="item" :class="{active: isActive}">
-              <a href="#description">
-                <button class="scroll">
+            <div v-if="!mdData.page_section.popup_toggle" class="item">
+              <a v-if="!isScrollDown" href="#description" @click="isScroll()">
+                <button :class="isScrollDown ? 'scroll-down' : 'scroll-up'">
+                  <span>Scroll up</span>
+                </button>
+              </a>
+              <a v-if="isScrollDown" href="#game-frame" @click="isScroll()">
+                <button :class="isScrollDown ? 'scroll-down' : 'scroll-up'">
                   <span>Scroll down</span>
                 </button>
               </a>
@@ -65,7 +70,8 @@ export default {
       htmlBody: '',
       fullscreen: '',
       fullscreenState: false,
-      isActive: false
+      isActive: false,
+      isScrollDown: true
     }
   },
   head () {
@@ -84,11 +90,19 @@ export default {
   },
   mounted () {
     this.fullscreen = document.documentElement
+    window.addEventListener('scroll', this.handleScroll)
   },
   beforeDestroy () {
     this.$root.$off('game-data') // Change to actual page name
   },
   methods: {
+    handleScroll (event) {
+      if (document.documentElement.scrollTop > (document.getElementById('game-frame').offsetHeight / 2)) {
+        this.isScrollDown = false
+      } else {
+        this.isScrollDown = true
+      }
+    },
     openFullscreen () {
       this.fullscreenState = true
       if (this.fullscreen.requestFullscreen) {
@@ -111,6 +125,9 @@ export default {
     },
     popUp () {
       this.isActive = !this.isActive
+    },
+    isScroll () {
+      this.isScrollDown = !this.isScrollDown
     }
   }
 }
