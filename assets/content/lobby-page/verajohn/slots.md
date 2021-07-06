@@ -28,31 +28,7 @@ game:
   game_icons_title: Classic slots
   all_games_title: See all games
   all_games_redirect_url: "#"
-  game_list:
-    - is_hot: true
-      title: Dreams of Gold
-      image: /marketing/img/img1.png
-      url: https://www.verajohn.com/play/dreams-of-gold-mobile
-    - is_hot: true
-      title: Hawaiian Dream
-      image: /marketing/img/img2.png
-      url: https://www.verajohn.com/play/hawaiian-dream-mobile
-    - is_hot: true
-      title: Battle Dwarf
-      image: /marketing/img/img3.png
-      url: https://www.verajohn.com/play/battle-dwarf-mobile
-    - is_hot: false
-      title: Yokozuna Clash
-      image: /marketing/img/img4.png
-      url: https://www.verajohn.com/play/yokozuna-clash-mobile
-    - is_hot: true
-      title: Piggy Riches Megaways
-      image: /marketing/img/img5.png
-      url: https://www.verajohn.com/play/piggy-riches-megaways-mobile
-    - is_hot: true
-      title: Drago - Jewels of Fortune
-      image: /marketing/img/img6.png
-      url: https://www.verajohn.com/play/drago-jewels-of-fortune-mobile
+  game_list: []
 lobby_tiles:
   lobby_tiles_title: More games
   lobby_list:
