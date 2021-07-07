@@ -14,38 +14,7 @@ banner:
   - image: /marketing/img/269_bg.jpg
     url: www.intercasino.com/slots
 game:
-  game_list:
-    - is_hot: true
-      image: /marketing/img/hawaiian-dream.png
-      title: Hawaiian Dream
-      url: https://www.intercasino/game/hawaiian-dream
-    - is_hot: false
-      image: /marketing/img/battle-dwarf.png
-      title: Battle Dwarf
-      url: https://www.intercasino/game/battle-dwarf
-    - is_hot: false
-      image: /marketing/img/moon-princess.png
-      title: Moon Princess
-      url: https://intercasino.com/game/moon-princess
-    - is_hot: true
-      image: /marketing/img/golden-dream.png
-      title: Dreams of Gold
-      url: https://www.intercasino.com/game/dreams-of-gold
-    - is_hot: true
-      title: Yokuzuna Clash
-      url: https://www.intercasino/game/yokuzuna-clash
-      image: /marketing/img/img4.png
-    - is_hot: false
-      title: Jammin Jars
-      image: /marketing/img/img6.png
-      url: https://www.intercasino/game/jammin-jars
-    - title: Wolf Gold
-      url: https://www.verajohn.com/game/wolf-gold
-      is_hot: true
-      image: /marketing/img/gameimage_pgicon609140ddb87e01996.png
-    - image: /marketing/img/25269bacb66a40689d203005baf888bd.png
-      title: Golden Ticket
-      url: https://www.verajohn.com/game/golden-ticket
+  game_list: []
   game_icons_title: Classis Slots
   all_games_title: ""
 lobby_tiles:
