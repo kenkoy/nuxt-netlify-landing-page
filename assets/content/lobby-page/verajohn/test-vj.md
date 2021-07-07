@@ -1,5 +1,5 @@
 ---
-slug_name: Test VJ
+slug_name: test-vj
 seo:
   title: Test Title SEO
 ---
