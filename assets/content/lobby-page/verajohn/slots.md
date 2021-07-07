@@ -55,6 +55,10 @@ game:
     - title: Moon Princess
       image: /marketing/img/moon-princess.png
       url: https://www.verajohn.com/game/moon-princess
+    - image: /marketing/img/25269bacb66a40689d203005baf888bd.png
+      title: Golden Ticket
+      url: https://www.verajohn.com/game/golden-ticket
+      is_hot: true
 lobby_tiles:
   lobby_tiles_title: More games
   lobby_list:
