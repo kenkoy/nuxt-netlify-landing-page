@@ -43,6 +43,9 @@ game:
       url: https://www.verajohn.com/game/wolf-gold
       is_hot: true
       image: /marketing/img/gameimage_pgicon609140ddb87e01996.png
+    - image: /marketing/img/25269bacb66a40689d203005baf888bd.png
+      title: Golden Ticket
+      url: https://www.verajohn.com/game/golden-ticket
   game_icons_title: Classis Slots
   all_games_title: ""
 lobby_tiles:
