@@ -25,7 +25,7 @@ banner:
     url: "#"
 game:
   game_icons_title: Classic slots
-  all_games_title: ""
+  all_games_title: See all games
   all_games_redirect_url: "#"
   game_list:
     - is_hot: true
@@ -55,6 +55,10 @@ game:
     - title: Moon Princess
       image: /marketing/img/moon-princess.png
       url: https://www.verajohn.com/game/moon-princess
+    - image: /marketing/img/25269bacb66a40689d203005baf888bd.png
+      title: Golden Ticket
+      url: https://www.verajohn.com/game/golden-ticket
+      is_hot: true
 lobby_tiles:
   lobby_tiles_title: More games
   lobby_list:
