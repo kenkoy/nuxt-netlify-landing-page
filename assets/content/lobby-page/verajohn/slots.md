@@ -25,7 +25,7 @@ banner:
     url: "#"
 game:
   game_icons_title: Classic slots
-  all_games_title: See all games
+  all_games_title: ""
   all_games_redirect_url: "#"
   game_list:
     - is_hot: true
