@@ -7,7 +7,7 @@ import { retrieveFiles, retriveFrontMattertoJSON } from '@/test/utils/fileUtil.j
 const GAME_DIR = '/assets/content/game-page/'
 
 describe('Testing Game index.vue', () => {
-  let wrapper, localVue, dataMD
+  let wrapper, localVue, dataMD, metaInfoLink
 
   beforeAll(async () => {
     const mdFiles = _
@@ -26,10 +26,16 @@ describe('Testing Game index.vue', () => {
     dataMD = retriveFrontMattertoJSON(randomMarkdown)
 
     wrapper = mount(layout, {
+      localVue,
       stubs: {
         Nuxt: true
       }
     })
+
+    metaInfoLink = wrapper.vm.$metaInfo.link
+  })
+  test('Head link', () => {
+    expect(metaInfoLink).not.toHaveLength(0)
   })
   test('layout-css CLASS should exist', () => {
     if (dataMD.length > 0) {
