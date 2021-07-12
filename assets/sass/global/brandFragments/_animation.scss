@@ -1,0 +1,24 @@
+@-moz-keyframes n-spin{
+  0%{
+    -moz-transform:rotate(0deg)
+  }
+  to{
+    -moz-transform:rotate(1turn)
+  }
+}
+@-webkit-keyframes n-spin{
+  0%{
+    -webkit-transform:rotate(0deg)
+  }
+  to{
+    -webkit-transform:rotate(1turn)
+  }
+}
+@keyframes n-spin{
+  0%{
+    transform:rotate(0deg)
+  }
+  to{
+    transform:rotate(1turn)
+  }
+}

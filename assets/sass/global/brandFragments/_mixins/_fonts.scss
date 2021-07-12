@@ -1,0 +1,11 @@
+@mixin headerTypography ($mix_family, $mix_color, $mix_lineHeight) {
+  font-family: $mix_family;
+  color: $mix_color;
+  line-height: $mix_lineHeight;
+}
+
+@mixin paragraphTypography ($mix_family, $mix_color, $mix_lineHeight) {
+  font-family: $mix_family;
+  color: $mix_color;
+  line-height: $mix_lineHeight;
+}

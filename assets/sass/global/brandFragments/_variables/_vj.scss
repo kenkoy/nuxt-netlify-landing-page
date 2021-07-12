@@ -1,0 +1,89 @@
+//====== BACKGROUND ======//
+$BG_BODY: #0093d4;
+$BG_LIST: null;
+$BG_CHECKBOX: #fff;
+$BG_INPUT: #fff;
+$BG_RADIO: #fff;
+$BG_SELECT: #fff;
+
+$BG_BUTTON_PRIMARY: linear-gradient(180deg,#ffc933,#f7901d); //xxx
+$BG_BUTTON_PRIMARY_HOVER: linear-gradient(180deg,#ffe246,#ffc933 34.95%,#ffb22f); //xxx
+$BG_BUTTON_PRIMARY_ACTIVE: linear-gradient(180deg,#f7901d,#ffc933); //xxx
+
+$BG_BUTTON_SECONDARY: linear-gradient(180deg,#fa57cc .57%,#f444b8 27.16%,#ed30a3 51.89%,#e51e8d 88.16%,#bb116d); //xxx
+$BG_BUTTON_SECONDARY_HOVER: linear-gradient(180deg,#ff5fe7,#ff4bd4 26.85%,#ff32b9 51.39%,#ff1ea2 83.64%,#dd067f); //xxx
+$BG_BUTTON_SECONDARY_ACTIVE: linear-gradient(180deg,#c31473,#e51f8e 16.01%,#ef36aa 57.87%,#f154c2); //xxx
+
+$BG_BUTTON_TERTIARY: linear-gradient(180deg,#4cb2df,#009fe3 22.74%,#0093d4 50.33%,#0082ba 85.39%,#005f87); //xxx
+$BG_BUTTON_TERTIARY_HOVER: linear-gradient(180deg,#53c3f5,#00a6ed 22.74%,#00a1e8 50.33%,#0096d6 85.39%,#0076a8); //xxx
+$BG_BUTTON_TERTIARY_ACTIVE: linear-gradient(180deg,#0186c0 27.08%,#15a4e2); //xxx
+
+$BG_BUTTON_DEPOSIT_REGISTER: linear-gradient(180deg,#ffc933,#f7901d); //xxx
+$BG_BUTTON_DEPOSIT_REGISTER_HOVER: linear-gradient(180deg,#ffe246,#ffc933 34.95%,#ffb22f); //xxx
+$BG_BUTTON_DEPOSIT_REGISTER_ACTIVE: linear-gradient(180deg,#f7901d,#ffc933); //xxx
+
+//====== FONTS ======//
+$FONT_FAMILY: 'Lucida Grande',sans-serif; //xxx
+
+$LINE_HEIGHT_SMALL: 18px; //xxx
+$LINE_HEIGHT_MED: 20px; //xxx
+$LINE_HEIGHT_BIG: 24px; //xxx
+
+$FONT_SIZE: 11px; //xxx
+
+$COLOR_TEXT_BUBBLE: null;
+$COLOR_TEXT_BUTTON_DEFAULT: #fff;
+$COLOR_TEXT_BUTTON_PRIMARY: #fff;
+$COLOR_TEXT_BUTTON_SECONDARY: #fff;
+$COLOR_TEXT_BUTTON_TERTIARY: #fff;
+$COLOR_TEXT_BUTTON_HINT: #fff;
+$COLOR_TEXT_BUTTON_INPUT: #252525;
+$COLOR_TEXT_BUTTON_INPUT_PLACEHOLDER: #898989;
+$COLOR_TEXT_LABEL: #fff;
+$COLOR_TEXT_RADIO_LABEL: #252525;
+$COLOR_TEXT_SELECT: #898989;
+$COLOR_TEXT_SELECT_OPTION: #252525;
+
+$COLOR_TEXT_1: #000;
+$COLOR_TEXT_2: #333;
+$COLOR_TEXT_3: #fff;
+$COLOR_TEXT_4: #ffea00;
+$COLOR_TEXT_5: #84d6f8;
+$COLOR_TEXT_6: #fff;
+
+$COLOR_TEXT_H1: null;
+$COLOR_TEXT_H2: null;
+$COLOR_TEXT_H3: null;
+$COLOR_TEXT_H4: null;
+$COLOR_TEXT_H5: null;
+$COLOR_TEXT_H6: null;
+
+$COLOR_TEXT_PARAGRAPH: null;
+$COLOR_TEXT_SMALL: null;
+$COLOR_TEXT_HERO: #fff;
+$COLOR_TEXT_DISPLAY: #fff;
+$COLOR_TEXT_LINK_DEFAULT: #ffea00;
+$COLOR_TEXT_LINK_HOVER: #ffea00;
+$COLOR_TEXT_LINK_ACTIVE: #ffea00;
+$COLOR_TEXT_LINK_VISITED: #ffea00;
+
+//====== BORDER ======//
+$BORDER_COLOR: #85ceef; //xxx
+$BORDER_COLOR_HOVER: #ffea00; //xxx
+$BORDER_RADIUS_BUBBLE: 10px;
+$BORDER_RADIUS_BUTTON: 10px;
+$BORDER_RADIUS_CHECKBOX: 4px;
+$BORDER_RADIUS_HINT: 8px;
+$BORDER_RADIUS_INPUT: 5px;
+$BORDER_RADIUS_SELECT: 5px;
+$BORDER_RADIUS_SWITCH: null;
+
+//====== MISC ======//
+$PRIMARY: #e72292;
+$SECONDARY: #ffea00;
+$TERTIARY: #0093d4;
+$ERROR: #e6195d;
+$GRADIENT: null;
+$REGULAR: null;
+$DEPOSIT: null;
+$DISABLED: #898989;

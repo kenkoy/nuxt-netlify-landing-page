@@ -1,0 +1,103 @@
+// Parameters = Font family, Color, Line height //
+.n-header-1 {
+  @include headerTypography(
+    $FONT_FAMILY,
+    $COLOR_TEXT_4,
+    $LINE_HEIGHT_SMALL
+  );
+  font-size: 22px;
+}
+.n-header-2 {
+  @include headerTypography(
+    $FONT_FAMILY,
+    $COLOR_TEXT_4,
+    $LINE_HEIGHT_SMALL
+  );
+  font-size: 18px;
+}
+.n-header-3 {
+  @include headerTypography(
+    $FONT_FAMILY,
+    $COLOR_TEXT_4,
+    $LINE_HEIGHT_SMALL
+  );
+  font-size: 16px;
+}
+.n-header-4 {
+  @include headerTypography(
+    $FONT_FAMILY,
+    $COLOR_TEXT_4,
+    $LINE_HEIGHT_SMALL
+  );
+  font-size: 15px;
+}
+.n-header-5 {
+  @include headerTypography(
+    $FONT_FAMILY,
+    $COLOR_TEXT_4,
+    $LINE_HEIGHT_SMALL
+  );
+  font-size: 13px;
+}
+.n-header-6 {
+  @include headerTypography(
+    $FONT_FAMILY,
+    $COLOR_TEXT_4,
+    $LINE_HEIGHT_SMALL
+  );
+  font-size: 12px;
+}
+
+.n-paragraph {
+  @include paragraphTypography(
+    $FONT_FAMILY,
+    $COLOR_TEXT_3,
+    $LINE_HEIGHT_SMALL
+  );
+  font-size: 16px;
+}
+.n-paragraph-1 {
+  @include paragraphTypography(
+    $FONT_FAMILY,
+    $COLOR_TEXT_3,
+    $LINE_HEIGHT_SMALL
+  );
+  font-size: 15px;
+}
+.n-paragraph-2 {
+  @include paragraphTypography(
+    $FONT_FAMILY,
+    $COLOR_TEXT_3,
+    $LINE_HEIGHT_SMALL
+  );
+  font-size: 14px;
+}
+.n-paragraph-3 {
+  @include paragraphTypography(
+    $FONT_FAMILY,
+    $COLOR_TEXT_3,
+    $LINE_HEIGHT_SMALL
+  );
+  font-size: 11px;
+}
+
+.n-link,
+.n-link:link,
+.n-link:visited{
+  border-bottom: 2px dotted $BORDER_COLOR;
+}
+.n-link,
+.n-link:hover,
+.n-link:link,
+.n-link:visited{
+  color: $COLOR_TEXT_LINK_DEFAULT;
+  text-decoration: none;
+}
+.n-link:hover{
+  border-bottom: 1px solid $BORDER_COLOR_HOVER;
+}
+.n-link:active{
+  color: $COLOR_TEXT_LINK_DEFAULT;
+  border-bottom: 2px dotted $BORDER_COLOR;
+  text-decoration: none;
+}
