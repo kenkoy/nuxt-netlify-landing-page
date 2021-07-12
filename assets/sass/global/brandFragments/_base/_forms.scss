@@ -1,0 +1,40 @@
+// Parameters = Background, Font family, Color, Line height, Border Color, Border Radius //
+.n-input{
+  @include input(
+    $BG_INPUT,
+    $FONT_FAMILY,
+    $COLOR_TEXT_INPUT,
+    $LINE_HEIGHT_SMALL,
+    #1e83af,
+    $BORDER_RADIUS_INPUT
+  );
+  font-size: 17px;
+  outline: none;
+  padding: 12px 14px;
+  width: 100%;
+}
+.n-input:disabled{
+  background-image: $BG_INPUT_DISABLED;
+  color: $DISABLED;
+}
+.n-input:focus{
+  border:2px solid $BORDER_COLOR_INPUT_FOCUS;
+}
+.n-input--error{
+  border: 1px solid $ERROR;
+}
+
+.n-select{
+  @include inputTypography(
+    $BG_SELECT,
+    $FONT_FAMILY,
+    $COLOR_TEXT_SELECT,
+    $LINE_HEIGHT_SMALL,
+    #1e83af,
+    $BORDER_RADIUS_SELECT
+  );
+  @include selectPreset;
+
+  font-size: 17px;
+  padding: 12px 10px;
+}

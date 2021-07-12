@@ -1,0 +1,23 @@
+@mixin inputTypography ($mix_bg, $mix_family, $mix_color, $mix_lineHeight, $mix_border_color, $mix_border_radius) {
+  background: $mix_bg;
+  font-family: $mix_family;
+  color: $mix_color;
+  line-height: $mix_lineHeight;
+  border: solid 1px $mix_border_color;
+  border-radius: $mix_border_radius;
+  box-sizing:border-box;
+}
+
+@mixin selectPreset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 44px;
+  width: 100%;
+  vertical-align: middle;
+  outline: none;
+  background-position: right 50%;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;
+  charset=utf-8,%3Csvg width='32' height='44' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 15l4 6H0l4-6zM4 29l-4-6h8l-4 6z' fill='%230082BA'/%3E%3C/svg%3E");
+}
