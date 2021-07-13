@@ -24,7 +24,7 @@
               <nuxt-link id="ic" to="/marketing/iclp1v2/" :class="switchTemplate === 'ic' ? 'active' : ''" @click.native="switchTemplate = 'ic'">
                 <strong>IC</strong>
               </nuxt-link>
-              <nuxt-link id="yg" to="/marketing/yuugado/" :class="switchTemplate === 'yg' ? 'active' : ''" @click.native="switchTemplate = 'yg'">
+              <nuxt-link id="yg" to="/marketing/yuugado1/" :class="switchTemplate === 'yg' ? 'active' : ''" @click.native="switchTemplate = 'yg'">
                 <strong>YG</strong>
               </nuxt-link>
             </div>
@@ -75,7 +75,7 @@ export default {
       activeNavTemplates: [
         'vjhp', 'vjhp2', 'vjlp5',
         'vjlp7', 'vjlp8', 'iclp1v2',
-        'iclp2v2', 'iclp3v2'
+        'iclp2v2', 'iclp3v2', 'yglp1'
       ]
     }
   },

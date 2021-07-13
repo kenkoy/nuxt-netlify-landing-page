@@ -10,7 +10,8 @@ const markdownPaths = [
   'marketing/vjlp8',
   'marketing/iclp1',
   'marketing/iclp2',
-  'marketing/iclp3'
+  'marketing/iclp3',
+  'marketing/yglp1'
   // 'marketing/lobby-page'
 ]
 
