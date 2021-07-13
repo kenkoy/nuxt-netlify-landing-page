@@ -127,7 +127,14 @@
             <div id="footer-logo">
               <div class="row">
                 <div>
-                  <img src="https://verification.curacao-egaming.com/validate.ashx?domain=verajohn.com" alt="alt img">
+                  <a
+                    aria-label="CEG"
+                    target="_blank"
+                    rel="noopener"
+                    :href="`https://verification.curacao-egaming.com/validateview.aspx?domain=${mdData.brand}.com`"
+                  >
+                    <img :src="`https://verification.curacao-egaming.com/validate.ashx?domain=${mdData.brand}.com`" alt="alt img">
+                  </a>
                   <img
                     v-for="(regulatory, index) in regulatoryLogosJP"
                     :key="index"
