@@ -21,7 +21,7 @@ export default {
     const mdFilesContent = await mdFiles.keys().map(key => ({
       ...mdFiles(key),
       slug: `${key.replace('.md', '').replace('./', '')}`,
-      path: 'yglp'
+      path: 'yglp1'
     }))
     return { posts: mdFilesContent.reverse() }
   },

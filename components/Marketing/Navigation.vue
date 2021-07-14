@@ -24,7 +24,7 @@
               <nuxt-link id="ic" to="/marketing/iclp1v2/" :class="switchTemplate === 'ic' ? 'active' : ''" @click.native="switchTemplate = 'ic'">
                 <strong>IC</strong>
               </nuxt-link>
-              <nuxt-link id="yg" to="/marketing/yuugado1/" :class="switchTemplate === 'yg' ? 'active' : ''" @click.native="switchTemplate = 'yg'">
+              <nuxt-link id="yg" to="/marketing/yglp1/" :class="switchTemplate === 'yg' ? 'active' : ''" @click.native="switchTemplate = 'yg'">
                 <strong>YG</strong>
               </nuxt-link>
             </div>

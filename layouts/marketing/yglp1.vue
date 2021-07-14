@@ -1,5 +1,5 @@
 <template>
-  <div class="layout-css" :class="{ yuugado_wrapper: true }">
+  <div class="layout-css" :class="{ yglp1_wrapper: true }">
     <!-- Change class name to actual page name -->
     <nuxt />
     <div
@@ -23,6 +23,11 @@
           </div>
         </section>
       -->
+      <section>
+        <div>
+          TEST
+        </div>
+      </section>
 
       <section id="terms">
         <div class="container">
