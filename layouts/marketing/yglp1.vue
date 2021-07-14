@@ -77,6 +77,6 @@ export default {
 
 <style lang="scss"> // Change to actual path, all assets should be on asset folder. Create separate assets / sass for each templates
   .yuugado_wrapper {
-    @import '@/assets/sass/marketing/yglp/style.scss';
+    @import '@/assets/sass/marketing/yglp1/style.scss';
   }
 </style>
