@@ -80,11 +80,21 @@
     display: block;
   }
 
-  #header-button > .login {
-    margin: 8px 0;
-    height: 38px;
-    line-height: 38px;
-    padding: 0 8px;
+  #header-button {
+    > button {
+      margin: 8px 0;
+      height: 38px;
+      line-height: 38px;
+      padding: 0 8px;
+
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
 
@@ -135,7 +145,6 @@ main{
     img{
       display: block;
       margin: auto;
-      max-width: 88px;
     }
     .game-name{
       width: 100px;
@@ -303,6 +312,17 @@ main{
     flex: 0 0 50%;
     max-width: 50%;
     margin: 0;
+    padding: 0;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 

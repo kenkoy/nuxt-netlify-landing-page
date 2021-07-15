@@ -1,19 +1,21 @@
 <template>
   <header id="header-menu">
     <div id="header-home">
-      <a href="#">
+      <a :href="brand === 'verajohn' ? 'https://verajohn.com/ja' : ''">
         <img :src="require(`@/assets/images/lobby-page/${brand}/home-icon.png`)" alt="alt img">
       </a>
     </div>
 
     <div id="header-logo">
-      <img class="logo" :src="require(`@/assets/images/lobby-page/${brand}/logo.png`)" alt="alt img">
+      <a :href="brand === 'verajohn' ? 'https://verajohn.com/ja' : ''">
+        <img class="logo" :src="require(`@/assets/images/lobby-page/${brand}/logo.png`)" alt="alt img">
+      </a>
     </div>
 
     <div id="header-button">
-      <button class="cta_button login n-button--secondary">
-        <a class="btn-register" href="#">
-          Join Now
+      <button class="cta_button n-button--secondary">
+        <a class="btn-login" :href="brand === 'verajohn' ? 'https://verajohn.com/#signin' : ''">
+          ログイン
         </a>
       </button>
     </div>

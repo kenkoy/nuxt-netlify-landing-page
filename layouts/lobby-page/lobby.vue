@@ -154,7 +154,7 @@
           </div>
         </footer>
       </main>
-      <FooterFixButtons />
+      <FooterFixButtons :brand="mdData.brand" />
     </div>
   </div>
 </template>
