@@ -1644,6 +1644,164 @@ collections:
                   widget: "string",
                 }
 
+  - name: "YGLP1"
+    label: "Yuugado Template 1"
+    format: "frontmatter"
+    folder: "assets/content/landing-page/marketing/yglp1"
+    create: true
+    identifier_field: "slug_name"
+    slug: "{{slug}}"
+    preview_path: marketing/yglp1/{{slug}}
+    show_preview_links: true
+    editor:
+      preview: true
+    fields:
+      - label: Slug
+        widget: "string"
+        name: "slug_name"
+        required: true
+        hint: "The last segment of landing page URL. If updating, the original slug value will be used as URL (please do not include folder or file extension)"
+      - label: "Locale"
+        name: "promo_locale"
+        widget: "object"
+        colapsed: true
+        fields:
+          - label: "Country Code"
+            name: "promo_country_code"
+            widget: "select"
+            default: "jp"
+            options:
+              - { label: "Japan", value: "jp" }
+              - { label: "Sweden", value: "se" }
+              - { label: "Germany", value: "de" }
+          - label: "Language Code"
+            name: "promo_language_code"
+            widget: "select"
+            default: "ja"
+            options:
+              - { label: "Japanese", value: "ja" }
+              - { label: "Swedish", value: "sv" }
+              - { label: "German", value: "de" }
+      - label: "Tag, Optimize and Analytics ID"
+        name: "field_ids"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {
+              label: "Google Analytics Tracking ID",
+              name: ga_tracking_id,
+              widget: "string",
+              required: false,
+              default: "UA-142143961-1",
+            }
+          - {
+              label: "Google Optimize Container ID",
+              name: go_container_id,
+              widget: "string",
+              required: false,
+              default: "OPT-PHSNXP6",
+            }
+          - {
+              label: "Google Tag Manger Container ID",
+              name: gtm_container_id,
+              widget: "string",
+              required: false,
+              default: "GTM-MFD3NKM",
+            }
+      - label: "Promotion Banner"
+        name: "promo_banner"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Promotion Top Text", name: "promo_top_text", widget: "string" }
+          - { label: "Promotion Middle Text", name: "promo_middle_text", widget: "string" }
+          - { label: "Promotion Low Text", name: "promo_low_text", widget: "string" }
+          - {
+              label: "Login Button Text",
+              name: "promo_login_button_text",
+              widget: "string",
+            }
+          - {
+              label: "Login Button Redirect URL",
+              name: "promo_login_button_redirect_url",
+              widget: "string",
+            }
+          - {
+              label: "Register Button Text",
+              name: "promo_register_button_text",
+              widget: "string",
+            }
+          - {
+              label: "Register Button Redirect URL",
+              name: "promo_register_button_redirect_url",
+              widget: "string",
+            }
+          - {
+              label: "Promotion Image",
+              name: "promo_bg_image",
+              widget: "image"
+            }
+          - {
+              label: "Promotion Text",
+              name: "promo_text",
+              widget: "string",
+            }
+          - {
+              label: "Promotion Link Text",
+              name: "promo_link_text",
+              widget: "string",
+            }
+          - {
+              label: "Promotion Link",
+              name: "promo_link_redirect",
+              widget: "string",
+            }
+      - label: "Steps"
+        name: "steps"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "Step 1 Title", name: "step_title_1", widget: "string" }
+          - {
+              label: "Step 1 Description",
+              name: "step_description_1",
+              widget: "string",
+            }
+          - { label: "Step 2 Title", name: "step_title_2", widget: "string" }
+          - {
+              label: "Step 2 Description",
+              name: "step_description_2",
+              widget: "string",
+            }
+          - { label: "Step 3 Title", name: "step_title_3", widget: "string" }
+          - {
+              label: "Step 3 Description",
+              name: "step_description_3",
+              widget: "string",
+            }
+      - label: "Information Banner"
+        name: "info_banner"
+        widget: "object"
+        collapsed: true
+        fields:
+          - {
+              label: "Info Image 1",
+              name: "info_image_1",
+              widget: "image",
+            }
+          - {
+              label: "Info Image 2",
+              name: "info_image_2",
+              widget: "image",
+            }
+      - { label: "Terms & Conditions Content", name: "content", widget: "markdown" }
+      - {
+          label: "Template",
+          name: "promo_template",
+          widget: "hidden",
+          default: "YGLP1",
+        }
+
   - label: "VeraJohn SEO Lobby Template"
     name: "vj_lobby_page"
     format: "frontmatter"
