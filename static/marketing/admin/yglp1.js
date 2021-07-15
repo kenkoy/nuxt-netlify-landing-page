@@ -63,22 +63,21 @@ export const YGLP1_PREVIEW = createClass({
                   <div>
                     <div id="login" class="animated">
                       <div class="fadeIn animated">
-                        <a href="${promoLoginButtonRedirectUrl}">
+                        <a href="#">
                           <i class="material-icons">exit_to_app</i>
-                          <span>${promoLoginButtonText}</span>
+                          <span>dan</span>
                         </a>
                       </div>
                     </div>
                     <img class="logo" src="/marketing/img/yglp1/logo-jp.png" alt="yuugado logo">
                     <div>
-                      <p>${promoTopText}</p>
-                      <h1>${promoMidText}</h1>
-                      <h2>${promoLowText}</h2>
+                      <p>dan</p>
+                      <h1>dan</h1>
+                      <h2>dan</h2>
                     </div>
                     <button>
-                      <a href="${promoRegisterButtonRedirectUrl}">${promoRegisterButtonText}</a>
+                      <a href="#">sfgs</a>
                     </button>
-                    <img class="game-logo" src="${promoBgImage}" alt="yuugado game">
                     <small><a href="#">利用規約</a>に同意します。</small>
                   </div>
                 </div>
@@ -86,17 +85,12 @@ export const YGLP1_PREVIEW = createClass({
             </div>
           </section>
 
-          <${STEPS} steps="${stepData}" />
 
           <section id="image-body">
             <div>
-              <img src="${info.getIn(['data', 'info_image_1'])}">
-              <img src="${info.getIn(['data', 'info_image_2'])}">
               <button>
-                <a href="${promoRegisterButtonRedirectUrl}">${promoRegisterButtonText}</a>
               </button>
               <h3 class="text-center">
-                ${promoText}<a href="${promoLinkRedirect}">${promoLinkText}</a>
               </h3>
             </div>
           </section>
@@ -112,7 +106,6 @@ export const YGLP1_PREVIEW = createClass({
               <div class="row">
                 <div>
                   <div>
-                    ${content}
                   </div>
                   <ul>
                     <li>
@@ -127,7 +120,6 @@ export const YGLP1_PREVIEW = createClass({
           </section>
 
           <section class="separator">
-            <${FOOTER} landingPageType="yuugado" languageCode=${language} countryCode=${country} />
           </section>
         </div>
       </body>

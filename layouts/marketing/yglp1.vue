@@ -3,7 +3,6 @@
     <!-- Change class name to actual page name -->
     <nuxt />
     <div
-      v-if="Object.keys(mdData).length > 0"
       class="yglp1-main"
     >
       <!-- Change class name to actual page name -->
