@@ -14,12 +14,12 @@ export const YGLP1_PREVIEW = createClass({
     document.head.appendChild(link)
   },
   render () {
-    const { widgetsFor } = this.props
+    const { widgetsFor, widgetFor } = this.props
     const banner = widgetsFor('promo_banner')
     const locale = widgetsFor('promo_locale')
-    const info = widgetsFor('info_banner')
+    const info = widgetsFor('info_image')
     const steps = widgetsFor('steps')
-    const body = widgetsFor('body').getIn(['data']) || ''
+    const body = widgetFor('body') || ''
 
     const country = locale.getIn(['data', 'promo_country_code']) || ''
     const language = locale.getIn(['data', 'promo_language_code']) || ''
@@ -30,11 +30,15 @@ export const YGLP1_PREVIEW = createClass({
     const promoRegisterButtonRedirectUrl = banner.getIn(['data', 'promo_register_button_redirect_url']) || ''
     const promoRegisterButtonText = banner.getIn(['data', 'promo_register_button_text']) || ''
 
-    const promoTopText = banner.getIn(['data', 'promo_top_text']) || ''
-    const promoMidText = banner.getIn(['data', 'promo_middle_text']) || ''
-    const promoLowText = banner.getIn(['data', 'promo_low_text']) || ''
+    const promoSubTitle = banner.getIn(['data', 'promo_sub_title']) || ''
+    const promoTitle1 = banner.getIn(['data', 'promo_title_1']) || ''
+    const promoTitle2 = banner.getIn(['data', 'promo_title_2']) || ''
 
-    const promoBgImage = banner.getIn(['data', 'promo_bg_image']) || ''
+    const promoBgMobile = banner.getIn(['data', 'promo_bg_mobile'])
+
+    const promoBgDesktop = {
+      '--bg-image-desktop': `url('${banner.getIn(['data', 'promo_bg_desktop'])}')`
+    }
 
     const promoText = banner.getIn(['data', 'promo_text']) || ''
     const promoLinkRedirect = banner.getIn(['data', 'promo_link_redirect']) || ''
@@ -58,10 +62,10 @@ export const YGLP1_PREVIEW = createClass({
       <body
         class="yglp1_wrapper layout-css"
       >
-        <div class="yglp1-main">
+        <div class="yglp1-main" style=${promoBgDesktop}>
           <section id="hero">
             <div class="container">
-              <div class="row">
+              <div class="row column-2">
                 <div id="hero-text-wrapper">
                   <div>
                     <div id="login" class="animated">
@@ -74,14 +78,14 @@ export const YGLP1_PREVIEW = createClass({
                     </div>
                     <img class="logo" src="/marketing/img/yglp1/logo-jp.png" alt="yuugado logo" />
                     <div>
-                      <p>${promoTopText}</p>
-                      <h1>${promoMidText}</h1>
-                      <h2>${promoLowText}</h2>
+                      <p>${promoSubTitle}</p>
+                      <h1>${promoTitle1}</h1>
+                      <h2>${promoTitle2}</h2>
                     </div>
                     <button>
                       <a href="${promoRegisterButtonRedirectUrl}">${promoRegisterButtonText}</a>
                     </button>
-                    <img class="game-logo" src="${promoBgImage}" alt="yuugado game" />
+                    <img class="game-logo" src="${promoBgMobile}" alt="yuugado game" />
                     <small><a href="#">利用規約</a>に同意します。</small>
                   </div>
                 </div>
@@ -106,7 +110,7 @@ export const YGLP1_PREVIEW = createClass({
           <section id="payment" class="separator">
             <div class="container">
               <div class="row">
-                <img class="desktop" src="/marketing/img/yg-global-paymentprovider/payment_large_jp.svg" alt="payment verajohn desktop" />
+                <svg class="desktop mobile" />
               </div>
             </div>
           </section>

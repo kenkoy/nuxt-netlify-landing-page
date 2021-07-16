@@ -1713,9 +1713,9 @@ collections:
         widget: "object"
         collapsed: true
         fields:
-          - { label: "Promotion Top Text", name: "promo_top_text", widget: "string" }
-          - { label: "Promotion Middle Text", name: "promo_middle_text", widget: "string" }
-          - { label: "Promotion Low Text", name: "promo_low_text", widget: "string" }
+          - { label: "Promo Title 1", name: "promo_title_1", widget: "string" }
+          - { label: "Promo Title 2", name: "promo_title_2", widget: "string" }
+          - { label: "Promo Sub Title", name: "promo_sub_title", widget: "string" }
           - {
               label: "Login Button Text",
               name: "promo_login_button_text",
@@ -1737,8 +1737,13 @@ collections:
               widget: "string",
             }
           - {
-              label: "Promotion Image",
-              name: "promo_bg_image",
+              label: "Promotion Desktop Image",
+              name: "promo_bg_desktop",
+              widget: "image"
+            }
+          - {
+              label: "Promotion Mobile Image",
+              name: "promo_bg_mobile",
               widget: "image"
             }
           - {
@@ -1779,8 +1784,8 @@ collections:
               name: "step_description_3",
               widget: "string",
             }
-      - label: "Information Banner"
-        name: "info_banner"
+      - label: "Information Image"
+        name: "info_image"
         widget: "object"
         collapsed: true
         fields:

@@ -6,25 +6,41 @@ export const FOOTER = createClass({
   setLandingPageURLs (landingPage) {
     let returnURL = {
       ageLimit: '',
-      curacao: ''
+      curacao: '',
+      ageLimitIcon: '',
+      gtIcon: ''
     }
     switch (landingPage) {
       case 'verajohn':
         returnURL = {
           ageLimit: 'https://www.verajohn.com/about/responsible-gaming',
-          curacao: 'https://validator.curacao-egaming.com/validate?domain=www.verajohn.com&seal_id=cc15cb374804a763a5f82ff0a72fd6b436659d0061b3201e86431fa8afff305e39a7bbbadf89ae9274d2e9ee4bd923c3&stamp=ae85a35fb4a6c5816b8b9f17e5b6be96'
+          curacao: 'https://verification.curacao-egaming.com/validateview.aspx?domain=verajohn.com',
+          ageLimitIcon: '/marketing/img/footer/20+.svg',
+          gtIcon: '/marketing/img/footer/icon_gt.svg'
         }
         break
       case 'intercasino':
         returnURL = {
           ageLimit: 'https://www.intercasino.com/about/responsible-gaming',
-          curacao: 'https://validator.curacao-egaming.com/validate?domain=www.intercasino.com&seal_id=141a575e2e4b5593af3dc1b19e2517deaa0ed9a17b9f809f1ffd32fa97098f83e664f6df6801db35fd76f6bef7f63663&stamp=ae85a35fb4a6c5816b8b9f17e5b6be96'
+          curacao: 'https://verification.curacao-egaming.com/validateview.aspx?domain=intercasino.com',
+          ageLimitIcon: '/marketing/img/footer/20+.svg',
+          gtIcon: '/marketing/img/footer/icon_gt.svg'
+        }
+        break
+      case 'yuugado':
+        returnURL = {
+          ageLimit: 'https://www.yuugado.com/about/responsible-gaming',
+          curacao: 'https://verification.curacao-egaming.com/validateview.aspx?domain=yuugado.com',
+          ageLimitIcon: '/marketing/img/yglp1/icon_age_twenty.svg',
+          gtIcon: '/marketing/img/yglp1/icon_gt.svg'
         }
         break
       default:
         returnURL = {
           ageLimit: '#',
-          curacao: '#'
+          curacao: '#',
+          ageLimitIcon: '',
+          gtIcon: ''
         }
         break
     }
@@ -46,7 +62,7 @@ export const FOOTER = createClass({
                 href="${regulatoryURL.ageLimit}"
                 rel="noopener"
               >
-                <img class="reg-icon" src="/marketing/img/footer/20+.svg" alt="alt img"></img>
+                <img class="twenty-plus" src="${regulatoryURL.ageLimitIcon}" alt="alt img"></img>
               </a>
 
               <a
@@ -55,7 +71,7 @@ export const FOOTER = createClass({
                 href="https://www.gamblingtherapy.org/en"
                 rel="noopener"
               >
-                <img src="/marketing/img/footer/icon_gt.svg" alt="alt img"></img>
+                <img class="gambling-therapy" src="${regulatoryURL.gtIcon}" alt="alt img"></img>
               </a>
 
               <a
@@ -63,7 +79,7 @@ export const FOOTER = createClass({
                 target="_blank"
                 href="${regulatoryURL.curacao}"
               >
-                <img class="reg-icon ceg-logo" src="/marketing/img/footer/CEG_logo.png" alt="alt img"></img>
+                <img class="curacao-regulator" src="https://verification.curacao-egaming.com/validate.ashx?domain=${landingPageType}.com" alt="alt img" />
               </a>
             </div>
 
