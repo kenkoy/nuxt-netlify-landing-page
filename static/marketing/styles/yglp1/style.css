@@ -1,0 +1,386 @@
+/* STYLE FOR YUUGADO */
+.yglp1_wrapper {
+  font-family: "NotoSansJP-Regular", sans-serif;
+}
+
+.yglp1-main {
+  background: url(../../img/yglp1/background-mobile.jpeg) no-repeat center -80px;
+  background-size: contain;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 32px;
+  color: #EF6351;
+  font-family: 'MainFont-DemiBold', sans-serif;
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 16px;
+  color: #EF6351;
+  font-weight: 500px;
+  font-family: 'MainFont-DemiBold', sans-serif;
+  margin: 5px auto 25px;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 2px solid #EF6351;
+  color: #EF6351;
+}
+
+a:hover {
+  color: #BB2511;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 896px;
+  width: 100%;
+}
+
+button {
+  background: linear-gradient(91.59deg, #E38271 -5.41%, #DC391B 30.04%, #DF4022 74.38%, #E8664E 104.44%), linear-gradient(97.93deg, #EB7761 -10.86%, #D44A31 56.96%, #EEA598 117.98%);
+  font-size: 16px;
+  width: 280px;
+  border-radius: 20px;
+  border: none;
+  padding: 4px 30px;
+}
+
+button a,
+button a:hover {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+button:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16)), linear-gradient(91.59deg, #E38271 -5.41%, #DC391B 30.04%, #DF4022 74.38%, #E8664E 104.44%), linear-gradient(97.93deg, #EB7761 -10.86%, #D44A31 56.96%, #EEA598 117.98%);
+}
+
+#hero p {
+  color: #b8a48e;
+  margin-top: 10px;
+}
+
+#hero small {
+  font-size: 11px;
+  color: #b8a48e;
+}
+
+#hero .logo {
+  max-width: 250px;
+  margin: 65px auto 20px;
+}
+
+#hero .game-logo {
+  max-width: 150px;
+  margin: 50px auto 20px;
+}
+
+#login {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+}
+
+#login:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+#login a {
+  border: none;
+  color: #fff;
+}
+
+#login i {
+  font-size: 32px;
+  display: block;
+  font-style: normal;
+  color: #EF6351;
+}
+
+#login span {
+  color: #C3986C;
+  font-size: 16px;
+}
+
+#image-body {
+  text-align: center;
+  font-size: 16px;
+  color: #b8a48e;
+}
+
+#image-body .text-center {
+  font-weight: normal;
+}
+
+#payment {
+  margin: 20px 0 35px;
+}
+
+#payment .container {
+  max-width: 100%;
+}
+
+#payment .container .row {
+  background: #F1EDE9;
+  border-top: 1px solid #EDE0D2;
+  border-bottom: 1px solid #EDE0D2;
+  height: 152px;
+}
+
+#payment .container .row svg {
+  background: url(../../img/yg-global-paymentprovider/payment_mobile_jp.svg) no-repeat center center;
+  width: 100%;
+  max-width: 260px;
+  margin: auto;
+  filter: sepia(70%) saturate(346%) hue-rotate(305deg) brightness(90%) contrast(85%);
+}
+
+#terms {
+  font-size: 16px;
+}
+
+#terms ol,
+#terms ul {
+  list-style-position: inside;
+  padding-left: 0;
+  color: #C3986C;
+}
+
+#terms .container .row h3 {
+  color: #EF6351;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+footer {
+  background: #F1EDE9;
+  border-top: 1px solid #EDE0D2;
+}
+
+footer p {
+  font-size: 14px;
+  color: #DBC2A7;
+}
+
+footer a {
+  color: #DBC2A7;
+  border-bottom: 1px solid #DBC2A7;
+}
+
+footer.yuugado {
+  padding: 20px 10px;
+}
+
+footer .gambling-therapy {
+  filter: sepia(70%) saturate(346%) hue-rotate(305deg) brightness(90%) contrast(85%);
+}
+
+footer .twenty-plus {
+  filter: invert(91%) sepia(80%) saturate(377%) hue-rotate(305deg) brightness(92%) contrast(85%);
+}
+
+@media only screen and (min-width: 320px) {
+  #hero {
+    padding: 0 10px;
+  }
+
+  #hero .row {
+    height: 100%;
+    min-height: calc(100vh - 210px);
+  }
+
+  #hero a {
+    text-decoration: none;
+  }
+
+  #hero #hero-text-wrapper {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  #hero #hero-text-wrapper>div {
+    width: 100%;
+  }
+
+  #steps {
+    background: #fff;
+    border-top: 1px solid #f8f4ea;
+  }
+
+  #steps .container {
+    display: block;
+    text-align: center;
+  }
+
+  #steps .container>div {
+    display: inline-block;
+    vertical-align: top;
+    width: 31%;
+    overflow: hidden;
+  }
+
+  #steps .container>div .num {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 20px auto 0;
+    font-family: "NotoSansJP-Regular", sans-serif;
+    color: #EF6351;
+    border: 1px solid #776149;
+  }
+
+  #steps .container>div h3 {
+    color: #EF6351;
+    margin: 10px auto 10px;
+    font-size: 24px;
+    font-weight: lighter;
+  }
+
+  #steps .container>div p {
+    text-align: center;
+    color: #b8a48e;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  #payment .container .row svg {
+    background: url(../../img/yg-global-paymentprovider/payment_mobile_jp.svg) no-repeat center center;
+    width: 100%;
+    max-width: 690px;
+    margin: auto;
+    filter: sepia(70%) saturate(346%) hue-rotate(305deg) brightness(90%) contrast(85%);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #hero {
+    background: var(--bg-image-desktop) no-repeat center center;
+    background-size: contain;
+  }
+
+  #hero .row {
+    min-height: 650px;
+  }
+
+  #hero #hero-text-wrapper {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  #hero .game-logo {
+    display: none;
+  }
+
+  #hero button {
+    display: block;
+    margin: auto;
+  }
+
+  #steps .container>div h3 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .yglp1-main {
+    background: none;
+  }
+
+  #hero {
+    background-size: cover;
+    max-width: 100%;
+    margin: auto;
+  }
+
+  #hero .container {
+    max-width: 100%;
+  }
+
+  #hero .row {
+    max-height: 650px;
+  }
+
+  #hero #hero-text-wrapper {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  #hero h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  #hero h2 {
+    font-size: 28px;
+  }
+
+  #hero p {
+    margin-top: 30px;
+  }
+
+  #steps {
+    padding: 20px 0;
+  }
+
+  #steps .container {
+    max-width: 1440px;
+  }
+
+  #steps .container>div {
+    margin-top: 0;
+  }
+
+  #steps .container>div>* {
+    float: left;
+    text-align: left;
+  }
+
+  #steps .container>div h3 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 400;
+  }
+
+  #steps .container>div .num+div {
+    margin-left: 20px;
+    max-width: 200px;
+  }
+
+  #steps .container>div .num+div p {
+    text-align: left;
+  }
+
+  #steps .container>div .num {
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+  }
+
+  #terms .container {
+    max-width: 1440px;
+  }
+}

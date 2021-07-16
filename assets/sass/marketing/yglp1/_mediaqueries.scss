@@ -1,0 +1,190 @@
+@media only screen and (min-width : 320px) {
+  #hero{
+    background: var(--bg-image-m) no-repeat center;
+    background-size: var(--mobile-width-banner);
+    padding: 0 10px;
+    .row{
+      height: 100%;
+      min-height: calc(100vh - 210px);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    #hero-text-wrapper{
+      text-align: center;
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+
+      > div{
+        width: 100%;
+      }
+    }
+  }
+
+  #steps{
+    background: #fff;
+    border-top: 1px solid #f8f4ea;
+
+    .container{
+      display: block;
+      text-align: center;
+
+      > div{
+        display: inline-block;
+        vertical-align: top;
+        width: 31%;
+        overflow: hidden;
+
+        .num{
+          width: 50px;
+          height: 50px;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          border-radius: 50%;
+          -moz-border-radius: 50%;
+          font-size: 35px;
+          font-weight: 700;
+          margin: 20px auto 0;
+          font-family: $FONT_FAMILY;
+          color: #EF6351;
+          border: 1px solid #776149;
+        }
+
+        h3{
+          color: $STEPS_TITLE_COLOR;
+          margin: 10px auto 10px;
+          font-size: 24px;
+          font-weight: lighter;
+        }
+
+        p{
+          text-align: center;
+          color: #b8a48e;
+          font-size: 16px;
+          font-weight: 500;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  #payment {
+    .container {
+      .row {
+        svg {
+          background: url("@/assets/images/marketing/yg-global-paymentprovider/payment_mobile_jp.svg") no-repeat center center;
+          width: 100%;
+          max-width: 690px;
+          margin: auto;
+          filter: sepia(70%) saturate(346%) hue-rotate(305deg) brightness(90%) contrast(85%);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width : 768px) {
+  #hero{
+    background: url("@/assets/images/marketing/yglp1/background-desktop.jpeg") no-repeat center center;
+    background-size: contain;
+    .row {
+      min-height: 650px;
+    }
+    #hero-text-wrapper{
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+    .game-logo {
+      display: none;
+    }
+    button {
+      display: block;
+      margin: auto;
+    }
+  }
+  #steps {
+    .container {
+      > div {
+        h3 {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width : 1200px) {
+  .yglp1-main {
+    background: none;
+  }
+  #hero{
+    background-size: cover;
+    max-width: 100%;
+    margin: auto;
+    .container {
+      max-width: 100%;
+    }
+    .row {
+      max-height: 650px;
+    }
+    #hero-text-wrapper{
+      -ms-flex: 0 0 75%;
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+    h1 {
+      font-size: 48px;
+      line-height: 48px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    p {
+      margin-top: 30px;
+    }
+  }
+  #steps{
+    padding: 20px 0;
+    .container {
+      max-width: 1440px;
+      > div {
+        margin-top: 0;
+
+        > * {
+          float: left;
+          text-align: left;
+        }
+
+        h3{
+          font-size: 32px;
+          margin: 0;
+          font-weight: 400;
+        }
+
+        .num + div{
+          margin-left: 20px;
+          max-width: 200px;
+          p{
+            text-align: left;
+          }
+        }
+
+        .num{
+          width: 100px;
+          height: 100px;
+          font-size: 80px;
+        }
+      }
+    }
+  }
+  #terms {
+    .container {
+      max-width: 1440px;
+    }
+  }
+}

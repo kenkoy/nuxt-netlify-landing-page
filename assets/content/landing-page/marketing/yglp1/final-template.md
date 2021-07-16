@@ -9,12 +9,12 @@ field_ids:
   gtm_container_id: GTM-MFD3NKM
 promo_banner:
   promo_link_text: こちら
-  promo_middle_text: 花魁ドリームで 一撃スリルを
-  promo_top_text: 待望の日本円対応!
-  promo_low_text: さらに4000円無料ボーナス進呈中
+  promo_title_1: 花魁ドリームで 一撃スリルを
+  promo_sub_title: 待望の日本円対応!
+  promo_title_2: さらに4000円無料ボーナス進呈中
   promo_register_button_redirect_url: www.yuugado.com/#register
   promo_register_button_text: 今すぐ登録
-  promo_bg_image: /marketing/img/yglp1-game-logo.png
+  promo_bg_mobile: /marketing/img/yglp1-game-logo.png
   promo_link_redirect: https://www.yuugado.com/promotions/category/1/2875
   promo_login_button_redirect_url: www.yuugado.com/#login
   promo_login_button_text: ログイン
@@ -26,7 +26,7 @@ steps:
   step_description_2: 2,000円分ボーナス進呈中
   step_title_3: 入金
   step_description_3: 最大10万円＋花魁無料スピン50回付
-info_banner:
+info_image:
   info_image_1: /marketing/img/yglp1-image1.jpeg
   info_image_2: /marketing/img/yglp1-image2.jpeg
 promo_template: YGLP1

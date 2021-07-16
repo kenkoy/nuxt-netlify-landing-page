@@ -1,0 +1,176 @@
+.yglp1_wrapper {
+  font-family: $FONT_FAMILY;
+}
+.yglp1-main {
+  background: url("@/assets/images/marketing/yglp1/background-mobile.jpeg") no-repeat center -80px;
+  background-size: contain;
+}
+.material-icons {
+  font-family: 'Material Icons';
+}
+h1 {
+  font-weight: 300;
+  font-size: $HERO_TITLE_SIZE;
+  color: $HERO_TITLE_COLOR;
+  font-family: 'MainFont-DemiBold', sans-serif;
+  letter-spacing: 0.3px;
+  margin: 0;
+}
+h2{
+  font-size: $TEXT_SIZE;
+  color: $HERO_TITLE_COLOR;
+  font-weight: 500px;
+  font-family: 'MainFont-DemiBold', sans-serif;
+  margin: 5px auto 25px;
+}
+a {
+  text-decoration: none;
+  border-bottom: 2px solid #EF6351;
+  color: #EF6351;
+
+  &:hover{
+    color: #BB2511;
+  }
+}
+img {
+  display: block;
+  margin: auto;
+  max-width: 896px;
+  width: 100%;
+}
+button{
+  background: linear-gradient(91.59deg, #E38271 -5.41%, #DC391B 30.04%, #DF4022 74.38%, #E8664E 104.44%), linear-gradient(97.93deg, #EB7761 -10.86%, #D44A31 56.96%, #EEA598 117.98%);
+  font-size: $TEXT_SIZE;
+  width: 280px;
+  border-radius: 20px;
+  border: none;
+  padding: 4px 30px;
+
+  a, a:hover{
+    color: $TEXT_COLOR;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  &:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16)), linear-gradient(91.59deg, #E38271 -5.41%, #DC391B 30.04%, #DF4022 74.38%, #E8664E 104.44%), linear-gradient(97.93deg, #EB7761 -10.86%, #D44A31 56.96%, #EEA598 117.98%);
+  }
+}
+
+#hero {
+  p {
+    color: $HERO_TEXT_COLOR;
+    margin-top: 10px;
+  }
+  small {
+    font-size: 11px;
+    color: $HERO_TEXT_COLOR;
+  }
+  .logo {
+    max-width: 250px;
+    margin: 65px auto 20px;
+  }
+  .game-logo {
+    max-width: 150px;
+    margin: 50px auto 20px;
+  }
+}
+
+#login{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: $TEXT_COLOR;
+
+  &:hover{
+    -webkit-animation-name: pulse;
+  	animation-name: pulse;
+    -webkit-animation-iteration-count: infinite;
+  	animation-iteration-count: infinite;
+  }
+  a{
+    border: none;
+    color: $TEXT_COLOR;
+  }
+
+  i{
+    font-size: 32px;
+    display: block;
+    font-style: normal;
+    color: $LOGIN_I_COLOR;
+  }
+
+  span{
+    color: $LOGIN_SPAN_COLOR;
+    font-size: $TEXT_SIZE;
+  }
+}
+
+#image-body {
+  text-align: center;
+  font-size: $TEXT_SIZE;
+  color: #b8a48e;
+  .text-center {
+    font-weight: normal;
+  }
+}
+
+#payment {
+  margin: 20px 0 35px;
+  .container {
+    max-width: 100%;
+    .row {
+      background: #F1EDE9;
+      border-top: 1px solid #EDE0D2;
+      border-bottom: 1px solid #EDE0D2;
+      height: 152px;
+      svg {
+        background: url("@/assets/images/marketing/yg-global-paymentprovider/payment_mobile_jp.svg") no-repeat center center;
+        width: 100%;
+        max-width: 260px;
+        margin: auto;
+        filter: sepia(70%) saturate(346%) hue-rotate(305deg) brightness(90%) contrast(85%);
+      }
+    }
+  }
+}
+
+#terms {
+  font-size: $TEXT_SIZE;
+  ol, ul {
+    list-style-position: inside;
+    padding-left: 0;
+    color: #C3986C;
+  }
+  .container {
+    .row {
+      h3 {
+        color: #EF6351;
+        text-transform: uppercase;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+footer {
+  background: #F1EDE9;
+  border-top: 1px solid #EDE0D2;
+  p {
+    font-size: 14px;
+    color: #DBC2A7;
+  }
+  a {
+    color: #DBC2A7;
+    border-bottom: 1px solid #DBC2A7;
+  }
+  &.yuugado {
+    padding: 20px 10px;
+  }
+  .gambling-therapy {
+    filter: sepia(70%) saturate(346%) hue-rotate(305deg) brightness(90%) contrast(85%);
+  }
+  .twenty-plus {
+    filter: invert(91%) sepia(80%) saturate(377%) hue-rotate(305deg) brightness(92%) contrast(85%);
+  }
+}
