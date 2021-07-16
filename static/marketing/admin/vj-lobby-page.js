@@ -80,7 +80,7 @@ export const VJ_LOBBY_PREVIEW = createClass({
                   </div>
                 </div>
 
-                <div class="row">
+                <div class="row game-list">
                   ${gameList.filter(sect => !!sect).map((sect) => {
                     const list = sect.toJS()
                     return html`
@@ -95,7 +95,7 @@ export const VJ_LOBBY_PREVIEW = createClass({
                           : ''
                         }
                         <img src='${list.image}' />
-                        <p>${list.title}</p>
+                        <p class='game-name'>${list.title}</p>
                       </a>
                     </div>
                     `
