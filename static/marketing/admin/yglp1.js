@@ -65,7 +65,7 @@ export const YGLP1_PREVIEW = createClass({
         <div class="yglp1-main" style=${promoBgDesktop}>
           <section id="hero">
             <div class="container">
-              <div class="row">
+              <div class="row column-2">
                 <div id="hero-text-wrapper">
                   <div>
                     <div id="login" class="animated">
