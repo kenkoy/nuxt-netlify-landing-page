@@ -19,7 +19,7 @@ export const YGLP1_PREVIEW = createClass({
     const locale = widgetsFor('promo_locale')
     const info = widgetsFor('info_banner')
     const steps = widgetsFor('steps')
-    const content = widgetsFor('content').getIn(['data']) || ''
+    const body = widgetsFor('body').getIn(['data']) || ''
 
     const country = locale.getIn(['data', 'promo_country_code']) || ''
     const language = locale.getIn(['data', 'promo_language_code']) || ''
@@ -40,6 +40,9 @@ export const YGLP1_PREVIEW = createClass({
     const promoLinkRedirect = banner.getIn(['data', 'promo_link_redirect']) || ''
     const promoLinkText = banner.getIn(['data', 'promo_link_text']) || ''
 
+    const infoImage1 = info.getIn(['data', 'info_image_1']) || ''
+    const infoImage2 = info.getIn(['data', 'info_image_2']) || ''
+
     const stepData = [{
       title: steps.getIn(['data', 'step_title_1']) || '',
       description: steps.getIn(['data', 'step_description_1']) || ''
@@ -53,7 +56,7 @@ export const YGLP1_PREVIEW = createClass({
 
     return (html`
       <body
-        class="yglp1_wrapper core-wrapper"
+        class="yglp1_wrapper layout-css"
       >
         <div class="yglp1-main">
           <section id="hero">
@@ -63,21 +66,22 @@ export const YGLP1_PREVIEW = createClass({
                   <div>
                     <div id="login" class="animated">
                       <div class="fadeIn animated">
-                        <a href="#">
+                        <a href="${promoLoginButtonRedirectUrl}">
                           <i class="material-icons">exit_to_app</i>
-                          <span>dan</span>
+                          <span>${promoLoginButtonText}</span>
                         </a>
                       </div>
                     </div>
-                    <img class="logo" src="/marketing/img/yglp1/logo-jp.png" alt="yuugado logo">
+                    <img class="logo" src="/marketing/img/yglp1/logo-jp.png" alt="yuugado logo" />
                     <div>
-                      <p>dan</p>
-                      <h1>dan</h1>
-                      <h2>dan</h2>
+                      <p>${promoTopText}</p>
+                      <h1>${promoMidText}</h1>
+                      <h2>${promoLowText}</h2>
                     </div>
                     <button>
-                      <a href="#">sfgs</a>
+                      <a href="${promoRegisterButtonRedirectUrl}">${promoRegisterButtonText}</a>
                     </button>
+                    <img class="game-logo" src="${promoBgImage}" alt="yuugado game" />
                     <small><a href="#">利用規約</a>に同意します。</small>
                   </div>
                 </div>
@@ -85,19 +89,24 @@ export const YGLP1_PREVIEW = createClass({
             </div>
           </section>
 
+          <${STEPS} steps="${stepData}" />
 
           <section id="image-body">
             <div>
+              <img src="${infoImage1}" />
+              <img src="${infoImage2}" />
               <button>
+                <a href="${promoRegisterButtonRedirectUrl}">${promoRegisterButtonText}</a>
               </button>
               <h3 class="text-center">
+                ${promoText}<a href="${promoLinkRedirect}">${promoLinkText}</a>
               </h3>
             </div>
           </section>
           <section id="payment" class="separator">
             <div class="container">
               <div class="row">
-                <img class="desktop" src="/marketing/img/yg-global-paymentprovider/payment_large_jp.svg" alt="payment verajohn desktop">
+                <img class="desktop" src="/marketing/img/yg-global-paymentprovider/payment_large_jp.svg" alt="payment verajohn desktop" />
               </div>
             </div>
           </section>
@@ -106,6 +115,7 @@ export const YGLP1_PREVIEW = createClass({
               <div class="row">
                 <div>
                   <div>
+                    ${body}
                   </div>
                   <ul>
                     <li>
@@ -120,6 +130,7 @@ export const YGLP1_PREVIEW = createClass({
           </section>
 
           <section class="separator">
+            <${FOOTER} landingPageType="yuugado" languageCode=${language} countryCode=${country} />
           </section>
         </div>
       </body>

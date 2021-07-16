@@ -1651,7 +1651,7 @@ collections:
     create: true
     identifier_field: "slug_name"
     slug: "{{slug}}"
-    preview_path: marketing/yglp1/{{slug}}
+    preview_path: yglp1/{{slug}}
     show_preview_links: true
     editor:
       preview: true
@@ -1794,7 +1794,7 @@ collections:
               name: "info_image_2",
               widget: "image",
             }
-      - { label: "Terms & Conditions Content", name: "content", widget: "markdown" }
+      - { label: "Terms & Conditions Content", name: "body", widget: "markdown" }
       - {
           label: "Template",
           name: "promo_template",
