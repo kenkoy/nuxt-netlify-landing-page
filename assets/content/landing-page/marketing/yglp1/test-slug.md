@@ -27,7 +27,6 @@ steps:
   step_title_3: Step 3
   step_description_3: Step 3 desc
 promo_template: YGLP1
-content: <h1>Test</h1>
 info_banner:
   info_image_1: /marketing/img/319-bic-lan-jp-pro-beginnersguide-0620-500WC-stamp.png
   info_image_2: /marketing/img/dsgn-1306-vjlp2-mob.png
