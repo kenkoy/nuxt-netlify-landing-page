@@ -1,242 +1,251 @@
 /* STYLE FOR YUUGADO */
-.yglp1_wrapper {
-  font-family: "NotoSansJP-Regular", sans-serif;
-}
-
 .yglp1-main {
-  background: url(../../img/yglp1/background-mobile.jpeg) no-repeat center -80px;
+  font-family: "NotoSansJP-Regular", sans-serif;
+  background: url(../../img/yglp1/background-mobile.jpeg) no-repeat center top;
   background-size: contain;
 }
-
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
 }
-
 h1 {
-  font-weight: 300;
+  font-weight: 500;
   font-size: 32px;
-  color: #EF6351;
-  font-family: 'MainFont-DemiBold', sans-serif;
-  letter-spacing: 0.3px;
+  color: #ef6351;
+  line-height: 32px;
+  text-transform: uppercase;
   margin: 0;
 }
-
 h2 {
+  font-family: "NotoSansJP-Bold", sans-serif;
   font-size: 16px;
-  color: #EF6351;
-  font-weight: 500px;
-  font-family: 'MainFont-DemiBold', sans-serif;
-  margin: 5px auto 25px;
+  color: #ef6351;
+  margin: 10px auto 30px;
 }
-
 a {
   text-decoration: none;
-  border-bottom: 2px solid #EF6351;
-  color: #EF6351;
+  border-bottom: 2px solid #ef6351;
+  color: #ef6351;
 }
-
 a:hover {
-  color: #BB2511;
+  color: #bb2511;
 }
-
 img {
   display: block;
   margin: auto;
   max-width: 896px;
   width: 100%;
 }
-
 button {
-  background: linear-gradient(91.59deg, #E38271 -5.41%, #DC391B 30.04%, #DF4022 74.38%, #E8664E 104.44%), linear-gradient(97.93deg, #EB7761 -10.86%, #D44A31 56.96%, #EEA598 117.98%);
+  background: linear-gradient(
+      91.59deg,
+      #e38271 -5.41%,
+      #dc391b 30.04%,
+      #df4022 74.38%,
+      #e8664e 104.44%
+    ),
+    linear-gradient(97.93deg, #eb7761 -10.86%, #d44a31 56.96%, #eea598 117.98%);
   font-size: 16px;
   width: 280px;
   border-radius: 20px;
   border: none;
-  padding: 4px 30px;
+  padding: 4px 20px;
 }
-
 button a,
 button a:hover {
   color: #fff;
   text-decoration: none;
   border-bottom: none;
 }
-
 button:hover {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16)), linear-gradient(91.59deg, #E38271 -5.41%, #DC391B 30.04%, #DF4022 74.38%, #E8664E 104.44%), linear-gradient(97.93deg, #EB7761 -10.86%, #D44A31 56.96%, #EEA598 117.98%);
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.16),
+      rgba(255, 255, 255, 0.16)
+    ),
+    linear-gradient(
+      91.59deg,
+      #e38271 -5.41%,
+      #dc391b 30.04%,
+      #df4022 74.38%,
+      #e8664e 104.44%
+    ),
+    linear-gradient(97.93deg, #eb7761 -10.86%, #d44a31 56.96%, #eea598 117.98%);
 }
-
 #hero p {
   color: #b8a48e;
-  margin-top: 10px;
+  margin: 10px 0 10px;
 }
-
 #hero small {
   font-size: 11px;
   color: #b8a48e;
 }
-
 #hero .logo {
-  max-width: 250px;
-  margin: 65px auto 20px;
+  max-width: 260px;
 }
-
 #hero .game-logo {
   max-width: 150px;
   margin: 50px auto 20px;
 }
-
+#hero #hero-text-wrapper > div p {
+  font-family: "MainFont-Bold", sans-serif;
+}
 #login {
   position: absolute;
   top: 10px;
   right: 10px;
   color: #fff;
+  text-align: center;
 }
-
 #login:hover {
   -webkit-animation-name: pulse;
   animation-name: pulse;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-
 #login a {
   border: none;
   color: #fff;
 }
-
 #login i {
   font-size: 32px;
   display: block;
   font-style: normal;
-  color: #EF6351;
+  color: #ef6351;
 }
-
 #login span {
-  color: #C3986C;
+  color: #c3986c;
   font-size: 16px;
 }
-
 #image-body {
+  background: #fcfaf7;
+  padding-top: 60px;
+  border-top: 1px solid #f8f4ea;
   text-align: center;
+}
+#image-body h3 {
+  font-family: "NotoSansJP-Medium", sans-serif;
   font-size: 16px;
+  font-weight: 500;
   color: #b8a48e;
+  margin-bottom: 5px;
 }
-
-#image-body .text-center {
-  font-weight: normal;
+#image-body button {
+  margin-top: 23px;
 }
-
 #payment {
-  margin: 20px 0 35px;
+  margin: 0 0 34px;
 }
-
 #payment .container {
   max-width: 100%;
 }
-
 #payment .container .row {
-  background: #F1EDE9;
-  border-top: 1px solid #EDE0D2;
-  border-bottom: 1px solid #EDE0D2;
+  background: #f1ede9;
+  border-top: 1px solid #ede0d2;
+  border-bottom: 1px solid #ede0d2;
   height: 152px;
+  padding: 0 30px;
 }
-
 #payment .container .row svg {
-  background: url(../../img/yg-global-paymentprovider/payment_mobile_jp.svg) no-repeat center center;
+  background: url(/../../img/yg-payment/payment_mobile_jp.svg) no-repeat center
+    center;
   width: 100%;
-  max-width: 260px;
   margin: auto;
-  filter: sepia(70%) saturate(346%) hue-rotate(305deg) brightness(90%) contrast(85%);
+  filter: invert(0%) sepia(70%) saturate(346%) hue-rotate(305deg)
+    brightness(90%) contrast(85%);
 }
-
 #terms {
   font-size: 16px;
+  margin-bottom: 40px;
 }
-
 #terms ol,
 #terms ul {
   list-style-position: inside;
   padding-left: 0;
-  color: #C3986C;
+  color: #c3986c;
 }
-
+#terms ol li,
+#terms ul li {
+  margin: 0 0 4px;
+}
 #terms .container .row h3 {
-  color: #EF6351;
+  color: #ef6351;
   text-transform: uppercase;
+  font-size: 16px;
   font-weight: normal;
+  margin: 0 0 8px;
 }
-
 footer {
-  background: #F1EDE9;
-  border-top: 1px solid #EDE0D2;
+  background: #f1ede9;
+  border-top: 1px solid #ede0d2;
+  font-family: "NotoSansJP-Regular", sans-serif;
 }
-
 footer p {
   font-size: 14px;
-  color: #DBC2A7;
+  color: #dbc2a7;
 }
-
 footer a {
-  color: #DBC2A7;
-  border-bottom: 1px solid #DBC2A7;
+  font-size: 16px;
+  color: #dbc2a7;
+  border-bottom: 1px solid #dbc2a7;
 }
-
+footer #footer-icon {
+  text-align: center;
+  margin: 10px 0;
+}
 footer.yuugado {
   padding: 20px 10px;
 }
-
 footer .gambling-therapy {
-  filter: sepia(70%) saturate(346%) hue-rotate(305deg) brightness(90%) contrast(85%);
+  filter: invert(0%) sepia(70%) saturate(346%) hue-rotate(305deg)
+    brightness(90%) contrast(85%);
 }
-
 footer .twenty-plus {
-  filter: invert(91%) sepia(80%) saturate(377%) hue-rotate(305deg) brightness(92%) contrast(85%);
+  filter: invert(12%) sepia(70%) saturate(346%) hue-rotate(305deg)
+    brightness(90%) contrast(85%);
 }
-
 @media only screen and (min-width: 320px) {
   #hero {
     padding: 0 10px;
   }
-
   #hero .row {
     height: 100%;
     min-height: calc(100vh - 210px);
   }
-
   #hero a {
     text-decoration: none;
   }
-
+  #hero button a {
+    font-weight: 600;
+  }
+  #hero #login a {
+    font-weight: 400;
+  }
   #hero #hero-text-wrapper {
     text-align: center;
     display: flex;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 0 60px;
+    margin-top: 55px;
   }
-
-  #hero #hero-text-wrapper>div {
+  #hero #hero-text-wrapper > div {
     width: 100%;
   }
-
   #steps {
     background: #fff;
     border-top: 1px solid #f8f4ea;
+    margin-bottom: 7px;
   }
-
   #steps .container {
     display: block;
     text-align: center;
   }
-
-  #steps .container>div {
+  #steps .container > div {
     display: inline-block;
     vertical-align: top;
     width: 31%;
     overflow: hidden;
   }
-
-  #steps .container>div .num {
+  #steps .container > div .num {
     width: 50px;
     height: 50px;
     align-items: center;
@@ -244,143 +253,124 @@ footer .twenty-plus {
     justify-content: center;
     border-radius: 50%;
     -moz-border-radius: 50%;
-    font-size: 35px;
-    font-weight: 700;
-    margin: 20px auto 0;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 10px auto 0;
     font-family: "NotoSansJP-Regular", sans-serif;
-    color: #EF6351;
+    color: #ef6351;
     border: 1px solid #776149;
   }
-
-  #steps .container>div h3 {
-    color: #EF6351;
-    margin: 10px auto 10px;
+  #steps .container > div h3 {
+    font-family: "MainFont-DemiBold", sans-serif;
+    color: #ef6351;
+    margin: 10px auto 0;
     font-size: 24px;
-    font-weight: lighter;
-  }
-
-  #steps .container>div p {
-    text-align: center;
-    color: #b8a48e;
-    font-size: 16px;
     font-weight: 500;
+  }
+  #steps .container > div p {
+    font-family: "NotoSansJP-Medium", sans-serif;
+    color: #b8a48e;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
     margin: 0;
   }
-
-  #payment .container .row svg {
-    background: url(../../img/yg-global-paymentprovider/payment_mobile_jp.svg) no-repeat center center;
-    width: 100%;
-    max-width: 690px;
-    margin: auto;
-    filter: sepia(70%) saturate(346%) hue-rotate(305deg) brightness(90%) contrast(85%);
-  }
 }
-
 @media only screen and (min-width: 768px) {
-  #hero {
-    background: var(--bg-image-desktop) no-repeat center center;
-    background-size: contain;
-  }
-
-  #hero .row {
-    min-height: 650px;
-  }
-
-  #hero #hero-text-wrapper {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  #hero .game-logo {
-    display: none;
-  }
-
-  #hero button {
-    display: block;
-    margin: auto;
-  }
-
-  #steps .container>div h3 {
-    font-size: 32px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
   .yglp1-main {
     background: none;
   }
-
+  #hero {
+    background: url(/../../img/yglp1/background-desktop.jpeg) no-repeat center
+      center;
+    background-size: cover;
+  }
+  #hero .row {
+    min-height: 520px;
+  }
+  #hero #hero-text-wrapper {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin: 55px 0 0 50px;
+  }
+  #hero .game-logo {
+    display: none;
+  }
+  #hero button {
+    display: block;
+    margin: 0 auto 60px;
+  }
+  #steps .container > div h3 {
+    font-size: 20px;
+  }
+  #image-body h3 {
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #hero #hero-text-wrapper {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin: 55px 0 0 100px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #steps {
+    padding: 20px 0;
+  }
+  #steps .container > div {
+    margin-top: 0;
+  }
+  #steps .container > div > * {
+    float: left;
+    text-align: left;
+  }
+  #steps .container > div h3 {
+    font-size: 32px;
+    margin: 0;
+    font-weight: 400;
+  }
+  #steps .container > div .num + div {
+    margin-left: 20px;
+    max-width: 200px;
+  }
+  #steps .container > div .num + div p {
+    text-align: left;
+    max-width: 174px;
+  }
+  #steps .container > div .num {
+    width: 100px;
+    height: 100px;
+    font-size: 80px;
+  }
+  #payment .container .row svg {
+    background: url(/../../img/yg-payment/payment_desktop_jp.svg) no-repeat
+      center center;
+    filter: invert(97%) sepia(82%) saturate(646%) hue-rotate(305deg)
+      brightness(90%) contrast(90%);
+  }
+}
+@media only screen and (min-width: 1200px) {
   #hero {
     background-size: cover;
     max-width: 100%;
     margin: auto;
   }
-
-  #hero .container {
-    max-width: 100%;
-  }
-
   #hero .row {
     max-height: 650px;
   }
-
-  #hero #hero-text-wrapper {
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
-
   #hero h1 {
     font-size: 48px;
     line-height: 48px;
   }
-
   #hero h2 {
     font-size: 28px;
   }
-
   #hero p {
     margin-top: 30px;
   }
-
-  #steps {
-    padding: 20px 0;
-  }
-
-  #steps .container {
-    max-width: 1440px;
-  }
-
-  #steps .container>div {
-    margin-top: 0;
-  }
-
-  #steps .container>div>* {
-    float: left;
-    text-align: left;
-  }
-
-  #steps .container>div h3 {
-    font-size: 32px;
-    margin: 0;
-    font-weight: 400;
-  }
-
-  #steps .container>div .num+div {
-    margin-left: 20px;
-    max-width: 200px;
-  }
-
-  #steps .container>div .num+div p {
-    text-align: left;
-  }
-
-  #steps .container>div .num {
-    width: 100px;
-    height: 100px;
-    font-size: 80px;
-  }
-
-  #terms .container {
-    max-width: 1440px;
+  #payment .container .row svg {
+    max-width: 1140px;
   }
 }
