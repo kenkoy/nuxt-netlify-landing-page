@@ -62,8 +62,8 @@ export const YGLP1_PREVIEW = createClass({
       <body
         class="yglp1_wrapper layout-css"
       >
-        <div class="yglp1-main" style=${promoBgDesktop}>
-          <section id="hero">
+        <div class="yglp1-main">
+          <section id="hero" style=${promoBgDesktop}>
             <div class="container">
               <div class="row column-2">
                 <div id="hero-text-wrapper">

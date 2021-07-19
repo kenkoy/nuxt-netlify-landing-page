@@ -146,7 +146,7 @@ button:hover {
   padding: 0 30px;
 }
 #payment .container .row svg {
-  background: url(/../../img/yg-payment/payment_mobile_jp.svg) no-repeat center
+  background: url(../../img/yg-payment/payment_mobile_jp.svg) no-repeat center
     center;
   width: 100%;
   margin: auto;
@@ -282,7 +282,7 @@ footer .twenty-plus {
     background: none;
   }
   #hero {
-    background: url(/../../img/yglp1/background-desktop.jpeg) no-repeat center
+    background: var(--bg-image-desktop) no-repeat center
       center;
     background-size: cover;
   }
@@ -345,7 +345,7 @@ footer .twenty-plus {
     font-size: 80px;
   }
   #payment .container .row svg {
-    background: url(/../../img/yg-payment/payment_desktop_jp.svg) no-repeat
+    background: url(../../img/yg-payment/payment_desktop_jp.svg) no-repeat
       center center;
     filter: invert(97%) sepia(82%) saturate(646%) hue-rotate(305deg)
       brightness(90%) contrast(90%);
