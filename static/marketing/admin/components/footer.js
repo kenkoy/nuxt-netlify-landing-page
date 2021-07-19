@@ -31,7 +31,7 @@ export const FOOTER = createClass({
         returnURL = {
           ageLimit: 'https://www.yuugado.com/about/responsible-gaming',
           curacao: 'https://verification.curacao-egaming.com/validateview.aspx?domain=yuugado.com',
-          ageLimitIcon: '/marketing/img/yglp1/icon_age_twenty.svg',
+          ageLimitIcon: '/marketing/img/footer/20+.svg',
           gtIcon: '/marketing/img/yglp1/icon_gt.svg'
         }
         break
