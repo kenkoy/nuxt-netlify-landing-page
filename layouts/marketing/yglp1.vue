@@ -32,7 +32,7 @@
                   <a :href="mdData.promo_banner.promo_register_button_redirect_url">{{ mdData.promo_banner.promo_register_button_text }}</a>
                 </button>
                 <img class="game-logo" :src="mdData.promo_banner.promo_bg_mobile" alt="yuugado game">
-                <small><a :href="mdData.promo_banner.small_term_redirect">{{ mdData.promo_banner.small_term_text_link }}</a>{{ mdData.promo_banner.small_term_text }}</small>
+                <small><a href="#terms">利用規約</a>に同意します。</small>
               </div>
             </div>
           </div>
