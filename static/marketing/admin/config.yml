@@ -1747,6 +1747,21 @@ collections:
               widget: "image"
             }
           - {
+              label: "Small Term Text",
+              name: "small_term_text",
+              widget: "string",
+            }
+          - {
+              label: "Small Term Text Link",
+              name: "small_term_text_link",
+              widget: "string",
+            }
+          - {
+              label: "Small Term Redirect",
+              name: "small_term_redirect",
+              widget: "string",
+            }
+          - {
               label: "Promotion Text",
               name: "promo_text",
               widget: "string",
