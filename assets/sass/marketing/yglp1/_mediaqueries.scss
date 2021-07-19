@@ -89,7 +89,7 @@
 
 @media only screen and (min-width : 768px) {
   #hero{
-    background: url("@/assets/images/marketing/yglp1/background-desktop.jpeg") no-repeat center center;
+    background: var(--bg-image-desktop) no-repeat center center;
     background-size: contain;
     .row {
       min-height: 650px;

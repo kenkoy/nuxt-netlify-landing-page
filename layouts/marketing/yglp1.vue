@@ -6,71 +6,57 @@
       v-if="Object.keys(mdData).length > 0"
       class="yglp1-main"
     >
-      <section id="hero">
+      <section
+        id="hero"
+        :style="cssBackground"
+      >
+        <div id="login" class="animated">
+          <div class="fadeIn animated">
+            <a :href="mdData.promo_banner.promo_login_button_redirect_url">
+              <i class="material-icons">exit_to_app</i>
+              <span>{{ mdData.promo_banner.promo_login_button_text }}</span>
+            </a>
+          </div>
+        </div>
         <div class="container">
-          <div class="row">
+          <div class="row column-2">
             <div id="hero-text-wrapper">
               <div>
-                <div id="login" class="animated">
-                  <div class="fadeIn animated">
-                    <a href="mdData.promo_banner.promo_login_button_redirect_url">
-                      <i class="material-icons">exit_to_app</i>
-                      <span>{{ mdData.promo_banner.promo_login_button_text }}</span>
-                    </a>
-                  </div>
-                </div>
                 <img class="logo" src="@/assets/images/marketing/yglp1/logo-jp.png" alt="yuugado logo">
                 <div>
-                  <p>待望の日本円対応!</p>
-                  <h1>花魁ドリームで<br>一撃スリルを</h1>
-                  <h2>さらに4000円無料ボーナス進呈中</h2>
+                  <p>{{ mdData.promo_banner.promo_sub_title }}</p>
+                  <h1>{{ mdData.promo_banner.promo_title_1 }}</h1>
+                  <h2>{{ mdData.promo_banner.promo_title_2 }}</h2>
                 </div>
                 <button>
-                  <a href="https://www.yuugado.com/">今すぐ登録</a>
+                  <a :href="mdData.promo_banner.promo_register_button_redirect_url">{{ mdData.promo_banner.promo_register_button_text }}</a>
                 </button>
-                <img class="game-logo" src="@/assets/images/marketing/yglp1/game-logo.png" alt="yuugado game">
-                <small><a href="#">利用規約</a>に同意します。</small>
+                <img class="game-logo" :src="mdData.promo_banner.promo_bg_mobile" alt="yuugado game">
+                <small><a :href="mdData.promo_banner.small_term_redirect">{{ mdData.promo_banner.small_term_text_link }}</a>{{ mdData.promo_banner.small_term_text }}</small>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="steps">
-        <div class="container">
-          <div class="animated fadeIn delay-halfs">
-            <span class="num">1</span>
-            <div>
-              <h3>登録</h3>
-              <p>業界No.1ベテランスタッフが運営</p>
-            </div>
-          </div>
-          <div class="animated fadeIn delay-1s">
-            <span class="num">2</span>
-            <div>
-              <h3>お試し</h3>
-              <p>2,000円分ボーナス進呈中</p>
-            </div>
-          </div>
-          <div class="animated fadeIn delay-1-and-halfs">
-            <span class="num">3</span>
-            <div>
-              <h3>入金</h3>
-              <p>最大10万円＋花魁無料スピン50回付</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Steps
+        :title1="mdData.steps.step_title_1"
+        :description1="mdData.steps.step_description_1"
+        :title2="mdData.steps.step_title_2"
+        :description2="mdData.steps.step_description_2"
+        :title3="mdData.steps.step_title_3"
+        :description3="mdData.steps.step_description_3"
+      />
       <section id="image-body">
         <div class="container">
           <div class="row">
             <div>
-              <img src="@/assets/images/marketing/yglp1/image1.jpeg">
-              <img src="@/assets/images/marketing/yglp1/image2.jpeg">
+              <img :src="mdData.info_image.info_image_1">
+              <img :src="mdData.info_image.info_image_2">
               <button>
-                <a href="https://www.yuugado.com/">今すぐ登録</a>
+                <a :href="mdData.promo_banner.promo_register_button_redirect_url">{{ mdData.promo_banner.promo_register_button_text }}</a>
               </button>
               <h3 class="text-center">
-                合計10万円のウェルカムボーナスの詳細は<a href="https://www.yuugado.com/promotions/category/1/2875">こちら</a>
+                {{ mdData.promo_banner.promo_text }}<a :href="mdData.promo_banner.promo_link_redirect">{{ mdData.promo_banner.promo_link_text }}</a>
               </h3>
             </div>
           </div>
@@ -79,11 +65,11 @@
       <section id="payment" class="separator">
         <div class="container">
           <div class="row">
-            <svg class="desktop mobile" />
+            <svg />
           </div>
         </div>
       </section>
-      <section id="terms" class="separator">
+      <section id="terms">
         <div class="container">
           <div class="row">
             <div>
@@ -99,74 +85,24 @@
           </div>
         </div>
       </section>
-      <!-- <Footer
+      <Footer
         :promo-language-code="mdData.promo_locale.promo_language_code"
         :promo-country-code="mdData.promo_locale.promo_country_code"
         :landing-page-type="'yuugado'"
-      /> -->
-      <footer class="yuugado">
-        <div class="container">
-          <div class="row">
-            <div>
-              <div id="footer-icon">
-                <a
-                  aria-label="Responsible Gaming"
-                  target="_blank"
-                  href="#"
-                  rel="noopener"
-                >
-                  <img class="twenty-plus" src="@/assets/images/marketing/yglp1/icon_age_twenty.svg" alt="alt img">
-                </a>
-
-                <a
-                  aria-label="Gambling Therapy"
-                  target="_blank"
-                  href="https://www.gamblingtherapy.org/en"
-                  rel="noopener"
-                >
-                  <img class="gambling-therapy" src="@/assets/images/marketing/global-footer/icon_gt.svg" alt="alt img">
-                </a>
-
-                <a
-                  aria-label="CEG"
-                  target="_blank"
-                  rel="noopener"
-                  href="#"
-                >
-                  <img class="curacao-regulator" src="https://verification.curacao-egaming.com/validate.ashx?domain=verajohn.com" alt="alt img">
-                </a>
-              </div>
-
-              <p>
-                <a
-                  aria-label="Responsible Gaming"
-                  target="blank"
-                  href="#"
-                  rel="noopener"
-                >
-                  ギャンブルには中毒性があります。 自己責任を持ってプレイしてください。
-                </a>
-              </p>
-
-              <p>当ウェブサイトの運営は、Breckenridge Curacao B.V.（登録住所: 36 Julianaplein, Willemstad, Curaçao）です。</p>
-              <p>Breckenridge Curaçao B.V.はキュラソー州知事により発行されたMaster Gaming License #1668/JAZに基づくCEG Curaçao Egaming により付与されたサブライセンスを通して、正式に認可されています。</p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      />
     </div>
   </div>
 </template>
 
 <script>
-// import Steps from '@/components/Marketing/Steps.vue'
-// import Footer from '@/components/Marketing/TheFooter.vue'
+import Steps from '@/components/Marketing/Steps.vue'
+import Footer from '@/components/Marketing/TheFooter.vue'
 
 export default {
-  // components: {
-  //   Steps,
-  //   Footer
-  // },
+  components: {
+    Steps,
+    Footer
+  },
   data () {
     return {
       mdData: {},
@@ -180,16 +116,14 @@ export default {
       ]
     }
   },
-  // computed: {
-  //   cssBackground () {
-  //     const images = this.mdData.promo_banner.promo_images
-  //     return {
-  //       '--bg-image': `url('${images.promo_bg_desktop}')`,
-  //       '--bg-image-m': `url('${images.promo_bg_mobile}')`,
-  //       '--bg-banner': `url('${images.promo_bg_banner}')`
-  //     }
-  //   }
-  // },
+  computed: {
+    cssBackground () {
+      const images = this.mdData.promo_banner
+      return {
+        '--bg-image-desktop': `url('${images.promo_bg_desktop}')`
+      }
+    }
+  },
   created () {
     this.$root.$once('yglp1-data', (data) => { // Change to actual page name
       this.htmlBody = data.htmlData
