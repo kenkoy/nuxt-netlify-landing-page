@@ -119,6 +119,9 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    ['nuxt-highlightjs', {
+      style: 'obsidian'
+    }],
     ['nuxt-lazy-load', {
       iframes: false
     }]
