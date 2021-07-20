@@ -7,14 +7,14 @@
       <div class="container">
         <div class="row column-2">
           <div>
-            <h3>HTML Code</h3>
+            <h3>HTML</h3>
             <pre>
              <code v-highlight="htmlCode" class="html"></code>
            </pre>
           </div>
 
           <div>
-            <h3>CSS Code</h3>
+            <h3>SCSS</h3>
             <pre>
               <code v-highlight="cssCode" class="css"></code>
             </pre>
@@ -47,7 +47,7 @@ export default {
 `,
       cssCode:
 `#navigation{
-  background: red;
+  background: #1f1f1f;
 
   .container{
     position: relative;
@@ -87,7 +87,8 @@ export default {
 
 <style lang="scss">
 #navigation{
-  background: red;
+  background: #1f1f1f;
+  box-shadow: 2px 2px 5px #000;
 
   .container{
     position: relative;
