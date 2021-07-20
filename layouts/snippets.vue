@@ -62,6 +62,8 @@ export default {
       background: #daa136;
       color: #282b2e;
       font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
     }
   }
 

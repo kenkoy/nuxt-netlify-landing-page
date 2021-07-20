@@ -88,7 +88,6 @@ export default {
 <style lang="scss">
 #navigation{
   background: #1f1f1f;
-  box-shadow: 2px 2px 5px #000;
 
   .container{
     position: relative;
