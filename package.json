@@ -26,7 +26,7 @@
     "jquery": "^3.5.1",
     "js-yaml": "^3.14.0",
     "lodash": "^4.17.20",
-    "markdown-it": "^10.0.0",
+    "markdown-it": "^12.3.2",
     "nuxt": "^2.15.2",
     "nuxt-lazy-load": "^1.2.4",
     "save": "^2.4.0",
