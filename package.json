@@ -51,6 +51,6 @@
     "jest-transform-stub": "^2.0.0",
     "node-sass": "^5.0.0",
     "sass-loader": "^10.0.5",
-    "vue-jest": "^3.0.7"
+    "vue-jest": "^4.0.1"
   }
 }
